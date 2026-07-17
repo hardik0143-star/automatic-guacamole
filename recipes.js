@@ -1,0 +1,7033 @@
+/* Tiny Tiffin — Recipe Database (100 recipes)
+   Generated data file. Edit via the Admin Panel, or via bulk
+   Excel upload — see README.md for the process. */
+
+window.TINY_TIFFIN_RECIPES = [
+  {
+    "id": "poha",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Vegetable Poha",
+      "hi": "सब्ज़ी पोहा"
+    },
+    "desc": {
+      "en": "Flattened rice tossed with peanuts, peas and a squeeze of lime.",
+      "hi": "Flattened rice tossed with peanuts, peas and a squeeze of lime."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "energy"
+    ],
+    "allergens": [
+      "peanuts"
+    ],
+    "ingredients": [
+      "1 cup flattened rice (poha)",
+      "2 tbsp peanuts",
+      "1/4 cup green peas",
+      "1 small potato, diced",
+      "1/2 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1/2 lime",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Rinse poha in a colander until soft; set aside.",
+      "Heat oil, add mustard seeds, curry leaves and peanuts until fragrant.",
+      "Add potato and peas, cook until tender.",
+      "Fold in the poha and salt, warm through for 2 minutes.",
+      "Finish with a squeeze of lime just before packing."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 5,
+      "iron_mg": 2.1,
+      "calcium_mg": 30,
+      "fiber_g": 2.5,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Pack lime on the side in foil so the poha doesn't turn soggy by lunchtime.",
+      "hi": "Pack lime on the side in foil so the poha doesn't turn soggy by lunchtime."
+    },
+    "kidTip": {
+      "en": "Cut potato extra small — it disappears into the poha and no one negotiates about it.",
+      "hi": "Cut potato extra small — it disappears into the poha and no one negotiates about it."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "idli",
+    "emoji": "⚪",
+    "images": [],
+    "name": {
+      "en": "Mini Idli with Chutney",
+      "hi": "मिनी इडली चटनी के साथ"
+    },
+    "desc": {
+      "en": "Steamed rice cakes, soft enough for little hands to hold.",
+      "hi": "Steamed rice cakes, soft enough for little hands to hold."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup idli batter",
+      "2 tbsp coconut chutney",
+      "1/2 tsp ghee (omit for vegan)",
+      "Pinch of gunpowder (optional)"
+    ],
+    "instructions": [
+      "Grease a mini idli mould and pour in batter.",
+      "Steam for 8–10 minutes until a toothpick comes out clean.",
+      "Drizzle warm idlis with a little ghee or oil.",
+      "Pack chutney in a separate leak-proof container."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 4,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 1.2,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Keep chutney in its own tiny container — it keeps idlis from turning pink and mushy.",
+      "hi": "Keep chutney in its own tiny container — it keeps idlis from turning pink and mushy."
+    },
+    "kidTip": {
+      "en": "Skewer a few idlis onto a toothpick for a fun 'lollipop' effect.",
+      "hi": "Skewer a few idlis onto a toothpick for a fun 'lollipop' effect."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-paratha",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Stuffed Vegetable Paratha",
+      "hi": "भरवां सब्ज़ी पराठा"
+    },
+    "desc": {
+      "en": "Whole wheat flatbread stuffed with grated carrot, beetroot and paneer.",
+      "hi": "Whole wheat flatbread stuffed with grated carrot, beetroot and paneer."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "iron",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1/2 cup grated carrot",
+      "1/4 cup grated beetroot",
+      "1/4 cup crumbled paneer",
+      "1 tsp cumin",
+      "Ghee for cooking"
+    ],
+    "instructions": [
+      "Knead dough and rest for 10 minutes.",
+      "Mix grated vegetables, paneer and cumin for the filling.",
+      "Roll dough, add filling, seal and roll out gently into a disc.",
+      "Cook on a hot tawa with ghee until golden spots appear on both sides."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 7,
+      "iron_mg": 2.4,
+      "calcium_mg": 90,
+      "fiber_g": 3,
+      "vitaminC_mg": 9
+    },
+    "packingTip": {
+      "en": "Wrap in foil while warm — it keeps the paratha soft for hours.",
+      "hi": "Wrap in foil while warm — it keeps the paratha soft for hours."
+    },
+    "kidTip": {
+      "en": "Cut into triangles like a pizza — same paratha, more excitement.",
+      "hi": "Cut into triangles like a pizza — same paratha, more excitement."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "dal-rice",
+    "emoji": "🍛",
+    "images": [],
+    "name": {
+      "en": "Soft Dal Rice Balls",
+      "hi": "दाल चावल के गोले"
+    },
+    "desc": {
+      "en": "Mild yellow dal and rice, shaped into easy bite-size balls.",
+      "hi": "Mild yellow dal and rice, shaped into easy bite-size balls."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup rice",
+      "1/2 cup yellow moong dal",
+      "1/4 tsp turmeric",
+      "1 tsp ghee",
+      "Pinch of asafoetida"
+    ],
+    "instructions": [
+      "Pressure cook rice and dal together with turmeric until very soft.",
+      "Mash well and mix in ghee and asafoetida.",
+      "Cool slightly, then shape into small balls with wet hands.",
+      "Pack once fully cooled to room temperature."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 6,
+      "iron_mg": 1.8,
+      "calcium_mg": 25,
+      "fiber_g": 2,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "Line the box with parchment so the balls don't stick.",
+      "hi": "Line the box with parchment so the balls don't stick."
+    },
+    "kidTip": {
+      "en": "Serve with a tiny dab of ghee on top — toddlers eat these up fast.",
+      "hi": "Serve with a tiny dab of ghee on top — toddlers eat these up fast."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouts-chaat",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Sweet Corn & Sprouts Chaat",
+      "hi": "स्वीट कॉर्न स्प्राउट्स चाट"
+    },
+    "desc": {
+      "en": "A crunchy, tangy mix of sprouted moong, corn and cucumber.",
+      "hi": "A crunchy, tangy mix of sprouted moong, corn and cucumber."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup sprouted moong",
+      "1/4 cup boiled sweet corn",
+      "2 tbsp chopped cucumber",
+      "1/2 lime",
+      "Pinch of chaat masala"
+    ],
+    "instructions": [
+      "Steam sprouts lightly for 3 minutes so they're easy to digest.",
+      "Toss with corn and cucumber.",
+      "Add lime juice and chaat masala just before packing."
+    ],
+    "nutrition": {
+      "calories": 140,
+      "protein_g": 7,
+      "iron_mg": 1.5,
+      "calcium_mg": 35,
+      "fiber_g": 4,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Pack the lime and masala separately and mix at lunchtime to keep it crunchy.",
+      "hi": "Pack the lime and masala separately and mix at lunchtime to keep it crunchy."
+    },
+    "kidTip": {
+      "en": "A mild version (no chaat masala) works well for spice-sensitive kids.",
+      "hi": "A mild version (no chaat masala) works well for spice-sensitive kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-pulao",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Simple Vegetable Pulao",
+      "hi": "सादा सब्ज़ी पुलाव"
+    },
+    "desc": {
+      "en": "One-pot rice with carrots, beans and green peas.",
+      "hi": "One-pot rice with carrots, beans and green peas."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables",
+      "1 bay leaf",
+      "1 small cinnamon stick",
+      "1 tbsp ghee or oil"
+    ],
+    "instructions": [
+      "Sauté whole spices in ghee/oil until fragrant.",
+      "Add vegetables and rice, stir for 2 minutes.",
+      "Add water (1:1.5 ratio) and cook until fluffy.",
+      "Cool slightly before packing to keep grains separate."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 5,
+      "iron_mg": 1.6,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Fluff with a fork before packing so it doesn't clump in the box.",
+      "hi": "Fluff with a fork before packing so it doesn't clump in the box."
+    },
+    "kidTip": {
+      "en": "Cut vegetables into small matchsticks — they cook faster and blend in.",
+      "hi": "Cut vegetables into small matchsticks — they cook faster and blend in."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "paneer-roll",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Paneer Tikka Roll",
+      "hi": "पनीर टिक्का रोल"
+    },
+    "desc": {
+      "en": "Soft roti rolled with lightly spiced paneer and bell peppers.",
+      "hi": "Soft roti rolled with lightly spiced paneer and bell peppers."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 rotis",
+      "1/2 cup paneer cubes",
+      "1/4 cup sliced bell pepper",
+      "1/2 tsp mild tikka masala",
+      "1 tbsp yogurt"
+    ],
+    "instructions": [
+      "Marinate paneer and pepper in yogurt and a pinch of tikka masala.",
+      "Pan-fry until lightly charred at the edges.",
+      "Warm rotis, layer with the filling and roll tightly.",
+      "Wrap each roll in parchment to hold its shape."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 10,
+      "iron_mg": 1.4,
+      "calcium_mg": 120,
+      "fiber_g": 2,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Wrap tightly in parchment, twist the ends like a candy wrapper.",
+      "hi": "Wrap tightly in parchment, twist the ends like a candy wrapper."
+    },
+    "kidTip": {
+      "en": "Go easy on the masala for younger kids — the char adds plenty of flavour.",
+      "hi": "Go easy on the masala for younger kids — the char adds plenty of flavour."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "moong-cheela",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Moong Dal Cheela",
+      "hi": "मूंग दाल चीला"
+    },
+    "desc": {
+      "en": "Savoury lentil pancakes, soft in the middle and lightly crisp outside.",
+      "hi": "Savoury lentil pancakes, soft in the middle and lightly crisp outside."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup split moong dal, soaked",
+      "1/2 inch ginger",
+      "1 green chilli (optional)",
+      "Pinch of turmeric",
+      "Ghee or oil for cooking"
+    ],
+    "instructions": [
+      "Blend soaked dal with ginger and a little water into a smooth batter.",
+      "Pour a ladleful onto a hot greased tawa and spread thin.",
+      "Cook both sides until light golden.",
+      "Cool completely before stacking in the tiffin."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 9,
+      "iron_mg": 2,
+      "calcium_mg": 40,
+      "fiber_g": 3,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Layer parchment between each cheela so they don't stick together.",
+      "hi": "Layer parchment between each cheela so they don't stick together."
+    },
+    "kidTip": {
+      "en": "Skip the chilli and add grated carrot for natural sweetness.",
+      "hi": "Skip the chilli and add grated carrot for natural sweetness."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "upma",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Vegetable Semolina Upma",
+      "hi": "सब्ज़ी सूजी उपमा"
+    },
+    "desc": {
+      "en": "Roasted semolina simmered with carrots, peas and curry leaves.",
+      "hi": "Roasted semolina simmered with carrots, peas and curry leaves."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup semolina (rava)",
+      "1/4 cup mixed vegetables",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "2 cups water"
+    ],
+    "instructions": [
+      "Dry roast semolina until fragrant; set aside.",
+      "Temper mustard seeds and curry leaves in oil, add vegetables and cook briefly.",
+      "Add water, boil, then stir in semolina.",
+      "Cook on low heat, stirring, until thickened."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 5,
+      "iron_mg": 1.2,
+      "calcium_mg": 22,
+      "fiber_g": 2,
+      "vitaminC_mg": 7
+    },
+    "packingTip": {
+      "en": "Pack slightly moist — upma stiffens as it cools.",
+      "hi": "Pack slightly moist — upma stiffens as it cools."
+    },
+    "kidTip": {
+      "en": "A drizzle of coconut milk on top makes it creamier for picky eaters.",
+      "hi": "A drizzle of coconut milk on top makes it creamier for picky eaters."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "dhokla",
+    "emoji": "🟨",
+    "images": [],
+    "name": {
+      "en": "Steamed Besan Dhokla",
+      "hi": "स्टीम्ड बेसन ढोकला"
+    },
+    "desc": {
+      "en": "Light, spongy steamed gram-flour squares with a mustard tempering.",
+      "hi": "Light, spongy steamed gram-flour squares with a mustard tempering."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "1/2 tsp fruit salt (ENO)",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1 tsp sugar"
+    ],
+    "instructions": [
+      "Whisk besan with water, salt and sugar into a smooth batter.",
+      "Add fruit salt just before steaming; pour into a greased tray.",
+      "Steam 15–18 minutes until a toothpick comes out clean.",
+      "Temper mustard seeds and curry leaves in oil and pour on top.",
+      "Cool and cut into squares."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 6,
+      "iron_mg": 1.1,
+      "calcium_mg": 18,
+      "fiber_g": 2,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "Pack the tempering oil lightly drizzled, not pooled.",
+      "hi": "Pack the tempering oil lightly drizzled, not pooled."
+    },
+    "kidTip": {
+      "en": "Cut into fun shapes with a small cookie cutter for younger kids.",
+      "hi": "Cut into fun shapes with a small cookie cutter for younger kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-sandwich",
+    "emoji": "🥪",
+    "images": [],
+    "name": {
+      "en": "Mixed Vegetable Sandwich",
+      "hi": "मिक्स वेजिटेबल सैंडविच"
+    },
+    "desc": {
+      "en": "Whole wheat bread layered with cucumber, tomato, and a mild green chutney.",
+      "hi": "Whole wheat bread layered with cucumber, tomato, and a mild green chutney."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "2 slices whole wheat bread",
+      "2 tbsp mint-coriander chutney",
+      "Cucumber and tomato slices",
+      "1 tsp butter"
+    ],
+    "instructions": [
+      "Spread butter and chutney on the bread slices.",
+      "Layer cucumber and tomato evenly.",
+      "Press together and cut into triangles or fingers."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 5,
+      "iron_mg": 1,
+      "calcium_mg": 40,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Keep tomato slices thin and pat dry — the main cause of a soggy sandwich.",
+      "hi": "Keep tomato slices thin and pat dry — the main cause of a soggy sandwich."
+    },
+    "kidTip": {
+      "en": "Use a cookie cutter for a star or heart shaped sandwich.",
+      "hi": "Use a cookie cutter for a star or heart shaped sandwich."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "oats-pancake",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Banana Oats Pancake",
+      "hi": "केला ओट्स पैनकेक"
+    },
+    "desc": {
+      "en": "Naturally sweet pancakes made with mashed banana and rolled oats.",
+      "hi": "Naturally sweet pancakes made with mashed banana and rolled oats."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 ripe banana",
+      "1/2 cup rolled oats",
+      "2 tbsp milk (or plant milk)",
+      "Pinch of cinnamon",
+      "Ghee or oil for cooking"
+    ],
+    "instructions": [
+      "Blend oats into a coarse flour.",
+      "Mash banana and mix with oats flour, milk and cinnamon.",
+      "Cook small pancakes on a greased tawa until golden both sides.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 4,
+      "iron_mg": 1.3,
+      "calcium_mg": 45,
+      "fiber_g": 3,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Pack a few extra — these disappear fast at snack time.",
+      "hi": "Pack a few extra — these disappear fast at snack time."
+    },
+    "kidTip": {
+      "en": "No added sugar needed — ripe banana makes these plenty sweet.",
+      "hi": "No added sugar needed — ripe banana makes these plenty sweet."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "rajma-rice",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Mild Rajma Rice",
+      "hi": "हल्का राजमा चावल"
+    },
+    "desc": {
+      "en": "Kidney beans in a gentle tomato gravy, served over soft rice.",
+      "hi": "Kidney beans in a gentle tomato gravy, served over soft rice."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup boiled rajma",
+      "1/4 cup tomato puree",
+      "1 cup cooked rice",
+      "1/4 tsp cumin powder",
+      "1 tsp ghee or oil"
+    ],
+    "instructions": [
+      "Sauté tomato puree with cumin in ghee/oil until it thickens.",
+      "Add boiled rajma and simmer 10 minutes, mashing a few beans for body.",
+      "Pack rice and rajma in separate compartments."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 9,
+      "iron_mg": 2.6,
+      "calcium_mg": 50,
+      "fiber_g": 7,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Use a compartment box — rajma against rice all lunch period turns mushy.",
+      "hi": "Use a compartment box — rajma against rice all lunch period turns mushy."
+    },
+    "kidTip": {
+      "en": "Mash a portion of the beans smooth for younger kids.",
+      "hi": "Mash a portion of the beans smooth for younger kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "chickpea-salad",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Chickpea & Cucumber Salad",
+      "hi": "चना खीरा सलाद"
+    },
+    "desc": {
+      "en": "Protein-rich chickpeas tossed with cucumber, lemon and mint.",
+      "hi": "Protein-rich chickpeas tossed with cucumber, lemon and mint."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup boiled chickpeas",
+      "1/4 cup chopped cucumber",
+      "1 tbsp chopped mint",
+      "1/2 lime",
+      "Pinch of black salt"
+    ],
+    "instructions": [
+      "Toss chickpeas with cucumber and mint.",
+      "Add lime juice and black salt just before packing."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 8,
+      "iron_mg": 2.2,
+      "calcium_mg": 45,
+      "fiber_g": 6,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Pack lime separately so the salad stays crisp.",
+      "hi": "Pack lime separately so the salad stays crisp."
+    },
+    "kidTip": {
+      "en": "A spoon of grated cheese on top wins over reluctant salad eaters.",
+      "hi": "A spoon of grated cheese on top wins over reluctant salad eaters."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-khichdi",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Vegetable Khichdi",
+      "hi": "सब्ज़ी खिचड़ी"
+    },
+    "desc": {
+      "en": "One-pot comfort food of rice, moong dal and soft vegetables.",
+      "hi": "One-pot comfort food of rice, moong dal and soft vegetables."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup rice",
+      "1/4 cup split moong dal",
+      "1/4 cup mixed vegetables",
+      "Pinch of turmeric",
+      "1 tsp ghee or oil"
+    ],
+    "instructions": [
+      "Wash rice and dal together, add turmeric and vegetables.",
+      "Pressure cook with 3 cups water until soft and porridge-like.",
+      "Finish with a spoon of ghee/oil before packing."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 7,
+      "iron_mg": 1.9,
+      "calcium_mg": 28,
+      "fiber_g": 3,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Khichdi thickens as it cools — pack a small extra spoon of warm water.",
+      "hi": "Khichdi thickens as it cools — pack a small extra spoon of warm water."
+    },
+    "kidTip": {
+      "en": "Often the easiest recipe here for a child who's unwell or fussy.",
+      "hi": "Often the easiest recipe here for a child who's unwell or fussy."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "stuffed-paratha-paneer",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Paneer Stuffed Paratha",
+      "hi": "पनीर पराठा"
+    },
+    "desc": {
+      "en": "A protein-forward paratha stuffed with mildly spiced crumbled paneer.",
+      "hi": "A protein-forward paratha stuffed with mildly spiced crumbled paneer."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1/2 cup crumbled paneer",
+      "1/4 tsp garam masala",
+      "1 tbsp chopped coriander",
+      "Ghee for cooking"
+    ],
+    "instructions": [
+      "Mix paneer with garam masala and coriander for the filling.",
+      "Stuff into rolled dough discs, seal and roll out gently.",
+      "Cook on a hot tawa with ghee until golden on both sides."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein_g": 9,
+      "iron_mg": 1.6,
+      "calcium_mg": 110,
+      "fiber_g": 2,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Wrap warm in foil — keeps the paneer filling from drying out.",
+      "hi": "Wrap warm in foil — keeps the paneer filling from drying out."
+    },
+    "kidTip": {
+      "en": "Serve with a small side of ketchup for picky eaters.",
+      "hi": "Serve with a small side of ketchup for picky eaters."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "ragi-porridge",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Ragi (Finger Millet) Porridge",
+      "hi": "रागी दलिया"
+    },
+    "desc": {
+      "en": "A calcium-rich, naturally sweet porridge made from finger millet.",
+      "hi": "A calcium-rich, naturally sweet porridge made from finger millet."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "iron"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3 tbsp ragi flour",
+      "1 cup milk or water",
+      "1 tsp jaggery",
+      "Pinch of cardamom"
+    ],
+    "instructions": [
+      "Mix ragi flour with a little water into a smooth paste.",
+      "Bring milk to a gentle boil, then whisk in the paste.",
+      "Simmer 5–6 minutes, stirring often, until thickened.",
+      "Sweeten with jaggery and cardamom."
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 4,
+      "iron_mg": 2.5,
+      "calcium_mg": 160,
+      "fiber_g": 2,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "Use a wide-mouth thermal flask — keeps it warm and easy to spoon out.",
+      "hi": "Use a wide-mouth thermal flask — keeps it warm and easy to spoon out."
+    },
+    "kidTip": {
+      "en": "One of the few naturally calcium-rich options — great for growth years.",
+      "hi": "One of the few naturally calcium-rich options — great for growth years."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vermicelli-upma",
+    "emoji": "🍜",
+    "images": [],
+    "name": {
+      "en": "Vegetable Vermicelli Upma",
+      "hi": "सब्ज़ी सेवई उपमा"
+    },
+    "desc": {
+      "en": "Roasted vermicelli tossed with carrots, beans and a light tempering.",
+      "hi": "Roasted vermicelli tossed with carrots, beans and a light tempering."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup vermicelli",
+      "1/4 cup mixed vegetables",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1.5 cups water"
+    ],
+    "instructions": [
+      "Dry roast vermicelli until light golden; set aside.",
+      "Temper mustard seeds and curry leaves, add vegetables, cook briefly.",
+      "Add water, boil, stir in roasted vermicelli.",
+      "Cook covered on low heat until water is absorbed."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 4,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Let it cool fully before closing the lid to stop condensation.",
+      "hi": "Let it cool fully before closing the lid to stop condensation."
+    },
+    "kidTip": {
+      "en": "Thinner vermicelli feels less 'noodle-like' for texture-picky kids.",
+      "hi": "Thinner vermicelli feels less 'noodle-like' for texture-picky kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "spinach-paratha",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Spinach (Palak) Paratha",
+      "hi": "पालक पराठा"
+    },
+    "desc": {
+      "en": "Vibrant green flatbread with pureed spinach folded into the dough.",
+      "hi": "Vibrant green flatbread with pureed spinach folded into the dough."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "immunity"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1/2 cup blanched spinach puree",
+      "Pinch of ajwain",
+      "Ghee or oil for cooking"
+    ],
+    "instructions": [
+      "Knead flour with spinach puree and ajwain into a soft dough.",
+      "Roll into discs and cook on a hot tawa with ghee/oil until golden."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6,
+      "iron_mg": 3,
+      "calcium_mg": 60,
+      "fiber_g": 3,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Pack with a small side of yogurt or pickle for kids who want a dip.",
+      "hi": "Pack with a small side of yogurt or pickle for kids who want a dip."
+    },
+    "kidTip": {
+      "en": "The green color is easiest to introduce alongside a familiar side.",
+      "hi": "The green color is easiest to introduce alongside a familiar side."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "fruit-nut-mix",
+    "emoji": "🍎",
+    "images": [],
+    "name": {
+      "en": "Fruit & Nut Snack Box",
+      "hi": "फल और मेवा स्नैक बॉक्स"
+    },
+    "desc": {
+      "en": "A no-cook mix of seasonal fruit, almonds and raisins.",
+      "hi": "A no-cook mix of seasonal fruit, almonds and raisins."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "energy"
+    ],
+    "allergens": [
+      "nuts"
+    ],
+    "ingredients": [
+      "1/2 cup chopped seasonal fruit",
+      "5 almonds",
+      "1 tbsp raisins"
+    ],
+    "instructions": [
+      "Chop fruit into bite-size pieces just before packing to avoid browning.",
+      "Add almonds and raisins in a separate small compartment."
+    ],
+    "nutrition": {
+      "calories": 130,
+      "protein_g": 3,
+      "iron_mg": 0.9,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "A few drops of lime on apple or banana slices keep them from browning.",
+      "hi": "A few drops of lime on apple or banana slices keep them from browning."
+    },
+    "kidTip": {
+      "en": "Great zero-cook option for rushed mornings.",
+      "hi": "Great zero-cook option for rushed mornings."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-frankie",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Vegetable Frankie",
+      "hi": "वेजिटेबल फ्रैंकी"
+    },
+    "desc": {
+      "en": "A soft roti rolled with spiced potato-pea filling.",
+      "hi": "A soft roti rolled with spiced potato-pea filling."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "2 rotis",
+      "1 boiled potato, mashed",
+      "2 tbsp green peas",
+      "1/4 tsp mild chaat masala",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Sauté potato and peas with a pinch of chaat masala.",
+      "Warm the roti, spread the filling and roll tightly.",
+      "Wrap in parchment to hold its shape."
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein_g": 5,
+      "iron_mg": 1.3,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Toast the roti lightly before rolling — holds up better against moisture.",
+      "hi": "Toast the roti lightly before rolling — holds up better against moisture."
+    },
+    "kidTip": {
+      "en": "Cut in half so it's easier for smaller hands to hold.",
+      "hi": "Cut in half so it's easier for smaller hands to hold."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "sooji-halwa",
+    "emoji": "🍮",
+    "images": [],
+    "name": {
+      "en": "Sooji Halwa (Occasional Treat)",
+      "hi": "सूजी हलवा (कभी-कभी)"
+    },
+    "desc": {
+      "en": "A warm, ghee-roasted semolina sweet — best kept for special mornings.",
+      "hi": "A warm, ghee-roasted semolina sweet — best kept for special mornings."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup semolina (sooji)",
+      "2 tbsp ghee",
+      "1/4 cup jaggery or sugar",
+      "1 cup water",
+      "A few cashews"
+    ],
+    "instructions": [
+      "Roast semolina in ghee until golden and fragrant.",
+      "Add hot water carefully and stir to avoid lumps.",
+      "Stir in jaggery, cook until it thickens.",
+      "Garnish with roasted cashews."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 3,
+      "iron_mg": 0.8,
+      "calcium_mg": 15,
+      "fiber_g": 1,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "Keep this an occasional pack rather than daily, given the added sugar.",
+      "hi": "Keep this an occasional pack rather than daily, given the added sugar."
+    },
+    "kidTip": {
+      "en": "A nice reward-day recipe, e.g. after an exam.",
+      "hi": "A nice reward-day recipe, e.g. after an exam."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-rice",
+    "emoji": "🥥",
+    "images": [],
+    "name": {
+      "en": "South Indian Coconut Rice",
+      "hi": "नारियल चावल"
+    },
+    "desc": {
+      "en": "Fragrant rice tossed with fresh coconut, curry leaves and a light tempering.",
+      "hi": "Fragrant rice tossed with fresh coconut, curry leaves and a light tempering."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice",
+      "1/4 cup grated fresh coconut",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1 dried red chilli (optional)"
+    ],
+    "instructions": [
+      "Temper mustard seeds, curry leaves and chilli in oil.",
+      "Add grated coconut and sauté briefly.",
+      "Fold in cooked rice and mix until evenly coated."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 4,
+      "iron_mg": 1.1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "Best packed the same morning — fresh coconut doesn't keep well overnight.",
+      "hi": "Best packed the same morning — fresh coconut doesn't keep well overnight."
+    },
+    "kidTip": {
+      "en": "Leave the chilli out entirely for younger kids.",
+      "hi": "Leave the chilli out entirely for younger kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-bhurji",
+    "emoji": "🍳",
+    "images": [],
+    "name": {
+      "en": "Soft Egg Bhurji",
+      "hi": "अंडा भुर्जी"
+    },
+    "desc": {
+      "en": "Scrambled eggs cooked soft with onion, tomato and mild spice.",
+      "hi": "Scrambled eggs cooked soft with onion, tomato and mild spice."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "2 eggs",
+      "2 tbsp chopped onion",
+      "2 tbsp chopped tomato",
+      "Pinch of turmeric",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Sauté onion and tomato in oil until soft.",
+      "Add turmeric, then pour in beaten eggs.",
+      "Scramble on low heat until just set; don't overcook."
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein_g": 11,
+      "iron_mg": 1.2,
+      "calcium_mg": 40,
+      "fiber_g": 0.5,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Pack slightly undercooked — residual heat finishes it without drying out.",
+      "hi": "Pack slightly undercooked — residual heat finishes it without drying out."
+    },
+    "kidTip": {
+      "en": "Great iron-and-protein combo kids usually accept easily.",
+      "hi": "Great iron-and-protein combo kids usually accept easily."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-sandwich",
+    "emoji": "🥪",
+    "images": [],
+    "name": {
+      "en": "Egg Salad Sandwich",
+      "hi": "अंडा सैंडविच"
+    },
+    "desc": {
+      "en": "Mashed boiled egg with a touch of mayo between soft bread.",
+      "hi": "Mashed boiled egg with a touch of mayo between soft bread."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [
+      "egg",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 boiled eggs, mashed",
+      "1 tbsp mayo or curd",
+      "2 slices bread",
+      "Pinch of pepper"
+    ],
+    "instructions": [
+      "Mash eggs with mayo/curd and a pinch of pepper.",
+      "Spread between bread slices and cut into fingers."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 10,
+      "iron_mg": 1.1,
+      "calcium_mg": 45,
+      "fiber_g": 1,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Keep chilled until packing — egg salad is best eaten within a few hours.",
+      "hi": "Keep chilled until packing — egg salad is best eaten within a few hours."
+    },
+    "kidTip": {
+      "en": "Cut into fun shapes for younger kids.",
+      "hi": "Cut into fun shapes for younger kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-omelette-roll",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Vegetable Omelette Roll",
+      "hi": "वेज ऑमलेट रोल"
+    },
+    "desc": {
+      "en": "A thin vegetable omelette rolled up like a wrap.",
+      "hi": "A thin vegetable omelette rolled up like a wrap."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "2 eggs",
+      "2 tbsp finely chopped vegetables",
+      "Pinch of salt & pepper",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Beat eggs with vegetables, salt and pepper.",
+      "Cook thin on a greased pan until set on both sides.",
+      "Roll up while warm and slice."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 11,
+      "iron_mg": 1.1,
+      "calcium_mg": 35,
+      "fiber_g": 1,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Slice into pinwheels — easier for small hands than a whole roll.",
+      "hi": "Slice into pinwheels — easier for small hands than a whole roll."
+    },
+    "kidTip": {
+      "en": "A good way to sneak in finely chopped capsicum or carrot.",
+      "hi": "A good way to sneak in finely chopped capsicum or carrot."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-paratha",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Egg Stuffed Paratha",
+      "hi": "अंडा पराठा"
+    },
+    "desc": {
+      "en": "Whole wheat paratha with a lightly spiced scrambled egg filling.",
+      "hi": "Whole wheat paratha with a lightly spiced scrambled egg filling."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [
+      "egg",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "2 eggs, scrambled",
+      "Pinch of pepper",
+      "Ghee for cooking"
+    ],
+    "instructions": [
+      "Knead a simple dough and roll into a disc.",
+      "Spread scrambled egg over half, fold and seal.",
+      "Cook on a hot tawa with ghee until golden."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein_g": 12,
+      "iron_mg": 1.6,
+      "calcium_mg": 40,
+      "fiber_g": 2,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "Wrap warm in foil to keep it soft.",
+      "hi": "Wrap warm in foil to keep it soft."
+    },
+    "kidTip": {
+      "en": "A filling option before a long school day.",
+      "hi": "A filling option before a long school day."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "french-toast",
+    "emoji": "🍞",
+    "images": [],
+    "name": {
+      "en": "Banana French Toast",
+      "hi": "केला फ्रेंच टोस्ट"
+    },
+    "desc": {
+      "en": "Bread dipped in egg-banana batter and pan-toasted golden.",
+      "hi": "Bread dipped in egg-banana batter and pan-toasted golden."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [
+      "egg",
+      "gluten",
+      "dairy"
+    ],
+    "ingredients": [
+      "2 slices bread",
+      "1 egg",
+      "1/2 banana, mashed",
+      "Splash of milk",
+      "Ghee for cooking"
+    ],
+    "instructions": [
+      "Whisk egg, mashed banana and milk together.",
+      "Dip bread slices and cook on a greased pan until golden both sides."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 8,
+      "iron_mg": 1,
+      "calcium_mg": 50,
+      "fiber_g": 1,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Cut into fingers before packing — easier to eat cold.",
+      "hi": "Cut into fingers before packing — easier to eat cold."
+    },
+    "kidTip": {
+      "en": "Naturally sweet from banana, so no syrup needed.",
+      "hi": "Naturally sweet from banana, so no syrup needed."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-dosa",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Egg Dosa",
+      "hi": "एग्ग दोसा"
+    },
+    "desc": {
+      "en": "A crisp dosa topped with a thin layer of beaten egg.",
+      "hi": "A crisp dosa topped with a thin layer of beaten egg."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "1 egg",
+      "Pinch of pepper",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Spread dosa batter thin on a hot tawa.",
+      "Pour beaten egg over the top and spread gently.",
+      "Cook until egg sets and base turns golden; fold and cut."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 9,
+      "iron_mg": 1,
+      "calcium_mg": 25,
+      "fiber_g": 1,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Fold into quarters — travels well and is easy to eat with fingers.",
+      "hi": "Fold into quarters — travels well and is easy to eat with fingers."
+    },
+    "kidTip": {
+      "en": "A great way to introduce egg to dosa-loving kids.",
+      "hi": "A great way to introduce egg to dosa-loving kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-muffins",
+    "emoji": "🧁",
+    "images": [],
+    "name": {
+      "en": "Mini Vegetable Egg Muffins",
+      "hi": "मिनी एग मफिन"
+    },
+    "desc": {
+      "en": "Baked egg cups with finely chopped vegetables — great finger food.",
+      "hi": "Baked egg cups with finely chopped vegetables — great finger food."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "3 tbsp finely chopped mixed vegetables",
+      "2 tbsp grated cheese",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Whisk eggs with vegetables, cheese and salt.",
+      "Pour into a greased mini muffin tray.",
+      "Bake at 180°C for 12–15 minutes until set."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 12,
+      "iron_mg": 1,
+      "calcium_mg": 80,
+      "fiber_g": 1,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Make a batch on Sunday — these keep well for a few days chilled.",
+      "hi": "Make a batch on Sunday — these keep well for a few days chilled."
+    },
+    "kidTip": {
+      "en": "Bite-sized and mess-free, ideal for smaller hands.",
+      "hi": "Bite-sized and mess-free, ideal for smaller hands."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-pizza",
+    "emoji": "🍕",
+    "images": [],
+    "name": {
+      "en": "Mini Veggie Pizza",
+      "hi": "मिनी वेज पिज़्ज़ा"
+    },
+    "desc": {
+      "en": "English muffin or pita topped with sauce, cheese and veggies.",
+      "hi": "English muffin or pita topped with sauce, cheese and veggies."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 English muffin or pita, halved",
+      "2 tbsp tomato sauce",
+      "1/4 cup grated cheese",
+      "2 tbsp chopped veggies"
+    ],
+    "instructions": [
+      "Spread sauce on muffin halves.",
+      "Top with cheese and vegetables.",
+      "Bake or toast until cheese melts."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 8,
+      "iron_mg": 1,
+      "calcium_mg": 150,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing so cheese sets and doesn't smear.",
+      "hi": "Let it cool slightly before packing so cheese sets and doesn't smear."
+    },
+    "kidTip": {
+      "en": "Let kids pick their own toppings for extra buy-in.",
+      "hi": "Let kids pick their own toppings for extra buy-in."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "mac-cheese",
+    "emoji": "🧀",
+    "images": [],
+    "name": {
+      "en": "Mini Mac and Cheese",
+      "hi": "मिनी मैक एंड चीज़"
+    },
+    "desc": {
+      "en": "Small pasta shapes in a simple, mild cheese sauce.",
+      "hi": "Small pasta shapes in a simple, mild cheese sauce."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup small pasta",
+      "3/4 cup milk",
+      "1/2 cup grated cheese",
+      "1 tsp butter",
+      "1 tsp flour"
+    ],
+    "instructions": [
+      "Boil pasta until soft; drain.",
+      "Melt butter, stir in flour, then milk to make a smooth sauce.",
+      "Add cheese, stir until melted, then fold in pasta."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 9,
+      "iron_mg": 0.8,
+      "calcium_mg": 180,
+      "fiber_g": 2,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "Pack in a thermal container — it's best eaten warm.",
+      "hi": "Pack in a thermal container — it's best eaten warm."
+    },
+    "kidTip": {
+      "en": "A reliable favorite for picky eaters.",
+      "hi": "A reliable favorite for picky eaters."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-pasta",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Simple Vegetable Pasta",
+      "hi": "सिंपल वेज पास्ता"
+    },
+    "desc": {
+      "en": "Pasta tossed with olive oil, garlic and finely chopped vegetables.",
+      "hi": "Pasta tossed with olive oil, garlic and finely chopped vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup pasta",
+      "1/4 cup chopped mixed vegetables",
+      "1 tbsp olive oil",
+      "1 clove garlic, minced",
+      "Pinch of oregano"
+    ],
+    "instructions": [
+      "Boil pasta until al dente; drain, reserving a splash of water.",
+      "Sauté garlic and vegetables in olive oil.",
+      "Toss pasta through with oregano and a splash of pasta water."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 6,
+      "iron_mg": 1.2,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "A drizzle of olive oil after packing keeps the pasta from sticking.",
+      "hi": "A drizzle of olive oil after packing keeps the pasta from sticking."
+    },
+    "kidTip": {
+      "en": "Small pasta shapes (shells, fusilli) are easiest for little hands.",
+      "hi": "Small pasta shapes (shells, fusilli) are easiest for little hands."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "grilled-cheese",
+    "emoji": "🥪",
+    "images": [],
+    "name": {
+      "en": "Grilled Cheese Sandwich",
+      "hi": "ग्रिल्ड चीज़ सैंडविच"
+    },
+    "desc": {
+      "en": "Classic buttery, melty cheese sandwich, golden on the outside.",
+      "hi": "Classic buttery, melty cheese sandwich, golden on the outside."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 slices bread",
+      "1 slice cheese",
+      "1 tsp butter"
+    ],
+    "instructions": [
+      "Butter the outside of both bread slices.",
+      "Place cheese between them.",
+      "Cook on a pan until golden and cheese melts, flipping once."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 9,
+      "iron_mg": 0.6,
+      "calcium_mg": 190,
+      "fiber_g": 1,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "Wrap in foil while warm — helps it stay together and stay warm longer.",
+      "hi": "Wrap in foil while warm — helps it stay together and stay warm longer."
+    },
+    "kidTip": {
+      "en": "Cut into soldiers for dipping into ketchup or soup.",
+      "hi": "Cut into soldiers for dipping into ketchup or soup."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-soup",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Mild Vegetable Soup",
+      "hi": "मिल्ड वेजिटेबल सूप"
+    },
+    "desc": {
+      "en": "A comforting blended soup of carrots, potato and peas.",
+      "hi": "A comforting blended soup of carrots, potato and peas."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 carrot, chopped",
+      "1 small potato, chopped",
+      "1/4 cup peas",
+      "2 cups water or vegetable stock",
+      "Pinch of pepper"
+    ],
+    "instructions": [
+      "Boil all vegetables until very soft.",
+      "Blend until smooth, adding water to reach a good consistency.",
+      "Season lightly and simmer 5 minutes."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 3,
+      "iron_mg": 1,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Use an insulated flask to keep it warm until lunchtime.",
+      "hi": "Use an insulated flask to keep it warm until lunchtime."
+    },
+    "kidTip": {
+      "en": "A gentle way to get in vegetables kids might otherwise avoid.",
+      "hi": "A gentle way to get in vegetables kids might otherwise avoid."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "corn-cheese-toast",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Corn Cheese Toast",
+      "hi": "कॉर्न चीज़ टोस्ट"
+    },
+    "desc": {
+      "en": "Toasted bread topped with sweet corn and melted cheese.",
+      "hi": "Toasted bread topped with sweet corn and melted cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 slices bread",
+      "1/4 cup boiled sweet corn",
+      "2 tbsp grated cheese",
+      "Pinch of pepper"
+    ],
+    "instructions": [
+      "Mix corn with cheese and pepper.",
+      "Spread onto bread slices.",
+      "Toast or bake until cheese melts and bread is golden."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 7,
+      "iron_mg": 0.7,
+      "calcium_mg": 140,
+      "fiber_g": 2,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Toast just until cheese melts — pack once fully cooled to avoid sogginess.",
+      "hi": "Toast just until cheese melts — pack once fully cooled to avoid sogginess."
+    },
+    "kidTip": {
+      "en": "The natural sweetness of corn makes this an easy win.",
+      "hi": "The natural sweetness of corn makes this an easy win."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-quesadilla",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Vegetable Cheese Quesadilla",
+      "hi": "वेज चीज़ क्वेसाडिया"
+    },
+    "desc": {
+      "en": "A folded tortilla with melted cheese and soft vegetables.",
+      "hi": "A folded tortilla with melted cheese and soft vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 tortilla or roti",
+      "1/4 cup grated cheese",
+      "2 tbsp chopped bell pepper",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Sprinkle cheese and vegetables over half the tortilla.",
+      "Fold over and cook on a pan until cheese melts and both sides are golden.",
+      "Cut into wedges."
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein_g": 9,
+      "iron_mg": 1,
+      "calcium_mg": 160,
+      "fiber_g": 2,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Wrap in foil — the cheese firms up and holds the wedges together.",
+      "hi": "Wrap in foil — the cheese firms up and holds the wedges together."
+    },
+    "kidTip": {
+      "en": "Cut into small triangles, kid-favorite finger food.",
+      "hi": "Cut into small triangles, kid-favorite finger food."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "hummus-veggie-sticks",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Hummus with Veggie Sticks",
+      "hi": "हम्मस सब्ज़ी स्टिक्स"
+    },
+    "desc": {
+      "en": "Creamy chickpea hummus served with crunchy carrot and cucumber.",
+      "hi": "Creamy chickpea hummus served with crunchy carrot and cucumber."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup boiled chickpeas",
+      "1 tbsp tahini or peanut butter",
+      "1 tsp lime juice",
+      "Carrot and cucumber sticks"
+    ],
+    "instructions": [
+      "Blend chickpeas, tahini and lime juice with a splash of water until smooth.",
+      "Pack hummus in a small container with veggie sticks on the side."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 6,
+      "iron_mg": 1.5,
+      "calcium_mg": 30,
+      "fiber_g": 5,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Keep the dip and sticks separate until eating for the best crunch.",
+      "hi": "Keep the dip and sticks separate until eating for the best crunch."
+    },
+    "kidTip": {
+      "en": "Cut sticks uniformly — kids eat what's easy to grab.",
+      "hi": "Cut sticks uniformly — kids eat what's easy to grab."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "fruit-yogurt-parfait",
+    "emoji": "🍓",
+    "images": [],
+    "name": {
+      "en": "Fruit & Yogurt Parfait",
+      "hi": "फ्रूट योगर्ट पार्फे"
+    },
+    "desc": {
+      "en": "Layers of curd, fruit and a light granola crunch.",
+      "hi": "Layers of curd, fruit and a light granola crunch."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup plain yogurt",
+      "1/4 cup chopped fruit",
+      "2 tbsp granola or crushed cereal",
+      "1 tsp honey (optional, not for under 1 year)"
+    ],
+    "instructions": [
+      "Layer yogurt, fruit and granola in a small jar.",
+      "Repeat layers and pack with a lid."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 6,
+      "iron_mg": 0.5,
+      "calcium_mg": 150,
+      "fiber_g": 2,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Pack granola separately and add just before eating to keep it crunchy.",
+      "hi": "Pack granola separately and add just before eating to keep it crunchy."
+    },
+    "kidTip": {
+      "en": "A colorful jar makes this feel like a treat, not 'just yogurt'.",
+      "hi": "A colorful jar makes this feel like a treat, not 'just yogurt'."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "peanut-banana-roll",
+    "emoji": "🍌",
+    "images": [],
+    "name": {
+      "en": "Peanut Butter Banana Roll",
+      "hi": "पीनट बटर बनाना रोल"
+    },
+    "desc": {
+      "en": "Roti spread with peanut butter, rolled around a banana.",
+      "hi": "Roti spread with peanut butter, rolled around a banana."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [
+      "nuts"
+    ],
+    "ingredients": [
+      "1 roti or soft tortilla",
+      "1 tbsp peanut butter",
+      "1/2 banana"
+    ],
+    "instructions": [
+      "Spread peanut butter over the roti.",
+      "Place banana at one edge and roll up tightly.",
+      "Slice into rounds."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 6,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 7
+    },
+    "packingTip": {
+      "en": "Slice just before packing so the banana doesn't brown.",
+      "hi": "Slice just before packing so the banana doesn't brown."
+    },
+    "kidTip": {
+      "en": "A 5-minute recipe for the most rushed mornings.",
+      "hi": "A 5-minute recipe for the most rushed mornings."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-muffins-veg",
+    "emoji": "🧁",
+    "images": [],
+    "name": {
+      "en": "Savory Vegetable Mini Muffins",
+      "hi": "सेवरी वेज मफिन"
+    },
+    "desc": {
+      "en": "Soft baked muffins studded with grated carrot and corn.",
+      "hi": "Soft baked muffins studded with grated carrot and corn."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy",
+      "egg"
+    ],
+    "ingredients": [
+      "1 cup flour",
+      "1 egg",
+      "1/4 cup grated carrot",
+      "2 tbsp corn",
+      "1/4 cup milk",
+      "1 tsp baking powder"
+    ],
+    "instructions": [
+      "Mix wet and dry ingredients separately, then combine gently.",
+      "Fold in carrot and corn.",
+      "Spoon into a greased mini muffin tray and bake at 180°C for 15 minutes."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 6,
+      "iron_mg": 1,
+      "calcium_mg": 60,
+      "fiber_g": 2,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Bake a batch and freeze extras — thaw one the night before.",
+      "hi": "Bake a batch and freeze extras — thaw one the night before."
+    },
+    "kidTip": {
+      "en": "Mini size means no cutting needed, easy for small hands.",
+      "hi": "Mini size means no cutting needed, easy for small hands."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "pasta-salad",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Cold Vegetable Pasta Salad",
+      "hi": "कोल्ड वेज पास्ता सलाद"
+    },
+    "desc": {
+      "en": "Pasta tossed with olive oil, corn, and cherry tomatoes — served cold.",
+      "hi": "Pasta tossed with olive oil, corn, and cherry tomatoes — served cold."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup pasta",
+      "1/4 cup corn",
+      "4 cherry tomatoes, halved",
+      "1 tbsp olive oil",
+      "Pinch of salt and pepper"
+    ],
+    "instructions": [
+      "Boil pasta until soft; drain and cool.",
+      "Toss with corn, tomatoes, olive oil, salt and pepper."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6,
+      "iron_mg": 1,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 14
+    },
+    "packingTip": {
+      "en": "This one's meant to be packed cold — perfect for a warm day.",
+      "hi": "This one's meant to be packed cold — perfect for a warm day."
+    },
+    "kidTip": {
+      "en": "Halve the tomatoes small enough that they aren't a choking risk.",
+      "hi": "Halve the tomatoes small enough that they aren't a choking risk."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "baked-beans-toast",
+    "emoji": "🍞",
+    "images": [],
+    "name": {
+      "en": "Baked Beans on Toast",
+      "hi": "बेक्ड बीन्स टोस्ट"
+    },
+    "desc": {
+      "en": "Warm beans in a mild tomato sauce over toasted bread.",
+      "hi": "Warm beans in a mild tomato sauce over toasted bread."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup baked beans (low sugar)",
+      "1 slice toasted bread"
+    ],
+    "instructions": [
+      "Warm the beans gently on the stove.",
+      "Spoon over toasted bread just before packing."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 7,
+      "iron_mg": 1.8,
+      "calcium_mg": 40,
+      "fiber_g": 6,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Pack beans and toast separately, combine at lunchtime to avoid sogginess.",
+      "hi": "Pack beans and toast separately, combine at lunchtime to avoid sogginess."
+    },
+    "kidTip": {
+      "en": "Choose a low-sugar, low-salt canned beans variety for kids.",
+      "hi": "Choose a low-sugar, low-salt canned beans variety for kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-wrap",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Rainbow Vegetable Wrap",
+      "hi": "रेनबो वेज रैप"
+    },
+    "desc": {
+      "en": "A soft tortilla rolled with colorful vegetables and hummus.",
+      "hi": "A soft tortilla rolled with colorful vegetables and hummus."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 tortilla",
+      "2 tbsp hummus",
+      "Grated carrot, cucumber, bell pepper"
+    ],
+    "instructions": [
+      "Spread hummus over the tortilla.",
+      "Layer grated vegetables along one edge.",
+      "Roll tightly and slice in half."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 5,
+      "iron_mg": 1.2,
+      "calcium_mg": 35,
+      "fiber_g": 4,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Wrap tightly in cling film or parchment to hold its shape.",
+      "hi": "Wrap tightly in cling film or parchment to hold its shape."
+    },
+    "kidTip": {
+      "en": "The bright colors make this an easy sell for veggie-resistant kids.",
+      "hi": "The bright colors make this an easy sell for veggie-resistant kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "potato-wedges",
+    "emoji": "🥔",
+    "images": [],
+    "name": {
+      "en": "Baked Potato Wedges",
+      "hi": "बेक्ड पोटैटो वेजेज़"
+    },
+    "desc": {
+      "en": "Oven-baked potato wedges, lightly seasoned — no deep frying.",
+      "hi": "Oven-baked potato wedges, lightly seasoned — no deep frying."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 medium potatoes, cut into wedges",
+      "1 tbsp oil",
+      "Pinch of paprika and salt"
+    ],
+    "instructions": [
+      "Toss potato wedges with oil, paprika and salt.",
+      "Bake at 200°C for 20–25 minutes, turning once, until golden."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 4,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Pack once fully cooled so they don't steam and go soft in the box.",
+      "hi": "Pack once fully cooled so they don't steam and go soft in the box."
+    },
+    "kidTip": {
+      "en": "A ketchup side always makes this feel extra special.",
+      "hi": "A ketchup side always makes this feel extra special."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "corn-cheese-balls",
+    "emoji": "🧀",
+    "images": [],
+    "name": {
+      "en": "Corn Cheese Balls",
+      "hi": "कॉर्न चीज़ बॉल्स"
+    },
+    "desc": {
+      "en": "Pan-fried corn and cheese bites, crisp outside and soft within.",
+      "hi": "Pan-fried corn and cheese bites, crisp outside and soft within."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup boiled corn, mashed slightly",
+      "1/4 cup grated cheese",
+      "2 tbsp breadcrumbs",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Mix corn, cheese and breadcrumbs into a thick mixture.",
+      "Shape into small balls.",
+      "Pan-fry in a little oil, turning until golden all over."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 7,
+      "iron_mg": 0.8,
+      "calcium_mg": 130,
+      "fiber_g": 2,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Cook these in a well-greased pan rather than deep frying for a lighter version.",
+      "hi": "Cook these in a well-greased pan rather than deep frying for a lighter version."
+    },
+    "kidTip": {
+      "en": "Bite-sized and naturally sweet from the corn.",
+      "hi": "Bite-sized and naturally sweet from the corn."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veggie-skewers",
+    "emoji": "🍢",
+    "images": [],
+    "name": {
+      "en": "Cheese & Veggie Skewers",
+      "hi": "चीज़ वेजी स्क्यूवर"
+    },
+    "desc": {
+      "en": "Cheese cubes and soft vegetables on a small stick — fun to eat.",
+      "hi": "Cheese cubes and soft vegetables on a small stick — fun to eat."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "4 cheese cubes",
+      "4 cherry tomatoes",
+      "4 cucumber chunks",
+      "Small skewer sticks"
+    ],
+    "instructions": [
+      "Thread cheese and vegetables alternately onto skewers."
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein_g": 6,
+      "iron_mg": 0.5,
+      "calcium_mg": 140,
+      "fiber_g": 1,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Use blunt-tipped skewers or toothpicks with the sharp end covered.",
+      "hi": "Use blunt-tipped skewers or toothpicks with the sharp end covered."
+    },
+    "kidTip": {
+      "en": "Kids love food on a stick — same ingredients, more fun.",
+      "hi": "Kids love food on a stick — same ingredients, more fun."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "oatmeal-fruit",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Warm Oatmeal with Fruit",
+      "hi": "फ्रूट ओटमील"
+    },
+    "desc": {
+      "en": "Creamy oats cooked with milk and topped with fresh fruit.",
+      "hi": "Creamy oats cooked with milk and topped with fresh fruit."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup rolled oats",
+      "1 cup milk",
+      "1/4 cup chopped fruit",
+      "Pinch of cinnamon"
+    ],
+    "instructions": [
+      "Simmer oats in milk for 5–7 minutes until creamy.",
+      "Top with chopped fruit and a pinch of cinnamon."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 7,
+      "iron_mg": 1,
+      "calcium_mg": 180,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "A wide-mouth flask keeps this warm until snack time.",
+      "hi": "A wide-mouth flask keeps this warm until snack time."
+    },
+    "kidTip": {
+      "en": "Vary the fruit topping through the week to keep it interesting.",
+      "hi": "Vary the fruit topping through the week to keep it interesting."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "granola-bar",
+    "emoji": "🍫",
+    "images": [],
+    "name": {
+      "en": "No-Bake Granola Bars",
+      "hi": "नो-बेक ग्रेनोला बार"
+    },
+    "desc": {
+      "en": "Oats, nuts and dates pressed into a chewy homemade bar.",
+      "hi": "Oats, nuts and dates pressed into a chewy homemade bar."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "nuts"
+    ],
+    "ingredients": [
+      "1 cup rolled oats",
+      "1/4 cup chopped dates",
+      "2 tbsp peanut butter",
+      "2 tbsp chopped nuts"
+    ],
+    "instructions": [
+      "Warm peanut butter slightly to loosen it.",
+      "Mix with oats, dates and nuts until it holds together.",
+      "Press firmly into a tray, chill, then cut into bars."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 5,
+      "iron_mg": 1.2,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "These keep well for several days — make a batch on the weekend.",
+      "hi": "These keep well for several days — make a batch on the weekend."
+    },
+    "kidTip": {
+      "en": "Chewy rather than crunchy, easier on smaller teeth.",
+      "hi": "Chewy rather than crunchy, easier on smaller teeth."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "smoothie-bowl",
+    "emoji": "🍇",
+    "images": [],
+    "name": {
+      "en": "Fruit Smoothie Bowl",
+      "hi": "फ्रूट स्मूदी बाउल"
+    },
+    "desc": {
+      "en": "A thick fruit smoothie eaten with a spoon, topped with fruit.",
+      "hi": "A thick fruit smoothie eaten with a spoon, topped with fruit."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 frozen banana",
+      "1/2 cup berries or mango",
+      "2 tbsp yogurt or plant yogurt",
+      "Toppings: fruit, seeds"
+    ],
+    "instructions": [
+      "Blend banana, fruit and yogurt until thick.",
+      "Pour into a small container and top with extra fruit."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 4,
+      "iron_mg": 0.6,
+      "calcium_mg": 60,
+      "fiber_g": 3,
+      "vitaminC_mg": 30
+    },
+    "packingTip": {
+      "en": "Pack in an insulated container — best kept cold until eaten.",
+      "hi": "Pack in an insulated container — best kept cold until eaten."
+    },
+    "kidTip": {
+      "en": "A fun way to make fruit feel like dessert.",
+      "hi": "A fun way to make fruit feel like dessert."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "waffles",
+    "emoji": "🧇",
+    "images": [],
+    "name": {
+      "en": "Simple Whole Wheat Waffles",
+      "hi": "व्होल व्हीट वॉफल्स"
+    },
+    "desc": {
+      "en": "Lightly sweet waffles made with whole wheat flour.",
+      "hi": "Lightly sweet waffles made with whole wheat flour."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "gluten",
+      "egg",
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1 egg",
+      "3/4 cup milk",
+      "1 tsp baking powder",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Whisk all ingredients into a smooth batter.",
+      "Cook in a greased waffle iron until golden.",
+      "Cool before packing to keep them from going soggy."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 7,
+      "iron_mg": 1.2,
+      "calcium_mg": 90,
+      "fiber_g": 2,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Pack a small container of fruit compote for dipping instead of syrup.",
+      "hi": "Pack a small container of fruit compote for dipping instead of syrup."
+    },
+    "kidTip": {
+      "en": "Cut into quarters — familiar shape but easier to hold.",
+      "hi": "Cut into quarters — familiar shape but easier to hold."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-quiche",
+    "emoji": "🥧",
+    "images": [],
+    "name": {
+      "en": "Mini Vegetable Quiche",
+      "hi": "मिनी वेज क्विच"
+    },
+    "desc": {
+      "en": "A crustless baked egg-and-vegetable bite, soft and savoury.",
+      "hi": "A crustless baked egg-and-vegetable bite, soft and savoury."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "egg",
+      "dairy"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "1/4 cup milk",
+      "1/4 cup chopped vegetables",
+      "2 tbsp grated cheese"
+    ],
+    "instructions": [
+      "Whisk eggs, milk and cheese together.",
+      "Stir in vegetables.",
+      "Pour into greased muffin cups and bake at 180°C for 15–18 minutes."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 11,
+      "iron_mg": 1,
+      "calcium_mg": 110,
+      "fiber_g": 1,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Bake a tray on the weekend — reheats gently well through the week.",
+      "hi": "Bake a tray on the weekend — reheats gently well through the week."
+    },
+    "kidTip": {
+      "en": "Crustless keeps it light and simple to eat cold.",
+      "hi": "Crustless keeps it light and simple to eat cold."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-veg-burger",
+    "emoji": "🍔",
+    "images": [],
+    "name": {
+      "en": "Mini Vegetable Patty Burger",
+      "hi": "मिनी वेज बर्गर"
+    },
+    "desc": {
+      "en": "A soft vegetable-lentil patty in a small bun.",
+      "hi": "A soft vegetable-lentil patty in a small bun."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup boiled mixed vegetables and lentils, mashed",
+      "2 tbsp breadcrumbs",
+      "1 small bun",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Mix mashed vegetables and lentils with breadcrumbs; shape into a patty.",
+      "Pan-fry in a little oil until golden on both sides.",
+      "Place in the bun with a leaf of lettuce if liked."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 8,
+      "iron_mg": 1.8,
+      "calcium_mg": 40,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Wrap snugly in parchment to hold the bun together.",
+      "hi": "Wrap snugly in parchment to hold the bun together."
+    },
+    "kidTip": {
+      "en": "Cut in half for younger kids to manage more easily.",
+      "hi": "Cut in half for younger kids to manage more easily."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "stuffed-bell-pepper",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Mini Stuffed Bell Pepper",
+      "hi": "भरवां शिमला मिर्च"
+    },
+    "desc": {
+      "en": "Small bell pepper halves filled with a savoury rice mixture.",
+      "hi": "Small bell pepper halves filled with a savoury rice mixture."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small bell peppers, halved",
+      "1/2 cup cooked rice",
+      "2 tbsp corn",
+      "Pinch of oregano"
+    ],
+    "instructions": [
+      "Mix cooked rice with corn and oregano.",
+      "Fill pepper halves with the mixture.",
+      "Bake at 180°C for 15–18 minutes until peppers soften."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 4,
+      "iron_mg": 1,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 60
+    },
+    "packingTip": {
+      "en": "These travel well already 'contained' in their pepper shell.",
+      "hi": "These travel well already 'contained' in their pepper shell."
+    },
+    "kidTip": {
+      "en": "A colorful, fun-looking lunch that encourages trying vegetables.",
+      "hi": "A colorful, fun-looking lunch that encourages trying vegetables."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "caprese-skewers",
+    "emoji": "🍅",
+    "images": [],
+    "name": {
+      "en": "Mini Caprese Skewers",
+      "hi": "मिनी कैप्रीज़ स्क्यूवर"
+    },
+    "desc": {
+      "en": "Cherry tomato, mozzarella and basil on a small stick.",
+      "hi": "Cherry tomato, mozzarella and basil on a small stick."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "4 cherry tomatoes",
+      "4 mini mozzarella balls",
+      "4 basil leaves",
+      "Small skewer sticks"
+    ],
+    "instructions": [
+      "Thread tomato, mozzarella and basil alternately onto skewers."
+    ],
+    "nutrition": {
+      "calories": 140,
+      "protein_g": 7,
+      "iron_mg": 0.5,
+      "calcium_mg": 150,
+      "fiber_g": 1,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Use blunt skewers or toothpicks with covered tips for safety.",
+      "hi": "Use blunt skewers or toothpicks with covered tips for safety."
+    },
+    "kidTip": {
+      "en": "A simple, pretty lunchbox addition kids enjoy pulling apart.",
+      "hi": "A simple, pretty lunchbox addition kids enjoy pulling apart."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "minestrone-soup",
+    "emoji": "🍅",
+    "images": [],
+    "name": {
+      "en": "Mild Minestrone Soup",
+      "hi": "माइल्ड मिनेस्ट्रोन सूप"
+    },
+    "desc": {
+      "en": "A gentle tomato-vegetable soup with small pasta.",
+      "hi": "A gentle tomato-vegetable soup with small pasta."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup chopped mixed vegetables",
+      "1/4 cup small pasta",
+      "1 cup tomato puree",
+      "1 cup water",
+      "Pinch of oregano"
+    ],
+    "instructions": [
+      "Simmer vegetables in tomato puree and water until soft.",
+      "Add pasta and cook until tender.",
+      "Season lightly with oregano."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 5,
+      "iron_mg": 1.4,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "An insulated flask keeps this warm and ready by lunchtime.",
+      "hi": "An insulated flask keeps this warm and ready by lunchtime."
+    },
+    "kidTip": {
+      "en": "A great way to use up whatever vegetables are in the fridge.",
+      "hi": "A great way to use up whatever vegetables are in the fridge."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "veg-stir-fry-noodles",
+    "emoji": "🍜",
+    "images": [],
+    "name": {
+      "en": "Vegetable Stir-Fry Noodles",
+      "hi": "वेज स्टर फ्राई नूडल्स"
+    },
+    "desc": {
+      "en": "Noodles tossed quickly with colorful vegetables.",
+      "hi": "Noodles tossed quickly with colorful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten",
+      "soy"
+    ],
+    "ingredients": [
+      "1 cup boiled noodles",
+      "1/2 cup mixed sliced vegetables",
+      "1 tsp soy sauce (low sodium)",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Stir-fry vegetables in hot oil for 2–3 minutes.",
+      "Add noodles and soy sauce, toss well for another 2 minutes."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 6,
+      "iron_mg": 1.3,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Pack slightly saucier than usual — noodles absorb liquid as they sit.",
+      "hi": "Pack slightly saucier than usual — noodles absorb liquid as they sit."
+    },
+    "kidTip": {
+      "en": "Cut vegetables into thin matchsticks so they cook fast and blend in.",
+      "hi": "Cut vegetables into thin matchsticks so they cook fast and blend in."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "moong-sprouts-paratha",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Sprouted Moong Paratha",
+      "hi": "स्प्राउट्स मूंग पराठा"
+    },
+    "desc": {
+      "en": "Whole wheat paratha stuffed with mildly spiced sprouted moong.",
+      "hi": "Whole wheat paratha stuffed with mildly spiced sprouted moong."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "1/2 cup boiled sprouted moong, mashed",
+      "Pinch of cumin powder",
+      "Ghee or oil for cooking"
+    ],
+    "instructions": [
+      "Mix mashed sprouts with cumin for the filling.",
+      "Stuff into rolled dough and seal.",
+      "Cook on a hot tawa with ghee/oil until golden."
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein_g": 8,
+      "iron_mg": 2.2,
+      "calcium_mg": 35,
+      "fiber_g": 4,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Wrap warm in foil to keep it soft through the morning.",
+      "hi": "Wrap warm in foil to keep it soft through the morning."
+    },
+    "kidTip": {
+      "en": "A good introduction to sprouts for kids new to them.",
+      "hi": "A good introduction to sprouts for kids new to them."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "besan-chilla-veg",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Vegetable Besan Chilla",
+      "hi": "वेज बेसन चीला"
+    },
+    "desc": {
+      "en": "Savoury gram-flour pancake studded with grated vegetables.",
+      "hi": "Savoury gram-flour pancake studded with grated vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "1/4 cup grated carrot and onion",
+      "Pinch of turmeric",
+      "Water as needed",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Whisk besan with water into a smooth, pourable batter.",
+      "Stir in grated vegetables and turmeric.",
+      "Cook on a greased tawa like a pancake until golden both sides."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 8,
+      "iron_mg": 1.6,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Best packed once fully cooled to keep it from turning rubbery.",
+      "hi": "Best packed once fully cooled to keep it from turning rubbery."
+    },
+    "kidTip": {
+      "en": "A good egg-free alternative that still feels like a savoury pancake.",
+      "hi": "A good egg-free alternative that still feels like a savoury pancake."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "aloo-tikki",
+    "emoji": "🥔",
+    "images": [],
+    "name": {
+      "en": "Baked Aloo Tikki",
+      "hi": "बेक्ड आलू टिक्की"
+    },
+    "desc": {
+      "en": "Lightly spiced potato patties, baked instead of deep-fried.",
+      "hi": "Lightly spiced potato patties, baked instead of deep-fried."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 boiled potatoes, mashed",
+      "2 tbsp breadcrumbs",
+      "Pinch of cumin powder",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Mix mashed potato with breadcrumbs and cumin.",
+      "Shape into small patties.",
+      "Bake at 200°C for 15–18 minutes, turning once, until golden."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 4,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Pack with a small side of ketchup or mint chutney.",
+      "hi": "Pack with a small side of ketchup or mint chutney."
+    },
+    "kidTip": {
+      "en": "Shape into fun sizes — mini patties are easy finger food.",
+      "hi": "Shape into fun sizes — mini patties are easy finger food."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "methi-thepla",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Soft Methi Thepla",
+      "hi": "मेथी थेपला"
+    },
+    "desc": {
+      "en": "A mildly spiced fenugreek flatbread, soft enough to eat plain.",
+      "hi": "A mildly spiced fenugreek flatbread, soft enough to eat plain."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "iron",
+      "immunity"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "2 tbsp chopped fenugreek (methi) leaves",
+      "Pinch of turmeric",
+      "Curd or oil to soften dough"
+    ],
+    "instructions": [
+      "Knead flour with methi, turmeric and curd/oil into a soft dough.",
+      "Roll thin and cook on a hot tawa with a little oil until golden spots appear."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 5,
+      "iron_mg": 2.4,
+      "calcium_mg": 40,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Keep these on the softer side for kids — thin and well-cooked.",
+      "hi": "Keep these on the softer side for kids — thin and well-cooked."
+    },
+    "kidTip": {
+      "en": "A milder bite than adult thepla; skip the extra chilli.",
+      "hi": "A milder bite than adult thepla; skip the extra chilli."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-idiyappam",
+    "emoji": "🍜",
+    "images": [],
+    "name": {
+      "en": "Vegetable Idiyappam (Rice Noodles)",
+      "hi": "वेज इडियाप्पम"
+    },
+    "desc": {
+      "en": "Steamed rice noodles tossed with light vegetable tempering.",
+      "hi": "Steamed rice noodles tossed with light vegetable tempering."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup idiyappam (rice noodles)",
+      "1/4 cup grated carrot",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Temper mustard seeds and curry leaves in oil.",
+      "Add grated carrot, sauté briefly.",
+      "Toss through the steamed rice noodles gently."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 4,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Toss gently to avoid breaking the delicate noodles.",
+      "hi": "Toss gently to avoid breaking the delicate noodles."
+    },
+    "kidTip": {
+      "en": "A soft, easy-to-chew option for younger age groups.",
+      "hi": "A soft, easy-to-chew option for younger age groups."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "banana-oats-muffin",
+    "emoji": "🧁",
+    "images": [],
+    "name": {
+      "en": "Banana Oats Muffins",
+      "hi": "केला ओट्स मफिन"
+    },
+    "desc": {
+      "en": "Naturally sweetened baked muffins with banana and oats.",
+      "hi": "Naturally sweetened baked muffins with banana and oats."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup oats flour",
+      "1 ripe banana, mashed",
+      "1/2 cup milk or plant milk",
+      "1 tsp baking powder"
+    ],
+    "instructions": [
+      "Mix mashed banana with milk.",
+      "Fold in oats flour and baking powder gently.",
+      "Spoon into a greased muffin tray and bake at 180°C for 18–20 minutes."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 60,
+      "fiber_g": 3,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "These freeze well — thaw one the night before for a grab-and-go morning.",
+      "hi": "These freeze well — thaw one the night before for a grab-and-go morning."
+    },
+    "kidTip": {
+      "en": "No added sugar needed; banana carries the sweetness.",
+      "hi": "No added sugar needed; banana carries the sweetness."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "paneer-bhurji",
+    "emoji": "🧀",
+    "images": [],
+    "name": {
+      "en": "Paneer Bhurji",
+      "hi": "पनीर भुर्जी"
+    },
+    "desc": {
+      "en": "Crumbled paneer scrambled with onion, tomato and mild spice.",
+      "hi": "Crumbled paneer scrambled with onion, tomato and mild spice."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup crumbled paneer",
+      "2 tbsp chopped onion",
+      "2 tbsp chopped tomato",
+      "Pinch of turmeric",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Sauté onion and tomato in oil until soft.",
+      "Add turmeric and crumbled paneer.",
+      "Cook for 3–4 minutes until warmed through."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 10,
+      "iron_mg": 1.2,
+      "calcium_mg": 140,
+      "fiber_g": 1,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Pack with a roti or bread on the side for a complete lunch.",
+      "hi": "Pack with a roti or bread on the side for a complete lunch."
+    },
+    "kidTip": {
+      "en": "A protein-rich, mild dish that's usually an easy sell.",
+      "hi": "A protein-rich, mild dish that's usually an easy sell."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-daliya",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Vegetable Daliya (Broken Wheat)",
+      "hi": "सब्ज़ी दलिया"
+    },
+    "desc": {
+      "en": "A savoury porridge of broken wheat cooked with soft vegetables.",
+      "hi": "A savoury porridge of broken wheat cooked with soft vegetables."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "iron"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup broken wheat (daliya)",
+      "1/4 cup mixed vegetables",
+      "Pinch of turmeric",
+      "1 tsp ghee or oil"
+    ],
+    "instructions": [
+      "Roast daliya lightly in ghee/oil.",
+      "Add vegetables, turmeric and water; pressure cook until soft.",
+      "Mash slightly for younger kids."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 5,
+      "iron_mg": 1.6,
+      "calcium_mg": 25,
+      "fiber_g": 4,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Great one-pot option when you're short on time.",
+      "hi": "Great one-pot option when you're short on time."
+    },
+    "kidTip": {
+      "en": "Mash extra smooth for the youngest age group.",
+      "hi": "Mash extra smooth for the youngest age group."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-halwa-lite",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Light Carrot Halwa (Occasional)",
+      "hi": "हल्का गाजर का हलवा"
+    },
+    "desc": {
+      "en": "Grated carrot simmered in milk with a touch of jaggery.",
+      "hi": "Grated carrot simmered in milk with a touch of jaggery."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "calcium",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "2 cups grated carrot",
+      "1 cup milk",
+      "1 tbsp jaggery or sugar",
+      "1 tsp ghee"
+    ],
+    "instructions": [
+      "Simmer grated carrot in milk until soft and milk reduces.",
+      "Stir in jaggery and ghee, cook a few more minutes until thickened."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 4,
+      "iron_mg": 0.8,
+      "calcium_mg": 120,
+      "fiber_g": 2,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "An occasional treat pack, given the added sweetener.",
+      "hi": "An occasional treat pack, given the added sweetener."
+    },
+    "kidTip": {
+      "en": "Naturally colorful and usually very well received.",
+      "hi": "Naturally colorful and usually very well received."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-cutlet",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Baked Mixed Vegetable Cutlet",
+      "hi": "बेक्ड वेज कटलेट"
+    },
+    "desc": {
+      "en": "Mashed mixed vegetables shaped into patties and baked.",
+      "hi": "Mashed mixed vegetables shaped into patties and baked."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup boiled mixed vegetables, mashed",
+      "2 tbsp breadcrumbs",
+      "Pinch of garam masala",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Mix mashed vegetables with breadcrumbs and garam masala.",
+      "Shape into small patties.",
+      "Bake at 200°C for 15–20 minutes, turning once."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 5,
+      "iron_mg": 1.4,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Bake rather than fry for a lighter lunchbox-friendly version.",
+      "hi": "Bake rather than fry for a lighter lunchbox-friendly version."
+    },
+    "kidTip": {
+      "en": "Pack with ketchup — a familiar favorite shape and dip.",
+      "hi": "Pack with ketchup — a familiar favorite shape and dip."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "til-chikki-bite",
+    "emoji": "🥜",
+    "images": [],
+    "name": {
+      "en": "Sesame Jaggery Bites (Occasional)",
+      "hi": "तिल गुड़ बाइट्स"
+    },
+    "desc": {
+      "en": "Small no-cook energy bites of sesame and jaggery.",
+      "hi": "Small no-cook energy bites of sesame and jaggery."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "nuts"
+    ],
+    "ingredients": [
+      "1/4 cup roasted sesame seeds",
+      "2 tbsp jaggery, warmed soft",
+      "1 tbsp chopped nuts"
+    ],
+    "instructions": [
+      "Mix warmed jaggery with sesame seeds and nuts.",
+      "Shape into small bites while still warm; let cool completely."
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 3,
+      "iron_mg": 1.5,
+      "calcium_mg": 60,
+      "fiber_g": 1,
+      "vitaminC_mg": 0
+    },
+    "packingTip": {
+      "en": "An occasional treat pack rather than a daily one, given the jaggery.",
+      "hi": "An occasional treat pack rather than a daily one, given the jaggery."
+    },
+    "kidTip": {
+      "en": "Sesame is a good source of calcium beyond dairy.",
+      "hi": "Sesame is a good source of calcium beyond dairy."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-appam",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Soft Vegetable Appam",
+      "hi": "वेज अप्पम"
+    },
+    "desc": {
+      "en": "Soft, lightly fermented rice cakes with a tender center.",
+      "hi": "Soft, lightly fermented rice cakes with a tender center."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup appam batter",
+      "2 tbsp finely chopped vegetables (optional)",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Heat an appam pan and grease lightly.",
+      "Pour batter, swirl to coat the sides, cover and cook until soft and set.",
+      "Vegetables can be sprinkled in before covering."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 4,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 1,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Pack once fully cooled to avoid a soggy tiffin box.",
+      "hi": "Pack once fully cooled to avoid a soggy tiffin box."
+    },
+    "kidTip": {
+      "en": "The soft center and crisp edge make this popular with picky eaters.",
+      "hi": "The soft center and crisp edge make this popular with picky eaters."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "moong-dal-tikki",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Moong Dal Tikki",
+      "hi": "मूंग दाल टिक्की"
+    },
+    "desc": {
+      "en": "Mildly spiced lentil patties, pan-fried until golden.",
+      "hi": "Mildly spiced lentil patties, pan-fried until golden."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup split moong dal, soaked and blended thick",
+      "Pinch of cumin powder",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Shape the thick dal batter into small patties.",
+      "Pan-fry in a little oil until golden on both sides."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 8,
+      "iron_mg": 1.8,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "Pack with a small side of curd for dipping.",
+      "hi": "Pack with a small side of curd for dipping."
+    },
+    "kidTip": {
+      "en": "A good lentil-forward alternative to a paratha.",
+      "hi": "A good lentil-forward alternative to a paratha."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-rice",
+    "emoji": "🍅",
+    "images": [],
+    "name": {
+      "en": "South Indian Tomato Rice",
+      "hi": "टमाटर चावल"
+    },
+    "desc": {
+      "en": "Tangy tomato-based rice with a light South Indian tempering.",
+      "hi": "Tangy tomato-based rice with a light South Indian tempering."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice",
+      "1/2 cup tomato puree",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Temper mustard seeds and curry leaves in oil.",
+      "Add tomato puree, cook until it thickens slightly.",
+      "Fold in cooked rice and mix well."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Best packed the same morning for the brightest flavour.",
+      "hi": "Best packed the same morning for the brightest flavour."
+    },
+    "kidTip": {
+      "en": "A tangy change of pace from plain rice dishes.",
+      "hi": "A tangy change of pace from plain rice dishes."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-rice",
+    "emoji": "🍋",
+    "images": [],
+    "name": {
+      "en": "South Indian Lemon Rice",
+      "hi": "नींबू चावल"
+    },
+    "desc": {
+      "en": "Rice tossed with lemon, peanuts and a light tempering.",
+      "hi": "Rice tossed with lemon, peanuts and a light tempering."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "peanuts"
+    ],
+    "ingredients": [
+      "1 cup cooked rice",
+      "1 tbsp lemon juice",
+      "2 tbsp peanuts",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves"
+    ],
+    "instructions": [
+      "Temper mustard seeds, curry leaves and peanuts in oil.",
+      "Fold in cooked rice.",
+      "Add lemon juice just before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 5,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Add the lemon juice right before closing the box to keep the flavor bright.",
+      "hi": "Add the lemon juice right before closing the box to keep the flavor bright."
+    },
+    "kidTip": {
+      "en": "A quick, dairy-free option for busy mornings.",
+      "hi": "A quick, dairy-free option for busy mornings."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "curd-rice",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Simple Curd Rice",
+      "hi": "दही चावल"
+    },
+    "desc": {
+      "en": "Soft, cooling curd rice with a light tempering — a South Indian classic.",
+      "hi": "Soft, cooling curd rice with a light tempering — a South Indian classic."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "protein"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked rice, mashed slightly",
+      "1/2 cup curd",
+      "2 tbsp milk",
+      "1 tsp mustard seeds (optional)"
+    ],
+    "instructions": [
+      "Mash rice slightly and mix with curd and milk until creamy.",
+      "Temper mustard seeds in a little oil and stir through, if using."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 5,
+      "iron_mg": 0.6,
+      "calcium_mg": 120,
+      "fiber_g": 1,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Pack in an insulated container; curd rice is meant to be eaten cool, not hot.",
+      "hi": "Pack in an insulated container; curd rice is meant to be eaten cool, not hot."
+    },
+    "kidTip": {
+      "en": "One of the gentlest options here for a child who's unwell.",
+      "hi": "One of the gentlest options here for a child who's unwell."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-semiya-payasam-lite",
+    "emoji": "🍮",
+    "images": [],
+    "name": {
+      "en": "Light Vermicelli Milk Pudding (Occasional)",
+      "hi": "सेवइयां खीर"
+    },
+    "desc": {
+      "en": "A lightly sweetened vermicelli pudding in milk.",
+      "hi": "A lightly sweetened vermicelli pudding in milk."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ],
+    "ingredients": [
+      "1/4 cup vermicelli",
+      "1 cup milk",
+      "1 tbsp sugar or jaggery",
+      "A few cashews"
+    ],
+    "instructions": [
+      "Roast vermicelli lightly in a little ghee.",
+      "Simmer in milk until soft and slightly thickened.",
+      "Sweeten and add cashews."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 5,
+      "iron_mg": 0.6,
+      "calcium_mg": 140,
+      "fiber_g": 1,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "An occasional treat pack — pair with a fruit side the same day.",
+      "hi": "An occasional treat pack — pair with a fruit side the same day."
+    },
+    "kidTip": {
+      "en": "A comforting, familiar dessert-for-lunchbox option.",
+      "hi": "A comforting, familiar dessert-for-lunchbox option."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "besan-veg-toast",
+    "emoji": "🍞",
+    "images": [],
+    "name": {
+      "en": "Besan Vegetable Toast",
+      "hi": "बेसन वेज टोस्ट"
+    },
+    "desc": {
+      "en": "Bread dipped in a savoury gram-flour vegetable batter, pan-toasted.",
+      "hi": "Bread dipped in a savoury gram-flour vegetable batter, pan-toasted."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "2 slices bread",
+      "1/2 cup besan batter with grated vegetables",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Dip bread slices into the besan-vegetable batter.",
+      "Pan-toast in a little oil until golden on both sides."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 7,
+      "iron_mg": 1.4,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "A savoury, egg-free twist on French toast.",
+      "hi": "A savoury, egg-free twist on French toast."
+    },
+    "kidTip": {
+      "en": "Cut into fingers for easy dipping into ketchup.",
+      "hi": "Cut into fingers for easy dipping into ketchup."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-clear-soup",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Clear Vegetable Soup",
+      "hi": "क्लियर वेज सूप"
+    },
+    "desc": {
+      "en": "A light broth with finely diced vegetables — gentle and warming.",
+      "hi": "A light broth with finely diced vegetables — gentle and warming."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup finely diced mixed vegetables",
+      "2 cups water or light vegetable stock",
+      "Pinch of pepper"
+    ],
+    "instructions": [
+      "Simmer vegetables in water/stock until tender.",
+      "Season lightly with pepper."
+    ],
+    "nutrition": {
+      "calories": 90,
+      "protein_g": 2,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "A wide-mouth flask keeps this at a good eating temperature.",
+      "hi": "A wide-mouth flask keeps this at a good eating temperature."
+    },
+    "kidTip": {
+      "en": "Very gentle on the tummy — useful when a child is under the weather.",
+      "hi": "Very gentle on the tummy — useful when a child is under the weather."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "makhana-roast",
+    "emoji": "🌰",
+    "images": [],
+    "name": {
+      "en": "Roasted Makhana (Fox Nuts)",
+      "hi": "भुने मखाने"
+    },
+    "desc": {
+      "en": "Lightly roasted fox nuts — a crunchy, light snack.",
+      "hi": "Lightly roasted fox nuts — a crunchy, light snack."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup makhana (fox nuts)",
+      "1 tsp ghee or oil",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Roast makhana in ghee/oil on low heat until crisp, about 6–8 minutes.",
+      "Season lightly with salt and cool before packing."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 3,
+      "iron_mg": 1.2,
+      "calcium_mg": 60,
+      "fiber_g": 1,
+      "vitaminC_mg": 0
+    },
+    "packingTip": {
+      "en": "Pack once fully cooled to keep the crunch.",
+      "hi": "Pack once fully cooled to keep the crunch."
+    },
+    "kidTip": {
+      "en": "A light, low-mess snack that travels well.",
+      "hi": "A light, low-mess snack that travels well."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-idli-upma",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Idli Upma (Leftover Idli Fry-Up)",
+      "hi": "इडली उपमा"
+    },
+    "desc": {
+      "en": "Day-old idlis crumbled and lightly stir-fried with tempering — no waste, all flavour.",
+      "hi": "Day-old idlis crumbled and lightly stir-fried with tempering — no waste, all flavour."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "3–4 leftover idlis, crumbled",
+      "1 tsp mustard seeds",
+      "1 sprig curry leaves",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Temper mustard seeds and curry leaves in oil.",
+      "Add crumbled idli and toss gently until warmed through and lightly golden."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 4,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 1,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "A great way to use up leftover idlis rather than tossing them.",
+      "hi": "A great way to use up leftover idlis rather than tossing them."
+    },
+    "kidTip": {
+      "en": "Kids often enjoy the different texture from plain idli.",
+      "hi": "Kids often enjoy the different texture from plain idli."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-paratha-roll-mini",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Mini Paratha Veggie Rolls",
+      "hi": "मिनी पराठा रोल"
+    },
+    "desc": {
+      "en": "Small rotis rolled with a light vegetable stuffing, sliced into bites.",
+      "hi": "Small rotis rolled with a light vegetable stuffing, sliced into bites."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "2 small rotis",
+      "1/4 cup mashed mixed vegetables",
+      "Pinch of cumin",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Spread mashed vegetables over the roti.",
+      "Roll tightly and cook lightly on a tawa with oil.",
+      "Slice into bite-size rounds."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Slicing into rounds makes this much easier for toddlers to self-feed.",
+      "hi": "Slicing into rounds makes this much easier for toddlers to self-feed."
+    },
+    "kidTip": {
+      "en": "Keep the filling smooth and lump-free for the youngest eaters.",
+      "hi": "Keep the filling smooth and lump-free for the youngest eaters."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-cucumber-raita",
+    "emoji": "🥒",
+    "images": [],
+    "name": {
+      "en": "Carrot Cucumber Raita",
+      "hi": "गाजर खीरा रायता"
+    },
+    "desc": {
+      "en": "A cool, mild yogurt side with grated carrot and cucumber.",
+      "hi": "A cool, mild yogurt side with grated carrot and cucumber."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup curd",
+      "2 tbsp grated carrot",
+      "2 tbsp grated cucumber",
+      "Pinch of roasted cumin powder"
+    ],
+    "instructions": [
+      "Whisk curd until smooth.",
+      "Stir in grated vegetables and cumin."
+    ],
+    "nutrition": {
+      "calories": 90,
+      "protein_g": 3,
+      "iron_mg": 0.4,
+      "calcium_mg": 110,
+      "fiber_g": 1,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Pack as a side to a paratha or roti for a complete, balanced lunch.",
+      "hi": "Pack as a side to a paratha or roti for a complete, balanced lunch."
+    },
+    "kidTip": {
+      "en": "A gentle, cooling side most kids take to quickly.",
+      "hi": "A gentle, cooling side most kids take to quickly."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-kathi-roll",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Vegetable Kathi Roll",
+      "hi": "वेज काठी रोल"
+    },
+    "desc": {
+      "en": "A soft paratha rolled around lightly spiced mixed vegetables.",
+      "hi": "A soft paratha rolled around lightly spiced mixed vegetables."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 paratha",
+      "1/2 cup mixed vegetables, sautéed",
+      "Pinch of chaat masala",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Sauté vegetables with a pinch of chaat masala.",
+      "Spread over the paratha and roll tightly.",
+      "Wrap in foil to hold its shape."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 5,
+      "iron_mg": 1.6,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Wrap tightly and slice in half for easier handling.",
+      "hi": "Wrap tightly and slice in half for easier handling."
+    },
+    "kidTip": {
+      "en": "A flavorful way to use up whatever vegetables are on hand.",
+      "hi": "A flavorful way to use up whatever vegetables are on hand."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "besan-dhokla-instant",
+    "emoji": "🟨",
+    "images": [],
+    "name": {
+      "en": "Instant Rava Dhokla",
+      "hi": "इंस्टेंट रवा ढोकला"
+    },
+    "desc": {
+      "en": "A quicker semolina version of dhokla, steamed soft and fluffy.",
+      "hi": "A quicker semolina version of dhokla, steamed soft and fluffy."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup semolina (rava)",
+      "1/2 cup curd or plant yogurt",
+      "1/2 tsp fruit salt (ENO)",
+      "1 tsp mustard seeds"
+    ],
+    "instructions": [
+      "Mix rava with curd and rest for 10 minutes.",
+      "Add fruit salt, pour into a greased tray, steam 12–15 minutes.",
+      "Temper mustard seeds in oil and pour over the top."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 5,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 3
+    },
+    "packingTip": {
+      "en": "A quicker alternative to besan dhokla on a busier morning.",
+      "hi": "A quicker alternative to besan dhokla on a busier morning."
+    },
+    "kidTip": {
+      "en": "Cut into playful shapes for younger kids.",
+      "hi": "Cut into playful shapes for younger kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-samosa-baked",
+    "emoji": "🥟",
+    "images": [],
+    "name": {
+      "en": "Baked Mini Samosa",
+      "hi": "बेक्ड मिनी समोसा"
+    },
+    "desc": {
+      "en": "A lighter, oven-baked version of the classic potato-pea samosa.",
+      "hi": "A lighter, oven-baked version of the classic potato-pea samosa."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "4 small samosa wrappers or spring roll sheets",
+      "1/2 cup mashed spiced potato and peas",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Fill wrappers with the potato-pea mixture and fold into small triangles.",
+      "Brush lightly with oil.",
+      "Bake at 200°C for 15–18 minutes until golden and crisp."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Baking instead of frying makes this a lighter lunchbox treat.",
+      "hi": "Baking instead of frying makes this a lighter lunchbox treat."
+    },
+    "kidTip": {
+      "en": "Mini size makes them easy, mess-free finger food.",
+      "hi": "Mini size makes them easy, mess-free finger food."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-dalia-khichdi",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Vegetable Dalia Khichdi",
+      "hi": "सब्ज़ी दलिया खिचड़ी"
+    },
+    "desc": {
+      "en": "Broken wheat and lentils cooked soft together with vegetables.",
+      "hi": "Broken wheat and lentils cooked soft together with vegetables."
+    },
+    "ageGroups": [
+      "6-12m",
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/4 cup broken wheat",
+      "1/4 cup split moong dal",
+      "1/4 cup mixed vegetables",
+      "Pinch of turmeric",
+      "1 tsp ghee or oil"
+    ],
+    "instructions": [
+      "Combine all ingredients with 2 cups water.",
+      "Pressure cook until very soft and porridge-like.",
+      "Finish with a spoon of ghee/oil."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 7,
+      "iron_mg": 1.8,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "A well-rounded one-pot meal — grains, lentils and vegetables together.",
+      "hi": "A well-rounded one-pot meal — grains, lentils and vegetables together."
+    },
+    "kidTip": {
+      "en": "Mash extra smooth for the youngest age group.",
+      "hi": "Mash extra smooth for the youngest age group."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-uttapam",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Soft Vegetable Uttapam",
+      "hi": "वेज उत्तपम"
+    },
+    "desc": {
+      "en": "A thick, soft rice-lentil pancake topped with vegetables.",
+      "hi": "A thick, soft rice-lentil pancake topped with vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup dosa/uttapam batter",
+      "2 tbsp finely chopped onion and tomato",
+      "2 tbsp grated carrot",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Pour a thick layer of batter onto a hot tawa.",
+      "Sprinkle vegetables on top and press gently.",
+      "Cook covered on low heat until the base turns golden; flip briefly."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 5,
+      "iron_mg": 1,
+      "calcium_mg": 25,
+      "fiber_g": 2,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "The thicker batter makes this softer and easier to chew than dosa.",
+      "hi": "The thicker batter makes this softer and easier to chew than dosa."
+    },
+    "kidTip": {
+      "en": "A good way to introduce onion and tomato in a mild form.",
+      "hi": "A good way to introduce onion and tomato in a mild form."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-pancake-savory",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Savory Vegetable Pancake",
+      "hi": "वेज पैनकेक"
+    },
+    "desc": {
+      "en": "A flour-based savoury pancake packed with grated vegetables.",
+      "hi": "A flour-based savoury pancake packed with grated vegetables."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten",
+      "egg"
+    ],
+    "ingredients": [
+      "1/2 cup flour",
+      "1 egg (or 1/4 cup extra milk for egg-free)",
+      "1/4 cup grated mixed vegetables",
+      "1/4 cup milk"
+    ],
+    "instructions": [
+      "Whisk flour, egg (or milk) and milk into a smooth batter.",
+      "Stir in grated vegetables.",
+      "Cook small pancakes on a greased tawa until golden both sides."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 6,
+      "iron_mg": 1,
+      "calcium_mg": 50,
+      "fiber_g": 2,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Make a double batch — extras freeze well between parchment sheets.",
+      "hi": "Make a double batch — extras freeze well between parchment sheets."
+    },
+    "kidTip": {
+      "en": "A flexible recipe: swap in whatever vegetables you have.",
+      "hi": "A flexible recipe: swap in whatever vegetables you have."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "chana-chaat",
+    "emoji": "🌰",
+    "images": [],
+    "name": {
+      "en": "Black Chickpea Chaat",
+      "hi": "काला चना चाट"
+    },
+    "desc": {
+      "en": "Boiled black chickpeas tossed with onion, tomato and lime.",
+      "hi": "Boiled black chickpeas tossed with onion, tomato and lime."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup boiled black chickpeas",
+      "2 tbsp chopped onion and tomato",
+      "1/2 lime",
+      "Pinch of chaat masala"
+    ],
+    "instructions": [
+      "Toss chickpeas with onion and tomato.",
+      "Add lime juice and chaat masala just before packing."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 7,
+      "iron_mg": 2.4,
+      "calcium_mg": 30,
+      "fiber_g": 6,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Pack lime separately and mix at lunchtime for the best texture.",
+      "hi": "Pack lime separately and mix at lunchtime for the best texture."
+    },
+    "kidTip": {
+      "en": "A good iron-rich option to rotate in for older kids.",
+      "hi": "A good iron-rich option to rotate in for older kids."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-hakka-noodles-mild",
+    "emoji": "🍜",
+    "images": [],
+    "name": {
+      "en": "Mild Vegetable Hakka Noodles",
+      "hi": "माइल्ड हक्का नूडल्स"
+    },
+    "desc": {
+      "en": "Kid-friendly, low-spice take on stir-fried noodles with vegetables.",
+      "hi": "Kid-friendly, low-spice take on stir-fried noodles with vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten",
+      "soy"
+    ],
+    "ingredients": [
+      "1 cup boiled noodles",
+      "1/2 cup thinly sliced vegetables",
+      "1 tsp light soy sauce",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Stir-fry vegetables briefly in hot oil.",
+      "Add noodles and soy sauce, toss well over high heat for 2 minutes."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 5,
+      "iron_mg": 1.2,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 16
+    },
+    "packingTip": {
+      "en": "Keep the sauce light — kids' versions do best without chilli sauce.",
+      "hi": "Keep the sauce light — kids' versions do best without chilli sauce."
+    },
+    "kidTip": {
+      "en": "Cut vegetables very thin so they cook fast and mix in evenly.",
+      "hi": "Cut vegetables very thin so they cook fast and mix in evenly."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-dal-tadka",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Simple Dal Tadka with Rice",
+      "hi": "दाल तड़का चावल"
+    },
+    "desc": {
+      "en": "Yellow lentils simmered soft with a light tempering, served with rice.",
+      "hi": "Yellow lentils simmered soft with a light tempering, served with rice."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup yellow lentils (toor/moong)",
+      "1 cup cooked rice",
+      "1 tsp mustard/cumin seeds",
+      "Pinch of turmeric",
+      "1 tsp ghee or oil"
+    ],
+    "instructions": [
+      "Pressure cook lentils with turmeric until soft.",
+      "Temper seeds in ghee/oil and stir into the dal.",
+      "Pack dal and rice in separate compartments."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 8,
+      "iron_mg": 2,
+      "calcium_mg": 35,
+      "fiber_g": 4,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Keep dal and rice separate in the box so the rice doesn't turn mushy.",
+      "hi": "Keep dal and rice separate in the box so the rice doesn't turn mushy."
+    },
+    "kidTip": {
+      "en": "A gentle, familiar combination most kids eat without fuss.",
+      "hi": "A gentle, familiar combination most kids eat without fuss."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-tikki-wrap",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Vegetable Tikki Wrap",
+      "hi": "वेज टिक्की रैप"
+    },
+    "desc": {
+      "en": "A soft roti wrapped around a mini vegetable patty and chutney.",
+      "hi": "A soft roti wrapped around a mini vegetable patty and chutney."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 roti",
+      "1 baked vegetable tikki (see Baked Aloo Tikki)",
+      "1 tbsp mint chutney"
+    ],
+    "instructions": [
+      "Warm the roti and spread chutney over it.",
+      "Place the tikki at one edge and roll tightly.",
+      "Wrap in parchment to hold its shape."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 5,
+      "iron_mg": 1.2,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "A great way to repurpose leftover tikkis into a new lunch.",
+      "hi": "A great way to repurpose leftover tikkis into a new lunch."
+    },
+    "kidTip": {
+      "en": "Wrap snugly — the roll should feel firm, not loose.",
+      "hi": "Wrap snugly — the roll should feel firm, not loose."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "mixed-fruit-chaat",
+    "emoji": "🍉",
+    "images": [],
+    "name": {
+      "en": "Mixed Fruit Chaat",
+      "hi": "फ्रूट चाट"
+    },
+    "desc": {
+      "en": "A light, no-cook mix of seasonal fruit with a pinch of chaat masala.",
+      "hi": "A light, no-cook mix of seasonal fruit with a pinch of chaat masala."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup mixed chopped seasonal fruit",
+      "Pinch of chaat masala",
+      "1/2 lime"
+    ],
+    "instructions": [
+      "Toss chopped fruit with lime juice.",
+      "Add a light pinch of chaat masala just before packing."
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein_g": 2,
+      "iron_mg": 0.6,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 35
+    },
+    "packingTip": {
+      "en": "Add lime and masala last to keep the fruit looking fresh.",
+      "hi": "Add lime and masala last to keep the fruit looking fresh."
+    },
+    "kidTip": {
+      "en": "A vitamin-rich, zero-cook option for the busiest mornings.",
+      "hi": "A vitamin-rich, zero-cook option for the busiest mornings."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-poha-cutlet",
+    "emoji": "🥔",
+    "images": [],
+    "name": {
+      "en": "Poha Vegetable Cutlet",
+      "hi": "पोहा वेज कटलेट"
+    },
+    "desc": {
+      "en": "Soaked poha mixed with mashed vegetables, shaped and pan-fried.",
+      "hi": "Soaked poha mixed with mashed vegetables, shaped and pan-fried."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup poha, soaked and drained",
+      "1 boiled potato, mashed",
+      "2 tbsp grated carrot",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Mix soaked poha with mashed potato and carrot.",
+      "Shape into small patties.",
+      "Pan-fry in a little oil until golden on both sides."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 4,
+      "iron_mg": 1.3,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "A good way to use up extra poha from breakfast.",
+      "hi": "A good way to use up extra poha from breakfast."
+    },
+    "kidTip": {
+      "en": "Pack with a small side of ketchup for dipping.",
+      "hi": "Pack with a small side of ketchup for dipping."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-semiya-upma-egg",
+    "emoji": "🍳",
+    "images": [],
+    "name": {
+      "en": "Vermicelli Upma with Egg",
+      "hi": "एग सेवई उपमा"
+    },
+    "desc": {
+      "en": "Vegetable vermicelli upma with a scrambled egg folded through.",
+      "hi": "Vegetable vermicelli upma with a scrambled egg folded through."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "egg",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup vermicelli",
+      "1 egg, beaten",
+      "1/4 cup mixed vegetables",
+      "1 tsp mustard seeds",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Prepare vegetable vermicelli upma as usual.",
+      "Push to one side of the pan, scramble the egg, then fold through."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 9,
+      "iron_mg": 1.2,
+      "calcium_mg": 30,
+      "fiber_g": 2,
+      "vitaminC_mg": 7
+    },
+    "packingTip": {
+      "en": "Folding the egg in at the end keeps it soft rather than rubbery.",
+      "hi": "Folding the egg in at the end keeps it soft rather than rubbery."
+    },
+    "kidTip": {
+      "en": "An easy way to add protein to an already-familiar favourite.",
+      "hi": "An easy way to add protein to an already-familiar favourite."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "banana-besan-pancake",
+    "emoji": "🍌",
+    "images": [],
+    "name": {
+      "en": "Banana Besan Pancake",
+      "hi": "केला बेसन पैनकेक"
+    },
+    "desc": {
+      "en": "A naturally sweet, egg-free pancake made with gram flour and banana.",
+      "hi": "A naturally sweet, egg-free pancake made with gram flour and banana."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup gram flour (besan)",
+      "1 ripe banana, mashed",
+      "1/4 cup water or milk",
+      "Pinch of cinnamon"
+    ],
+    "instructions": [
+      "Whisk besan, mashed banana, water/milk and cinnamon into a smooth batter.",
+      "Cook small pancakes on a greased tawa until golden both sides."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 5,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "An egg-free pancake option that's still soft and satisfying.",
+      "hi": "An egg-free pancake option that's still soft and satisfying."
+    },
+    "kidTip": {
+      "en": "Naturally sweetened by banana — no added sugar needed.",
+      "hi": "Naturally sweetened by banana — no added sugar needed."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 4.5,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-frittata-mini",
+    "emoji": "🍳",
+    "images": [],
+    "name": {
+      "en": "Mini Vegetable Frittata",
+      "hi": "मिनी वेज फ्रिटाटा"
+    },
+    "desc": {
+      "en": "Baked egg and vegetable bites, similar to a crustless quiche.",
+      "hi": "Baked egg and vegetable bites, similar to a crustless quiche."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein"
+    ],
+    "allergens": [
+      "egg",
+      "dairy"
+    ],
+    "ingredients": [
+      "3 eggs",
+      "1/4 cup chopped mixed vegetables",
+      "2 tbsp grated cheese",
+      "Pinch of pepper"
+    ],
+    "instructions": [
+      "Whisk eggs with cheese and pepper.",
+      "Stir in chopped vegetables.",
+      "Pour into a greased small baking dish and bake at 180°C for 15–18 minutes; cut into squares."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 11,
+      "iron_mg": 1,
+      "calcium_mg": 110,
+      "fiber_g": 1,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Cut into small squares — easy finger food, no cutlery needed.",
+      "hi": "Cut into small squares — easy finger food, no cutlery needed."
+    },
+    "kidTip": {
+      "en": "A good make-ahead option for a batch of busy mornings.",
+      "hi": "A good make-ahead option for a batch of busy mornings."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-samosa-roll-baked",
+    "emoji": "🥟",
+    "images": [],
+    "name": {
+      "en": "Baked Vegetable Samosa Roll",
+      "hi": "बेक्ड वेज समोसा रोल"
+    },
+    "desc": {
+      "en": "A long baked roll version of samosa filling, sliced into bites.",
+      "hi": "A long baked roll version of samosa filling, sliced into bites."
+    },
+    "ageGroups": [
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "2 spring roll sheets",
+      "1/2 cup mashed spiced potato and peas",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Spread filling along the edge of each sheet and roll up tightly.",
+      "Brush with oil.",
+      "Bake at 200°C for 15 minutes until golden; slice into bite-size pieces."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Slicing into bites makes this easier to manage than a whole samosa.",
+      "hi": "Slicing into bites makes this easier to manage than a whole samosa."
+    },
+    "kidTip": {
+      "en": "A lighter, baked take on a lunchbox classic.",
+      "hi": "A lighter, baked take on a lunchbox classic."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-idli",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Carrot Rava Idli",
+      "hi": "गाजर रवा इडली"
+    },
+    "desc": {
+      "en": "Steamed semolina idli with grated carrot mixed in for colour and sweetness.",
+      "hi": "Steamed semolina idli with grated carrot mixed in for colour and sweetness."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup semolina (rava)",
+      "1/2 cup curd or plant yogurt",
+      "1/4 cup grated carrot",
+      "1/2 tsp fruit salt (ENO)"
+    ],
+    "instructions": [
+      "Mix rava with curd and rest 10 minutes.",
+      "Stir in grated carrot and fruit salt.",
+      "Pour into a greased idli mould and steam 12–15 minutes."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 5,
+      "iron_mg": 1,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "A colourful twist on plain idli that's popular with younger kids.",
+      "hi": "A colourful twist on plain idli that's popular with younger kids."
+    },
+    "kidTip": {
+      "en": "Pack chutney separately to keep the idli from turning soggy.",
+      "hi": "Pack chutney separately to keep the idli from turning soggy."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-paratha-mint",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Mint Vegetable Paratha",
+      "hi": "पुदीना पराठा"
+    },
+    "desc": {
+      "en": "Whole wheat paratha with a subtle mint flavour and grated vegetables.",
+      "hi": "Whole wheat paratha with a subtle mint flavour and grated vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "2 tbsp grated mixed vegetables",
+      "1 tbsp chopped mint",
+      "Ghee or oil for cooking"
+    ],
+    "instructions": [
+      "Knead flour with grated vegetables and mint into a soft dough.",
+      "Roll into discs and cook on a hot tawa with ghee/oil until golden."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 5,
+      "iron_mg": 1.4,
+      "calcium_mg": 35,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Pack with a side of curd — the mint pairs nicely.",
+      "hi": "Pack with a side of curd — the mint pairs nicely."
+    },
+    "kidTip": {
+      "en": "A gentle flavour variation from the usual paratha rotation.",
+      "hi": "A gentle flavour variation from the usual paratha rotation."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-egg-fried-rice",
+    "emoji": "🍳",
+    "images": [],
+    "name": {
+      "en": "Vegetable Egg Fried Rice",
+      "hi": "वेज एग फ्राइड राइस"
+    },
+    "desc": {
+      "en": "Rice stir-fried with scrambled egg and colourful vegetables.",
+      "hi": "Rice stir-fried with scrambled egg and colourful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "egg",
+      "soy"
+    ],
+    "ingredients": [
+      "1 cup cooked rice",
+      "1 egg, scrambled",
+      "1/4 cup mixed vegetables",
+      "1 tsp light soy sauce",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Stir-fry vegetables in hot oil for 2 minutes.",
+      "Push to the side, scramble the egg, then mix together.",
+      "Add rice and soy sauce, tossing well until heated through."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 9,
+      "iron_mg": 1.4,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Use day-old rice — it fries up less sticky than freshly cooked rice.",
+      "hi": "Use day-old rice — it fries up less sticky than freshly cooked rice."
+    },
+    "kidTip": {
+      "en": "A one-box meal that covers protein, grains and vegetables together.",
+      "hi": "A one-box meal that covers protein, grains and vegetables together."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-thepla-mini",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Mini Vegetable Thepla",
+      "hi": "मिनी वेज थेपला"
+    },
+    "desc": {
+      "en": "Small, soft flatbreads with finely grated vegetables mixed into the dough.",
+      "hi": "Small, soft flatbreads with finely grated vegetables mixed into the dough."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole wheat flour",
+      "2 tbsp grated bottle gourd or carrot",
+      "Pinch of turmeric",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Knead flour with grated vegetable and turmeric into a soft dough.",
+      "Roll into small discs and cook on a tawa with a little oil until soft and lightly golden."
+    ],
+    "nutrition": {
+      "calories": 200,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 30,
+      "fiber_g": 2,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Keep these smaller and thinner for the youngest tiffin-goers.",
+      "hi": "Keep these smaller and thinner for the youngest tiffin-goers."
+    },
+    "kidTip": {
+      "en": "A gentle way to fold vegetables into a familiar flatbread.",
+      "hi": "A gentle way to fold vegetables into a familiar flatbread."
+    },
+    "ratings": {
+      "overall": 4.3,
+      "nutrition": 4.0,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 3.9,
+      "timeSaver": 3.8,
+      "count": 12
+    },
+    "hidden": false
+  }
+];

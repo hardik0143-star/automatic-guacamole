@@ -1,0 +1,21 @@
+{
+  "name": "Tiny Tiffin",
+  "short_name": "Tiny Tiffin",
+  "description": "Healthy tiffins. Happy kids. Stress-free mornings.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EDF1F1",
+  "theme_color": "#2B4E32",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Weekly planner", "url": "./index.html#planner", "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] },
+    { "name": "Favorites", "url": "./index.html#favorites", "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] },
+    { "name": "What can I cook?", "url": "./index.html#match", "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] }
+  ]
+}
