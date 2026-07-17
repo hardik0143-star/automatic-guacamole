@@ -1,0 +1,276 @@
+/* ==========================================================
+   Tiny Tiffin — Design tokens
+   Palette:  steel #8C97A5 · turmeric #E5A431 · masala #2B4E32
+             chili #C1440E · mist #EDF1F1 · ink #202B2E
+   Type:     display = 'Baloo 2' (rounded, warm)
+              body    = 'Work Sans'
+              utility = 'IBM Plex Mono' (numbers, tags, timers)
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root{
+  --steel: #8C97A5;
+  --steel-dark: #5D6B78;
+  --turmeric: #E5A431;
+  --turmeric-dark: #B87A1A;
+  --masala: #2B4E32;
+  --masala-light: #3F6B48;
+  --chili: #C1440E;
+  --mist: #EDF1F1;
+  --mist-2: #E2E8E7;
+  --card: #FFFFFF;
+  --ink: #202B2E;
+  --ink-soft: #57646A;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 2px 10px rgba(32,43,46,.07), 0 1px 2px rgba(32,43,46,.06);
+  --shadow-lift: 0 10px 30px rgba(32,43,46,.14);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Work Sans',system-ui,sans-serif;
+  background:var(--mist);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display{font-family:'Baloo 2',system-ui,sans-serif;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+a{color:inherit}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--turmeric-dark);outline-offset:2px}
+
+/* ---------- layout shells ---------- */
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.app-header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(237,241,241,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--mist-2);
+}
+.header-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Baloo 2';font-weight:700;font-size:1.35rem;color:var(--masala)}
+.brand-mark{width:38px;height:38px;flex:none}
+.header-controls{display:flex;align-items:center;gap:10px}
+select.lang-select{
+  appearance:none;background:var(--card);border:1px solid var(--mist-2);
+  padding:8px 30px 8px 12px;border-radius:999px;font-size:.85rem;font-weight:600;color:var(--ink);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2357646A'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;
+}
+.admin-link{font-size:.8rem;font-weight:600;color:var(--ink-soft);text-decoration:none;border:1px solid var(--mist-2);padding:8px 14px;border-radius:999px;background:var(--card)}
+.admin-link:hover{color:var(--masala);border-color:var(--masala-light)}
+
+.tabs{display:flex;gap:6px;padding:10px 0 0}
+.tab-btn{
+  background:none;border:none;padding:10px 4px;font-weight:600;font-size:.95rem;
+  color:var(--ink-soft);border-bottom:3px solid transparent;margin-right:22px;
+}
+.tab-btn.active{color:var(--masala);border-color:var(--turmeric)}
+
+/* ---------- hero / tiffin stack signature ---------- */
+.hero{padding:38px 0 18px;text-align:center}
+.hero h1.display{font-size:2.1rem;margin:0 0 6px;color:var(--masala)}
+.hero p.sub{color:var(--ink-soft);max-width:520px;margin:0 auto 30px;font-size:1rem}
+
+.tiffin-stack{display:flex;flex-direction:column;align-items:center;gap:0;max-width:340px;margin:0 auto}
+.tiffin-tier{
+  width:100%;border-radius:999px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  border:2px solid var(--steel);background:linear-gradient(180deg,#F5F7F7,#E7ECEC);
+  color:var(--ink);font-weight:600;font-size:.92rem;
+  padding:14px 10px;margin-top:-14px;position:relative;
+  box-shadow:0 3px 0 rgba(93,107,120,.25) inset, 0 4px 8px rgba(32,43,46,.06);
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.tiffin-tier:first-child{margin-top:0}
+.tiffin-tier .tier-emoji{font-size:1.2rem}
+.tiffin-tier:nth-child(1){width:96%}
+.tiffin-tier:nth-child(2){width:100%}
+.tiffin-tier:nth-child(3){width:104%}
+.tiffin-tier:nth-child(4){width:108%}
+.tiffin-tier:hover{transform:translateY(-2px);box-shadow:0 3px 0 rgba(93,107,120,.25) inset, 0 8px 16px rgba(32,43,46,.12)}
+.tiffin-tier.active{
+  background:linear-gradient(180deg,#F8DFA8,var(--turmeric));
+  border-color:var(--turmeric-dark);color:#432c05;
+}
+.tiffin-handle{width:64px;height:26px;border:3px solid var(--steel);border-bottom:none;border-radius:14px 14px 0 0;margin-bottom:-2px}
+
+/* ---------- filters ---------- */
+.filters{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:26px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.filter-group label{display:block;font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);margin-bottom:8px}
+.chip-row{display:flex;flex-wrap:wrap;gap:6px}
+.chip{
+  border:1.5px solid var(--mist-2);background:var(--mist);border-radius:999px;
+  padding:6px 12px;font-size:.82rem;font-weight:600;color:var(--ink-soft);
+}
+.chip.active{background:var(--masala);border-color:var(--masala);color:#fff}
+.chip.allergy.active{background:var(--chili);border-color:var(--chili)}
+input[type=text].search-input, select.filter-select{
+  width:100%;padding:9px 12px;border-radius:var(--radius-sm);border:1.5px solid var(--mist-2);
+  font-size:.9rem;background:var(--mist);color:var(--ink)
+}
+.filters-foot{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--ink-soft)}
+.link-btn{background:none;border:none;color:var(--masala);font-weight:600;text-decoration:underline;padding:0}
+
+/* ---------- recipe grid & cards ---------- */
+.recipe-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;padding-bottom:50px}
+.recipe-card{
+  background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:18px;display:flex;flex-direction:column;gap:10px;position:relative;
+  transition:box-shadow .15s ease, transform .15s ease;
+}
+.recipe-card:hover{box-shadow:var(--shadow-lift);transform:translateY(-3px)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start}
+.card-emoji{font-size:2rem;line-height:1}
+.fav-btn{background:none;border:none;font-size:1.25rem;color:var(--mist-2);padding:2px}
+.fav-btn.active{color:var(--chili)}
+.recipe-card h3{margin:0;font-size:1.05rem;color:var(--ink)}
+.recipe-card .desc{font-size:.85rem;color:var(--ink-soft);margin:0;flex:1}
+.meta-row{display:flex;flex-wrap:wrap;gap:6px;font-size:.72rem}
+.tag{padding:3px 9px;border-radius:999px;font-weight:600;background:var(--mist);color:var(--ink-soft)}
+.tag.time{background:#EAF2E9;color:var(--masala)}
+.tag.nutri{background:#FBEBD3;color:var(--turmeric-dark)}
+.tag.allergen{background:#F8E1D8;color:var(--chili)}
+.card-actions{display:flex;gap:8px;margin-top:4px}
+.btn{
+  border:none;border-radius:999px;padding:9px 14px;font-weight:600;font-size:.82rem;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-primary{background:var(--masala);color:#fff}
+.btn-primary:hover{background:var(--masala-light)}
+.btn-secondary{background:var(--mist);color:var(--ink)}
+.btn-secondary:hover{background:var(--mist-2)}
+.btn-block{width:100%;justify-content:center}
+.empty-state{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--ink-soft)}
+.empty-state .big-emoji{font-size:2.6rem;display:block;margin-bottom:10px}
+
+/* ---------- modal ---------- */
+.modal-backdrop{position:fixed;inset:0;background:rgba(32,43,46,.55);z-index:100;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto}
+.modal{background:var(--card);border-radius:var(--radius);max-width:560px;width:100%;padding:26px;box-shadow:var(--shadow-lift);position:relative}
+.modal-close{position:absolute;top:16px;right:16px;background:var(--mist);border:none;border-radius:50%;width:32px;height:32px;font-size:1rem;color:var(--ink-soft)}
+.modal h2{margin:6px 0 2px;font-size:1.35rem;color:var(--masala)}
+.modal .desc{color:var(--ink-soft);margin:0 0 14px}
+.modal section{margin-bottom:16px}
+.modal h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);margin:0 0 8px}
+.modal ul, .modal ol{margin:0;padding-left:20px;font-size:.92rem;line-height:1.65}
+.nutri-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.nutri-cell{background:var(--mist);border-radius:var(--radius-sm);padding:10px;text-align:center}
+.nutri-cell .val{font-family:'IBM Plex Mono';font-weight:600;font-size:1rem;color:var(--masala)}
+.nutri-cell .lbl{font-size:.68rem;color:var(--ink-soft);text-transform:uppercase}
+.tip-box{background:#FBF3E3;border-left:3px solid var(--turmeric);padding:10px 14px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:.88rem;margin-bottom:10px}
+.tip-box.kid{background:#EAF2E9;border-color:var(--masala)}
+
+/* ---------- planner ---------- */
+.planner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:24px}
+.planner-day{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px;min-height:140px;display:flex;flex-direction:column;gap:8px}
+.planner-day h4{margin:0;font-size:.85rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.04em}
+.planner-slot{background:var(--mist);border-radius:var(--radius-sm);padding:8px;font-size:.82rem;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.planner-slot button{background:none;border:none;color:var(--ink-soft);font-size:.9rem}
+.planner-add{border:1.5px dashed var(--mist-2);border-radius:var(--radius-sm);padding:8px;font-size:.8rem;color:var(--ink-soft);background:none;text-align:left}
+.planner-add:hover{border-color:var(--masala-light);color:var(--masala)}
+
+/* ---------- footer ---------- */
+.app-footer{text-align:center;color:var(--ink-soft);font-size:.78rem;padding:30px 20px 60px;max-width:600px;margin:0 auto}
+
+/* ---------- utility ---------- */
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.picker-list{display:flex;flex-direction:column;gap:6px;max-height:280px;overflow-y:auto}
+.picker-item{display:flex;justify-content:space-between;align-items:center;background:var(--mist);border-radius:var(--radius-sm);padding:8px 12px;font-size:.85rem}
+.picker-item button{background:var(--masala);color:#fff;border:none;border-radius:999px;padding:5px 12px;font-size:.75rem;font-weight:600}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 20px;border-radius:999px;font-size:.85rem;z-index:200;box-shadow:var(--shadow-lift)}
+
+@media (max-width:640px){
+  .nutri-grid{grid-template-columns:repeat(2,1fr)}
+  .hero h1.display{font-size:1.7rem}
+}
+
+/* ==========================================================
+   v2 additions: dark mode, ratings, mascot, badges, gallery
+   ========================================================== */
+:root{
+  --diet-veg:#2B4E32; --diet-vegan:#3F6B48; --diet-egg:#B87A1A;
+  --cuisine-indian:#C1440E; --cuisine-continental:#5D6B78;
+  --star:#E5A431; --star-off:#D9DEDD;
+}
+html[data-theme="dark"]{
+  --steel:#6b7684; --steel-dark:#4a5460;
+  --turmeric:#E5A431; --turmeric-dark:#c98f28;
+  --masala:#5fae72; --masala-light:#79c98c;
+  --chili:#e2704a;
+  --mist:#161b1d; --mist-2:#232b2e;
+  --card:#1e2528; --ink:#EDF1F1; --ink-soft:#a7b2b5;
+  --shadow: 0 2px 10px rgba(0,0,0,.35);
+  --shadow-lift: 0 10px 30px rgba(0,0,0,.5);
+}
+html[data-theme="dark"] body{ background:var(--mist); }
+html[data-theme="dark"] .app-header{ background:rgba(22,27,29,.92); }
+
+.theme-toggle{background:var(--mist);border:1px solid var(--mist-2);border-radius:999px;padding:8px 12px;font-size:.95rem}
+
+/* mascot */
+.mascot{display:inline-flex;align-items:center;gap:8px}
+.mascot-face{width:34px;height:34px;flex:none}
+.mascot-bubble{background:var(--card);border:1.5px solid var(--mist-2);border-radius:14px;padding:10px 14px;font-size:.85rem;color:var(--ink);box-shadow:var(--shadow);position:relative}
+.mascot-banner{display:flex;align-items:center;gap:12px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 18px;margin:18px 0}
+
+/* diet & cuisine badges */
+.tag.diet-vegetarian{background:#EAF2E9;color:var(--diet-veg)}
+.tag.diet-vegan{background:#E3F0E6;color:var(--diet-vegan)}
+.tag.diet-egg{background:#FBEBD3;color:var(--diet-egg)}
+.tag.cuisine-indian{background:#F8E1D8;color:var(--cuisine-indian)}
+.tag.cuisine-continental{background:#EAECEE;color:var(--cuisine-continental)}
+
+/* star ratings */
+.stars{display:inline-flex;gap:2px;font-size:1rem;line-height:1}
+.stars .star{color:var(--star-off)}
+.stars .star.filled{color:var(--star)}
+.rating-row{display:flex;align-items:center;gap:6px;font-size:.8rem;color:var(--ink-soft)}
+.rating-breakdown{display:grid;grid-template-columns:1fr auto;gap:6px 10px;font-size:.82rem;align-items:center}
+.rate-form{display:flex;flex-direction:column;gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid var(--mist-2)}
+.star-picker{display:inline-flex;gap:4px;font-size:1.4rem;cursor:pointer}
+.star-picker .star{color:var(--star-off)}
+.star-picker .star.filled{color:var(--star)}
+
+/* recipe images / gallery */
+.recipe-image-wrap{width:100%;aspect-ratio:4/3;border-radius:var(--radius-sm);overflow:hidden;background:var(--mist);display:flex;align-items:center;justify-content:center}
+.recipe-image-wrap img{width:100%;height:100%;object-fit:cover}
+.placeholder-illustration{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.6rem;background:linear-gradient(135deg,var(--mist),var(--mist-2))}
+.modal-gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.modal-gallery .recipe-image-wrap{aspect-ratio:1/1}
+
+/* search bar (smart search) */
+.smart-search-bar{display:flex;gap:8px;margin:20px 0 6px}
+.smart-search-bar input{flex:1;padding:12px 16px;border-radius:999px;border:1.5px solid var(--mist-2);background:var(--card);font-size:.95rem;color:var(--ink)}
+
+/* nutrition dashboard */
+.dash-bar-row{display:grid;grid-template-columns:110px 1fr 40px;align-items:center;gap:10px;margin-bottom:10px;font-size:.85rem}
+.dash-bar-track{background:var(--mist);border-radius:999px;height:14px;overflow:hidden}
+.dash-bar-fill{background:linear-gradient(90deg,var(--turmeric),var(--masala));height:100%;border-radius:999px;transition:width .3s ease}
+.dash-suggestion{background:#FBF3E3;border-left:3px solid var(--turmeric);padding:10px 14px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:.85rem;margin-top:14px}
+
+/* contact / developer pages */
+.simple-page{max-width:560px;margin:30px auto;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+.simple-page h2{color:var(--masala);margin-top:0}
+.category-pick{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.dev-future-list{margin:10px 0 0;padding-left:20px;font-size:.85rem;line-height:1.7;color:var(--ink-soft)}
+
+/* empty-state / loading skeleton */
+.skeleton-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;height:230px;position:relative;overflow:hidden}
+.skeleton-card::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+  transform:translateX(-100%);animation:shimmer 1.3s infinite;
+}
+html[data-theme="dark"] .skeleton-card::after{ background:linear-gradient(90deg, transparent, rgba(255,255,255,.06), transparent); }
+@keyframes shimmer{ 100%{ transform:translateX(100%); } }
+
+@keyframes pop-in{ from{ transform:scale(.9); opacity:0; } to{ transform:scale(1); opacity:1; } }
+.pop-in{ animation:pop-in .18s ease-out; }
+@keyframes celebrate{ 0%{transform:scale(1);} 50%{transform:scale(1.06);} 100%{transform:scale(1);} }
+.celebrate{ animation:celebrate .4s ease; }
+
+/* misc small helpers */
+.diet-cuisine-filters{display:flex;flex-wrap:wrap;gap:6px}
+.no-repeat-note{font-size:.75rem;color:var(--turmeric-dark)}
