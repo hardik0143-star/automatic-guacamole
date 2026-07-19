@@ -55,6 +55,21 @@
   function applyTheme() { document.documentElement.setAttribute("data-theme", state.theme); }
   applyTheme();
 
+  /* ---------------- install prompt (Add to Home Screen) ---------------- */
+  let deferredInstallPrompt = null;
+  const isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    const btn = document.getElementById("install-btn");
+    if (btn) btn.style.display = "inline-flex";
+  });
+  window.addEventListener("appinstalled", () => {
+    deferredInstallPrompt = null;
+    const btn = document.getElementById("install-btn");
+    if (btn) btn.style.display = "none";
+  });
+
   function saveFavorites() { storage.set("tt_favorites", Array.from(state.favorites)); }
   function savePlanner() { storage.set("tt_planner", state.planner); }
   function saveSavedPlans() { storage.set("tt_saved_plans", state.savedPlans); }
@@ -181,6 +196,7 @@
         <div class="wrap header-row">
           <div class="mascot brand">${mascotSVG(38)} Tiny Tiffin</div>
           <div class="header-controls">
+            <button class="theme-toggle" id="install-btn" aria-label="Install app" style="display:none">⬇️ Install</button>
             <button class="theme-toggle" id="theme-toggle" aria-label="${t('darkMode')}">${state.theme === "dark" ? "☀️" : "🌙"}</button>
             <select class="lang-select" id="lang-select" aria-label="Language">${langOptions}</select>
             <a class="admin-link" href="admin.html">${t("adminLink")}</a>
@@ -198,6 +214,23 @@
     document.getElementById("theme-toggle").addEventListener("click", () => {
       state.theme = state.theme === "dark" ? "light" : "dark"; saveTheme(); applyTheme(); render();
     });
+    const installBtn = document.getElementById("install-btn");
+    if (installBtn) {
+      if (deferredInstallPrompt && !isStandalone) installBtn.style.display = "inline-flex";
+      installBtn.addEventListener("click", async () => {
+        if (deferredInstallPrompt) {
+          deferredInstallPrompt.prompt();
+          await deferredInstallPrompt.userChoice;
+          deferredInstallPrompt = null;
+          installBtn.style.display = "none";
+        } else {
+          const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+          alert(isIOS
+            ? "To install: tap the Share icon in Safari, then \"Add to Home Screen\"."
+            : "To install: open your browser menu (⋮) and tap \"Add to Home screen\" or \"Install app\".");
+        }
+      });
+    }
     root.querySelectorAll(".tab-btn").forEach(btn => {
       btn.addEventListener("click", () => { state.tab = btn.dataset.tab; render(); window.scrollTo(0, 0); });
     });
@@ -762,7 +795,7 @@
       <div class="simple-page">
         <h2>${t("developerTitle")}</h2>
         <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || ""}</p>
-        <p><a href="mailto:${dev.email || ""}">${dev.email || ""}</a></p>
+        <p><a href="mailto:${dev.email || ""}" class="btn btn-secondary" style="display:inline-flex;text-decoration:none">✉️ Email the developer</a></p>
         <p class="desc">${dev.about || t("developerNote")}</p>
         ${dev.futureVision && dev.futureVision.length ? `<h4 style="margin-bottom:4px">${t("developerNote")}</h4><ul class="dev-future-list">${dev.futureVision.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
       </div>
