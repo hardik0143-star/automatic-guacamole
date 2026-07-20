@@ -3,9 +3,9 @@
    Nothing here requires touching app.js or admin.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v3.8",
+  version: "v3.9",
   releaseDate: "July 2026",
-  releaseNotes: "Developer section now clearly separates currently available capabilities from planned future features, improving transparency and accuracy.",
+  releaseNotes: "Expanded the recipe library with 32 new healthy Indian and continental kids’ tiffin recipes featuring broccoli, mushrooms, zucchini, paneer, sprouted moong, cheese, bell peppers, avocado, sweet potato, quinoa, chickpeas, oats, millet, whole grains, eggs and other nutrient-rich ingredients.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
@@ -19,6 +19,7 @@ window.TINY_TIFFIN_CONFIG = {
       "Recipe ratings, favorites and user feedback",
       "Admin recipe management and bulk updates",
       "Recipe images and nutrition information",
+      "Expanded healthy recipe library with 155+ Indian and continental tiffin ideas",
       "PWA installation and offline support",
       "Visitor analytics with India/international insights",
       "Dark mode with accessibility-focused readability",
