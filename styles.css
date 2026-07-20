@@ -296,3 +296,21 @@ html[data-theme="dark"] .skeleton-card::after{ background:linear-gradient(90deg,
 /* v3.3: friendly discovery action */
 .surprise-btn { margin: 12px auto 4px; display: inline-flex; }
 [data-theme="dark"] .surprise-btn { color: #f4f7f5; border-color: #6fbf84; }
+
+/* v3.5 — high-visibility neon nutrition labels for Night Mode */
+html[data-theme="dark"] .tiffin-tier {
+  color: #dfffe9;
+  text-shadow: 0 0 5px rgba(87, 255, 160, .55), 0 0 12px rgba(87, 255, 160, .22);
+}
+html[data-theme="dark"] .tiffin-tier:nth-child(1) { color:#9dffbf; text-shadow:0 0 6px rgba(90,255,160,.75),0 0 16px rgba(90,255,160,.35); }
+html[data-theme="dark"] .tiffin-tier:nth-child(2) { color:#c4ff78; text-shadow:0 0 6px rgba(196,255,120,.75),0 0 16px rgba(196,255,120,.32); }
+html[data-theme="dark"] .tiffin-tier:nth-child(3) { color:#a8e7ff; text-shadow:0 0 6px rgba(120,220,255,.75),0 0 16px rgba(120,220,255,.32); }
+html[data-theme="dark"] .tiffin-tier:nth-child(4) { color:#ffd08a; text-shadow:0 0 6px rgba(255,190,100,.75),0 0 16px rgba(255,190,100,.32); }
+html[data-theme="dark"] .tiffin-tier:nth-child(5) { color:#d8b5ff; text-shadow:0 0 6px rgba(190,120,255,.85),0 0 16px rgba(190,120,255,.38); }
+html[data-theme="dark"] .tiffin-tier:nth-child(6) { color:#ffe98a; text-shadow:0 0 6px rgba(255,220,90,.85),0 0 16px rgba(255,220,90,.35); }
+html[data-theme="dark"] .tiffin-tier:nth-child(7) { color:#ff9ee8; text-shadow:0 0 6px rgba(255,100,220,.85),0 0 16px rgba(255,100,220,.35); }
+html[data-theme="dark"] .tiffin-tier.active { color:#ffffff; border-color:#a78bfa; box-shadow:0 0 0 2px rgba(167,139,250,.45),0 0 18px rgba(167,139,250,.35); }
+html[data-theme="dark"] .filter-group label,
+html[data-theme="dark"] .filters-foot,
+html[data-theme="dark"] .sub,
+html[data-theme="dark"] .recipe-card .desc { color:#e7f5ef; }

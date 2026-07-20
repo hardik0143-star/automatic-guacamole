@@ -996,7 +996,27 @@
     if (m && RECIPES.some(r => r.id === m[1])) openRecipeModal(m[1]);
   }
 
+  /* ---------------- lightweight local visit telemetry ----------------
+     This is intentionally privacy-friendly and device-local. A static app cannot
+     provide trustworthy global India/international counts without a backend or
+     analytics provider. */
+  function recordLocalVisit() {
+    try {
+      const key = "tt_local_visit_stats";
+      const stats = JSON.parse(localStorage.getItem(key) || '{"total":0,"india":0,"international":0}');
+      const sessionKey = "tt_visit_session_recorded";
+      if (sessionStorage.getItem(sessionKey)) return;
+      const isIndia = /(^|\.)in$/i.test(Intl.DateTimeFormat().resolvedOptions().timeZone || "") ||
+        /^hi(-|$)|^gu(-|$)/i.test(navigator.language || "");
+      stats.total += 1;
+      stats[isIndia ? "india" : "international"] += 1;
+      localStorage.setItem(key, JSON.stringify(stats));
+      sessionStorage.setItem(sessionKey, "1");
+    } catch (e) {}
+  }
+
   /* ---------------- init ---------------- */
+  recordLocalVisit();
   render();
   openFromHash();
 

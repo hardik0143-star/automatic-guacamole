@@ -86,6 +86,13 @@
           <div class="stat-card"><div class="stat-num mono">${stats.withImages}</div><div class="stat-lbl">Have at least 1 image</div></div>
         </section>
 
+        <section class="release-note-panel visitor-analytics-card">
+          <h3>Visitor Analytics</h3>
+          <p><strong>Local device visit sessions:</strong> <span class="mono" id="visitor-total">—</span></p>
+          <p>India: <span class="mono" id="visitor-india">—</span> &nbsp; | &nbsp; International/other: <span class="mono" id="visitor-international">—</span></p>
+          <p class="hint">These figures are device-local estimates based on browser locale/time zone. They are not global link visitor counts. For accurate total visitors and country-level analytics across all users, Tiny Tiffin needs a privacy-compliant analytics/backend service.</p>
+        </section>
+
         <section class="admin-toolbar">
           <button class="btn btn-primary" id="add-recipe-btn">+ Add recipe</button>
           <div class="toolbar-right">
@@ -446,6 +453,18 @@
   }
 
   /* ---------------- events ---------------- */
+  function renderVisitorStats() {
+    try {
+      const s = JSON.parse(localStorage.getItem("tt_local_visit_stats") || '{"total":0,"india":0,"international":0}');
+      const total = document.getElementById("visitor-total");
+      const india = document.getElementById("visitor-india");
+      const intl = document.getElementById("visitor-international");
+      if (total) total.textContent = s.total || 0;
+      if (india) india.textContent = s.india || 0;
+      if (intl) intl.textContent = s.international || 0;
+    } catch (e) {}
+  }
+
   function attachEvents() {
     if (!authed) {
       const submit = document.getElementById("pw-submit");
