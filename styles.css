@@ -314,3 +314,47 @@ html[data-theme="dark"] .filter-group label,
 html[data-theme="dark"] .filters-foot,
 html[data-theme="dark"] .sub,
 html[data-theme="dark"] .recipe-card .desc { color:#e7f5ef; }
+
+
+/* ==========================================================
+   v3.6 — Elegant, high-contrast dark-mode nutrition labels
+   Replaces blurry neon text with a crisp premium treatment.
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+.tiffin-tier{
+  font-family:'Nunito Sans','Work Sans',system-ui,sans-serif;
+  font-weight:800;
+  letter-spacing:.01em;
+}
+
+html[data-theme="dark"] .tiffin-tier{
+  color:#263238;
+  text-shadow:none;
+  -webkit-text-stroke:0;
+}
+
+html[data-theme="dark"] .tiffin-tier .tier-emoji{
+  filter:none;
+}
+
+/* Elegant category accents: dark enough to remain readable on the light tier cards. */
+html[data-theme="dark"] .tiffin-tier[data-nutri="protein"]{color:#176B45}
+html[data-theme="dark"] .tiffin-tier[data-nutri="iron"]{color:#4F641D}
+html[data-theme="dark"] .tiffin-tier[data-nutri="calcium"]{color:#246A8A}
+html[data-theme="dark"] .tiffin-tier[data-nutri="immunity"]{color:#A45A12}
+html[data-theme="dark"] .tiffin-tier[data-nutri="fiber"]{color:#70428F}
+html[data-theme="dark"] .tiffin-tier[data-nutri="energy"]{color:#946D00}
+html[data-theme="dark"] .tiffin-tier[data-nutri="vitamins"]{color:#9A356F}
+
+/* Keep the dark page itself readable without glow. */
+html[data-theme="dark"] .hero p.sub,
+html[data-theme="dark"] .smart-search-bar input::placeholder{
+  color:#C8D1D3;
+}
+
+/* Slightly stronger contrast for the nutrition stack in dark mode. */
+html[data-theme="dark"] .tiffin-tier{
+  border-color:#687582;
+  background:linear-gradient(180deg,#F8FAFA,#E7ECEC);
+}

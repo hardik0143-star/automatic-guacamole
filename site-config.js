@@ -3,9 +3,9 @@
    Nothing here requires touching app.js or admin.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v3.5",
+  version: "v3.6",
   releaseDate: "July 2026",
-  releaseNotes: "Night mode neon nutrition labels for improved readability; lightweight privacy-friendly local visit telemetry in Admin; automatic real recipe photography and improved recipe discovery.",
+  releaseNotes: "Elegant high-contrast dark-mode nutrition labels with improved readability; lightweight privacy-friendly local visit telemetry in Admin; automatic real recipe photography and improved recipe discovery.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
