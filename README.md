@@ -168,3 +168,19 @@ Recipe image fields remain admin-editable. For production, use properly licensed
 - Admin can upload recipe images from a phone/computer; images are resized and compressed in-browser.
 - Added 8 healthy Indian and continental recipes featuring broccoli, zucchini, mushrooms, paneer, sprouts, cheese, avocado and sweet potato.
 - Added richer vitamin information and developer story for Nishiv, Hardik and Ekta Desai.
+
+
+## v3.4 — Automatic Recipe Photography
+
+Tiny Tiffin now automatically searches Openverse for openly licensed food photography when a recipe has no manually configured image. Images are:
+
+- matched using the recipe name and ingredients;
+- selected from photograph results;
+- requested at a medium size to reduce data usage;
+- cached locally by recipe ID;
+- loaded lazily as recipe cards appear;
+- automatically available to future recipes without additional code changes.
+
+Manual images configured in Admin always take priority. If image search is unavailable or a remote image fails, the existing recipe emoji illustration remains as a safe fallback.
+
+Openverse is an openly licensed media search service. Verify the license/attribution details of any image before commercial use.

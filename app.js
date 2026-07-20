@@ -17,6 +17,95 @@
     }
   };
 
+
+  /* ---------------- automatic recipe image service ----------------
+     Uses Openverse's openly-licensed image search. Images are resolved
+     lazily and cached by recipe ID, so future recipes can receive a
+     real food photo automatically without changing the recipe schema.
+  ------------------------------------------------------------------- */
+  const imageCache = storage.get("tt_recipe_image_cache_v1", {});
+  const imagePending = new Set();
+
+  function saveImageCache() {
+    storage.set("tt_recipe_image_cache_v1", imageCache);
+  }
+
+  function imageSearchText(r) {
+    const name = recipeName(r);
+    const ingredients = (r.ingredients || []).slice(0, 4).join(" ");
+    return `${name} food recipe ${ingredients}`.trim();
+  }
+
+  async function findRecipeImage(r) {
+    if (r.images && r.images.length) return { url: r.images[0], source: "admin" };
+    if (imageCache[r.id] && imageCache[r.id].url) return imageCache[r.id];
+    if (imagePending.has(r.id)) return null;
+    imagePending.add(r.id);
+
+    try {
+      const params = new URLSearchParams({
+        q: imageSearchText(r),
+        page_size: "5",
+        category: "photograph",
+        size: "medium",
+        aspect_ratio: "wide",
+        license_type: "commercial"
+      });
+      const response = await fetch(`https://api.openverse.org/v1/images/?${params.toString()}`);
+      if (!response.ok) throw new Error("Image search failed");
+      const data = await response.json();
+      const result = (data.results || []).find(x => x.thumbnail || x.url);
+      if (!result) return null;
+
+      const image = {
+        url: result.thumbnail || result.url,
+        fullUrl: result.url || result.thumbnail,
+        title: result.title || recipeName(r),
+        creator: result.creator || "",
+        source: result.source || "Openverse",
+        license: result.license || "",
+        detailUrl: result.detail_url || result.foreign_landing_url || ""
+      };
+      imageCache[r.id] = image;
+      saveImageCache();
+      return image;
+    } catch (e) {
+      return null;
+    } finally {
+      imagePending.delete(r.id);
+    }
+  }
+
+  function imageMarkup(r, image) {
+    if (!image || !image.url) return `<div class="placeholder-illustration">${r.emoji}</div>`;
+    const attribution = image.detailUrl ? ` title="Image source: Openverse"` : "";
+    return `<img src="${escapeAttr(image.url)}" alt="${escapeAttr(recipeName(r))}" loading="lazy"${attribution}
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="placeholder-illustration" style="display:none">${r.emoji}</div>`;
+  }
+
+  function hydrateRecipeImages(scope) {
+    const container = scope || root;
+    if (!container) return;
+    const cards = container.querySelectorAll("[data-auto-image]");
+    cards.forEach(card => {
+      const id = card.dataset.autoImage;
+      const r = RECIPES.find(x => x.id === id);
+      if (!r) return;
+      const apply = image => {
+        if (!image) return;
+        const wrap = card.querySelector(".recipe-image-wrap");
+        if (wrap) wrap.innerHTML = imageMarkup(r, image);
+      };
+      const cached = r.images && r.images.length ? { url: r.images[0], source: "admin" } : imageCache[r.id];
+      if (cached) {
+        apply(cached);
+        return;
+      }
+      findRecipeImage(r).then(apply);
+    });
+  }
+
   /* ---------------- constants ---------------- */
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
@@ -198,6 +287,7 @@
     if (state.tab === "planner") attachPlannerEvents();
     if (state.tab === "favorites") attachFavoritesEvents();
     if (state.tab === "contact") attachContactEvents();
+    hydrateRecipeImages(root);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
     });
@@ -257,10 +347,10 @@
 
   /* ---------- image / placeholder ---------- */
   function recipeImageHTML(r) {
-    if (r.images && r.images.length > 0) {
-      return `<div class="recipe-image-wrap"><img src="${r.images[0]}" alt="${recipeName(r)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder-illustration" style="display:none">${r.emoji}</div></div>`;
-    }
-    return `<div class="recipe-image-wrap"><div class="placeholder-illustration">${r.emoji}</div></div>`;
+    const manual = r.images && r.images.length > 0;
+    const cached = !manual ? imageCache[r.id] : null;
+    const image = manual ? { url: r.images[0], source: "admin" } : cached;
+    return `<div class="recipe-image-wrap" data-auto-image="${escapeAttr(r.id)}">${imageMarkup(r, image)}</div>`;
   }
 
   /* ---------- Find tab ---------- */
@@ -469,7 +559,7 @@
     const r = RECIPES.find(x => x.id === id);
     if (!r) return;
     const rt = displayedRatings(r);
-    const images = (r.images && r.images.length) ? r.images.slice(0, 2) : [];
+    const images = (r.images && r.images.length) ? r.images.slice(0, 2) : (imageCache[r.id] ? [imageCache[r.id].url] : []);
     const backdrop = document.createElement("div");
     backdrop.className = "modal-backdrop";
     backdrop.id = "recipe-modal";

@@ -3,13 +3,13 @@
    Nothing here requires touching app.js or admin.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v3.3",
+  version: "v3.4",
   releaseDate: "July 2026",
-  releaseNotes: "Added 15 new healthy non-duplicate recipes featuring broccoli, mushrooms, zucchini, paneer, sprouts, cheese, avocado, sweet potato and quinoa; improved developer story and added a Surprise Me recipe feature.",
+  releaseNotes: "Automatic real recipe photography for current and future recipes using openly licensed image search; cached image loading, manual image priority, graceful fallback, and improved recipe discovery.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
-    about: "Tiny Tiffin started with a simple idea inspired by our little son, Nishiv ♥️\n\nAs parents, we often found ourselves wondering what to pack in his tiffin every day - something healthy, nutritious, interesting, and something he would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.\n\nOne little boy inspired a big idea. ❤️\n\n- Hardik Desai & Ekta Desai",
+    about: "Tiny Tiffin started with a simple idea inspired by our little son, Nishiv ♥️\n\nAs parents, we often found ourselves wondering what to pack in his tiffin every day - something healthy, nutritious, interesting, and something he would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.\n\nOne little boy inspired a big idea. ❤️",
     futureVision: [
       "AI meal planner & chat assistant",
       "Ingredient photo recognition",
