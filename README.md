@@ -161,3 +161,10 @@ This remains a static GitHub/Vercel application. Admin changes are stored locall
 
 ### Images
 Recipe image fields remain admin-editable. For production, use properly licensed, compressed images (preferably WebP/AVIF) rather than hotlinking random web images. This avoids copyright, broken-link, and performance problems.
+
+
+## v3.3 updates
+- Improved dark-mode contrast and tagline styling.
+- Admin can upload recipe images from a phone/computer; images are resized and compressed in-browser.
+- Added 8 healthy Indian and continental recipes featuring broccoli, zucchini, mushrooms, paneer, sprouts, cheese, avocado and sweet potato.
+- Added richer vitamin information and developer story for Nishiv, Hardik and Ekta Desai.

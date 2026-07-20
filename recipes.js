@@ -1,7 +1,4 @@
-/* Tiny Tiffin — Recipe Database (100 recipes)
-   Generated data file. Edit via the Admin Panel, or via bulk
-   Excel upload — see README.md for the process. */
-
+/* Tiny Tiffin — Recipe Database */
 window.TINY_TIFFIN_RECIPES = [
   {
     "id": "poha",
@@ -7027,6 +7024,1723 @@ window.TINY_TIFFIN_RECIPES = [
       "pickyEaterFriendly": 3.9,
       "timeSaver": 3.8,
       "count": 12
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-cheese-muffins",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Broccoli & Cheese Mini Muffins",
+      "hi": "ब्रोकोली और चीज़ मिनी मफिन"
+    },
+    "desc": {
+      "en": "Soft savoury mini muffins packed with broccoli and mild cheese.",
+      "hi": "Soft savoury mini muffins packed with broccoli and mild cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "calcium",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup chopped broccoli",
+      "1 cup whole wheat flour",
+      "1/2 cup grated cheddar or mozzarella",
+      "1 egg or 1/4 cup yogurt",
+      "1/2 cup milk",
+      "1/2 tsp baking powder"
+    ],
+    "instructions": [
+      "Steam broccoli and chop finely.",
+      "Mix flour, baking powder, cheese and broccoli.",
+      "Add egg or yogurt and milk; mix gently.",
+      "Bake in mini muffin moulds at 180°C for 15–18 minutes."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 9,
+      "iron_mg": 1.8,
+      "calcium_mg": 150,
+      "fiber_g": 3.5,
+      "vitaminC_mg": 45
+    },
+    "vitamins": [
+      "Vitamin C",
+      "Vitamin K",
+      "Vitamin A",
+      "Vitamin B6"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "paneer-zucchini-rolls",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Paneer Zucchini Rainbow Rolls",
+      "hi": "पनीर ज़ुकीनी रेनबो रोल्स"
+    },
+    "desc": {
+      "en": "Soft roti rolls filled with paneer, zucchini and colourful vegetables.",
+      "hi": "Soft roti rolls filled with paneer, zucchini and colourful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 small whole wheat rotis",
+      "1/2 cup crumbled paneer",
+      "1/2 cup grated zucchini",
+      "1/4 cup grated carrot",
+      "2 tbsp sweet corn",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Sauté zucchini, carrot and corn.",
+      "Add paneer and black pepper.",
+      "Fill a warm roti, roll tightly and cut into pinwheels."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 11,
+      "iron_mg": 2,
+      "calcium_mg": 210,
+      "fiber_g": 4,
+      "vitaminC_mg": 12
+    },
+    "vitamins": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin K"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprout-cheese-chilla",
+    "emoji": "🫛",
+    "images": [],
+    "name": {
+      "en": "Sprouted Moong Cheese Chilla",
+      "hi": "अंकुरित मूंग चीज़ चीला"
+    },
+    "desc": {
+      "en": "Protein-rich savoury pancakes with sprouts and a melty cheese centre.",
+      "hi": "Protein-rich savoury pancakes with sprouts and a melty cheese centre."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber",
+      "calcium",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sprouted moong",
+      "2 tbsp grated carrot",
+      "2 tbsp grated cheese",
+      "1/4 tsp cumin",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Blend sprouts into a coarse batter.",
+      "Mix in carrot and seasoning.",
+      "Cook small chillas and add cheese before folding."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 12,
+      "iron_mg": 2.7,
+      "calcium_mg": 140,
+      "fiber_g": 5.5,
+      "vitaminC_mg": 10
+    },
+    "vitamins": [
+      "Vitamin C",
+      "Vitamin K",
+      "Vitamin B9"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mushroom-corn-toast",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Mushroom Corn Cheese Toast",
+      "hi": "मशरूम कॉर्न चीज़ टोस्ट"
+    },
+    "desc": {
+      "en": "Crispy whole-grain toast topped with mushrooms, corn and cheese.",
+      "hi": "Crispy whole-grain toast topped with mushrooms, corn and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "calcium",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "1/2 cup chopped mushrooms",
+      "2 tbsp sweet corn",
+      "1/4 cup mozzarella",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Sauté mushrooms and corn.",
+      "Spread over bread and top with cheese.",
+      "Toast until crisp and melted."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 10,
+      "iron_mg": 1.9,
+      "calcium_mg": 170,
+      "fiber_g": 4.2,
+      "vitaminC_mg": 5
+    },
+    "vitamins": [
+      "Vitamin B2",
+      "Vitamin B3",
+      "Vitamin D",
+      "Vitamin B5"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "zucchini-paneer-pasta",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Creamy Zucchini Paneer Pasta",
+      "hi": "क्रीमी ज़ुकीनी पनीर पास्ता"
+    },
+    "desc": {
+      "en": "Mild creamy pasta with hidden zucchini and soft paneer cubes.",
+      "hi": "Mild creamy pasta with hidden zucchini and soft paneer cubes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "1/2 cup grated zucchini",
+      "1/3 cup paneer cubes",
+      "1/4 cup milk",
+      "2 tbsp grated cheese"
+    ],
+    "instructions": [
+      "Cook pasta.",
+      "Sauté zucchini.",
+      "Add milk and cheese.",
+      "Toss with pasta and paneer."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein_g": 13,
+      "iron_mg": 2.2,
+      "calcium_mg": 230,
+      "fiber_g": 5,
+      "vitaminC_mg": 8
+    },
+    "vitamins": [
+      "Vitamin A",
+      "Vitamin B2",
+      "Vitamin B12",
+      "Vitamin C"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-vegetable-uttapam",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Rainbow Vegetable Uttapam",
+      "hi": "रेनबो वेजिटेबल उत्तपम"
+    },
+    "desc": {
+      "en": "Soft mini uttapams topped with colourful vegetables and mild cheese.",
+      "hi": "Soft mini uttapams topped with colourful vegetables and mild cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "iron",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "2 tbsp grated carrot",
+      "2 tbsp chopped capsicum",
+      "2 tbsp sweet corn",
+      "2 tbsp grated cheese"
+    ],
+    "instructions": [
+      "Pour mini batter circles.",
+      "Top with vegetables.",
+      "Cook covered and finish with cheese."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 7,
+      "iron_mg": 1.6,
+      "calcium_mg": 110,
+      "fiber_g": 3.8,
+      "vitaminC_mg": 30
+    },
+    "vitamins": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin B6",
+      "Vitamin K"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "avocado-paneer-sandwich",
+    "emoji": "🥑",
+    "images": [],
+    "name": {
+      "en": "Avocado Paneer Sandwich",
+      "hi": "एवोकाडो पनीर सैंडविच"
+    },
+    "desc": {
+      "en": "Creamy avocado and paneer filling in soft whole-grain bread.",
+      "hi": "Creamy avocado and paneer filling in soft whole-grain bread."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "calcium",
+      "energy",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "1/2 ripe avocado",
+      "1/3 cup crumbled paneer",
+      "1 tsp lemon juice",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Mash avocado with lemon.",
+      "Mix with paneer.",
+      "Spread between bread and cut into fingers."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 11,
+      "iron_mg": 2.1,
+      "calcium_mg": 190,
+      "fiber_g": 6,
+      "vitaminC_mg": 10
+    },
+    "vitamins": [
+      "Vitamin E",
+      "Vitamin K",
+      "Vitamin C",
+      "Vitamin B6",
+      "Folate (Vitamin B9)"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-cheese-bites",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Cheese Bites",
+      "hi": "शकरकंद चीज़ बाइट्स"
+    },
+    "desc": {
+      "en": "Soft baked bites combining naturally sweet sweet potato with cheese.",
+      "hi": "Soft baked bites combining naturally sweet sweet potato with cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "calcium",
+      "vitamins"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup mashed sweet potato",
+      "1/2 cup grated mozzarella",
+      "2 tbsp oat flour",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Mix all ingredients.",
+      "Shape into small bites.",
+      "Bake at 180°C for 15–18 minutes."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 8,
+      "iron_mg": 1.5,
+      "calcium_mg": 150,
+      "fiber_g": 4.8,
+      "vitaminC_mg": 18
+    },
+    "vitamins": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin B6",
+      "Vitamin E"
+    ],
+    "packingTip": {
+      "en": "Cool slightly before packing in a leak-proof lunchbox.",
+      "hi": "पैक करने से पहले थोड़ा ठंडा करें।"
+    },
+    "kidTip": {
+      "en": "Make small colourful portions that are easy for little hands to hold.",
+      "hi": "छोटे रंगीन हिस्से बनाएं जिन्हें बच्चे आसानी से पकड़ सकें।"
+    },
+    "ratings": {
+      "overall": 4.6,
+      "nutrition": 4.7,
+      "kidFriendly": 4.6,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.2,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-paneer-cheese-bites",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Broccoli Paneer Cheese Bites"
+    },
+    "desc": {
+      "en": "Soft baked bites packed with broccoli, paneer and cheese for a protein-rich lunchbox snack."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup finely chopped broccoli",
+      "1/2 cup crumbled paneer",
+      "1/4 cup grated mozzarella cheese",
+      "1 egg or 2 tbsp chickpea flour",
+      "2 tbsp whole-wheat breadcrumbs",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Steam broccoli until tender and chop finely.",
+      "Mix all ingredients into a soft mixture.",
+      "Shape into small bites and bake at 180°C for 12–15 minutes until set.",
+      "Cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 10,
+      "iron_mg": 1.8,
+      "calcium_mg": 180,
+      "fiber_g": 3,
+      "vitaminC_mg": 45
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-corn-cheese-paratha",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Broccoli Corn Cheese Paratha"
+    },
+    "desc": {
+      "en": "A colourful whole-wheat paratha with broccoli, sweet corn and a little cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat flour",
+      "1/2 cup finely chopped broccoli",
+      "1/4 cup sweet corn",
+      "2 tbsp grated cheddar cheese",
+      "1/4 tsp cumin powder",
+      "Water as needed"
+    ],
+    "instructions": [
+      "Steam broccoli and mash lightly.",
+      "Mix flour, broccoli, corn, cheese and cumin into a soft dough.",
+      "Roll into small parathas and cook on a hot pan with a little oil.",
+      "Cut into strips for easy lunchbox eating."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 8,
+      "iron_mg": 2.2,
+      "calcium_mg": 90,
+      "fiber_g": 5,
+      "vitaminC_mg": 30
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-hummus-mini-wrap",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Broccoli Hummus Mini Wrap"
+    },
+    "desc": {
+      "en": "A soft whole-wheat wrap filled with roasted broccoli, hummus and crunchy vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat rotis",
+      "1 cup broccoli florets",
+      "1/4 cup hummus",
+      "1/4 cup grated carrot",
+      "1/4 cup sliced cucumber",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Roast or steam broccoli until tender.",
+      "Spread hummus over the rotis.",
+      "Add broccoli, carrot and cucumber.",
+      "Roll tightly and cut into small pinwheels."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 7,
+      "iron_mg": 2.5,
+      "calcium_mg": 70,
+      "fiber_g": 6,
+      "vitaminC_mg": 40
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mushroom-paneer-pepper-stir-fry",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Mushroom Paneer Pepper Stir-Fry"
+    },
+    "desc": {
+      "en": "Tender mushrooms and paneer tossed with colourful peppers for a savoury, nutrient-dense filling."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sliced mushrooms",
+      "1/2 cup paneer cubes",
+      "1/4 cup red bell pepper",
+      "1/4 cup yellow bell pepper",
+      "1/4 tsp black pepper",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Sauté mushrooms until their moisture reduces.",
+      "Add peppers and cook until slightly soft.",
+      "Add paneer and black pepper; toss for 2–3 minutes.",
+      "Pack with a small whole-wheat roti or rice."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 12,
+      "iron_mg": 2.2,
+      "calcium_mg": 170,
+      "fiber_g": 3,
+      "vitaminC_mg": 55
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mushroom-cheese-oats-pancake",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Mushroom Cheese Oats Pancake"
+    },
+    "desc": {
+      "en": "A savoury oats pancake with finely chopped mushrooms and melted cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup oats flour",
+      "1/2 cup finely chopped mushrooms",
+      "2 tbsp grated mozzarella",
+      "1/4 cup curd",
+      "Water as needed",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Mix oats flour, curd and water into a batter.",
+      "Fold in mushrooms, cheese and pepper.",
+      "Cook small pancakes on a lightly greased pan until golden on both sides.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 8,
+      "iron_mg": 2.4,
+      "calcium_mg": 120,
+      "fiber_g": 4,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mushroom-vegetable-pasta",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Creamy Mushroom Vegetable Pasta"
+    },
+    "desc": {
+      "en": "Whole-wheat pasta with mushrooms, peas and a light cheese sauce."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1/2 cup sliced mushrooms",
+      "1/4 cup green peas",
+      "2 tbsp cream cheese",
+      "1/4 cup milk",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Cook mushrooms and peas until tender.",
+      "Add milk and cream cheese and stir into a light sauce.",
+      "Toss in cooked pasta and black pepper.",
+      "Cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 11,
+      "iron_mg": 2.5,
+      "calcium_mg": 150,
+      "fiber_g": 6,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "zucchini-paneer-cheela",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Zucchini Paneer Cheela"
+    },
+    "desc": {
+      "en": "A soft savoury pancake made with zucchini, paneer and chickpea flour."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup grated zucchini",
+      "1/2 cup besan",
+      "1/4 cup crumbled paneer",
+      "1/4 tsp cumin powder",
+      "Water as needed",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Squeeze excess water from zucchini.",
+      "Mix all ingredients into a thick batter.",
+      "Cook small cheelas on a lightly greased pan.",
+      "Cut into triangles or strips."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 11,
+      "iron_mg": 2.5,
+      "calcium_mg": 160,
+      "fiber_g": 4,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "zucchini-cheese-quesadilla",
+    "emoji": "🧀",
+    "images": [],
+    "name": {
+      "en": "Zucchini Cheese Quesadilla"
+    },
+    "desc": {
+      "en": "Whole-wheat quesadilla with grated zucchini, corn and a mild cheese filling."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup grated zucchini",
+      "1/4 cup sweet corn",
+      "1/4 cup grated mozzarella",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Squeeze excess water from zucchini.",
+      "Place zucchini, corn and cheese between tortillas.",
+      "Toast on a pan until the cheese melts.",
+      "Cut into small wedges."
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein_g": 10,
+      "iron_mg": 2,
+      "calcium_mg": 180,
+      "fiber_g": 5,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "zucchini-carrot-millet-muffins",
+    "emoji": "🧁",
+    "images": [],
+    "name": {
+      "en": "Zucchini Carrot Millet Muffins"
+    },
+    "desc": {
+      "en": "Soft savoury millet muffins with zucchini and carrot, perfect for little lunchboxes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup millet flour",
+      "1/2 cup grated zucchini",
+      "1/4 cup grated carrot",
+      "1/4 cup curd",
+      "1/2 tsp baking powder",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Mix all ingredients into a thick batter.",
+      "Spoon into mini muffin moulds.",
+      "Bake at 180°C for 15–18 minutes.",
+      "Cool completely before packing."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 5,
+      "iron_mg": 2.8,
+      "calcium_mg": 70,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouted-moong-paneer-chaat",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Sprouted Moong Paneer Chaat"
+    },
+    "desc": {
+      "en": "A colourful, protein-rich chaat with sprouts, paneer and fresh vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup steamed sprouted moong",
+      "1/2 cup paneer cubes",
+      "1/4 cup finely chopped cucumber",
+      "1/4 cup grated carrot",
+      "A squeeze of lemon",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Steam sprouts until soft.",
+      "Mix sprouts, paneer, cucumber and carrot.",
+      "Finish with lemon and black pepper.",
+      "Pack lemon separately if needed."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 14,
+      "iron_mg": 3.2,
+      "calcium_mg": 190,
+      "fiber_g": 6,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouted-moong-vegetable-dosa",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Sprouted Moong Vegetable Dosa"
+    },
+    "desc": {
+      "en": "Thin savoury dosas made with sprouted moong and colourful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup soaked sprouted moong",
+      "1/4 cup grated carrot",
+      "1/4 cup finely chopped spinach",
+      "1/4 tsp cumin powder",
+      "Water as needed"
+    ],
+    "instructions": [
+      "Blend sprouts with a little water into a smooth batter.",
+      "Mix in carrot, spinach and cumin.",
+      "Spread small dosas on a hot pan and cook on both sides.",
+      "Cut into strips for the lunchbox."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 12,
+      "iron_mg": 3.5,
+      "calcium_mg": 80,
+      "fiber_g": 6,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouted-moong-cheese-wrap",
+    "emoji": "🌯",
+    "images": [],
+    "name": {
+      "en": "Sprouted Moong Cheese Wrap"
+    },
+    "desc": {
+      "en": "A whole-wheat wrap with lightly cooked sprouts, vegetables and a little cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "2 small whole-wheat rotis",
+      "3/4 cup steamed sprouts",
+      "1/4 cup grated carrot",
+      "1/4 cup grated cheese",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Steam sprouts until tender.",
+      "Fill rotis with sprouts, carrot, cheese and pepper.",
+      "Roll tightly and toast lightly.",
+      "Cut into small pinwheels."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 13,
+      "iron_mg": 3,
+      "calcium_mg": 140,
+      "fiber_g": 7,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "avocado-paneer-toast",
+    "emoji": "🥑",
+    "images": [],
+    "name": {
+      "en": "Avocado Paneer Rainbow Toast"
+    },
+    "desc": {
+      "en": "Creamy avocado, paneer and colourful vegetables on whole-grain toast."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "1/2 ripe avocado",
+      "1/4 cup crumbled paneer",
+      "1/4 cup grated carrot",
+      "1 tbsp sweet corn",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Mash avocado and mix with paneer.",
+      "Spread over toasted bread.",
+      "Top with carrot and corn.",
+      "Cut into small squares or fingers."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 9,
+      "iron_mg": 2.2,
+      "calcium_mg": 100,
+      "fiber_g": 7,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-chickpea-patties",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Chickpea Patties"
+    },
+    "desc": {
+      "en": "Soft patties combining sweet potato and chickpeas for fibre and plant protein."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup mashed sweet potato",
+      "1/2 cup mashed chickpeas",
+      "2 tbsp oats flour",
+      "1/4 tsp cumin powder",
+      "Pinch of black pepper"
+    ],
+    "instructions": [
+      "Mix all ingredients and shape into small patties.",
+      "Pan-cook with a little oil until lightly golden on both sides.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 8,
+      "iron_mg": 2.8,
+      "calcium_mg": 55,
+      "fiber_g": 7,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-quinoa-vegetable-cups",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Rainbow Quinoa Vegetable Cups"
+    },
+    "desc": {
+      "en": "Mini baked quinoa cups with peas, corn, carrot and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/4 cup green peas",
+      "1/4 cup sweet corn",
+      "1/4 cup grated carrot",
+      "1/4 cup grated cheese",
+      "1 egg or 2 tbsp chickpea flour"
+    ],
+    "instructions": [
+      "Mix all ingredients well.",
+      "Spoon into mini muffin moulds.",
+      "Bake at 180°C for 15–18 minutes until firm.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 9,
+      "iron_mg": 2.5,
+      "calcium_mg": 130,
+      "fiber_g": 5,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Cut into small, colourful, easy-to-hold pieces for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.3,
+      "count": 1
     },
     "hidden": false
   }

@@ -193,10 +193,14 @@
             <label>Description (English)<input type="text" name="desc_en" value="${escAttr(r.desc.en)}"></label>
           </div>
           <div class="form-row">
-            <label>Image URL 1 (optional)<input type="text" name="image1" value="${escAttr((r.images && r.images[0]) || "")}" placeholder="https://…"></label>
-            <label>Image URL 2 (optional)<input type="text" name="image2" value="${escAttr((r.images && r.images[1]) || "")}" placeholder="https://…"></label>
+            <label>Image URL 1 (optional)<input type="text" name="image1" value="${escAttr((r.images && r.images[0]) || "")}" placeholder="https://…">
+              <input type="file" accept="image/*" data-image-upload="1" style="margin-top:6px">
+            </label>
+            <label>Image URL 2 (optional)<input type="text" name="image2" value="${escAttr((r.images && r.images[1]) || "")}" placeholder="https://…">
+              <input type="file" accept="image/*" data-image-upload="2" style="margin-top:6px">
+            </label>
           </div>
-          <p class="hint" style="margin:-6px 0 6px">No image? A themed illustration is shown automatically. Paste any hosted image URL (e.g. from your own site, Imgur, or Cloudinary) — this app doesn't store image files itself.</p>
+          <p class="hint" style="margin:-6px 0 6px">You can paste an image URL or choose a picture from your phone/computer. Uploaded images are automatically resized and compressed before being saved into the recipe data.</p>
           <div class="form-row">
             <label>Time category
               <select name="timeCategory">${TIME_BUCKETS.map((m) => `<option value="${m}" ${r.timeCategory === m ? "selected" : ""}>${m} min</option>`).join("")}</select>
@@ -249,7 +253,22 @@
     document.body.appendChild(backdrop);
     backdrop.addEventListener("click", (e) => { if (e.target === backdrop) backdrop.remove(); });
     document.getElementById("form-close").addEventListener("click", () => backdrop.remove());
-    document.getElementById("recipe-form").addEventListener("submit", (e) => {
+    backdrop.querySelectorAll("[data-image-upload]").forEach((input) => {
+      input.addEventListener("change", async () => {
+        const file = input.files && input.files[0];
+        if (!file) return;
+        try {
+          const dataUrl = await compressImageFile(file);
+          const target = backdrop.querySelector(`[name="image${input.dataset.imageUpload}"]`);
+          if (target) target.value = dataUrl;
+          toastAdmin("Image compressed and attached to recipe.");
+        } catch (err) {
+          alert("Could not process this image. Please try another image.");
+        }
+      });
+    });
+
+    document.getElementById("recipe-form").addEventListener("submit", async (e) => {
       e.preventDefault();
       const fd = new FormData(e.target);
       const id = (fd.get("id") || "").toString().trim().toLowerCase().replace(/\s+/g, "-");

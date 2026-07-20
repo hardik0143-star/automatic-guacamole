@@ -258,7 +258,7 @@
   /* ---------- image / placeholder ---------- */
   function recipeImageHTML(r) {
     if (r.images && r.images.length > 0) {
-      return `<div class="recipe-image-wrap"><img src="${r.images[0]}" alt="${recipeName(r)}" loading="lazy"></div>`;
+      return `<div class="recipe-image-wrap"><img src="${r.images[0]}" alt="${recipeName(r)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder-illustration" style="display:none">${r.emoji}</div></div>`;
     }
     return `<div class="recipe-image-wrap"><div class="placeholder-illustration">${r.emoji}</div></div>`;
   }
@@ -270,6 +270,7 @@
       <section class="hero">
         <h1 class="display">${t("heroTitle")}</h1>
         <p class="sub">${t("heroSub")}</p>
+        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
           ${NUTRITION_ORDER.map(n => `
@@ -369,6 +370,12 @@
   }
 
   function attachFindEvents() {
+    const surpriseBtn = document.getElementById("surprise-recipe");
+    if (surpriseBtn) surpriseBtn.addEventListener("click", () => {
+      const pool = filteredRecipes();
+      const choice = (pool.length ? pool : RECIPES)[Math.floor(Math.random() * (pool.length ? pool.length : RECIPES.length))];
+      openRecipeModal(choice.id);
+    });
     root.querySelectorAll(".tiffin-tier").forEach(btn => {
       btn.addEventListener("click", () => { const n = btn.dataset.nutri;
         if (state.filters.nutrition.has(n)) state.filters.nutrition.delete(n); else state.filters.nutrition.add(n);
@@ -436,6 +443,26 @@
     });
     document.body.appendChild(layer);
     setTimeout(() => layer.remove(), 1100);
+  }
+
+  function showSparkleBurst() {
+    const burst = document.createElement("div");
+    burst.className = "sparkle-burst";
+    const symbols = ["✦", "✧", "★", "✦", "✨", "★", "✧", "✦"];
+    symbols.forEach((symbol, i) => {
+      const star = document.createElement("span");
+      star.className = "sparkle-star";
+      star.textContent = symbol;
+      star.style.left = "50%";
+      star.style.top = "42%";
+      const angle = (Math.PI * 2 * i) / symbols.length;
+      const distance = 90 + Math.random() * 130;
+      star.style.setProperty("--dx", `${Math.cos(angle) * distance}px`);
+      star.style.setProperty("--dy", `${Math.sin(angle) * distance}px`);
+      burst.appendChild(star);
+    });
+    document.body.appendChild(burst);
+    setTimeout(() => burst.remove(), 1000);
   }
 
   function openRecipeModal(id) {
@@ -864,8 +891,7 @@
         <h2>${t("developerTitle")}</h2>
         <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || ""}</p>
         <p><a href="mailto:${dev.email || ""}" class="btn btn-secondary" style="display:inline-flex;text-decoration:none">✉️ Email the developer</a></p>
-        <p class="desc">${dev.about || t("developerNote")}</p>
-        <div class="developer-story"><em>One little boy inspired a big idea.</em><br><span>— Hardik Desai & Ekta Desai</span></div>
+        <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\\n/g, "<br><br>")}</p>
         <div class="release-card"><strong>${dev.version || "v3.0"}</strong> · ${dev.releaseDate || ""}<br><span>${dev.releaseNotes || ""}</span></div>
         ${dev.futureVision && dev.futureVision.length ? `<h4 style="margin-bottom:4px">${t("developerNote")}</h4><ul class="dev-future-list">${dev.futureVision.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
       </div>
