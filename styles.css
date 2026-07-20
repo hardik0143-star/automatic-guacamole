@@ -274,3 +274,18 @@ html[data-theme="dark"] .skeleton-card::after{ background:linear-gradient(90deg,
 /* misc small helpers */
 .diet-cuisine-filters{display:flex;flex-wrap:wrap;gap:6px}
 .no-repeat-note{font-size:.75rem;color:var(--turmeric-dark)}
+
+/* Tiny Tiffin v3.0 enhancements */
+.brand-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.app-tagline{font-size:.68rem;font-style:italic;color:var(--ink-soft);letter-spacing:.02em;margin-left:44px;opacity:.82}
+.developer-story{margin:18px 0;padding:14px 16px;border-left:3px solid var(--turmeric);background:var(--mist);border-radius:var(--radius-sm);line-height:1.8}
+.developer-story span{font-size:.85rem;color:var(--ink-soft)}
+.release-card{margin-top:18px;padding:12px 14px;border-radius:var(--radius-sm);background:var(--mist);font-size:.82rem;color:var(--ink-soft)}
+.vitamin-row{margin:10px 0 14px;padding:10px 12px;background:var(--mist);border-radius:var(--radius-sm);font-size:.84rem}
+.planner-highlight{animation:plannerPulse 1.2s ease-in-out 3;outline:3px solid var(--turmeric)}
+@keyframes plannerPulse{50%{transform:scale(1.02);box-shadow:0 0 0 8px rgba(229,164,49,.22)}}
+.star-burst{position:fixed;inset:0;pointer-events:none;z-index:9999;overflow:hidden}
+.burst-star{position:absolute;font-size:1.8rem;animation:burstStar .9s ease-out forwards}
+@keyframes burstStar{0%{transform:translate(-50%,-50%) scale(.2) rotate(0);opacity:0}20%{opacity:1}100%{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.2) rotate(180deg);opacity:0}}
+[data-theme="dark"] .app-tagline,[data-theme="dark"] .developer-story span{color:#e8f0ee;text-shadow:0 0 6px rgba(232,240,238,.55)}
+[data-theme="dark"] .desc,[data-theme="dark"] p,[data-theme="dark"] li,[data-theme="dark"] label,[data-theme="dark"] .stat-lbl{color:#e8f0ee}

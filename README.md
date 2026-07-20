@@ -144,3 +144,20 @@ because there isn't one yet. `styles.css` loads Google Fonts; remove the
 Recipes and nutrition figures are estimates for planning convenience,
 not medical advice. Always confirm allergies and dietary needs with
 your child's doctor.
+
+
+## Tiny Tiffin v3.1 update
+This release preserves the existing static architecture and adds:
+- dynamic local user rating recalculation and editable user ratings
+- multi-ingredient matching/search
+- multi-select nutrition goals including key vitamins
+- recipe-opening sparkle animation
+- planner slot conflict confirmation and highlighting
+- improved dark-mode readability
+- admin-managed site settings and release notes
+
+### Important architecture note
+This remains a static GitHub/Vercel application. Admin changes are stored locally in the browser and can be exported/published; true cross-device automatic two-way synchronization requires a backend/database and is intentionally not introduced here to avoid risking the existing application.
+
+### Images
+Recipe image fields remain admin-editable. For production, use properly licensed, compressed images (preferably WebP/AVIF) rather than hotlinking random web images. This avoids copyright, broken-link, and performance problems.

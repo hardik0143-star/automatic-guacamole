@@ -12,7 +12,7 @@
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
   const TIME_BUCKETS = [10, 15, 20, 25, 30];
   const MEAL_SLOTS = ["breakfast", "lunch", "snack"];
-  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
+  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
   const ALLERGENS = ["nuts", "dairy", "gluten", "soy", "egg"];
   const DIET_TYPES = ["vegetarian", "vegan", "egg"];
   const CUISINES = ["indian", "continental"];
@@ -20,7 +20,7 @@
   const EXCEL_COLUMNS = [
     "id", "emoji", "name_en", "name_hi", "desc_en", "ageGroups", "timeCategory", "dietType",
     "cuisine", "mealType", "difficulty", "nutritionTags", "allergens", "ingredients", "instructions",
-    "calories", "protein_g", "iron_mg", "calcium_mg", "fiber_g", "vitaminC_mg",
+    "calories", "protein_g", "iron_mg", "calcium_mg", "fiber_g", "vitaminC_mg", "vitamins",
     "packingTip_en", "kidTip_en", "image1", "image2"
   ];
 
@@ -72,6 +72,12 @@
       </header>
       <main class="wrap admin-main">
         ${window.TinyTiffinStore.hasDraft() ? `<div class="draft-banner">You're viewing unsaved draft changes stored in this browser. Download the updated file below when you're ready to publish them for everyone.</div>` : ""}
+
+        <section class="release-note-panel">
+          <h3>Release Notes</h3>
+          <p><strong>${window.TINY_TIFFIN_CONFIG?.version || "v3.0"}</strong> · ${window.TINY_TIFFIN_CONFIG?.releaseDate || ""}</p>
+          <p>${window.TINY_TIFFIN_CONFIG?.releaseNotes || "Current application release information."}</p>
+        </section>
 
         <section class="stat-grid">
           <div class="stat-card"><div class="stat-num mono">${stats.total}</div><div class="stat-lbl">Total recipes</div></div>

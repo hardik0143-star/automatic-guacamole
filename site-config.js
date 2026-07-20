@@ -3,17 +3,13 @@
    Nothing here requires touching app.js or admin.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
+  version: "v3.1",
+  releaseDate: "July 2026",
+  releaseNotes: "Dynamic user ratings, multiple-ingredient search, multi-goal nutrition filters, key vitamin information, special recipe-opening sparkle animation, smarter weekly planner conflict handling, improved night-mode readability, and safer admin-managed content updates.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
-    about: [
-  "Tiny Tiffin started with a simple idea inspired by our little son, Nishiv.",
-  "As parents, we often found ourselves wondering what to pack in his tiffin every day—something healthy, nutritious, interesting, and something he would actually enjoy eating.",
-  "That small, everyday challenge inspired us to create Tiny Tiffin.",
-  "This is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
-  "One little boy inspired a big idea. ❤️"],
- author:["Hardik Desai & Ekta Desai"
-],
+    about: "Tiny Tiffin was built to take the daily 'what do I pack today?' stress out of parenting — one filtered, age-appropriate, nutrition-aware tiffin idea at a time.",
     futureVision: [
       "AI meal planner & chat assistant",
       "Ingredient photo recognition",

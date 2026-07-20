@@ -20,8 +20,8 @@
   /* ---------------- constants ---------------- */
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
-  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
-  const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡" };
+  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
+  const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡", vitamins: "🍎" };
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
   const ALL_ALLERGENS = ["nuts", "dairy", "gluten", "soy", "egg"];
   const DIET_TYPES = ["vegetarian", "vegan", "egg"];
@@ -43,7 +43,7 @@
     savedPlans: storage.get("tt_saved_plans", []),
     userRatings: storage.get("tt_user_ratings", {}),
     filters: {
-      age: "all", time: "any", meal: "all", nutrition: null,
+      age: "all", time: "any", meal: "all", nutrition: new Set(),
       allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: ""
     },
     matchInput: ""
@@ -81,13 +81,18 @@
   function displayedRatings(r) {
     const base = r.ratings || { overall: 4, nutrition: 4, kidFriendly: 4, lunchboxFriendly: 4, pickyEaterFriendly: 4, timeSaver: 4, count: 1 };
     const mine = state.userRatings[r.id];
-    if (!mine) return base;
-    const n = base.count + 1;
-    const merge = (key) => Math.round(((base[key] * base.count) + mine[key]) / n * 10) / 10;
+    const baseCount = Math.max(1, Number(base.count) || 1);
+    if (!mine) return { ...base, count: baseCount };
+    const n = baseCount + 1;
+    const merge = (key) => {
+      const baseValue = Number(base[key]) || 0;
+      const myValue = Number(mine[key]) || Number(mine.overall) || baseValue;
+      return Math.round(((baseValue * baseCount) + myValue) / n * 10) / 10;
+    };
     return {
       overall: merge("overall"), nutrition: merge("nutrition"), kidFriendly: merge("kidFriendly"),
       lunchboxFriendly: merge("lunchboxFriendly"), pickyEaterFriendly: merge("pickyEaterFriendly"),
-      timeSaver: merge("timeSaver"), count: n
+      timeSaver: merge("timeSaver"), count: n, userRating: mine
     };
   }
   function starsHTML(value, size) {
@@ -95,6 +100,20 @@
     const rounded = Math.round(value);
     for (let i = 1; i <= 5; i++) out += `<span class="star ${i <= rounded ? "filled" : ""}">★</span>`;
     return out + "</span>";
+  }
+
+  /* ---------------- vitamins ---------------- */
+  function getRecipeVitamins(r) {
+    if (Array.isArray(r.vitamins) && r.vitamins.length) return r.vitamins;
+    const text = [r.name?.en || "", ...(r.ingredients || [])].join(" ").toLowerCase();
+    const vitamins = new Set();
+    if (/carrot|sweet potato|pumpkin|spinach|mango|papaya|egg/.test(text)) vitamins.add("Vitamin A");
+    if (/milk|curd|yogurt|paneer|cheese|egg|banana|oat/.test(text)) vitamins.add("Vitamin B");
+    if (/lemon|orange|tomato|guava|amla|capsicum|broccoli/.test(text)) vitamins.add("Vitamin C");
+    if (/spinach|broccoli|cabbage|leafy|egg/.test(text)) vitamins.add("Vitamin K");
+    if (/almond|peanut|sunflower|avocado|spinach/.test(text)) vitamins.add("Vitamin E");
+    if (/milk|curd|yogurt|paneer|cheese|egg/.test(text)) vitamins.add("Vitamin D");
+    return Array.from(vitamins);
   }
 
   /* ---------------- filtering ---------------- */
@@ -107,7 +126,7 @@
     if (f.age !== "all" && !r.ageGroups.includes(f.age)) return false;
     if (f.time !== "any" && r.timeCategory > Number(f.time)) return false;
     if (f.meal !== "all" && !r.mealType.includes(f.meal)) return false;
-    if (f.nutrition && !r.nutritionTags.includes(f.nutrition)) return false;
+    if (f.nutrition.size > 0 && !Array.from(f.nutrition).every(n => n === "vitamins" ? getRecipeVitamins(r).length > 0 : r.nutritionTags.includes(n))) return false;
     if (f.diet !== "all" && !r.dietType.includes(f.diet)) return false;
     if (f.cuisine !== "all" && r.cuisine !== f.cuisine) return false;
     if (f.allergyExclude.size > 0) {
@@ -194,7 +213,7 @@
     return `
       <header class="app-header">
         <div class="wrap header-row">
-          <div class="mascot brand">${mascotSVG(38)} Tiny Tiffin</div>
+          <div class="brand-wrap"><div class="mascot brand">${mascotSVG(38)} Tiny Tiffin</div><div class="app-tagline">Making Every Lunchbox a Little More Special</div></div>
           <div class="header-controls">
             <button class="theme-toggle" id="install-btn" aria-label="Install app" style="display:none">⬇️ Install</button>
             <button class="theme-toggle" id="theme-toggle" aria-label="${t('darkMode')}">${state.theme === "dark" ? "☀️" : "🌙"}</button>
@@ -254,8 +273,8 @@
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
           ${NUTRITION_ORDER.map(n => `
-            <button class="tiffin-tier ${state.filters.nutrition === n ? "active" : ""}" data-nutri="${n}">
-              <span class="tier-emoji">${NUTRITION_EMOJI[n]}</span> ${t("nutritionGoals")[n]}
+            <button class="tiffin-tier ${state.filters.nutrition.has(n) ? "active" : ""}" data-nutri="${n}">
+              <span class="tier-emoji">${NUTRITION_EMOJI[n]}</span> ${t("nutritionGoals")[n] || capitalize(n)}
             </button>`).join("")}
         </div>
       </section>
@@ -351,7 +370,9 @@
 
   function attachFindEvents() {
     root.querySelectorAll(".tiffin-tier").forEach(btn => {
-      btn.addEventListener("click", () => { const n = btn.dataset.nutri; state.filters.nutrition = state.filters.nutrition === n ? null : n; render(); });
+      btn.addEventListener("click", () => { const n = btn.dataset.nutri;
+        if (state.filters.nutrition.has(n)) state.filters.nutrition.delete(n); else state.filters.nutrition.add(n);
+        render(); });
     });
     root.querySelectorAll("[data-age]").forEach(btn => btn.addEventListener("click", () => { state.filters.age = btn.dataset.age; render(); }));
     root.querySelectorAll("[data-time]").forEach(btn => btn.addEventListener("click", () => { state.filters.time = btn.dataset.time; render(); }));
@@ -379,7 +400,7 @@
     }
     const clearBtn = document.getElementById("clear-filters");
     if (clearBtn) clearBtn.addEventListener("click", () => {
-      state.filters = { age: "all", time: "any", meal: "all", nutrition: null, allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
+      state.filters = { age: "all", time: "any", meal: "all", nutrition: new Set(), allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
       render();
     });
     attachCardEvents();
@@ -398,6 +419,25 @@
   }
 
   /* ---------- Recipe modal (with gallery + ratings) ---------- */
+  function playRecipeBurst() {
+    const layer = document.createElement("div");
+    layer.className = "star-burst";
+    const stars = ["✦", "★", "✧", "✦", "★", "✧", "★", "✦"];
+    stars.forEach((s, i) => {
+      const el = document.createElement("span");
+      el.className = "burst-star";
+      el.textContent = s;
+      el.style.left = "50%"; el.style.top = "42%";
+      const angle = (Math.PI * 2 * i) / stars.length;
+      const distance = 100 + Math.random() * 100;
+      el.style.setProperty("--dx", `${Math.cos(angle) * distance}px`);
+      el.style.setProperty("--dy", `${Math.sin(angle) * distance}px`);
+      layer.appendChild(el);
+    });
+    document.body.appendChild(layer);
+    setTimeout(() => layer.remove(), 1100);
+  }
+
   function openRecipeModal(id) {
     const r = RECIPES.find(x => x.id === id);
     if (!r) return;
@@ -416,6 +456,7 @@
         <div class="rating-row" style="margin-bottom:10px">${starsHTML(rt.overall)} <span>${rt.overall.toFixed(1)} (${rt.count})</span>
           <button class="link-btn" id="share-btn" style="margin-left:auto">${t("shareRecipe")}</button>
         </div>
+        <div class="vitamin-row">🍎 <strong>Key Vitamins:</strong> ${getRecipeVitamins(r).join(", ") || "Nutritional profile varies by ingredients"}</div>
         <div class="meta-row" style="margin-bottom:14px">
           <span class="tag time">⏱ ${r.timeCategory} min</span>
           <span class="tag">${r.difficulty}</span>
@@ -448,7 +489,7 @@
           <button class="btn btn-primary" id="modal-plan">${t("addToPlanner")}</button>
         </div>
         <div class="rate-form" id="rate-form">
-          <strong>${t("rateThis")}</strong>
+          <strong>${state.userRatings[r.id] ? "Update your rating" : t("rateThis")}</strong>
           ${["overall", "nutrition", "kidFriendly", "lunchboxFriendly", "pickyEaterFriendly", "timeSaver"].map(k => `
             <div class="rating-breakdown">
               <span>${k === "overall" ? t("ratingOverall") : t("rating" + capitalize(k))}</span>
@@ -459,6 +500,7 @@
       </div>
     `;
     document.body.appendChild(backdrop);
+    playRecipeBurst();
     backdrop.addEventListener("click", (e) => { if (e.target === backdrop) closeModal(); });
     document.getElementById("modal-close").addEventListener("click", closeModal);
     document.getElementById("modal-fav").addEventListener("click", () => {
@@ -470,9 +512,19 @@
     const shareBtn = document.getElementById("share-btn");
     if (shareBtn) shareBtn.addEventListener("click", () => shareRecipe(r));
 
-    const pending = { overall: 0, nutrition: 0, kidFriendly: 0, lunchboxFriendly: 0, pickyEaterFriendly: 0, timeSaver: 0 };
+    const existingUserRating = state.userRatings[r.id] || {};
+    const pending = {
+      overall: Number(existingUserRating.overall) || 0,
+      nutrition: Number(existingUserRating.nutrition) || 0,
+      kidFriendly: Number(existingUserRating.kidFriendly) || 0,
+      lunchboxFriendly: Number(existingUserRating.lunchboxFriendly) || 0,
+      pickyEaterFriendly: Number(existingUserRating.pickyEaterFriendly) || 0,
+      timeSaver: Number(existingUserRating.timeSaver) || 0
+    };
     backdrop.querySelectorAll(".star-picker").forEach(picker => {
       const key = picker.dataset.rateKey;
+      const existing = pending[key];
+      if (existing) picker.querySelectorAll(".star").forEach(s => s.classList.toggle("filled", Number(s.dataset.val) <= existing));
       picker.querySelectorAll(".star").forEach(starEl => {
         starEl.addEventListener("click", () => {
           const val = Number(starEl.dataset.val);
@@ -534,8 +586,24 @@
   }
 
   function addToPlanner(day, slot, recipeId) {
+    const key = `${day}-${slot}`;
+    const existingId = state.planner[key];
+    if (existingId && existingId !== recipeId) {
+      const existing = RECIPES.find(r => r.id === existingId);
+      const incoming = RECIPES.find(r => r.id === recipeId);
+      const replace = window.confirm(`${day} ${slot} already has "${existing ? recipeName(existing) : "a recipe"}".\n\nReplace it with "${incoming ? recipeName(incoming) : "the new recipe"}"?`);
+      if (!replace) {
+        state.tab = "planner";
+        render();
+        setTimeout(() => {
+          const el = document.querySelector(`[data-planner-slot="${key}"]`);
+          if (el) { el.scrollIntoView({ behavior: "smooth", block: "center" }); el.classList.add("planner-highlight"); }
+        }, 50);
+        return;
+      }
+    }
     const alreadyUsed = Object.values(state.planner).includes(recipeId);
-    state.planner[`${day}-${slot}`] = recipeId;
+    state.planner[key] = recipeId;
     savePlanner();
     toast(alreadyUsed ? t("noRepeatWarning") : t("addToPlanner"));
   }
@@ -560,7 +628,7 @@
                 const key = `${day}-${slot}`;
                 const recipeId = state.planner[key];
                 const r = recipeId ? RECIPES.find(x => x.id === recipeId) : null;
-                if (r) return `<div class="planner-slot"><span>${r.emoji} ${recipeName(r)}</span><button data-remove="${key}">✕</button></div>`;
+                if (r) return `<div class="planner-slot" data-planner-slot="${key}"><span>${r.emoji} ${recipeName(r)}</span><button data-remove="${key}">✕</button></div>`;
                 return `<button class="planner-add" data-add="${day}|${slot}">+ ${t(slot)}</button>`;
               }).join("")}
             </div>`).join("")}
@@ -797,6 +865,8 @@
         <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || ""}</p>
         <p><a href="mailto:${dev.email || ""}" class="btn btn-secondary" style="display:inline-flex;text-decoration:none">✉️ Email the developer</a></p>
         <p class="desc">${dev.about || t("developerNote")}</p>
+        <div class="developer-story"><em>One little boy inspired a big idea.</em><br><span>— Hardik Desai & Ekta Desai</span></div>
+        <div class="release-card"><strong>${dev.version || "v3.0"}</strong> · ${dev.releaseDate || ""}<br><span>${dev.releaseNotes || ""}</span></div>
         ${dev.futureVision && dev.futureVision.length ? `<h4 style="margin-bottom:4px">${t("developerNote")}</h4><ul class="dev-future-list">${dev.futureVision.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
       </div>
     `;
