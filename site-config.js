@@ -8,7 +8,7 @@ window.TINY_TIFFIN_CONFIG = {
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
-    about: "Tiny Tiffin started with a simple idea inspired by our little son, Nishiv ♥️\n\nAs parents, we often found ourselves wondering what to pack in his tiffin every day - something healthy, nutritious, interesting, and something he would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
+    about: "Tiny Tiffin started with a simple idea inspired by our little family ♥️\n\nAs parents, we often found ourselves wondering what to pack in a tiffin every day - something healthy, nutritious, interesting, and something children would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
     currentCapabilities: [
       "🤖 AI-powered Tiny Tiffin AI Assistant for recipe and ingredient guidance",
       "🗓️ AI-powered tiffin planning with personalised recipe suggestions",
