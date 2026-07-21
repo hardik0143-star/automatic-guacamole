@@ -7,7 +7,7 @@
 (function () {
   "use strict";
 
-  const ADMIN_PASSWORD = "tiffin2026"; // change this before sharing the admin link
+  const ADMIN_PASSWORD = "tiffin@2023"; // change this before sharing the admin link
 
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
   const TIME_BUCKETS = [10, 15, 20, 25, 30];
