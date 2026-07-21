@@ -11022,5 +11022,688 @@ window.TINY_TIFFIN_RECIPES = [
       "count": 1
     },
     "hidden": false
+  },
+  {
+    "id": "plain-dosa",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Crispy Plain Dosa",
+      "hi": "सादा डोसा"
+    },
+    "desc": {
+      "en": "A golden, crisp South Indian dosa that is easy to roll and pack.",
+      "hi": "A golden, crisp South Indian dosa that is easy to roll and pack."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "dosa batter",
+      "oil"
+    ],
+    "instructions": [
+      "Spread dosa batter thinly on a hot tawa.",
+      "Cook until golden and crisp; fold and cool before packing."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 4,
+      "iron_mg": 1.5,
+      "calcium_mg": 25,
+      "fiber_g": 1,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Pack with a small container of mild chutney or sambar."
+    },
+    "kidTip": {
+      "en": "Cut into strips for easy little-hand eating."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mysore-masala-dosa",
+    "emoji": "🌶️",
+    "images": [],
+    "name": {
+      "en": "Mysore Masala Dosa",
+      "hi": "मैसूर मसाला डोसा"
+    },
+    "desc": {
+      "en": "A flavourful dosa with a mild red chutney layer and soft potato filling.",
+      "hi": "A flavourful dosa with a mild red chutney layer and soft potato filling."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "dosa batter",
+      "potato",
+      "onion",
+      "tomato",
+      "red chilli",
+      "oil"
+    ],
+    "instructions": [
+      "Prepare a mild red chutney and potato masala.",
+      "Spread dosa batter, add a thin chutney layer, fill with potato masala and fold."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 6,
+      "iron_mg": 2.1,
+      "calcium_mg": 35,
+      "fiber_g": 4,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Keep chutney mild for younger children and pack separately if needed."
+    },
+    "kidTip": {
+      "en": "Make mini dosas for a fun lunchbox size."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rava-dosa",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Rava Dosa",
+      "hi": "रवा डोसा"
+    },
+    "desc": {
+      "en": "A quick, lacy South Indian dosa made with semolina and rice flour.",
+      "hi": "A quick, lacy South Indian dosa made with semolina and rice flour."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ],
+    "ingredients": [
+      "rava",
+      "rice flour",
+      "curd",
+      "cumin",
+      "water",
+      "oil"
+    ],
+    "instructions": [
+      "Mix the batter and rest briefly.",
+      "Pour the thin batter onto a hot tawa and cook until crisp."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 4,
+      "iron_mg": 1.4,
+      "calcium_mg": 45,
+      "fiber_g": 1,
+      "vitaminC_mg": 2
+    },
+    "packingTip": {
+      "en": "Pack as small folded dosas so they stay easy to handle."
+    },
+    "kidTip": {
+      "en": "Serve with mild coconut chutney."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "set-dosa",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Soft Set Dosa",
+      "hi": "सेट डोसा"
+    },
+    "desc": {
+      "en": "Soft, fluffy mini dosas that are perfect for little tiffin boxes.",
+      "hi": "Soft, fluffy mini dosas that are perfect for little tiffin boxes."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "dosa batter",
+      "oil"
+    ],
+    "instructions": [
+      "Prepare a slightly thick dosa batter.",
+      "Cook small, thick dosas on a tawa until soft and lightly golden."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 1,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "Stack with a small piece of parchment between dosas if needed."
+    },
+    "kidTip": {
+      "en": "Their soft texture makes them great for younger children."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "neer-dosa",
+    "emoji": "💧",
+    "images": [],
+    "name": {
+      "en": "Neer Dosa",
+      "hi": "नीर डोसा"
+    },
+    "desc": {
+      "en": "Light, soft and delicate rice crepes from coastal South India.",
+      "hi": "Light, soft and delicate rice crepes from coastal South India."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "rice",
+      "water",
+      "salt",
+      "oil"
+    ],
+    "instructions": [
+      "Blend soaked rice into a smooth, thin batter.",
+      "Pour the watery batter onto a hot pan and cook until set."
+    ],
+    "nutrition": {
+      "calories": 140,
+      "protein_g": 2,
+      "iron_mg": 0.8,
+      "calcium_mg": 10,
+      "fiber_g": 1,
+      "vitaminC_mg": 1
+    },
+    "packingTip": {
+      "en": "Roll gently and pack with a mild vegetable filling or chutney."
+    },
+    "kidTip": {
+      "en": "The soft, paper-thin texture is fun to eat."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "pesarattu",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Pesarattu Green Gram Dosa",
+      "hi": "पेसरट्टू"
+    },
+    "desc": {
+      "en": "A protein-rich Andhra-style dosa made from whole green gram.",
+      "hi": "A protein-rich Andhra-style dosa made from whole green gram."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "whole green gram",
+      "ginger",
+      "cumin",
+      "green chilli",
+      "water",
+      "oil"
+    ],
+    "instructions": [
+      "Soak and blend green gram with spices into a smooth batter.",
+      "Spread on a hot tawa and cook until golden on both sides."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 10,
+      "iron_mg": 3.2,
+      "calcium_mg": 45,
+      "fiber_g": 6,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Make mini pesarattu and pack with a mild chutney."
+    },
+    "kidTip": {
+      "en": "A naturally green dosa can make the lunchbox extra exciting."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "bisi-bele-bath",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Bisi Bele Bath",
+      "hi": "ಬಿಸಿ ಬೇಳೆ ಬಾತ್"
+    },
+    "desc": {
+      "en": "A comforting one-pot rice, lentil and vegetable dish from Karnataka.",
+      "hi": "A comforting one-pot rice, lentil and vegetable dish from Karnataka."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "rice",
+      "toor dal",
+      "carrot",
+      "peas",
+      "beans",
+      "bisi bele bath masala",
+      "ghee"
+    ],
+    "instructions": [
+      "Cook rice, dal and vegetables until soft.",
+      "Mix with the spice blend and finish with a little ghee."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 8,
+      "iron_mg": 2.8,
+      "calcium_mg": 55,
+      "fiber_g": 6,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Pack slightly thick so it is easy to eat from a lunchbox."
+    },
+    "kidTip": {
+      "en": "Add colourful vegetables to make every spoonful interesting."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "kesari-bath",
+    "emoji": "🍊",
+    "images": [],
+    "name": {
+      "en": "Kesari Bath",
+      "hi": "केसरी बाथ"
+    },
+    "desc": {
+      "en": "A soft, fragrant semolina sweet made with saffron and a little ghee.",
+      "hi": "A soft, fragrant semolina sweet made with saffron and a little ghee."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy"
+    ],
+    "allergens": [
+      "gluten",
+      "nuts"
+    ],
+    "ingredients": [
+      "rava",
+      "sugar",
+      "ghee",
+      "cardamom",
+      "saffron",
+      "cashews"
+    ],
+    "instructions": [
+      "Roast rava lightly.",
+      "Cook with water, then add sugar, saffron, cardamom and ghee until soft."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 4,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 1,
+      "vitaminC_mg": 0
+    },
+    "packingTip": {
+      "en": "Pack a small portion as an occasional sweet treat."
+    },
+    "kidTip": {
+      "en": "Use a tiny mould to make fun shapes."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "uttapam",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Vegetable Uttapam",
+      "hi": "वेजिटेबल उत्तपम"
+    },
+    "desc": {
+      "en": "A thick, soft dosa topped with colourful vegetables.",
+      "hi": "A thick, soft dosa topped with colourful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "vitamins"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "dosa batter",
+      "tomato",
+      "onion",
+      "carrot",
+      "capsicum",
+      "oil"
+    ],
+    "instructions": [
+      "Pour thick dosa batter on a hot tawa.",
+      "Top with finely chopped vegetables and cook until set."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 6,
+      "iron_mg": 1.8,
+      "calcium_mg": 35,
+      "fiber_g": 3,
+      "vitaminC_mg": 22
+    },
+    "packingTip": {
+      "en": "Cut into wedges and pack with a mild dip."
+    },
+    "kidTip": {
+      "en": "Let children choose the colourful toppings."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "idli",
+    "emoji": "⚪",
+    "images": [],
+    "name": {
+      "en": "Soft Idli",
+      "hi": "ఇడ్లీ"
+    },
+    "desc": {
+      "en": "Soft, steamed South Indian rice-and-lentil cakes that travel beautifully.",
+      "hi": "Soft, steamed South Indian rice-and-lentil cakes that travel beautifully."
+    },
+    "ageGroups": [
+      "1-2y",
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "idli batter"
+    ],
+    "instructions": [
+      "Pour fermented batter into greased idli moulds.",
+      "Steam until fluffy and cooked through."
+    ],
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 5,
+      "iron_mg": 1.4,
+      "calcium_mg": 30,
+      "fiber_g": 1,
+      "vitaminC_mg": 0
+    },
+    "packingTip": {
+      "en": "Pack mini idlis with a mild chutney or vegetable podi."
+    },
+    "kidTip": {
+      "en": "Mini idlis are easy to pick up and dip."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.5,
+      "lunchboxFriendly": 4.5,
+      "pickyEaterFriendly": 4.3,
+      "timeSaver": 4.3,
+      "count": 1
+    },
+    "hidden": false
   }
 ];

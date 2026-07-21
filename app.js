@@ -361,6 +361,12 @@
         <h1 class="display">${t("heroTitle")}</h1>
         <p class="sub">${t("heroSub")}</p>
         <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
+        <div class="mood-picker" aria-label="Quick tiffin ideas">
+          <span class="mood-label">Choose a tiffin mood:</span>
+          <button class="mood-chip" data-mood="quick">⚡ Quick & Easy</button>
+          <button class="mood-chip" data-mood="protein">💪 Protein Power</button>
+          <button class="mood-chip" data-mood="colourful">🌈 Colourful & Nutritious</button>
+        </div>
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
           ${NUTRITION_ORDER.map(n => `
@@ -465,6 +471,17 @@
       const pool = filteredRecipes();
       const choice = (pool.length ? pool : RECIPES)[Math.floor(Math.random() * (pool.length ? pool.length : RECIPES.length))];
       openRecipeModal(choice.id);
+    });
+    root.querySelectorAll(".mood-chip").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const mood = btn.dataset.mood;
+        state.filters.time = "any";
+        state.filters.nutrition.clear();
+        if (mood === "quick") state.filters.time = "15";
+        if (mood === "protein") state.filters.nutrition.add("protein");
+        if (mood === "colourful") state.filters.nutrition.add("vitamins");
+        render();
+      });
     });
     root.querySelectorAll(".tiffin-tier").forEach(btn => {
       btn.addEventListener("click", () => { const n = btn.dataset.nutri;
