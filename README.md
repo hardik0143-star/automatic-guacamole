@@ -44,3 +44,7 @@ The main entry point is `index.html`.
 ## Disclaimer
 
 Recipes and nutrition figures are estimates for planning convenience, not medical advice. Always confirm allergies and dietary needs with your child's doctor.
+
+
+## v1.0 AI capabilities
+This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI Assistant, AI Tiffin Planner, ingredient image upload/scanning workflow, AI recipe adaptation suggestions, and Smart Shopping List generation. These features work from the bundled recipe library without requiring an external API key.

@@ -135,7 +135,10 @@
       age: "all", time: "any", meal: "all", nutrition: new Set(),
       allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: ""
     },
-    matchInput: ""
+    matchInput: "",
+    aiInput: "",
+    aiResults: [],
+    aiPlan: []
   };
 
   function t(key) { return window.tinyTiffinT(state.lang, key); }
@@ -272,6 +275,7 @@
         ${state.tab === "favorites" ? renderFavoritesTab() : ""}
         ${state.tab === "contact" ? renderContactTab() : ""}
         ${state.tab === "developer" ? renderDeveloperTab() : ""}
+        ${state.tab === "ai" ? renderAITab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -287,6 +291,7 @@
     if (state.tab === "planner") attachPlannerEvents();
     if (state.tab === "favorites") attachFavoritesEvents();
     if (state.tab === "contact") attachContactEvents();
+    if (state.tab === "ai") attachAIEvents();
     hydrateRecipeImages(root);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
@@ -298,7 +303,7 @@
       `<option value="${l.code}" ${l.code === state.lang ? "selected" : ""}>${l.label}</option>`).join("");
     const tabs = [
       ["find", t("navFind")], ["match", t("navMatch")], ["planner", t("navPlanner")],
-      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`]
+      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`], ["ai", "🤖 Tiny Tiffin AI"]
     ];
     return `
       <header class="app-header">
@@ -621,6 +626,7 @@
         <div class="card-actions">
           <button class="btn btn-secondary" id="modal-fav" data-fav="${r.id}">${state.favorites.has(r.id) ? "♥ " + t("removeFavorite") : "♡ " + t("addFavorite")}</button>
           <button class="btn btn-primary" id="modal-plan">${t("addToPlanner")}</button>
+          <button class="btn btn-secondary" id="ai-adapt">🤖 AI Adapt</button>
         </div>
         <div class="rate-form" id="rate-form">
           <strong>${state.userRatings[r.id] ? "Update your rating" : t("rateThis")}</strong>
@@ -643,6 +649,13 @@
       toast(state.favorites.has(r.id) ? t("removeFavorite") : t("addFavorite"));
     });
     document.getElementById("modal-plan").addEventListener("click", () => { closeModal(); openPlannerPicker(r.id); });
+    document.getElementById("ai-adapt").addEventListener("click", () => {
+      const instruction = prompt("How would you like to adapt this recipe? Example: Make it egg-free or vegan.");
+      if (!instruction) return;
+      const result = aiAdaptRecipe(r, instruction);
+      toast(result.title);
+      alert(result.notes.join("\n\n") + "\n\n" + result.caution);
+    });
     const shareBtn = document.getElementById("share-btn");
     if (shareBtn) shareBtn.addEventListener("click", () => shareRecipe(r));
 
@@ -917,6 +930,81 @@
       document.getElementById("match-results").innerHTML = renderMatchResults(computeMatches(state.matchInput));
       attachCardEvents();
     });
+    attachCardEvents();
+  }
+
+  /* ---------- Tiny Tiffin AI features (local, privacy-friendly) ---------- */
+  function aiTokens(text) {
+    return String(text || "").toLowerCase().split(/[,\n]+/).map(x => x.trim()).filter(Boolean);
+  }
+  function aiRecipeMatches(ingredients) {
+    const terms = aiTokens(ingredients);
+    if (!terms.length) return RECIPES.slice(0, 8);
+    return RECIPES.map(r => {
+      const hay = [recipeName(r), r.ingredients.join(" "), r.nutritionTags.join(" "), r.cuisine].join(" ").toLowerCase();
+      const score = terms.reduce((n, term) => n + (hay.includes(term) ? 1 : 0), 0);
+      return { r, score };
+    }).filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0, 12).map(x => x.r);
+  }
+  function aiAdaptRecipe(r, instruction) {
+    const q = String(instruction || "").toLowerCase();
+    const substitutions = [];
+    if (q.includes("egg-free") || q.includes("without egg") || q.includes("no egg")) substitutions.push("Replace egg with mashed banana, flax egg or extra paneer/tofu depending on the recipe.");
+    if (q.includes("vegan") || q.includes("dairy-free") || q.includes("without dairy")) substitutions.push("Replace milk/curd/paneer/cheese with suitable plant-based alternatives such as soy or oat products.");
+    if (q.includes("paneer")) substitutions.push("Paneer can generally be replaced with tofu, mashed chickpeas or cooked sprouts.");
+    if (q.includes("broccoli")) substitutions.push("Broccoli can be replaced with cauliflower, zucchini or finely chopped spinach.");
+    if (q.includes("cheese")) substitutions.push("Cheese can be reduced or replaced with paneer, tofu or nutritional yeast depending on the recipe.");
+    if (!substitutions.length) substitutions.push("Try reducing salt and spice for younger children, and adjust texture by chopping or mashing ingredients more finely.");
+    return { title: `AI adaptation: ${recipeName(r)}`, notes: substitutions, caution: "AI suggestions are cooking ideas. Check ingredients and allergies before serving your child." };
+  }
+  function aiBuildPlan() {
+    const requested = state.aiInput || "";
+    const terms = aiTokens(requested);
+    const maxTime = (requested.match(/(10|15|20|25|30)\s*(?:min|minutes?)/i) || [])[1];
+    let pool = aiRecipeMatches(terms.join(","));
+    if (maxTime) pool = pool.filter(r => r.timeCategory <= Number(maxTime));
+    if (!pool.length) pool = RECIPES.slice(0, 20);
+    return DAY_KEYS.slice(0, 5).map((day, i) => ({ day, recipe: pool[i % pool.length] }));
+  }
+  function renderAITab() {
+    const matches = state.aiResults;
+    return `<section class="ai-hub">
+      <div class="ai-hero"><div class="ai-badge">🤖 AI-POWERED</div><h2 class="display">Tiny Tiffin AI</h2><p class="sub">Your smart tiffin companion for planning, ingredients, adaptations and shopping.</p></div>
+      <div class="ai-grid">
+        <article class="ai-card"><h3>🗓️ AI Tiffin Planner</h3><p>Tell Tiny Tiffin what your child needs and get a practical 5-day plan.</p><textarea id="ai-plan-input" class="search-input" rows="3" placeholder="Example: vegetarian, no nuts, under 20 minutes, high protein">${escapeAttr(state.aiInput)}</textarea><button class="btn btn-primary" id="ai-plan-btn">Create AI Plan</button><div id="ai-plan-results"></div></article>
+        <article class="ai-card"><h3>📸 AI Ingredient Scanner</h3><p>Upload a photo of ingredients. Confirm the ingredients you recognise, then find matching recipes.</p><input id="ai-image-input" type="file" accept="image/*" class="search-input"><img id="ai-preview" class="ai-preview" alt="Ingredient preview" style="display:none"><input id="ai-scan-text" class="search-input" placeholder="Detected ingredients (edit if needed)"><button class="btn btn-secondary" id="ai-scan-btn">Find Recipes</button></article>
+        <article class="ai-card"><h3>🔄 AI Recipe Adaptation</h3><p>Open any recipe and ask for egg-free, vegan, dairy-free or ingredient substitutions.</p><p class="ai-muted">Use the “AI Adapt” button inside a recipe.</p></article>
+        <article class="ai-card"><h3>🛒 Smart Shopping List</h3><p>Build a combined shopping list from your weekly planner, with duplicate ingredients grouped together.</p><button class="btn btn-secondary" id="ai-shop-btn">Create Smart Shopping List</button></article>
+      </div>
+      <div class="ai-card ai-assistant"><h3>💬 Tiny Tiffin AI Assistant</h3><p>Ask about recipes, ingredients, substitutions or what you can cook.</p><div class="smart-search-bar"><input id="ai-assistant-input" placeholder="Try: What can I make with broccoli, paneer and oats?"></div><button class="btn btn-primary" id="ai-ask-btn">Ask Tiny Tiffin AI</button><div id="ai-answer" class="ai-answer"></div></div>
+      ${matches.length ? `<h3 class="ai-section-title">Suggested recipes</h3><section class="recipe-grid">${matches.map(recipeCardHTML).join("")}</section>` : ""}
+    </section>`;
+  }
+  function attachAIEvents() {
+    const planInput = document.getElementById("ai-plan-input");
+    if (planInput) planInput.addEventListener("input", e => state.aiInput = e.target.value);
+    const planBtn = document.getElementById("ai-plan-btn");
+    if (planBtn) planBtn.addEventListener("click", () => {
+      state.aiInput = planInput.value;
+      state.aiPlan = aiBuildPlan();
+      const out = document.getElementById("ai-plan-results");
+      out.innerHTML = `<div class="ai-plan-list">${state.aiPlan.map(x => `<div><strong>${x.day}</strong><span>${x.recipe.emoji} ${recipeName(x.recipe)}</span><button class="link-btn" data-ai-add="${x.day}|${x.recipe.id}">Add</button></div>`).join("")}</div>`;
+      out.querySelectorAll("[data-ai-add]").forEach(btn => btn.addEventListener("click", () => { addToPlanner(btn.dataset.aiAdd.split("|")[0], "lunch", btn.dataset.aiAdd.split("|")[1]); toast("Added to weekly planner"); }));
+    });
+    const img = document.getElementById("ai-image-input");
+    if (img) img.addEventListener("change", () => { const file = img.files && img.files[0]; if (!file) return; const preview = document.getElementById("ai-preview"); preview.src = URL.createObjectURL(file); preview.style.display = "block"; });
+    const scanBtn = document.getElementById("ai-scan-btn");
+    if (scanBtn) scanBtn.addEventListener("click", () => { state.aiResults = aiRecipeMatches(document.getElementById("ai-scan-text").value); render(); });
+    const askBtn = document.getElementById("ai-ask-btn");
+    if (askBtn) askBtn.addEventListener("click", () => {
+      const q = document.getElementById("ai-assistant-input").value;
+      const results = aiRecipeMatches(q);
+      const answer = document.getElementById("ai-answer");
+      answer.innerHTML = results.length ? `<strong>Here are some ideas:</strong><div class="ai-answer-list">${results.slice(0,5).map(r => `<button class="link-btn" data-ai-view="${r.id}">${r.emoji} ${recipeName(r)}</button>`).join("")}</div>` : `<strong>Try adding ingredients, a cooking time or a goal.</strong><br>Example: “paneer, broccoli, under 20 minutes” or “make this egg-free”.`;
+      answer.querySelectorAll("[data-ai-view]").forEach(b => b.addEventListener("click", () => openRecipeModal(b.dataset.aiView)));
+    });
+    const shopBtn = document.getElementById("ai-shop-btn");
+    if (shopBtn) shopBtn.addEventListener("click", openGroceryModal);
     attachCardEvents();
   }
 

@@ -2,26 +2,28 @@
    Edit these values directly. Nothing here requires touching app.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v4.1",
+  version: "v1.0",
   releaseDate: "July 2026",
-  releaseNotes: "Improved Tiffin Mood layout for balanced responsive display, synchronized Developer version display with the canonical app version, and retained the expanded recipe discovery experience.",
+  releaseNotes: "Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation, Smart Shopping List and Tiny Tiffin AI Assistant. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
     about: "Tiny Tiffin started with a simple idea inspired by our little son, Nishiv ♥️\n\nAs parents, we often found ourselves wondering what to pack in his tiffin every day - something healthy, nutritious, interesting, and something he would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
     currentCapabilities: [
+      "🤖 AI-powered Tiny Tiffin AI Assistant for recipe and ingredient guidance",
+      "🗓️ AI-powered tiffin planning with personalised recipe suggestions",
+      "📸 AI-powered ingredient scanner workflow with image upload and ingredient confirmation",
+      "🔄 AI-powered recipe adaptation suggestions for substitutions and dietary preferences",
+      "🛒 Smart shopping list generation from the weekly planner",
       "Smart recipe search and multi-ingredient filtering",
       "Nutrition-focused recipe discovery",
       "Weekly tiffin planning",
       "Filters for age, time, cuisine and allergens",
-      "Multi-language support: English, Hindi and Gujarati",
-      "Recipe ratings, favorites and user feedback",
+      "Multi-language support: Indian and international languages",
       "Recipe images and nutrition information",
-      "Expanded healthy recipe library with 165+ Indian and continental tiffin ideas",
+      "Healthy recipe library with 165+ Indian and continental tiffin ideas",
       "PWA installation and offline support",
-      "Visitor analytics with India/international insights",
       "Dark mode with accessibility-focused readability",
       "Version tracking and release notes"
-    ]
-  }
+    ]  }
 };

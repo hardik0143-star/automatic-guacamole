@@ -444,3 +444,27 @@ html[data-theme="dark"] .nutri-cell .lbl {
     border-radius:16px;
   }
 }
+
+/* v1.0 — Tiny Tiffin AI hub */
+.ai-hub{padding:28px 0 40px}
+.ai-hero{text-align:center;margin-bottom:24px}
+.ai-badge{display:inline-block;padding:6px 12px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.08em;background:var(--masala);color:#fff;margin-bottom:10px}
+.ai-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ai-card{background:var(--card);border:1px solid var(--mist-2);border-radius:20px;padding:20px;box-shadow:var(--shadow);margin-bottom:16px}
+.ai-card h3{margin-top:0;color:var(--masala)}
+.ai-card p{color:var(--ink-soft)}
+.ai-card .btn{margin-top:10px}
+.ai-preview{display:block;width:100%;max-height:180px;object-fit:cover;border-radius:14px;margin:10px 0}
+.ai-muted{font-size:.88rem;font-style:italic}
+.ai-assistant{margin-top:2px}
+.ai-answer{margin-top:14px;padding:14px;border-radius:14px;background:var(--surface-2,var(--mist));min-height:20px}
+.ai-answer-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ai-plan-list{margin-top:14px;display:grid;gap:8px}
+.ai-plan-list>div{display:flex;align-items:center;gap:10px;padding:10px;border-radius:12px;background:var(--surface-2,var(--mist))}
+.ai-plan-list span{flex:1}
+.ai-section-title{margin:28px 0 12px;color:var(--masala)}
+html[data-theme="dark"] .ai-card{background:#18251f;border-color:#3d5c4d}
+html[data-theme="dark"] .ai-card h3,.ai-section-title{color:#9dffb4}
+html[data-theme="dark"] .ai-card p,.ai-muted{color:#d9f1e0}
+html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#effff3}
+@media(max-width:760px){.ai-grid{grid-template-columns:1fr}.ai-card{padding:16px}}
