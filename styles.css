@@ -394,8 +394,53 @@ html[data-theme="dark"] .nutri-cell .lbl {
 }
 
 
-/* v4.0 — Quick Tiffin Mood shortcuts */
-.mood-picker{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:14px auto 4px}
-.mood-label{font-size:.82rem;color:var(--ink-soft);font-weight:600}
-.mood-chip{border:1px solid var(--mist-2);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 12px;font:inherit;font-size:.78rem;font-weight:600;cursor:pointer;transition:.18s ease}
-.mood-chip:hover{transform:translateY(-1px);border-color:var(--masala);box-shadow:var(--shadow)}
+/* v4.1 — Tiffin Mood layout: balanced desktop grid, easy-to-tap mobile cards */
+.mood-picker{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  align-items:stretch;
+  width:min(100%,920px);
+  margin:18px auto 8px;
+}
+.mood-label{
+  grid-column:1 / -1;
+  text-align:center;
+  font-size:1rem;
+  color:var(--ink-soft);
+  font-weight:700;
+  margin-bottom:2px;
+}
+.mood-chip{
+  width:100%;
+  min-height:58px;
+  border:1px solid var(--mist-2);
+  background:var(--card);
+  color:var(--ink);
+  border-radius:18px;
+  padding:12px 14px;
+  font:inherit;
+  font-size:.9rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.mood-chip:hover{
+  transform:translateY(-2px);
+  border-color:var(--masala);
+  box-shadow:var(--shadow);
+}
+@media (max-width:900px){
+  .mood-picker{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .mood-chip{min-height:56px;}
+}
+@media (max-width:560px){
+  .mood-picker{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  .mood-chip{
+    min-height:54px;
+    border-radius:16px;
+  }
+}

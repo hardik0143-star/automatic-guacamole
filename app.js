@@ -990,7 +990,10 @@
     });
   }
 
-  /* ---------- Developer tab ---------- */
+  /* ---------- Developer tab ----------
+     Version is read from CONFIG.version so the Developer tab remains
+     synchronized with the canonical version in site-config.js.
+  */
   function renderDeveloperTab() {
     const dev = CONFIG.developer || {};
     return `
@@ -999,7 +1002,7 @@
         <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || ""}</p>
         <p><a href="mailto:${dev.email || ""}" class="btn btn-secondary" style="display:inline-flex;text-decoration:none">✉️ Email the developer</a></p>
         <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\\n/g, "<br><br>")}</p>
-        <div class="release-card"><strong>${dev.version || "v3.0"}</strong> · ${dev.releaseDate || ""}<br><span>${dev.releaseNotes || ""}</span></div>
+        <div class="release-card"><strong>${CONFIG.version || dev.version || "v3.0"}</strong> · ${dev.releaseDate || ""}<br><span>${dev.releaseNotes || ""}</span></div>
         ${dev.currentCapabilities && dev.currentCapabilities.length ? `<h4 style="margin:22px 0 8px">Current capabilities</h4><ul class="dev-future-list">${dev.currentCapabilities.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
         ${dev.comingSoon && dev.comingSoon.length ? `<h4 style="margin:22px 0 8px">Coming soon</h4><ul class="dev-future-list">${dev.comingSoon.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
       </div>

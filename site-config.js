@@ -2,9 +2,9 @@
    Edit these values directly. Nothing here requires touching app.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v4.0",
+  version: "v4.1",
   releaseDate: "July 2026",
-  releaseNotes: "Added 10 South Indian favourites including different dosa varieties, Mysore Masala Dosa, Pesarattu, Bisi Bele Bath, Kesari Bath, Uttapam and Idli, plus Quick Tiffin Mood shortcuts for faster recipe discovery.",
+  releaseNotes: "Improved Tiffin Mood layout for balanced responsive display, synchronized Developer version display with the canonical app version, and retained the expanded recipe discovery experience.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
