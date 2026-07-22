@@ -659,7 +659,24 @@ window.TINY_TIFFIN_STRINGS = {
 };
 
 /* Fallback: any missing key in any language falls back to English. */
+window.TINY_TIFFIN_EXTRA_STRINGS = {
+  en: { keyVitamins:"Key Vitamins", nutritionalProfileVaries:"Nutritional profile varies by ingredients", aiAdapt:"AI Adapt", updateRating:"Update your rating" },
+  es: { keyVitamins:"Vitaminas clave", nutritionalProfileVaries:"El perfil nutricional varía según los ingredientes", aiAdapt:"Adaptar con IA", updateRating:"Actualiza tu valoración" },
+  hi: { keyVitamins:"मुख्य विटामिन", nutritionalProfileVaries:"पोषण प्रोफ़ाइल सामग्री के अनुसार बदलती है", aiAdapt:"AI से अनुकूलित करें", updateRating:"अपनी रेटिंग अपडेट करें" },
+  gu: { keyVitamins:"મુખ્ય વિટામિન્સ", nutritionalProfileVaries:"પોષણ પ્રોફાઇલ સામગ્રી અનુસાર બદલાય છે", aiAdapt:"AI સાથે અનુકૂલિત કરો", updateRating:"તમારું રેટિંગ અપડેટ કરો" },
+  mr: { keyVitamins:"मुख्य जीवनसत्त्वे", nutritionalProfileVaries:"पोषण प्रोफाइल घटकांनुसार बदलते", aiAdapt:"AI ने अनुकूलित करा", updateRating:"तुमचे रेटिंग अपडेट करा" },
+  fr: { keyVitamins:"Vitamines clés", nutritionalProfileVaries:"Le profil nutritionnel varie selon les ingrédients", aiAdapt:"Adapter avec l’IA", updateRating:"Mettre à jour votre note" },
+  de: { keyVitamins:"Wichtige Vitamine", nutritionalProfileVaries:"Das Nährwertprofil variiert je nach Zutaten", aiAdapt:"Mit KI anpassen", updateRating:"Bewertung aktualisieren" },
+  yue: { keyVitamins:"主要維他命", nutritionalProfileVaries:"營養資料會因食材而有所不同", aiAdapt:"用 AI 調整", updateRating:"更新你的評分" },
+  ta: { keyVitamins:"முக்கிய வைட்டமின்கள்", nutritionalProfileVaries:"ஊட்டச்சத்து சுயவிவரம் பொருட்களைப் பொறுத்து மாறும்", aiAdapt:"AI மூலம் மாற்று", updateRating:"உங்கள் மதிப்பீட்டை புதுப்பிக்கவும்" },
+  te: { keyVitamins:"ముఖ్యమైన విటమిన్లు", nutritionalProfileVaries:"పోషక విలువలు పదార్థాలను బట్టి మారవచ్చు", aiAdapt:"AIతో మార్చండి", updateRating:"మీ రేటింగ్‌ను నవీకరించండి" },
+  bn: { keyVitamins:"মূল ভিটামিন", nutritionalProfileVaries:"উপকরণের উপর পুষ্টির প্রোফাইল পরিবর্তিত হতে পারে", aiAdapt:"AI দিয়ে মানিয়ে নিন", updateRating:"আপনার রেটিং আপডেট করুন" }
+};
+
 window.tinyTiffinT = function(langCode, key) {
   const dict = window.TINY_TIFFIN_STRINGS[langCode] || window.TINY_TIFFIN_STRINGS.en;
-  return (dict && dict[key] !== undefined) ? dict[key] : window.TINY_TIFFIN_STRINGS.en[key];
+  if (dict && dict[key] !== undefined) return dict[key];
+  const extra = window.TINY_TIFFIN_EXTRA_STRINGS[langCode] || window.TINY_TIFFIN_EXTRA_STRINGS.en;
+  if (extra && extra[key] !== undefined) return extra[key];
+  return window.TINY_TIFFIN_STRINGS.en[key] ?? window.TINY_TIFFIN_EXTRA_STRINGS.en[key] ?? key;
 };

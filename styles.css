@@ -51,6 +51,28 @@ button{font-family:inherit;cursor:pointer}
 }
 .header-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;font-family:'Baloo 2';font-weight:700;font-size:1.35rem;color:var(--masala)}
+/* ---------- AI brand badge ---------- */
+.brand-icon-wrap{position:relative;display:inline-flex;flex:none}
+.ai-brand-badge{
+  position:absolute;
+  top:-6px;
+  right:-7px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:20px;
+  height:20px;
+  border-radius:7px;
+  background:linear-gradient(145deg,#F4C95D 0%,#E5A431 55%,#B87A1A 100%);
+  color:#2B4E32;
+  border:2px solid var(--mist);
+  font-family:'Work Sans',system-ui,sans-serif;
+  font-size:.53rem;
+  font-weight:800;
+  letter-spacing:-.04em;
+  box-shadow:0 2px 0 rgba(255,255,255,.65) inset,0 2px 5px rgba(43,78,50,.22);
+}
+
 .brand-mark{width:38px;height:38px;flex:none}
 .header-controls{display:flex;align-items:center;gap:10px}
 select.lang-select{

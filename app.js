@@ -291,7 +291,10 @@
     if (state.tab === "planner") attachPlannerEvents();
     if (state.tab === "favorites") attachFavoritesEvents();
     if (state.tab === "contact") attachContactEvents();
-    if (state.tab === "ai") attachAIEvents();
+    if (state.tab === "ai") {
+      attachAIEvents();
+      if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
+    }
     hydrateRecipeImages(root);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
@@ -308,7 +311,7 @@
     return `
       <header class="app-header">
         <div class="wrap header-row">
-          <div class="brand-wrap"><div class="mascot brand">${mascotSVG(38)} Tiny Tiffin</div><div class="app-tagline">Making Every Lunchbox a Little More Special</div></div>
+          <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap">${mascotSVG(38)}<span class="ai-brand-badge" title="AI-powered features" aria-label="AI-powered features">AI</span></span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
           <div class="header-controls">
             <button class="theme-toggle" id="install-btn" aria-label="Install app" style="display:none">⬇️ Install</button>
             <button class="theme-toggle" id="theme-toggle" aria-label="${t('darkMode')}">${state.theme === "dark" ? "☀️" : "🌙"}</button>
@@ -595,7 +598,7 @@
         <div class="rating-row" style="margin-bottom:10px">${starsHTML(rt.overall)} <span>${rt.overall.toFixed(1)} (${rt.count})</span>
           <button class="link-btn" id="share-btn" style="margin-left:auto">${t("shareRecipe")}</button>
         </div>
-        <div class="vitamin-row">🍎 <strong>Key Vitamins:</strong> ${getRecipeVitamins(r).join(", ") || "Nutritional profile varies by ingredients"}</div>
+        <div class="vitamin-row">🍎 <strong>${t("keyVitamins")}:</strong> ${getRecipeVitamins(r).join(", ") || t("nutritionalProfileVaries")}</div>
         <div class="meta-row" style="margin-bottom:14px">
           <span class="tag time">⏱ ${r.timeCategory} min</span>
           <span class="tag">${r.difficulty}</span>
@@ -626,10 +629,10 @@
         <div class="card-actions">
           <button class="btn btn-secondary" id="modal-fav" data-fav="${r.id}">${state.favorites.has(r.id) ? "♥ " + t("removeFavorite") : "♡ " + t("addFavorite")}</button>
           <button class="btn btn-primary" id="modal-plan">${t("addToPlanner")}</button>
-          <button class="btn btn-secondary" id="ai-adapt">🤖 AI Adapt</button>
+          <button class="btn btn-secondary" id="ai-adapt">🤖 ${t("aiAdapt")}</button>
         </div>
         <div class="rate-form" id="rate-form">
-          <strong>${state.userRatings[r.id] ? "Update your rating" : t("rateThis")}</strong>
+          <strong>${state.userRatings[r.id] ? t("updateRating") : t("rateThis")}</strong>
           ${["overall", "nutrition", "kidFriendly", "lunchboxFriendly", "pickyEaterFriendly", "timeSaver"].map(k => `
             <div class="rating-breakdown">
               <span>${k === "overall" ? t("ratingOverall") : t("rating" + capitalize(k))}</span>
@@ -689,6 +692,7 @@
       closeModal();
       render();
     });
+    if (window.tinyTiffinLocalizeRecipe) window.tinyTiffinLocalizeRecipe(r, backdrop, state.lang);
   }
   function closeModal() { const m = document.getElementById("recipe-modal"); if (m) m.remove(); }
 
@@ -976,7 +980,6 @@
         <article class="ai-card"><h3>🔄 AI Recipe Adaptation</h3><p>Open any recipe and ask for egg-free, vegan, dairy-free or ingredient substitutions.</p><p class="ai-muted">Use the “AI Adapt” button inside a recipe.</p></article>
         <article class="ai-card"><h3>🛒 Smart Shopping List</h3><p>Build a combined shopping list from your weekly planner, with duplicate ingredients grouped together.</p><button class="btn btn-secondary" id="ai-shop-btn">Create Smart Shopping List</button></article>
       </div>
-      <div class="ai-card ai-assistant"><h3>💬 Tiny Tiffin AI Assistant</h3><p>Ask about recipes, ingredients, substitutions or what you can cook.</p><div class="smart-search-bar"><input id="ai-assistant-input" placeholder="Try: What can I make with broccoli, paneer and oats?"></div><button class="btn btn-primary" id="ai-ask-btn">Ask Tiny Tiffin AI</button><div id="ai-answer" class="ai-answer"></div></div>
       ${matches.length ? `<h3 class="ai-section-title">Suggested recipes</h3><section class="recipe-grid">${matches.map(recipeCardHTML).join("")}</section>` : ""}
     </section>`;
   }
@@ -995,14 +998,6 @@
     if (img) img.addEventListener("change", () => { const file = img.files && img.files[0]; if (!file) return; const preview = document.getElementById("ai-preview"); preview.src = URL.createObjectURL(file); preview.style.display = "block"; });
     const scanBtn = document.getElementById("ai-scan-btn");
     if (scanBtn) scanBtn.addEventListener("click", () => { state.aiResults = aiRecipeMatches(document.getElementById("ai-scan-text").value); render(); });
-    const askBtn = document.getElementById("ai-ask-btn");
-    if (askBtn) askBtn.addEventListener("click", () => {
-      const q = document.getElementById("ai-assistant-input").value;
-      const results = aiRecipeMatches(q);
-      const answer = document.getElementById("ai-answer");
-      answer.innerHTML = results.length ? `<strong>Here are some ideas:</strong><div class="ai-answer-list">${results.slice(0,5).map(r => `<button class="link-btn" data-ai-view="${r.id}">${r.emoji} ${recipeName(r)}</button>`).join("")}</div>` : `<strong>Try adding ingredients, a cooking time or a goal.</strong><br>Example: “paneer, broccoli, under 20 minutes” or “make this egg-free”.`;
-      answer.querySelectorAll("[data-ai-view]").forEach(b => b.addEventListener("click", () => openRecipeModal(b.dataset.aiView)));
-    });
     const shopBtn = document.getElementById("ai-shop-btn");
     if (shopBtn) shopBtn.addEventListener("click", openGroceryModal);
     attachCardEvents();
