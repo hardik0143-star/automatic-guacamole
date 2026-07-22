@@ -368,12 +368,12 @@
       <section class="hero">
         <h1 class="display">${t("heroTitle")}</h1>
         <p class="sub">${t("heroSub")}</p>
-        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
-        <div class="mood-picker" aria-label="Quick tiffin ideas">
-          <span class="mood-label">Choose a tiffin mood:</span>
-          <button class="mood-chip" data-mood="quick">⚡ Quick & Easy</button>
-          <button class="mood-chip" data-mood="protein">💪 Protein Power</button>
-          <button class="mood-chip" data-mood="colourful">🌈 Colourful & Nutritious</button>
+        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ ${t("surpriseRecipe")}</button>
+        <div class="mood-picker" aria-label="${t("moodLabel")}">
+          <span class="mood-label">${t("moodLabel")}</span>
+          <button class="mood-chip" data-mood="quick">⚡ ${t("quickEasy")}</button>
+          <button class="mood-chip" data-mood="protein">💪 ${t("proteinPower")}</button>
+          <button class="mood-chip" data-mood="colourful">🌈 ${t("colourfulNutritious")}</button>
         </div>
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">

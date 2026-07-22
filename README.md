@@ -47,4 +47,4 @@ Recipes and nutrition figures are estimates for planning convenience, not medica
 
 
 ## v1.0 AI capabilities
-This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI Assistant, AI Tiffin Planner, ingredient image upload/scanning workflow, AI recipe adaptation suggestions, and Smart Shopping List generation. These features work from the bundled recipe library without requiring an external API key.
+This release adds a local, privacy-friendly AI experience layer: AI Tiffin Planner, ingredient image upload/scanning workflow, AI recipe adaptation suggestions, and Smart Shopping List generation. These features work from the bundled recipe library without requiring an external API key.
