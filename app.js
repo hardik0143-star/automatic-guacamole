@@ -150,6 +150,7 @@
   /* ---------------- install prompt (Add to Home Screen) ---------------- */
   let deferredInstallPrompt = null;
   const isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  let updateCheckInProgress = false;
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
     deferredInstallPrompt = e;
@@ -313,7 +314,8 @@
         <div class="wrap header-row">
           <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap">${mascotSVG(38)}<span class="ai-brand-badge" title="AI-powered features" aria-label="AI-powered features">AI</span></span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
           <div class="header-controls">
-            <button class="theme-toggle" id="install-btn" aria-label="Install app" style="display:none">⬇️ Install</button>
+            <button class="theme-toggle install-action" id="install-btn" aria-label="Install app">⬇️ Install</button>
+            <button class="theme-toggle install-action" id="update-btn" aria-label="Check for software update">↻ Update</button>
             <button class="theme-toggle" id="theme-toggle" aria-label="${t('darkMode')}">${state.theme === "dark" ? "☀️" : "🌙"}</button>
             <select class="lang-select" id="lang-select" aria-label="Language">${langOptions}</select>
             <a class="admin-link" href="admin.html">${t("adminLink")}</a>
@@ -333,7 +335,7 @@
     });
     const installBtn = document.getElementById("install-btn");
     if (installBtn) {
-      if (deferredInstallPrompt && !isStandalone) installBtn.style.display = "inline-flex";
+      if (isStandalone) installBtn.style.display = "none";
       installBtn.addEventListener("click", async () => {
         if (deferredInstallPrompt) {
           deferredInstallPrompt.prompt();
@@ -345,6 +347,28 @@
           alert(isIOS
             ? "To install: tap the Share icon in Safari, then \"Add to Home Screen\"."
             : "To install: open your browser menu (⋮) and tap \"Add to Home screen\" or \"Install app\".");
+        }
+      });
+    }
+    const updateBtn = document.getElementById("update-btn");
+    if (updateBtn) {
+      updateBtn.addEventListener("click", async () => {
+        if (updateCheckInProgress) return;
+        updateCheckInProgress = true;
+        updateBtn.disabled = true;
+        updateBtn.textContent = "↻ Checking…";
+        try {
+          if ("serviceWorker" in navigator) {
+            const reg = await navigator.serviceWorker.getRegistration();
+            if (reg) await reg.update();
+          }
+          alert(`Tiny Tiffin ${CONFIG.version || "v1.0"} is up to date. If a new version was just deployed, reload once to receive it.`);
+          window.location.reload();
+        } catch (err) {
+          alert("Update check could not be completed. Please refresh the app and try again.");
+          updateBtn.disabled = false;
+          updateBtn.textContent = "↻ Update";
+          updateCheckInProgress = false;
         }
       });
     }

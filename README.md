@@ -48,3 +48,10 @@ Recipes and nutrition figures are estimates for planning convenience, not medica
 
 ## v1.0 AI capabilities
 This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI Assistant, AI Tiffin Planner, ingredient image upload/scanning workflow, AI recipe adaptation suggestions, and Smart Shopping List generation. These features work from the bundled recipe library without requiring an external API key.
+
+
+## Latest update
+- Restored visible Install App and Software Update controls.
+- PWA icons now use the Tiny Tiffin mascot with a matching AI badge.
+- Service-worker cache version bumped so deployed updates can refresh correctly.
+- Version remains synchronized from `site-config.js` (`v1.0`).

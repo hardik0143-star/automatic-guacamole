@@ -490,3 +490,7 @@ html[data-theme="dark"] .ai-card h3,.ai-section-title{color:#9dffb4}
 html[data-theme="dark"] .ai-card p,.ai-muted{color:#d9f1e0}
 html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#effff3}
 @media(max-width:760px){.ai-grid{grid-template-columns:1fr}.ai-card{padding:16px}}
+
+/* Install and software update actions */
+.install-action { white-space: nowrap; }
+.install-action:disabled { opacity: .65; cursor: wait; }
