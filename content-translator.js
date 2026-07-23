@@ -64,10 +64,8 @@
     const stepItems = [...modal.querySelectorAll("section:nth-of-type(2) li")];
     const tips = [...modal.querySelectorAll(".tip-box")];
 
-    const nativeTitle = r.name && r.name[lang] ? r.name[lang] : (title && title.textContent);
-    const nativeDesc = r.desc && r.desc[lang] ? r.desc[lang] : (desc && desc.textContent);
-    const titleText = r.name && r.name[lang] ? nativeTitle : await translateText(nativeTitle, lang);
-    const descText = r.desc && r.desc[lang] ? nativeDesc : await translateText(nativeDesc, lang);
+    const titleText = r.name && r.name[lang] ? r.name[lang] : (title && title.textContent);
+    const descText = r.desc && r.desc[lang] ? r.desc[lang] : (desc && desc.textContent);
     if (title && titleText) title.textContent = titleText;
     if (desc && descText) desc.textContent = descText;
 
@@ -97,26 +95,6 @@
       tips[1].appendChild(document.createTextNode(" " + translatedTips[1]));
     }
 
-    // Translate recipe-specific difficulty, vitamin names and other recipe metadata.
-    const difficultyTag = modal.querySelector('.meta-row .tag:not(.time):not(.allergen)');
-    if (difficultyTag && r.difficulty) {
-      difficultyTag.textContent = await translateText(r.difficulty, lang);
-    }
-    const vitamin = modal.querySelector('.vitamin-row');
-    if (vitamin) {
-      const strong = vitamin.querySelector('strong');
-      const value = vitamin.textContent.replace(strong ? strong.textContent : '', '').replace(/^🍎\s*/, '').replace(/^:\s*/, '').trim();
-      if (value && value !== 'Nutritional profile varies by ingredients') {
-        const translatedValue = await translateText(value, lang);
-        if (translatedValue) {
-          vitamin.innerHTML = '';
-          vitamin.appendChild(document.createTextNode('🍎 '));
-          if (strong) vitamin.appendChild(strong);
-          vitamin.appendChild(document.createTextNode(' ' + translatedValue));
-        }
-      }
-    }
-
     // Translate recipe-specific allergen names and difficulty if the data has no localized equivalent.
     const metaTags = [...modal.querySelectorAll(".meta-row .tag")];
     const rawAllergens = r.allergens || [];
@@ -127,6 +105,10 @@
     });
 
     // Translate any remaining visible English recipe-specific text in the modal.
+    const vitamin = modal.querySelector(".vitamin-row");
+    if (vitamin && !r.name[lang]) {
+      // The label itself is already localized by i18n; leave nutrition values untouched.
+    }
   }
 
   async function localizeAIHub(root, lang) {

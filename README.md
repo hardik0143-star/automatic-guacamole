@@ -23,7 +23,7 @@ Tiny Tiffin is a kid-friendly vegetarian Indian and continental tiffin discovery
   - Removed admin-related capabilities
   - Removed the Coming Soon section
   - Removed the requested sentence from the developer story
-- Recipe library now contains 165+ ideas.
+- Recipe library now contains 200+ ideas.
 
 ## Deployment
 
@@ -47,4 +47,4 @@ Recipes and nutrition figures are estimates for planning convenience, not medica
 
 
 ## v1.0 AI capabilities
-This release adds a local, privacy-friendly AI experience layer: AI Tiffin Planner, ingredient image upload/scanning workflow, AI recipe adaptation suggestions, and Smart Shopping List generation. These features work from the bundled recipe library without requiring an external API key.
+This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI Assistant, AI Tiffin Planner, ingredient image upload/scanning workflow, AI recipe adaptation suggestions, and Smart Shopping List generation. These features work from the bundled recipe library without requiring an external API key.

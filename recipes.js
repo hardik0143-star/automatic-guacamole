@@ -11705,5 +11705,2857 @@ window.TINY_TIFFIN_RECIPES = [
       "count": 1
     },
     "hidden": false
+  },
+  {
+    "id": "avocado-paneer-roti-roll",
+    "emoji": "🥑",
+    "images": [],
+    "name": {
+      "en": "Avocado Paneer Roti Roll"
+    },
+    "desc": {
+      "en": "Creamy avocado, soft paneer and crunchy vegetables wrapped in a whole-wheat roti."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [
+      "none"
+    ],
+    "ingredients": [
+      "1 whole-wheat roti",
+      "1/2 ripe avocado, mashed",
+      "60 g paneer, crumbled",
+      "2 tbsp grated carrot",
+      "2 tbsp sweet corn",
+      "1 tsp lemon juice",
+      "Pinch of cumin powder",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mash avocado with lemon, cumin and salt.",
+      "Mix in paneer, carrot and corn.",
+      "Spread the filling over the roti.",
+      "Roll tightly and cut into bite-sized pieces."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein_g": 10,
+      "iron_mg": 2.4,
+      "calcium_mg": 150,
+      "fiber_g": 6,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Wrap in parchment and cut into pinwheels for easy lunchbox eating."
+    },
+    "kidTip": {
+      "en": "Make small pinwheels so the creamy filling is easy to hold."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "avocado-moong-chilla-wrap",
+    "emoji": "🥑",
+    "images": [],
+    "name": {
+      "en": "Avocado Moong Chilla Wrap"
+    },
+    "desc": {
+      "en": "A protein-rich moong chilla filled with avocado, paneer and colourful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "1/2 cup soaked yellow moong dal",
+      "1/2 ripe avocado",
+      "40 g paneer",
+      "2 tbsp finely chopped bell pepper",
+      "1 tbsp yogurt (optional)",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend soaked moong with a little water, cumin and salt.",
+      "Cook thin chillas on a lightly greased pan.",
+      "Mash avocado and mix with paneer and bell pepper.",
+      "Spread the filling on a chilla and roll."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein_g": 12,
+      "iron_mg": 3.1,
+      "calcium_mg": 135,
+      "fiber_g": 6,
+      "vitaminC_mg": 24
+    },
+    "packingTip": {
+      "en": "Cool the chilla before adding avocado to keep the wrap fresh."
+    },
+    "kidTip": {
+      "en": "Slice into small spirals for a fun finger-food shape."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-guacamole-veggie-toast",
+    "emoji": "🥑",
+    "images": [],
+    "name": {
+      "en": "Mini Guacamole Veggie Toasts"
+    },
+    "desc": {
+      "en": "Creamy guacamole on whole-grain toast with colourful vegetables for a fresh lunchbox bite."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [
+      "none"
+    ],
+    "ingredients": [
+      "1 ripe avocado",
+      "1 tsp lime juice",
+      "2 slices whole-grain bread",
+      "2 tbsp finely diced tomato",
+      "1 tbsp finely diced cucumber",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mash avocado with lime, cumin and salt.",
+      "Toast the bread lightly and cut into small squares.",
+      "Spread guacamole over the toast.",
+      "Top with tomato and cucumber just before packing."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 5,
+      "iron_mg": 2.0,
+      "calcium_mg": 55,
+      "fiber_g": 6,
+      "vitaminC_mg": 22
+    },
+    "packingTip": {
+      "en": "Pack the guacamole separately if the lunchbox will sit for many hours."
+    },
+    "kidTip": {
+      "en": "Use small cookie cutters to make fun toast shapes."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "avocado-chickpea-rice-rolls",
+    "emoji": "🥑",
+    "images": [],
+    "name": {
+      "en": "Avocado Chickpea Rice Rolls"
+    },
+    "desc": {
+      "en": "Soft rice rolls filled with avocado, chickpeas and crisp vegetables in a sushi-inspired lunchbox format."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "none"
+    ],
+    "ingredients": [
+      "1 cup cooked sticky rice",
+      "1/2 avocado, sliced",
+      "1/3 cup mashed chickpeas",
+      "2 tbsp grated carrot",
+      "1 nori sheet (optional)",
+      "1 tsp lemon juice"
+    ],
+    "instructions": [
+      "Season chickpeas with lemon and mash lightly.",
+      "Spread rice thinly over nori or parchment.",
+      "Add chickpea, avocado and carrot in a line.",
+      "Roll firmly and slice into bite-sized pieces."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein_g": 9,
+      "iron_mg": 2.8,
+      "calcium_mg": 60,
+      "fiber_g": 7,
+      "vitaminC_mg": 16
+    },
+    "packingTip": {
+      "en": "Use parchment if nori is unfamiliar to your child."
+    },
+    "kidTip": {
+      "en": "Serve as little rice wheels that are easy to pick up."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-paneer-paratha",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Broccoli Paneer Stuffed Paratha"
+    },
+    "desc": {
+      "en": "A soft whole-wheat paratha filled with finely grated broccoli and paneer."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "calcium"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup finely grated broccoli",
+      "60 g crumbled paneer",
+      "1 cup whole-wheat flour",
+      "1/4 tsp cumin",
+      "Pinch of turmeric",
+      "Water as needed",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Steam grated broccoli for 2 minutes and squeeze out excess water.",
+      "Mix with paneer, cumin, turmeric and salt.",
+      "Prepare a soft dough with flour and water.",
+      "Stuff, roll gently and cook on a hot tawa with a little oil."
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 12,
+      "iron_mg": 3.2,
+      "calcium_mg": 170,
+      "fiber_g": 6,
+      "vitaminC_mg": 45
+    },
+    "packingTip": {
+      "en": "Cool slightly before packing to prevent steam from softening the paratha."
+    },
+    "kidTip": {
+      "en": "Grate broccoli very finely so it blends into the filling."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-moong-cheela",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Broccoli Moong Dal Cheela"
+    },
+    "desc": {
+      "en": "A savoury green cheela packed with broccoli and protein-rich moong dal."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "1/2 cup soaked moong dal",
+      "1/2 cup finely chopped broccoli",
+      "1 tbsp grated carrot",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend soaked moong with a little water to make a pourable batter.",
+      "Fold in broccoli, carrot, cumin and salt.",
+      "Cook small cheelas on a lightly greased pan until golden on both sides.",
+      "Serve plain or with yogurt."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 11,
+      "iron_mg": 3.0,
+      "calcium_mg": 80,
+      "fiber_g": 6,
+      "vitaminC_mg": 38
+    },
+    "packingTip": {
+      "en": "Make mini cheelas so they fit neatly into a tiffin compartment."
+    },
+    "kidTip": {
+      "en": "Call them green pancakes and serve with a familiar dip."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-cheese-egg-muffins",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Broccoli Cheese Egg Muffins"
+    },
+    "desc": {
+      "en": "Mini baked egg muffins with broccoli and cheese for a portable protein-rich tiffin."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "egg",
+      "milk"
+    ],
+    "ingredients": [
+      "2 eggs",
+      "1/2 cup finely chopped steamed broccoli",
+      "2 tbsp grated mozzarella",
+      "1 tbsp diced bell pepper",
+      "Pinch of pepper",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Whisk eggs with salt and pepper.",
+      "Stir in broccoli, bell pepper and cheese.",
+      "Pour into greased mini muffin moulds.",
+      "Bake until just set and lightly golden."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 14,
+      "iron_mg": 2.0,
+      "calcium_mg": 170,
+      "fiber_g": 2,
+      "vitaminC_mg": 30
+    },
+    "packingTip": {
+      "en": "Cool completely before packing so the muffins stay firm."
+    },
+    "kidTip": {
+      "en": "Use mini moulds for small two-bite portions."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "crispy-broccoli-quinoa-bites",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Crispy Broccoli Quinoa Bites"
+    },
+    "desc": {
+      "en": "Baked quinoa bites with broccoli, cheese and a crisp outside."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "calcium"
+    ],
+    "allergens": [
+      "egg",
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup finely chopped steamed broccoli",
+      "1 egg",
+      "2 tbsp grated cheese",
+      "2 tbsp breadcrumbs",
+      "Pinch of garlic powder",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mix all ingredients into a soft mixture.",
+      "Shape into small nuggets.",
+      "Place on a lined tray and lightly brush with oil.",
+      "Bake until firm and golden, turning once."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 10,
+      "iron_mg": 2.8,
+      "calcium_mg": 120,
+      "fiber_g": 4,
+      "vitaminC_mg": 35
+    },
+    "packingTip": {
+      "en": "Pack with yogurt or hummus for dipping."
+    },
+    "kidTip": {
+      "en": "Shape them as stars or small nuggets."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouted-moong-dosa-rolls",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Sprouted Moong Dosa Rolls"
+    },
+    "desc": {
+      "en": "Thin dosa rolls filled with colourful vegetables and a fresh yogurt spread."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "1 cup sprouted moong",
+      "2 tbsp rice flour",
+      "1/4 cup grated carrot",
+      "2 tbsp finely chopped bell pepper",
+      "2 tbsp yogurt",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend sprouts with a little water and rice flour into a smooth batter.",
+      "Cook thin dosas on a hot pan.",
+      "Spread yogurt and add carrot and bell pepper.",
+      "Roll tightly and slice."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 11,
+      "iron_mg": 3.8,
+      "calcium_mg": 90,
+      "fiber_g": 7,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Keep the yogurt layer thin to prevent sogginess."
+    },
+    "kidTip": {
+      "en": "Slice into colourful spiral rolls."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouts-paneer-frankie",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Sprouts & Paneer Frankie"
+    },
+    "desc": {
+      "en": "A soft roti wrap filled with spiced sprouts, paneer and crunchy vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 whole-wheat roti",
+      "1/2 cup cooked sprouted moong",
+      "50 g paneer",
+      "2 tbsp grated carrot",
+      "1 tbsp finely chopped bell pepper",
+      "1/4 tsp mild chaat masala",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Warm the sprouts and paneer with mild seasoning.",
+      "Place the filling on a roti.",
+      "Add carrot and bell pepper.",
+      "Roll tightly and wrap for the lunchbox."
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 14,
+      "iron_mg": 3.6,
+      "calcium_mg": 180,
+      "fiber_g": 7,
+      "vitaminC_mg": 22
+    },
+    "packingTip": {
+      "en": "Wrap in foil or parchment to keep the frankie together."
+    },
+    "kidTip": {
+      "en": "Keep the spices mild and add a little yogurt if needed."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-sprout-salad-cups",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Rainbow Sprout Salad Cups"
+    },
+    "desc": {
+      "en": "Crunchy sprouted lentils with sweet corn, cucumber and carrot in edible mini cups."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup mixed sprouts",
+      "2 tbsp sweet corn",
+      "2 tbsp diced cucumber",
+      "2 tbsp grated carrot",
+      "1 tbsp yogurt or hummus",
+      "1 tsp lemon juice",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Steam sprouts briefly if needed for younger children.",
+      "Mix sprouts, corn, cucumber and carrot.",
+      "Add lemon and salt.",
+      "Spoon into mini whole-wheat cups or lettuce cups just before packing."
+    ],
+    "nutrition": {
+      "calories": 190,
+      "protein_g": 9,
+      "iron_mg": 2.7,
+      "calcium_mg": 70,
+      "fiber_g": 6,
+      "vitaminC_mg": 28
+    },
+    "packingTip": {
+      "en": "Pack the dressing separately for maximum crunch."
+    },
+    "kidTip": {
+      "en": "Use colourful vegetables to make each cup look different."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprout-hummus-pita-pockets",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Crunchy Sprout Hummus Pita Pockets"
+    },
+    "desc": {
+      "en": "Soft pita pockets filled with hummus, sprouts and crunchy vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [
+      "sesame",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 small whole-wheat pita",
+      "3 tbsp hummus",
+      "1/3 cup sprouts",
+      "2 tbsp grated carrot",
+      "2 tbsp cucumber sticks",
+      "1 tbsp sweet corn"
+    ],
+    "instructions": [
+      "Warm the pita briefly and cut open.",
+      "Spread hummus inside.",
+      "Fill with sprouts, carrot, cucumber and corn.",
+      "Cut into small wedges."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 10,
+      "iron_mg": 3.2,
+      "calcium_mg": 70,
+      "fiber_g": 8,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Do not overfill the pita; smaller pockets are easier to eat."
+    },
+    "kidTip": {
+      "en": "Cut into triangles and secure with a small food pick if needed."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "red-spinach-paneer-paratha",
+    "emoji": "🌿",
+    "images": [],
+    "name": {
+      "en": "Red Spinach Paneer Paratha"
+    },
+    "desc": {
+      "en": "A colourful paratha filled with finely chopped red spinach and soft paneer."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup finely chopped red spinach",
+      "60 g paneer",
+      "1 cup whole-wheat flour",
+      "1/4 tsp cumin",
+      "1/4 tsp turmeric",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Wilt red spinach in a pan and cool.",
+      "Mix spinach with paneer and spices.",
+      "Prepare a soft dough with flour and water.",
+      "Stuff, roll and cook until golden."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein_g": 11,
+      "iron_mg": 3.8,
+      "calcium_mg": 160,
+      "fiber_g": 5,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Squeeze out excess moisture from the spinach before stuffing."
+    },
+    "kidTip": {
+      "en": "The pink-green filling makes the paratha visually interesting."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "red-spinach-moong-pancakes",
+    "emoji": "🌿",
+    "images": [],
+    "name": {
+      "en": "Red Spinach Moong Dal Pancakes"
+    },
+    "desc": {
+      "en": "Soft savoury pancakes made with moong dal and finely chopped red spinach."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup soaked moong dal",
+      "1/2 cup chopped red spinach",
+      "1 tbsp grated carrot",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend moong dal with a little water.",
+      "Mix in red spinach, carrot, cumin and salt.",
+      "Cook small pancakes on a lightly greased pan.",
+      "Cook both sides until set."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 10,
+      "iron_mg": 3.6,
+      "calcium_mg": 70,
+      "fiber_g": 6,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Make them thin enough to cook through quickly."
+    },
+    "kidTip": {
+      "en": "Serve with a familiar yogurt dip."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "red-spinach-cheese-egg-muffins",
+    "emoji": "🌿",
+    "images": [],
+    "name": {
+      "en": "Red Spinach Cheese Egg Muffins"
+    },
+    "desc": {
+      "en": "Mini egg muffins with red spinach, sweet corn and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "calcium"
+    ],
+    "allergens": [
+      "egg",
+      "milk"
+    ],
+    "ingredients": [
+      "2 eggs",
+      "1/2 cup finely chopped red spinach",
+      "2 tbsp sweet corn",
+      "2 tbsp grated cheese",
+      "Pinch of pepper",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Wilt spinach briefly and cool.",
+      "Whisk eggs with salt and pepper.",
+      "Mix in spinach, corn and cheese.",
+      "Bake in mini muffin moulds until set."
+    ],
+    "nutrition": {
+      "calories": 215,
+      "protein_g": 13,
+      "iron_mg": 2.7,
+      "calcium_mg": 150,
+      "fiber_g": 2,
+      "vitaminC_mg": 16
+    },
+    "packingTip": {
+      "en": "Let them cool before closing the lunchbox."
+    },
+    "kidTip": {
+      "en": "Add sweet corn for a gentle natural sweetness."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "red-spinach-quinoa-fritters",
+    "emoji": "🌿",
+    "images": [],
+    "name": {
+      "en": "Red Spinach Quinoa Fritters"
+    },
+    "desc": {
+      "en": "Crisp little fritters made with quinoa, red spinach and vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "egg",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup finely chopped red spinach",
+      "1 egg or 2 tbsp mashed potato",
+      "2 tbsp grated carrot",
+      "2 tbsp breadcrumbs",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mix all ingredients into a firm mixture.",
+      "Shape into small fritters.",
+      "Pan-cook or bake until golden on both sides.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein_g": 9,
+      "iron_mg": 3.2,
+      "calcium_mg": 60,
+      "fiber_g": 5,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Bake instead of frying for a lighter lunchbox option."
+    },
+    "kidTip": {
+      "en": "Make small round fritters that resemble mini cookies."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-paneer-roti-roll",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Carrot Paneer Roti Roll"
+    },
+    "desc": {
+      "en": "A naturally sweet carrot and paneer filling wrapped in a soft whole-wheat roti."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "calcium"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 whole-wheat roti",
+      "1/2 cup grated carrot",
+      "60 g paneer",
+      "1 tbsp sweet corn",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Sauté carrot briefly until just tender.",
+      "Add paneer, corn, cumin and salt.",
+      "Fill the roti and roll tightly.",
+      "Cut into bite-sized pieces."
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 12,
+      "iron_mg": 2.5,
+      "calcium_mg": 170,
+      "fiber_g": 5,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Avoid overcooking the carrot so the filling retains a little texture."
+    },
+    "kidTip": {
+      "en": "The mild sweetness of carrot helps make the roll kid-friendly."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-moong-appe",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Carrot Moong Dal Appe"
+    },
+    "desc": {
+      "en": "Soft mini savoury bites made with moong dal and grated carrot."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup soaked moong dal",
+      "1/2 cup grated carrot",
+      "1 tbsp rice flour",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend moong dal into a thick batter.",
+      "Mix in carrot, rice flour, cumin and salt.",
+      "Pour into a lightly greased appe pan.",
+      "Cook covered, turn and cook until golden."
+    ],
+    "nutrition": {
+      "calories": 220,
+      "protein_g": 10,
+      "iron_mg": 2.8,
+      "calcium_mg": 55,
+      "fiber_g": 5,
+      "vitaminC_mg": 6
+    },
+    "packingTip": {
+      "en": "Pack with a small dip in a separate container."
+    },
+    "kidTip": {
+      "en": "These are naturally bite-sized and easy to pick up."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-hummus-sandwich-spirals",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Carrot Hummus Sandwich Spirals"
+    },
+    "desc": {
+      "en": "Soft sandwich spirals filled with hummus, carrot and cucumber."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "protein"
+    ],
+    "allergens": [
+      "sesame",
+      "wheat"
+    ],
+    "ingredients": [
+      "2 slices whole-grain bread",
+      "3 tbsp hummus",
+      "1/3 cup grated carrot",
+      "2 tbsp cucumber, finely chopped",
+      "Pinch of pepper"
+    ],
+    "instructions": [
+      "Trim the bread edges and flatten lightly.",
+      "Spread hummus evenly.",
+      "Add carrot and cucumber.",
+      "Roll tightly and slice into spirals."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 7,
+      "iron_mg": 2.2,
+      "calcium_mg": 60,
+      "fiber_g": 6,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Squeeze excess moisture from cucumber before rolling."
+    },
+    "kidTip": {
+      "en": "The spiral shape makes a familiar sandwich more exciting."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-cheese-egg-muffins",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Carrot Cheese Egg Muffins"
+    },
+    "desc": {
+      "en": "Mini egg muffins with sweet carrot and melted cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "vitaminC"
+    ],
+    "allergens": [
+      "egg",
+      "milk"
+    ],
+    "ingredients": [
+      "2 eggs",
+      "1/2 cup finely grated carrot",
+      "2 tbsp grated cheese",
+      "1 tbsp sweet corn",
+      "Pinch of pepper",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Whisk eggs with salt and pepper.",
+      "Mix in carrot, corn and cheese.",
+      "Pour into mini muffin moulds.",
+      "Bake until set and lightly golden."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 13,
+      "iron_mg": 2.1,
+      "calcium_mg": 145,
+      "fiber_g": 2,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Use finely grated carrot so the muffins stay soft."
+    },
+    "kidTip": {
+      "en": "Naturally sweet carrot balances the savoury cheese."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-pepper-paneer-frankie",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Rainbow Pepper Paneer Frankie"
+    },
+    "desc": {
+      "en": "A colourful paneer wrap with red, yellow and green bell peppers."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "vitaminC",
+      "calcium"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 whole-wheat roti",
+      "60 g paneer",
+      "1/4 cup mixed bell peppers, thinly sliced",
+      "1 tbsp grated carrot",
+      "1/4 tsp cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Sauté peppers briefly until just tender.",
+      "Add paneer, carrot, cumin and salt.",
+      "Fill the roti and roll tightly.",
+      "Slice into small pieces."
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 13,
+      "iron_mg": 2.5,
+      "calcium_mg": 180,
+      "fiber_g": 5,
+      "vitaminC_mg": 65
+    },
+    "packingTip": {
+      "en": "Keep peppers slightly crisp for better texture."
+    },
+    "kidTip": {
+      "en": "Use three pepper colours to make a rainbow filling."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "stuffed-pepper-paratha-pockets",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Stuffed Bell Pepper Paratha Pockets"
+    },
+    "desc": {
+      "en": "Soft paratha pockets filled with mild bell pepper, potato and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "calcium",
+      "vitaminC"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat flour",
+      "1/2 cup finely chopped bell pepper",
+      "1 small boiled potato",
+      "2 tbsp grated cheese",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mash potato and mix with bell pepper, cheese and cumin.",
+      "Prepare a soft dough with flour and water.",
+      "Stuff and roll into small parathas.",
+      "Cook on a hot tawa until golden."
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 8,
+      "iron_mg": 2.6,
+      "calcium_mg": 110,
+      "fiber_g": 5,
+      "vitaminC_mg": 45
+    },
+    "packingTip": {
+      "en": "Make small parathas for easier lunchbox handling."
+    },
+    "kidTip": {
+      "en": "The cheese helps the colourful filling hold together."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-pepper-frittata-cups",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Mini Rainbow Pepper Frittata Cups"
+    },
+    "desc": {
+      "en": "Baked egg cups with colourful peppers and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "vitaminC"
+    ],
+    "allergens": [
+      "egg",
+      "milk"
+    ],
+    "ingredients": [
+      "2 eggs",
+      "1/3 cup mixed bell peppers, finely diced",
+      "2 tbsp grated cheese",
+      "1 tbsp sweet corn",
+      "Pinch of oregano",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Whisk eggs with oregano and salt.",
+      "Mix in peppers, corn and cheese.",
+      "Pour into mini muffin moulds.",
+      "Bake until set."
+    ],
+    "nutrition": {
+      "calories": 210,
+      "protein_g": 13,
+      "iron_mg": 2.0,
+      "calcium_mg": 150,
+      "fiber_g": 2,
+      "vitaminC_mg": 60
+    },
+    "packingTip": {
+      "en": "Cool before packing to keep the frittata firm."
+    },
+    "kidTip": {
+      "en": "The rainbow colours make these visually appealing."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "pepper-quinoa-taco-cups",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Bell Pepper Quinoa Taco Cups"
+    },
+    "desc": {
+      "en": "Mini baked tortilla cups filled with quinoa, peppers and beans."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "ingredients": [
+      "4 small whole-wheat tortilla rounds",
+      "1/2 cup cooked quinoa",
+      "1/4 cup diced bell pepper",
+      "1/4 cup mashed chickpeas",
+      "1 tbsp grated cheese (optional)",
+      "Pinch of cumin"
+    ],
+    "instructions": [
+      "Press tortilla rounds into muffin moulds.",
+      "Fill with quinoa, chickpeas and bell pepper.",
+      "Top with a little cheese if using.",
+      "Bake until the cups are crisp."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein_g": 9,
+      "iron_mg": 3.0,
+      "calcium_mg": 80,
+      "fiber_g": 7,
+      "vitaminC_mg": 40
+    },
+    "packingTip": {
+      "en": "Pack the cups once completely cool so they stay crisp."
+    },
+    "kidTip": {
+      "en": "They look like tiny edible bowls."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "kale-paneer-thepla",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Kale Paneer Thepla"
+    },
+    "desc": {
+      "en": "Soft thepla made with finely chopped kale and protein-rich paneer."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat flour",
+      "1/2 cup finely chopped kale",
+      "50 g paneer",
+      "1/4 tsp cumin",
+      "Pinch of turmeric",
+      "Water as needed",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Wilt kale briefly and cool.",
+      "Mix kale, paneer and spices into the flour.",
+      "Knead into a soft dough.",
+      "Roll small theplas and cook on a hot tawa."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein_g": 11,
+      "iron_mg": 3.5,
+      "calcium_mg": 140,
+      "fiber_g": 6,
+      "vitaminC_mg": 35
+    },
+    "packingTip": {
+      "en": "Chop kale very finely for a softer texture."
+    },
+    "kidTip": {
+      "en": "Serve with yogurt or a mild dip."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "kale-moong-chilla",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Kale Moong Dal Chilla"
+    },
+    "desc": {
+      "en": "Protein-rich moong chilla with finely chopped kale and carrot."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup soaked moong dal",
+      "1/2 cup finely chopped kale",
+      "2 tbsp grated carrot",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend moong into a smooth batter.",
+      "Fold in kale, carrot, cumin and salt.",
+      "Cook small chillas on a lightly greased pan.",
+      "Serve warm or cool before packing."
+    ],
+    "nutrition": {
+      "calories": 235,
+      "protein_g": 10,
+      "iron_mg": 3.4,
+      "calcium_mg": 65,
+      "fiber_g": 6,
+      "vitaminC_mg": 28
+    },
+    "packingTip": {
+      "en": "Use baby kale or finely chopped leaves for a tender texture."
+    },
+    "kidTip": {
+      "en": "Make mini chillas and serve with a familiar dip."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "kale-cheese-mini-quesadillas",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Kale Cheese Mini Quesadillas"
+    },
+    "desc": {
+      "en": "Crisp mini quesadillas filled with kale, corn and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup finely chopped kale",
+      "2 tbsp sweet corn",
+      "1/4 cup grated cheese",
+      "Pinch of oregano"
+    ],
+    "instructions": [
+      "Wilt kale briefly.",
+      "Place kale, corn and cheese on one tortilla.",
+      "Cover with the second tortilla.",
+      "Toast on a pan and cut into wedges."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 10,
+      "iron_mg": 2.8,
+      "calcium_mg": 170,
+      "fiber_g": 5,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Let the quesadilla cool for a few minutes before cutting."
+    },
+    "kidTip": {
+      "en": "Cut into triangles for easy dipping."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "kale-potato-veggie-bites",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Kale Potato Veggie Bites"
+    },
+    "desc": {
+      "en": "Baked bite-sized potato and kale nuggets with a crisp outside."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "iron",
+      "calcium"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup mashed potato",
+      "1/2 cup finely chopped kale",
+      "2 tbsp grated cheese",
+      "2 tbsp breadcrumbs",
+      "Pinch of garlic powder",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Wilt kale and cool.",
+      "Mix all ingredients and shape into small bites.",
+      "Place on a tray and lightly brush with oil.",
+      "Bake until lightly golden."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 6,
+      "iron_mg": 2.6,
+      "calcium_mg": 85,
+      "fiber_g": 4,
+      "vitaminC_mg": 22
+    },
+    "packingTip": {
+      "en": "Bake until just golden so the inside remains soft."
+    },
+    "kidTip": {
+      "en": "Shape them into small stars or nuggets."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "radish-paneer-stuffed-paratha",
+    "emoji": "🌶️",
+    "images": [],
+    "name": {
+      "en": "Radish Paneer Stuffed Paratha"
+    },
+    "desc": {
+      "en": "A mild version of stuffed mooli paratha balanced with soft paneer."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "calcium",
+      "vitaminC"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat flour",
+      "1 cup grated radish",
+      "60 g paneer",
+      "1/4 tsp cumin",
+      "Pinch of carom seeds",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Squeeze excess water from grated radish.",
+      "Mix radish with paneer and spices.",
+      "Prepare a soft dough and stuff with the filling.",
+      "Roll gently and cook until golden."
+    ],
+    "nutrition": {
+      "calories": 300,
+      "protein_g": 11,
+      "iron_mg": 2.7,
+      "calcium_mg": 160,
+      "fiber_g": 6,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Squeeze the radish well to prevent the paratha from tearing."
+    },
+    "kidTip": {
+      "en": "Paneer softens the sharper radish flavour."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "mooli-moong-cheela",
+    "emoji": "🌶️",
+    "images": [],
+    "name": {
+      "en": "Mooli Moong Dal Cheela"
+    },
+    "desc": {
+      "en": "Soft moong dal cheelas with finely grated radish and mild spices."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup soaked moong dal",
+      "1/2 cup finely grated radish",
+      "1 tbsp rice flour",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend moong into a smooth batter.",
+      "Squeeze radish and mix into the batter.",
+      "Add rice flour, cumin and salt.",
+      "Cook small cheelas until set on both sides."
+    ],
+    "nutrition": {
+      "calories": 225,
+      "protein_g": 10,
+      "iron_mg": 2.8,
+      "calcium_mg": 55,
+      "fiber_g": 5,
+      "vitaminC_mg": 16
+    },
+    "packingTip": {
+      "en": "Use a mild radish and grate it finely for children."
+    },
+    "kidTip": {
+      "en": "Serve with yogurt to balance the flavour."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "radish-hummus-rainbow-wrap",
+    "emoji": "🌶️",
+    "images": [],
+    "name": {
+      "en": "Radish Hummus Rainbow Wrap"
+    },
+    "desc": {
+      "en": "A fresh wrap with hummus, thin radish slices and colourful vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "vitaminC"
+    ],
+    "allergens": [
+      "sesame",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 whole-wheat tortilla",
+      "3 tbsp hummus",
+      "3 thin radish slices",
+      "2 tbsp grated carrot",
+      "2 tbsp cucumber sticks",
+      "2 tbsp bell pepper strips"
+    ],
+    "instructions": [
+      "Spread hummus over the tortilla.",
+      "Arrange radish and vegetables in colourful strips.",
+      "Roll tightly and slice into pinwheels."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 7,
+      "iron_mg": 2.3,
+      "calcium_mg": 65,
+      "fiber_g": 6,
+      "vitaminC_mg": 30
+    },
+    "packingTip": {
+      "en": "Use thin radish slices for a milder bite."
+    },
+    "kidTip": {
+      "en": "Arrange the vegetables as a rainbow before rolling."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "crispy-radish-potato-hash-bites",
+    "emoji": "🌶️",
+    "images": [],
+    "name": {
+      "en": "Crispy Radish Potato Hash Bites"
+    },
+    "desc": {
+      "en": "Baked mini bites combining grated radish, potato and cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "calcium",
+      "vitaminC"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup grated radish, squeezed dry",
+      "1 cup mashed potato",
+      "2 tbsp grated cheese",
+      "2 tbsp breadcrumbs",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mix all ingredients into a firm mixture.",
+      "Shape into small flat bites.",
+      "Bake or pan-cook until golden on both sides.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 240,
+      "protein_g": 6,
+      "iron_mg": 2.2,
+      "calcium_mg": 90,
+      "fiber_g": 4,
+      "vitaminC_mg": 14
+    },
+    "packingTip": {
+      "en": "Squeeze the radish thoroughly so the bites hold their shape."
+    },
+    "kidTip": {
+      "en": "Make them coin-shaped for easy eating."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "ragi-paneer-pizza-dosa",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Ragi Paneer Pizza Dosa"
+    },
+    "desc": {
+      "en": "A crisp-soft ragi dosa topped with paneer, vegetables and a little cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "iron"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "1/2 cup ragi flour",
+      "2 tbsp rice flour",
+      "60 g paneer, crumbled",
+      "2 tbsp chopped bell pepper",
+      "2 tbsp grated mozzarella",
+      "Pinch of oregano",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mix ragi and rice flour with water into a thin batter.",
+      "Cook a dosa on a hot pan.",
+      "Top with paneer, bell pepper and cheese.",
+      "Cover briefly until the topping is warm and the cheese melts."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein_g": 12,
+      "iron_mg": 3.6,
+      "calcium_mg": 190,
+      "fiber_g": 5,
+      "vitaminC_mg": 22
+    },
+    "packingTip": {
+      "en": "Cut into wedges and pack once cooled."
+    },
+    "kidTip": {
+      "en": "It looks like pizza but uses a familiar dosa base."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "foxtail-millet-veggie-sushi",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Foxtail Millet Veggie Sushi"
+    },
+    "desc": {
+      "en": "A colourful sushi-inspired roll made with cooked foxtail millet and vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "vitaminC"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 cup cooked foxtail millet",
+      "1 nori sheet or thin omelette (optional)",
+      "1/2 avocado or cucumber strips",
+      "2 tbsp grated carrot",
+      "2 tbsp bell pepper strips",
+      "1 tsp lemon juice"
+    ],
+    "instructions": [
+      "Cool the cooked millet and season with lemon.",
+      "Spread it thinly over nori or parchment.",
+      "Add vegetables in a line.",
+      "Roll firmly and slice into small rounds."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 7,
+      "iron_mg": 2.8,
+      "calcium_mg": 45,
+      "fiber_g": 6,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Use parchment instead of nori for a familiar flavour."
+    },
+    "kidTip": {
+      "en": "The small round slices are easy for little hands."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "little-millet-veggie-patties",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Little Millet Veggie Patties"
+    },
+    "desc": {
+      "en": "Soft little millet patties with vegetables and chickpeas for a balanced tiffin."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup cooked little millet",
+      "1/2 cup mashed chickpeas",
+      "1/4 cup grated carrot",
+      "2 tbsp finely chopped bell pepper",
+      "2 tbsp breadcrumbs",
+      "Pinch of cumin"
+    ],
+    "instructions": [
+      "Mix all ingredients into a firm mixture.",
+      "Shape into small patties.",
+      "Pan-cook or bake until lightly golden.",
+      "Cool before packing."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein_g": 9,
+      "iron_mg": 3.2,
+      "calcium_mg": 55,
+      "fiber_g": 7,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Make thin patties so they cook evenly."
+    },
+    "kidTip": {
+      "en": "Serve with a mild yogurt or tomato dip."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "bajra-paneer-quesadilla",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Bajra Paneer Quesadilla"
+    },
+    "desc": {
+      "en": "A fusion quesadilla with a bajra roti base, paneer and vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "iron"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "2 small bajra rotis",
+      "60 g paneer",
+      "2 tbsp chopped bell pepper",
+      "2 tbsp grated cheese",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mix paneer, bell pepper, cumin and salt.",
+      "Place filling on one bajra roti and top with cheese.",
+      "Cover with the second roti.",
+      "Toast gently until warm and slice into wedges."
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein_g": 14,
+      "iron_mg": 3.8,
+      "calcium_mg": 200,
+      "fiber_g": 6,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Use soft bajra rotis to prevent cracking."
+    },
+    "kidTip": {
+      "en": "Cut into quesadilla wedges for easy dipping."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-lentil-vegetable-adai",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Mini Lentil Vegetable Adai"
+    },
+    "desc": {
+      "en": "A savoury mixed-lentil pancake loaded with finely chopped vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup mixed soaked lentils",
+      "2 tbsp grated carrot",
+      "2 tbsp finely chopped spinach",
+      "2 tbsp bell pepper",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend soaked lentils into a coarse batter.",
+      "Mix in vegetables, cumin and salt.",
+      "Cook small thick pancakes on a hot pan.",
+      "Cook both sides until firm and golden."
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein_g": 12,
+      "iron_mg": 4.0,
+      "calcium_mg": 70,
+      "fiber_g": 7,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Make mini adai so the centre cooks evenly."
+    },
+    "kidTip": {
+      "en": "Serve with yogurt or a mild chutney."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "masoor-dal-stuffed-roti-roll",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Masoor Dal Stuffed Roti Roll"
+    },
+    "desc": {
+      "en": "A soft roti filled with seasoned red lentils and crunchy vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "wheat"
+    ],
+    "ingredients": [
+      "1 whole-wheat roti",
+      "1/2 cup cooked red lentils",
+      "2 tbsp grated carrot",
+      "2 tbsp finely chopped cucumber",
+      "Pinch of cumin",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mash cooked lentils lightly with cumin and salt.",
+      "Spread the lentil filling over the roti.",
+      "Add carrot and cucumber.",
+      "Roll tightly and slice."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein_g": 11,
+      "iron_mg": 3.8,
+      "calcium_mg": 60,
+      "fiber_g": 7,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Drain lentils well so the roll does not become wet."
+    },
+    "kidTip": {
+      "en": "Add a thin layer of yogurt for extra creaminess."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "moong-dal-pizza-chilla",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Moong Dal Pizza Chilla"
+    },
+    "desc": {
+      "en": "A protein-rich moong chilla topped with vegetables and a little cheese."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "ingredients": [
+      "1/2 cup soaked moong dal",
+      "2 tbsp chopped bell pepper",
+      "2 tbsp sweet corn",
+      "2 tbsp grated mozzarella",
+      "Pinch of oregano",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Blend moong dal into a smooth batter.",
+      "Cook a thick chilla on a pan.",
+      "Top with peppers, corn and cheese.",
+      "Cover briefly until the cheese melts."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein_g": 13,
+      "iron_mg": 3.2,
+      "calcium_mg": 160,
+      "fiber_g": 6,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Cook the base until firm before adding toppings."
+    },
+    "kidTip": {
+      "en": "A familiar pizza-style topping makes lentils more exciting."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
+  },
+  {
+    "id": "lentil-quinoa-mini-loaf-bites",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Lentil Quinoa Mini Loaf Bites"
+    },
+    "desc": {
+      "en": "Baked mini savoury loaves made with lentils, quinoa and vegetables."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 35,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "egg",
+      "wheat"
+    ],
+    "ingredients": [
+      "1 cup cooked lentils",
+      "1/2 cup cooked quinoa",
+      "1/4 cup grated carrot",
+      "2 tbsp finely chopped bell pepper",
+      "1 egg or 2 tbsp mashed potato",
+      "2 tbsp breadcrumbs",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Mash lentils lightly and mix all ingredients.",
+      "Press into mini loaf or muffin moulds.",
+      "Bake until firm and lightly golden.",
+      "Cool and cut into bite-sized pieces."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein_g": 12,
+      "iron_mg": 3.8,
+      "calcium_mg": 60,
+      "fiber_g": 7,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Bake in mini moulds for a lunchbox-friendly shape."
+    },
+    "kidTip": {
+      "en": "Serve as little savoury cake slices."
+    },
+    "ratings": {
+      "overall": 4.5,
+      "nutrition": 4.5,
+      "kidFriendly": 4.4,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.2,
+      "timeSaver": 4.2,
+      "count": 0
+    },
+    "hidden": false
   }
 ];

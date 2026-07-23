@@ -29,7 +29,6 @@ window.TINY_TIFFIN_LANGUAGES = [
 window.TINY_TIFFIN_STRINGS = {
   en: {
     tagline: "Healthy tiffins. Happy kids. Stress-free mornings.",
-    moodLabel: "Choose a tiffin mood:", surpriseRecipe: "Surprise Me with a Recipe", quickEasy: "Quick & Easy", proteinPower: "Protein Power", colourfulNutritious: "Colourful & Nutritious", vitamins: "Vitamins",
     navFind: "Find a tiffin", navPlanner: "Weekly planner", navFavorites: "Favorites",
     navMatch: "What can I cook?", navContact: "Contact", navDeveloper: "Developer", navDashboard: "Nutrition",
     heroTitle: "Open the box, pick a goal",
@@ -56,7 +55,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "Your favorite tiffins",
     favoritesEmpty: "Nothing saved yet. Tap the heart on any recipe to keep it here.",
     days: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-    nutritionGoals: {protein:"Protein",iron:"Iron",calcium:"Calcium",immunity:"Immunity",fiber:"Fiber",energy:"Energy",vitamins:"Vitamins"},
+    nutritionGoals: { protein: "Protein", iron: "Iron", calcium: "Calcium", immunity: "Immunity", fiber: "Fiber", energy: "Energy" },
     adminLink: "Admin",
     footerNote: "Tiny Tiffin — recipes are suggestions, not medical advice. Always check for allergies with your child's doctor.",
     matchIntro: "Type what's in your kitchen and we'll tell you what you can make right now — plus what's almost ready if you're missing a thing or two.",
@@ -97,7 +96,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   hi: {
     tagline: "स्वस्थ टिफिन। खुश बच्चे। तनाव-मुक्त सुबह।",
-    moodLabel: "टिफिन का मूड चुनें:", surpriseRecipe: "मेरे लिए एक रेसिपी चुनें", quickEasy: "जल्दी और आसान", proteinPower: "प्रोटीन पावर", colourfulNutritious: "रंगीन और पौष्टिक", vitamins: "विटामिन",
     navFind: "टिफिन खोजें", navPlanner: "साप्ताहिक योजना", navFavorites: "पसंदीदा",
     navMatch: "क्या बना सकते हैं?", navContact: "संपर्क करें", navDeveloper: "डेवलपर", navDashboard: "पोषण",
     heroTitle: "डिब्बा खोलें, लक्ष्य चुनें",
@@ -124,7 +122,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "आपके पसंदीदा टिफिन",
     favoritesEmpty: "अभी कुछ सहेजा नहीं गया। किसी भी व्यंजन पर दिल के निशान को टैप करें।",
     days: ["सोम", "मंगल", "बुध", "गुरु", "शुक्र", "शनि", "रवि"],
-    nutritionGoals: {protein:"प्रोटीन",iron:"आयरन",calcium:"कैल्शियम",immunity:"प्रतिरक्षा",fiber:"फाइबर",energy:"ऊर्जा",vitamins:"विटामिन"},
+    nutritionGoals: { protein: "प्रोटीन", iron: "आयरन", calcium: "कैल्शियम", immunity: "इम्युनिटी", fiber: "फाइबर", energy: "ऊर्जा" },
     adminLink: "एडमिन",
     footerNote: "टिनी टिफिन — व्यंजन सुझाव हैं, चिकित्सीय सलाह नहीं। एलर्जी के लिए हमेशा डॉक्टर से जांच करें।",
     matchIntro: "अपनी रसोई में जो कुछ भी है वह लिखें — हम बताएंगे कि आप अभी क्या बना सकते हैं।",
@@ -165,7 +163,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   gu: {
     tagline: "સ્વસ્થ ટિફિન. ખુશ બાળકો. તણાવ-મુક્ત સવાર.",
-    moodLabel: "ટિફિનનો મૂડ પસંદ કરો:", surpriseRecipe: "મારા માટે એક રેસિપી પસંદ કરો", quickEasy: "ઝડપી અને સરળ", proteinPower: "પ્રોટીન પાવર", colourfulNutritious: "રંગીન અને પૌષ્ટિક", vitamins: "વિટામિન્સ",
     navFind: "ટિફિન શોધો", navPlanner: "સાપ્તાહિક આયોજન", navFavorites: "મનપસંદ",
     navMatch: "શું બનાવી શકાય?", navContact: "સંપર્ક", navDeveloper: "ડેવલપર", navDashboard: "પોષણ",
     heroTitle: "ડબ્બો ખોલો, ધ્યેય પસંદ કરો",
@@ -192,7 +189,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "તમારા મનપસંદ ટિફિન",
     favoritesEmpty: "હજુ કંઈ સાચવ્યું નથી. કોઈપણ વાનગી પરના હૃદય પર ટેપ કરો.",
     days: ["સોમ", "મંગળ", "બુધ", "ગુરુ", "શુક્ર", "શનિ", "રવિ"],
-    nutritionGoals: {protein:"પ્રોટીન",iron:"આયર્ન",calcium:"કેલ્શિયમ",immunity:"રોગપ્રતિકારક શક્તિ",fiber:"ફાઇબર",energy:"ઊર્જા",vitamins:"વિટામિન્સ"},
+    nutritionGoals: { protein: "પ્રોટીન", iron: "આયર્ન", calcium: "કેલ્શિયમ", immunity: "રોગપ્રતિકારક શક્તિ", fiber: "ફાઇબર", energy: "ઊર્જા" },
     adminLink: "એડમિન",
     footerNote: "ટાયની ટિફિન — વાનગીઓ સૂચનો છે, તબીબી સલાહ નથી. એલર્જી માટે હંમેશા ડૉક્ટરની સલાહ લો.",
     matchIntro: "તમારા રસોડામાં જે કંઈ છે તે લખો — અમે જણાવીશું કે તમે અત્યારે શું બનાવી શકો છો.",
@@ -233,7 +230,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   mr: {
     tagline: "आरोग्यदायी टिफिन. आनंदी मुले. निवांत सकाळ.",
-    moodLabel: "टिफिनचा मूड निवडा:", surpriseRecipe: "माझ्यासाठी एक रेसिपी निवडा", quickEasy: "झटपट आणि सोपे", proteinPower: "प्रोटीन पॉवर", colourfulNutritious: "रंगीबेरंगी आणि पौष्टिक", vitamins: "जीवनसत्त्वे",
     navFind: "टिफिन शोधा", navPlanner: "साप्ताहिक नियोजन", navFavorites: "आवडते",
     navMatch: "काय बनवू शकतो?", navContact: "संपर्क", navDeveloper: "डेव्हलपर", navDashboard: "पोषण",
     heroTitle: "डबा उघडा, ध्येय निवडा",
@@ -260,7 +256,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "तुमचे आवडते टिफिन",
     favoritesEmpty: "अजून काही जतन केलेले नाही. कोणत्याही पाककृतीवरील हृदयावर टॅप करा.",
     days: ["सोम", "मंगळ", "बुध", "गुरु", "शुक्र", "शनि", "रवि"],
-    nutritionGoals: {protein:"प्रोटीन",iron:"लोह",calcium:"कॅल्शियम",immunity:"प्रतिकारशक्ती",fiber:"फायबर",energy:"ऊर्जा",vitamins:"जीवनसत्त्वे"},
+    nutritionGoals: { protein: "प्रथिने", iron: "लोह", calcium: "कॅल्शियम", immunity: "प्रतिकारशक्ती", fiber: "तंतू", energy: "ऊर्जा" },
     adminLink: "अ‍ॅडमिन",
     footerNote: "टायनी टिफिन — पाककृती सूचना आहेत, वैद्यकीय सल्ला नाही. अ‍ॅलर्जीसाठी नेहमी डॉक्टरांचा सल्ला घ्या.",
     matchIntro: "तुमच्या स्वयंपाकघरात काय आहे ते लिहा — आम्ही सांगू तुम्ही आत्ता काय बनवू शकता.",
@@ -301,7 +297,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   fr: {
     tagline: "Des tiffins sains. Des enfants heureux. Des matins sans stress.",
-    moodLabel: "Choisissez une ambiance pour le tiffin :", surpriseRecipe: "Surprenez-moi avec une recette", quickEasy: "Rapide et facile", proteinPower: "Puissance des protéines", colourfulNutritious: "Coloré et nutritif", vitamins: "Vitamines",
     navFind: "Trouver un tiffin", navPlanner: "Planning hebdo", navFavorites: "Favoris",
     navMatch: "Que puis-je cuisiner ?", navContact: "Contact", navDeveloper: "Développeur", navDashboard: "Nutrition",
     heroTitle: "Ouvrez la boîte, choisissez un objectif",
@@ -328,7 +323,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "Vos tiffins favoris",
     favoritesEmpty: "Rien d'enregistré pour l'instant. Appuyez sur le cœur d'une recette pour la garder ici.",
     days: ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
-    nutritionGoals: {protein:"Protéines",iron:"Fer",calcium:"Calcium",immunity:"Immunité",fiber:"Fibres",energy:"Énergie",vitamins:"Vitamines"},
+    nutritionGoals: { protein: "Protéines", iron: "Fer", calcium: "Calcium", immunity: "Immunité", fiber: "Fibres", energy: "Énergie" },
     adminLink: "Admin",
     footerNote: "Tiny Tiffin — les recettes sont des suggestions, pas un avis médical. Vérifiez toujours les allergies avec le médecin de votre enfant.",
     matchIntro: "Indiquez ce que vous avez dans votre cuisine et nous vous dirons ce que vous pouvez préparer maintenant.",
@@ -369,7 +364,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   es: {
     tagline: "Tiffins saludables. Niños felices. Mañanas sin estrés.",
-    moodLabel: "Elige el estilo de tu tiffin:", surpriseRecipe: "Sorpréndeme con una receta", quickEasy: "Rápido y fácil", proteinPower: "Potencia proteica", colourfulNutritious: "Colorido y nutritivo", vitamins: "Vitaminas",
     navFind: "Buscar un tiffin", navPlanner: "Planificador semanal", navFavorites: "Favoritos",
     navMatch: "¿Qué puedo cocinar?", navContact: "Contacto", navDeveloper: "Desarrollador", navDashboard: "Nutrición",
     heroTitle: "Abre la caja, elige un objetivo",
@@ -396,7 +390,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "Tus tiffins favoritos",
     favoritesEmpty: "Nada guardado todavía. Toca el corazón de cualquier receta para guardarla aquí.",
     days: ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
-    nutritionGoals: {protein:"Proteína",iron:"Hierro",calcium:"Calcio",immunity:"Inmunidad",fiber:"Fibra",energy:"Energía",vitamins:"Vitaminas"},
+    nutritionGoals: { protein: "Proteína", iron: "Hierro", calcium: "Calcio", immunity: "Inmunidad", fiber: "Fibra", energy: "Energía" },
     adminLink: "Admin",
     footerNote: "Tiny Tiffin — las recetas son sugerencias, no consejo médico. Consulte siempre las alergias con el médico de su hijo.",
     matchIntro: "Escribe lo que tienes en tu cocina y te diremos qué puedes preparar ahora mismo.",
@@ -437,7 +431,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   de: {
     tagline: "Gesunde Tiffins. Glückliche Kinder. Stressfreie Morgen.",
-    moodLabel: "Wähle eine Tiffin-Stimmung:", surpriseRecipe: "Überrasche mich mit einem Rezept", quickEasy: "Schnell und einfach", proteinPower: "Protein-Power", colourfulNutritious: "Bunt und nahrhaft", vitamins: "Vitamine",
     navFind: "Tiffin finden", navPlanner: "Wochenplaner", navFavorites: "Favoriten",
     navMatch: "Was kann ich kochen?", navContact: "Kontakt", navDeveloper: "Entwickler", navDashboard: "Ernährung",
     heroTitle: "Öffne die Box, wähle ein Ziel",
@@ -464,7 +457,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "Deine Lieblings-Tiffins",
     favoritesEmpty: "Noch nichts gespeichert. Tippe auf das Herz eines Rezepts, um es hier zu speichern.",
     days: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
-    nutritionGoals: {protein:"Protein",iron:"Eisen",calcium:"Kalzium",immunity:"Immunsystem",fiber:"Ballaststoffe",energy:"Energie",vitamins:"Vitamine"},
+    nutritionGoals: { protein: "Protein", iron: "Eisen", calcium: "Kalzium", immunity: "Immunität", fiber: "Ballaststoffe", energy: "Energie" },
     adminLink: "Admin",
     footerNote: "Tiny Tiffin — Rezepte sind Vorschläge, keine medizinische Beratung. Allergien immer mit dem Kinderarzt abklären.",
     matchIntro: "Gib ein, was du in deiner Küche hast — wir sagen dir, was du gerade kochen kannst.",
@@ -505,7 +498,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   yue: {
     tagline: "健康飯盒。開心小朋友。輕鬆早晨。",
-    moodLabel: "揀選你嘅飯盒風格：", surpriseRecipe: "用食譜驚喜我", quickEasy: "快捷簡單", proteinPower: "蛋白質力量", colourfulNutritious: "色彩繽紛又營養豐富", vitamins: "維他命",
     navFind: "搵飯盒", navPlanner: "每週計劃", navFavorites: "最愛",
     navMatch: "可以煮咩？", navContact: "聯絡我們", navDeveloper: "開發者", navDashboard: "營養",
     heroTitle: "打開飯盒，揀個目標",
@@ -532,7 +524,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "你嘅最愛飯盒",
     favoritesEmpty: "仲未儲存嘢。撳食譜嘅心心就可以儲存喺呢度。",
     days: ["一", "二", "三", "四", "五", "六", "日"],
-    nutritionGoals: {protein:"蛋白質",iron:"鐵質",calcium:"鈣質",immunity:"免疫力",fiber:"纖維",energy:"能量",vitamins:"維他命"},
+    nutritionGoals: { protein: "蛋白質", iron: "鐵質", calcium: "鈣質", immunity: "免疫力", fiber: "纖維", energy: "能量" },
     adminLink: "管理",
     footerNote: "Tiny Tiffin — 食譜只係建議，唔係醫療意見。過敏事宜請向醫生查詢。",
     matchIntro: "打出你廚房有咩，我哋就話你知而家可以煮咩。",
@@ -573,7 +565,6 @@ window.TINY_TIFFIN_STRINGS = {
   },
   ta: {
     tagline: "ஆரோக்கியமான டிபன். மகிழ்ச்சியான குழந்தைகள். அமைதியான காலைகள்.",
-    moodLabel: "டிஃபின் மனநிலையைத் தேர்வு செய்யுங்கள்:", surpriseRecipe: "ஒரு சமையல் குறிப்பால் என்னை ஆச்சரியப்படுத்துங்கள்", quickEasy: "விரைவானதும் எளிதானதும்", proteinPower: "புரத சக்தி", colourfulNutritious: "வண்ணமயமானதும் சத்தானதும்", vitamins: "வைட்டமின்கள்",
     navFind: "டிபன் தேடு", navPlanner: "வார திட்டம்", navFavorites: "பிடித்தவை",
     heroTitle: "பெட்டியைத் திற, இலக்கைத் தேர்வு செய்",
     heroSub: "ஒவ்வொரு பகுதியும் ஒரு ஊட்டச்சத்து இலக்கு. இன்றைய டிபனைத் தேர்ந்தெடுக்க ஒன்றைத் தட்டவும்.",
@@ -599,13 +590,12 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "உங்கள் பிடித்த டிபன்கள்",
     favoritesEmpty: "இன்னும் எதுவும் சேமிக்கப்படவில்லை. எந்த செய்முறையிலும் உள்ள இதயத்தைத் தட்டவும்.",
     days: ["திங்", "செவ்", "புத", "வியா", "வெள்", "சனி", "ஞாயி"],
-    nutritionGoals: {protein:"புரதம்",iron:"இரும்பு",calcium:"கால்சியம்",immunity:"நோய் எதிர்ப்பு சக்தி",fiber:"நார்ச்சத்து",energy:"ஆற்றல்",vitamins:"வைட்டமின்கள்"},
+    nutritionGoals: { protein: "புரதம்", iron: "இரும்பு", calcium: "கால்சியம்", immunity: "நோய் எதிர்ப்பு சக்தி", fiber: "நார்ச்சத்து", energy: "ஆற்றல்" },
     adminLink: "நிர்வாகி",
     footerNote: "டைனி டிபன் — செய்முறைகள் பரிந்துரைகள் மட்டுமே, மருத்துவ ஆலோசனை அல்ல. ஒவ்வாமைக்கு எப்போதும் மருத்துவரிடம் சரிபார்க்கவும்."
   },
   te: {
     tagline: "ఆరోగ్యకరమైన టిఫిన్. సంతోషకరమైన పిల్లలు. ఒత్తిడి లేని ఉదయాలు.",
-    moodLabel: "టిఫిన్ మూడ్‌ను ఎంచుకోండి:", surpriseRecipe: "ఒక వంటకంతో నన్ను ఆశ్చర్యపరచండి", quickEasy: "త్వరగా & సులభంగా", proteinPower: "ప్రోటీన్ పవర్", colourfulNutritious: "రంగురంగుల & పోషకమైన", vitamins: "విటమిన్లు",
     navFind: "టిఫిన్ వెతకండి", navPlanner: "వార ప్రణాళిక", navFavorites: "ఇష్టమైనవి",
     heroTitle: "బాక్స్ తెరవండి, లక్ష్యాన్ని ఎంచుకోండి",
     heroSub: "ప్రతి భాగం ఒక పోషకాహార లక్ష్యం. నేటి టిఫిన్ ఎంచుకోవడానికి ఒకదానిపై నొక్కండి.",
@@ -631,13 +621,12 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "మీ ఇష్టమైన టిఫిన్లు",
     favoritesEmpty: "ఇంకా ఏమీ సేవ్ చేయలేదు. ఏదైనా వంటకంపై గుండెను నొక్కండి.",
     days: ["సోమ", "మంగళ", "బుధ", "గురు", "శుక్ర", "శని", "ఆది"],
-    nutritionGoals: {protein:"ప్రోటీన్",iron:"ఇనుము",calcium:"కాల్షియం",immunity:"రోగనిరోధక శక్తి",fiber:"ఫైబర్",energy:"శక్తి",vitamins:"విటమిన్లు"},
+    nutritionGoals: { protein: "ప్రోటీన్", iron: "ఇనుము", calcium: "కాల్షియం", immunity: "రోగనిరోధక శక్తి", fiber: "ఫైబర్", energy: "శక్తి" },
     adminLink: "అడ్మిన్",
     footerNote: "టైనీ టిఫిన్ — వంటకాలు సూచనలు మాత్రమే, వైద్య సలహా కాదు. అలర్జీల కోసం ఎల్లప్పుడూ డాక్టర్‌ను సంప్రదించండి."
   },
   bn: {
     tagline: "স্বাস্থ্যকর টিফিন। খুশি শিশু। চাপমুক্ত সকাল।",
-    moodLabel: "টিফিনের মুড বেছে নিন:", surpriseRecipe: "একটি রেসিপি দিয়ে আমাকে চমকে দিন", quickEasy: "দ্রুত ও সহজ", proteinPower: "প্রোটিন পাওয়ার", colourfulNutritious: "রঙিন ও পুষ্টিকর", vitamins: "ভিটামিন",
     navFind: "টিফিন খুঁজুন", navPlanner: "সাপ্তাহিক পরিকল্পনা", navFavorites: "পছন্দের",
     heroTitle: "বাক্স খুলুন, লক্ষ্য বেছে নিন",
     heroSub: "প্রতিটি খোপ একটি পুষ্টি লক্ষ্য। আজকের টিফিন বাছাই করতে একটিতে ট্যাপ করুন।",
@@ -663,7 +652,7 @@ window.TINY_TIFFIN_STRINGS = {
     favoritesTitle: "আপনার পছন্দের টিফিন",
     favoritesEmpty: "এখনো কিছু সংরক্ষিত হয়নি। যেকোনো রেসিপির হৃদয় চিহ্নে ট্যাপ করুন।",
     days: ["সোম", "মঙ্গল", "বুধ", "বৃহ", "শুক্র", "শনি", "রবি"],
-    nutritionGoals: {protein:"প্রোটিন",iron:"আয়রন",calcium:"ক্যালসিয়াম",immunity:"রোগ প্রতিরোধ ক্ষমতা",fiber:"ফাইবার",energy:"শক্তি",vitamins:"ভিটামিন"},
+    nutritionGoals: { protein: "প্রোটিন", iron: "আয়রন", calcium: "ক্যালসিয়াম", immunity: "রোগ প্রতিরোধ ক্ষমতা", fiber: "ফাইবার", energy: "শক্তি" },
     adminLink: "অ্যাডমিন",
     footerNote: "টাইনি টিফিন — রেসিপিগুলি পরামর্শ মাত্র, চিকিৎসা পরামর্শ নয়। অ্যালার্জির জন্য সর্বদা ডাক্তারের সাথে পরীক্ষা করুন।"
   }

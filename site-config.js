@@ -20,7 +20,7 @@ window.TINY_TIFFIN_CONFIG = {
       "Filters for age, time, cuisine and allergens",
       "Multi-language support: Indian and international languages",
       "Recipe images and nutrition information",
-      "Healthy recipe library with 165+ Indian and continental tiffin ideas",
+      "Healthy recipe library with 205+ Indian and continental tiffin ideas",
       "PWA installation and offline support",
       "Dark mode with accessibility-focused readability",
       "Version tracking and release notes"
