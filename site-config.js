@@ -4,7 +4,7 @@ window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
   version: "v1.0",
   releaseDate: "July 2026",
-  releaseNotes: "Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
+  releaseNotes: "Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
@@ -20,7 +20,7 @@ window.TINY_TIFFIN_CONFIG = {
       "Filters for age, time, cuisine and allergens",
       "Multi-language support: Indian and international languages",
       "Recipe images and nutrition information",
-      "Healthy recipe library with 205+ Indian and continental tiffin ideas",
+      "Healthy recipe library with 245+ Indian and continental tiffin ideas, including 52 complementary-food recipes for ages 6–12 months",
       "PWA installation and offline support",
       "Dark mode with accessibility-focused readability",
       "Version tracking and release notes"
