@@ -16574,5 +16574,3799 @@ window.TINY_TIFFIN_RECIPES = [
       "en": "A savoury plant-protein option."
     },
     "vitamins": []
+  },
+  {
+    "id": "peach-pear-silk-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Peach Pear Silk Purée"
+    },
+    "desc": {
+      "en": "A smooth, naturally sweet fruit purée made from ripe peach and pear."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 ripe peach, peeled and steamed",
+      "1 ripe pear, peeled and steamed"
+    ],
+    "instructions": [
+      "Steam fruit until soft.",
+      "Blend or mash together to the texture your baby is ready for."
+    ],
+    "nutrition": {
+      "calories": 55,
+      "protein_g": 0.5,
+      "iron_mg": 0.3,
+      "calcium_mg": 10,
+      "fiber_g": 2,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Serve fresh and cool to a safe temperature."
+    },
+    "kidTip": {
+      "en": "Offer a smooth purée or thicker mash according to readiness."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "papaya-avocado-cream-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Papaya Avocado Cream"
+    },
+    "desc": {
+      "en": "A creamy fruit combination with naturally soft texture and healthy fats."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 5,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup ripe papaya",
+      "1/4 ripe avocado"
+    ],
+    "instructions": [
+      "Mash papaya and avocado until smooth.",
+      "Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 90,
+      "protein_g": 1.0,
+      "iron_mg": 0.3,
+      "calcium_mg": 10,
+      "fiber_g": 3,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Best served immediately because avocado changes colour."
+    },
+    "kidTip": {
+      "en": "A naturally creamy combination with no added sugar."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mango-oat-smooth-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Mango Oat Smooth Purée"
+    },
+    "desc": {
+      "en": "Soft mango blended with finely cooked oats for a gentle breakfast."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 12,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup ripe mango",
+      "1 tbsp quick oats",
+      "1/3 cup water"
+    ],
+    "instructions": [
+      "Cook oats with water until very soft.",
+      "Cool slightly and blend with mango."
+    ],
+    "nutrition": {
+      "calories": 85,
+      "protein_g": 2.0,
+      "iron_mg": 0.5,
+      "calcium_mg": 15,
+      "fiber_g": 2,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Use ripe mango for natural sweetness."
+    },
+    "kidTip": {
+      "en": "Keep the texture smooth for early complementary feeding."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "apple-prune-warm-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Apple Prune Warm Purée"
+    },
+    "desc": {
+      "en": "A soft fruit purée combining apple with a small amount of prune."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 small apple, peeled and chopped",
+      "1 pitted prune",
+      "Water as needed"
+    ],
+    "instructions": [
+      "Steam apple and prune until very soft.",
+      "Blend with a little cooking water."
+    ],
+    "nutrition": {
+      "calories": 70,
+      "protein_g": 0.5,
+      "iron_mg": 0.4,
+      "calcium_mg": 10,
+      "fiber_g": 3,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Introduce prune in a small portion."
+    },
+    "kidTip": {
+      "en": "A smooth fruit option with a naturally soft texture."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "pear-blueberry-warm-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Pear Blueberry Warm Mash"
+    },
+    "desc": {
+      "en": "Soft pear with gently cooked blueberries for a colourful fruit mash."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 ripe pear, peeled",
+      "2 tbsp blueberries"
+    ],
+    "instructions": [
+      "Steam pear and blueberries until soft.",
+      "Mash thoroughly or blend as needed."
+    ],
+    "nutrition": {
+      "calories": 60,
+      "protein_g": 0.5,
+      "iron_mg": 0.3,
+      "calcium_mg": 10,
+      "fiber_g": 2,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Use soft ripe fruit and check texture carefully."
+    },
+    "kidTip": {
+      "en": "Serve as a smooth mash or thicker texture as appropriate."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "melon-banana-soft-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Melon Banana Soft Mash"
+    },
+    "desc": {
+      "en": "A simple two-fruit mash using ripe, naturally soft fruit."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 5,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/4 cup ripe melon",
+      "1/2 small ripe banana"
+    ],
+    "instructions": [
+      "Mash together until smooth."
+    ],
+    "nutrition": {
+      "calories": 65,
+      "protein_g": 1.0,
+      "iron_mg": 0.2,
+      "calcium_mg": 8,
+      "fiber_g": 2,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Use ripe, seedless melon and serve fresh."
+    },
+    "kidTip": {
+      "en": "No cooking or added sweetener is needed."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "peach-ragi-breakfast-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Peach Ragi Breakfast Purée"
+    },
+    "desc": {
+      "en": "Iron-containing ragi paired with soft peach for a naturally sweet breakfast."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 tbsp ragi flour",
+      "1/2 cup water",
+      "1/4 cup steamed peach"
+    ],
+    "instructions": [
+      "Cook ragi with water until smooth and fully cooked.",
+      "Cool and stir in mashed peach."
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein_g": 2.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Cook ragi thoroughly and adjust thickness with water."
+    },
+    "kidTip": {
+      "en": "A smooth breakfast option with natural fruit sweetness."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mango-quinoa-fruit-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Mango Quinoa Fruit Mash"
+    },
+    "desc": {
+      "en": "Soft cooked quinoa blended with ripe mango."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 18,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp cooked quinoa",
+      "1/3 cup ripe mango"
+    ],
+    "instructions": [
+      "Cook quinoa until very soft.",
+      "Blend or mash with mango."
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein_g": 3.0,
+      "iron_mg": 0.8,
+      "calcium_mg": 15,
+      "fiber_g": 2,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Rinse quinoa well before cooking."
+    },
+    "kidTip": {
+      "en": "Use a smooth texture for younger babies."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "parsnip-red-lentil-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Parsnip Red Lentil Purée"
+    },
+    "desc": {
+      "en": "Mild parsnip and red lentils cooked into a silky savoury purée."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup parsnip, peeled",
+      "1 tbsp red lentils",
+      "3/4 cup water"
+    ],
+    "instructions": [
+      "Cook lentils and parsnip until very soft.",
+      "Blend with cooking liquid to desired texture."
+    ],
+    "nutrition": {
+      "calories": 105,
+      "protein_g": 4.0,
+      "iron_mg": 1.4,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Do not add salt."
+    },
+    "kidTip": {
+      "en": "A smooth savoury combination for a developing palate."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "green-pea-potato-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Green Pea Potato Soft Mash"
+    },
+    "desc": {
+      "en": "Sweet peas and potato cooked until soft and mashed together."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/4 cup peas",
+      "1/2 small potato, peeled",
+      "Water"
+    ],
+    "instructions": [
+      "Steam or boil until very soft.",
+      "Mash together thoroughly."
+    ],
+    "nutrition": {
+      "calories": 85,
+      "protein_g": 3.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Use soft peas and mash thoroughly."
+    },
+    "kidTip": {
+      "en": "A familiar savoury texture with gentle sweetness."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cabbage-moong-rice-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Cabbage Moong Rice Mash"
+    },
+    "desc": {
+      "en": "Soft rice and yellow moong with finely cooked cabbage."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 tbsp rice",
+      "1 tbsp yellow moong dal",
+      "2 tbsp finely chopped cabbage",
+      "1 cup water"
+    ],
+    "instructions": [
+      "Cook all ingredients until very soft.",
+      "Mash or blend to the desired texture."
+    ],
+    "nutrition": {
+      "calories": 115,
+      "protein_g": 4.0,
+      "iron_mg": 1.1,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Cook until the cabbage is completely soft."
+    },
+    "kidTip": {
+      "en": "A gentle one-pot meal with a mild flavour."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "asparagus-potato-moong-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Asparagus Potato Moong Purée"
+    },
+    "desc": {
+      "en": "A mild vegetable and lentil purée with soft asparagus."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 asparagus spears, trimmed",
+      "1/2 small potato",
+      "1 tbsp yellow moong dal",
+      "1 cup water"
+    ],
+    "instructions": [
+      "Cook until everything is very soft.",
+      "Blend until smooth or mash thoroughly."
+    ],
+    "nutrition": {
+      "calories": 100,
+      "protein_g": 4.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Use tender asparagus and remove fibrous ends."
+    },
+    "kidTip": {
+      "en": "A new vegetable flavour introduced in a soft texture."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "green-bean-sweet-potato-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Green Bean Sweet Potato Mash"
+    },
+    "desc": {
+      "en": "Naturally sweet sweet potato paired with tender green beans."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup sweet potato",
+      "1/4 cup green beans"
+    ],
+    "instructions": [
+      "Steam until very soft.",
+      "Blend or mash thoroughly."
+    ],
+    "nutrition": {
+      "calories": 90,
+      "protein_g": 2.0,
+      "iron_mg": 0.7,
+      "calcium_mg": 25,
+      "fiber_g": 4,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Remove any stringy bean fibres."
+    },
+    "kidTip": {
+      "en": "The sweet potato helps make the vegetable combination familiar."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "kale-pearl-millet-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Kale Pearl Millet Soft Mash"
+    },
+    "desc": {
+      "en": "Soft cooked pearl millet with finely cooked kale."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp cooked pearl millet",
+      "1 tbsp finely chopped kale",
+      "Water as needed"
+    ],
+    "instructions": [
+      "Cook millet until very soft.",
+      "Steam kale until tender and blend or mash together."
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein_g": 3.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Use tender kale leaves and remove tough stems."
+    },
+    "kidTip": {
+      "en": "Start with a smooth texture if needed."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "turnip-carrot-red-lentil-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Turnip Carrot Red Lentil Mash"
+    },
+    "desc": {
+      "en": "Mild root vegetables with red lentils in a soft savoury mash."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "fiber",
+      "protein"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp turnip, peeled",
+      "1/4 cup carrot",
+      "1 tbsp red lentils",
+      "3/4 cup water"
+    ],
+    "instructions": [
+      "Cook until completely soft.",
+      "Blend or mash to the required consistency."
+    ],
+    "nutrition": {
+      "calories": 100,
+      "protein_g": 4.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Use a small amount of turnip for a mild flavour."
+    },
+    "kidTip": {
+      "en": "A colourful, soft savoury meal."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cauliflower-quinoa-moong-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Cauliflower Quinoa Moong Mash"
+    },
+    "desc": {
+      "en": "A soft protein-rich mash with cauliflower and quinoa."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp cooked quinoa",
+      "1 tbsp yellow moong dal",
+      "1/4 cup cauliflower",
+      "1 cup water"
+    ],
+    "instructions": [
+      "Cook quinoa, dal and cauliflower until very soft.",
+      "Mash or blend."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 5.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 30,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Rinse quinoa before cooking."
+    },
+    "kidTip": {
+      "en": "A smooth savoury combination with a gentle flavour."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "pumpkin-tofu-soft-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Pumpkin Tofu Soft Purée"
+    },
+    "desc": {
+      "en": "Silken tofu blended with soft pumpkin for a creamy savoury purée."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [
+      "soy"
+    ],
+    "ingredients": [
+      "1/3 cup pumpkin",
+      "2 tbsp silken tofu"
+    ],
+    "instructions": [
+      "Steam pumpkin until soft.",
+      "Blend with tofu until smooth."
+    ],
+    "nutrition": {
+      "calories": 85,
+      "protein_g": 4.0,
+      "iron_mg": 0.8,
+      "calcium_mg": 35,
+      "fiber_g": 2,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Use plain, unsalted tofu."
+    },
+    "kidTip": {
+      "en": "A creamy plant-protein option."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "zucchini-yellow-lentil-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Zucchini Yellow Lentil Mash"
+    },
+    "desc": {
+      "en": "Soft zucchini and yellow lentils cooked into a mild mash."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup zucchini",
+      "1 tbsp yellow moong dal",
+      "3/4 cup water"
+    ],
+    "instructions": [
+      "Cook until soft.",
+      "Mash or blend thoroughly."
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein_g": 4.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Peel zucchini if the skin is tough."
+    },
+    "kidTip": {
+      "en": "A mild green vegetable introduction."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "barley-apple-soft-porridge-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Pearl Barley Apple Soft Porridge"
+    },
+    "desc": {
+      "en": "Very soft pearl barley cooked with apple for a hearty breakfast."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 35,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp pearl barley, well cooked",
+      "1/4 cup peeled apple",
+      "Water"
+    ],
+    "instructions": [
+      "Cook barley until very soft.",
+      "Cook apple separately until tender and mash together."
+    ],
+    "nutrition": {
+      "calories": 115,
+      "protein_g": 2.0,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Use very soft, well-cooked barley and adjust texture."
+    },
+    "kidTip": {
+      "en": "A thicker porridge for babies ready for more texture."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "buckwheat-banana-porridge-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Buckwheat Banana Porridge"
+    },
+    "desc": {
+      "en": "Soft buckwheat cooked with ripe banana."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp buckwheat flour",
+      "1/2 cup water",
+      "1/2 small ripe banana"
+    ],
+    "instructions": [
+      "Cook buckwheat with water until smooth.",
+      "Stir in mashed banana after cooling slightly."
+    ],
+    "nutrition": {
+      "calories": 100,
+      "protein_g": 3.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Use plain buckwheat with no added sugar."
+    },
+    "kidTip": {
+      "en": "Naturally sweet from banana."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "amaranth-pear-breakfast-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Amaranth Pear Breakfast Mash"
+    },
+    "desc": {
+      "en": "Soft cooked amaranth with ripe pear."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp amaranth",
+      "1/2 cup water",
+      "1/4 cup ripe pear"
+    ],
+    "instructions": [
+      "Cook amaranth until very soft.",
+      "Mash in ripe pear."
+    ],
+    "nutrition": {
+      "calories": 105,
+      "protein_g": 3.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 30,
+      "fiber_g": 2,
+      "vitaminC_mg": 4
+    },
+    "packingTip": {
+      "en": "Cook amaranth thoroughly."
+    },
+    "kidTip": {
+      "en": "A gentle grain alternative for variety."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "teff-pumpkin-soft-porridge-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Teff Pumpkin Soft Porridge"
+    },
+    "desc": {
+      "en": "Iron-rich teff cooked with soft pumpkin."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 tbsp teff flour",
+      "1/3 cup pumpkin purée",
+      "1/2 cup water"
+    ],
+    "instructions": [
+      "Cook teff with water until smooth.",
+      "Stir in pumpkin purée."
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein_g": 3.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 25,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Use plain teff flour and cook fully."
+    },
+    "kidTip": {
+      "en": "A smooth, warm porridge option."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "polenta-broccoli-paneer-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Polenta Broccoli Paneer Mash"
+    },
+    "desc": {
+      "en": "Soft cornmeal with tender broccoli and finely crumbled paneer."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "2 tbsp polenta",
+      "2 tbsp broccoli",
+      "1 tbsp paneer",
+      "3/4 cup water"
+    ],
+    "instructions": [
+      "Cook polenta until very soft.",
+      "Steam broccoli, then blend or finely mash with paneer and polenta."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 5.0,
+      "iron_mg": 0.6,
+      "calcium_mg": 80,
+      "fiber_g": 2,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Use plain paneer and a smooth texture as needed."
+    },
+    "kidTip": {
+      "en": "A creamy savoury meal with calcium."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "red-lentil-avocado-cream-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Red Lentil Avocado Cream"
+    },
+    "desc": {
+      "en": "Soft red lentils blended with avocado."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 tbsp red lentils",
+      "1/4 ripe avocado",
+      "3/4 cup water"
+    ],
+    "instructions": [
+      "Cook lentils until very soft.",
+      "Cool slightly and blend with avocado."
+    ],
+    "nutrition": {
+      "calories": 105,
+      "protein_g": 4.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Serve immediately."
+    },
+    "kidTip": {
+      "en": "Creamy texture with plant protein."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "white-bean-sweet-potato-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "White Bean Sweet Potato Purée"
+    },
+    "desc": {
+      "en": "Soft white beans and sweet potato blended into a smooth meal."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp cooked unsalted white beans",
+      "1/3 cup sweet potato"
+    ],
+    "instructions": [
+      "Steam sweet potato until soft.",
+      "Blend with thoroughly cooked beans."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 5.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 35,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Use beans cooked without salt and remove skins if needed."
+    },
+    "kidTip": {
+      "en": "A filling smooth purée."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "black-eyed-pea-pumpkin-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Black-Eyed Pea Pumpkin Mash"
+    },
+    "desc": {
+      "en": "Soft black-eyed peas with sweet pumpkin."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp cooked black-eyed peas",
+      "1/3 cup pumpkin"
+    ],
+    "instructions": [
+      "Cook peas until very soft.",
+      "Blend or mash with pumpkin."
+    ],
+    "nutrition": {
+      "calories": 115,
+      "protein_g": 5.0,
+      "iron_mg": 1.4,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Ensure peas are completely soft and skins are well broken down."
+    },
+    "kidTip": {
+      "en": "A protein-rich savoury mash."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-cauliflower-quinoa-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Egg Cauliflower Quinoa Soft Mash"
+    },
+    "desc": {
+      "en": "Fully cooked egg with soft cauliflower and quinoa."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 fully cooked egg",
+      "2 tbsp cooked quinoa",
+      "1/4 cup cauliflower"
+    ],
+    "instructions": [
+      "Steam cauliflower until soft.",
+      "Finely mash all ingredients together."
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein_g": 8.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 45,
+      "fiber_g": 2,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Introduce egg according to your family and healthcare guidance."
+    },
+    "kidTip": {
+      "en": "Ensure the egg is fully cooked and texture is appropriate."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "egg-avocado-sweet-potato-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Egg Avocado Sweet Potato Mash"
+    },
+    "desc": {
+      "en": "Fully cooked egg with creamy avocado and sweet potato."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 fully cooked egg",
+      "1/4 avocado",
+      "1/4 cup sweet potato"
+    ],
+    "instructions": [
+      "Steam sweet potato.",
+      "Mash with avocado and finely crumble the fully cooked egg."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 8.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 40,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Introduce egg carefully and use fully cooked egg."
+    },
+    "kidTip": {
+      "en": "A soft, creamy meal with protein and healthy fats."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "soft-tofu-peach-puree-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Soft Tofu Peach Purée"
+    },
+    "desc": {
+      "en": "Silken tofu with ripe peach for a creamy fruit-protein combination."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack",
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [
+      "soy"
+    ],
+    "ingredients": [
+      "2 tbsp silken tofu",
+      "1/4 cup steamed peach"
+    ],
+    "instructions": [
+      "Blend until smooth."
+    ],
+    "nutrition": {
+      "calories": 65,
+      "protein_g": 3.0,
+      "iron_mg": 0.4,
+      "calcium_mg": 30,
+      "fiber_g": 1,
+      "vitaminC_mg": 5
+    },
+    "packingTip": {
+      "en": "Use plain, unsalted tofu."
+    },
+    "kidTip": {
+      "en": "A smooth combination with mild flavour."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "chickpea-carrot-apple-mash-6-12m",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Chickpea Carrot Apple Smooth Mash"
+    },
+    "desc": {
+      "en": "Soft chickpeas with carrot and apple for a savoury-sweet mash."
+    },
+    "ageGroups": [
+      "6-12m"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 tbsp cooked chickpeas",
+      "1/4 cup carrot",
+      "2 tbsp peeled apple"
+    ],
+    "instructions": [
+      "Cook carrot and apple until soft.",
+      "Blend with thoroughly cooked chickpeas."
+    ],
+    "nutrition": {
+      "calories": 115,
+      "protein_g": 5.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Use very soft chickpeas and remove skins if necessary."
+    },
+    "kidTip": {
+      "en": "A gentle sweet-savoury combination."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-soft-fruit-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Rainbow Soft Fruit Bowl"
+    },
+    "desc": {
+      "en": "A colourful bowl of soft ripe fruits cut into age-appropriate pieces."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 5,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/4 cup ripe banana",
+      "1/4 cup soft pear",
+      "1/4 cup ripe mango",
+      "2 tbsp soft berries, quartered if appropriate"
+    ],
+    "instructions": [
+      "Wash and prepare all fruit.",
+      "Cut or mash into developmentally appropriate soft pieces."
+    ],
+    "nutrition": {
+      "calories": 95,
+      "protein_g": 1.0,
+      "iron_mg": 0.4,
+      "calcium_mg": 15,
+      "fiber_g": 3,
+      "vitaminC_mg": 30
+    },
+    "packingTip": {
+      "en": "Use only soft fruit and prepare pieces appropriately."
+    },
+    "kidTip": {
+      "en": "A colourful way to offer fruit variety."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "papaya-yogurt-oat-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Papaya Yogurt Oat Bowl"
+    },
+    "desc": {
+      "en": "Ripe papaya with plain yogurt and soft oats."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/3 cup papaya",
+      "1/4 cup plain yogurt",
+      "1 tbsp cooked oats"
+    ],
+    "instructions": [
+      "Mix all ingredients.",
+      "Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein_g": 4.0,
+      "iron_mg": 0.4,
+      "calcium_mg": 90,
+      "fiber_g": 2,
+      "vitaminC_mg": 35
+    },
+    "packingTip": {
+      "en": "Use plain unsweetened yogurt."
+    },
+    "kidTip": {
+      "en": "Creamy and naturally sweet."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "apple-pear-cinnamon-warm-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Apple Pear Cinnamon Warm Bowl"
+    },
+    "desc": {
+      "en": "Soft cooked apple and pear with a light cinnamon aroma."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup apple",
+      "1/3 cup pear",
+      "A small pinch of cinnamon"
+    ],
+    "instructions": [
+      "Cook fruit with a splash of water until soft.",
+      "Add a very small pinch of cinnamon and cool before serving."
+    ],
+    "nutrition": {
+      "calories": 80,
+      "protein_g": 0.5,
+      "iron_mg": 0.3,
+      "calcium_mg": 12,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Keep cinnamon minimal and avoid added sugar."
+    },
+    "kidTip": {
+      "en": "Serve warm, not hot."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mango-avocado-breakfast-cup-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Mango Avocado Breakfast Cup"
+    },
+    "desc": {
+      "en": "Soft mango and avocado with a creamy texture."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 5,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup mango",
+      "1/3 avocado"
+    ],
+    "instructions": [
+      "Mash together or serve as soft pieces."
+    ],
+    "nutrition": {
+      "calories": 105,
+      "protein_g": 1.5,
+      "iron_mg": 0.5,
+      "calcium_mg": 15,
+      "fiber_g": 4,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Serve fresh."
+    },
+    "kidTip": {
+      "en": "A naturally creamy fruit breakfast."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "kiwi-banana-yogurt-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Kiwi Banana Yogurt Bowl"
+    },
+    "desc": {
+      "en": "Soft kiwi and banana combined with plain yogurt."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 5,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "vitamins",
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 ripe kiwi, finely chopped",
+      "1/2 banana",
+      "1/4 cup plain yogurt"
+    ],
+    "instructions": [
+      "Mix together and serve."
+    ],
+    "nutrition": {
+      "calories": 100,
+      "protein_g": 4.0,
+      "iron_mg": 0.5,
+      "calcium_mg": 90,
+      "fiber_g": 2,
+      "vitaminC_mg": 45
+    },
+    "packingTip": {
+      "en": "Use ripe, soft kiwi."
+    },
+    "kidTip": {
+      "en": "A tangy-sweet combination."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "peach-quinoa-fruit-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Peach Quinoa Fruit Bowl"
+    },
+    "desc": {
+      "en": "Soft peach with cooked quinoa and yogurt-free fruit sweetness."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup soft peach",
+      "2 tbsp cooked quinoa",
+      "1 tbsp mashed banana"
+    ],
+    "instructions": [
+      "Mix all ingredients."
+    ],
+    "nutrition": {
+      "calories": 105,
+      "protein_g": 3.0,
+      "iron_mg": 0.8,
+      "calcium_mg": 15,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Cook quinoa until soft."
+    },
+    "kidTip": {
+      "en": "A grain-and-fruit bowl with gentle texture."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "melon-papaya-banana-fruit-salad-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Melon Papaya Banana Soft Fruit Salad"
+    },
+    "desc": {
+      "en": "A soft tropical fruit salad prepared for toddlers."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 5,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/4 cup melon",
+      "1/4 cup papaya",
+      "1/2 banana"
+    ],
+    "instructions": [
+      "Cut fruit into soft, age-appropriate pieces and mix."
+    ],
+    "nutrition": {
+      "calories": 80,
+      "protein_g": 1.0,
+      "iron_mg": 0.4,
+      "calcium_mg": 15,
+      "fiber_g": 3,
+      "vitaminC_mg": 35
+    },
+    "packingTip": {
+      "en": "Avoid hard pieces and prepare fruit according to chewing ability."
+    },
+    "kidTip": {
+      "en": "A naturally sweet snack with no added sugar."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "berry-oat-yogurt-cup-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Berry Oat Yogurt Cup"
+    },
+    "desc": {
+      "en": "Soft berries with plain yogurt and cooked oats."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/4 cup plain yogurt",
+      "2 tbsp soft berries",
+      "1 tbsp cooked oats"
+    ],
+    "instructions": [
+      "Mash berries if needed and mix all ingredients."
+    ],
+    "nutrition": {
+      "calories": 105,
+      "protein_g": 4.0,
+      "iron_mg": 0.5,
+      "calcium_mg": 90,
+      "fiber_g": 2,
+      "vitaminC_mg": 25
+    },
+    "packingTip": {
+      "en": "Use soft ripe berries and prepare them safely."
+    },
+    "kidTip": {
+      "en": "A colourful snack cup."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "pineapple-mango-coconut-rice-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Pineapple Mango Coconut Rice Bowl"
+    },
+    "desc": {
+      "en": "Soft rice with finely chopped ripe tropical fruit."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup cooked soft rice",
+      "2 tbsp ripe mango",
+      "2 tbsp very soft pineapple, finely chopped"
+    ],
+    "instructions": [
+      "Mix fruit with soft rice."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 2.0,
+      "iron_mg": 0.5,
+      "calcium_mg": 15,
+      "fiber_g": 2,
+      "vitaminC_mg": 30
+    },
+    "packingTip": {
+      "en": "Use very soft pineapple in small pieces."
+    },
+    "kidTip": {
+      "en": "A fun sweet rice bowl without added sugar."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "plum-apple-oat-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Stewed Plum Apple Oat Bowl"
+    },
+    "desc": {
+      "en": "Soft stewed fruit with oats."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup apple",
+      "1/4 cup ripe plum",
+      "2 tbsp cooked oats"
+    ],
+    "instructions": [
+      "Stew fruit until soft.",
+      "Mix with oats and cool before serving."
+    ],
+    "nutrition": {
+      "calories": 110,
+      "protein_g": 2.0,
+      "iron_mg": 0.5,
+      "calcium_mg": 20,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Remove pits and skins as needed."
+    },
+    "kidTip": {
+      "en": "A warm, soft breakfast."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "vegetable-millet-handvo-bites-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Vegetable Millet Handvo Bites"
+    },
+    "desc": {
+      "en": "Soft baked millet bites with vegetables."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 35,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/3 cup millet flour",
+      "2 tbsp grated carrot",
+      "2 tbsp grated zucchini",
+      "1 tbsp yogurt",
+      "Water as needed"
+    ],
+    "instructions": [
+      "Mix into a thick batter.",
+      "Bake small soft bites until cooked through.",
+      "Cool and cut into soft pieces."
+    ],
+    "nutrition": {
+      "calories": 125,
+      "protein_g": 4.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 45,
+      "fiber_g": 3,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Keep bites soft and avoid hard crusts."
+    },
+    "kidTip": {
+      "en": "Great for self-feeding when developmentally ready."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "paneer-spinach-mini-cheela-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Paneer Spinach Mini Cheela"
+    },
+    "desc": {
+      "en": "Soft mini pancakes with paneer and finely chopped spinach."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "iron"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/3 cup besan",
+      "2 tbsp crumbled paneer",
+      "1 tbsp finely chopped spinach",
+      "Water"
+    ],
+    "instructions": [
+      "Make a soft batter.",
+      "Cook small cheelas on low heat until fully cooked.",
+      "Cut into soft strips."
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein_g": 7.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 90,
+      "fiber_g": 3,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Avoid a crisp, hard finish."
+    },
+    "kidTip": {
+      "en": "Soft strips are easy for little hands to hold."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "beetroot-oats-mini-uttapam-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Beetroot Oats Mini Uttapam"
+    },
+    "desc": {
+      "en": "Soft mini uttapam with beetroot and oats."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "iron"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/3 cup oat flour",
+      "2 tbsp grated beetroot",
+      "1 tbsp plain yogurt",
+      "Water"
+    ],
+    "instructions": [
+      "Mix batter.",
+      "Cook small soft uttapams on low heat.",
+      "Cool and cut into pieces."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 4.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 40,
+      "fiber_g": 3,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Cook until soft, not crisp."
+    },
+    "kidTip": {
+      "en": "Bright colour can make vegetables more inviting."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-chickpea-mini-tikki-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Chickpea Mini Tikki"
+    },
+    "desc": {
+      "en": "Soft mini patties made with sweet potato and chickpeas."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup mashed sweet potato",
+      "1/4 cup mashed chickpeas",
+      "1 tbsp oat flour"
+    ],
+    "instructions": [
+      "Mix and shape soft mini patties.",
+      "Pan-cook gently until set."
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein_g": 5.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 35,
+      "fiber_g": 5,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Keep patties soft and breakable."
+    },
+    "kidTip": {
+      "en": "A naturally sweet savoury finger food."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "carrot-quinoa-mini-dosa-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Carrot Quinoa Mini Dosa"
+    },
+    "desc": {
+      "en": "Soft mini dosa with quinoa and carrot."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup cooked quinoa",
+      "1/4 cup rice batter",
+      "2 tbsp finely grated carrot"
+    ],
+    "instructions": [
+      "Blend quinoa into batter.",
+      "Add carrot and cook small soft dosas."
+    ],
+    "nutrition": {
+      "calories": 130,
+      "protein_g": 4.0,
+      "iron_mg": 0.8,
+      "calcium_mg": 20,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Keep dosa soft rather than crisp."
+    },
+    "kidTip": {
+      "en": "Cut into manageable strips."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "methi-paneer-soft-paratha-strips-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Methi Paneer Soft Paratha Strips"
+    },
+    "desc": {
+      "en": "Soft whole-wheat paratha with paneer and finely chopped methi."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup whole-wheat flour",
+      "2 tbsp paneer",
+      "1 tbsp finely chopped methi",
+      "Water"
+    ],
+    "instructions": [
+      "Make a soft dough.",
+      "Roll thin and cook gently until soft.",
+      "Cut into strips."
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein_g": 7.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 90,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Avoid hard, chewy edges."
+    },
+    "kidTip": {
+      "en": "Soft strips are easy to hold."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lauki-moong-mini-pancakes-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Lauki Moong Mini Pancakes"
+    },
+    "desc": {
+      "en": "Soft savoury pancakes made with bottle gourd and moong."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/3 cup soaked yellow moong dal",
+      "1/4 cup grated lauki",
+      "Water"
+    ],
+    "instructions": [
+      "Blend moong with water into a batter.",
+      "Stir in lauki and cook small soft pancakes."
+    ],
+    "nutrition": {
+      "calories": 120,
+      "protein_g": 6.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 25,
+      "fiber_g": 3,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Squeeze excess water from lauki."
+    },
+    "kidTip": {
+      "en": "A soft way to introduce bottle gourd."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mixed-vegetable-egg-appe-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Mixed Vegetable Egg Appe"
+    },
+    "desc": {
+      "en": "Soft mini egg bites with finely chopped vegetables."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy",
+      "iron"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 egg",
+      "2 tbsp finely chopped carrot",
+      "2 tbsp finely chopped zucchini",
+      "1 tbsp peas"
+    ],
+    "instructions": [
+      "Whisk egg and mix vegetables.",
+      "Cook in a lightly greased appe pan until fully set."
+    ],
+    "nutrition": {
+      "calories": 135,
+      "protein_g": 8.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 45,
+      "fiber_g": 2,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Cook egg fully."
+    },
+    "kidTip": {
+      "en": "Small soft bites can be cut or served whole according to readiness."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "amaranth-banana-mini-pancakes-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Amaranth Banana Mini Pancakes"
+    },
+    "desc": {
+      "en": "Soft mini pancakes made with amaranth flour and banana."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "iron",
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/3 cup amaranth flour",
+      "1/2 banana, mashed",
+      "2 tbsp plain yogurt",
+      "Water"
+    ],
+    "instructions": [
+      "Mix a soft batter.",
+      "Cook small pancakes on low heat until fully cooked."
+    ],
+    "nutrition": {
+      "calories": 125,
+      "protein_g": 4.0,
+      "iron_mg": 1.3,
+      "calcium_mg": 50,
+      "fiber_g": 2,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "No added sugar is needed."
+    },
+    "kidTip": {
+      "en": "Naturally sweet and soft."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sprouted-lentil-vegetable-mini-chilla-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Sprouted Lentil Vegetable Mini Chilla"
+    },
+    "desc": {
+      "en": "Soft mini chilla made from cooked sprouted lentils and vegetables."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup cooked sprouted moong",
+      "2 tbsp grated carrot",
+      "1 tbsp grated zucchini"
+    ],
+    "instructions": [
+      "Blend cooked sprouts into a batter.",
+      "Add vegetables and cook small soft chillas."
+    ],
+    "nutrition": {
+      "calories": 135,
+      "protein_g": 7.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 30,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Cook sprouts thoroughly before blending."
+    },
+    "kidTip": {
+      "en": "Soft mini pancakes with a mild flavour."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "broccoli-cheese-quinoa-bites-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Broccoli Cheese Quinoa Bites"
+    },
+    "desc": {
+      "en": "Soft baked bites with broccoli, quinoa and cheese."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/3 cup cooked quinoa",
+      "1/4 cup finely chopped broccoli",
+      "2 tbsp grated mozzarella",
+      "1 egg"
+    ],
+    "instructions": [
+      "Mix ingredients.",
+      "Bake small soft bites until fully set.",
+      "Cool before serving."
+    ],
+    "nutrition": {
+      "calories": 160,
+      "protein_g": 8.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 120,
+      "fiber_g": 2,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Use a soft texture and avoid hard browned edges."
+    },
+    "kidTip": {
+      "en": "Cheesy bites can make broccoli more appealing."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "zucchini-egg-breakfast-muffin-cups-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Zucchini Egg Breakfast Muffin Cups"
+    },
+    "desc": {
+      "en": "Soft mini egg cups with zucchini."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "energy"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 egg",
+      "1/4 cup grated zucchini",
+      "1 tbsp grated cheese"
+    ],
+    "instructions": [
+      "Mix ingredients.",
+      "Bake in mini moulds until fully cooked.",
+      "Cool and cut into soft pieces."
+    ],
+    "nutrition": {
+      "calories": 125,
+      "protein_g": 8.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 70,
+      "fiber_g": 1,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Cook egg fully and keep texture soft."
+    },
+    "kidTip": {
+      "en": "Easy to hold when cut into small pieces."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-black-bean-quesadilla-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Black Bean Soft Quesadilla"
+    },
+    "desc": {
+      "en": "Soft whole-wheat quesadilla with sweet potato and mashed black beans."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1 small whole-wheat tortilla",
+      "1/3 cup mashed sweet potato",
+      "2 tbsp mashed black beans"
+    ],
+    "instructions": [
+      "Spread fillings thinly.",
+      "Warm until tortilla is soft and filling is hot.",
+      "Cool and cut into strips."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 6.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 35,
+      "fiber_g": 5,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Avoid crisping the tortilla."
+    },
+    "kidTip": {
+      "en": "Soft strips are easy to hold."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "avocado-egg-toast-fingers-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Avocado Egg Toast Fingers"
+    },
+    "desc": {
+      "en": "Soft toast topped with avocado and fully cooked egg."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 10,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "egg",
+      "gluten"
+    ],
+    "ingredients": [
+      "1 slice soft whole-grain bread",
+      "1/4 avocado",
+      "1 fully cooked egg"
+    ],
+    "instructions": [
+      "Toast bread lightly so it remains soft.",
+      "Spread avocado and top with finely chopped egg.",
+      "Cut into strips."
+    ],
+    "nutrition": {
+      "calories": 170,
+      "protein_g": 8.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 45,
+      "fiber_g": 4,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Avoid hard crusts if needed."
+    },
+    "kidTip": {
+      "en": "Soft toast fingers are suitable for self-feeding when ready."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "red-lentil-vegetable-pasta-sauce-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Red Lentil Vegetable Pasta Sauce"
+    },
+    "desc": {
+      "en": "A smooth tomato-free vegetable and red lentil sauce for soft pasta."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "2 tbsp red lentils",
+      "1/4 cup carrot",
+      "1/4 cup zucchini",
+      "1/4 cup soft pasta"
+    ],
+    "instructions": [
+      "Cook lentils and vegetables until soft.",
+      "Blend into a sauce.",
+      "Mix with very soft pasta."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein_g": 7.0,
+      "iron_mg": 1.8,
+      "calcium_mg": 35,
+      "fiber_g": 5,
+      "vitaminC_mg": 15
+    },
+    "packingTip": {
+      "en": "Cut pasta into manageable pieces."
+    },
+    "kidTip": {
+      "en": "A vegetable-rich sauce with hidden texture."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cauliflower-cheese-couscous-bowl-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Cauliflower Cheese Couscous Bowl"
+    },
+    "desc": {
+      "en": "Soft couscous with cauliflower and a little cheese."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten"
+    ],
+    "ingredients": [
+      "1/3 cup cooked couscous",
+      "1/4 cup steamed cauliflower",
+      "1 tbsp grated cheese"
+    ],
+    "instructions": [
+      "Cook couscous until soft.",
+      "Mix with mashed cauliflower and cheese."
+    ],
+    "nutrition": {
+      "calories": 135,
+      "protein_g": 5.0,
+      "iron_mg": 0.8,
+      "calcium_mg": 90,
+      "fiber_g": 2,
+      "vitaminC_mg": 12
+    },
+    "packingTip": {
+      "en": "Keep couscous soft and moist."
+    },
+    "kidTip": {
+      "en": "A mild, creamy vegetable bowl."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mushroom-spinach-egg-scramble-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Mushroom Spinach Egg Scramble"
+    },
+    "desc": {
+      "en": "Fully cooked soft egg with finely chopped mushroom and spinach."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 15,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "ingredients": [
+      "1 egg",
+      "2 tbsp finely chopped mushroom",
+      "1 tbsp finely chopped spinach"
+    ],
+    "instructions": [
+      "Cook mushroom and spinach until soft.",
+      "Add beaten egg and cook fully while keeping the scramble soft."
+    ],
+    "nutrition": {
+      "calories": 125,
+      "protein_g": 8.0,
+      "iron_mg": 1.5,
+      "calcium_mg": 40,
+      "fiber_g": 1,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Cook mushrooms thoroughly and chop finely."
+    },
+    "kidTip": {
+      "en": "A soft savoury scramble for toddlers."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "pea-paneer-mini-frittata-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Pea Paneer Mini Frittata"
+    },
+    "desc": {
+      "en": "Soft baked egg bites with peas and paneer."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "egg"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "protein",
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "egg",
+      "dairy"
+    ],
+    "ingredients": [
+      "1 egg",
+      "2 tbsp cooked peas",
+      "2 tbsp crumbled paneer"
+    ],
+    "instructions": [
+      "Mix ingredients.",
+      "Bake in a small dish until fully set.",
+      "Cool and cut into soft pieces."
+    ],
+    "nutrition": {
+      "calories": 155,
+      "protein_g": 10.0,
+      "iron_mg": 1.2,
+      "calcium_mg": 100,
+      "fiber_g": 2,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Cook egg fully."
+    },
+    "kidTip": {
+      "en": "Soft, protein-rich bites."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "pumpkin-white-bean-pasta-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Pumpkin White Bean Pasta"
+    },
+    "desc": {
+      "en": "Soft pasta with pumpkin and mashed white beans."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/3 cup soft pasta",
+      "1/3 cup pumpkin purée",
+      "2 tbsp mashed white beans"
+    ],
+    "instructions": [
+      "Cook pasta until soft.",
+      "Mix with pumpkin and beans."
+    ],
+    "nutrition": {
+      "calories": 175,
+      "protein_g": 6.0,
+      "iron_mg": 1.4,
+      "calcium_mg": 35,
+      "fiber_g": 5,
+      "vitaminC_mg": 10
+    },
+    "packingTip": {
+      "en": "Use soft pasta and cut as appropriate."
+    },
+    "kidTip": {
+      "en": "Creamy without needing heavy sauce."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "oat-apple-carrot-soft-bars-1-2y",
+    "emoji": "🍽️",
+    "images": [],
+    "name": {
+      "en": "Oat Apple Carrot Soft Bars"
+    },
+    "desc": {
+      "en": "Soft baked bars made with oats, apple and carrot."
+    },
+    "ageGroups": [
+      "1-2y"
+    ],
+    "timeCategory": 30,
+    "dietType": [
+      "vegan"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "breakfast",
+      "snack"
+    ],
+    "difficulty": "Medium",
+    "nutritionTags": [
+      "fiber",
+      "energy"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "ingredients": [
+      "1/2 cup oats",
+      "1/4 cup grated apple",
+      "1/4 cup grated carrot",
+      "Water as needed"
+    ],
+    "instructions": [
+      "Mix into a soft batter.",
+      "Bake until set but still soft.",
+      "Cool and cut into small bars."
+    ],
+    "nutrition": {
+      "calories": 135,
+      "protein_g": 3.0,
+      "iron_mg": 1.0,
+      "calcium_mg": 25,
+      "fiber_g": 4,
+      "vitaminC_mg": 8
+    },
+    "packingTip": {
+      "en": "Keep bars soft and moist."
+    },
+    "kidTip": {
+      "en": "A portable, naturally sweet snack without added sugar."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.3,
+      "kidFriendly": 4.2,
+      "lunchboxFriendly": 4.0,
+      "pickyEaterFriendly": 4.1,
+      "timeSaver": 4.0,
+      "count": 1
+    },
+    "hidden": false
   }
 ];

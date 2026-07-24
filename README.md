@@ -55,3 +55,10 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - PWA icons now use the Tiny Tiffin mascot with a matching AI badge.
 - Service-worker cache version bumped so deployed updates can refresh correctly.
 - Version remains synchronized from `site-config.js` (`v1.0`).
+
+
+## Part C recipe expansion
+- Added 30 additional unique recipes for ages 6–12 months.
+- Added 30 additional unique recipes for ages 1–2 years.
+- Added fruit purées, soft fruit combinations, toddler meals and soft finger-food ideas.
+- Existing Part B recipes were retained; new recipe IDs and English titles were checked against the existing database to avoid intentional duplication.
