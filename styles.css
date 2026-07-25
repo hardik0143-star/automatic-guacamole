@@ -605,3 +605,23 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
     padding:5px 8px;
   }
 }
+
+
+/* Small icons for Amazon shopping buttons */
+.shopping-compact-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+}
+.amazon-button-icon{
+  font-size:0.95em;
+  line-height:1;
+  display:inline-flex;
+  align-items:center;
+}
+
+
+/* Amazon Fresh: colourful vegetable basket icon */
+.amazon-fresh-vegetable-icon { width: 28px; height: 28px; object-fit: contain; vertical-align: middle; margin-right: 8px; border-radius: 4px; }
+@media (max-width: 600px) { .amazon-fresh-vegetable-icon { width: 24px; height: 24px; margin-right: 6px; } }

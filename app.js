@@ -422,10 +422,10 @@
         <div class="shopping-cta-actions">
           <a class="btn btn-secondary shopping-compact-btn"
              href="https://www.amazon.in/?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
-             target="_blank" rel="nofollow sponsored noopener">Shop on Amazon</a>
+             target="_blank" rel="nofollow sponsored noopener"><span class="amazon-button-icon" aria-hidden="true">🛒</span> Shop on Amazon</a>
           <a class="btn btn-secondary shopping-compact-btn"
              href="${AMAZON_FRESH_BASE}?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
-             target="_blank" rel="nofollow sponsored noopener">Shop on Amazon Fresh</a>
+             target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> Shop on Amazon Fresh</a>
         </div>
       </section>
 
@@ -941,7 +941,7 @@
             const url = amazonSearchUrl(query);
             return `<div class="affiliate-item">
               <div><span class="affiliate-ingredient">${escapeAttr(item.name)}</span><small>${ingredientCategory(item.name)}${item.count > 1 ? ` · ×${item.count}` : ""}</small></div>
-              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener">🛒 Shop on Amazon Fresh</a>
+              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> Shop on Amazon Fresh</a>
             </div>`;
           }).join("")}
         </div>
