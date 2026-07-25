@@ -79,3 +79,12 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Added a front-page **Shop Ingredients** option.
 - Added a dedicated shopping tab using ingredients from the weekly planner.
 - Amazon affiliate links use the configured Associates tag in `site-config.js`.
+
+
+## v1.3 Amazon shopping clarity update
+
+- Added a prominent **Shop Ingredients** option on the front page.
+- Clarified that Tiny Tiffin uses Amazon Associates tracked shopping links.
+- Added transparent messaging that Amazon Fresh/fresh grocery availability and delivery options depend on the user's location.
+- Individual ingredients from the weekly planner continue to generate tracked Amazon search links.
+- The Amazon Associate tag remains configured as `tinytiffin-21` in `site-config.js`.

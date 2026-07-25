@@ -558,3 +558,23 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
   .shopping-page-header{flex-direction:column}
   .shopping-page-header .btn{width:100%}
 }
+
+
+/* v1.3: front-page shopping call-to-action */
+.shopping-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 18px 0 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--line, rgba(0,0,0,.12));
+  border-radius: 18px;
+  background: var(--surface, rgba(255,255,255,.7));
+}
+.shopping-cta h3 { margin: 0 0 4px; }
+.shopping-cta p { margin: 0; color: var(--ink-soft); font-size: .9rem; }
+@media (max-width: 640px) {
+  .shopping-cta { flex-direction: column; align-items: stretch; }
+  .shopping-cta .btn { width: 100%; }
+}

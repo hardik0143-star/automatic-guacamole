@@ -423,6 +423,14 @@
         <button class="btn btn-primary" data-open-shop>Shop now</button>
       </section>
 
+      <section class="shopping-cta">
+        <div>
+          <h3>🛒 Shop Ingredients</h3>
+          <p>Find ingredients for your planned recipes on Amazon. Fresh grocery availability and delivery options depend on your location.</p>
+        </div>
+        <button class="btn btn-secondary" data-shop-cta="true">Shop on Amazon →</button>
+      </section>
+
       <div class="smart-search-bar">
         <input type="text" id="smart-search" placeholder="${t('searchPlaceholder')}" value="${escapeAttr(state.filters.smartSearch)}">
       </div>
@@ -513,6 +521,12 @@
   }
 
   function attachFindEvents() {
+    const shopCta = root.querySelector("[data-shop-cta]");
+    if (shopCta) shopCta.addEventListener("click", () => {
+      state.tab = "shop";
+      render();
+      window.scrollTo(0, 0);
+    });
     const surpriseBtn = document.getElementById("surprise-recipe");
     if (surpriseBtn) surpriseBtn.addEventListener("click", () => {
       const pool = filteredRecipes();
@@ -924,7 +938,10 @@
       <section class="affiliate-shopping">
         <div class="affiliate-heading">
           <span>🛒</span>
-          <div><h3>Shop ingredients</h3><p>Search ingredients on Amazon using your Tiny Tiffin shopping list.</p></div>
+          <div>
+            <h3>Shop Ingredients on Amazon</h3>
+            <p>Find ingredients for your Tiny Tiffin recipes through Amazon. Fresh grocery availability and delivery options depend on your location.</p>
+          </div>
         </div>
         <div class="affiliate-list">
           ${items.map(item => {
@@ -932,7 +949,7 @@
             const url = amazonSearchUrl(query);
             return `<div class="affiliate-item">
               <div><span class="affiliate-ingredient">${escapeAttr(item.name)}</span><small>${ingredientCategory(item.name)}${item.count > 1 ? ` · ×${item.count}` : ""}</small></div>
-              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon</a>
+              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener">🛒 Shop on Amazon</a>
             </div>`;
           }).join("")}
         </div>
@@ -1155,7 +1172,7 @@
         <div class="shopping-page-header">
           <div>
             <h2 class="display" style="color:var(--masala);margin:0">🛒 Shop Ingredients</h2>
-            <p class="sub" style="text-align:left;margin:6px 0 0">Buy ingredients for the recipes in your weekly tiffin plan.</p>
+            <p class="sub" style="text-align:left;margin:6px 0 0">Find ingredients for your weekly tiffin plan on Amazon. Fresh grocery availability and delivery options depend on your location.</p>
           </div>
           <button class="btn btn-secondary" id="shop-go-planner">Open weekly planner</button>
         </div>
