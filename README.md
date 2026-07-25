@@ -73,3 +73,9 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Added Amazon Associates disclosure.
 - Availability and delivery options remain location-dependent, especially for fresh grocery items.
 - For future Amazon Fresh/Amazon Now or other approved commerce integrations, the shopping layer can be extended without changing the recipe database.
+
+
+## v1.2 shopping update
+- Added a front-page **Shop Ingredients** option.
+- Added a dedicated shopping tab using ingredients from the weekly planner.
+- Amazon affiliate links use the configured Associates tag in `site-config.js`.

@@ -522,3 +522,39 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
   .affiliate-item{align-items:flex-start;flex-direction:column}
   .affiliate-btn{width:100%;justify-content:center}
 }
+
+/* ---------- quick shopping entry point ---------- */
+.shopping-quick-card{
+  max-width:760px;
+  margin:22px auto 26px;
+  padding:16px 18px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:var(--card);
+  border:1px solid var(--mist-2);
+  border-left:5px solid var(--turmeric);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.shopping-quick-icon{font-size:2rem;line-height:1}
+.shopping-quick-copy{flex:1}
+.shopping-quick-copy h3{margin:0 0 3px;color:var(--masala);font-size:1.1rem}
+.shopping-quick-copy p{margin:0;color:var(--ink-soft);font-size:.88rem}
+.shopping-quick-card .btn{white-space:nowrap}
+
+.shopping-page-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+}
+.shopping-empty{padding:40px 20px}
+
+@media (max-width:700px){
+  .shopping-quick-card{align-items:flex-start;flex-wrap:wrap}
+  .shopping-quick-card .btn{width:100%}
+  .shopping-page-header{flex-direction:column}
+  .shopping-page-header .btn{width:100%}
+}

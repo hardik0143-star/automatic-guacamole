@@ -280,6 +280,7 @@
         ${state.tab === "contact" ? renderContactTab() : ""}
         ${state.tab === "developer" ? renderDeveloperTab() : ""}
         ${state.tab === "ai" ? renderAITab() : ""}
+        ${state.tab === "shop" ? renderShopTab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -295,6 +296,7 @@
     if (state.tab === "planner") attachPlannerEvents();
     if (state.tab === "favorites") attachFavoritesEvents();
     if (state.tab === "contact") attachContactEvents();
+    if (state.tab === "shop") attachShopEvents();
     if (state.tab === "ai") {
       attachAIEvents();
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
@@ -310,7 +312,8 @@
       `<option value="${l.code}" ${l.code === state.lang ? "selected" : ""}>${l.label}</option>`).join("");
     const tabs = [
       ["find", t("navFind")], ["match", t("navMatch")], ["planner", t("navPlanner")],
-      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`], ["ai", "🤖 Tiny Tiffin AI"]
+      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`],
+      ["shop", "🛒 Shop Ingredients"], ["ai", "🤖 Tiny Tiffin AI"]
     ];
     return `
       <header class="app-header">
@@ -409,6 +412,15 @@
               <span class="tier-emoji">${NUTRITION_EMOJI[n]}</span> ${t("nutritionGoals")[n] || capitalize(n)}
             </button>`).join("")}
         </div>
+      </section>
+
+      <section class="shopping-quick-card" aria-label="Shop ingredients">
+        <div class="shopping-quick-icon">🛒</div>
+        <div class="shopping-quick-copy">
+          <h3>Shop Ingredients</h3>
+          <p>Turn your weekly tiffin plan into a convenient Amazon shopping list.</p>
+        </div>
+        <button class="btn btn-primary" data-open-shop>Shop now</button>
       </section>
 
       <div class="smart-search-bar">
@@ -533,6 +545,13 @@
         const a = btn.dataset.allergy;
         if (state.filters.allergyExclude.has(a)) state.filters.allergyExclude.delete(a); else state.filters.allergyExclude.add(a);
         render();
+      });
+    });
+    root.querySelectorAll("[data-open-shop]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        state.tab = "shop";
+        render();
+        window.scrollTo(0, 0);
       });
     });
     const searchInput = document.getElementById("smart-search");
@@ -1114,6 +1133,57 @@
     `;
   }
   function attachFavoritesEvents() { attachCardEvents(); }
+
+  /* ---------- Shopping tab ---------- */
+  function getPlannedShoppingItems() {
+    const counts = {};
+    Object.values(state.planner).forEach(id => {
+      const r = RECIPES.find(x => x.id === id);
+      if (!r) return;
+      r.ingredients.forEach(ing => {
+        const clean = String(ing).trim();
+        counts[clean] = (counts[clean] || 0) + 1;
+      });
+    });
+    return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }));
+  }
+
+  function renderShopTab() {
+    const items = getPlannedShoppingItems();
+    return `
+      <section class="shopping-page" style="padding-top:26px">
+        <div class="shopping-page-header">
+          <div>
+            <h2 class="display" style="color:var(--masala);margin:0">🛒 Shop Ingredients</h2>
+            <p class="sub" style="text-align:left;margin:6px 0 0">Buy ingredients for the recipes in your weekly tiffin plan.</p>
+          </div>
+          <button class="btn btn-secondary" id="shop-go-planner">Open weekly planner</button>
+        </div>
+        ${items.length
+          ? renderAffiliateShopping(items)
+          : `<div class="empty-state shopping-empty">
+              ${mascotSVG(56)}
+              <p style="margin-top:10px">Add recipes to your weekly planner first, and Tiny Tiffin will create your shopping list here.</p>
+              <button class="btn btn-primary" id="shop-empty-planner">Plan this week's tiffins</button>
+            </div>`}
+      </section>
+    `;
+  }
+
+  function attachShopEvents() {
+    const plannerBtn = document.getElementById("shop-go-planner");
+    if (plannerBtn) plannerBtn.addEventListener("click", () => {
+      state.tab = "planner";
+      render();
+      window.scrollTo(0, 0);
+    });
+    const emptyPlannerBtn = document.getElementById("shop-empty-planner");
+    if (emptyPlannerBtn) emptyPlannerBtn.addEventListener("click", () => {
+      state.tab = "planner";
+      render();
+      window.scrollTo(0, 0);
+    });
+  }
 
   /* ---------- Contact tab ---------- */
   let contactCategory = "feedback";
