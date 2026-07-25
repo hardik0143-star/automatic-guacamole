@@ -414,21 +414,19 @@
         </div>
       </section>
 
-      <section class="shopping-quick-card" aria-label="Shop ingredients">
-        <div class="shopping-quick-icon">🛒</div>
-        <div class="shopping-quick-copy">
-          <h3>Shop Ingredients</h3>
-          <p>Turn your weekly tiffin plan into a convenient Amazon Fresh shopping list.</p>
-        </div>
-        <button class="btn btn-primary" data-open-shop>Shop now</button>
-      </section>
-
       <section class="shopping-cta">
         <div>
           <h3>🛒 Shop Ingredients</h3>
-          <p>Find ingredients for your planned recipes on Amazon Fresh. Availability and delivery options depend on your location.</p>
+          <p>Find products and ingredients for your planned recipes on Amazon.</p>
         </div>
-        <button class="btn btn-secondary" data-shop-cta="true">Shop on Amazon Fresh →</button>
+        <div class="shopping-cta-actions">
+          <a class="btn btn-secondary shopping-compact-btn"
+             href="https://www.amazon.in/?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
+             target="_blank" rel="nofollow sponsored noopener">Shop on Amazon</a>
+          <a class="btn btn-secondary shopping-compact-btn"
+             href="${AMAZON_FRESH_BASE}?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
+             target="_blank" rel="nofollow sponsored noopener">Shop on Amazon Fresh</a>
+        </div>
       </section>
 
       <div class="smart-search-bar">
@@ -521,12 +519,6 @@
   }
 
   function attachFindEvents() {
-    const shopCta = root.querySelector("[data-shop-cta]");
-    if (shopCta) shopCta.addEventListener("click", () => {
-      state.tab = "shop";
-      render();
-      window.scrollTo(0, 0);
-    });
     const surpriseBtn = document.getElementById("surprise-recipe");
     if (surpriseBtn) surpriseBtn.addEventListener("click", () => {
       const pool = filteredRecipes();
