@@ -110,7 +110,7 @@
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
   const AMAZON_ASSOCIATE_TAG = CONFIG.amazonAssociateTag || "tinytiffin-21";
-  const AMAZON_IN_BASE = "https://www.amazon.in/s";
+  const AMAZON_FRESH_BASE = "https://www.amazon.in/fresh";
 
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡", vitamins: "🍎" };
@@ -418,7 +418,7 @@
         <div class="shopping-quick-icon">🛒</div>
         <div class="shopping-quick-copy">
           <h3>Shop Ingredients</h3>
-          <p>Turn your weekly tiffin plan into a convenient Amazon shopping list.</p>
+          <p>Turn your weekly tiffin plan into a convenient Amazon Fresh shopping list.</p>
         </div>
         <button class="btn btn-primary" data-open-shop>Shop now</button>
       </section>
@@ -426,9 +426,9 @@
       <section class="shopping-cta">
         <div>
           <h3>🛒 Shop Ingredients</h3>
-          <p>Find ingredients for your planned recipes on Amazon. Fresh grocery availability and delivery options depend on your location.</p>
+          <p>Find ingredients for your planned recipes on Amazon Fresh. Availability and delivery options depend on your location.</p>
         </div>
-        <button class="btn btn-secondary" data-shop-cta="true">Shop on Amazon →</button>
+        <button class="btn btn-secondary" data-shop-cta="true">Shop on Amazon Fresh →</button>
       </section>
 
       <div class="smart-search-bar">
@@ -916,7 +916,7 @@
   }
 
   function amazonSearchUrl(query) {
-    return `${AMAZON_IN_BASE}?k=${encodeURIComponent(query)}&tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}`;
+    return `${AMAZON_FRESH_BASE}?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}`;
   }
 
   function ingredientSearchQuery(ingredient) {
@@ -939,8 +939,8 @@
         <div class="affiliate-heading">
           <span>🛒</span>
           <div>
-            <h3>Shop Ingredients on Amazon</h3>
-            <p>Find ingredients for your Tiny Tiffin recipes through Amazon. Fresh grocery availability and delivery options depend on your location.</p>
+            <h3>Shop Ingredients on Amazon Fresh</h3>
+            <p>Find ingredients for your Tiny Tiffin recipes directly in Amazon Fresh. Availability and delivery options depend on your location.</p>
           </div>
         </div>
         <div class="affiliate-list">
@@ -949,7 +949,7 @@
             const url = amazonSearchUrl(query);
             return `<div class="affiliate-item">
               <div><span class="affiliate-ingredient">${escapeAttr(item.name)}</span><small>${ingredientCategory(item.name)}${item.count > 1 ? ` · ×${item.count}` : ""}</small></div>
-              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener">🛒 Shop on Amazon</a>
+              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener">🛒 Shop on Amazon Fresh</a>
             </div>`;
           }).join("")}
         </div>
@@ -1172,7 +1172,7 @@
         <div class="shopping-page-header">
           <div>
             <h2 class="display" style="color:var(--masala);margin:0">🛒 Shop Ingredients</h2>
-            <p class="sub" style="text-align:left;margin:6px 0 0">Find ingredients for your weekly tiffin plan on Amazon. Fresh grocery availability and delivery options depend on your location.</p>
+            <p class="sub" style="text-align:left;margin:6px 0 0">Find ingredients for your weekly tiffin plan directly on Amazon Fresh. Availability and delivery options depend on your location.</p>
           </div>
           <button class="btn btn-secondary" id="shop-go-planner">Open weekly planner</button>
         </div>
