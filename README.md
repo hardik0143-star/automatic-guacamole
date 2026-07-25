@@ -62,3 +62,14 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Added 30 additional unique recipes for ages 1–2 years.
 - Added fruit purées, soft fruit combinations, toddler meals and soft finger-food ideas.
 - Existing Part B recipes were retained; new recipe IDs and English titles were checked against the existing database to avoid intentional duplication.
+
+
+## v1.1 Amazon affiliate shopping
+
+- Added a Smart Shopping List shopping layer.
+- Planned recipe ingredients can be searched individually on Amazon.in.
+- Affiliate tracking tag configured in `site-config.js` as `tinytiffin-21`.
+- Affiliate links are enabled/disabled through `amazonAffiliateEnabled`.
+- Added Amazon Associates disclosure.
+- Availability and delivery options remain location-dependent, especially for fresh grocery items.
+- For future Amazon Fresh/Amazon Now or other approved commerce integrations, the shopping layer can be extended without changing the recipe database.

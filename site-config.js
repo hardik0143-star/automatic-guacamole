@@ -2,9 +2,11 @@
    Edit these values directly. Nothing here requires touching app.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v1.0",
+  version: "v1.1",
   releaseDate: "July 2026",
-  releaseNotes: "Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months and 60 additional age-specific recipes: 30 for 6–12 months and 30 for 1–2 years, including fruit purées, soft fruit combinations, toddler meals and finger-food ideas. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
+  amazonAffiliateEnabled: true,
+  amazonAssociateTag: "tinytiffin-21",
+  releaseNotes: "Added Amazon affiliate shopping from Smart Shopping List: ingredient-level Amazon search links, affiliate disclosure, and location-aware availability messaging. Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months and 60 additional age-specific recipes: 30 for 6–12 months and 30 for 1–2 years, including fruit purées, soft fruit combinations, toddler meals and finger-food ideas. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",

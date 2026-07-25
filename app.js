@@ -109,6 +109,9 @@
   /* ---------------- constants ---------------- */
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
+  const AMAZON_ASSOCIATE_TAG = CONFIG.amazonAssociateTag || "tinytiffin-21";
+  const AMAZON_IN_BASE = "https://www.amazon.in/s";
+
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡", vitamins: "🍎" };
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
@@ -879,21 +882,65 @@
     });
   }
 
+  function amazonSearchUrl(query) {
+    return `${AMAZON_IN_BASE}?k=${encodeURIComponent(query)}&tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}`;
+  }
+
+  function ingredientSearchQuery(ingredient) {
+    return String(ingredient || "").replace(/\([^)]*\)/g, "").replace(/\s+/g, " ").trim();
+  }
+
+  function ingredientCategory(ingredient) {
+    const s = String(ingredient || "").toLowerCase();
+    if (/broccoli|mushroom|zucchini|courgette|pepper|capsicum|avocado|sweet potato|potato|carrot|peas|spinach|tomato|cucumber|cauliflower|corn|beans|beet|pumpkin|apple|banana|mango|berry|orange|lemon|lime/.test(s)) return "Fresh produce";
+    if (/paneer|mozzarella|cheese|milk|curd|yogurt|ghee|butter/.test(s)) return "Dairy";
+    if (/egg|chickpea|gram|moong|sprout|lentil|dal|tofu/.test(s)) return "Protein";
+    if (/oat|quinoa|millet|rice|wheat|flour|bread|pasta|grain/.test(s)) return "Grains & staples";
+    return "Pantry & ingredients";
+  }
+
+  function renderAffiliateShopping(items) {
+    if (!CONFIG.amazonAffiliateEnabled) return "";
+    return `
+      <section class="affiliate-shopping">
+        <div class="affiliate-heading">
+          <span>🛒</span>
+          <div><h3>Shop ingredients</h3><p>Search ingredients on Amazon using your Tiny Tiffin shopping list.</p></div>
+        </div>
+        <div class="affiliate-list">
+          ${items.map(item => {
+            const query = ingredientSearchQuery(item.name);
+            const url = amazonSearchUrl(query);
+            return `<div class="affiliate-item">
+              <div><span class="affiliate-ingredient">${escapeAttr(item.name)}</span><small>${ingredientCategory(item.name)}${item.count > 1 ? ` · ×${item.count}` : ""}</small></div>
+              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener">Shop on Amazon</a>
+            </div>`;
+          }).join("")}
+        </div>
+        <p class="affiliate-disclosure">As an Amazon Associate, Tiny Tiffin earns from qualifying purchases. Product availability and delivery options vary by location.</p>
+      </section>
+    `;
+  }
+
   function openGroceryModal() {
     const counts = {};
     Object.values(state.planner).forEach(id => {
       const r = RECIPES.find(x => x.id === id);
       if (!r) return;
-      r.ingredients.forEach(ing => { counts[ing] = (counts[ing] || 0) + 1; });
+      r.ingredients.forEach(ing => {
+        const clean = String(ing).trim();
+        counts[clean] = (counts[clean] || 0) + 1;
+      });
     });
-    const items = Object.keys(counts).sort();
+    const items = Object.keys(counts).sort().map(name => ({ name, count: counts[name] }));
     const backdrop = document.createElement("div");
     backdrop.className = "modal-backdrop";
     backdrop.innerHTML = `
-      <div class="modal">
+      <div class="modal grocery-modal">
         <button class="modal-close" id="grocery-close">✕</button>
         <h2>${t("groceryTitle")}</h2>
-        ${items.length ? `<ul>${items.map(i => `<li><label><input type="checkbox"> ${i}${counts[i] > 1 ? ` <span class="mono" style="color:var(--ink-soft)">×${counts[i]}</span>` : ""}</label></li>`).join("")}</ul>` : `<p class="desc">${t("groceryEmpty")}</p>`}
+        ${items.length ? `<ul>${items.map(i => `<li><label><input type="checkbox"> ${escapeAttr(i.name)}${i.count > 1 ? ` <span class="mono" style="color:var(--ink-soft)">×${i.count}</span>` : ""}</label></li>`).join("")}</ul>` : `<p class="desc">${t("groceryEmpty")}</p>`}
+        ${items.length ? renderAffiliateShopping(items) : ""}
         <div class="card-actions"><button class="btn btn-secondary" id="print-list">${t("printList")}</button></div>
       </div>`;
     document.body.appendChild(backdrop);

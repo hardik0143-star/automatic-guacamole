@@ -494,3 +494,31 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 /* Install and software update actions */
 .install-action { white-space: nowrap; }
 .install-action:disabled { opacity: .65; cursor: wait; }
+
+
+/* ---------- Amazon affiliate shopping ---------- */
+.affiliate-shopping{
+  margin:18px 0 8px;
+  padding:16px;
+  border:1px solid var(--mist-2);
+  border-radius:14px;
+  background:var(--mist);
+}
+.affiliate-heading{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+.affiliate-heading>span{font-size:1.5rem}
+.affiliate-heading h3{margin:0 0 2px;color:var(--masala)}
+.affiliate-heading p{margin:0;color:var(--ink-soft);font-size:.82rem}
+.affiliate-list{display:grid;gap:8px}
+.affiliate-item{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:10px 12px;border:1px solid var(--mist-2);border-radius:10px;background:var(--card);
+}
+.affiliate-item>div{min-width:0}
+.affiliate-ingredient{display:block;font-weight:600;overflow-wrap:anywhere}
+.affiliate-item small{display:block;color:var(--ink-soft);font-size:.72rem;margin-top:2px}
+.affiliate-btn{white-space:nowrap;font-size:.78rem;padding:7px 10px;text-decoration:none}
+.affiliate-disclosure{font-size:.68rem;color:var(--ink-soft);line-height:1.45;margin:12px 0 0}
+@media (max-width:600px){
+  .affiliate-item{align-items:flex-start;flex-direction:column}
+  .affiliate-btn{width:100%;justify-content:center}
+}
