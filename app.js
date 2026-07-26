@@ -120,7 +120,7 @@
   const AMAZON_ASSOCIATE_TAG = CONFIG.amazonAssociateTag || "tinytiffin-21";
   const AMAZON_FRESH_BASE = "https://www.amazon.in/fresh";
 
-  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
+  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡", vitamins: "🍎" };
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
   const ALL_ALLERGENS = ["nuts", "dairy", "gluten", "soy", "egg"];
