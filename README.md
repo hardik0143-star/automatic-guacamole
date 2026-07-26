@@ -88,3 +88,15 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Added transparent messaging that Amazon Fresh/fresh grocery availability and delivery options depend on the user's location.
 - Individual ingredients from the weekly planner continue to generate tracked Amazon Fresh destination links.
 - The Amazon Associate tag remains configured as `tinytiffin-21` in `site-config.js`.
+
+
+## v1.0 language and admin update
+- Removed Telugu and Bengali from the language selector.
+- Added Japanese.
+- Improved complete recipe translation so title, description, ingredients, steps, tips, allergens, difficulty and vitamin names are translated when a language is selected.
+- Updated the service-worker cache version so deployed users receive the new language code.
+- Restored the Admin visitor analytics dashboard with total, India and international counters plus a local fallback.
+
+
+## Restored admin controls
+The Admin page now includes password-gated recipe management, hide/unhide, edit, delete, import/export JSON, AI feature permissions, visitor analytics, and local site configuration controls. Because this is a static frontend, browser-local changes are not automatically published to every visitor. Export recipe data and update the repository files for global deployment. Change `adminPassword` in `site-config.js` before publishing. For production security, use server-side authentication.

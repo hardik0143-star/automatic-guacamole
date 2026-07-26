@@ -1,13 +1,226 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tiny Tiffin — Admin</title><link rel="stylesheet" href="styles.css"><style>body{padding:24px}.admin-wrap{max-width:760px;margin:auto}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat{padding:22px;border-radius:18px;background:var(--card,#fff);box-shadow:0 8px 24px #0001}.stat strong{display:block;font-size:2rem;color:var(--masala)}.muted{color:var(--ink-soft)}@media(max-width:600px){.stats{grid-template-columns:1fr}}</style></head><body><main class="admin-wrap"><p><a href="index.html">← Tiny Tiffin</a></p><h1>Admin visitor analytics</h1><p class="muted">Aggregate visitor counts. Country classification is based on an approximate IP-country lookup and may not be exact.</p><section class="stats"><div class="stat"><span>Total visitors</span><strong id="total">—</strong></div><div class="stat"><span>India</span><strong id="india">—</strong></div><div class="stat"><span>International</span><strong id="international">—</strong></div></section><p id="status" class="muted" style="margin-top:18px">Loading analytics…</p><h3>Local fallback</h3><p class="muted">If the remote counter service is unavailable, this device's local visit count is shown below.</p><pre id="local" style="white-space:pre-wrap"></pre></main><script src="site-config.js"></script><script>
-(async function(){
- const ns=(window.TINY_TIFFIN_CONFIG&&window.TINY_TIFFIN_CONFIG.analyticsNamespace)||'tiny-tiffin-v1';
- const base='https://api.counterapi.dev/v1/'+encodeURIComponent(ns);
- const ids=['total','india','international'];
- try{
-   const vals=await Promise.all(ids.map(async id=>{const r=await fetch(base+'/'+id); if(!r.ok) throw new Error('analytics unavailable'); const j=await r.json(); return j.count ?? j.value ?? 0;}));
-   ids.forEach((id,i)=>document.getElementById(id).textContent=Number(vals[i]).toLocaleString());
-   document.getElementById('status').textContent='Global aggregate counters loaded.';
- }catch(e){document.getElementById('status').textContent='Remote analytics unavailable. Showing local fallback where available.';}
- try{document.getElementById('local').textContent=JSON.stringify(JSON.parse(localStorage.getItem('tt_local_visit_stats')||'{}'),null,2);}catch(e){document.getElementById('local').textContent='No local data available.';}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tiny Tiffin — Admin</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{padding:20px}.admin-wrap{max-width:1050px;margin:auto}.admin-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:18px}.panel{background:var(--card,#fff);border-radius:18px;padding:20px;box-shadow:0 8px 24px #0001;margin-bottom:18px}.panel h2{margin-top:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid .full{grid-column:1/-1}.field{display:flex;flex-direction:column;gap:6px}.field input,.field textarea,.field select{padding:10px;border:1px solid #ccd5d0;border-radius:10px;font:inherit;background:var(--bg,#fff);color:inherit}.recipe-list{max-height:650px;overflow:auto}.recipe-row{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px;border-bottom:1px solid #0001}.recipe-row.active{outline:2px solid var(--masala);border-radius:10px}.recipe-row small{display:block;color:var(--ink-soft)}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #0001}.toggle-row input{width:20px;height:20px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:16px;border-radius:14px;background:var(--bg,#f4f7f5)}.stat strong{display:block;font-size:1.7rem;color:var(--masala)}.muted{color:var(--ink-soft)}.danger{background:#fff0f0!important;color:#a33!important}.hidden-badge{font-size:.75rem;color:#a33}.login{max-width:420px;margin:10vh auto}.status{min-height:24px;margin-top:10px}.export-box{width:100%;min-height:130px;font-family:monospace;font-size:.8rem}@media(max-width:800px){.admin-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="admin-wrap">
+  <p><a href="index.html">← Tiny Tiffin</a></p>
+  <section id="login-panel" class="panel login">
+    <h1>🔐 Tiny Tiffin Admin</h1>
+    <p class="muted">Admin controls are protected by the password configured in <code>site-config.js</code>.</p>
+    <div class="field"><label for="admin-password">Admin password</label><input id="admin-password" type="password" autocomplete="current-password"></div>
+    <div class="actions"><button class="btn btn-primary" id="login-btn">Sign in</button></div>
+    <p id="login-status" class="status muted"></p>
+  </section>
+
+  <section id="admin-app" hidden>
+    <div class="actions">
+      <a class="btn btn-secondary" href="index.html">Open user app</a>
+      <button class="btn btn-secondary" id="logout-btn">Log out</button>
+    </div>
+
+    <div class="panel">
+      <h2>Visitor analytics</h2>
+      <p class="muted">Global aggregate counters plus local fallback data.</p>
+      <section class="stats">
+        <div class="stat"><span>Total visitors</span><strong id="total">—</strong></div>
+        <div class="stat"><span>India</span><strong id="india">—</strong></div>
+        <div class="stat"><span>International</span><strong id="international">—</strong></div>
+      </section>
+      <p id="analytics-status" class="status muted">Loading analytics…</p>
+      <pre id="local" style="white-space:pre-wrap"></pre>
+    </div>
+
+    <div class="admin-grid">
+      <div>
+        <section class="panel">
+          <h2>Recipe management</h2>
+          <input id="recipe-search" class="search-input" placeholder="Search recipes by name or ID">
+          <div id="recipe-list" class="recipe-list"></div>
+          <div class="actions">
+            <button class="btn btn-secondary" id="new-recipe">New recipe</button>
+            <button class="btn btn-secondary" id="import-json">Import JSON</button>
+            <button class="btn btn-secondary" id="export-json">Export JSON</button>
+            <button class="btn danger" id="reset-draft">Reset local draft</button>
+          </div>
+          <input type="file" id="json-file" accept="application/json" hidden>
+        </section>
+
+        <section class="panel">
+          <h2>AI feature permissions</h2>
+          <p class="muted">Turn individual AI capabilities on or off for users. This is a static-site feature flag; for real security or paid access, use server-side authentication.</p>
+          <div id="ai-toggles"></div>
+          <div class="actions"><button class="btn btn-primary" id="save-ai">Save AI permissions</button></div>
+        </section>
+
+        <section class="panel">
+          <h2>Site configuration</h2>
+          <div class="form-grid">
+            <div class="field"><label>Version</label><input id="cfg-version"></div>
+            <div class="field"><label>Amazon Associate Tag</label><input id="cfg-amazon"></div>
+            <div class="field full"><label>Release notes</label><textarea id="cfg-release" rows="4"></textarea></div>
+          </div>
+          <div class="actions"><button class="btn btn-primary" id="save-config">Save local configuration</button></div>
+        </section>
+      </div>
+
+      <section class="panel">
+        <h2 id="editor-title">Select a recipe</h2>
+        <div id="editor"></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<script src="recipes.js"></script>
+<script src="site-config.js"></script>
+<script src="store.js"></script>
+<script>
+(function(){
+  const CONFIG=window.TINY_TIFFIN_CONFIG||{};
+  const AUTH_KEY="tt_admin_authenticated_v1";
+  const AI_KEY="tt_admin_ai_permissions_v1";
+  const CFG_KEY="tt_admin_config_override_v1";
+  let recipes=TinyTiffinStore.getRecipes().map(r=>JSON.parse(JSON.stringify(r)));
+  let selectedId=null;
+
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const pretty=s=>Array.isArray(s)?s.join("\n"):String(s||"");
+  const auth=()=>localStorage.getItem(AUTH_KEY)==="1";
+
+  function showAdmin(){ $("login-panel").hidden=true; $("admin-app").hidden=false; renderAll(); loadAnalytics(); }
+  function login(){
+    if($("admin-password").value === (CONFIG.adminPassword || "admin123")){
+      localStorage.setItem(AUTH_KEY,"1"); $("login-status").textContent=""; showAdmin();
+    } else $("login-status").textContent="Incorrect password.";
+  }
+  $("login-btn").onclick=login;
+  $("admin-password").onkeydown=e=>{if(e.key==="Enter")login()};
+  $("logout-btn").onclick=()=>{localStorage.removeItem(AUTH_KEY);location.reload()};
+
+  function renderList(){
+    const q=($("recipe-search").value||"").toLowerCase();
+    const list=recipes.filter(r=>(r.id+" "+(r.name?.en||"")).toLowerCase().includes(q));
+    $("recipe-list").innerHTML=list.map(r=>`<div class="recipe-row ${r.id===selectedId?"active":""}">
+      <div><strong>${esc(r.name?.en||r.id)}</strong><small>${esc(r.id)} ${r.hidden?'<span class="hidden-badge">· HIDDEN</span>':""}</small></div>
+      <button class="btn btn-secondary" data-select="${esc(r.id)}">Edit</button>
+    </div>`).join("")||"<p class='muted'>No recipes found.</p>";
+    $("recipe-list").querySelectorAll("[data-select]").forEach(b=>b.onclick=()=>{selectedId=b.dataset.select;renderAll()});
+  }
+
+  function renderEditor(){
+    const r=recipes.find(x=>x.id===selectedId);
+    if(!r){$("editor-title").textContent="Select a recipe";$("editor").innerHTML="<p class='muted'>Choose a recipe from the list or create a new one.</p>";return}
+    $("editor-title").textContent="Edit: "+(r.name?.en||r.id);
+    $("editor").innerHTML=`<div class="form-grid">
+      <div class="field"><label>ID</label><input id="e-id" value="${esc(r.id)}"></div>
+      <div class="field"><label>Emoji</label><input id="e-emoji" value="${esc(r.emoji||"🍱")}"></div>
+      <div class="field full"><label>English title</label><input id="e-name" value="${esc(r.name?.en||"")}"></div>
+      <div class="field full"><label>English description</label><textarea id="e-desc" rows="3">${esc(r.desc?.en||"")}</textarea></div>
+      <div class="field"><label>Age groups (comma-separated)</label><input id="e-age" value="${esc((r.ageGroups||[]).join(", "))}"></div>
+      <div class="field"><label>Time (minutes)</label><input id="e-time" type="number" value="${esc(r.timeCategory||15)}"></div>
+      <div class="field"><label>Diet types</label><input id="e-diet" value="${esc((r.dietType||[]).join(", "))}"></div>
+      <div class="field"><label>Cuisine</label><input id="e-cuisine" value="${esc(r.cuisine||"indian")}"></div>
+      <div class="field"><label>Meal types</label><input id="e-meal" value="${esc((r.mealType||[]).join(", "))}"></div>
+      <div class="field"><label>Allergens</label><input id="e-allergens" value="${esc((r.allergens||[]).join(", "))}"></div>
+      <div class="field full"><label>Ingredients — one per line</label><textarea id="e-ingredients" rows="8">${esc(pretty(r.ingredients))}</textarea></div>
+      <div class="field full"><label>Instructions — one per line</label><textarea id="e-instructions" rows="8">${esc(pretty(r.instructions))}</textarea></div>
+      <div class="field full"><label>Packing tip (English)</label><textarea id="e-packing" rows="3">${esc(r.packingTip?.en||"")}</textarea></div>
+      <div class="field full"><label>Parent tip (English)</label><textarea id="e-kidtip" rows="3">${esc(r.kidTip?.en||"")}</textarea></div>
+      <div class="field"><label>Calories</label><input id="e-calories" type="number" value="${esc(r.nutrition?.calories||0)}"></div>
+      <div class="field"><label>Protein (g)</label><input id="e-protein" type="number" value="${esc(r.nutrition?.protein_g||0)}"></div>
+      <div class="field"><label>Iron (mg)</label><input id="e-iron" type="number" value="${esc(r.nutrition?.iron_mg||0)}"></div>
+      <div class="field"><label>Calcium (mg)</label><input id="e-calcium" type="number" value="${esc(r.nutrition?.calcium_mg||0)}"></div>
+    </div>
+    <div class="actions">
+      <button class="btn btn-primary" id="save-recipe">Save recipe</button>
+      <button class="btn btn-secondary" id="toggle-hidden">${r.hidden?"Unhide recipe":"Hide recipe"}</button>
+      <button class="btn danger" id="delete-recipe">Delete recipe</button>
+    </div>
+    <p class="muted">Changes are saved to this browser's local draft. Export the JSON and commit the generated recipe data to GitHub to publish changes for all users.</p>`;
+    $("save-recipe").onclick=saveRecipe;
+    $("toggle-hidden").onclick=()=>{r.hidden=!r.hidden;TinyTiffinStore.saveRecipes(recipes);renderAll()};
+    $("delete-recipe").onclick=()=>{if(confirm("Delete this recipe from the local draft?")){recipes=recipes.filter(x=>x.id!==r.id);selectedId=null;TinyTiffinStore.saveRecipes(recipes);renderAll()}};
+  }
+
+  function saveRecipe(){
+    const r=recipes.find(x=>x.id===selectedId); if(!r)return;
+    const id=$("e-id").value.trim()||r.id;
+    Object.assign(r,{id,emoji:$("e-emoji").value.trim()||"🍱",
+      name:Object.assign({},r.name,{en:$("e-name").value.trim()}),
+      desc:Object.assign({},r.desc,{en:$("e-desc").value.trim()}),
+      ageGroups:$("e-age").value.split(",").map(x=>x.trim()).filter(Boolean),
+      timeCategory:Number($("e-time").value)||15,
+      dietType:$("e-diet").value.split(",").map(x=>x.trim()).filter(Boolean),
+      cuisine:$("e-cuisine").value.trim()||"indian",
+      mealType:$("e-meal").value.split(",").map(x=>x.trim()).filter(Boolean),
+      allergens:$("e-allergens").value.split(",").map(x=>x.trim()).filter(Boolean),
+      ingredients:$("e-ingredients").value.split("\n").map(x=>x.trim()).filter(Boolean),
+      instructions:$("e-instructions").value.split("\n").map(x=>x.trim()).filter(Boolean),
+      packingTip:Object.assign({},r.packingTip,{en:$("e-packing").value.trim()}),
+      kidTip:Object.assign({},r.kidTip,{en:$("e-kidtip").value.trim()}),
+      nutrition:Object.assign({},r.nutrition,{calories:Number($("e-calories").value)||0,protein_g:Number($("e-protein").value)||0,iron_mg:Number($("e-iron").value)||0,calcium_mg:Number($("e-calcium").value)||0})
+    });
+    TinyTiffinStore.saveRecipes(recipes); renderAll();
+  }
+
+  $("recipe-search").oninput=renderList;
+  $("new-recipe").onclick=()=>{
+    const id="new-recipe-"+Date.now();
+    recipes.unshift({id,emoji:"🍱",images:[],name:{en:"New Recipe"},desc:{en:""},ageGroups:["2-5y"],timeCategory:15,dietType:["vegetarian"],cuisine:"indian",mealType:["lunch"],difficulty:"Easy",nutritionTags:[],allergens:[],ingredients:[],instructions:[],nutrition:{calories:0,protein_g:0,iron_mg:0,calcium_mg:0},packingTip:{en:""},kidTip:{en:""},ratings:{overall:0,nutrition:0,kidFriendly:0,lunchboxFriendly:0,pickyEaterFriendly:0,timeSaver:0,count:0},hidden:false});
+    selectedId=id; renderAll();
+  };
+
+  $("export-json").onclick=()=>{
+    const blob=new Blob([JSON.stringify(recipes,null,2)],{type:"application/json"});
+    const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="tiny-tiffin-recipes-export.json";a.click();URL.revokeObjectURL(a.href);
+  };
+  $("import-json").onclick=()=>$("json-file").click();
+  $("json-file").onchange=async e=>{
+    const file=e.target.files[0];if(!file)return;
+    try{const imported=JSON.parse(await file.text());if(!Array.isArray(imported))throw Error();
+      recipes=imported;selectedId=null;TinyTiffinStore.saveRecipes(recipes);renderAll();alert("Recipes imported successfully.");
+    }catch(_){alert("Invalid recipe JSON file.");}
+  };
+  $("reset-draft").onclick=()=>{if(confirm("Reset local recipe changes and return to the bundled GitHub version?")){TinyTiffinStore.clearDraft();location.reload()}};
+
+  const aiLabels={planner:"AI Tiffin Planner",ingredientScanner:"AI Ingredient Scanner",recipeAdaptation:"AI Recipe Adaptation",smartShoppingList:"Smart AI Shopping List",assistant:"Tiny Tiffin AI Assistant"};
+  function renderAI(){
+    let p={planner:true,ingredientScanner:true,recipeAdaptation:true,smartShoppingList:true,assistant:true};
+    try{p=Object.assign(p,JSON.parse(localStorage.getItem(AI_KEY)||"{}"))}catch(_){}
+    $("ai-toggles").innerHTML=Object.entries(aiLabels).map(([k,v])=>`<div class="toggle-row"><span>${v}</span><input type="checkbox" data-ai="${k}" ${p[k]!==false?"checked":""}></div>`).join("");
+  }
+  $("save-ai").onclick=()=>{
+    const p={};$("ai-toggles").querySelectorAll("[data-ai]").forEach(x=>p[x.dataset.ai]=x.checked);
+    localStorage.setItem(AI_KEY,JSON.stringify(p));alert("AI permissions saved for this browser.");
+  };
+
+  function renderConfig(){
+    $("cfg-version").value=CONFIG.version||"v1.0";$("cfg-amazon").value=CONFIG.amazonAssociateTag||"";
+    $("cfg-release").value=CONFIG.releaseNotes||"";
+  }
+  $("save-config").onclick=()=>{
+    localStorage.setItem(CFG_KEY,JSON.stringify({version:$("cfg-version").value,amazonAssociateTag:$("cfg-amazon").value,releaseNotes:$("cfg-release").value}));
+    alert("Local configuration saved. For GitHub/Vercel, update site-config.js and deploy.");
+  };
+
+  async function loadAnalytics(){
+    const ns=CONFIG.analyticsNamespace||"tiny-tiffin-v1",base="https://api.counterapi.dev/v1/"+encodeURIComponent(ns),ids=["total","india","international"];
+    try{const vals=await Promise.all(ids.map(async id=>{const r=await fetch(base+"/"+id);if(!r.ok)throw Error();const j=await r.json();return j.count??j.value??0}));ids.forEach((id,i)=>$(id).textContent=Number(vals[i]).toLocaleString());$("analytics-status").textContent="Global aggregate counters loaded."}
+    catch(e){$("analytics-status").textContent="Remote analytics unavailable. Local fallback shown below."}
+    try{$("local").textContent=JSON.stringify(JSON.parse(localStorage.getItem("tt_local_visit_stats")||"{}"),null,2)}catch(e){$("local").textContent="No local data available."}
+  }
+  function renderAll(){renderList();renderEditor();renderAI();renderConfig()}
+  if(auth())showAdmin();
 })();
-</script></body></html>
+</script>
+</body>
+</html>

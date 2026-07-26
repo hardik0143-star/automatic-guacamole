@@ -108,7 +108,15 @@
 
   /* ---------------- constants ---------------- */
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
-  const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
+  const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {}, aiFeatures: {} };
+  const AI_FEATURES = Object.assign({
+    planner: true,
+    ingredientScanner: true,
+    recipeAdaptation: true,
+    smartShoppingList: true,
+    assistant: true
+  }, CONFIG.aiFeatures || {});
+  const aiEnabled = key => AI_FEATURES[key] !== false;
   const AMAZON_ASSOCIATE_TAG = CONFIG.amazonAssociateTag || "tinytiffin-21";
   const AMAZON_FRESH_BASE = "https://www.amazon.in/fresh";
 
@@ -705,7 +713,8 @@
       toast(state.favorites.has(r.id) ? t("removeFavorite") : t("addFavorite"));
     });
     document.getElementById("modal-plan").addEventListener("click", () => { closeModal(); openPlannerPicker(r.id); });
-    document.getElementById("ai-adapt").addEventListener("click", () => {
+    const aiAdaptButton = document.getElementById("ai-adapt");
+    if (aiAdaptButton) aiAdaptButton.addEventListener("click", () => {
       const instruction = prompt("How would you like to adapt this recipe? Example: Make it egg-free or vegan.");
       if (!instruction) return;
       const result = aiAdaptRecipe(r, instruction);
@@ -1072,14 +1081,15 @@
   }
   function renderAITab() {
     const matches = state.aiResults;
+    const cards = [];
+    if (aiEnabled("planner")) cards.push(`<article class="ai-card"><h3>🗓️ AI Tiffin Planner</h3><p>Tell Tiny Tiffin what your child needs and get a practical 5-day plan.</p><textarea id="ai-plan-input" class="search-input" rows="3" placeholder="Example: vegetarian, no nuts, under 20 minutes, high protein">${escapeAttr(state.aiInput)}</textarea><button class="btn btn-primary" id="ai-plan-btn">Create AI Plan</button><div id="ai-plan-results"></div></article>`);
+    if (aiEnabled("ingredientScanner")) cards.push(`<article class="ai-card"><h3>📸 AI Ingredient Scanner</h3><p>Upload a photo of ingredients. Confirm the ingredients you recognise, then find matching recipes.</p><input id="ai-image-input" type="file" accept="image/*" class="search-input"><img id="ai-preview" class="ai-preview" alt="Ingredient preview" style="display:none"><input id="ai-scan-text" class="search-input" placeholder="Detected ingredients (edit if needed)"><button class="btn btn-secondary" id="ai-scan-btn">Find Recipes</button></article>`);
+    if (aiEnabled("recipeAdaptation")) cards.push(`<article class="ai-card"><h3>🔄 AI Recipe Adaptation</h3><p>Open any recipe and ask for egg-free, vegan, dairy-free or ingredient substitutions.</p><p class="ai-muted">Use the “AI Adapt” button inside a recipe.</p></article>`);
+    if (aiEnabled("smartShoppingList")) cards.push(`<article class="ai-card"><h3>🛒 Smart Shopping List</h3><p>Build a combined shopping list from your weekly planner, with duplicate ingredients grouped together.</p><button class="btn btn-secondary" id="ai-shop-btn">Create Smart Shopping List</button></article>`);
+    if (aiEnabled("assistant")) cards.push(`<article class="ai-card"><h3>🤖 Tiny Tiffin AI Assistant</h3><p>Ask for practical tiffin ideas, ingredient substitutions, age-appropriate suggestions and healthy lunchbox guidance.</p><button class="btn btn-secondary" id="ai-assistant-btn">Ask Tiny Tiffin AI</button></article>`);
     return `<section class="ai-hub">
       <div class="ai-hero"><div class="ai-badge">🤖 AI-POWERED</div><h2 class="display">Tiny Tiffin AI</h2><p class="sub">Your smart tiffin companion for planning, ingredients, adaptations and shopping.</p></div>
-      <div class="ai-grid">
-        <article class="ai-card"><h3>🗓️ AI Tiffin Planner</h3><p>Tell Tiny Tiffin what your child needs and get a practical 5-day plan.</p><textarea id="ai-plan-input" class="search-input" rows="3" placeholder="Example: vegetarian, no nuts, under 20 minutes, high protein">${escapeAttr(state.aiInput)}</textarea><button class="btn btn-primary" id="ai-plan-btn">Create AI Plan</button><div id="ai-plan-results"></div></article>
-        <article class="ai-card"><h3>📸 AI Ingredient Scanner</h3><p>Upload a photo of ingredients. Confirm the ingredients you recognise, then find matching recipes.</p><input id="ai-image-input" type="file" accept="image/*" class="search-input"><img id="ai-preview" class="ai-preview" alt="Ingredient preview" style="display:none"><input id="ai-scan-text" class="search-input" placeholder="Detected ingredients (edit if needed)"><button class="btn btn-secondary" id="ai-scan-btn">Find Recipes</button></article>
-        <article class="ai-card"><h3>🔄 AI Recipe Adaptation</h3><p>Open any recipe and ask for egg-free, vegan, dairy-free or ingredient substitutions.</p><p class="ai-muted">Use the “AI Adapt” button inside a recipe.</p></article>
-        <article class="ai-card"><h3>🛒 Smart Shopping List</h3><p>Build a combined shopping list from your weekly planner, with duplicate ingredients grouped together.</p><button class="btn btn-secondary" id="ai-shop-btn">Create Smart Shopping List</button></article>
-      </div>
+      <div class="ai-grid">${cards.join("")}</div>
       ${matches.length ? `<h3 class="ai-section-title">Suggested recipes</h3><section class="recipe-grid">${matches.map(recipeCardHTML).join("")}</section>` : ""}
     </section>`;
   }
@@ -1100,6 +1110,18 @@
     if (scanBtn) scanBtn.addEventListener("click", () => { state.aiResults = aiRecipeMatches(document.getElementById("ai-scan-text").value); render(); });
     const shopBtn = document.getElementById("ai-shop-btn");
     if (shopBtn) shopBtn.addEventListener("click", openGroceryModal);
+    const assistantBtn = document.getElementById("ai-assistant-btn");
+    if (assistantBtn) assistantBtn.addEventListener("click", () => {
+      const q = prompt("Ask Tiny Tiffin AI anything about your child's tiffin:");
+      if (!q) return;
+      const text = q.toLowerCase();
+      let answer = "Try a balanced tiffin with a whole grain, a protein-rich food, colourful fruit or vegetables, and water.";
+      if (text.includes("protein")) answer = "Good child-friendly protein options include paneer, eggs, lentils, chickpeas, sprouted moong, yogurt and tofu.";
+      else if (text.includes("breakfast")) answer = "Quick ideas: mini idli, vegetable poha, oats chilla, paneer paratha or egg muffins.";
+      else if (text.includes("snack")) answer = "Try fruit with yogurt, roasted makhana, mini uttapam, sweet-potato bites or a small paneer wrap.";
+      else if (text.includes("allerg")) answer = "Always check ingredient labels and avoid known allergens. Use the app's allergen filters before selecting a recipe.";
+      alert("Tiny Tiffin AI:\n\n" + answer);
+    });
     attachCardEvents();
   }
 

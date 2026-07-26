@@ -7,7 +7,17 @@ window.TINY_TIFFIN_CONFIG = {
   amazonAffiliateEnabled: true,
   analyticsNamespace: "tiny-tiffin-v1",
   amazonAssociateTag: "tinytiffin-21",
-  releaseNotes: "Amazon Fresh affiliate shopping update: updated all shopping buttons to be labelled Amazon Fresh and route users directly to the Amazon Fresh grocery destination using the configured Associates tag, with transparent messaging that availability and delivery options depend on the shopper’s location. Weekly planner shopping remains supported. Version v1.5. Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months and 60 additional age-specific recipes: 30 for 6–12 months and 30 for 1–2 years, including fruit purées, soft fruit combinations, toddler meals and finger-food ideas. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
+  /* Static-site admin controls. Change this password before publishing.
+     For real security, move admin authentication to a backend service. */
+  adminPassword: "TinyTiffinAdmin2026!",
+  aiFeatures: {
+    planner: true,
+    ingredientScanner: true,
+    recipeAdaptation: true,
+    smartShoppingList: true,
+    assistant: true
+  },
+  releaseNotes: "Amazon Fresh affiliate shopping update: updated all shopping buttons to be labelled Amazon Fresh and route users directly to the Amazon Fresh grocery destination using the configured Associates tag, with transparent messaging that availability and delivery options depend on the shopper’s location. Weekly planner shopping remains supported. Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months and 60 additional age-specific recipes: 30 for 6–12 months and 30 for 1–2 years, including fruit purées, soft fruit combinations, toddler meals and finger-food ideas. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
   developer: {
     name: "Hardik Desai",
     email: "Hardypharmacy26@gmail.com",
