@@ -9,7 +9,7 @@ window.TINY_TIFFIN_CONFIG = {
   amazonAssociateTag: "tinytiffin-21",
   /* Static-site admin controls. Change this password before publishing.
      For real security, move admin authentication to a backend service. */
-  adminPassword: "TinyTiffinAdmin2026!",
+  adminPassword: "Nishiv@2023",
   aiFeatures: {
     planner: true,
     ingredientScanner: true,
