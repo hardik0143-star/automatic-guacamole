@@ -127,6 +127,22 @@
     placeholders.forEach(el => { if (el.placeholder) el.placeholder = tph[j++]; });
   }
 
+  
+  async function localizeVisibleCards(root, lang) {
+    if (!root || lang === "en") return;
+    const cards = [...root.querySelectorAll(".recipe-card")];
+    const items = [];
+    cards.forEach(card => {
+      const title = card.querySelector("h3");
+      const desc = card.querySelector(".desc");
+      if (title) items.push({ el: title, text: title.textContent });
+      if (desc) items.push({ el: desc, text: desc.textContent });
+    });
+    const translated = await translateMany(items.map(x => x.text), lang);
+    items.forEach((x, i) => { if (translated[i]) x.el.textContent = translated[i]; });
+  }
+
   window.tinyTiffinLocalizeRecipe = localizeRecipe;
+  window.tinyTiffinLocalizeVisibleCards = localizeVisibleCards;
   window.tinyTiffinLocalizeAIHub = localizeAIHub;
 })();

@@ -1,54 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tiny Tiffin — Admin</title>
-<meta name="robots" content="noindex">
-<link rel="icon" type="image/png" href="icon-192.png">
-<link rel="stylesheet" href="styles.css">
-<style>
-  .admin-login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
-  .admin-login-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-lift);padding:32px;max-width:380px;width:100%;text-align:left}
-  .admin-login-card .desc{color:var(--ink-soft);margin:10px 0 16px}
-  .admin-login-card .hint{font-size:.75rem;color:var(--ink-soft);margin-top:14px;line-height:1.5}
-  .admin-login-card .hint code{background:var(--mist);padding:1px 5px;border-radius:4px}
-  .admin-login-card .link-btn{display:inline-block;margin-top:16px}
-  .admin-header{position:sticky;top:0;z-index:20;background:rgba(237,241,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--mist-2);display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
-  .admin-main{padding:26px 0 60px}
-  .draft-banner{background:#FBF3E3;border:1px solid var(--turmeric);color:var(--turmeric-dark);border-radius:var(--radius-sm);padding:12px 16px;font-size:.88rem;margin-bottom:20px}
-  .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:24px}
-  .stat-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;text-align:center}
-  .stat-num{font-size:1.6rem;color:var(--masala);font-weight:600}
-  .stat-lbl{font-size:.78rem;color:var(--ink-soft);margin-top:4px}
-  .admin-toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-  .toolbar-right{display:flex;gap:8px;flex-wrap:wrap}
-  .admin-table-wrap{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow-x:auto}
-  table.admin-table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:640px}
-  table.admin-table th{text-align:left;padding:12px 14px;background:var(--mist);color:var(--ink-soft);font-size:.75rem;text-transform:uppercase;letter-spacing:.04em}
-  table.admin-table td{padding:12px 14px;border-top:1px solid var(--mist-2);vertical-align:middle}
-  .row-actions{white-space:nowrap}
-  .row-actions button{background:none;border:none;font-size:1rem;padding:4px 6px}
-  .admin-form{display:flex;flex-direction:column;gap:14px}
-  .admin-form .form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-  .admin-form label{display:flex;flex-direction:column;gap:5px;font-size:.8rem;font-weight:600;color:var(--ink-soft)}
-  .admin-form input[type=text], .admin-form input[type=number], .admin-form input[type=password], .admin-form select, .admin-form textarea{
-    font-family:'Work Sans';padding:8px 10px;border-radius:var(--radius-sm);border:1.5px solid var(--mist-2);background:var(--mist);color:var(--ink);font-weight:400;font-size:.88rem;
-  }
-  .check-chip{display:inline-flex;align-items:center;gap:5px;background:var(--mist);border-radius:999px;padding:6px 12px;font-size:.8rem;font-weight:600;color:var(--ink-soft)}
-  .form-group{display:flex;flex-direction:column;gap:6px}
-  .release-note-panel{background:var(--mist);border:1px solid var(--mist-2);border-radius:var(--radius);padding:16px;margin-bottom:24px}
-  .release-note-panel h3{margin:0 0 8px;color:var(--masala)}
-  .release-note-panel p{margin:5px 0;color:var(--ink-soft)}
-</style>
-</head>
-<body>
-<div id="admin-app"></div>
-
-<script src="recipes.js"></script>
-<script src="i18n.js"></script>
-<script src="site-config.js"></script>
-<script src="store.js"></script>
-<script src="admin.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tiny Tiffin — Admin</title><link rel="stylesheet" href="styles.css"><style>body{padding:24px}.admin-wrap{max-width:760px;margin:auto}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat{padding:22px;border-radius:18px;background:var(--card,#fff);box-shadow:0 8px 24px #0001}.stat strong{display:block;font-size:2rem;color:var(--masala)}.muted{color:var(--ink-soft)}@media(max-width:600px){.stats{grid-template-columns:1fr}}</style></head><body><main class="admin-wrap"><p><a href="index.html">← Tiny Tiffin</a></p><h1>Admin visitor analytics</h1><p class="muted">Aggregate visitor counts. Country classification is based on an approximate IP-country lookup and may not be exact.</p><section class="stats"><div class="stat"><span>Total visitors</span><strong id="total">—</strong></div><div class="stat"><span>India</span><strong id="india">—</strong></div><div class="stat"><span>International</span><strong id="international">—</strong></div></section><p id="status" class="muted" style="margin-top:18px">Loading analytics…</p><h3>Local fallback</h3><p class="muted">If the remote counter service is unavailable, this device's local visit count is shown below.</p><pre id="local" style="white-space:pre-wrap"></pre></main><script src="site-config.js"></script><script>
+(async function(){
+ const ns=(window.TINY_TIFFIN_CONFIG&&window.TINY_TIFFIN_CONFIG.analyticsNamespace)||'tiny-tiffin-v1';
+ const base='https://api.counterapi.dev/v1/'+encodeURIComponent(ns);
+ const ids=['total','india','international'];
+ try{
+   const vals=await Promise.all(ids.map(async id=>{const r=await fetch(base+'/'+id); if(!r.ok) throw new Error('analytics unavailable'); const j=await r.json(); return j.count ?? j.value ?? 0;}));
+   ids.forEach((id,i)=>document.getElementById(id).textContent=Number(vals[i]).toLocaleString());
+   document.getElementById('status').textContent='Global aggregate counters loaded.';
+ }catch(e){document.getElementById('status').textContent='Remote analytics unavailable. Showing local fallback where available.';}
+ try{document.getElementById('local').textContent=JSON.stringify(JSON.parse(localStorage.getItem('tt_local_visit_stats')||'{}'),null,2);}catch(e){document.getElementById('local').textContent='No local data available.';}
+})();
+</script></body></html>

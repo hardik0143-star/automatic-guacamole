@@ -302,6 +302,7 @@
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     hydrateRecipeImages(root);
+    if (window.tinyTiffinLocalizeVisibleCards) window.tinyTiffinLocalizeVisibleCards(root, state.lang);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
     });
@@ -313,7 +314,7 @@
     const tabs = [
       ["find", t("navFind")], ["match", t("navMatch")], ["planner", t("navPlanner")],
       ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`],
-      ["shop", "🛒 Shop Ingredients"], ["ai", "🤖 Tiny Tiffin AI"]
+      ["shop", "🛒 " + t("shopIngredients")], ["ai", "🤖 " + t("aiAssistant")]
     ];
     return `
       <header class="app-header">
@@ -398,12 +399,12 @@
       <section class="hero">
         <h1 class="display">${t("heroTitle")}</h1>
         <p class="sub">${t("heroSub")}</p>
-        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
-        <div class="mood-picker" aria-label="Quick tiffin ideas">
-          <span class="mood-label">Choose a tiffin mood:</span>
-          <button class="mood-chip" data-mood="quick">⚡ Quick & Easy</button>
-          <button class="mood-chip" data-mood="protein">💪 Protein Power</button>
-          <button class="mood-chip" data-mood="colourful">🌈 Colourful & Nutritious</button>
+        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ ${t("surpriseRecipe")}</button>
+        <div class="mood-picker" aria-label="${t("tiffinMood")}">
+          <span class="mood-label">${t("tiffinMood")}</span>
+          <button class="mood-chip" data-mood="quick">⚡ ${t("quickEasy")}</button>
+          <button class="mood-chip" data-mood="protein">💪 ${t("proteinPower")}</button>
+          <button class="mood-chip" data-mood="colourful">🌈 ${t("colourfulNutritious")}</button>
         </div>
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
@@ -416,16 +417,16 @@
 
       <section class="shopping-cta">
         <div>
-          <h3>🛒 Shop Ingredients</h3>
-          <p>Find products and ingredients for your planned recipes on Amazon.</p>
+          <h3>🛒 ${t("shopIngredients")}</h3>
+          <p>${t("shopIngredientsDesc")}</p>
         </div>
         <div class="shopping-cta-actions">
           <a class="btn btn-secondary shopping-compact-btn"
              href="https://www.amazon.in/?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
-             target="_blank" rel="nofollow sponsored noopener"><span class="amazon-button-icon" aria-hidden="true">🛒</span> Shop on Amazon</a>
+             target="_blank" rel="nofollow sponsored noopener"><span class="amazon-button-icon" aria-hidden="true">🛒</span> ${t("shopOnAmazon")}</a>
           <a class="btn btn-secondary shopping-compact-btn"
              href="${AMAZON_FRESH_BASE}?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
-             target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> Shop on Amazon Fresh</a>
+             target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> ${t("shopOnAmazonFresh")}</a>
         </div>
       </section>
 
@@ -931,8 +932,8 @@
         <div class="affiliate-heading">
           <span>🛒</span>
           <div>
-            <h3>Shop Ingredients on Amazon Fresh</h3>
-            <p>Find ingredients for your Tiny Tiffin recipes directly in Amazon Fresh. Availability and delivery options depend on your location.</p>
+            <h3>${t("shopIngredientsAmazonFresh")}</h3>
+            <p>${t("shopIngredientsAmazonFreshDesc")}</p>
           </div>
         </div>
         <div class="affiliate-list">
@@ -941,7 +942,7 @@
             const url = amazonSearchUrl(query);
             return `<div class="affiliate-item">
               <div><span class="affiliate-ingredient">${escapeAttr(item.name)}</span><small>${ingredientCategory(item.name)}${item.count > 1 ? ` · ×${item.count}` : ""}</small></div>
-              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> Shop on Amazon Fresh</a>
+              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> ${t("shopOnAmazonFresh")}</a>
             </div>`;
           }).join("")}
         </div>
@@ -1254,18 +1255,31 @@
      This is intentionally privacy-friendly and device-local. A static app cannot
      provide trustworthy global India/international counts without a backend or
      analytics provider. */
-  function recordLocalVisit() {
+  async function recordLocalVisit() {
     try {
       const key = "tt_local_visit_stats";
       const stats = JSON.parse(localStorage.getItem(key) || '{"total":0,"india":0,"international":0}');
       const sessionKey = "tt_visit_session_recorded";
       if (sessionStorage.getItem(sessionKey)) return;
-      const isIndia = /(^|\.)in$/i.test(Intl.DateTimeFormat().resolvedOptions().timeZone || "") ||
-        /^hi(-|$)|^gu(-|$)/i.test(navigator.language || "");
+      let country = "unknown";
+      try {
+        const response = await fetch("https://ipapi.co/json/", { cache: "no-store" });
+        if (response.ok) { const geo = await response.json(); country = String(geo.country_code || "").toUpperCase(); }
+      } catch (_) {}
+      const isIndia = country === "IN" || /(^|\.)in$/i.test(Intl.DateTimeFormat().resolvedOptions().timeZone || "") || /^hi(-|$)|^gu(-|$)/i.test(navigator.language || "");
       stats.total += 1;
       stats[isIndia ? "india" : "international"] += 1;
+      stats.lastVisitAt = new Date().toISOString();
       localStorage.setItem(key, JSON.stringify(stats));
       sessionStorage.setItem(sessionKey, "1");
+      // Global counters: the public CounterAPI service is used only for aggregate counts.
+      // If it is unavailable, the local device counters still remain available in Admin.
+      const ns = (window.TINY_TIFFIN_CONFIG && window.TINY_TIFFIN_CONFIG.analyticsNamespace) || "tiny-tiffin-v1";
+      const base = `https://api.counterapi.dev/v1/${encodeURIComponent(ns)}`;
+      await Promise.allSettled([
+        fetch(`${base}/total/up`),
+        fetch(`${base}/${isIndia ? "india" : "international"}/up`)
+      ]);
     } catch (e) {}
   }
 

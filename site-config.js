@@ -2,9 +2,10 @@
    Edit these values directly. Nothing here requires touching app.js. */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v1.4",
+  version: "v1.0",
   releaseDate: "July 2026",
   amazonAffiliateEnabled: true,
+  analyticsNamespace: "tiny-tiffin-v1",
   amazonAssociateTag: "tinytiffin-21",
   releaseNotes: "Amazon Fresh affiliate shopping update: updated all shopping buttons to be labelled Amazon Fresh and route users directly to the Amazon Fresh grocery destination using the configured Associates tag, with transparent messaging that availability and delivery options depend on the shopper’s location. Weekly planner shopping remains supported. Version v1.5. Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months and 60 additional age-specific recipes: 30 for 6–12 months and 30 for 1–2 years, including fruit purées, soft fruit combinations, toddler meals and finger-food ideas. Version numbering reset to v1.0 as the new AI-enabled product baseline.",
   developer: {
@@ -20,7 +21,9 @@ window.TINY_TIFFIN_CONFIG = {
       "Nutrition-focused recipe discovery",
       "Weekly tiffin planning",
       "Filters for age, time, cuisine and allergens",
-      "Multi-language support: Indian and international languages",
+      "Multi-language support: Indian and international languages with dynamic recipe translation",
+      "Recipe content can be translated into the selected language, including titles, descriptions, ingredients, steps, tips and allergens",
+      "Visitor analytics with total, India and international aggregate counts",
       "Recipe images and nutrition information",
       "Healthy recipe library with 305+ Indian and continental food ideas, including 82 recipes for ages 6–12 months and 65 recipes for ages 1–2 years",
       "PWA installation and offline support",
