@@ -8749,7 +8749,7 @@ window.TINY_TIFFIN_RECIPES = [
     "emoji": "🥦",
     "images": [],
     "name": {
-      "en": "Broccoli Paneer Cheese Bites"
+      "en": "Broccoli Paneer Mozzarella Bites"
     },
     "desc": {
       "en": "Soft baked bites combining broccoli, paneer and melted mozzarella for a colourful protein-rich tiffin."
@@ -10105,7 +10105,7 @@ window.TINY_TIFFIN_RECIPES = [
     "hidden": false
   },
   {
-    "id": "avocado-paneer-sandwich",
+    "id": "avocado-paneer-rainbow-sandwich",
     "emoji": "🥑",
     "images": [],
     "name": {
@@ -11641,7 +11641,7 @@ window.TINY_TIFFIN_RECIPES = [
     "hidden": false
   },
   {
-    "id": "idli",
+    "id": "soft-idli",
     "emoji": "⚪",
     "images": [],
     "name": {
