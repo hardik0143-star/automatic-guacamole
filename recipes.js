@@ -20368,5 +20368,14160 @@ window.TINY_TIFFIN_RECIPES = [
       "count": 1
     },
     "hidden": false
+  },
+  {
+    "id": "rainbow-paneer-bowl",
+    "emoji": "🥘",
+    "images": [],
+    "name": {
+      "en": "Rainbow Paneer Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "150 g paneer, cubed",
+      "1/2 cup diced carrot and bell pepper",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "1/4 tsp cumin",
+      "mild spice mix"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 242,
+      "protein_g": 7.1,
+      "iron_mg": 1.9,
+      "calcium_mg": 59,
+      "fiber_g": 3.1,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-paneer-bites",
+    "emoji": "🥘",
+    "images": [],
+    "name": {
+      "en": "Cheesy Paneer Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "150 g paneer, cubed",
+      "1/2 cup diced carrot and bell pepper",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "1/4 tsp cumin",
+      "mild spice mix"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 242,
+      "protein_g": 7.1,
+      "iron_mg": 1.9,
+      "calcium_mg": 59,
+      "fiber_g": 3.1,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-paneer-rice",
+    "emoji": "🥘",
+    "images": [],
+    "name": {
+      "en": "Coconut Paneer Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "150 g paneer, cubed",
+      "1/2 cup diced carrot and bell pepper",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "1/4 tsp cumin",
+      "mild spice mix"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 242,
+      "protein_g": 7.1,
+      "iron_mg": 1.9,
+      "calcium_mg": 59,
+      "fiber_g": 3.1,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-paneer-wrap",
+    "emoji": "🥘",
+    "images": [],
+    "name": {
+      "en": "Tandoori Paneer Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "150 g paneer, cubed",
+      "1/2 cup diced carrot and bell pepper",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "1/4 tsp cumin",
+      "mild spice mix"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 242,
+      "protein_g": 7.1,
+      "iron_mg": 1.9,
+      "calcium_mg": 59,
+      "fiber_g": 3.1,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-paneer-chaat",
+    "emoji": "🥘",
+    "images": [],
+    "name": {
+      "en": "Lemon Paneer Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "150 g paneer, cubed",
+      "1/2 cup diced carrot and bell pepper",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "1/4 tsp cumin",
+      "mild spice mix"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 242,
+      "protein_g": 7.1,
+      "iron_mg": 1.9,
+      "calcium_mg": 59,
+      "fiber_g": 3.1,
+      "vitaminC_mg": 18
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-moong-bowl",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Rainbow Moong Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup cooked moong dal",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup finely diced vegetables",
+      "1 tsp ghee",
+      "pinch cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-moong-bites",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Cheesy Moong Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup cooked moong dal",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup finely diced vegetables",
+      "1 tsp ghee",
+      "pinch cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-moong-rice",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Coconut Moong Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup cooked moong dal",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup finely diced vegetables",
+      "1 tsp ghee",
+      "pinch cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-moong-wrap",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Tandoori Moong Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup cooked moong dal",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup finely diced vegetables",
+      "1 tsp ghee",
+      "pinch cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-moong-chaat",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Lemon Moong Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1/2 cup cooked moong dal",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup finely diced vegetables",
+      "1 tsp ghee",
+      "pinch cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-chickpea-bowl",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Rainbow Chickpea Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup cooked chickpeas, mashed",
+      "1/2 cup grated carrot or beetroot",
+      "1 tbsp yogurt",
+      "1 tsp lemon juice",
+      "1/4 tsp cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-chickpea-bites",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Cheesy Chickpea Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup cooked chickpeas, mashed",
+      "1/2 cup grated carrot or beetroot",
+      "1 tbsp yogurt",
+      "1 tsp lemon juice",
+      "1/4 tsp cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-chickpea-rice",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Coconut Chickpea Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup cooked chickpeas, mashed",
+      "1/2 cup grated carrot or beetroot",
+      "1 tbsp yogurt",
+      "1 tsp lemon juice",
+      "1/4 tsp cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-chickpea-wrap",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Tandoori Chickpea Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup cooked chickpeas, mashed",
+      "1/2 cup grated carrot or beetroot",
+      "1 tbsp yogurt",
+      "1 tsp lemon juice",
+      "1/4 tsp cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-chickpea-chaat",
+    "emoji": "🫘",
+    "images": [],
+    "name": {
+      "en": "Lemon Chickpea Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup cooked chickpeas, mashed",
+      "1/2 cup grated carrot or beetroot",
+      "1 tbsp yogurt",
+      "1 tsp lemon juice",
+      "1/4 tsp cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-millet-bowl",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Rainbow Millet Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked millet",
+      "1/2 cup mixed vegetables",
+      "1/4 cup paneer or peas",
+      "1 tsp ghee",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-millet-bites",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Cheesy Millet Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked millet",
+      "1/2 cup mixed vegetables",
+      "1/4 cup paneer or peas",
+      "1 tsp ghee",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-millet-rice",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Coconut Millet Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked millet",
+      "1/2 cup mixed vegetables",
+      "1/4 cup paneer or peas",
+      "1 tsp ghee",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-millet-wrap",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Tandoori Millet Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked millet",
+      "1/2 cup mixed vegetables",
+      "1/4 cup paneer or peas",
+      "1 tsp ghee",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-millet-chaat",
+    "emoji": "🌾",
+    "images": [],
+    "name": {
+      "en": "Lemon Millet Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked millet",
+      "1/2 cup mixed vegetables",
+      "1/4 cup paneer or peas",
+      "1 tsp ghee",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-quinoa-bowl",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Rainbow Quinoa Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup sweet corn and peas",
+      "1/4 cup paneer",
+      "1 tsp olive oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-quinoa-bites",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Cheesy Quinoa Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup sweet corn and peas",
+      "1/4 cup paneer",
+      "1 tsp olive oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-quinoa-rice",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Coconut Quinoa Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup sweet corn and peas",
+      "1/4 cup paneer",
+      "1 tsp olive oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-quinoa-wrap",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Tandoori Quinoa Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup sweet corn and peas",
+      "1/4 cup paneer",
+      "1 tsp olive oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-quinoa-chaat",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Lemon Quinoa Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup sweet corn and peas",
+      "1/4 cup paneer",
+      "1 tsp olive oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-oats-bowl",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Rainbow Oats Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup quick oats",
+      "1/2 cup grated vegetables",
+      "1/4 cup yogurt or paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-oats-bites",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Cheesy Oats Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup quick oats",
+      "1/2 cup grated vegetables",
+      "1/4 cup yogurt or paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-oats-rice",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Coconut Oats Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup quick oats",
+      "1/2 cup grated vegetables",
+      "1/4 cup yogurt or paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-oats-wrap",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Tandoori Oats Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup quick oats",
+      "1/2 cup grated vegetables",
+      "1/4 cup yogurt or paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-oats-chaat",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Lemon Oats Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup quick oats",
+      "1/2 cup grated vegetables",
+      "1/4 cup yogurt or paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-poha-bowl",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Rainbow Poha Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup poha",
+      "1/2 cup colourful vegetables",
+      "2 tbsp peas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-poha-bites",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Cheesy Poha Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup poha",
+      "1/2 cup colourful vegetables",
+      "2 tbsp peas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-poha-rice",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Coconut Poha Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup poha",
+      "1/2 cup colourful vegetables",
+      "2 tbsp peas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-poha-wrap",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Tandoori Poha Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup poha",
+      "1/2 cup colourful vegetables",
+      "2 tbsp peas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-poha-chaat",
+    "emoji": "🍚",
+    "images": [],
+    "name": {
+      "en": "Lemon Poha Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup poha",
+      "1/2 cup colourful vegetables",
+      "2 tbsp peas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-dosa-bowl",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Rainbow Dosa Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "1/2 cup grated vegetables",
+      "1/4 cup paneer or cheese",
+      "1 tsp oil",
+      "mild chutney"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-dosa-bites",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Cheesy Dosa Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "1/2 cup grated vegetables",
+      "1/4 cup paneer or cheese",
+      "1 tsp oil",
+      "mild chutney"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-dosa-rice",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Coconut Dosa Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "1/2 cup grated vegetables",
+      "1/4 cup paneer or cheese",
+      "1 tsp oil",
+      "mild chutney"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-dosa-wrap",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Tandoori Dosa Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "1/2 cup grated vegetables",
+      "1/4 cup paneer or cheese",
+      "1 tsp oil",
+      "mild chutney"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-dosa-chaat",
+    "emoji": "🥞",
+    "images": [],
+    "name": {
+      "en": "Lemon Dosa Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup dosa batter",
+      "1/2 cup grated vegetables",
+      "1/4 cup paneer or cheese",
+      "1 tsp oil",
+      "mild chutney"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-besan-bowl",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Rainbow Besan Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup besan",
+      "1/2 cup grated vegetables",
+      "2 tbsp yogurt",
+      "1/4 tsp cumin",
+      "water as needed"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-besan-bites",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Cheesy Besan Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup besan",
+      "1/2 cup grated vegetables",
+      "2 tbsp yogurt",
+      "1/4 tsp cumin",
+      "water as needed"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-besan-rice",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Coconut Besan Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup besan",
+      "1/2 cup grated vegetables",
+      "2 tbsp yogurt",
+      "1/4 tsp cumin",
+      "water as needed"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-besan-wrap",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Tandoori Besan Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup besan",
+      "1/2 cup grated vegetables",
+      "2 tbsp yogurt",
+      "1/4 tsp cumin",
+      "water as needed"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-besan-chaat",
+    "emoji": "🫓",
+    "images": [],
+    "name": {
+      "en": "Lemon Besan Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "3/4 cup besan",
+      "1/2 cup grated vegetables",
+      "2 tbsp yogurt",
+      "1/4 tsp cumin",
+      "water as needed"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-sweet-potato-bowl",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Rainbow Sweet Potato Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 large cooked sweet potato",
+      "1/2 cup cooked chickpeas or paneer",
+      "1/4 cup corn",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-sweet-potato-bites",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Cheesy Sweet Potato Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 large cooked sweet potato",
+      "1/2 cup cooked chickpeas or paneer",
+      "1/4 cup corn",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-sweet-potato-rice",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Coconut Sweet Potato Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 large cooked sweet potato",
+      "1/2 cup cooked chickpeas or paneer",
+      "1/4 cup corn",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-sweet-potato-wrap",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Tandoori Sweet Potato Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 large cooked sweet potato",
+      "1/2 cup cooked chickpeas or paneer",
+      "1/4 cup corn",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-sweet-potato-chaat",
+    "emoji": "🍠",
+    "images": [],
+    "name": {
+      "en": "Lemon Sweet Potato Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 large cooked sweet potato",
+      "1/2 cup cooked chickpeas or paneer",
+      "1/4 cup corn",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-broccoli-bowl",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Rainbow Broccoli Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup finely chopped broccoli",
+      "1/2 cup cooked rice or quinoa",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-broccoli-bites",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Cheesy Broccoli Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup finely chopped broccoli",
+      "1/2 cup cooked rice or quinoa",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-broccoli-rice",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Coconut Broccoli Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup finely chopped broccoli",
+      "1/2 cup cooked rice or quinoa",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-broccoli-wrap",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Tandoori Broccoli Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup finely chopped broccoli",
+      "1/2 cup cooked rice or quinoa",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-broccoli-chaat",
+    "emoji": "🥦",
+    "images": [],
+    "name": {
+      "en": "Lemon Broccoli Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup finely chopped broccoli",
+      "1/2 cup cooked rice or quinoa",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-mushroom-bowl",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Rainbow Mushroom Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup finely sliced mushrooms",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "pepper"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-mushroom-bites",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Cheesy Mushroom Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup finely sliced mushrooms",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "pepper"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-mushroom-rice",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Coconut Mushroom Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup finely sliced mushrooms",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "pepper"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-mushroom-wrap",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Tandoori Mushroom Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup finely sliced mushrooms",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "pepper"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-mushroom-chaat",
+    "emoji": "🍄",
+    "images": [],
+    "name": {
+      "en": "Lemon Mushroom Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup finely sliced mushrooms",
+      "1/2 cup cooked rice or millet",
+      "1/4 cup peas",
+      "1 tsp oil",
+      "pepper"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-zucchini-bowl",
+    "emoji": "🥒",
+    "images": [],
+    "name": {
+      "en": "Rainbow Zucchini Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated zucchini",
+      "1/2 cup oats or besan",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-zucchini-bites",
+    "emoji": "🥒",
+    "images": [],
+    "name": {
+      "en": "Cheesy Zucchini Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated zucchini",
+      "1/2 cup oats or besan",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-zucchini-rice",
+    "emoji": "🥒",
+    "images": [],
+    "name": {
+      "en": "Coconut Zucchini Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated zucchini",
+      "1/2 cup oats or besan",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-zucchini-wrap",
+    "emoji": "🥒",
+    "images": [],
+    "name": {
+      "en": "Tandoori Zucchini Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated zucchini",
+      "1/2 cup oats or besan",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-zucchini-chaat",
+    "emoji": "🥒",
+    "images": [],
+    "name": {
+      "en": "Lemon Zucchini Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated zucchini",
+      "1/2 cup oats or besan",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "herbs"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-sprouted-moong-bowl",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Rainbow Sprouted Moong Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup lightly steamed sprouted moong",
+      "1/2 cup corn and carrot",
+      "1/4 cup paneer",
+      "lemon juice",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-sprouted-moong-bites",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Cheesy Sprouted Moong Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup lightly steamed sprouted moong",
+      "1/2 cup corn and carrot",
+      "1/4 cup paneer",
+      "lemon juice",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-sprouted-moong-rice",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Coconut Sprouted Moong Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup lightly steamed sprouted moong",
+      "1/2 cup corn and carrot",
+      "1/4 cup paneer",
+      "lemon juice",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-sprouted-moong-wrap",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Tandoori Sprouted Moong Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup lightly steamed sprouted moong",
+      "1/2 cup corn and carrot",
+      "1/4 cup paneer",
+      "lemon juice",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-sprouted-moong-chaat",
+    "emoji": "🌱",
+    "images": [],
+    "name": {
+      "en": "Lemon Sprouted Moong Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup lightly steamed sprouted moong",
+      "1/2 cup corn and carrot",
+      "1/4 cup paneer",
+      "lemon juice",
+      "1 tsp oil"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-lentil-bowl",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Rainbow Lentil Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "3/4 cup cooked lentils",
+      "1/2 cup vegetables",
+      "1/2 cup cooked rice or quinoa",
+      "1 tsp ghee",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-lentil-bites",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Cheesy Lentil Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "3/4 cup cooked lentils",
+      "1/2 cup vegetables",
+      "1/2 cup cooked rice or quinoa",
+      "1 tsp ghee",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-lentil-rice",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Coconut Lentil Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "3/4 cup cooked lentils",
+      "1/2 cup vegetables",
+      "1/2 cup cooked rice or quinoa",
+      "1 tsp ghee",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-lentil-wrap",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Tandoori Lentil Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "3/4 cup cooked lentils",
+      "1/2 cup vegetables",
+      "1/2 cup cooked rice or quinoa",
+      "1 tsp ghee",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-lentil-chaat",
+    "emoji": "🍲",
+    "images": [],
+    "name": {
+      "en": "Lemon Lentil Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "3/4 cup cooked lentils",
+      "1/2 cup vegetables",
+      "1/2 cup cooked rice or quinoa",
+      "1 tsp ghee",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-corn-bowl",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Rainbow Corn Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sweet corn",
+      "1/2 cup paneer or chickpeas",
+      "1/4 cup bell pepper",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-corn-bites",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Cheesy Corn Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sweet corn",
+      "1/2 cup paneer or chickpeas",
+      "1/4 cup bell pepper",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-corn-rice",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Coconut Corn Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sweet corn",
+      "1/2 cup paneer or chickpeas",
+      "1/4 cup bell pepper",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-corn-wrap",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Tandoori Corn Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sweet corn",
+      "1/2 cup paneer or chickpeas",
+      "1/4 cup bell pepper",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-corn-chaat",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Lemon Corn Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup sweet corn",
+      "1/2 cup paneer or chickpeas",
+      "1/4 cup bell pepper",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-beetroot-bowl",
+    "emoji": "🫜",
+    "images": [],
+    "name": {
+      "en": "Rainbow Beetroot Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup grated beetroot",
+      "1/2 cup oats or rice",
+      "1/4 cup yogurt",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-beetroot-bites",
+    "emoji": "🫜",
+    "images": [],
+    "name": {
+      "en": "Cheesy Beetroot Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup grated beetroot",
+      "1/2 cup oats or rice",
+      "1/4 cup yogurt",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-beetroot-rice",
+    "emoji": "🫜",
+    "images": [],
+    "name": {
+      "en": "Coconut Beetroot Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup grated beetroot",
+      "1/2 cup oats or rice",
+      "1/4 cup yogurt",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-beetroot-wrap",
+    "emoji": "🫜",
+    "images": [],
+    "name": {
+      "en": "Tandoori Beetroot Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup grated beetroot",
+      "1/2 cup oats or rice",
+      "1/4 cup yogurt",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-beetroot-chaat",
+    "emoji": "🫜",
+    "images": [],
+    "name": {
+      "en": "Lemon Beetroot Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup grated beetroot",
+      "1/2 cup oats or rice",
+      "1/4 cup yogurt",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-carrot-bowl",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Rainbow Carrot Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated carrot",
+      "1/2 cup oats or millet",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-carrot-bites",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Cheesy Carrot Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated carrot",
+      "1/2 cup oats or millet",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-carrot-rice",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Coconut Carrot Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated carrot",
+      "1/2 cup oats or millet",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-carrot-wrap",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Tandoori Carrot Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated carrot",
+      "1/2 cup oats or millet",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-carrot-chaat",
+    "emoji": "🥕",
+    "images": [],
+    "name": {
+      "en": "Lemon Carrot Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup grated carrot",
+      "1/2 cup oats or millet",
+      "1/4 cup paneer",
+      "1 tsp oil",
+      "cumin"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-spinach-bowl",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Rainbow Spinach Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup chopped spinach",
+      "1/2 cup paneer or chickpeas",
+      "1/2 cup cooked grain",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-spinach-bites",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Cheesy Spinach Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup chopped spinach",
+      "1/2 cup paneer or chickpeas",
+      "1/2 cup cooked grain",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-spinach-rice",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Coconut Spinach Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup chopped spinach",
+      "1/2 cup paneer or chickpeas",
+      "1/2 cup cooked grain",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-spinach-wrap",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Tandoori Spinach Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup chopped spinach",
+      "1/2 cup paneer or chickpeas",
+      "1/2 cup cooked grain",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-spinach-chaat",
+    "emoji": "🥬",
+    "images": [],
+    "name": {
+      "en": "Lemon Spinach Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup chopped spinach",
+      "1/2 cup paneer or chickpeas",
+      "1/2 cup cooked grain",
+      "1 tsp oil",
+      "mild spices"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-bell-pepper-bowl",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Rainbow Bell Pepper Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "breakfast",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup diced bell pepper",
+      "1/2 cup cooked grain",
+      "1/4 cup paneer or chickpeas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-bell-pepper-bites",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Cheesy Bell Pepper Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "calcium"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup diced bell pepper",
+      "1/2 cup cooked grain",
+      "1/4 cup paneer or chickpeas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "coconut-bell-pepper-rice",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Coconut Bell Pepper Rice"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup diced bell pepper",
+      "1/2 cup cooked grain",
+      "1/4 cup paneer or chickpeas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tandoori-bell-pepper-wrap",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Tandoori Bell Pepper Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup diced bell pepper",
+      "1/2 cup cooked grain",
+      "1/4 cup paneer or chickpeas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemon-bell-pepper-chaat",
+    "emoji": "🫑",
+    "images": [],
+    "name": {
+      "en": "Lemon Bell Pepper Chaat"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly indian recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "snack",
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "immunity",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup diced bell pepper",
+      "1/2 cup cooked grain",
+      "1/4 cup paneer or chickpeas",
+      "1 tsp oil",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare and chop the vegetables into small kid-friendly pieces.",
+      "Cook the main grain, pulse or vegetable until tender.",
+      "Combine with the remaining ingredients and mild seasoning.",
+      "Cook for 5–8 minutes until flavours come together.",
+      "Cool slightly, portion into colourful lunchbox sections and serve."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-mediterranean-veggie-bowl",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Rainbow Mediterranean Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-mediterranean-veggie-pasta",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Creamy Mediterranean Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-mediterranean-veggie-wrap",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Crunchy Mediterranean Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-mediterranean-veggie-bites",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Mini Mediterranean Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-mediterranean-veggie-plate",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Herby Mediterranean Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-mediterranean-veggie-cups",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Cheesy Mediterranean Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-mediterranean-veggie-quinoa",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Lemony Mediterranean Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-mediterranean-veggie-pasta",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Tomato Mediterranean Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-mediterranean-veggie-toast",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Mediterranean Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-mediterranean-veggie-bowl",
+    "emoji": "🥗",
+    "images": [],
+    "name": {
+      "en": "Garden Mediterranean Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-italian-veggie-bowl",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Rainbow Italian Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-italian-veggie-pasta",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Creamy Italian Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-italian-veggie-wrap",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Crunchy Italian Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-italian-veggie-bites",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Mini Italian Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-italian-veggie-plate",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Herby Italian Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-italian-veggie-cups",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Cheesy Italian Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-italian-veggie-quinoa",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Lemony Italian Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-italian-veggie-pasta",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Tomato Italian Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-italian-veggie-toast",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Italian Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-italian-veggie-bowl",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Garden Italian Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-mexican-veggie-bowl",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Rainbow Mexican Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-mexican-veggie-pasta",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Creamy Mexican Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-mexican-veggie-wrap",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Crunchy Mexican Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-mexican-veggie-bites",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Mini Mexican Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-mexican-veggie-plate",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Herby Mexican Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-mexican-veggie-cups",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Cheesy Mexican Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-mexican-veggie-quinoa",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Lemony Mexican Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-mexican-veggie-pasta",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Tomato Mexican Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-mexican-veggie-toast",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Mexican Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-mexican-veggie-bowl",
+    "emoji": "🌮",
+    "images": [],
+    "name": {
+      "en": "Garden Mexican Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-greek-veggie-bowl",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Rainbow Greek Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-greek-veggie-pasta",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Creamy Greek Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-greek-veggie-wrap",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Crunchy Greek Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-greek-veggie-bites",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Mini Greek Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-greek-veggie-plate",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Herby Greek Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-greek-veggie-cups",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Cheesy Greek Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-greek-veggie-quinoa",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Lemony Greek Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-greek-veggie-pasta",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Tomato Greek Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-greek-veggie-toast",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Greek Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-greek-veggie-bowl",
+    "emoji": "🥙",
+    "images": [],
+    "name": {
+      "en": "Garden Greek Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-japanese-inspired-veggie-bowl",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Rainbow Japanese-inspired Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-japanese-inspired-veggie-pasta",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Creamy Japanese-inspired Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-japanese-inspired-veggie-wrap",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Crunchy Japanese-inspired Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-japanese-inspired-veggie-bites",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Mini Japanese-inspired Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-japanese-inspired-veggie-plate",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Herby Japanese-inspired Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-japanese-inspired-veggie-cups",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Cheesy Japanese-inspired Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-japanese-inspired-veggie-quinoa",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Lemony Japanese-inspired Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-japanese-inspired-veggie-pasta",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Tomato Japanese-inspired Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-japanese-inspired-veggie-toast",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Japanese-inspired Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-japanese-inspired-veggie-bowl",
+    "emoji": "🍙",
+    "images": [],
+    "name": {
+      "en": "Garden Japanese-inspired Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-middle-eastern-veggie-bowl",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Rainbow Middle Eastern Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-middle-eastern-veggie-pasta",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Creamy Middle Eastern Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-middle-eastern-veggie-wrap",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Crunchy Middle Eastern Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-middle-eastern-veggie-bites",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Mini Middle Eastern Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-middle-eastern-veggie-plate",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Herby Middle Eastern Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-middle-eastern-veggie-cups",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Cheesy Middle Eastern Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-middle-eastern-veggie-quinoa",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Lemony Middle Eastern Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-middle-eastern-veggie-pasta",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Tomato Middle Eastern Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-middle-eastern-veggie-toast",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Middle Eastern Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-middle-eastern-veggie-bowl",
+    "emoji": "🧆",
+    "images": [],
+    "name": {
+      "en": "Garden Middle Eastern Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-french-inspired-veggie-bowl",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Rainbow French-inspired Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-french-inspired-veggie-pasta",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Creamy French-inspired Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-french-inspired-veggie-wrap",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Crunchy French-inspired Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-french-inspired-veggie-bites",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Mini French-inspired Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-french-inspired-veggie-plate",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Herby French-inspired Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-french-inspired-veggie-cups",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Cheesy French-inspired Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-french-inspired-veggie-quinoa",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Lemony French-inspired Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-french-inspired-veggie-pasta",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Tomato French-inspired Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-french-inspired-veggie-toast",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato French-inspired Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-french-inspired-veggie-bowl",
+    "emoji": "🥐",
+    "images": [],
+    "name": {
+      "en": "Garden French-inspired Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-american-style-veggie-bowl",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Rainbow American-style Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-american-style-veggie-pasta",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Creamy American-style Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-american-style-veggie-wrap",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Crunchy American-style Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-american-style-veggie-bites",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Mini American-style Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-american-style-veggie-plate",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Herby American-style Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-american-style-veggie-cups",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Cheesy American-style Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-american-style-veggie-quinoa",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Lemony American-style Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-american-style-veggie-pasta",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Tomato American-style Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-american-style-veggie-toast",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato American-style Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-american-style-veggie-bowl",
+    "emoji": "🌽",
+    "images": [],
+    "name": {
+      "en": "Garden American-style Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-turkish-inspired-veggie-bowl",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Rainbow Turkish-inspired Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-turkish-inspired-veggie-pasta",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Creamy Turkish-inspired Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-turkish-inspired-veggie-wrap",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Crunchy Turkish-inspired Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-turkish-inspired-veggie-bites",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Mini Turkish-inspired Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-turkish-inspired-veggie-plate",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Herby Turkish-inspired Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-turkish-inspired-veggie-cups",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Cheesy Turkish-inspired Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-turkish-inspired-veggie-quinoa",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Lemony Turkish-inspired Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-turkish-inspired-veggie-pasta",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Tomato Turkish-inspired Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-turkish-inspired-veggie-toast",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Turkish-inspired Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-turkish-inspired-veggie-bowl",
+    "emoji": "🥣",
+    "images": [],
+    "name": {
+      "en": "Garden Turkish-inspired Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "rainbow-global-veggie-bowl",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Rainbow Global Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked whole grain or pasta",
+      "1/2 cup colourful vegetables",
+      "1/4 cup chickpeas, beans or tofu",
+      "1 tsp olive oil",
+      "mild herbs and lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "creamy-global-veggie-pasta",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Creamy Global Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup cooked whole-wheat pasta",
+      "1 cup broccoli and peas",
+      "1/4 cup Greek yogurt or soft cheese",
+      "1 tsp olive oil",
+      "black pepper"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "crunchy-global-veggie-wrap",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Crunchy Global Veggie Wrap"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "2 small whole-wheat tortillas",
+      "1/2 cup mashed chickpeas",
+      "1/2 cup grated carrot and cucumber",
+      "1/4 avocado",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "mini-global-veggie-bites",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Mini Global Veggie Bites"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1/2 cup cooked quinoa",
+      "1/2 cup finely chopped vegetables",
+      "1/4 cup grated cheese",
+      "1 tbsp oats",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "herby-global-veggie-plate",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Herby Global Veggie Plate"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked couscous or bulgur",
+      "1/2 cup cucumber and tomato",
+      "1/4 cup chickpeas",
+      "fresh herbs",
+      "lemon juice"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "cheesy-global-veggie-cups",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Cheesy Global Veggie Cups"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "calcium",
+      "energy"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked pasta or quinoa",
+      "1/2 cup broccoli and sweet corn",
+      "1/4 cup mozzarella",
+      "1 tsp olive oil",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "lemony-global-veggie-quinoa",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Lemony Global Veggie Quinoa"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1/2 cup cucumber, corn and bell pepper",
+      "1/4 cup chickpeas",
+      "lemon juice",
+      "1 tsp olive oil"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "tomato-global-veggie-pasta",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Tomato Global Veggie Pasta"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup whole-wheat pasta",
+      "3/4 cup crushed tomatoes",
+      "1/2 cup spinach and peas",
+      "1 tbsp grated cheese",
+      "oregano"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "sweet-potato-global-veggie-toast",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Sweet Potato Global Veggie Toast"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 medium cooked sweet potato",
+      "1/2 cup avocado and chickpeas",
+      "1/4 cup corn",
+      "lemon juice",
+      "whole-grain toast"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
+  },
+  {
+    "id": "garden-global-veggie-bowl",
+    "emoji": "🌈",
+    "images": [],
+    "name": {
+      "en": "Garden Global Veggie Bowl"
+    },
+    "desc": {
+      "en": "A colourful, kid-friendly continental recipe made with everyday ingredients and ready in about 20 minutes."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "fiber",
+      "immunity"
+    ],
+    "allergens": [],
+    "ingredients": [
+      "1 cup cooked rice or quinoa",
+      "1/2 cup broccoli, corn and peas",
+      "1/4 cup tofu or beans",
+      "1 tsp olive oil",
+      "mild herbs"
+    ],
+    "instructions": [
+      "Prepare the grain, pasta or base until tender.",
+      "Steam or sauté the vegetables until colourful and soft-crisp.",
+      "Mix in the protein ingredient and mild herbs.",
+      "Add the finishing sauce, yogurt, cheese or lemon as appropriate.",
+      "Serve warm or cool slightly before packing."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6.8,
+      "iron_mg": 1.8,
+      "calcium_mg": 55,
+      "fiber_g": 2.9,
+      "vitaminC_mg": 17
+    },
+    "packingTip": {
+      "en": "Let it cool slightly before packing and use a leak-resistant lunchbox.",
+      "hi": "Let it cool slightly before packing and use a leak-resistant lunchbox."
+    },
+    "kidTip": {
+      "en": "Serve in small colourful portions and let children choose one dip or topping.",
+      "hi": "Serve in small colourful portions and let children choose one dip or topping."
+    },
+    "ratings": {
+      "overall": 4.2,
+      "nutrition": 4.4,
+      "kidFriendly": 4.3,
+      "lunchboxFriendly": 4.3,
+      "pickyEaterFriendly": 4.0,
+      "timeSaver": 4.4,
+      "count": 1
+    },
+    "hidden": false
   }
 ];

@@ -22,7 +22,8 @@ window.TINY_TIFFIN_LANGUAGES = [
   { code: "de", label: "Deutsch" },
   { code: "yue", label: "廣東話" },
   { code: "ta", label: "தமிழ்" },
-  { code: "ja", label: "日本語" }
+  { code: "te", label: "తెలుగు" },
+  { code: "bn", label: "বাংলা" }
 ];
 
 window.TINY_TIFFIN_STRINGS = {
@@ -657,132 +658,6 @@ window.TINY_TIFFIN_STRINGS = {
   }
 };
 
-window.TINY_TIFFIN_STRINGS.ja = {
-  "tagline": "健康的なお弁当。笑顔の子どもたち。忙しい朝をもっと楽に。",
-  "navFind": "お弁当を探す",
-  "navPlanner": "週間プランナー",
-  "navFavorites": "お気に入り",
-  "navMatch": "何を作れる？",
-  "navContact": "お問い合わせ",
-  "navDeveloper": "開発者",
-  "navDashboard": "栄養",
-  "heroTitle": "お弁当を開けて、目標を選ぼう",
-  "heroSub": "それぞれの仕切りは栄養の目標です。今日のお弁当を絞り込むにはタップしてください。",
-  "filterAge": "子どもの年齢",
-  "filterTime": "調理できる時間",
-  "filterMeal": "食事の種類",
-  "filterAllergy": "アレルゲンを除外",
-  "filterSearch": "何でも検索",
-  "searchPlaceholder": "レシピ、食材、年齢、料理…",
-  "anyTime": "すべて",
-  "min10": "10分",
-  "min15": "15分",
-  "min20": "20分",
-  "min25": "25分",
-  "min30": "30分",
-  "all": "すべて",
-  "breakfast": "朝食",
-  "lunch": "昼食",
-  "snack": "おやつ",
-  "resultsCount": "件のレシピ",
-  "clearFilters": "フィルターをクリア",
-  "addFavorite": "お気に入りに保存",
-  "removeFavorite": "お気に入りに保存済み",
-  "addToPlanner": "今週のプランに追加",
-  "viewRecipe": "レシピを見る",
-  "ingredients": "材料",
-  "steps": "作り方",
-  "nutrition": "栄養（1食分）",
-  "packingTip": "お弁当のコツ",
-  "kidTip": "保護者向けのコツ",
-  "calories": "カロリー",
-  "protein": "たんぱく質",
-  "iron": "鉄",
-  "calcium": "カルシウム",
-  "close": "閉じる",
-  "plannerTitle": "今週のお弁当プラン",
-  "plannerEmpty": "まだレシピがありません。日をタップして追加してください。",
-  "plannerAddFrom": "お気に入りまたは検索から選ぶ",
-  "groceryList": "買い物リストを作成",
-  "groceryTitle": "今週の買い物リスト",
-  "groceryEmpty": "まずプランにレシピを追加してください。",
-  "printList": "リストを印刷",
-  "favoritesTitle": "お気に入りのお弁当",
-  "favoritesEmpty": "まだ保存されたものはありません。レシピのハートをタップしてください。",
-  "days": [
-    "月",
-    "火",
-    "水",
-    "木",
-    "金",
-    "土",
-    "日"
-  ],
-  "nutritionGoals": {
-    "protein": "たんぱく質",
-    "iron": "鉄",
-    "calcium": "カルシウム",
-    "immunity": "免疫",
-    "fiber": "食物繊維",
-    "energy": "エネルギー"
-  },
-  "adminLink": "管理者",
-  "footerNote": "Tiny Tiffin — レシピは提案であり、医療 advice ではありません。アレルギーについては医師にご相談ください。",
-  "matchIntro": "キッチンにある食材を入力すると、今すぐ作れるものを提案します。",
-  "matchPlaceholder": "例：じゃがいも、ほうれん草、バナナ、パニール…",
-  "matchButton": "レシピを探す",
-  "matchHint": "食材はカンマで区切ってください。塩、油、スパイスなどの基本調味料は入力不要です。",
-  "matchFullTitle": "✅ 今すぐ作れるレシピ",
-  "matchPartialTitle": "🛒 もう少しで完成 — 足りないものがあります",
-  "matchNoneTitle": "一致するレシピを見るには、上に食材を入力してください。",
-  "missingLabel": "不足",
-  "contactTitle": "お問い合わせ",
-  "contactIntro": "レシピの間違いやアプリへのアイデアがあれば、ぜひお知らせください。",
-  "contactEmailLabel": "メールする",
-  "contactButton": "メールを送る",
-  "contactFormNote": "メールアプリが宛先を入力した状態で開きます。",
-  "developerTitle": "開発者について",
-  "developerBuiltBy": "開発者",
-  "developerNote": "毎朝お弁当を作る保護者のために、心を込めて作られたアプリです。",
-  "dashboardTitle": "今週の栄養",
-  "dashboardIntro": "今週のバランスを簡単に確認できます。",
-  "dashboardEmpty": "栄養バランスを見るには、今週のお弁当をいくつか計画してください。",
-  "dashboardPlanned": "今週の予定",
-  "dashboardTryAdd": "バランスのためにもう1つ追加してみましょう。",
-  "filterDiet": "食事タイプ",
-  "filterCuisine": "料理ジャンル",
-  "dietVegetarian": "ベジタリアン",
-  "dietVegan": "ヴィーガン",
-  "dietEgg": "卵を含む",
-  "cuisineIndian": "インド料理",
-  "cuisineContinental": "コンチネンタル",
-  "ratingOverall": "総合評価",
-  "rateThis": "このレシピを評価",
-  "submitRating": "評価を送信",
-  "thanksForRating": "評価ありがとうございます！",
-  "ratingNutrition": "栄養",
-  "ratingKidFriendly": "子ども向け",
-  "ratingLunchboxFriendly": "お弁当向け",
-  "ratingPickyEaterFriendly": "好き嫌いの多い子向け",
-  "ratingTimeSaver": "時短",
-  "darkMode": "ダークモード",
-  "contactCategoryFeedback": "フィードバック",
-  "contactCategorySuggestion": "提案",
-  "contactCategoryBug": "バグ報告",
-  "contactCategoryFeature": "機能リクエスト",
-  "contactSubjectLabel": "内容",
-  "contactMessageLabel": "メッセージ",
-  "mascotGreeting": "こんにちは、Tiffyです！今日のお弁当を探しましょう。",
-  "mascotWeekDone": "1週間分の計画ができました。素晴らしいです！",
-  "shareRecipe": "共有",
-  "shareCopied": "リンクをコピーしました！",
-  "noRepeatWarning": "今週すでに予定されていますが、バリエーションのため追加しました。",
-  "savePlanAs": "今週のプランを保存",
-  "loadPlan": "保存したプランを読み込む",
-  "planNamePrompt": "プラン名",
-  "savedPlans": "保存したプラン"
-};
-
 /* Fallback: any missing key in any language falls back to English. */
 window.TINY_TIFFIN_EXTRA_STRINGS = {
   en: { keyVitamins:"Key Vitamins", nutritionalProfileVaries:"Nutritional profile varies by ingredients", aiAdapt:"AI Adapt", updateRating:"Update your rating" },
@@ -805,39 +680,3 @@ window.tinyTiffinT = function(langCode, key) {
   if (extra && extra[key] !== undefined) return extra[key];
   return window.TINY_TIFFIN_STRINGS.en[key] ?? window.TINY_TIFFIN_EXTRA_STRINGS.en[key] ?? key;
 };
-
-/* Additional strings for complete translation of the newer shopping and mood UI. */
-(function () {
-  const x = {
-    en: { surpriseRecipe:"Surprise Me with a Recipe", tiffinMood:"Choose a tiffin mood:", quickEasy:"Quick & Easy", proteinPower:"Protein Power", colourfulNutritious:"Colourful & Nutritious", shopIngredients:"Shop Ingredients", shopIngredientsDesc:"Find products and ingredients for your planned recipes on Amazon.", shopIngredientsAmazonFresh:"Shop Ingredients on Amazon Fresh", shopIngredientsAmazonFreshDesc:"Find ingredients for your Tiny Tiffin recipes directly in Amazon Fresh. Availability and delivery options depend on your location.", shopOnAmazon:"Shop on Amazon", shopOnAmazonFresh:"Shop on Amazon Fresh", aiAssistant:"Tiny Tiffin AI" },
-    hi: { surpriseRecipe:"मुझे किसी रेसिपी से आश्चर्यचकित करें", tiffinMood:"टिफिन का मूड चुनें:", quickEasy:"जल्दी और आसान", proteinPower:"प्रोटीन पावर", colourfulNutritious:"रंगीन और पौष्टिक", shopIngredients:"सामग्री खरीदें", shopIngredientsDesc:"अपनी योजनाबद्ध रेसिपी के लिए Amazon पर उत्पाद और सामग्री खोजें।", shopIngredientsAmazonFresh:"Amazon Fresh पर सामग्री खरीदें", shopIngredientsAmazonFreshDesc:"अपनी Tiny Tiffin रेसिपी की सामग्री सीधे Amazon Fresh पर खोजें। उपलब्धता और डिलीवरी आपके स्थान पर निर्भर करती है।", shopOnAmazon:"Amazon पर खरीदें", shopOnAmazonFresh:"Amazon Fresh पर खरीदें", aiAssistant:"Tiny Tiffin AI" },
-    gu: { surpriseRecipe:"મને એક રેસીપીથી આશ્ચર્યચકિત કરો", tiffinMood:"ટિફિનનો મૂડ પસંદ કરો:", quickEasy:"ઝડપી અને સરળ", proteinPower:"પ્રોટીન પાવર", colourfulNutritious:"રંગીન અને પૌષ્ટિક", shopIngredients:"સામગ્રી ખરીદો", shopIngredientsDesc:"તમારી આયોજન કરેલી રેસીપી માટે Amazon પર ઉત્પાદનો અને સામગ્રી શોધો.", shopIngredientsAmazonFresh:"Amazon Fresh પર સામગ્રી ખરીદો", shopIngredientsAmazonFreshDesc:"તમારી Tiny Tiffin રેસીપીની સામગ્રી સીધી Amazon Fresh પર શોધો. ઉપલબ્ધતા અને ડિલિવરી તમારા સ્થાન પર આધારિત છે.", shopOnAmazon:"Amazon પર ખરીદો", shopOnAmazonFresh:"Amazon Fresh પર ખરીદો", aiAssistant:"Tiny Tiffin AI" },
-    mr: { surpriseRecipe:"मला एका रेसिपीने आश्चर्यचकित करा", tiffinMood:"टिफिनचा मूड निवडा:", quickEasy:"जलद आणि सोपे", proteinPower:"प्रोटीन पॉवर", colourfulNutritious:"रंगीबेरंगी आणि पौष्टिक", shopIngredients:"साहित्य खरेदी करा", shopIngredientsDesc:"तुमच्या नियोजित रेसिपीसाठी Amazon वर उत्पादने आणि साहित्य शोधा.", shopIngredientsAmazonFresh:"Amazon Fresh वर साहित्य खरेदी करा", shopIngredientsAmazonFreshDesc:"तुमच्या Tiny Tiffin रेसिपीसाठी साहित्य थेट Amazon Fresh वर शोधा.", shopOnAmazon:"Amazon वर खरेदी करा", shopOnAmazonFresh:"Amazon Fresh वर खरेदी करा", aiAssistant:"Tiny Tiffin AI" },
-    fr: { surpriseRecipe:"Surprenez-moi avec une recette", tiffinMood:"Choisissez une ambiance de tiffin :", quickEasy:"Rapide et facile", proteinPower:"Puissance des protéines", colourfulNutritious:"Coloré et nutritif", shopIngredients:"Acheter des ingrédients", shopIngredientsDesc:"Trouvez les produits et ingrédients de vos recettes planifiées sur Amazon.", shopIngredientsAmazonFresh:"Acheter des ingrédients sur Amazon Fresh", shopIngredientsAmazonFreshDesc:"Trouvez directement sur Amazon Fresh les ingrédients de vos recettes Tiny Tiffin.", shopOnAmazon:"Acheter sur Amazon", shopOnAmazonFresh:"Acheter sur Amazon Fresh", aiAssistant:"Tiny Tiffin AI" },
-    es: { surpriseRecipe:"Sorpréndeme con una receta", tiffinMood:"Elige un estilo de tiffin:", quickEasy:"Rápido y fácil", proteinPower:"Potencia de proteínas", colourfulNutritious:"Colorido y nutritivo", shopIngredients:"Comprar ingredientes", shopIngredientsDesc:"Encuentra productos e ingredientes para tus recetas planificadas en Amazon.", shopIngredientsAmazonFresh:"Comprar ingredientes en Amazon Fresh", shopIngredientsAmazonFreshDesc:"Encuentra directamente en Amazon Fresh los ingredientes de tus recetas de Tiny Tiffin.", shopOnAmazon:"Comprar en Amazon", shopOnAmazonFresh:"Comprar en Amazon Fresh", aiAssistant:"Tiny Tiffin AI" },
-    de: { surpriseRecipe:"Überrasche mich mit einem Rezept", tiffinMood:"Wähle eine Tiffin-Stimmung:", quickEasy:"Schnell und einfach", proteinPower:"Protein-Power", colourfulNutritious:"Bunt und nahrhaft", shopIngredients:"Zutaten kaufen", shopIngredientsDesc:"Finde Produkte und Zutaten für deine geplanten Rezepte auf Amazon.", shopIngredientsAmazonFresh:"Zutaten bei Amazon Fresh kaufen", shopIngredientsAmazonFreshDesc:"Finde Zutaten für deine Tiny-Tiffin-Rezepte direkt bei Amazon Fresh.", shopOnAmazon:"Auf Amazon kaufen", shopOnAmazonFresh:"Auf Amazon Fresh kaufen", aiAssistant:"Tiny Tiffin AI" },
-    yue: { surpriseRecipe:"用食譜給我驚喜", tiffinMood:"選擇你的便當風格：", quickEasy:"快速簡單", proteinPower:"蛋白質力量", colourfulNutritious:"色彩繽紛又有營養", shopIngredients:"購買食材", shopIngredientsDesc:"在 Amazon 尋找你計劃食譜所需的產品和食材。", shopIngredientsAmazonFresh:"在 Amazon Fresh 購買食材", shopIngredientsAmazonFreshDesc:"直接在 Amazon Fresh 尋找 Tiny Tiffin 食譜所需的食材。", shopOnAmazon:"在 Amazon 購買", shopOnAmazonFresh:"在 Amazon Fresh 購買", aiAssistant:"Tiny Tiffin AI" },
-    ta: { surpriseRecipe:"ஒரு செய்முறையால் என்னை ஆச்சரியப்படுத்துங்கள்", tiffinMood:"டிஃபின் மனநிலையைத் தேர்ந்தெடுக்கவும்:", quickEasy:"விரைவானதும் எளிதானதும்", proteinPower:"புரத சக்தி", colourfulNutritious:"வண்ணமயமானதும் சத்தானதும்", shopIngredients:"பொருட்களை வாங்குங்கள்", shopIngredientsDesc:"உங்கள் திட்டமிட்ட சமையல் குறிப்புகளுக்கான பொருட்களை Amazon-ல் கண்டறியுங்கள்.", shopIngredientsAmazonFresh:"Amazon Fresh-ல் பொருட்களை வாங்குங்கள்", shopIngredientsAmazonFreshDesc:"Tiny Tiffin சமையல் குறிப்புகளுக்கான பொருட்களை Amazon Fresh-ல் கண்டறியுங்கள்.", shopOnAmazon:"Amazon-ல் வாங்குங்கள்", shopOnAmazonFresh:"Amazon Fresh-ல் வாங்குங்கள்", aiAssistant:"Tiny Tiffin AI" },
-    te: { surpriseRecipe:"ఒక వంటకంతో నన్ను ఆశ్చర్యపరచండి", tiffinMood:"టిఫిన్ మూడ్ ఎంచుకోండి:", quickEasy:"త్వరగా మరియు సులభంగా", proteinPower:"ప్రోటీన్ పవర్", colourfulNutritious:"రంగురంగుల మరియు పోషకమైన", shopIngredients:"పదార్థాలు కొనండి", shopIngredientsDesc:"మీ ప్లాన్ చేసిన వంటకాల కోసం Amazonలో ఉత్పత్తులు మరియు పదార్థాలను కనుగొనండి.", shopIngredientsAmazonFresh:"Amazon Freshలో పదార్థాలు కొనండి", shopIngredientsAmazonFreshDesc:"మీ Tiny Tiffin వంటకాల కోసం పదార్థాలను Amazon Freshలో కనుగొనండి.", shopOnAmazon:"Amazonలో కొనండి", shopOnAmazonFresh:"Amazon Freshలో కొనండి", aiAssistant:"Tiny Tiffin AI" },
-    bn: { surpriseRecipe:"একটি রেসিপি দিয়ে আমাকে চমকে দিন", tiffinMood:"টিফিনের মুড বেছে নিন:", quickEasy:"দ্রুত ও সহজ", proteinPower:"প্রোটিন পাওয়ার", colourfulNutritious:"রঙিন ও পুষ্টিকর", shopIngredients:"উপকরণ কিনুন", shopIngredientsDesc:"আপনার পরিকল্পিত রেসিপির জন্য Amazon-এ পণ্য ও উপকরণ খুঁজুন।", shopIngredientsAmazonFresh:"Amazon Fresh-এ উপকরণ কিনুন", shopIngredientsAmazonFreshDesc:"আপনার Tiny Tiffin রেসিপির উপকরণ সরাসরি Amazon Fresh-এ খুঁজুন।", shopOnAmazon:"Amazon-এ কিনুন", shopOnAmazonFresh:"Amazon Fresh-এ কিনুন", aiAssistant:"Tiny Tiffin AI" }
-  };
-  Object.keys(x).forEach(lang => Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS[lang] || (window.TINY_TIFFIN_EXTRA_STRINGS[lang] = {}), x[lang]));
-})();
-
-// Japanese translations for newer UI additions
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.ja || (window.TINY_TIFFIN_EXTRA_STRINGS.ja = {}), {
-  keyVitamins:"主なビタミン", nutritionalProfileVaries:"栄養成分は材料によって異なります", aiAdapt:"AIでアレンジ", updateRating:"評価を更新",
-  surpriseRecipe:"レシピで驚かせて", tiffinMood:"お弁当の気分を選ぶ：", quickEasy:"簡単・スピーディー", proteinPower:"たんぱく質パワー", colourfulNutritious:"カラフルで栄養たっぷり",
-  shopIngredients:"食材を購入", shopIngredientsDesc:"予定したレシピの食材をAmazonで探しましょう。", shopIngredientsAmazonFresh:"Amazon Freshで食材を購入", shopIngredientsAmazonFreshDesc:"Tiny Tiffinのレシピに必要な食材をAmazon Freshで探せます。 availability and delivery options depend on your location.", shopOnAmazon:"Amazonで購入", shopOnAmazonFresh:"Amazon Freshで購入", aiAssistant:"Tiny Tiffin AI"
-});
-
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.en, {installApp:"Install", updateApp:"Update"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.hi, {installApp:"इंस्टॉल करें", updateApp:"अपडेट करें"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.gu, {installApp:"ઇન્સ્ટોલ કરો", updateApp:"અપડેટ કરો"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.mr, {installApp:"इन्स्टॉल करा", updateApp:"अपडेट करा"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.fr, {installApp:"Installer", updateApp:"Mettre à jour"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.es, {installApp:"Instalar", updateApp:"Actualizar"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.de, {installApp:"Installieren", updateApp:"Aktualisieren"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.yue, {installApp:"安裝", updateApp:"更新"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.ta, {installApp:"நிறுவு", updateApp:"புதுப்பி"});
-Object.assign(window.TINY_TIFFIN_EXTRA_STRINGS.ja, {installApp:"インストール", updateApp:"更新"});

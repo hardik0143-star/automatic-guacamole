@@ -13,7 +13,7 @@
 
   const langPair = {
     hi: "hi", gu: "gu", mr: "mr", fr: "fr", es: "es", de: "de",
-    yue: "zh-CN", ta: "ta", ja: "ja"
+    yue: "zh-CN", ta: "ta", te: "te", bn: "bn"
   };
 
   function save() {
@@ -60,68 +60,55 @@
 
     const title = modal.querySelector("h2");
     const desc = modal.querySelector(".desc");
-    const sections = [...modal.querySelectorAll("section")];
-    const ingredientItems = sections[0] ? [...sections[0].querySelectorAll("li")] : [];
-    const stepItems = sections[1] ? [...sections[1].querySelectorAll("li")] : [];
+    const ingredientItems = [...modal.querySelectorAll("section:nth-of-type(1) li")];
+    const stepItems = [...modal.querySelectorAll("section:nth-of-type(2) li")];
     const tips = [...modal.querySelectorAll(".tip-box")];
 
-    // Translate the complete recipe, not only ingredients and steps.
-    const titleSource = r.name?.en || title?.textContent || "";
-    const descSource = r.desc?.en || desc?.textContent || "";
-    const titleText = r.name?.[lang] || await translateText(titleSource, lang);
-    const descText = r.desc?.[lang] || await translateText(descSource, lang);
+    const titleText = r.name && r.name[lang] ? r.name[lang] : (title && title.textContent);
+    const descText = r.desc && r.desc[lang] ? r.desc[lang] : (desc && desc.textContent);
     if (title && titleText) title.textContent = titleText;
     if (desc && descText) desc.textContent = descText;
 
     const ingredientTexts = r.ingredients || ingredientItems.map(x => x.textContent);
     const stepTexts = r.instructions || stepItems.map(x => x.textContent);
-    const [translatedIngredients, translatedSteps] = await Promise.all([
-      translateMany(ingredientTexts, lang), translateMany(stepTexts, lang)
-    ]);
+    const translatedIngredients = await translateMany(ingredientTexts, lang);
+    const translatedSteps = await translateMany(stepTexts, lang);
+
     ingredientItems.forEach((el, i) => { if (translatedIngredients[i]) el.textContent = translatedIngredients[i]; });
     stepItems.forEach((el, i) => { if (translatedSteps[i]) el.textContent = translatedSteps[i]; });
 
-    const tipSources = [r.packingTip?.[lang] || r.packingTip?.en || "", r.kidTip?.[lang] || r.kidTip?.en || ""];
-    const translatedTips = await translateMany(tipSources, lang);
-    tips.forEach((tip, i) => {
-      if (!translatedTips[i]) return;
-      const strong = tip.querySelector("strong");
-      tip.innerHTML = "";
-      if (strong) tip.appendChild(strong);
-      tip.appendChild(document.createTextNode(" " + translatedTips[i]));
+    const packing = r.packingTip && (r.packingTip[lang] || r.packingTip.en);
+    const kid = r.kidTip && (r.kidTip[lang] || r.kidTip.en);
+    const tipTexts = [packing, kid].filter(Boolean);
+    const translatedTips = await translateMany(tipTexts, lang);
+
+    if (tips[0] && translatedTips[0]) {
+      const strong = tips[0].querySelector("strong");
+      tips[0].innerHTML = "";
+      if (strong) tips[0].appendChild(strong);
+      tips[0].appendChild(document.createTextNode(" " + translatedTips[0]));
+    }
+    if (tips[1] && translatedTips[1]) {
+      const strong = tips[1].querySelector("strong");
+      tips[1].innerHTML = "";
+      if (strong) tips[1].appendChild(strong);
+      tips[1].appendChild(document.createTextNode(" " + translatedTips[1]));
+    }
+
+    // Translate recipe-specific allergen names and difficulty if the data has no localized equivalent.
+    const metaTags = [...modal.querySelectorAll(".meta-row .tag")];
+    const rawAllergens = r.allergens || [];
+    const allergenTags = metaTags.filter(x => x.classList.contains("allergen"));
+    const translatedAllergens = await translateMany(rawAllergens, lang);
+    allergenTags.forEach((el, i) => {
+      if (translatedAllergens[i]) el.textContent = "⚠ " + translatedAllergens[i];
     });
 
-    // Translate recipe-specific metadata that is not already rendered by i18n.
-    const difficultyTags = [...modal.querySelectorAll(".meta-row .tag")].filter(el => !el.classList.contains("allergen") && !el.classList.contains("time") && !el.classList.contains("nutri"));
-    if (difficultyTags[0]) difficultyTags[0].textContent = await translateText(r.difficulty || difficultyTags[0].textContent, lang);
-    const allergenTags = [...modal.querySelectorAll(".meta-row .tag.allergen")];
-    const translatedAllergens = await translateMany(r.allergens || [], lang);
-    allergenTags.forEach((el, i) => { if (translatedAllergens[i]) el.textContent = "⚠ " + translatedAllergens[i]; });
-
-    // Translate vitamin names shown in the key-vitamins row.
+    // Translate any remaining visible English recipe-specific text in the modal.
     const vitamin = modal.querySelector(".vitamin-row");
-    if (vitamin) {
-      const vitamins = getRecipeVitaminsSafe(r);
-      if (vitamins.length) {
-        const translated = await translateMany(vitamins, lang);
-        const strong = vitamin.querySelector("strong");
-        vitamin.innerHTML = "🍎 ";
-        if (strong) { strong.textContent = (window.tinyTiffinT ? window.tinyTiffinT(lang, "keyVitamins") : "Key Vitamins") + ":"; vitamin.appendChild(strong); }
-        vitamin.appendChild(document.createTextNode(" " + translated.join(", ")));
-      }
+    if (vitamin && !r.name[lang]) {
+      // The label itself is already localized by i18n; leave nutrition values untouched.
     }
-  }
-
-  function getRecipeVitaminsSafe(r) {
-    const text = [r.name?.en || "", ...(r.ingredients || [])].join(" ").toLowerCase();
-    const vitamins = new Set();
-    if (/carrot|sweet potato|pumpkin|spinach|mango|papaya|egg/.test(text)) vitamins.add("Vitamin A");
-    if (/milk|curd|yogurt|paneer|cheese|egg|banana|oat/.test(text)) vitamins.add("Vitamin B");
-    if (/lemon|orange|tomato|guava|amla|capsicum|broccoli/.test(text)) vitamins.add("Vitamin C");
-    if (/spinach|broccoli|cabbage|leafy|egg/.test(text)) vitamins.add("Vitamin K");
-    if (/almond|peanut|sunflower|avocado|spinach/.test(text)) vitamins.add("Vitamin E");
-    if (/milk|curd|yogurt|paneer|cheese|egg/.test(text)) vitamins.add("Vitamin D");
-    return Array.isArray(r.vitamins) && r.vitamins.length ? r.vitamins : Array.from(vitamins);
   }
 
   async function localizeAIHub(root, lang) {
@@ -140,22 +127,6 @@
     placeholders.forEach(el => { if (el.placeholder) el.placeholder = tph[j++]; });
   }
 
-  
-  async function localizeVisibleCards(root, lang) {
-    if (!root || lang === "en") return;
-    const cards = [...root.querySelectorAll(".recipe-card")];
-    const items = [];
-    cards.forEach(card => {
-      const title = card.querySelector("h3");
-      const desc = card.querySelector(".desc");
-      if (title) items.push({ el: title, text: title.textContent });
-      if (desc) items.push({ el: desc, text: desc.textContent });
-    });
-    const translated = await translateMany(items.map(x => x.text), lang);
-    items.forEach((x, i) => { if (translated[i]) x.el.textContent = translated[i]; });
-  }
-
   window.tinyTiffinLocalizeRecipe = localizeRecipe;
-  window.tinyTiffinLocalizeVisibleCards = localizeVisibleCards;
   window.tinyTiffinLocalizeAIHub = localizeAIHub;
 })();

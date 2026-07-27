@@ -64,39 +64,9 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Existing Part B recipes were retained; new recipe IDs and English titles were checked against the existing database to avoid intentional duplication.
 
 
-## v1.1 Amazon affiliate shopping
-
-- Added a Smart Shopping List shopping layer.
-- Planned recipe ingredients can be searched individually on Amazon.in.
-- Affiliate tracking tag configured in `site-config.js` as `tinytiffin-21`.
-- Affiliate links are enabled/disabled through `amazonAffiliateEnabled`.
-- Added Amazon Associates disclosure.
-- Availability and delivery options remain location-dependent, especially for fresh grocery items.
-- For future Amazon Fresh/Amazon Now or other approved commerce integrations, the shopping layer can be extended without changing the recipe database.
-
-
-## v1.2 shopping update
-- Added a front-page **Shop Ingredients** option.
-- Added a dedicated shopping tab using ingredients from the weekly planner.
-- Amazon affiliate links use the configured Associates tag in `site-config.js`.
-
-
-## v1.4 Amazon shopping clarity update
-
-- Added a prominent **Shop Ingredients** option on the front page.
-- Clarified that Tiny Tiffin uses Amazon Associates tracked shopping links.
-- Added transparent messaging that Amazon Fresh/fresh grocery availability and delivery options depend on the user's location.
-- Individual ingredients from the weekly planner continue to generate tracked Amazon Fresh destination links.
-- The Amazon Associate tag remains configured as `tinytiffin-21` in `site-config.js`.
-
-
-## v1.0 language and admin update
-- Removed Telugu and Bengali from the language selector.
-- Added Japanese.
-- Improved complete recipe translation so title, description, ingredients, steps, tips, allergens, difficulty and vitamin names are translated when a language is selected.
-- Updated the service-worker cache version so deployed users receive the new language code.
-- Restored the Admin visitor analytics dashboard with total, India and international counters plus a local fallback.
-
-
-## Restored admin controls
-The Admin page now includes password-gated recipe management, hide/unhide, edit, delete, import/export JSON, AI feature permissions, visitor analytics, and local site configuration controls. Because this is a static frontend, browser-local changes are not automatically published to every visitor. Export recipe data and update the repository files for global deployment. Change `adminPassword` in `site-config.js` before publishing. For production security, use server-side authentication.
+## 500+ recipe library expansion
+- Added 200 additional original, vegetarian, kid-friendly recipe ideas.
+- The recipe library now contains 505 recipes.
+- Added quick Indian and continental recipes designed around everyday ingredients and generally 15–30 minute preparation windows.
+- New combinations include paneer, millets, quinoa, oats, chickpeas, sprouts, broccoli, mushrooms, zucchini, spinach, beetroot, carrots, bell peppers, sweet potato, whole grains and colourful vegetables.
+- New English titles were checked against the existing recipe database to avoid intentional title duplication.

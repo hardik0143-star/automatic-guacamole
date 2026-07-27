@@ -108,19 +108,8 @@
 
   /* ---------------- constants ---------------- */
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
-  const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {}, aiFeatures: {} };
-  const AI_FEATURES = Object.assign({
-    planner: true,
-    ingredientScanner: true,
-    recipeAdaptation: true,
-    smartShoppingList: true,
-    assistant: true
-  }, CONFIG.aiFeatures || {});
-  const aiEnabled = key => AI_FEATURES[key] !== false;
-  const AMAZON_ASSOCIATE_TAG = CONFIG.amazonAssociateTag || "tinytiffin-21";
-  const AMAZON_FRESH_BASE = "https://www.amazon.in/fresh";
-
-  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
+  const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
+  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡", vitamins: "🍎" };
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
   const ALL_ALLERGENS = ["nuts", "dairy", "gluten", "soy", "egg"];
@@ -288,7 +277,6 @@
         ${state.tab === "contact" ? renderContactTab() : ""}
         ${state.tab === "developer" ? renderDeveloperTab() : ""}
         ${state.tab === "ai" ? renderAITab() : ""}
-        ${state.tab === "shop" ? renderShopTab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -304,13 +292,11 @@
     if (state.tab === "planner") attachPlannerEvents();
     if (state.tab === "favorites") attachFavoritesEvents();
     if (state.tab === "contact") attachContactEvents();
-    if (state.tab === "shop") attachShopEvents();
     if (state.tab === "ai") {
       attachAIEvents();
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     hydrateRecipeImages(root);
-    if (window.tinyTiffinLocalizeVisibleCards) window.tinyTiffinLocalizeVisibleCards(root, state.lang);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
     });
@@ -321,8 +307,7 @@
       `<option value="${l.code}" ${l.code === state.lang ? "selected" : ""}>${l.label}</option>`).join("");
     const tabs = [
       ["find", t("navFind")], ["match", t("navMatch")], ["planner", t("navPlanner")],
-      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`],
-      ["shop", "🛒 " + t("shopIngredients")], ["ai", "🤖 " + t("aiAssistant")]
+      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`], ["ai", "🤖 Tiny Tiffin AI"]
     ];
     return `
       <header class="app-header">
@@ -407,12 +392,12 @@
       <section class="hero">
         <h1 class="display">${t("heroTitle")}</h1>
         <p class="sub">${t("heroSub")}</p>
-        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ ${t("surpriseRecipe")}</button>
-        <div class="mood-picker" aria-label="${t("tiffinMood")}">
-          <span class="mood-label">${t("tiffinMood")}</span>
-          <button class="mood-chip" data-mood="quick">⚡ ${t("quickEasy")}</button>
-          <button class="mood-chip" data-mood="protein">💪 ${t("proteinPower")}</button>
-          <button class="mood-chip" data-mood="colourful">🌈 ${t("colourfulNutritious")}</button>
+        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
+        <div class="mood-picker" aria-label="Quick tiffin ideas">
+          <span class="mood-label">Choose a tiffin mood:</span>
+          <button class="mood-chip" data-mood="quick">⚡ Quick & Easy</button>
+          <button class="mood-chip" data-mood="protein">💪 Protein Power</button>
+          <button class="mood-chip" data-mood="colourful">🌈 Colourful & Nutritious</button>
         </div>
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
@@ -420,21 +405,6 @@
             <button class="tiffin-tier ${state.filters.nutrition.has(n) ? "active" : ""}" data-nutri="${n}">
               <span class="tier-emoji">${NUTRITION_EMOJI[n]}</span> ${t("nutritionGoals")[n] || capitalize(n)}
             </button>`).join("")}
-        </div>
-      </section>
-
-      <section class="shopping-cta">
-        <div>
-          <h3>🛒 ${t("shopIngredients")}</h3>
-          <p>${t("shopIngredientsDesc")}</p>
-        </div>
-        <div class="shopping-cta-actions">
-          <a class="btn btn-secondary shopping-compact-btn"
-             href="https://www.amazon.in/?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
-             target="_blank" rel="nofollow sponsored noopener"><span class="amazon-button-icon" aria-hidden="true">🛒</span> ${t("shopOnAmazon")}</a>
-          <a class="btn btn-secondary shopping-compact-btn"
-             href="${AMAZON_FRESH_BASE}?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}"
-             target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> ${t("shopOnAmazonFresh")}</a>
         </div>
       </section>
 
@@ -560,13 +530,6 @@
         const a = btn.dataset.allergy;
         if (state.filters.allergyExclude.has(a)) state.filters.allergyExclude.delete(a); else state.filters.allergyExclude.add(a);
         render();
-      });
-    });
-    root.querySelectorAll("[data-open-shop]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        state.tab = "shop";
-        render();
-        window.scrollTo(0, 0);
       });
     });
     const searchInput = document.getElementById("smart-search");
@@ -713,8 +676,7 @@
       toast(state.favorites.has(r.id) ? t("removeFavorite") : t("addFavorite"));
     });
     document.getElementById("modal-plan").addEventListener("click", () => { closeModal(); openPlannerPicker(r.id); });
-    const aiAdaptButton = document.getElementById("ai-adapt");
-    if (aiAdaptButton) aiAdaptButton.addEventListener("click", () => {
+    document.getElementById("ai-adapt").addEventListener("click", () => {
       const instruction = prompt("How would you like to adapt this recipe? Example: Make it egg-free or vegan.");
       if (!instruction) return;
       const result = aiAdaptRecipe(r, instruction);
@@ -917,68 +879,21 @@
     });
   }
 
-  function amazonSearchUrl(query) {
-    return `${AMAZON_FRESH_BASE}?tag=${encodeURIComponent(AMAZON_ASSOCIATE_TAG)}`;
-  }
-
-  function ingredientSearchQuery(ingredient) {
-    return String(ingredient || "").replace(/\([^)]*\)/g, "").replace(/\s+/g, " ").trim();
-  }
-
-  function ingredientCategory(ingredient) {
-    const s = String(ingredient || "").toLowerCase();
-    if (/broccoli|mushroom|zucchini|courgette|pepper|capsicum|avocado|sweet potato|potato|carrot|peas|spinach|tomato|cucumber|cauliflower|corn|beans|beet|pumpkin|apple|banana|mango|berry|orange|lemon|lime/.test(s)) return "Fresh produce";
-    if (/paneer|mozzarella|cheese|milk|curd|yogurt|ghee|butter/.test(s)) return "Dairy";
-    if (/egg|chickpea|gram|moong|sprout|lentil|dal|tofu/.test(s)) return "Protein";
-    if (/oat|quinoa|millet|rice|wheat|flour|bread|pasta|grain/.test(s)) return "Grains & staples";
-    return "Pantry & ingredients";
-  }
-
-  function renderAffiliateShopping(items) {
-    if (!CONFIG.amazonAffiliateEnabled) return "";
-    return `
-      <section class="affiliate-shopping">
-        <div class="affiliate-heading">
-          <span>🛒</span>
-          <div>
-            <h3>${t("shopIngredientsAmazonFresh")}</h3>
-            <p>${t("shopIngredientsAmazonFreshDesc")}</p>
-          </div>
-        </div>
-        <div class="affiliate-list">
-          ${items.map(item => {
-            const query = ingredientSearchQuery(item.name);
-            const url = amazonSearchUrl(query);
-            return `<div class="affiliate-item">
-              <div><span class="affiliate-ingredient">${escapeAttr(item.name)}</span><small>${ingredientCategory(item.name)}${item.count > 1 ? ` · ×${item.count}` : ""}</small></div>
-              <a class="btn btn-secondary affiliate-btn" href="${escapeAttr(url)}" target="_blank" rel="nofollow sponsored noopener"><img class="amazon-button-icon amazon-fresh-vegetable-icon" src="amazon-fresh-vegetable-basket.png" alt="" aria-hidden="true"> ${t("shopOnAmazonFresh")}</a>
-            </div>`;
-          }).join("")}
-        </div>
-        <p class="affiliate-disclosure">As an Amazon Associate, Tiny Tiffin earns from qualifying purchases. Product availability and delivery options vary by location.</p>
-      </section>
-    `;
-  }
-
   function openGroceryModal() {
     const counts = {};
     Object.values(state.planner).forEach(id => {
       const r = RECIPES.find(x => x.id === id);
       if (!r) return;
-      r.ingredients.forEach(ing => {
-        const clean = String(ing).trim();
-        counts[clean] = (counts[clean] || 0) + 1;
-      });
+      r.ingredients.forEach(ing => { counts[ing] = (counts[ing] || 0) + 1; });
     });
-    const items = Object.keys(counts).sort().map(name => ({ name, count: counts[name] }));
+    const items = Object.keys(counts).sort();
     const backdrop = document.createElement("div");
     backdrop.className = "modal-backdrop";
     backdrop.innerHTML = `
-      <div class="modal grocery-modal">
+      <div class="modal">
         <button class="modal-close" id="grocery-close">✕</button>
         <h2>${t("groceryTitle")}</h2>
-        ${items.length ? `<ul>${items.map(i => `<li><label><input type="checkbox"> ${escapeAttr(i.name)}${i.count > 1 ? ` <span class="mono" style="color:var(--ink-soft)">×${i.count}</span>` : ""}</label></li>`).join("")}</ul>` : `<p class="desc">${t("groceryEmpty")}</p>`}
-        ${items.length ? renderAffiliateShopping(items) : ""}
+        ${items.length ? `<ul>${items.map(i => `<li><label><input type="checkbox"> ${i}${counts[i] > 1 ? ` <span class="mono" style="color:var(--ink-soft)">×${counts[i]}</span>` : ""}</label></li>`).join("")}</ul>` : `<p class="desc">${t("groceryEmpty")}</p>`}
         <div class="card-actions"><button class="btn btn-secondary" id="print-list">${t("printList")}</button></div>
       </div>`;
     document.body.appendChild(backdrop);
@@ -1081,15 +996,14 @@
   }
   function renderAITab() {
     const matches = state.aiResults;
-    const cards = [];
-    if (aiEnabled("planner")) cards.push(`<article class="ai-card"><h3>🗓️ AI Tiffin Planner</h3><p>Tell Tiny Tiffin what your child needs and get a practical 5-day plan.</p><textarea id="ai-plan-input" class="search-input" rows="3" placeholder="Example: vegetarian, no nuts, under 20 minutes, high protein">${escapeAttr(state.aiInput)}</textarea><button class="btn btn-primary" id="ai-plan-btn">Create AI Plan</button><div id="ai-plan-results"></div></article>`);
-    if (aiEnabled("ingredientScanner")) cards.push(`<article class="ai-card"><h3>📸 AI Ingredient Scanner</h3><p>Upload a photo of ingredients. Confirm the ingredients you recognise, then find matching recipes.</p><input id="ai-image-input" type="file" accept="image/*" class="search-input"><img id="ai-preview" class="ai-preview" alt="Ingredient preview" style="display:none"><input id="ai-scan-text" class="search-input" placeholder="Detected ingredients (edit if needed)"><button class="btn btn-secondary" id="ai-scan-btn">Find Recipes</button></article>`);
-    if (aiEnabled("recipeAdaptation")) cards.push(`<article class="ai-card"><h3>🔄 AI Recipe Adaptation</h3><p>Open any recipe and ask for egg-free, vegan, dairy-free or ingredient substitutions.</p><p class="ai-muted">Use the “AI Adapt” button inside a recipe.</p></article>`);
-    if (aiEnabled("smartShoppingList")) cards.push(`<article class="ai-card"><h3>🛒 Smart Shopping List</h3><p>Build a combined shopping list from your weekly planner, with duplicate ingredients grouped together.</p><button class="btn btn-secondary" id="ai-shop-btn">Create Smart Shopping List</button></article>`);
-    if (aiEnabled("assistant")) cards.push(`<article class="ai-card"><h3>🤖 Tiny Tiffin AI Assistant</h3><p>Ask for practical tiffin ideas, ingredient substitutions, age-appropriate suggestions and healthy lunchbox guidance.</p><button class="btn btn-secondary" id="ai-assistant-btn">Ask Tiny Tiffin AI</button></article>`);
     return `<section class="ai-hub">
       <div class="ai-hero"><div class="ai-badge">🤖 AI-POWERED</div><h2 class="display">Tiny Tiffin AI</h2><p class="sub">Your smart tiffin companion for planning, ingredients, adaptations and shopping.</p></div>
-      <div class="ai-grid">${cards.join("")}</div>
+      <div class="ai-grid">
+        <article class="ai-card"><h3>🗓️ AI Tiffin Planner</h3><p>Tell Tiny Tiffin what your child needs and get a practical 5-day plan.</p><textarea id="ai-plan-input" class="search-input" rows="3" placeholder="Example: vegetarian, no nuts, under 20 minutes, high protein">${escapeAttr(state.aiInput)}</textarea><button class="btn btn-primary" id="ai-plan-btn">Create AI Plan</button><div id="ai-plan-results"></div></article>
+        <article class="ai-card"><h3>📸 AI Ingredient Scanner</h3><p>Upload a photo of ingredients. Confirm the ingredients you recognise, then find matching recipes.</p><input id="ai-image-input" type="file" accept="image/*" class="search-input"><img id="ai-preview" class="ai-preview" alt="Ingredient preview" style="display:none"><input id="ai-scan-text" class="search-input" placeholder="Detected ingredients (edit if needed)"><button class="btn btn-secondary" id="ai-scan-btn">Find Recipes</button></article>
+        <article class="ai-card"><h3>🔄 AI Recipe Adaptation</h3><p>Open any recipe and ask for egg-free, vegan, dairy-free or ingredient substitutions.</p><p class="ai-muted">Use the “AI Adapt” button inside a recipe.</p></article>
+        <article class="ai-card"><h3>🛒 Smart Shopping List</h3><p>Build a combined shopping list from your weekly planner, with duplicate ingredients grouped together.</p><button class="btn btn-secondary" id="ai-shop-btn">Create Smart Shopping List</button></article>
+      </div>
       ${matches.length ? `<h3 class="ai-section-title">Suggested recipes</h3><section class="recipe-grid">${matches.map(recipeCardHTML).join("")}</section>` : ""}
     </section>`;
   }
@@ -1110,18 +1024,6 @@
     if (scanBtn) scanBtn.addEventListener("click", () => { state.aiResults = aiRecipeMatches(document.getElementById("ai-scan-text").value); render(); });
     const shopBtn = document.getElementById("ai-shop-btn");
     if (shopBtn) shopBtn.addEventListener("click", openGroceryModal);
-    const assistantBtn = document.getElementById("ai-assistant-btn");
-    if (assistantBtn) assistantBtn.addEventListener("click", () => {
-      const q = prompt("Ask Tiny Tiffin AI anything about your child's tiffin:");
-      if (!q) return;
-      const text = q.toLowerCase();
-      let answer = "Try a balanced tiffin with a whole grain, a protein-rich food, colourful fruit or vegetables, and water.";
-      if (text.includes("protein")) answer = "Good child-friendly protein options include paneer, eggs, lentils, chickpeas, sprouted moong, yogurt and tofu.";
-      else if (text.includes("breakfast")) answer = "Quick ideas: mini idli, vegetable poha, oats chilla, paneer paratha or egg muffins.";
-      else if (text.includes("snack")) answer = "Try fruit with yogurt, roasted makhana, mini uttapam, sweet-potato bites or a small paneer wrap.";
-      else if (text.includes("allerg")) answer = "Always check ingredient labels and avoid known allergens. Use the app's allergen filters before selecting a recipe.";
-      alert("Tiny Tiffin AI:\n\n" + answer);
-    });
     attachCardEvents();
   }
 
@@ -1165,57 +1067,6 @@
     `;
   }
   function attachFavoritesEvents() { attachCardEvents(); }
-
-  /* ---------- Shopping tab ---------- */
-  function getPlannedShoppingItems() {
-    const counts = {};
-    Object.values(state.planner).forEach(id => {
-      const r = RECIPES.find(x => x.id === id);
-      if (!r) return;
-      r.ingredients.forEach(ing => {
-        const clean = String(ing).trim();
-        counts[clean] = (counts[clean] || 0) + 1;
-      });
-    });
-    return Object.keys(counts).sort().map(name => ({ name, count: counts[name] }));
-  }
-
-  function renderShopTab() {
-    const items = getPlannedShoppingItems();
-    return `
-      <section class="shopping-page" style="padding-top:26px">
-        <div class="shopping-page-header">
-          <div>
-            <h2 class="display" style="color:var(--masala);margin:0">🛒 Shop Ingredients</h2>
-            <p class="sub" style="text-align:left;margin:6px 0 0">Find ingredients for your weekly tiffin plan directly on Amazon Fresh. Availability and delivery options depend on your location.</p>
-          </div>
-          <button class="btn btn-secondary" id="shop-go-planner">Open weekly planner</button>
-        </div>
-        ${items.length
-          ? renderAffiliateShopping(items)
-          : `<div class="empty-state shopping-empty">
-              ${mascotSVG(56)}
-              <p style="margin-top:10px">Add recipes to your weekly planner first, and Tiny Tiffin will create your shopping list here.</p>
-              <button class="btn btn-primary" id="shop-empty-planner">Plan this week's tiffins</button>
-            </div>`}
-      </section>
-    `;
-  }
-
-  function attachShopEvents() {
-    const plannerBtn = document.getElementById("shop-go-planner");
-    if (plannerBtn) plannerBtn.addEventListener("click", () => {
-      state.tab = "planner";
-      render();
-      window.scrollTo(0, 0);
-    });
-    const emptyPlannerBtn = document.getElementById("shop-empty-planner");
-    if (emptyPlannerBtn) emptyPlannerBtn.addEventListener("click", () => {
-      state.tab = "planner";
-      render();
-      window.scrollTo(0, 0);
-    });
-  }
 
   /* ---------- Contact tab ---------- */
   let contactCategory = "feedback";
@@ -1277,31 +1128,18 @@
      This is intentionally privacy-friendly and device-local. A static app cannot
      provide trustworthy global India/international counts without a backend or
      analytics provider. */
-  async function recordLocalVisit() {
+  function recordLocalVisit() {
     try {
       const key = "tt_local_visit_stats";
       const stats = JSON.parse(localStorage.getItem(key) || '{"total":0,"india":0,"international":0}');
       const sessionKey = "tt_visit_session_recorded";
       if (sessionStorage.getItem(sessionKey)) return;
-      let country = "unknown";
-      try {
-        const response = await fetch("https://ipapi.co/json/", { cache: "no-store" });
-        if (response.ok) { const geo = await response.json(); country = String(geo.country_code || "").toUpperCase(); }
-      } catch (_) {}
-      const isIndia = country === "IN" || /(^|\.)in$/i.test(Intl.DateTimeFormat().resolvedOptions().timeZone || "") || /^hi(-|$)|^gu(-|$)/i.test(navigator.language || "");
+      const isIndia = /(^|\.)in$/i.test(Intl.DateTimeFormat().resolvedOptions().timeZone || "") ||
+        /^hi(-|$)|^gu(-|$)/i.test(navigator.language || "");
       stats.total += 1;
       stats[isIndia ? "india" : "international"] += 1;
-      stats.lastVisitAt = new Date().toISOString();
       localStorage.setItem(key, JSON.stringify(stats));
       sessionStorage.setItem(sessionKey, "1");
-      // Global counters: the public CounterAPI service is used only for aggregate counts.
-      // If it is unavailable, the local device counters still remain available in Admin.
-      const ns = (window.TINY_TIFFIN_CONFIG && window.TINY_TIFFIN_CONFIG.analyticsNamespace) || "tiny-tiffin-v1";
-      const base = `https://api.counterapi.dev/v1/${encodeURIComponent(ns)}`;
-      await Promise.allSettled([
-        fetch(`${base}/total/up`),
-        fetch(`${base}/${isIndia ? "india" : "international"}/up`)
-      ]);
     } catch (e) {}
   }
 
