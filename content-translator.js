@@ -33,18 +33,41 @@
     const target = langPair[lang];
     if (!target) return text;
 
-    try {
-      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|${target}`;
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("translation unavailable");
-      const data = await response.json();
-      const translated = data && data.responseData && data.responseData.translatedText;
-      if (translated && translated.trim()) {
-        cache[key] = translated.trim();
-        save();
+    // Google Translate's public endpoint is used first because it is more
+    // reliable for larger recipe text than the previous single-provider call.
+    const providers = [
+      async () => {
+        const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${encodeURIComponent(target)}&dt=t&q=${encodeURIComponent(text)}`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("Google translation unavailable");
+        const data = await response.json();
+        const translated = Array.isArray(data) && Array.isArray(data[0])
+          ? data[0].map(x => x && x[0] ? x[0] : "").join("")
+          : "";
+        if (!translated.trim()) throw new Error("Empty translation");
+        return translated.trim();
+      },
+      async () => {
+        const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|${target}`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error("MyMemory unavailable");
+        const data = await response.json();
+        const translated = data && data.responseData && data.responseData.translatedText;
+        if (!translated || !translated.trim() || translated.trim().toLowerCase() === text.toLowerCase()) {
+          throw new Error("Empty translation");
+        }
         return translated.trim();
       }
-    } catch (_) {}
+    ];
+
+    for (const provider of providers) {
+      try {
+        const translated = await provider();
+        cache[key] = translated;
+        save();
+        return translated;
+      } catch (_) {}
+    }
     return text;
   }
 
@@ -64,11 +87,13 @@
     const stepItems = [...modal.querySelectorAll("section:nth-of-type(2) li")];
     const tips = [...modal.querySelectorAll(".tip-box")];
 
-    const titleText = r.name && r.name[lang] ? r.name[lang] : (title && title.textContent);
-    const descText = r.desc && r.desc[lang] ? r.desc[lang] : (desc && desc.textContent);
+    const hasNativeTitle = !!(r.name && r.name[lang]);
+    const hasNativeDesc = !!(r.desc && r.desc[lang]);
+    const titleText = r.name && r.name.en ? r.name.en : (title && title.textContent);
+    const descText = r.desc && r.desc.en ? r.desc.en : (desc && desc.textContent);
     const [translatedTitle, translatedDesc] = await Promise.all([
-      titleText ? translateText(titleText, lang) : "",
-      descText ? translateText(descText, lang) : ""
+      titleText ? (hasNativeTitle ? r.name[lang] : translateText(titleText, lang)) : "",
+      descText ? (hasNativeDesc ? r.desc[lang] : translateText(descText, lang)) : ""
     ]);
     if (title && translatedTitle) title.textContent = translatedTitle;
     if (desc && translatedDesc) desc.textContent = translatedDesc;
@@ -81,13 +106,26 @@
     ingredientItems.forEach((el, i) => { if (translatedIngredients[i]) el.textContent = translatedIngredients[i]; });
     stepItems.forEach((el, i) => { if (translatedSteps[i]) el.textContent = translatedSteps[i]; });
 
-    const packing = r.packingTip && (r.packingTip[lang] || r.packingTip.en);
-    const kid = r.kidTip && (r.kidTip[lang] || r.kidTip.en);
-    const tipTexts = [packing, kid].filter(Boolean);
-    const translatedTips = await translateMany(tipTexts, lang);
+    // Difficulty is stored as a compact English enum in the recipe database;
+    // translate the visible label without touching admin data.
+    const difficultyTag = [...modal.querySelectorAll(".meta-row .tag")].find(el => el.textContent.trim() === String(r.difficulty || "").trim());
+    if (difficultyTag) difficultyTag.textContent = await translateText(String(r.difficulty), lang);
 
-    const tipLabels = ["Packing tip", "Parent tip"];
-    const translatedTipLabels = await translateMany(tipLabels, lang);
+    const packingNative = r.packingTip && r.packingTip[lang];
+    const kidNative = r.kidTip && r.kidTip[lang];
+    const packing = packingNative || (r.packingTip && r.packingTip.en);
+    const kid = kidNative || (r.kidTip && r.kidTip.en);
+    const tipTexts = [packing, kid].filter(Boolean);
+    const translatedTips = await Promise.all(tipTexts.map((x, i) => {
+      const native = i === 0 ? packingNative : kidNative;
+      return native || translateText(x, lang);
+    }));
+
+    const tipLabels = [
+      (window.tinyTiffinT && window.tinyTiffinT(lang, "packingTip")) || "Packing tip",
+      (window.tinyTiffinT && window.tinyTiffinT(lang, "kidTip")) || "Parent tip"
+    ];
+    const translatedTipLabels = tipLabels;
     [tips[0], tips[1]].forEach((tip, i) => {
       if (!tip || !translatedTips[i]) return;
       tip.innerHTML = "";
@@ -140,9 +178,14 @@
       if (!r) return;
       const title = card.querySelector("h3");
       const desc = card.querySelector(".desc");
-      const titleText = r.name && r.name[lang] ? r.name[lang] : (r.name && r.name.en);
-      const descText = r.desc && r.desc[lang] ? r.desc[lang] : (r.desc && r.desc.en);
-      const [tt, dd] = await Promise.all([translateText(titleText, lang), translateText(descText, lang)]);
+      const hasNativeTitle = !!(r.name && r.name[lang]);
+      const hasNativeDesc = !!(r.desc && r.desc[lang]);
+      const titleText = r.name && r.name.en;
+      const descText = r.desc && r.desc.en;
+      const [tt, dd] = await Promise.all([
+        hasNativeTitle ? r.name[lang] : translateText(titleText, lang),
+        hasNativeDesc ? r.desc[lang] : translateText(descText, lang)
+      ]);
       if (title && tt) title.textContent = tt;
       if (desc && dd) desc.textContent = dd;
       const allergens = [...card.querySelectorAll(".tag.allergen")];
@@ -152,7 +195,35 @@
     }));
   }
 
+  async function localizeDeveloper(root, config, lang) {
+    if (!root || lang === "en" || !config) return;
+    const page = root.querySelector(".simple-page");
+    if (!page) return;
+    const story = page.querySelector(".developer-story");
+    const release = page.querySelector(".release-card span");
+    const capabilityItems = [...page.querySelectorAll(".dev-future-list li")];
+
+    const texts = [];
+    if (story) texts.push(story.innerText);
+    if (release) texts.push(release.innerText);
+    capabilityItems.forEach(el => texts.push(el.innerText));
+
+    const translated = await Promise.all(texts.map(x => translateText(x, lang)));
+    let i = 0;
+    if (story) story.innerHTML = translated[i++].replace(/\n/g, "<br><br>");
+    if (release) release.textContent = translated[i++];
+    capabilityItems.forEach(el => { el.textContent = translated[i++]; });
+
+    const headings = [...page.querySelectorAll("h4")];
+    for (const h of headings) {
+      h.textContent = await translateText(h.textContent, lang);
+    }
+    const emailBtn = page.querySelector('a[href^="mailto:"]');
+    if (emailBtn) emailBtn.textContent = (window.tinyTiffinT && window.tinyTiffinT(lang, "emailDeveloper")) || await translateText("Email the developer", lang);
+  }
+
   window.tinyTiffinLocalizeRecipe = localizeRecipe;
   window.tinyTiffinLocalizeRecipeCards = localizeRecipeCards;
   window.tinyTiffinLocalizeAIHub = localizeAIHub;
+  window.tinyTiffinLocalizeDeveloper = localizeDeveloper;
 })();

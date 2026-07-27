@@ -212,20 +212,6 @@
     return out + "</span>";
   }
 
-  /* ---------------- vitamins ---------------- */
-  function getRecipeVitamins(r) {
-    if (Array.isArray(r.vitamins) && r.vitamins.length) return r.vitamins;
-    const text = [r.name?.en || "", ...(r.ingredients || [])].join(" ").toLowerCase();
-    const vitamins = new Set();
-    if (/carrot|sweet potato|pumpkin|spinach|mango|papaya|egg/.test(text)) vitamins.add("Vitamin A");
-    if (/milk|curd|yogurt|paneer|cheese|egg|banana|oat/.test(text)) vitamins.add("Vitamin B");
-    if (/lemon|orange|tomato|guava|amla|capsicum|broccoli/.test(text)) vitamins.add("Vitamin C");
-    if (/spinach|broccoli|cabbage|leafy|egg/.test(text)) vitamins.add("Vitamin K");
-    if (/almond|peanut|sunflower|avocado|spinach/.test(text)) vitamins.add("Vitamin E");
-    if (/milk|curd|yogurt|paneer|cheese|egg/.test(text)) vitamins.add("Vitamin D");
-    return Array.from(vitamins);
-  }
-
   /* ---------------- filtering ---------------- */
   function isStaple(ingText) {
     const lower = ingText.toLowerCase();
@@ -236,7 +222,7 @@
     if (f.age !== "all" && !r.ageGroups.includes(f.age)) return false;
     if (f.time !== "any" && r.timeCategory > Number(f.time)) return false;
     if (f.meal !== "all" && !r.mealType.includes(f.meal)) return false;
-    if (f.nutrition.size > 0 && !Array.from(f.nutrition).every(n => n === "vitamins" ? getRecipeVitamins(r).length > 0 : r.nutritionTags.includes(n))) return false;
+    if (f.nutrition.size > 0 && !Array.from(f.nutrition).every(n => r.nutritionTags.includes(n))) return false;
     if (f.diet !== "all" && !r.dietType.includes(f.diet)) return false;
     if (f.cuisine !== "all" && r.cuisine !== f.cuisine) return false;
     if (f.allergyExclude.size > 0) {
@@ -284,6 +270,7 @@
   const root = document.getElementById("app");
 
   function render() {
+    document.documentElement.lang = state.lang === "yue" ? "zh-HK" : state.lang;
     root.innerHTML = `
       ${renderHeader()}
       <main class="wrap">
@@ -316,6 +303,7 @@
     }
     hydrateRecipeImages(root);
     if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
+    if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
     });
@@ -332,6 +320,10 @@
       <header class="app-header">
         <div class="wrap header-row">
           <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap">${mascotSVG(38)}<span class="ai-brand-badge" title="AI-powered features" aria-label="AI-powered features">AI</span></span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
+          <a class="header-qr" href="https://tinytiffin.vercel.app/" target="_blank" rel="noopener" title="${t("qrDownload")}">
+            <img src="tiny-tiffin-qr.png" alt="${t("qrDownload")}" loading="lazy">
+            <span>${t("qrDownloadShort")}</span>
+          </a>
           <div class="header-controls">
             <button class="theme-toggle install-action" id="install-btn" aria-label="Install app">⬇️ Install</button>
             <button class="theme-toggle install-action" id="update-btn" aria-label="Check for software update">↻ Update</button>
@@ -537,7 +529,7 @@
         state.filters.nutrition.clear();
         if (mood === "quick") state.filters.time = "15";
         if (mood === "protein") state.filters.nutrition.add("protein");
-        if (mood === "colourful") state.filters.nutrition.add("vitamins");
+        if (mood === "colourful") state.filters.nutrition.add("immunity");
         render();
       });
     });
@@ -551,6 +543,7 @@
     root.querySelectorAll("[data-meal]").forEach(btn => btn.addEventListener("click", () => { state.filters.meal = btn.dataset.meal; render(); }));
     root.querySelectorAll("[data-diet]").forEach(btn => btn.addEventListener("click", () => { state.filters.diet = btn.dataset.diet; render(); }));
     root.querySelectorAll("[data-cuisine]").forEach(btn => btn.addEventListener("click", () => { state.filters.cuisine = btn.dataset.cuisine; render(); }));
+    root.querySelectorAll("[data-ingredient-category]").forEach(btn => btn.addEventListener("click", () => { state.filters.ingredientCategory = btn.dataset.ingredientCategory; render(); }));
     root.querySelectorAll("[data-allergy]").forEach(btn => {
       btn.addEventListener("click", () => {
         const a = btn.dataset.allergy;
@@ -572,7 +565,7 @@
     }
     const clearBtn = document.getElementById("clear-filters");
     if (clearBtn) clearBtn.addEventListener("click", () => {
-      state.filters = { age: "all", time: "any", meal: "all", nutrition: new Set(), allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
+      state.filters = { age: "all", time: "any", meal: "all", nutrition: new Set(), ingredientCategory: "all", allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
       render();
     });
     attachCardEvents();
@@ -648,7 +641,6 @@
         <div class="rating-row" style="margin-bottom:10px">${starsHTML(rt.overall)} <span>${rt.overall.toFixed(1)} (${rt.count})</span>
           <button class="link-btn" id="share-btn" style="margin-left:auto">${t("shareRecipe")}</button>
         </div>
-        <div class="vitamin-row">🍎 <strong>${t("keyVitamins")}:</strong> ${getRecipeVitamins(r).join(", ") || t("nutritionalProfileVaries")}</div>
         <div class="meta-row" style="margin-bottom:14px">
           <span class="tag time">⏱ ${r.timeCategory} min</span>
           <span class="tag">${r.difficulty}</span>
