@@ -66,8 +66,12 @@
 
     const titleText = r.name && r.name[lang] ? r.name[lang] : (title && title.textContent);
     const descText = r.desc && r.desc[lang] ? r.desc[lang] : (desc && desc.textContent);
-    if (title && titleText) title.textContent = titleText;
-    if (desc && descText) desc.textContent = descText;
+    const [translatedTitle, translatedDesc] = await Promise.all([
+      titleText ? translateText(titleText, lang) : "",
+      descText ? translateText(descText, lang) : ""
+    ]);
+    if (title && translatedTitle) title.textContent = translatedTitle;
+    if (desc && translatedDesc) desc.textContent = translatedDesc;
 
     const ingredientTexts = r.ingredients || ingredientItems.map(x => x.textContent);
     const stepTexts = r.instructions || stepItems.map(x => x.textContent);
@@ -82,26 +86,26 @@
     const tipTexts = [packing, kid].filter(Boolean);
     const translatedTips = await translateMany(tipTexts, lang);
 
-    if (tips[0] && translatedTips[0]) {
-      const strong = tips[0].querySelector("strong");
-      tips[0].innerHTML = "";
-      if (strong) tips[0].appendChild(strong);
-      tips[0].appendChild(document.createTextNode(" " + translatedTips[0]));
-    }
-    if (tips[1] && translatedTips[1]) {
-      const strong = tips[1].querySelector("strong");
-      tips[1].innerHTML = "";
-      if (strong) tips[1].appendChild(strong);
-      tips[1].appendChild(document.createTextNode(" " + translatedTips[1]));
-    }
+    const tipLabels = ["Packing tip", "Parent tip"];
+    const translatedTipLabels = await translateMany(tipLabels, lang);
+    [tips[0], tips[1]].forEach((tip, i) => {
+      if (!tip || !translatedTips[i]) return;
+      tip.innerHTML = "";
+      const strong = document.createElement("strong");
+      strong.textContent = (translatedTipLabels[i] || tipLabels[i]) + ":";
+      tip.appendChild(strong);
+      tip.appendChild(document.createTextNode(" " + translatedTips[i]));
+    })
 
-    // Translate recipe-specific allergen names and difficulty if the data has no localized equivalent.
+    // Translate every recipe-specific visible tag, including allergens, difficulty,
+    // cuisine, diet and nutrition tags, so the recipe modal does not retain English text.
     const metaTags = [...modal.querySelectorAll(".meta-row .tag")];
-    const rawAllergens = r.allergens || [];
-    const allergenTags = metaTags.filter(x => x.classList.contains("allergen"));
-    const translatedAllergens = await translateMany(rawAllergens, lang);
-    allergenTags.forEach((el, i) => {
-      if (translatedAllergens[i]) el.textContent = "⚠ " + translatedAllergens[i];
+    const rawTagTexts = metaTags.map(el => el.textContent.replace(/^⚠\s*/, "").trim());
+    const translatedTagTexts = await translateMany(rawTagTexts, lang);
+    metaTags.forEach((el, i) => {
+      if (!translatedTagTexts[i]) return;
+      const warning = el.classList.contains("allergen") ? "⚠ " : "";
+      el.textContent = warning + translatedTagTexts[i];
     });
 
     // Translate any remaining visible English recipe-specific text in the modal.
@@ -127,6 +131,28 @@
     placeholders.forEach(el => { if (el.placeholder) el.placeholder = tph[j++]; });
   }
 
+
+  async function localizeRecipeCards(root, recipes, lang) {
+    if (!root || lang === "en") return;
+    const cards = [...root.querySelectorAll(".recipe-card[data-id]")];
+    await Promise.all(cards.map(async card => {
+      const r = recipes.find(x => x.id === card.dataset.id);
+      if (!r) return;
+      const title = card.querySelector("h3");
+      const desc = card.querySelector(".desc");
+      const titleText = r.name && r.name[lang] ? r.name[lang] : (r.name && r.name.en);
+      const descText = r.desc && r.desc[lang] ? r.desc[lang] : (r.desc && r.desc.en);
+      const [tt, dd] = await Promise.all([translateText(titleText, lang), translateText(descText, lang)]);
+      if (title && tt) title.textContent = tt;
+      if (desc && dd) desc.textContent = dd;
+      const allergens = [...card.querySelectorAll(".tag.allergen")];
+      const raw = (r.allergens || []);
+      const translated = await translateMany(raw, lang);
+      allergens.forEach((el, i) => { if (translated[i]) el.textContent = "⚠ " + translated[i]; });
+    }));
+  }
+
   window.tinyTiffinLocalizeRecipe = localizeRecipe;
+  window.tinyTiffinLocalizeRecipeCards = localizeRecipeCards;
   window.tinyTiffinLocalizeAIHub = localizeAIHub;
 })();

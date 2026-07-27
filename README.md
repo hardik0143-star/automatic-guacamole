@@ -70,3 +70,10 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Added quick Indian and continental recipes designed around everyday ingredients and generally 15–30 minute preparation windows.
 - New combinations include paneer, millets, quinoa, oats, chickpeas, sprouts, broccoli, mushrooms, zucchini, spinach, beetroot, carrots, bell peppers, sweet potato, whole grains and colourful vegetables.
 - New English titles were checked against the existing recipe database to avoid intentional title duplication.
+
+
+## Latest update — v1.0
+- Removed Vitamins from the front-page nutrition goal list.
+- Added ingredient-category discovery for fruits, vegetables, millets & grains, lentils & pulses, paneer & cheese, tofu & plant protein, nuts & seeds, and egg.
+- Added a small Tiny Tiffin QR code in the header for opening/downloading the app.
+- Improved user-side localisation for tiffin moods, ingredient categories, recipe cards, recipe titles, descriptions, ingredients, steps, tips and recipe tags. The Admin section is intentionally excluded from user-side translation.

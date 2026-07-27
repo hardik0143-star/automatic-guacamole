@@ -494,3 +494,32 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 /* Install and software update actions */
 .install-action { white-space: nowrap; }
 .install-action:disabled { opacity: .65; cursor: wait; }
+
+/* Tiny Tiffin QR download badge */
+.header-qr {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  margin-right: 8px;
+  padding: 4px 7px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--ink-soft);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.header-qr img {
+  width: 38px;
+  height: 38px;
+  display: block;
+  border-radius: 5px;
+}
+.header-qr span { max-width: 42px; line-height: 1.05; }
+@media (max-width: 720px) {
+  .header-qr { margin-right: 2px; padding: 3px; gap: 0; }
+  .header-qr img { width: 34px; height: 34px; }
+  .header-qr span { display: none; }
+}

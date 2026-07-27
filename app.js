@@ -109,12 +109,29 @@
   /* ---------------- constants ---------------- */
   const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
-  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
-  const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡", vitamins: "🍎" };
+  const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
+  const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡" };
   const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
   const ALL_ALLERGENS = ["nuts", "dairy", "gluten", "soy", "egg"];
   const DIET_TYPES = ["vegetarian", "vegan", "egg"];
   const CUISINES = ["indian", "continental"];
+  const INGREDIENT_CATEGORIES = [
+    { key: "fruits", terms: ["apple","banana","mango","papaya","orange","strawberry","blueberry","raspberry","grape","watermelon","melon","avocado","pear","peach","plum","kiwi","pineapple","pomegranate","fruit","date","fig"] },
+    { key: "vegetables", terms: ["carrot","broccoli","cauliflower","zucchini","courgette","spinach","kale","radish","beetroot","beet","peas","bell pepper","capsicum","pepper","pumpkin","sweet potato","potato","tomato","cucumber","corn","cabbage","lettuce","mushroom","beans","vegetable","okra","eggplant","brinjal","bottle gourd","lauki","drumstick","green bean"] },
+    { key: "millets", terms: ["millet","ragi","finger millet","foxtail","barnyard","pearl millet","bajra","jowar","sorghum","kodo","little millet","quinoa","oat","oats","whole grain","brown rice"] },
+    { key: "lentils", terms: ["lentil","dal","dhal","moong","mung","sprout","chickpea","chana","rajma","kidney bean","black bean","bean","pulses","toor","urad","masoor"] },
+    { key: "paneerCheese", terms: ["paneer","cheese","mozzarella","cheddar","cottage cheese","ricotta"] },
+    { key: "tofuPlantProtein", terms: ["tofu","soy","tempeh","plant protein"] },
+    { key: "nutsSeeds", terms: ["peanut","almond","cashew","walnut","sesame","chia","flax","seed","nut","tahini"] },
+    { key: "egg", terms: ["egg"] }
+  ];
+  function recipeMatchesIngredientCategory(r, category) {
+    if (!category || category === "all") return true;
+    const cat = INGREDIENT_CATEGORIES.find(x => x.key === category);
+    if (!cat) return true;
+    const hay = [r.name?.en || "", ...(r.ingredients || [])].join(" ").toLowerCase();
+    return cat.terms.some(term => hay.includes(term));
+  }
   const TIME_BUCKETS = [10, 15, 20, 25, 30];
   const DAY_KEYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const MEAL_SLOTS = ["breakfast", "lunch", "snack"];
@@ -132,7 +149,7 @@
     savedPlans: storage.get("tt_saved_plans", []),
     userRatings: storage.get("tt_user_ratings", {}),
     filters: {
-      age: "all", time: "any", meal: "all", nutrition: new Set(),
+      age: "all", time: "any", meal: "all", nutrition: new Set(), ingredientCategory: "all",
       allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: ""
     },
     matchInput: "",
@@ -225,6 +242,7 @@
     if (f.allergyExclude.size > 0) {
       for (const a of f.allergyExclude) if (r.allergens.includes(a)) return false;
     }
+    if (!recipeMatchesIngredientCategory(r, f.ingredientCategory)) return false;
     if (f.smartSearch.trim()) {
       const q = f.smartSearch.trim().toLowerCase();
       const hay = [
@@ -297,6 +315,7 @@
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     hydrateRecipeImages(root);
+    if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
     });
@@ -393,11 +412,11 @@
         <h1 class="display">${t("heroTitle")}</h1>
         <p class="sub">${t("heroSub")}</p>
         <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
-        <div class="mood-picker" aria-label="Quick tiffin ideas">
-          <span class="mood-label">Choose a tiffin mood:</span>
-          <button class="mood-chip" data-mood="quick">⚡ Quick & Easy</button>
-          <button class="mood-chip" data-mood="protein">💪 Protein Power</button>
-          <button class="mood-chip" data-mood="colourful">🌈 Colourful & Nutritious</button>
+        <div class="mood-picker" aria-label="${t("moodLabel")}">
+          <span class="mood-label">${t("moodLabel")}</span>
+          <button class="mood-chip" data-mood="quick">⚡ ${t("moodQuick")}</button>
+          <button class="mood-chip" data-mood="protein">💪 ${t("moodProtein")}</button>
+          <button class="mood-chip" data-mood="colourful">🌈 ${t("moodColourful")}</button>
         </div>
         <div class="tiffin-handle" aria-hidden="true"></div>
         <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
@@ -446,6 +465,13 @@
           <div class="chip-row">
             <button class="chip ${state.filters.cuisine === "all" ? "active" : ""}" data-cuisine="all">${t("all")}</button>
             ${CUISINES.map(c => `<button class="chip ${state.filters.cuisine === c ? "active" : ""}" data-cuisine="${c}">${t("cuisine" + capitalize(c))}</button>`).join("")}
+          </div>
+        </div>
+        <div class="filter-group ingredient-filter-group">
+          <label>${t("filterIngredient")}</label>
+          <div class="chip-row">
+            <button class="chip ${state.filters.ingredientCategory === "all" ? "active" : ""}" data-ingredient-category="all">${t("all")}</button>
+            ${INGREDIENT_CATEGORIES.map(c => `<button class="chip ${state.filters.ingredientCategory === c.key ? "active" : ""}" data-ingredient-category="${c.key}">${t("ingredientCategories")[c.key]}</button>`).join("")}
           </div>
         </div>
         <div class="filter-group">
