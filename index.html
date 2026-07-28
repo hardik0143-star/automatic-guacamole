@@ -1,42 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tiny Tiffin — Healthy tiffins for happy kids</title>
-<meta name="description" content="Find quick, healthy Indian & continental vegetarian tiffin ideas for kids, filtered by age, time, diet and nutrition goals.">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Tiny Tiffin v1.1 Professional Edition</title>
+
+<meta name="description" content="Tiny Tiffin helps parents prepare healthy, colourful Indian and continental meals for babies, toddlers and school-going children.">
+
+<meta name="keywords" content="kids recipes,tiffin,healthy lunchbox,baby food,toddler food,school lunch,vegetarian recipes,AI tiffin planner">
+
+<meta name="author" content="Hardik Desai">
+
 <meta name="theme-color" content="#2B4E32">
-<meta property="og:title" content="Tiny Tiffin">
-<meta property="og:description" content="Healthy tiffins. Happy kids. Stress-free mornings.">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="apple-mobile-web-app-title" content="Tiny Tiffin">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Tiny Tiffin v1.1 Professional Edition">
+
+<meta property="og:description" content="Healthy Tiffins • Happy Kids • AI Powered">
+
+<meta property="og:image" content="icon-512.png">
+
+<meta property="og:site_name" content="Tiny Tiffin">
+
+<meta property="og:locale" content="en_IN">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Tiny Tiffin">
+
+<meta name="twitter:description" content="Healthy Tiffins • Happy Kids">
+
+<meta name="twitter:image" content="icon-512.png">
+
 <link rel="manifest" href="manifest.json">
+
 <link rel="icon" href="icon-192.png">
+
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
+
 <script>
-  /* Apply saved theme before paint to avoid a light-mode flash */
-  try {
-    var t = JSON.parse(localStorage.getItem("tt_theme") || '"light"');
-    document.documentElement.setAttribute("data-theme", t);
-  } catch (e) {}
+try{
+const theme=JSON.parse(localStorage.getItem("tt_theme")||'"light"');
+document.documentElement.setAttribute("data-theme",theme);
+}catch(e){}
 </script>
+
 </head>
+
 <body>
+
 <div id="app">
-  <noscript>Tiny Tiffin needs JavaScript enabled to show recipes.</noscript>
+
+<noscript>
+
+Tiny Tiffin requires JavaScript to provide recipes and AI-powered features.
+
+</noscript>
+
 </div>
 
 <script src="recipes.js"></script>
+
 <script src="i18n.js"></script>
+
 <script src="site-config.js"></script>
+
 <script src="store.js"></script>
+
 <script src="content-translator.js"></script>
-<script src="app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
-    });
-  }
+if(window.TINY_TIFFIN_CONFIG?.emailjs?.enabled){
+
+emailjs.init({
+publicKey:window.TINY_TIFFIN_CONFIG.emailjs.publicKey
+});
+
+}
 </script>
+
+<script src="app.js"></script>
+
+<script>
+
+if("serviceWorker" in navigator){
+
+window.addEventListener("load",()=>{
+
+navigator.serviceWorker.register("sw.js").then(reg=>{
+
+reg.addEventListener("updatefound",()=>{
+
+const worker=reg.installing;
+
+worker.addEventListener("statechange",()=>{
+
+if(worker.state==="installed" && navigator.serviceWorker.controller){
+
+window.dispatchEvent(new Event("TinyTiffinUpdateAvailable"));
+
+}
+
+});
+
+});
+
+}).catch(()=>{});
+
+});
+
+}
+
+</script>
+
 </body>
+
 </html>
