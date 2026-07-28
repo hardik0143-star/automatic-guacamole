@@ -192,4 +192,136 @@ const I18n = (() => {
                 );
 
 
-            if
+            if(element){
+
+                element.innerText =
+                    translation;
+
+            }
+
+
+        });
+
+
+    }
+
+
+
+
+
+    function getCurrentLanguage(){
+
+        return currentLanguage;
+
+    }
+
+
+
+
+
+    function getAvailableLanguages(){
+
+        return languages;
+
+    }
+
+
+
+
+
+    /*
+       Language change event
+
+       Other modules can listen:
+
+       window.addEventListener(
+          "tinyTiffinLanguageChanged",
+          e=>{}
+       )
+
+    */
+
+    function dispatchLanguageEvent(){
+
+
+        window.dispatchEvent(
+
+            new CustomEvent(
+                "tinyTiffinLanguageChanged",
+                {
+
+                    detail:{
+
+                        language:
+                            currentLanguage
+
+                    }
+
+                }
+
+            )
+
+        );
+
+    }
+
+
+
+
+
+    /*
+       Initialize app language
+
+    */
+
+    function init(){
+
+
+        changeLanguage(
+            currentLanguage
+        );
+
+
+    }
+
+
+
+
+    return {
+
+
+        init,
+
+        changeLanguage,
+
+        getCurrentLanguage,
+
+        getAvailableLanguages,
+
+        refreshUI
+
+
+    };
+
+
+})();
+
+
+
+
+// Global access
+
+window.I18n = I18n;
+
+
+
+// Auto initialize
+
+document.addEventListener(
+    "DOMContentLoaded",
+    ()=>{
+
+        I18n.init();
+
+    }
+);
