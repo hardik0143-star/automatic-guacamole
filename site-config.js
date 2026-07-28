@@ -1,28 +1,228 @@
-/* Tiny Tiffin — Site configuration
-   Edit these values directly. Nothing here requires touching app.js. */
+/* ==========================================================================
+   Tiny Tiffin — Site Configuration
+   Version : v1.1 Professional Edition
+   ========================================================================= */
+
 window.TINY_TIFFIN_CONFIG = {
-  contactEmail: "Hardypharmacy26@gmail.com",
-  version: "v1.0",
-  releaseDate: "July 2026",
-  releaseNotes: "Introduced Tiny Tiffin AI capabilities: AI Tiffin Planner, Ingredient Scanner workflow, AI Recipe Adaptation and Smart Shopping List. Added 40 new complementary-food recipes for ages 6–12 months and 60 additional age-specific recipes: 30 for 6–12 months and 30 for 1–2 years, including fruit purées, soft fruit combinations, toddler meals and finger-food ideas. Version numbering reset to v1.0 as the new AI-enabled product baseline. Fixed ingredient-category filtering, removed the Vitamins goal from the user-facing recipe experience, added a compact QR download badge, and strengthened full user-side translation for recipe content and developer information. Expanded the library to 505+ colourful, healthy Indian and continental recipes designed around everyday ingredients and generally 15–30 minute preparation times.",
+
+  /* -------------------------------------------------------------
+     Application
+  ------------------------------------------------------------- */
+
+  appName: "Tiny Tiffin",
+
+  version: "v1.1 Professional Edition",
+
+  databaseVersion: "2026.11",
+
+  releaseDate: "August 2026",
+
+  theme: "premium",
+
+  recipeCount: 505,
+
+  latestRelease: true,
+
+  enablePWAUpdateCheck: true,
+
+  enableInstallPrompt: true,
+
+  enableOfflineMode: true,
+
+
+
+  /* -------------------------------------------------------------
+     EmailJS
+  ------------------------------------------------------------- */
+
+  emailjs: {
+
+      enabled: true,
+
+      publicKey: "QhWkCiEaXDlxr-f4G",
+
+      serviceId: "service_cojdevq",
+
+      templateId: "template_qzn6vno"
+
+  },
+
+
+
+  /* -------------------------------------------------------------
+     AI
+  ------------------------------------------------------------- */
+
+  ai: {
+
+      enabled: true,
+
+      adminOnly: true,
+
+      planner: true,
+
+      ingredientScanner: true,
+
+      recipeAdaptation: true,
+
+      shoppingList: true,
+
+      recommendations: true
+
+  },
+
+
+
+  /* -------------------------------------------------------------
+     Translation
+  ------------------------------------------------------------- */
+
+  translation: {
+
+      enabled: true,
+
+      translateRecipeContent: true,
+
+      translateIngredients: true,
+
+      translatePreparation: true,
+
+      translateNutrition: true,
+
+      translateParentTips: true,
+
+      translatePackingTips: true,
+
+      translateDeveloperSection: true,
+
+      translateAdmin: false
+
+  },
+
+
+
+  /* -------------------------------------------------------------
+     Recipe Database
+  ------------------------------------------------------------- */
+
+  recipes: {
+
+      total: 505,
+
+      enableRecipeOfTheDay: true,
+
+      enableWeeklyFeaturedRecipe: true,
+
+      enableTrendingRecipes: true,
+
+      enableHealthySwapTips: true,
+
+      enableNutritionHighlights: true
+
+  },
+
+
+
+  /* -------------------------------------------------------------
+     Ingredient Explorer
+  ------------------------------------------------------------- */
+
+  ingredientExplorer: {
+
+      enabled: true,
+
+      categories: [
+
+          "Fruits",
+
+          "Vegetables",
+
+          "Leafy Greens",
+
+          "Millets",
+
+          "Whole Grains",
+
+          "Paneer",
+
+          "Tofu",
+
+          "Cheese",
+
+          "Eggs",
+
+          "Sprouts",
+
+          "Lentils",
+
+          "Beans",
+
+          "Rice",
+
+          "Quinoa",
+
+          "Oats",
+
+          "Nuts & Seeds"
+
+      ]
+
+  },
+
+
+
+  /* -------------------------------------------------------------
+     PWA
+  ------------------------------------------------------------- */
+
+  pwa: {
+
+      showInstallButton: true,
+
+      showUpdateButton: true,
+
+      autoRefreshAfterUpdate: false,
+
+      notifyUserWhenUpdateAvailable: true
+
+  },
+
+
+
+  /* -------------------------------------------------------------
+     Developer
+  ------------------------------------------------------------- */
+
   developer: {
-    name: "Hardik Desai",
-    email: "Hardypharmacy26@gmail.com",
-    about: "Tiny Tiffin started with a simple idea inspired by our little family ♥️\n\nAs parents, we often found ourselves wondering what to pack in a tiffin every day - something healthy, nutritious, interesting, and something children would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
-    currentCapabilities: [
-      "🗓️ AI-powered tiffin planning with personalised recipe suggestions",
-      "📸 AI-powered ingredient scanner workflow with image upload and ingredient confirmation",
-      "🔄 AI-powered recipe adaptation suggestions for substitutions and dietary preferences",
-      "🛒 Smart shopping list generation from the weekly planner",
-      "Smart recipe search and multi-ingredient filtering",
-      "Nutrition-focused recipe discovery",
-      "Weekly tiffin planning",
-      "Filters for age, time, cuisine and allergens",
-      "Multi-language support: Indian and international languages",
-      "Recipe images and nutrition information",
-      "Healthy recipe library with 505+ Indian and continental food ideas, including 82 recipes for ages 6–12 months and 65 recipes for ages 1–2 years",
-      "PWA installation and offline support",
-      "Dark mode with accessibility-focused readability",
-      "Version tracking and release notes"
-    ]  }
-};
+
+      name: "Hardik Desai",
+
+      qrEnabled: true,
+
+      showEmail: false,
+
+      about:
+
+`Tiny Tiffin started with a simple idea inspired by our little family. ❤️
+
+As parents, we often wondered what to pack in a tiffin every day—something healthy, nutritious, colourful and enjoyable for children.
+
+That everyday challenge inspired us to create Tiny Tiffin.
+
+Our goal is simple: help parents prepare delicious, balanced lunchboxes with confidence using practical recipes and modern technology.`,
+
+
+
+      currentCapabilities: [
+
+"🤖 AI-powered Tiffin Planner",
+
+"📸 AI Ingredient Scanner",
+
+"🔄 AI Recipe Adaptation",
+
+"🛒 Smart Shopping List",
+
+"🍱 505+ healthy Indian & Continental recipes",
+
+"
