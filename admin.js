@@ -470,7 +470,7 @@
       const submit = document.getElementById("pw-submit");
       const input = document.getElementById("pw-input");
       const tryLogin = () => {
-        if (input.value === ADMIN_PASSWORD) { authed = true; sessionSet("tt_admin_authed", true); render(); }
+        if (String(input.value || "").trim() === String(ADMIN_PASSWORD).trim()) { authed = true; sessionSet("tt_admin_authed", true); render(); }
         else { input.value = ""; input.placeholder = "Incorrect password — try again"; input.focus(); }
       };
       if (submit) submit.addEventListener("click", tryLogin);
