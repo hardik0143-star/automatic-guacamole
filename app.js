@@ -1105,13 +1105,61 @@
     `;
   }
   function attachContactEvents() {
-    root.querySelectorAll("[data-cat]").forEach(btn => btn.addEventListener("click", () => { contactCategory = btn.dataset.cat; render(); }));
+    root.querySelectorAll("[data-cat]").forEach(btn => btn.addEventListener("click", () => {
+      contactCategory = btn.dataset.cat;
+      render();
+    }));
+
     const sendBtn = document.getElementById("contact-send");
-    if (sendBtn) sendBtn.addEventListener("click", () => {
-      const subject = document.getElementById("contact-subject").value || contactCategory;
-      const message = document.getElementById("contact-message").value || "";
-      const mailto = `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(`[Tiny Tiffin ${contactCategory}] ${subject}`)}&body=${encodeURIComponent(message)}`;
-      window.location.href = mailto;
+    if (!sendBtn) return;
+
+    sendBtn.addEventListener("click", async () => {
+      const subjectEl = document.getElementById("contact-subject");
+      const messageEl = document.getElementById("contact-message");
+      const subject = (subjectEl?.value || "").trim() || contactCategory;
+      const message = (messageEl?.value || "").trim();
+
+      if (!message) {
+        showToast("Please enter your message before sending.");
+        messageEl?.focus();
+        return;
+      }
+
+      const originalText = sendBtn.textContent;
+      sendBtn.disabled = true;
+      sendBtn.textContent = "Sending…";
+
+      try {
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            service_id: "service_cojdevq",
+            template_id: "template_qzn6vno",
+            user_id: "QhWkCiEaXDlxr-f4G",
+            template_params: {
+              category: contactCategory,
+              subject: subject,
+              message: message,
+              name: "Tiny Tiffin User",
+              from_email: "Tiny Tiffin Contact Form",
+              time: new Date().toLocaleString(),
+              app_name: "Tiny Tiffin"
+            }
+          })
+        });
+
+        if (!response.ok) throw new Error(await response.text());
+        if (subjectEl) subjectEl.value = "";
+        if (messageEl) messageEl.value = "";
+        showToast("Thank you! Your message has been sent successfully.");
+      } catch (error) {
+        console.error("Tiny Tiffin contact error:", error);
+        showToast("Message could not be sent. Please try again.");
+      } finally {
+        sendBtn.disabled = false;
+        sendBtn.textContent = originalText;
+      }
     });
   }
 
@@ -1125,7 +1173,6 @@
       <div class="simple-page">
         <h2>${t("developerTitle")}</h2>
         <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || ""}</p>
-        <p><a href="mailto:${dev.email || ""}" class="btn btn-secondary" style="display:inline-flex;text-decoration:none">✉️ Email the developer</a></p>
         <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\\n/g, "<br><br>")}</p>
         <div class="release-card"><strong>${CONFIG.version || dev.version || "v3.0"}</strong> · ${dev.releaseDate || ""}<br><span>${dev.releaseNotes || ""}</span></div>
         ${dev.currentCapabilities && dev.currentCapabilities.length ? `<h4 style="margin:22px 0 8px">Current capabilities</h4><ul class="dev-future-list">${dev.currentCapabilities.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
