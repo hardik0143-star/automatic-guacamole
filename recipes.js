@@ -34525,3 +34525,39 @@ window.TINY_TIFFIN_RECIPES = [
     "hidden": false
   }
 ];
+
+/* ==========================================================
+   Tiny Tiffin v1.1 Professional Edition — recipe metadata
+   Adds ingredient discovery and tofu guidance without deleting
+   or changing any existing recipe records.
+   ========================================================== */
+(function () {
+  "use strict";
+  var recipes = window.TINY_TIFFIN_RECIPES || [];
+  var rules = [
+    ["fruits", /apple|banana|mango|berry|orange|pear|grape|papaya|avocado|fruit|date|fig|melon|peach|plum/],
+    ["vegetables", /carrot|broccoli|spinach|kale|beet|radish|tomato|onion|capsicum|bell pepper|vegetable|peas|corn|zucchini|pumpkin|sweet potato|cauliflower|cabbage/],
+    ["millets", /millet|ragi|jowar|bajra|foxtail|kodo|barnyard|little millet|sorghum/],
+    ["lentils", /lentil|dal|moong|masoor|chana|chickpea|rajma|bean|sprout|urad|toor/],
+    ["paneer", /paneer/],
+    ["tofu", /tofu/],
+    ["cheese", /cheese|mozzarella|cheddar/],
+    ["grains", /rice|oat|wheat|daliya|quinoa|semolina|rava/],
+    ["nutsSeeds", /almond|cashew|walnut|peanut|sesame|chia|flax|seed/]
+  ];
+  recipes.forEach(function (recipe) {
+    var names = recipe.name ? Object.keys(recipe.name).map(function (k) { return recipe.name[k]; }) : [];
+    var descriptions = recipe.desc ? Object.keys(recipe.desc).map(function (k) { return recipe.desc[k]; }) : [];
+    var text = names.concat(descriptions, recipe.ingredients || []).join(" ").toLowerCase();
+    var categories = new Set(recipe.ingredientCategories || []);
+    rules.forEach(function (rule) { if (rule[1].test(text)) categories.add(rule[0]); });
+    recipe.ingredientCategories = Array.from(categories);
+    recipe.searchText = text.replace(/[^a-z0-9]+/g, " ").trim();
+    if (/paneer/.test(text) && !/tofu/.test(text) && !recipe.tofuTip) {
+      recipe.tofuTip = { en: "For a plant-based option, replace paneer with firm tofu and season gently for children." };
+    }
+  });
+  window.TINY_TIFFIN_INGREDIENT_CATEGORIES = [
+    "fruits", "vegetables", "millets", "lentils", "paneer", "tofu", "cheese", "grains", "nutsSeeds"
+  ];
+})();
