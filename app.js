@@ -423,6 +423,11 @@
         <input type="text" id="smart-search" placeholder="${t('searchPlaceholder')}" value="${escapeAttr(state.filters.smartSearch)}">
       </div>
 
+      <section class="shopping-strip" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:16px 0 20px">
+        <article style="background:var(--card);border-left:5px solid var(--masala);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><h3 style="margin:0 0 6px;color:var(--masala)">🛒 Shop on Amazon Fresh</h3><p class="desc" style="margin:0 0 12px">Fresh fruits, vegetables, dairy, grains and everyday groceries.</p><a class="btn btn-primary" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener">Shop now →</a></article>
+        <article style="background:var(--card);border-left:5px solid var(--turmeric);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><h3 style="margin:0 0 6px;color:var(--ink)">🛍️ Shop on Amazon</h3><p class="desc" style="margin:0 0 12px">Find pantry ingredients, kitchen essentials and more.</p><a class="btn btn-secondary" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener">Shop now →</a></article>
+      </section>
+
       <section class="filters">
         <div class="filter-group">
           <label>${t("filterAge")}</label>
@@ -1099,67 +1104,46 @@
           <label>${t("contactSubjectLabel")}<input type="text" id="contact-subject" class="search-input"></label>
           <label>${t("contactMessageLabel")}<textarea id="contact-message" rows="5" class="search-input" style="width:100%"></textarea></label>
           <button class="btn btn-primary" id="contact-send">${t("contactButton")}</button>
-          <p style="font-size:.78rem;color:var(--ink-soft)">${t("contactFormNote")}</p>
+          <p id="contact-status" role="status" style="font-size:.82rem;color:var(--ink-soft)">${t("contactFormNote")}</p>
         </div>
-      </div>
-    `;
+      </div>`;
   }
   function attachContactEvents() {
-    root.querySelectorAll("[data-cat]").forEach(btn => btn.addEventListener("click", () => {
-      contactCategory = btn.dataset.cat;
-      render();
-    }));
-
+    root.querySelectorAll("[data-cat]").forEach(btn => btn.addEventListener("click", () => { contactCategory = btn.dataset.cat; render(); }));
     const sendBtn = document.getElementById("contact-send");
     if (!sendBtn) return;
-
     sendBtn.addEventListener("click", async () => {
       const subjectEl = document.getElementById("contact-subject");
       const messageEl = document.getElementById("contact-message");
-      const subject = (subjectEl?.value || "").trim() || contactCategory;
-      const message = (messageEl?.value || "").trim();
-
-      if (!message) {
-        showToast("Please enter your message before sending.");
-        messageEl?.focus();
-        return;
-      }
-
-      const originalText = sendBtn.textContent;
-      sendBtn.disabled = true;
-      sendBtn.textContent = "Sending…";
-
+      const statusEl = document.getElementById("contact-status");
+      const subject = (subjectEl.value || contactCategory).trim();
+      const message = (messageEl.value || "").trim();
+      if (!message) { statusEl.textContent = "Please enter a message before sending."; messageEl.focus(); return; }
+      const original = sendBtn.textContent; sendBtn.disabled = true; sendBtn.textContent = "Sending…"; statusEl.textContent = "Sending your message…";
       try {
+        const emailCfg = CONFIG.emailjs || {};
         const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+          method: "POST", headers: {"Content-Type":"application/json"},
           body: JSON.stringify({
-            service_id: "service_cojdevq",
-            template_id: "template_qzn6vno",
-            user_id: "QhWkCiEaXDlxr-f4G",
+            service_id: emailCfg.serviceId || "service_cojdevq",
+            template_id: emailCfg.templateId || "template_qzn6vno",
+            user_id: emailCfg.publicKey || "QhWkCiEaXDlxr-f4G",
             template_params: {
-              category: contactCategory,
-              subject: subject,
-              message: message,
-              name: "Tiny Tiffin User",
-              from_email: "Tiny Tiffin Contact Form",
-              time: new Date().toLocaleString(),
-              app_name: "Tiny Tiffin"
+              to_email: emailCfg.toEmail || "tinytiffin13@gmail.com",
+              category: contactCategory, subject: subject, message: message,
+              name: "Tiny Tiffin User", from_email: "Tiny Tiffin Contact Form",
+              time: new Date().toLocaleString(), app_name: "Tiny Tiffin"
             }
           })
         });
-
-        if (!response.ok) throw new Error(await response.text());
-        if (subjectEl) subjectEl.value = "";
-        if (messageEl) messageEl.value = "";
-        showToast("Thank you! Your message has been sent successfully.");
+        const resultText = await response.text();
+        if (!response.ok) throw new Error(resultText || "Email service error");
+        subjectEl.value = ""; messageEl.value = "";
+        statusEl.textContent = "Thank you! Your message has been sent successfully.";
       } catch (error) {
         console.error("Tiny Tiffin contact error:", error);
-        showToast("Message could not be sent. Please try again.");
-      } finally {
-        sendBtn.disabled = false;
-        sendBtn.textContent = originalText;
-      }
+        statusEl.textContent = "Message could not be sent. Please try again.";
+      } finally { sendBtn.disabled = false; sendBtn.textContent = original; }
     });
   }
 
@@ -1169,16 +1153,19 @@
   */
   function renderDeveloperTab() {
     const dev = CONFIG.developer || {};
+    const purpose = dev.purpose || "Tiny Tiffin helps parents quickly discover healthy, colourful and child-friendly vegetarian tiffin ideas, plan the week and make everyday lunchbox decisions easier.";
     return `
       <div class="simple-page">
         <h2>${t("developerTitle")}</h2>
-        <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || ""}</p>
-        <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\\n/g, "<br><br>")}</p>
-        <div class="release-card"><strong>${CONFIG.version || dev.version || "v3.0"}</strong> · ${dev.releaseDate || ""}<br><span>${dev.releaseNotes || ""}</span></div>
+        <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || "Hardik Desai"}</p>
+        <h4 style="margin:22px 0 8px">Purpose of Tiny Tiffin</h4>
+        <p class="desc">${purpose}</p>
+        <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\n/g, "<br><br>")}</p>
+        <h4 style="margin:22px 0 8px">Version information</h4>
+        <div class="release-card"><strong>${CONFIG.version || dev.version || "v1.0"}</strong> · ${CONFIG.releaseDate || dev.releaseDate || ""}<br><span>${CONFIG.releaseNotes || dev.releaseNotes || ""}</span></div>
         ${dev.currentCapabilities && dev.currentCapabilities.length ? `<h4 style="margin:22px 0 8px">Current capabilities</h4><ul class="dev-future-list">${dev.currentCapabilities.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
         ${dev.comingSoon && dev.comingSoon.length ? `<h4 style="margin:22px 0 8px">Coming soon</h4><ul class="dev-future-list">${dev.comingSoon.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
-      </div>
-    `;
+      </div>`;
   }
 
   function escapeAttr(s) { return String(s).replace(/"/g, "&quot;"); }
