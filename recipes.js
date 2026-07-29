@@ -34523,41 +34523,89 @@ window.TINY_TIFFIN_RECIPES = [
       "count": 1
     },
     "hidden": false
+  },
+  {
+    "id": "avocado-roti-wrap",
+    "emoji": "🥑",
+    "name": {
+      "en": "Avocado Roti Wrap"
+    },
+    "desc": {
+      "en": "A creamy avocado and colourful vegetable roti wrap that is quick, filling and lunchbox-friendly."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 15,
+    "mealTypes": [
+      "lunch",
+      "snack"
+    ],
+    "nutritionTags": [
+      "fiber",
+      "energy",
+      "immunity"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 whole-wheat roti",
+      "1/2 ripe avocado",
+      "2 tablespoons finely grated carrot",
+      "2 tablespoons finely chopped bell pepper",
+      "1 teaspoon lemon juice",
+      "A pinch of cumin powder",
+      "A pinch of salt (optional for older children)",
+      "A few coriander leaves"
+    ],
+    "instructions": [
+      "Mash the avocado in a bowl until smooth.",
+      "Mix in lemon juice, cumin powder, carrot, bell pepper and coriander.",
+      "Spread the avocado mixture evenly over a soft roti.",
+      "Roll tightly, cut into small pinwheels or two halves, and pack fresh."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 6,
+      "iron_mg": 1.8,
+      "calcium_mg": 45
+    },
+    "packingTip": {
+      "en": "Brush the cut sides with a little lemon juice and pack in a snug box to keep the wrap fresh."
+    },
+    "kidTip": {
+      "en": "For a creamier version, add a spoon of unsweetened yogurt; for a dairy-free option, keep the avocado filling as is."
+    },
+    "ratings": {
+      "overall": 4.7,
+      "nutrition": 4.8,
+      "kidFriendly": 4.7,
+      "lunchboxFriendly": 4.8,
+      "pickyEaterFriendly": 4.5,
+      "timeSaver": 4.9,
+      "count": 1
+    },
+    "hidden": false,
+    "ingredientCategories": [
+      "fruits",
+      "vegetables",
+      "grains"
+    ],
+    "searchTags": [
+      "avocado",
+      "roti",
+      "wrap",
+      "carrot",
+      "bell pepper",
+      "quick lunch"
+    ]
   }
 ];
-
-/* ==========================================================
-   Tiny Tiffin v1.1 Professional Edition — recipe metadata
-   Adds ingredient discovery and tofu guidance without deleting
-   or changing any existing recipe records.
-   ========================================================== */
-(function () {
-  "use strict";
-  var recipes = window.TINY_TIFFIN_RECIPES || [];
-  var rules = [
-    ["fruits", /apple|banana|mango|berry|orange|pear|grape|papaya|avocado|fruit|date|fig|melon|peach|plum/],
-    ["vegetables", /carrot|broccoli|spinach|kale|beet|radish|tomato|onion|capsicum|bell pepper|vegetable|peas|corn|zucchini|pumpkin|sweet potato|cauliflower|cabbage/],
-    ["millets", /millet|ragi|jowar|bajra|foxtail|kodo|barnyard|little millet|sorghum/],
-    ["lentils", /lentil|dal|moong|masoor|chana|chickpea|rajma|bean|sprout|urad|toor/],
-    ["paneer", /paneer/],
-    ["tofu", /tofu/],
-    ["cheese", /cheese|mozzarella|cheddar/],
-    ["grains", /rice|oat|wheat|daliya|quinoa|semolina|rava/],
-    ["nutsSeeds", /almond|cashew|walnut|peanut|sesame|chia|flax|seed/]
-  ];
-  recipes.forEach(function (recipe) {
-    var names = recipe.name ? Object.keys(recipe.name).map(function (k) { return recipe.name[k]; }) : [];
-    var descriptions = recipe.desc ? Object.keys(recipe.desc).map(function (k) { return recipe.desc[k]; }) : [];
-    var text = names.concat(descriptions, recipe.ingredients || []).join(" ").toLowerCase();
-    var categories = new Set(recipe.ingredientCategories || []);
-    rules.forEach(function (rule) { if (rule[1].test(text)) categories.add(rule[0]); });
-    recipe.ingredientCategories = Array.from(categories);
-    recipe.searchText = text.replace(/[^a-z0-9]+/g, " ").trim();
-    if (/paneer/.test(text) && !/tofu/.test(text) && !recipe.tofuTip) {
-      recipe.tofuTip = { en: "For a plant-based option, replace paneer with firm tofu and season gently for children." };
-    }
-  });
-  window.TINY_TIFFIN_INGREDIENT_CATEGORIES = [
-    "fruits", "vegetables", "millets", "lentils", "paneer", "tofu", "cheese", "grains", "nutsSeeds"
-  ];
-})();
