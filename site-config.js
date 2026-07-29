@@ -17,7 +17,7 @@ window.TINY_TIFFIN_CONFIG = {
   developer: {
     name: "Hardik Desai",
     purpose: "Tiny Tiffin was created to help parents discover quick, healthy, colourful and child-friendly vegetarian tiffin ideas, reduce daily meal-planning stress and make nutritious lunchboxes easier.",
-    about: "Tiny Tiffin started with a simple idea inspired by our little family ♥️\nAs parents, we often found ourselves wondering what to pack in a tiffin every day — something healthy, nutritious, interesting, and something children would actually enjoy eating.\nThat small, everyday challenge inspired us to create Tiny Tiffin.\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
+    about: "Tiny Tiffin started with a simple idea inspired by our little one ♥️ As parents, we often found ourselves wondering what to pack in a tiffin every day — something healthy, nutritious, interesting, and something children would actually enjoy eating. That small, everyday challenge inspired us to create Tiny Tiffin. This is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
     currentCapabilities: ["AI-powered tiffin planning", "Ingredient-based recipe discovery", "AI recipe adaptation", "Smart shopping list", "505+ vegetarian recipes", "Multi-language support", "Weekly planner", "PWA and offline support", "Dark mode"]
   }
 };
