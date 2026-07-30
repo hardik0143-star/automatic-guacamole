@@ -2,12 +2,13 @@
    Caches the app shell on install so it opens without a network
    connection after the first visit. Bump CACHE_NAME when you
    change any of the cached files so users get the update. */
-const CACHE_NAME = "tiny-tiffin-v1-1-bento-logo";
+const CACHE_NAME = "tiny-tiffin-v1-2-premium-ui-1";
 const SHELL_FILES = [
   "./",
   "./index.html",
   "./admin.html",
   "./styles.css",
+  "./premium-ui.css",
   "./app.js",
   "./admin.js",
   "./recipes.js",

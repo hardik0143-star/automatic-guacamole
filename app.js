@@ -2,6 +2,15 @@
 (function () {
   "use strict";
 
+  // Premium UI layer: visual-only, keeps existing functionality unchanged.
+  if (!document.querySelector('link[data-tt-premium-ui]')) {
+    const premiumCss = document.createElement('link');
+    premiumCss.rel = 'stylesheet';
+    premiumCss.href = 'premium-ui.css?v=1.2.1';
+    premiumCss.setAttribute('data-tt-premium-ui', 'true');
+    document.head.appendChild(premiumCss);
+  }
+
   /* ---------------- storage: localStorage with in-memory fallback ---------------- */
   const memoryStore = {};
   const storage = {
@@ -252,7 +261,21 @@
   }
 
   /* ---------------- mascot ---------------- */
-  function premiumLogoSVG(size = 42) { return `<svg width="${size}" height="${size}" viewBox="0 0 200 200" role="img" aria-label="Tiny Tiffin"><defs><linearGradient id="ttBentoBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B4038"/><stop offset="100%" stop-color="#0F241E"/></linearGradient></defs><rect width="200" height="200" rx="44" fill="url(#ttBentoBg)"/><rect x="86" y="40" width="28" height="15" rx="7.5" fill="#E3A94C"/><rect x="44" y="55" width="112" height="96" rx="18" fill="#F4EFE6"/><path d="M44 103h112M100 103v48" stroke="#1B4038" stroke-width="4.5"/><rect x="91.5" y="94.5" width="17" height="17" rx="4.5" fill="#E3A94C"/></svg>`; }
+  function premiumLogoSVG(size = 42) { return `<svg width="${size}" height="${size}" viewBox="0 0 64 64" role="img" aria-label="Tiny Tiffin"><defs><linearGradient id="ttGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE59A"/><stop offset=".5" stop-color="#D9A93F"/><stop offset="1" stop-color="#9A6518"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="18" fill="#123D2B" stroke="url(#ttGold)" stroke-width="3"/><path d="M15 35h34l-3 10H18z" fill="#1D5A3D" stroke="url(#ttGold)" stroke-width="2"/><path d="M19 32c2-9 24-9 26 0z" fill="url(#ttGold)"/><path d="M32 20c0-6 4-10 9-12-1 6-4 10-9 12z" fill="#69B94D"/><path d="M31 21c-5-1-9-5-10-10 6 1 9 4 10 10z" fill="#4D9E42"/><path d="M32 20v10" stroke="#F7E6AA" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="42" r="2" fill="#FFE59A"/></svg>`; }
+
+  function mascotSVG(size) {
+    size = size || 34;
+    return `<svg class="mascot-face" width="${size}" height="${size}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="100" height="100" rx="22" fill="#2B4E32"/>
+      <path d="M38 14 a12 12 0 0 1 24 0" stroke="#8C97A5" stroke-width="5" fill="none"/>
+      <rect x="12" y="20" width="76" height="32" rx="12" fill="#8C97A5"/>
+      <rect x="16" y="40" width="68" height="48" rx="14" fill="#E5A431"/>
+      <circle cx="36" cy="62" r="6" fill="#20272B"/><circle cx="64" cy="62" r="6" fill="#20272B"/>
+      <circle cx="38.5" cy="59.5" r="2" fill="#fff"/><circle cx="66.5" cy="59.5" r="2" fill="#fff"/>
+      <path d="M38 72 q12 10 24 0" stroke="#20272B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <circle cx="22" cy="63" r="5" fill="#C1440E" opacity="0.45"/><circle cx="78" cy="63" r="5" fill="#C1440E" opacity="0.45"/>
+    </svg>`;
+  }
 
   /* ---------------- rendering ---------------- */
   const root = document.getElementById("app");
@@ -408,8 +431,8 @@
       </div>
 
       <section class="shopping-strip" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0 18px">
-        <article style="background:var(--card);border:1px solid var(--mist-2);border-radius:14px;padding:11px 12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px"><span style="font-size:1.35rem">🥬</span><div style="min-width:0;flex:1"><h3 style="margin:0 0 2px;color:var(--masala);font-size:.9rem">Amazon Fresh</h3><p class="desc" style="margin:0;font-size:.72rem;line-height:1.25">Fresh groceries</p></div><a class="btn btn-primary" style="padding:7px 10px;font-size:.72rem;white-space:nowrap" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener">Shop →</a></article>
-        <article style="background:var(--card);border:1px solid var(--mist-2);border-radius:14px;padding:11px 12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px"><span style="font-size:1.35rem">🛍️</span><div style="min-width:0;flex:1"><h3 style="margin:0 0 2px;color:var(--ink);font-size:.9rem">Amazon</h3><p class="desc" style="margin:0;font-size:.72rem;line-height:1.25">Kitchen & pantry</p></div><a class="btn btn-secondary" style="padding:7px 10px;font-size:.72rem;white-space:nowrap" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener">Shop →</a></article>
+        <a class="tt-shop-tile tt-shop-fresh" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon Fresh"><span class="tt-shop-icon">🥬</span><span class="tt-shop-copy"><strong>Amazon Fresh</strong><small>Fresh groceries</small></span><span class="tt-shop-arrow">→</span></a>
+        <a class="tt-shop-tile tt-shop-amazon" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon"><span class="tt-shop-icon">🛍️</span><span class="tt-shop-copy"><strong>Amazon Cart</strong><small>Kitchen & pantry</small></span><span class="tt-shop-arrow">→</span></a>
       </section>
 
       <section class="filters">
