@@ -252,19 +252,7 @@
   }
 
   /* ---------------- mascot ---------------- */
-  function mascotSVG(size) {
-    size = size || 34;
-    return `<svg class="mascot-face" width="${size}" height="${size}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect width="100" height="100" rx="22" fill="#2B4E32"/>
-      <path d="M38 14 a12 12 0 0 1 24 0" stroke="#8C97A5" stroke-width="5" fill="none"/>
-      <rect x="12" y="20" width="76" height="32" rx="12" fill="#8C97A5"/>
-      <rect x="16" y="40" width="68" height="48" rx="14" fill="#E5A431"/>
-      <circle cx="36" cy="62" r="6" fill="#20272B"/><circle cx="64" cy="62" r="6" fill="#20272B"/>
-      <circle cx="38.5" cy="59.5" r="2" fill="#fff"/><circle cx="66.5" cy="59.5" r="2" fill="#fff"/>
-      <path d="M38 72 q12 10 24 0" stroke="#20272B" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-      <circle cx="22" cy="63" r="5" fill="#C1440E" opacity="0.45"/><circle cx="78" cy="63" r="5" fill="#C1440E" opacity="0.45"/>
-    </svg>`;
-  }
+  function premiumLogoSVG(size = 42) { return `<svg width="${size}" height="${size}" viewBox="0 0 200 200" role="img" aria-label="Tiny Tiffin"><defs><linearGradient id="ttBentoBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1B4038"/><stop offset="100%" stop-color="#0F241E"/></linearGradient></defs><rect width="200" height="200" rx="44" fill="url(#ttBentoBg)"/><rect x="86" y="40" width="28" height="15" rx="7.5" fill="#E3A94C"/><rect x="44" y="55" width="112" height="96" rx="18" fill="#F4EFE6"/><path d="M44 103h112M100 103v48" stroke="#1B4038" stroke-width="4.5"/><rect x="91.5" y="94.5" width="17" height="17" rx="4.5" fill="#E3A94C"/></svg>`; }
 
   /* ---------------- rendering ---------------- */
   const root = document.getElementById("app");
@@ -319,8 +307,7 @@
     return `
       <header class="app-header">
         <div class="wrap header-row">
-          <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap">${mascotSVG(38)}<span class="ai-brand-badge" title="AI-powered features" aria-label="AI-powered features">AI</span></span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
-
+          <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap premium-logo-mark" aria-hidden="true">${premiumLogoSVG(42)}</span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
           <div class="header-controls">
             <button class="theme-toggle install-action" id="install-btn" aria-label="Install app">⬇️ Install</button>
             <button class="theme-toggle install-action" id="update-btn" aria-label="Check for software update">↻ Update</button>
@@ -420,9 +407,9 @@
         <input type="text" id="smart-search" placeholder="${t('searchPlaceholder')}" value="${escapeAttr(state.filters.smartSearch)}">
       </div>
 
-      <section class="shopping-strip" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:16px 0 20px">
-        <article style="background:var(--card);border-left:5px solid var(--masala);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><h3 style="margin:0 0 6px;color:var(--masala)">🛒 Shop on Amazon Fresh</h3><p class="desc" style="margin:0 0 12px">Fresh fruits, vegetables, dairy, grains and everyday groceries.</p><a class="btn btn-primary" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener">Shop now →</a></article>
-        <article style="background:var(--card);border-left:5px solid var(--turmeric);border-radius:16px;padding:16px;box-shadow:var(--shadow)"><h3 style="margin:0 0 6px;color:var(--ink)">🛍️ Shop on Amazon</h3><p class="desc" style="margin:0 0 12px">Find pantry ingredients, kitchen essentials and more.</p><a class="btn btn-secondary" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener">Shop now →</a></article>
+      <section class="shopping-strip" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0 18px">
+        <article style="background:var(--card);border:1px solid var(--mist-2);border-radius:14px;padding:11px 12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px"><span style="font-size:1.35rem">🥬</span><div style="min-width:0;flex:1"><h3 style="margin:0 0 2px;color:var(--masala);font-size:.9rem">Amazon Fresh</h3><p class="desc" style="margin:0;font-size:.72rem;line-height:1.25">Fresh groceries</p></div><a class="btn btn-primary" style="padding:7px 10px;font-size:.72rem;white-space:nowrap" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener">Shop →</a></article>
+        <article style="background:var(--card);border:1px solid var(--mist-2);border-radius:14px;padding:11px 12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px"><span style="font-size:1.35rem">🛍️</span><div style="min-width:0;flex:1"><h3 style="margin:0 0 2px;color:var(--ink);font-size:.9rem">Amazon</h3><p class="desc" style="margin:0;font-size:.72rem;line-height:1.25">Kitchen & pantry</p></div><a class="btn btn-secondary" style="padding:7px 10px;font-size:.72rem;white-space:nowrap" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener">Shop →</a></article>
       </section>
 
       <section class="filters">

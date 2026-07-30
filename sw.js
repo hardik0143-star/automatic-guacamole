@@ -2,7 +2,7 @@
    Caches the app shell on install so it opens without a network
    connection after the first visit. Bump CACHE_NAME when you
    change any of the cached files so users get the update. */
-const CACHE_NAME = "tiny-tiffin-v1-0-contact-fix-2";
+const CACHE_NAME = "tiny-tiffin-v1-1-bento-logo";
 const SHELL_FILES = [
   "./",
   "./index.html",
@@ -15,6 +15,9 @@ const SHELL_FILES = [
   "./site-config.js",
   "./store.js",
   "./manifest.json"
+  ,"./icon-192.png"
+  ,"./icon-512.png"
+  ,"./apple-touch-icon.png"
 ];
 
 self.addEventListener("install", (event) => {
