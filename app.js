@@ -320,10 +320,7 @@
       <header class="app-header">
         <div class="wrap header-row">
           <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap">${mascotSVG(38)}<span class="ai-brand-badge" title="AI-powered features" aria-label="AI-powered features">AI</span></span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
-          <a class="header-qr" href="https://tinytiffin.vercel.app/" target="_blank" rel="noopener" title="${t("qrDownload")}">
-            <img src="tiny-tiffin-qr.png" alt="${t("qrDownload")}" loading="lazy">
-            <span>${t("qrDownloadShort")}</span>
-          </a>
+
           <div class="header-controls">
             <button class="theme-toggle install-action" id="install-btn" aria-label="Install app">⬇️ Install</button>
             <button class="theme-toggle install-action" id="update-btn" aria-label="Check for software update">↻ Update</button>
@@ -1122,49 +1119,27 @@
       const original = sendBtn.textContent; sendBtn.disabled = true; sendBtn.textContent = "Sending…"; statusEl.textContent = "Sending your message…";
       try {
         const emailCfg = CONFIG.emailjs || {};
-        const serviceId = emailCfg.serviceId || "service_cojdevq";
-        const templateId = emailCfg.templateId || "template_qzn6vno";
-        const publicKey = emailCfg.publicKey || "mnr5FMLWsZ_qj1gAN";
-        const templateParams = {
-          to_email: emailCfg.toEmail || "tinytiffin13@gmail.com",
-          category: contactCategory, subject: subject, message: message,
-          name: "Tiny Tiffin User", from_email: "Tiny Tiffin Contact Form",
-          time: new Date().toLocaleString(), app_name: "Tiny Tiffin"
-        };
-
-        // Prefer the official EmailJS SDK (loaded in index.html) — EmailJS rejects
-        // raw REST/fetch calls that don't come through its own browser SDK, which
-        // was the actual cause of every send failing here.
-        if (window.emailjs && typeof window.emailjs.send === "function") {
-          await window.emailjs.send(serviceId, templateId, templateParams, publicKey);
-        } else {
-          // SDK didn't load (offline/blocked) — fall back to the raw REST call.
-          const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-            method: "POST", headers: {"Content-Type":"application/json"},
-            body: JSON.stringify({ service_id: serviceId, template_id: templateId, user_id: publicKey, template_params: templateParams })
-          });
-          const resultText = await response.text();
-          if (!response.ok) throw new Error(resultText || "Email service error");
-        }
-
+        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST", headers: {"Content-Type":"application/json"},
+          body: JSON.stringify({
+            service_id: emailCfg.serviceId || "service_cojdevq",
+            template_id: emailCfg.templateId || "template_qzn6vno",
+            user_id: emailCfg.publicKey || "QhWkCiEaXDlxr-f4G",
+            template_params: {
+              to_email: emailCfg.toEmail || "tinytiffin13@gmail.com",
+              category: contactCategory, subject: subject, message: message,
+              name: "Tiny Tiffin User", from_email: "Tiny Tiffin Contact Form",
+              time: new Date().toLocaleString(), app_name: "Tiny Tiffin"
+            }
+          })
+        });
+        const resultText = await response.text();
+        if (!response.ok) throw new Error(resultText || "Email service error");
         subjectEl.value = ""; messageEl.value = "";
         statusEl.textContent = "Thank you! Your message has been sent successfully.";
       } catch (error) {
         console.error("Tiny Tiffin contact error:", error);
-        // Fallback: EmailJS didn't go through (quota, domain restriction, template
-        // mismatch, etc). Open the user's own email app instead, pre-filled, so the
-        // message still gets sent rather than dead-ending on an error.
-        try {
-          const toEmail = (CONFIG.emailjs && CONFIG.emailjs.toEmail) || CONFIG.contactEmail || "tinytiffin13@gmail.com";
-          const mailSubject = `[Tiny Tiffin ${contactCategory}] ${subject}`;
-          const mailBody = `${message}\n\n— sent from the Tiny Tiffin app (${contactCategory})`;
-          const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
-          window.location.href = mailtoLink;
-          statusEl.textContent = "Opening your email app to send this message…";
-        } catch (fallbackError) {
-          console.error("Tiny Tiffin contact mailto fallback error:", fallbackError);
-          statusEl.textContent = "Message could not be sent. Please try again.";
-        }
+        statusEl.textContent = "Message could not be sent. Please try again.";
       } finally { sendBtn.disabled = false; sendBtn.textContent = original; }
     });
   }

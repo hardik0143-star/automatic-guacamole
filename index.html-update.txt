@@ -1,0 +1,7 @@
+In index.html, add this line immediately AFTER styles.css:
+<link rel="stylesheet" href="premium-ui-patch.css">
+
+Ensure these icon lines are present:
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
