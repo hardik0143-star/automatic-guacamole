@@ -5,9 +5,10 @@ window.TINY_TIFFIN_CONFIG = {
   releaseDate: "July 2026",
   releaseNotes: "AI-enabled product baseline with 505+ healthy Indian and continental vegetarian tiffin ideas, multilingual discovery, ingredient filters, weekly planning and smart shopping support.",
   emailjs: {
+    enabled: true,
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
-    publicKey: "QhWkCiEaXDlxr-f4G",
+    publicKey: "mnr5FMLWsZ_qj1gAN",
     toEmail: "tinytiffin13@gmail.com"
   },
   affiliate: {
