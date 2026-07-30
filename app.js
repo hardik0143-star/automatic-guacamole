@@ -239,11 +239,12 @@
     }
     if (!recipeMatchesIngredientCategory(r, f.ingredientCategory)) return false;
     if (f.smartSearch.trim()) {
-      const q = f.smartSearch.trim().toLowerCase();
-      const hay = [
+      const normalizeSearch = (value) => String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+      const q = normalizeSearch(f.smartSearch);
+      const hay = normalizeSearch([
         recipeName(r), r.ingredients.join(" "), r.nutritionTags.join(" "),
-        r.ageGroups.join(" "), String(r.timeCategory), r.cuisine, r.mealType.join(" "), r.dietType.join(" ")
-      ].join(" ").toLowerCase();
+        r.ageGroups.join(" "), String(r.timeCategory), r.cuisine, r.mealType.join(" "), r.dietType.join(" "), recipeDesc(r)
+      ].join(" "));
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -565,14 +566,19 @@
     });
     const searchInput = document.getElementById("smart-search");
     if (searchInput) {
+      let searchTimer = null;
       searchInput.addEventListener("input", (e) => {
         state.filters.smartSearch = e.target.value;
-        const grid = document.getElementById("recipe-grid");
-        const results = filteredRecipes();
-        grid.innerHTML = results.length ? results.map(recipeCardHTML).join("") : emptyStateHTML();
-        attachCardEvents();
-        const countEl = root.querySelector(".filters-foot span");
-        if (countEl) countEl.textContent = `${results.length} ${t("resultsCount")}`;
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => {
+          const grid = document.getElementById("recipe-grid");
+          if (!grid) return;
+          const results = filteredRecipes();
+          grid.innerHTML = results.length ? results.map(recipeCardHTML).join("") : emptyStateHTML();
+          attachCardEvents();
+          const countEl = root.querySelector(".filters-foot span");
+          if (countEl) countEl.textContent = `${results.length} ${t("resultsCount")}`;
+        }, 80);
       });
     }
     const clearBtn = document.getElementById("clear-filters");
@@ -1119,39 +1125,22 @@
     root.querySelectorAll("[data-cat]").forEach(btn => btn.addEventListener("click", () => { contactCategory = btn.dataset.cat; render(); }));
     const sendBtn = document.getElementById("contact-send");
     if (!sendBtn) return;
-    sendBtn.addEventListener("click", async () => {
+    sendBtn.addEventListener("click", () => {
       const subjectEl = document.getElementById("contact-subject");
       const messageEl = document.getElementById("contact-message");
       const statusEl = document.getElementById("contact-status");
       const subject = (subjectEl.value || contactCategory).trim();
       const message = (messageEl.value || "").trim();
       if (!message) { statusEl.textContent = "Please enter a message before sending."; messageEl.focus(); return; }
-      const original = sendBtn.textContent; sendBtn.disabled = true; sendBtn.textContent = "Sending…"; statusEl.textContent = "Sending your message…";
-      try {
-        const emailCfg = CONFIG.emailjs || {};
-        const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-          method: "POST", headers: {"Content-Type":"application/json"},
-          body: JSON.stringify({
-            service_id: emailCfg.serviceId || "service_cojdevq",
-            template_id: emailCfg.templateId || "template_qzn6vno",
-            user_id: emailCfg.publicKey || "QhWkCiEaXDlxr-f4G",
-            template_params: {
-              to_email: emailCfg.toEmail || "tinytiffin13@gmail.com",
-              category: contactCategory, subject: subject, message: message,
-              name: "Tiny Tiffin User", from_email: "Tiny Tiffin Contact Form",
-              time: new Date().toLocaleString(), app_name: "Tiny Tiffin"
-            }
-          })
-        });
-        const resultText = await response.text();
-        if (!response.ok) throw new Error(resultText || "Email service error");
-        subjectEl.value = ""; messageEl.value = "";
-        statusEl.textContent = "Thank you! Your message has been sent successfully.";
-      } catch (error) {
-        console.error("Tiny Tiffin contact error:", error);
-        statusEl.textContent = "Message could not be sent. Please try again.";
-      } finally { sendBtn.disabled = false; sendBtn.textContent = original; }
+      const recipient = "tinytiffin13@gmail.com";
+      const mailSubject = `[Tiny Tiffin] ${contactCategory}: ${subject}`;
+      const mailBody = `Category: ${contactCategory}\nSubject: ${subject}\n\nMessage:\n${message}\n\nSent from Tiny Tiffin`;
+      const mailto = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+      statusEl.textContent = "Opening your email app…";
+      window.location.href = mailto;
+      setTimeout(() => { statusEl.textContent = "Your email app should now be open with tinytiffin13@gmail.com already selected."; }, 500);
     });
+
   }
 
   /* ---------- Developer tab ----------
