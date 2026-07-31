@@ -2,15 +2,6 @@
 (function () {
   "use strict";
 
-  // Premium UI layer: visual-only, keeps existing functionality unchanged.
-  if (!document.querySelector('link[data-tt-premium-ui]')) {
-    const premiumCss = document.createElement('link');
-    premiumCss.rel = 'stylesheet';
-    premiumCss.href = 'premium-ui.css?v=1.2.1';
-    premiumCss.setAttribute('data-tt-premium-ui', 'true');
-    document.head.appendChild(premiumCss);
-  }
-
   /* ---------------- storage: localStorage with in-memory fallback ---------------- */
   const memoryStore = {};
   const storage = {
@@ -239,12 +230,11 @@
     }
     if (!recipeMatchesIngredientCategory(r, f.ingredientCategory)) return false;
     if (f.smartSearch.trim()) {
-      const normalizeSearch = (value) => String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
-      const q = normalizeSearch(f.smartSearch);
-      const hay = normalizeSearch([
+      const q = f.smartSearch.trim().toLowerCase();
+      const hay = [
         recipeName(r), r.ingredients.join(" "), r.nutritionTags.join(" "),
-        r.ageGroups.join(" "), String(r.timeCategory), r.cuisine, r.mealType.join(" "), r.dietType.join(" "), recipeDesc(r)
-      ].join(" "));
+        r.ageGroups.join(" "), String(r.timeCategory), r.cuisine, r.mealType.join(" "), r.dietType.join(" ")
+      ].join(" ").toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -279,6 +269,11 @@
   }
 
   /* ---------------- rendering ---------------- */
+  const premiumStyle = document.createElement("link");
+  premiumStyle.rel = "stylesheet";
+  premiumStyle.href = "premium-ui.css?v=1.3.1";
+  document.head.appendChild(premiumStyle);
+
   const root = document.getElementById("app");
 
   function render() {
@@ -325,8 +320,12 @@
     const langOptions = window.TINY_TIFFIN_LANGUAGES.map(l =>
       `<option value="${l.code}" ${l.code === state.lang ? "selected" : ""}>${l.label}</option>`).join("");
     const tabs = [
-      ["find", t("navFind")], ["match", t("navMatch")], ["planner", t("navPlanner")],
-      ["dashboard", t("navDashboard")], ["favorites", `${t("navFavorites")} (${state.favorites.size})`], ["ai", "🤖 Tiny Tiffin AI"]
+      ["find", "⌕", t("navFind")],
+      ["match", "🍳", t("navMatch")],
+      ["planner", "🗓️", t("navPlanner")],
+      ["dashboard", "🥗", t("navDashboard")],
+      ["favorites", "♡", `${t("navFavorites")} (${state.favorites.size})`],
+      ["ai", "✨", "Tiny Tiffin AI"]
     ];
     return `
       <header class="app-header">
@@ -341,7 +340,7 @@
           </div>
         </div>
         <div class="wrap tabs">
-          ${tabs.map(([id, label]) => `<button class="tab-btn ${state.tab === id ? "active" : ""}" data-tab="${id}">${label}</button>`).join("")}
+          ${tabs.map(([id, icon, label]) => `<button class="tab-btn ${state.tab === id ? "active" : ""}" data-tab="${id}" title="${label}" aria-label="${label}"><span class="tab-icon">${icon}</span><span class="tab-label">${label}</span></button>`).join("")}
         </div>
       </header>
     `;
@@ -431,9 +430,9 @@
         <input type="text" id="smart-search" placeholder="${t('searchPlaceholder')}" value="${escapeAttr(state.filters.smartSearch)}">
       </div>
 
-      <section class="shopping-strip" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0 18px">
-        <a class="tt-shop-tile tt-shop-fresh" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon Fresh"><span class="tt-shop-icon">🥬</span><span class="tt-shop-copy"><strong>Amazon Fresh</strong><small>Fresh groceries</small></span><span class="tt-shop-arrow">→</span></a>
-        <a class="tt-shop-tile tt-shop-amazon" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon"><span class="tt-shop-icon">🛍️</span><span class="tt-shop-copy"><strong>Amazon Cart</strong><small>Kitchen & pantry</small></span><span class="tt-shop-arrow">→</span></a>
+      <section class="shopping-chip-row" aria-label="Shopping links">
+        <a class="shopping-chip fresh-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
+        <a class="shopping-chip amazon-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
       </section>
 
       <section class="filters">
@@ -566,19 +565,14 @@
     });
     const searchInput = document.getElementById("smart-search");
     if (searchInput) {
-      let searchTimer = null;
       searchInput.addEventListener("input", (e) => {
         state.filters.smartSearch = e.target.value;
-        clearTimeout(searchTimer);
-        searchTimer = setTimeout(() => {
-          const grid = document.getElementById("recipe-grid");
-          if (!grid) return;
-          const results = filteredRecipes();
-          grid.innerHTML = results.length ? results.map(recipeCardHTML).join("") : emptyStateHTML();
-          attachCardEvents();
-          const countEl = root.querySelector(".filters-foot span");
-          if (countEl) countEl.textContent = `${results.length} ${t("resultsCount")}`;
-        }, 80);
+        const grid = document.getElementById("recipe-grid");
+        const results = filteredRecipes();
+        grid.innerHTML = results.length ? results.map(recipeCardHTML).join("") : emptyStateHTML();
+        attachCardEvents();
+        const countEl = root.querySelector(".filters-foot span");
+        if (countEl) countEl.textContent = `${results.length} ${t("resultsCount")}`;
       });
     }
     const clearBtn = document.getElementById("clear-filters");
@@ -1133,14 +1127,14 @@
       const message = (messageEl.value || "").trim();
       if (!message) { statusEl.textContent = "Please enter a message before sending."; messageEl.focus(); return; }
       const recipient = "tinytiffin13@gmail.com";
-      const mailSubject = `[Tiny Tiffin] ${contactCategory}: ${subject}`;
-      const mailBody = `Category: ${contactCategory}\nSubject: ${subject}\n\nMessage:\n${message}\n\nSent from Tiny Tiffin`;
-      const mailto = `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+      const categoryLabel = contactCategory.charAt(0).toUpperCase() + contactCategory.slice(1);
+      const mailSubject = `Tiny Tiffin – ${categoryLabel}: ${subject}`;
+      const mailBody = `Category: ${categoryLabel}\nSubject: ${subject}\n\nMessage:\n${message}\n\nSent from Tiny Tiffin`;
       statusEl.textContent = "Opening your email app…";
+      const mailto = `mailto:${recipient}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
       window.location.href = mailto;
-      setTimeout(() => { statusEl.textContent = "Your email app should now be open with tinytiffin13@gmail.com already selected."; }, 500);
+      setTimeout(() => { statusEl.textContent = `Your email app should now be open with ${recipient} already selected.`; }, 500);
     });
-
   }
 
   /* ---------- Developer tab ----------
@@ -1156,7 +1150,7 @@
         <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || "Hardik Desai"}</p>
         <h4 style="margin:22px 0 8px">Purpose of Tiny Tiffin</h4>
         <p class="desc">${purpose}</p>
-        <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\n/g, "<br><br>")}</p>
+        <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\n{2,}/g, "\n").replace(/\n/g, "<br>")}</p>
         <h4 style="margin:22px 0 8px">Version information</h4>
         <div class="release-card"><strong>${CONFIG.version || dev.version || "v1.0"}</strong> · ${CONFIG.releaseDate || dev.releaseDate || ""}<br><span>${CONFIG.releaseNotes || dev.releaseNotes || ""}</span></div>
         ${dev.currentCapabilities && dev.currentCapabilities.length ? `<h4 style="margin:22px 0 8px">Current capabilities</h4><ul class="dev-future-list">${dev.currentCapabilities.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
