@@ -41,38 +41,51 @@ html[data-theme="dark"] .app-header,html[data-theme="dark"] .tabs{background:#18
 html[data-theme="dark"] .tab-btn{background:#21352b!important;color:#eaffef!important;border-color:#3d5c4d!important}
 html[data-theme="dark"] .tab-btn.active{background:#5fae72!important;color:#102018!important}
 
-/* v1.3.1 — accessibility and compact developer story repairs */
-html[data-theme="dark"] .app-header,
-html[data-theme="dark"] .tabs{background:#0f1b17!important}
-html[data-theme="dark"] .tab-btn{background:#182822!important;color:#f4fbf6!important;border-color:#466a58!important;opacity:1!important}
-html[data-theme="dark"] .tab-btn .tab-label,
-html[data-theme="dark"] .tab-btn .tab-icon{color:inherit!important;opacity:1!important;text-shadow:none!important}
-html[data-theme="dark"] .tab-btn.active{background:#d9a84a!important;color:#102018!important;border-color:#e8bf68!important}
+/* v1.3.2 — restore essential controls and night-mode contrast */
+html[data-theme="dark"] .surprise-btn,
+html[data-theme="dark"] #surprise-recipe{
+  display:inline-flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  color:#102018!important;
+  background:linear-gradient(135deg,#f7e2a7,#d9a84a)!important;
+  border:2px solid #f4c95d!important;
+  font-weight:900!important;
+  text-shadow:none!important;
+  box-shadow:0 8px 20px rgba(0,0,0,.28)!important;
+}
 html[data-theme="dark"] .mood-label,
 html[data-theme="dark"] .mood-chip,
 html[data-theme="dark"] .tiffin-tier,
 html[data-theme="dark"] .filter-group label,
 html[data-theme="dark"] .chip,
-html[data-theme="dark"] .filters-foot,
-html[data-theme="dark"] .recipe-card h3,
-html[data-theme="dark"] .recipe-card .desc,
-html[data-theme="dark"] .simple-page,
-html[data-theme="dark"] .simple-page p,
-html[data-theme="dark"] .simple-page li,
-html[data-theme="dark"] .simple-page h2,
-html[data-theme="dark"] .simple-page h4{opacity:1!important;text-shadow:none!important}
-html[data-theme="dark"] .mood-label{color:#f4fbf6!important}
-html[data-theme="dark"] .mood-chip{background:#1c2b26!important;color:#f4fbf6!important;border-color:#4f7864!important}
-html[data-theme="dark"] .tiffin-tier{background:#f7f2e8!important;color:#17251f!important;border-color:#c9b98e!important}
-html[data-theme="dark"] .chip{background:#f7f2e8!important;color:#26362f!important;border-color:#c9b98e!important}
-html[data-theme="dark"] .chip.active{background:#2b6b4d!important;color:#fff!important;border-color:#2b6b4d!important}
-html[data-theme="dark"] .filters{background:#16241f!important;border-color:#345444!important}
-html[data-theme="dark"] .filter-group label{color:#f4fbf6!important}
-html[data-theme="dark"] .smart-search-bar input{background:#f7f2e8!important;color:#17251f!important;border-color:#c9b98e!important}
-html[data-theme="dark"] .simple-page{background:#182722!important;color:#f4fbf6!important}
-html[data-theme="dark"] .simple-page .desc,
-html[data-theme="dark"] .simple-page p{color:#e6f0ea!important}
-.developer-story{white-space:pre-line!important;line-height:1.62!important;margin:14px 0!important;padding:14px 16px!important}
-.developer-story br+br{display:none!important}
-.simple-page h4{margin:16px 0 6px!important}
-.simple-page .release-card{margin-top:8px!important}
+html[data-theme="dark"] .shopping-chip{
+  opacity:1!important;
+  text-shadow:none!important;
+}
+html[data-theme="dark"] .mood-label{color:#f5faf6!important}
+html[data-theme="dark"] .mood-chip{color:#f5faf6!important;background:#20292d!important;border-color:#4d6f5e!important}
+html[data-theme="dark"] .chip{color:#eaf4ee!important;background:#26332e!important;border-color:#526d60!important}
+html[data-theme="dark"] .chip.active{color:#fff!important;background:#2b6b4a!important}
+html[data-theme="dark"] .tiffin-tier{color:#24312d!important;background:linear-gradient(180deg,#fffefb,#e8eee9)!important}
+
+/* Keep Admin, Install and Update discoverable on mobile. */
+.header-controls #install-btn,
+.header-controls #update-btn,
+.header-controls .admin-link{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.header-controls #install-btn,.header-controls #update-btn{font-size:.68rem!important;padding:7px 8px!important}
+@media(max-width:760px){
+  .header-controls{display:grid!important;grid-template-columns:auto auto auto!important;gap:5px!important;width:100%!important;margin-left:0!important}
+  .header-controls .theme-toggle{grid-column:1!important;grid-row:1!important}
+  .header-controls .lang-select{grid-column:2!important;grid-row:1!important;max-width:none!important;width:100%!important}
+  .header-controls .admin-link{grid-column:3!important;grid-row:1!important}
+  .header-controls #install-btn{grid-column:1 / span 2!important;grid-row:2!important}
+  .header-controls #update-btn{grid-column:3!important;grid-row:2!important}
+  .header-controls #install-btn,.header-controls #update-btn,.header-controls .admin-link{min-height:34px!important;white-space:nowrap!important}
+}
