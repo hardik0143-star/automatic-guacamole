@@ -41,51 +41,15 @@ html[data-theme="dark"] .app-header,html[data-theme="dark"] .tabs{background:#18
 html[data-theme="dark"] .tab-btn{background:#21352b!important;color:#eaffef!important;border-color:#3d5c4d!important}
 html[data-theme="dark"] .tab-btn.active{background:#5fae72!important;color:#102018!important}
 
-/* v1.3.2 — restore essential controls and night-mode contrast */
-html[data-theme="dark"] .surprise-btn,
-html[data-theme="dark"] #surprise-recipe{
-  display:inline-flex!important;
-  visibility:visible!important;
-  opacity:1!important;
-  color:#102018!important;
-  background:linear-gradient(135deg,#f7e2a7,#d9a84a)!important;
-  border:2px solid #f4c95d!important;
-  font-weight:900!important;
-  text-shadow:none!important;
-  box-shadow:0 8px 20px rgba(0,0,0,.28)!important;
-}
-html[data-theme="dark"] .mood-label,
-html[data-theme="dark"] .mood-chip,
-html[data-theme="dark"] .tiffin-tier,
-html[data-theme="dark"] .filter-group label,
-html[data-theme="dark"] .chip,
-html[data-theme="dark"] .shopping-chip{
-  opacity:1!important;
-  text-shadow:none!important;
-}
-html[data-theme="dark"] .mood-label{color:#f5faf6!important}
-html[data-theme="dark"] .mood-chip{color:#f5faf6!important;background:#20292d!important;border-color:#4d6f5e!important}
-html[data-theme="dark"] .chip{color:#eaf4ee!important;background:#26332e!important;border-color:#526d60!important}
-html[data-theme="dark"] .chip.active{color:#fff!important;background:#2b6b4a!important}
-html[data-theme="dark"] .tiffin-tier{color:#24312d!important;background:linear-gradient(180deg,#fffefb,#e8eee9)!important}
 
-/* Keep Admin, Install and Update discoverable on mobile. */
-.header-controls #install-btn,
-.header-controls #update-btn,
-.header-controls .admin-link{
-  display:inline-flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  visibility:visible!important;
-  opacity:1!important;
-}
-.header-controls #install-btn,.header-controls #update-btn{font-size:.68rem!important;padding:7px 8px!important}
-@media(max-width:760px){
-  .header-controls{display:grid!important;grid-template-columns:auto auto auto!important;gap:5px!important;width:100%!important;margin-left:0!important}
-  .header-controls .theme-toggle{grid-column:1!important;grid-row:1!important}
-  .header-controls .lang-select{grid-column:2!important;grid-row:1!important;max-width:none!important;width:100%!important}
-  .header-controls .admin-link{grid-column:3!important;grid-row:1!important}
-  .header-controls #install-btn{grid-column:1 / span 2!important;grid-row:2!important}
-  .header-controls #update-btn{grid-column:3!important;grid-row:2!important}
-  .header-controls #install-btn,.header-controls #update-btn,.header-controls .admin-link{min-height:34px!important;white-space:nowrap!important}
-}
+/* v1.3.3 reliability + dark-mode controls */
+html[data-theme="dark"] .header-controls #install-btn,
+html[data-theme="dark"] .header-controls #update-btn,
+html[data-theme="dark"] .header-controls .admin-link{display:inline-flex!important;align-items:center!important;justify-content:center!important;background:#f4ead2!important;color:#17251f!important;border:1px solid #d6ae54!important;font-weight:800!important;opacity:1!important;visibility:visible!important;text-shadow:none!important}
+html[data-theme="dark"] .header-controls #install-btn:disabled,html[data-theme="dark"] .header-controls #update-btn:disabled{opacity:.7!important}
+html[data-theme="dark"] .surprise-btn{background:#f4ead2!important;color:#17251f!important;border:2px solid #d6ae54!important;font-weight:800!important;opacity:1!important;text-shadow:none!important}
+html[data-theme="dark"] .mood-chip,html[data-theme="dark"] .mood-label{color:#f4f7f5!important;opacity:1!important}
+/* Remove accidental white overlay/artifact above the app logo. */
+.premium-logo-mark::before,.premium-logo-mark::after{content:none!important;display:none!important}
+.premium-logo-mark svg{display:block!important;overflow:visible!important;background:transparent!important}
+@media(max-width:720px){.header-controls #install-btn,.header-controls #update-btn,.header-controls .admin-link{display:inline-flex!important}.header-controls{flex-wrap:wrap!important;justify-content:flex-end!important}}
