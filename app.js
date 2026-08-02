@@ -111,7 +111,7 @@
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡" };
-  const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
+  const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-12y+"];
   const ALL_ALLERGENS = ["nuts", "dairy", "gluten", "soy", "egg"];
   const DIET_TYPES = ["vegetarian", "vegan", "egg"];
   const CUISINES = ["indian", "continental"];
@@ -219,7 +219,10 @@
   }
   function matchesFilters(r) {
     const f = state.filters;
-    if (f.age !== "all" && !r.ageGroups.includes(f.age)) return false;
+    if (f.age !== "all") {
+      const selectedAge = f.age === "5-12y+" ? "5-10y" : f.age;
+      if (!r.ageGroups.includes(selectedAge) && !r.ageGroups.includes(f.age)) return false;
+    }
     if (f.time !== "any" && r.timeCategory > Number(f.time)) return false;
     if (f.meal !== "all" && !r.mealType.includes(f.meal)) return false;
     if (f.nutrition.size > 0 && !Array.from(f.nutrition).every(n => r.nutritionTags.includes(n))) return false;
@@ -239,7 +242,14 @@
     }
     return true;
   }
-  function filteredRecipes() { return RECIPES.filter(matchesFilters); }
+  function hasDiscoveryCriteria() {
+    const f = state.filters;
+    return f.age !== "all" || f.time !== "any" || f.meal !== "all" ||
+      f.nutrition.size > 0 || f.ingredientCategory !== "all" ||
+      f.allergyExclude.size > 0 || f.diet !== "all" || f.cuisine !== "all" ||
+      f.smartSearch.trim().length > 0;
+  }
+  function filteredRecipes() { return hasDiscoveryCriteria() ? RECIPES.filter(matchesFilters) : []; }
 
   /* ---------------- toast ---------------- */
   let toastTimer = null;
@@ -440,7 +450,7 @@
           <label>${t("filterAge")}</label>
           <div class="chip-row">
             <button class="chip ${state.filters.age === "all" ? "active" : ""}" data-age="all">${t("all")}</button>
-            ${AGE_GROUPS.map(a => `<button class="chip ${state.filters.age === a ? "active" : ""}" data-age="${a}">${a}</button>`).join("")}
+            ${AGE_GROUPS.map(a => `<button class="chip ${state.filters.age === a ? "active" : ""}" data-age="${a}">${a === "5-12y+" ? "5–12Y+" : a}</button>`).join("")}
           </div>
         </div>
         <div class="filter-group">
@@ -498,7 +508,8 @@
   function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 
   function emptyStateHTML() {
-    return `<div class="empty-state">${mascotSVG(56)}<p style="margin-top:10px">${t("mascotGreeting")}</p></div>`;
+    const message = hasDiscoveryCriteria() ? t("mascotGreeting") : "Choose an age, time, meal, nutrition goal, ingredient—or search for a recipe to discover matching tiffin ideas.";
+    return `<div class="empty-state">${mascotSVG(56)}<p style="margin-top:10px">${message}</p></div>`;
   }
 
   function recipeCardHTML(r) {

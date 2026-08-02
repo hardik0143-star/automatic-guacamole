@@ -9,7 +9,7 @@
 
   const ADMIN_PASSWORD = "tiffin@2023"; // change this before sharing the admin link
 
-  const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-10y"];
+  const AGE_GROUPS = ["6-12m", "1-2y", "2-5y", "5-12y+"];
   const TIME_BUCKETS = [10, 15, 20, 25, 30];
   const MEAL_SLOTS = ["breakfast", "lunch", "snack"];
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy", "vitamins"];
@@ -375,7 +375,7 @@
     loadSheetJS(() => {
       const sampleRow = {
         id: "sample-veg-poha", emoji: "🍚", name_en: "Sample Vegetable Poha", name_hi: "सैंपल सब्ज़ी पोहा",
-        desc_en: "Short one-line description.", ageGroups: "2-5y;5-10y", timeCategory: 15,
+        desc_en: "Short one-line description.", ageGroups: "2-5y;5-12y+", timeCategory: 15,
         dietType: "vegetarian;vegan", cuisine: "indian", mealType: "breakfast;snack", difficulty: "Easy",
         nutritionTags: "iron;energy", allergens: "peanuts",
         ingredients: "1 cup poha;2 tbsp peanuts;Salt to taste",
@@ -497,8 +497,9 @@
     const addBtn = document.getElementById("add-recipe-btn");
     if (addBtn) addBtn.addEventListener("click", () => openForm(null));
 
-    root.querySelectorAll("[data-preview]").forEach((btn) => btn.addEventListener("click", () => openForm(recipes.find((r) => r.id === btn.dataset.preview), true)));
-    root.querySelectorAll("[data-edit]").forEach((btn) => btn.addEventListener("click", () => openForm(recipes.find((r) => r.id === btn.dataset.edit))));
+    const findRecipeById = (id) => recipes.find((r) => String(r.id) === String(id));
+    root.querySelectorAll("[data-preview]").forEach((btn) => btn.addEventListener("click", (e) => { e.preventDefault(); const recipe = findRecipeById(btn.dataset.preview); if (recipe) openForm(recipe, true); else alert("Recipe could not be found. Please refresh the admin page."); }));
+    root.querySelectorAll("[data-edit]").forEach((btn) => btn.addEventListener("click", (e) => { e.preventDefault(); const recipe = findRecipeById(btn.dataset.edit); if (recipe) openForm(recipe, false); else alert("Recipe could not be found. Please refresh the admin page."); }));
     root.querySelectorAll("[data-duplicate]").forEach((btn) => btn.addEventListener("click", () => {
       const orig = recipes.find((r) => r.id === btn.dataset.duplicate);
       if (!orig) return;
