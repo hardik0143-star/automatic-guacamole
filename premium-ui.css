@@ -53,3 +53,24 @@ html[data-theme="dark"] .mood-chip,html[data-theme="dark"] .mood-label{color:#f4
 .premium-logo-mark::before,.premium-logo-mark::after{content:none!important;display:none!important}
 .premium-logo-mark svg{display:block!important;overflow:visible!important;background:transparent!important}
 @media(max-width:720px){.header-controls #install-btn,.header-controls #update-btn,.header-controls .admin-link{display:inline-flex!important}.header-controls{flex-wrap:wrap!important;justify-content:flex-end!important}}
+
+
+/* v1.7.2 Smart Shopping visibility and layout */
+.smart-shopping-hub{min-height:62vh}
+.smart-shop-search{display:flex;gap:10px;align-items:center}
+.smart-shop-search input,.shop-controls input{min-height:46px;border:1.5px solid var(--mist-2);border-radius:12px;padding:10px 14px;background:var(--card);color:var(--ink);font:inherit}
+.smart-shop-search input{flex:1}
+.shop-controls{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.shop-controls label{font-size:.85rem;color:var(--ink-soft)}
+.shop-results{margin-top:18px}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.shop-card{background:var(--card);border:1px solid var(--mist-2);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+.shop-card h3{margin:8px 0;color:var(--ink)}
+.shop-card p{color:var(--ink-soft);font-size:.86rem;min-height:36px}
+.shop-store{font-weight:800;color:var(--masala)}
+.shop-price{font-size:1.25rem;font-weight:800;color:var(--masala);margin:8px 0}
+.shop-notice,.shop-summary{padding:12px 14px;border-radius:12px;background:var(--mist);color:var(--ink);margin-bottom:14px}
+.shop-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+@media(max-width:640px){.smart-shop-search{flex-direction:column;align-items:stretch}.smart-shop-search .btn{width:100%;justify-content:center}}
+html[data-theme="dark"] .shop-card,html[data-theme="dark"] .smart-shop-search input,html[data-theme="dark"] .shop-controls input{background:#1e2528;color:#f5f8f7;border-color:#3b4944}
+html[data-theme="dark"] .shop-card h3,html[data-theme="dark"] .shop-notice,html[data-theme="dark"] .shop-summary{color:#f3f7f5}

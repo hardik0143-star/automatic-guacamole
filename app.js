@@ -299,6 +299,7 @@
         ${state.tab === "contact" ? renderContactTab() : ""}
         ${state.tab === "developer" ? renderDeveloperTab() : ""}
         ${state.tab === "ai" ? renderAITab() : ""}
+        ${state.tab === "shopping" ? renderShoppingTab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -318,6 +319,7 @@
       attachAIEvents();
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
+    if (state.tab === "shopping") attachShoppingEvents();
     hydrateRecipeImages(root);
     if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
     if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang);
@@ -423,6 +425,7 @@
           <div class="smart-shop-search"><input id="shop-search" type="search" placeholder="Try: Amul cheese 200 g, paneer, oats…" autocomplete="off"><button class="btn btn-primary" id="shop-search-btn">Compare prices</button></div>
           <div class="shop-controls"><input id="shop-pincode" inputmode="numeric" maxlength="6" placeholder="PIN code (optional)"><label><input id="shop-live-only" type="checkbox"> Live results only</label></div>
           <p class="ai-muted">No prices are invented. If live providers are not configured, Tiny Tiffin shows safe store search links instead.</p>
+          <div class="shop-quick"><button class="chip" data-shop-query="Paneer">Paneer</button><button class="chip" data-shop-query="Cheese">Cheese</button><button class="chip" data-shop-query="Oats">Oats</button><button class="chip" data-shop-query="Kids lunch box">Lunch box</button></div>
         </div>
         <div id="shop-results" class="shop-results"><div class="empty-state"><span class="big-emoji">🛍️</span><h3>Search to compare</h3><p>Enter an exact product name for the best match.</p></div></div>
       </section>`;
@@ -448,6 +451,7 @@
       }
     };
     btn.addEventListener('click',run); input.addEventListener('keydown',e=>{if(e.key==='Enter')run()});
+    document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',()=>{input.value=ch.dataset.shopQuery;run();}));
   }
 
   /* ---------- Find tab ---------- */
