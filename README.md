@@ -77,3 +77,7 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 - Added ingredient-category discovery for fruits, vegetables, millets & grains, lentils & pulses, paneer & cheese, tofu & plant protein, nuts & seeds, and egg.
 - Added a small Tiny Tiffin QR code in the header for opening/downloading the app.
 - Improved user-side localisation for tiffin moods, ingredient categories, recipe cards, recipe titles, descriptions, ingredients, steps, tips and recipe tags. The Admin section is intentionally excluded from user-side translation.
+
+
+## Smart Shopping Compare
+The UI is included. Live prices require approved provider API credentials configured as Vercel environment variables. The starter `/api/compare` endpoint intentionally returns no fabricated prices and falls back to direct store searches.

@@ -335,7 +335,8 @@
       ["planner", "🗓️", t("navPlanner")],
       ["dashboard", "🥗", t("navDashboard")],
       ["favorites", "♡", `${t("navFavorites")} (${state.favorites.size})`],
-      ["ai", "✨", "Tiny Tiffin AI"]
+      ["ai", "✨", "Tiny Tiffin AI"],
+      ["shopping", "🛒", "Smart Shopping"]
     ];
     return `
       <header class="app-header">
@@ -411,6 +412,42 @@
     const cached = !manual ? imageCache[r.id] : null;
     const image = manual ? { url: r.images[0], source: "admin" } : cached;
     return `<div class="recipe-image-wrap" data-auto-image="${escapeAttr(r.id)}">${imageMarkup(r, image)}</div>`;
+  }
+
+  /* ---------- Smart Shopping ---------- */
+  function renderShoppingTab() {
+    return `
+      <section class="ai-hub smart-shopping-hub">
+        <div class="ai-hero"><span class="ai-badge">LIVE PRICE READY</span><h1 class="display">🛒 Smart Shopping Compare</h1><p class="sub">Search a product or ingredient and compare supported stores. Live prices require approved API connections.</p></div>
+        <div class="ai-card">
+          <div class="smart-shop-search"><input id="shop-search" type="search" placeholder="Try: Amul cheese 200 g, paneer, oats…" autocomplete="off"><button class="btn btn-primary" id="shop-search-btn">Compare prices</button></div>
+          <div class="shop-controls"><input id="shop-pincode" inputmode="numeric" maxlength="6" placeholder="PIN code (optional)"><label><input id="shop-live-only" type="checkbox"> Live results only</label></div>
+          <p class="ai-muted">No prices are invented. If live providers are not configured, Tiny Tiffin shows safe store search links instead.</p>
+        </div>
+        <div id="shop-results" class="shop-results"><div class="empty-state"><span class="big-emoji">🛍️</span><h3>Search to compare</h3><p>Enter an exact product name for the best match.</p></div></div>
+      </section>`;
+  }
+
+  function attachShoppingEvents() {
+    const input=document.getElementById('shop-search'); const btn=document.getElementById('shop-search-btn');
+    if(!input||!btn) return;
+    const run=async()=>{
+      const q=input.value.trim(); if(!q) return;
+      const box=document.getElementById('shop-results'); box.innerHTML='<div class="empty-state"><span class="big-emoji">⏳</span><p>Checking connected shopping providers…</p></div>';
+      const pin=(document.getElementById('shop-pincode')||{}).value||'';
+      try{
+        const r=await fetch(`/api/compare?q=${encodeURIComponent(q)}&pincode=${encodeURIComponent(pin)}`);
+        if(!r.ok) throw new Error('Provider unavailable');
+        const data=await r.json(); const items=Array.isArray(data.items)?data.items:[];
+        if(!items.length) throw new Error('No live results');
+        items.sort((a,b)=>(Number(a.price)||Infinity)-(Number(b.price)||Infinity));
+        box.innerHTML=`<div class="shop-summary">${items[0].price ? `🏆 Lowest verified price: <strong>₹${items[0].price}</strong> on ${escapeHTML(items[0].store||'a supported store')}` : 'Live results found'}</div><div class="shop-grid">${items.map(x=>`<article class="shop-card"><div class="shop-store">${escapeHTML(x.store||'Store')}</div><h3>${escapeHTML(x.title||q)}</h3><div class="shop-price">${x.price!=null?'₹'+escapeHTML(String(x.price)):'Price unavailable'}</div><p>${escapeHTML(x.availability||'Check availability')}</p><a class="btn btn-primary" target="_blank" rel="sponsored noopener" href="${escapeAttr(x.url||'#')}">Open store</a></article>`).join('')}</div>`;
+      }catch(e){
+        const stores=[['Amazon','https://www.amazon.in/s?k='],['Amazon Fresh','https://www.amazon.in/fresh/s?k='],['Flipkart','https://www.flipkart.com/search?q='],['BigBasket','https://www.bigbasket.com/ps/?q='],['Blinkit','https://blinkit.com/s/?q='],['Zepto','https://www.zeptonow.com/search?query=']];
+        box.innerHTML=`<div class="shop-notice">Live comparison is not configured yet. Open the product search directly in a store:</div><div class="shop-grid">${stores.map(([n,u])=>`<article class="shop-card"><div class="shop-store">${n}</div><h3>${escapeHTML(q)}</h3><p>Price and delivery depend on your location.</p><a class="btn btn-secondary" target="_blank" rel="sponsored noopener" href="${u}${encodeURIComponent(q)}">Search ${n}</a></article>`).join('')}</div>`;
+      }
+    };
+    btn.addEventListener('click',run); input.addEventListener('keydown',e=>{if(e.key==='Enter')run()});
   }
 
   /* ---------- Find tab ---------- */
