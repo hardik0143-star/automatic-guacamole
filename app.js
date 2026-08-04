@@ -432,26 +432,56 @@
   }
 
   function attachShoppingEvents() {
-    const input=document.getElementById('shop-search'); const btn=document.getElementById('shop-search-btn');
-    if(!input||!btn) return;
-    const run=async()=>{
-      const q=input.value.trim(); if(!q) return;
-      const box=document.getElementById('shop-results'); box.innerHTML='<div class="empty-state"><span class="big-emoji">⏳</span><p>Checking connected shopping providers…</p></div>';
-      const pin=(document.getElementById('shop-pincode')||{}).value||'';
-      try{
-        const r=await fetch(`/api/compare?q=${encodeURIComponent(q)}&pincode=${encodeURIComponent(pin)}`);
-        if(!r.ok) throw new Error('Provider unavailable');
-        const data=await r.json(); const items=Array.isArray(data.items)?data.items:[];
-        if(!items.length) throw new Error('No live results');
-        items.sort((a,b)=>(Number(a.price)||Infinity)-(Number(b.price)||Infinity));
-        box.innerHTML=`<div class="shop-summary">${items[0].price ? `🏆 Lowest verified price: <strong>₹${items[0].price}</strong> on ${escapeHTML(items[0].store||'a supported store')}` : 'Live results found'}</div><div class="shop-grid">${items.map(x=>`<article class="shop-card"><div class="shop-store">${escapeHTML(x.store||'Store')}</div><h3>${escapeHTML(x.title||q)}</h3><div class="shop-price">${x.price!=null?'₹'+escapeHTML(String(x.price)):'Price unavailable'}</div><p>${escapeHTML(x.availability||'Check availability')}</p><a class="btn btn-primary" target="_blank" rel="sponsored noopener" href="${escapeAttr(x.url||'#')}">Open store</a></article>`).join('')}</div>`;
-      }catch(e){
-        const stores=[['Amazon','https://www.amazon.in/s?k=','&tag=tinytiffin-21'],['Amazon Fresh','https://www.amazon.in/fresh/s?k=','&tag=tinytiffin-21'],['Flipkart','https://www.flipkart.com/search?q=',''],['BigBasket','https://www.bigbasket.com/ps/?q=',''],['Blinkit','https://blinkit.com/s/?q=',''],['Zepto','https://www.zeptonow.com/search?query=','']];
-        box.innerHTML=`<div class="shop-notice">Live comparison is not configured yet. Open the product search directly in a store:</div><div class="shop-grid">${stores.map(([n,u,suffix])=>`<article class="shop-card"><div class="shop-store">${n}</div><h3>${escapeHTML(q)}</h3><p>Price and delivery depend on your location.</p><a class="btn btn-secondary" target="_blank" rel="sponsored noopener" href="${u}${encodeURIComponent(q)}${suffix}">Search ${n}</a></article>`).join('')}</div>`;
-      }
+    const input=document.getElementById('shop-search');
+    const btn=document.getElementById('shop-search-btn');
+    const box=document.getElementById('shop-results');
+    if(!input||!btn||!box) return;
+
+    const storesFor=(q)=>{
+      const query=encodeURIComponent(q);
+      return [
+        {name:'Amazon India', icon:'🛒', url:`https://www.amazon.in/s?k=${query}&tag=tinytiffin-21`, note:'Affiliate link • Search Amazon'},
+        {name:'Amazon Fresh', icon:'🥬', url:`https://www.amazon.in/fresh/s?k=${query}&tag=tinytiffin-21`, note:'Affiliate link • Fresh grocery search'},
+        {name:'Flipkart', icon:'🛍️', url:`https://www.flipkart.com/search?q=${query}`, note:'Search product on Flipkart'},
+        {name:'BigBasket', icon:'🧺', url:`https://www.bigbasket.com/ps/?q=${query}`, note:'Search grocery on BigBasket'},
+        {name:'Blinkit', icon:'⚡', url:`https://blinkit.com/s/?q=${query}`, note:'Availability depends on location'},
+        {name:'Zepto', icon:'🚴', url:`https://www.zeptonow.com/search?query=${query}`, note:'Availability depends on location'}
+      ];
     };
-    btn.addEventListener('click',run); input.addEventListener('keydown',e=>{if(e.key==='Enter')run()});
-    document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',()=>{input.value=ch.dataset.shopQuery;run();}));
+
+    const run=()=>{
+      const q=input.value.trim();
+      if(!q){
+        input.focus();
+        input.setAttribute('aria-invalid','true');
+        box.innerHTML='<div class="shop-notice">Please enter a product or ingredient first.</div>';
+        return;
+      }
+      input.removeAttribute('aria-invalid');
+      const pin=(document.getElementById('shop-pincode')||{}).value||'';
+      const liveOnly=!!(document.getElementById('shop-live-only')||{}).checked;
+      const stores=storesFor(q);
+      if(liveOnly){
+        box.innerHTML=`<div class="shop-notice"><strong>Live results only is enabled.</strong><br>Live price APIs are not connected yet, so no verified prices can be shown. Turn off this option to open working store searches.</div>`;
+        return;
+      }
+      box.innerHTML=`
+        <div class="shop-summary"><strong>Results for “${escapeHTML(q)}”</strong>${pin?` • PIN: ${escapeHTML(pin)}`:''}<br><span>Tap a store to check the latest price and delivery availability.</span></div>
+        <div class="shop-grid">${stores.map(s=>`
+          <article class="shop-card">
+            <div class="shop-store">${s.icon} ${escapeHTML(s.name)}</div>
+            <h3>${escapeHTML(q)}</h3>
+            <p>${escapeHTML(s.note)}</p>
+            <a class="btn btn-primary shop-open-link" target="_blank" rel="sponsored noopener noreferrer" href="${escapeAttr(s.url)}">Open ${escapeHTML(s.name)}</a>
+          </article>`).join('')}</div>
+        <p class="ai-muted shop-disclosure">Tiny Tiffin may earn a commission from qualifying Amazon purchases, at no extra cost to you. Prices are checked on the retailer’s website and are not displayed or estimated inside Tiny Tiffin.</p>`;
+      box.scrollIntoView({behavior:'smooth',block:'start'});
+    };
+
+    btn.type='button';
+    btn.addEventListener('click',(e)=>{e.preventDefault();run();});
+    input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();run();}});
+    document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',(e)=>{e.preventDefault();input.value=ch.dataset.shopQuery||'';run();}));
   }
 
   /* ---------- Find tab ---------- */
