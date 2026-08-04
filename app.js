@@ -417,15 +417,41 @@
   }
 
   /* ---------- Smart Shopping ---------- */
+  window.tinyTiffinRunShopping = function(forcedQuery) {
+    const input=document.getElementById('shop-search');
+    const box=document.getElementById('shop-results');
+    if(!box) return false;
+    const q=(forcedQuery || (input&&input.value) || '').trim();
+    if(!q){ if(input) input.focus(); box.innerHTML='<div class="shop-notice">Please enter a product or ingredient first.</div>'; return false; }
+    const liveOnly=!!document.getElementById('shop-live-only')?.checked;
+    if(liveOnly){
+      box.innerHTML='<div class="shop-notice"><strong>Live results only is enabled.</strong><br>Verified live-price APIs are not connected yet. Turn off this option to see working store search cards.</div>';
+      return false;
+    }
+    const query=encodeURIComponent(q);
+    const stores=[
+      ['Amazon India','🛒',`https://www.amazon.in/s?k=${query}&tag=tinytiffin-21`],
+      ['Amazon Fresh','🥬',`https://www.amazon.in/fresh/s?k=${query}&tag=tinytiffin-21`],
+      ['Flipkart','🛍️',`https://www.flipkart.com/search?q=${query}`],
+      ['BigBasket','🧺',`https://www.bigbasket.com/ps/?q=${query}`],
+      ['Blinkit','⚡',`https://blinkit.com/s/?q=${query}`],
+      ['Zepto','🚴',`https://www.zeptonow.com/search?query=${query}`]
+    ];
+    const safe=typeof escapeHTML==='function'?escapeHTML(q):q.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    box.innerHTML=`<div class="shop-summary"><strong>Store results for “${safe}”</strong><br><span>Tap a store to check its latest price and delivery availability.</span></div><div class="shop-grid">${stores.map(x=>`<article class="shop-card"><div class="shop-store">${x[1]} ${x[0]}</div><h3>${safe}</h3><p>Open the retailer to view the current price.</p><a class="btn btn-primary" target="_blank" rel="sponsored noopener noreferrer" href="${x[2]}">Open ${x[0]}</a></article>`).join('')}</div>`;
+    setTimeout(()=>box.scrollIntoView({behavior:'smooth',block:'start'}),50);
+    return false;
+  };
+
   function renderShoppingTab() {
     return `
       <section class="ai-hub smart-shopping-hub">
         <div class="ai-hero"><span class="ai-badge">LIVE PRICE READY</span><h1 class="display">🛒 Smart Shopping Compare</h1><p class="sub">Search a product or ingredient and compare supported stores. Live prices require approved API connections.</p></div>
         <div class="ai-card">
-          <div class="smart-shop-search"><input id="shop-search" type="search" placeholder="Try: Amul cheese 200 g, paneer, oats…" autocomplete="off"><button class="btn btn-primary" id="shop-search-btn">Compare prices</button></div>
+          <div class="smart-shop-search"><input id="shop-search" type="search" placeholder="Try: Amul cheese 200 g, paneer, oats…" autocomplete="off"><button class="btn btn-primary" id="shop-search-btn" type="button" onclick="return window.tinyTiffinRunShopping()">Compare prices</button></div>
           <div class="shop-controls"><input id="shop-pincode" inputmode="numeric" maxlength="6" placeholder="PIN code (optional)"><label><input id="shop-live-only" type="checkbox"> Live results only</label></div>
           <p class="ai-muted">No prices are invented. If live providers are not configured, Tiny Tiffin shows safe store search links instead.</p>
-          <div class="shop-quick"><button class="chip" data-shop-query="Paneer">Paneer</button><button class="chip" data-shop-query="Cheese">Cheese</button><button class="chip" data-shop-query="Oats">Oats</button><button class="chip" data-shop-query="Kids lunch box">Lunch box</button></div>
+          <div class="shop-quick"><button class="chip" data-shop-query="Paneer" onclick="return window.tinyTiffinRunShopping('Paneer')">Paneer</button><button class="chip" data-shop-query="Cheese" onclick="return window.tinyTiffinRunShopping('Cheese')">Cheese</button><button class="chip" data-shop-query="Oats" onclick="return window.tinyTiffinRunShopping('Oats')">Oats</button><button class="chip" data-shop-query="Kids lunch box" onclick="return window.tinyTiffinRunShopping('Kids lunch box')">Lunch box</button></div>
         </div>
         <div id="shop-results" class="shop-results"><div class="empty-state"><span class="big-emoji">🛍️</span><h3>Search to compare</h3><p>Enter an exact product name for the best match.</p></div></div>
       </section>`;
@@ -480,7 +506,7 @@
 
     btn.type='button';
     btn.addEventListener('click',(e)=>{e.preventDefault();run();});
-    input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();run();}});
+    input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();window.tinyTiffinRunShopping();}});
     document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',(e)=>{e.preventDefault();input.value=ch.dataset.shopQuery||'';run();}));
   }
 
