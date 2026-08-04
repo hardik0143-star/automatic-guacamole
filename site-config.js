@@ -11,8 +11,8 @@ window.TINY_TIFFIN_CONFIG = {
     toEmail: "tinytiffin13@gmail.com"
   },
   affiliate: {
-    amazonFreshUrl: "https://www.amazon.in/fresh",
-    amazonUrl: "https://www.amazon.in/"
+    amazonFreshUrl: "https://www.amazon.in/fresh?tag=tinytiffin-21",
+    amazonUrl: "https://www.amazon.in/?tag=tinytiffin-21"
   },
   developer: {
     name: "Hardik Desai",
