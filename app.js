@@ -533,10 +533,6 @@
         </div>
       </section>
 
-      <div class="smart-search-bar">
-        <input type="text" id="smart-search" placeholder="${t('searchPlaceholder')}" value="${escapeAttr(state.filters.smartSearch)}">
-      </div>
-
       <section class="shopping-chip-row" aria-label="Shopping links">
         <a class="shopping-chip fresh-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
         <a class="shopping-chip amazon-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
@@ -671,18 +667,6 @@
         render();
       });
     });
-    const searchInput = document.getElementById("smart-search");
-    if (searchInput) {
-      searchInput.addEventListener("input", (e) => {
-        state.filters.smartSearch = e.target.value;
-        const grid = document.getElementById("recipe-grid");
-        const results = filteredRecipes();
-        grid.innerHTML = results.length ? results.map(recipeCardHTML).join("") : emptyStateHTML();
-        attachCardEvents();
-        const countEl = root.querySelector(".filters-foot span");
-        if (countEl) countEl.textContent = `${results.length} ${t("resultsCount")}`;
-      });
-    }
     const clearBtn = document.getElementById("clear-filters");
     if (clearBtn) clearBtn.addEventListener("click", () => {
       state.filters = { age: "all", time: "any", meal: "all", nutrition: new Set(), ingredientCategory: "all", allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
