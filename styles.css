@@ -525,3 +525,48 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 }
 /* Smart Shopping Compare */
 .smart-shop-search{display:flex;gap:10px;align-items:center}.smart-shop-search input{flex:1;min-width:0;padding:13px 16px;border-radius:999px;border:1.5px solid var(--mist-2);background:var(--mist);color:var(--ink);font:inherit}.shop-controls{display:flex;gap:14px;align-items:center;margin-top:12px;flex-wrap:wrap}.shop-controls input[type=text],.shop-controls input[type=number],.shop-controls input:not([type]){padding:9px 12px;border-radius:10px;border:1px solid var(--mist-2)}.shop-results{margin-top:18px}.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.shop-card{background:var(--card);border:1px solid var(--mist-2);border-radius:16px;padding:16px;box-shadow:var(--shadow)}.shop-card h3{margin:8px 0;font-size:1rem}.shop-store{font-weight:800;color:var(--masala)}.shop-price{font-family:'IBM Plex Mono',monospace;font-size:1.25rem;font-weight:700;color:var(--turmeric-dark);margin:10px 0}.shop-summary,.shop-notice{padding:12px 15px;border-radius:12px;background:#EAF2E9;border-left:4px solid var(--masala);margin-bottom:14px}.shop-notice{background:#FBF3E3;border-left-color:var(--turmeric)}html[data-theme="dark"] .shop-summary,html[data-theme="dark"] .shop-notice{color:#263238}@media(max-width:600px){.smart-shop-search{flex-direction:column}.smart-shop-search>*{width:100%}}
+
+
+/* ---------- Festival Tiffin ---------- */
+.festival-hero{
+  margin:24px 0 18px;
+  padding:26px 24px;
+  border-radius:22px;
+  background:linear-gradient(135deg,rgba(229,164,49,.14),rgba(63,107,72,.10));
+  border:1px solid var(--mist-2);
+}
+.festival-kicker{
+  display:inline-flex;align-items:center;gap:7px;
+  font-weight:800;font-size:.82rem;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--chili);
+}
+.festival-hero h1{margin:5px 0 4px}
+.festival-next{
+  display:inline-flex;margin-top:12px;padding:8px 12px;border-radius:999px;
+  background:var(--card);border:1px solid var(--mist-2);font-weight:700;font-size:.86rem;
+}
+.festival-grid{display:grid;gap:20px;margin-bottom:40px}
+.festival-card{
+  background:var(--card);border:1px solid var(--mist-2);border-radius:20px;
+  padding:18px;box-shadow:var(--shadow);
+}
+.festival-card-top{display:flex;align-items:center;gap:12px}
+.festival-icon{font-size:2rem;line-height:1}
+.festival-card h2{margin:0;font-size:1.25rem}
+.festival-date{font-size:.8rem;color:var(--ink-soft);margin-top:2px}
+.festival-theme{margin:8px 0 14px;color:var(--ink-soft);font-size:.9rem}
+.festival-recipes{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+}
+.festival-recipes .recipe-card{margin:0}
+@media (max-width:760px){
+  .festival-recipes{grid-template-columns:1fr}
+  .festival-card{padding:14px}
+}
+[data-theme="dark"] .festival-hero{
+  background:linear-gradient(135deg,rgba(229,164,49,.16),rgba(63,107,72,.18));
+}
+[data-theme="dark"] .festival-card,
+[data-theme="dark"] .festival-next{
+  background:var(--card);
+}

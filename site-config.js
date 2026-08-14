@@ -3,7 +3,7 @@ window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
   version: "v1.0",
   releaseDate: "July 2026",
-  releaseNotes: "AI-enabled product baseline with 505+ healthy Indian and continental vegetarian tiffin ideas, multilingual discovery, ingredient filters, weekly planning and smart shopping support.",
+  releaseNotes: "Festival Tiffin collection added with 18 Indian and international occasions and 54 easy kid-friendly festive recipes, plus multilingual discovery, weekly planning, AI features and smart shopping support.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
@@ -18,6 +18,6 @@ window.TINY_TIFFIN_CONFIG = {
     name: "Hardik Desai",
     purpose: "Tiny Tiffin was created to help parents discover quick, healthy, colourful and child-friendly vegetarian tiffin ideas, reduce daily meal-planning stress and make nutritious lunchboxes easier.",
     about: "Tiny Tiffin started with a simple idea inspired by our little family ♥️\n\nAs parents, we often found ourselves wondering what to pack in a tiffin every day — something healthy, nutritious, interesting, and something children would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
-    currentCapabilities: ["AI-powered tiffin planning", "Ingredient-based recipe discovery", "AI recipe adaptation", "Smart shopping list", "505+ vegetarian recipes", "Multi-language support", "Weekly planner", "PWA and offline support", "Dark mode"]
+    currentCapabilities: ["AI-powered tiffin planning", "Ingredient-based recipe discovery", "AI recipe adaptation", "Smart shopping list", "505+ vegetarian recipes", "Multi-language support", "Weekly planner", "PWA and offline support", "Dark mode", "Festival Tiffin with 54 festive recipes"]
   }
 };

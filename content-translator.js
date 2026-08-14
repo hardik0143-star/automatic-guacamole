@@ -13,7 +13,7 @@
 
   const langPair = {
     hi: "hi", gu: "gu", mr: "mr", fr: "fr", es: "es", de: "de",
-    yue: "zh-CN", ta: "ta", te: "te", bn: "bn"
+    yue: "zh-CN", ta: "ta", ja: "ja"
   };
 
   function save() {

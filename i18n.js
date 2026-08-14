@@ -22,8 +22,7 @@ window.TINY_TIFFIN_LANGUAGES = [
   { code: "de", label: "Deutsch" },
   { code: "yue", label: "廣東話" },
   { code: "ta", label: "தமிழ்" },
-  { code: "te", label: "తెలుగు" },
-  { code: "bn", label: "বাংলা" }
+  { code: "ja", label: "日本語" }
 ];
 
 window.TINY_TIFFIN_STRINGS = {
@@ -759,6 +758,20 @@ window.TINY_TIFFIN_EXTRA_STRINGS = {
   ta: { keyVitamins:"முக்கிய வைட்டமின்கள்", nutritionalProfileVaries:"ஊட்டச்சத்து சுயவிவரம் பொருட்களைப் பொறுத்து மாறும்", aiAdapt:"AI மூலம் மாற்று", updateRating:"உங்கள் மதிப்பீட்டை புதுப்பிக்கவும்" },
   te: { keyVitamins:"ముఖ్యమైన విటమిన్లు", nutritionalProfileVaries:"పోషక విలువలు పదార్థాలను బట్టి మారవచ్చు", aiAdapt:"AIతో మార్చండి", updateRating:"మీ రేటింగ్‌ను నవీకరించండి" },
   bn: { keyVitamins:"মূল ভিটামিন", nutritionalProfileVaries:"উপকরণের উপর পুষ্টির প্রোফাইল পরিবর্তিত হতে পারে", aiAdapt:"AI দিয়ে মানিয়ে নিন", updateRating:"আপনার রেটিং আপডেট করুন" }
+};
+
+/* Festival Tiffin labels */
+window.TINY_TIFFIN_FESTIVAL_STRINGS = {
+  en:{festivalTitle:"Festival Tiffin",festivalSub:"Easy, colourful ideas that make special days extra fun in the lunchbox.",festivalComing:"Festival ideas",festivalDate:"Festival",festivalView:"View recipe",festivalTheme:"Theme"},
+  hi:{festivalTitle:"त्योहार टिफिन",festivalSub:"खास दिनों के लिए आसान और रंगीन टिफिन आइडिया।",festivalComing:"त्योहार के आइडिया",festivalDate:"त्योहार",festivalView:"रेसिपी देखें",festivalTheme:"थीम"},
+  gu:{festivalTitle:"તહેવાર ટિફિન",festivalSub:"ખાસ દિવસો માટે સરળ અને રંગીન ટિફિન આઇડિયા.",festivalComing:"તહેવારના આઇડિયા",festivalDate:"તહેવાર",festivalView:"રેસીપી જુઓ",festivalTheme:"થીમ"},
+  mr:{festivalTitle:"सणाचा टिफिन",festivalSub:"खास दिवसांसाठी सोप्या आणि रंगीत टिफिन कल्पना.",festivalComing:"सणाच्या कल्पना",festivalDate:"सण",festivalView:"रेसिपी पहा",festivalTheme:"थीम"},
+  fr:{festivalTitle:"Tiffin de fête",festivalSub:"Des idées faciles et colorées pour rendre les jours de fête amusants.",festivalComing:"Idées de fête",festivalDate:"Fête",festivalView:"Voir la recette",festivalTheme:"Thème"},
+  es:{festivalTitle:"Tiffin festivo",festivalSub:"Ideas fáciles y coloridas para hacer especiales los días de fiesta.",festivalComing:"Ideas festivas",festivalDate:"Fiesta",festivalView:"Ver receta",festivalTheme:"Tema"},
+  de:{festivalTitle:"Festtags-Tiffin",festivalSub:"Einfache, bunte Ideen für besondere Tage in der Lunchbox.",festivalComing:"Festtagsideen",festivalDate:"Fest",festivalView:"Rezept ansehen",festivalTheme:"Thema"},
+  yue:{festivalTitle:"節日 Tiffin",festivalSub:"簡單又繽紛嘅小朋友節日飯盒點子。",festivalComing:"節日點子",festivalDate:"節日",festivalView:"查看食譜",festivalTheme:"主題"},
+  ta:{festivalTitle:"திருவிழா டிஃபின்",festivalSub:"சிறப்பு நாட்களுக்கு எளிய வண்ணமயமான டிஃபின் யோசனைகள்.",festivalComing:"திருவிழா யோசனைகள்",festivalDate:"திருவிழா",festivalView:"செய்முறையைப் பார்க்க",festivalTheme:"தீம்"},
+  ja:{festivalTitle:"フェスティバル・ティフィン",festivalSub:"特別な日に楽しめる、簡単でカラフルな子ども向けアイデア。",festivalComing:"フェスティバルのアイデア",festivalDate:"行事",festivalView:"レシピを見る",festivalTheme:"テーマ"}
 };
 
 window.tinyTiffinT = function(langCode, key) {

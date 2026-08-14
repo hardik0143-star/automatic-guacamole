@@ -300,6 +300,7 @@
         ${state.tab === "developer" ? renderDeveloperTab() : ""}
         ${state.tab === "ai" ? renderAITab() : ""}
         ${state.tab === "shopping" ? renderShoppingTab() : ""}
+        ${state.tab === "festival" ? renderFestivalTab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -320,6 +321,7 @@
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     if (state.tab === "shopping") attachShoppingEvents();
+    if (state.tab === "festival") attachCardEvents();
     hydrateRecipeImages(root);
     if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
     if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang);
@@ -338,7 +340,8 @@
       ["dashboard", "🥗", t("navDashboard")],
       ["favorites", "♡", `${t("navFavorites")} (${state.favorites.size})`],
       ["ai", "✨", "Tiny Tiffin AI"],
-      ["shopping", "🛒", "Smart Shopping"]
+      ["shopping", "🛒", "Smart Shopping"],
+      ["festival", "🎉", festivalT("festivalTitle")]
     ];
     return `
       <header class="app-header">
@@ -508,6 +511,47 @@
     btn.addEventListener('click',(e)=>{e.preventDefault();run();});
     input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();window.tinyTiffinRunShopping();}});
     document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',(e)=>{e.preventDefault();input.value=ch.dataset.shopQuery||'';run();}));
+  }
+
+  /* ---------- Festival Tiffin ---------- */
+  function festivalT(key) {
+    const dict = window.TINY_TIFFIN_FESTIVAL_STRINGS || {};
+    return (dict[state.lang] && dict[state.lang][key]) || (dict.en && dict.en[key]) || key;
+  }
+
+  function renderFestivalTab() {
+    const festivals = window.TINY_TIFFIN_FESTIVALS || [];
+    const today = new Date();
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+    const dateMap = {"15 August":[8,15],"26 January":[1,26],"25 December":[12,25]};
+    const upcoming = festivals.find(f => {
+      const d = dateMap[f.dateLabel];
+      return d && (d[0] > month || (d[0] === month && d[1] >= day));
+    });
+
+    return `
+      <section class="festival-hero">
+        <div class="festival-kicker">🎉 ${festivalT("festivalComing")}</div>
+        <h1 class="display">${festivalT("festivalTitle")}</h1>
+        <p class="sub">${festivalT("festivalSub")}</p>
+        ${upcoming ? `<div class="festival-next">✨ ${escapeHTML(upcoming.title)} · ${escapeHTML(upcoming.dateLabel)}</div>` : ""}
+      </section>
+      <section class="festival-grid" aria-label="${festivalT("festivalTitle")}">
+        ${festivals.map(f => `
+          <article class="festival-card" data-festival="${escapeAttr(f.id)}">
+            <div class="festival-card-top">
+              <span class="festival-icon">${f.emoji}</span>
+              <div><h2>${escapeHTML(f.title)}</h2><div class="festival-date">${escapeHTML(f.dateLabel)}</div></div>
+            </div>
+            <p class="festival-theme">${festivalT("festivalTheme")}: ${escapeHTML(f.theme)}</p>
+            <div class="festival-recipes">
+              ${f.recipes.map(r => recipeCardHTML(r)).join("")}
+            </div>
+          </article>
+        `).join("")}
+      </section>
+    `;
   }
 
   /* ---------- Find tab ---------- */
@@ -1251,6 +1295,11 @@
   }
 
   function escapeAttr(s) { return String(s).replace(/"/g, "&quot;"); }
+  function escapeHTML(s) {
+    return String(s ?? "").replace(/[&<>"']/g, ch => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+    }[ch]));
+  }
 
   /* ---------------- shared-link handling ---------------- */
   function openFromHash() {

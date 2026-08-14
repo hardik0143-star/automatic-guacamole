@@ -36,8 +36,15 @@ window.TinyTiffinStore = (function () {
   }
 
   function getRecipes() {
+    const base = window.TINY_TIFFIN_RECIPES || [];
+    const festival = window.TINY_TIFFIN_FESTIVAL_RECIPES || [];
     const draft = readDraft();
-    return draft || window.TINY_TIFFIN_RECIPES || [];
+    if (!draft) return base.concat(festival);
+    // Preserve an existing Admin draft while automatically adding new festival
+    // recipes that were introduced by the application update.
+    const known = new Set(draft.map(r => r && r.id));
+    const additions = festival.filter(r => r && !known.has(r.id));
+    return additions.length ? draft.concat(additions) : draft;
   }
 
   function saveRecipes(recipes) {
