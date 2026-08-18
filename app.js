@@ -90,7 +90,7 @@
     const cards = container.querySelectorAll("[data-auto-image]");
     cards.forEach(card => {
       const id = card.dataset.autoImage;
-      const r = RECIPES.find(x => x.id === id);
+      const r = getRecipeById(id);
       if (!r) return;
       const apply = image => {
         if (!image) return;
@@ -107,7 +107,10 @@
   }
 
   /* ---------------- constants ---------------- */
-  const RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
+  const BASE_RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
+  const FESTIVAL_RECIPES = (window.TINY_TIFFIN_FESTIVAL_RECIPES || []).map(r => ({...r, specialCollection:"festival"}));
+  const FASTING_RECIPES = (window.TINY_TIFFIN_FASTING_RECIPES || []).map(r => ({...r, specialCollection:"fasting"}));
+  const RECIPES = [...BASE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES];
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡" };
@@ -301,6 +304,7 @@
         ${state.tab === "ai" ? renderAITab() : ""}
         ${state.tab === "shopping" ? renderShoppingTab() : ""}
         ${state.tab === "festival" ? renderFestivalTab() : ""}
+        ${state.tab === "fasting" ? renderFastingTab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -321,7 +325,8 @@
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     if (state.tab === "shopping") attachShoppingEvents();
-    if (state.tab === "festival") attachCardEvents();
+    if (state.tab === "festival") attachFestivalEvents();
+    if (state.tab === "fasting") attachFastingEvents();
     hydrateRecipeImages(root);
     if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
     if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang);
@@ -341,7 +346,8 @@
       ["favorites", "♡", `${t("navFavorites")} (${state.favorites.size})`],
       ["ai", "✨", "Tiny Tiffin AI"],
       ["shopping", "🛒", "Smart Shopping"],
-      ["festival", "🎉", festivalT("festivalTitle")]
+      ["festival", "🎉", festivalT("festivalTitle")],
+      ["fasting", "🙏", fastingT("title")]
     ];
     return `
       <header class="app-header">
@@ -519,27 +525,33 @@
     return (dict[state.lang] && dict[state.lang][key]) || (dict.en && dict.en[key]) || key;
   }
 
+  function fastingT(key) {
+    const dict = window.TINY_TIFFIN_FASTING_STRINGS || {};
+    return (dict[state.lang] && dict[state.lang][key]) || (dict.en && dict.en[key]) || key;
+  }
+  let festivalSelection = "all";
+  let fastingSaltFilter = "all";
+
   function renderFestivalTab() {
     const festivals = window.TINY_TIFFIN_FESTIVALS || [];
-    const today = new Date();
-    const month = today.getMonth() + 1;
-    const day = today.getDate();
-    const dateMap = {"15 August":[8,15],"26 January":[1,26],"25 December":[12,25]};
-    const upcoming = festivals.find(f => {
-      const d = dateMap[f.dateLabel];
-      return d && (d[0] > month || (d[0] === month && d[1] >= day));
-    });
-
+    const selected = festivalSelection === "all" ? festivals : festivals.filter(f => f.id === festivalSelection);
     return `
       <section class="festival-hero">
         <div class="festival-kicker">🎉 ${festivalT("festivalComing")}</div>
         <h1 class="display">${festivalT("festivalTitle")}</h1>
         <p class="sub">${festivalT("festivalSub")}</p>
-        ${upcoming ? `<div class="festival-next">✨ ${escapeHTML(upcoming.title)} · ${escapeHTML(upcoming.dateLabel)}</div>` : ""}
+        <div class="festival-mode-switch">
+          <button class="chip active">🎉 ${festivalT("festivalTitle")}</button>
+          <button class="chip" data-open-fasting>🙏 ${fastingT("title")}</button>
+        </div>
+      </section>
+      <section class="festival-selector" aria-label="Choose a festival">
+        <button class="chip ${festivalSelection==="all"?"active":""}" data-festival-select="all">✨ All Festivals</button>
+        ${festivals.map(f => `<button class="chip ${festivalSelection===f.id?"active":""}" data-festival-select="${escapeAttr(f.id)}">${f.emoji} ${escapeHTML(f.title)}</button>`).join("")}
       </section>
       <section class="festival-grid" aria-label="${festivalT("festivalTitle")}">
-        ${festivals.map(f => `
-          <article class="festival-card" data-festival="${escapeAttr(f.id)}">
+        ${selected.map(f => `
+          <article class="festival-card" id="festival-${escapeAttr(f.id)}">
             <div class="festival-card-top">
               <span class="festival-icon">${f.emoji}</span>
               <div><h2>${escapeHTML(f.title)}</h2><div class="festival-date">${escapeHTML(f.dateLabel)}</div></div>
@@ -552,6 +564,49 @@
         `).join("")}
       </section>
     `;
+  }
+
+  function renderFastingTab() {
+    const all = window.TINY_TIFFIN_FASTING_RECIPES || [];
+    const recipes = all.filter(r => fastingSaltFilter === "all" || r.fastingSalt === fastingSaltFilter);
+    return `
+      <section class="festival-hero fasting-hero">
+        <div class="festival-kicker">🙏 ${fastingT("fasting")}</div>
+        <h1 class="display">${fastingT("title")}</h1>
+        <p class="sub">${fastingT("sub")}</p>
+        <div class="festival-mode-switch">
+          <button class="chip" data-open-festivals>🎉 ${festivalT("festivalTitle")}</button>
+          <button class="chip active">🙏 ${fastingT("fasting")}</button>
+        </div>
+        <div class="fasting-note">ℹ️ ${fastingT("note")}</div>
+      </section>
+      <section class="festival-selector fasting-filters">
+        <button class="chip ${fastingSaltFilter==="all"?"active":""}" data-fast-filter="all">${fastingT("all")}</button>
+        <button class="chip ${fastingSaltFilter==="with-sendha-namak"?"active":""}" data-fast-filter="with-sendha-namak">🧂 ${fastingT("withSalt")}</button>
+        <button class="chip ${fastingSaltFilter==="without-salt"?"active":""}" data-fast-filter="without-salt">🌿 ${fastingT("noSalt")}</button>
+      </section>
+      <section class="recipe-grid fasting-grid">
+        ${recipes.map(r => recipeCardHTML(r)).join("")}
+      </section>
+    `;
+  }
+
+  function attachFestivalEvents() {
+    root.querySelectorAll("[data-festival-select]").forEach(btn => btn.addEventListener("click", () => {
+      festivalSelection = btn.dataset.festivalSelect; render(); window.scrollTo(0,0);
+    }));
+    const f = root.querySelector("[data-open-fasting]");
+    if (f) f.addEventListener("click", () => { state.tab="fasting"; render(); window.scrollTo(0,0); });
+    attachCardEvents();
+  }
+
+  function attachFastingEvents() {
+    root.querySelectorAll("[data-fast-filter]").forEach(btn => btn.addEventListener("click", () => {
+      fastingSaltFilter=btn.dataset.fastFilter; render(); window.scrollTo(0,0);
+    }));
+    const b=root.querySelector("[data-open-festivals]");
+    if(b) b.addEventListener("click",()=>{state.tab="festival";render();window.scrollTo(0,0);});
+    attachCardEvents();
   }
 
   /* ---------- Find tab ---------- */
@@ -772,7 +827,7 @@
   }
 
   function openRecipeModal(id) {
-    const r = RECIPES.find(x => x.id === id);
+    const r = getRecipeById(id);
     if (!r) return;
     const rt = displayedRatings(r);
     const images = (r.images && r.images.length) ? r.images.slice(0, 2) : (imageCache[r.id] ? [imageCache[r.id].url] : []);
@@ -930,8 +985,8 @@
     const key = `${day}-${slot}`;
     const existingId = state.planner[key];
     if (existingId && existingId !== recipeId) {
-      const existing = RECIPES.find(r => r.id === existingId);
-      const incoming = RECIPES.find(r => r.id === recipeId);
+      const existing = getRecipeById(existingId);
+      const incoming = getRecipeById(recipeId);
       const replace = window.confirm(`${day} ${slot} already has "${existing ? recipeName(existing) : "a recipe"}".\n\nReplace it with "${incoming ? recipeName(incoming) : "the new recipe"}"?`);
       if (!replace) {
         state.tab = "planner";
@@ -968,7 +1023,7 @@
               ${MEAL_SLOTS.map(slot => {
                 const key = `${day}-${slot}`;
                 const recipeId = state.planner[key];
-                const r = recipeId ? RECIPES.find(x => x.id === recipeId) : null;
+                const r = recipeId ? getRecipeById(recipeId) : null;
                 if (r) return `<div class="planner-slot" data-planner-slot="${key}"><span>${r.emoji} ${recipeName(r)}</span><button data-remove="${key}">✕</button></div>`;
                 return `<button class="planner-add" data-add="${day}|${slot}">+ ${t(slot)}</button>`;
               }).join("")}
@@ -1021,7 +1076,7 @@
   }
 
   function openSlotPicker(day, slot) {
-    const options = state.favorites.size > 0 ? Array.from(state.favorites) : RECIPES.map(r => r.id).slice(0, 8);
+    const options = state.favorites.size > 0 ? Array.from(state.favorites) : BASE_RECIPES.map(r => r.id).slice(0, 8);
     const backdrop = document.createElement("div");
     backdrop.className = "modal-backdrop";
     backdrop.innerHTML = `
@@ -1031,7 +1086,7 @@
         <p class="desc">${t("plannerAddFrom")}</p>
         <div class="picker-list">
           ${options.map(id => {
-            const r = RECIPES.find(x => x.id === id);
+            const r = getRecipeById(id);
             if (!r) return "";
             return `<div class="picker-item"><span>${r.emoji} ${recipeName(r)}</span><button data-pick="${id}">${t("addToPlanner")}</button></div>`;
           }).join("")}
@@ -1048,7 +1103,7 @@
   function openGroceryModal() {
     const counts = {};
     Object.values(state.planner).forEach(id => {
-      const r = RECIPES.find(x => x.id === id);
+      const r = getRecipeById(id);
       if (!r) return;
       r.ingredients.forEach(ing => { counts[ing] = (counts[ing] || 0) + 1; });
     });

@@ -570,3 +570,26 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 [data-theme="dark"] .festival-next{
   background:var(--card);
 }
+
+/* ---------- Festival selector + Indian Fasting ---------- */
+.festival-selector{
+  display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;
+  padding:10px;background:var(--card);border:1px solid var(--mist-2);
+  border-radius:16px;position:sticky;top:8px;z-index:4;
+}
+.festival-selector .chip{white-space:nowrap}
+.festival-mode-switch{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.festival-mode-switch .chip{font-weight:800}
+.fasting-note{
+  margin-top:14px;padding:11px 13px;border-radius:12px;
+  background:rgba(229,164,49,.10);border:1px solid var(--mist-2);
+  color:var(--ink);font-size:.82rem;line-height:1.5;
+}
+.fasting-filters{top:62px}
+.fasting-grid{margin-bottom:40px}
+.fasting-hero{background:linear-gradient(135deg,rgba(111,78,147,.12),rgba(229,164,49,.10))}
+@media(max-width:760px){
+  .festival-selector{position:sticky;top:4px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
+  .festival-selector::-webkit-scrollbar{display:none}
+  .festival-selector .chip{flex:0 0 auto}
+}
