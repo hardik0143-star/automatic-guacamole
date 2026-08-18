@@ -162,6 +162,15 @@
   };
 
   function t(key) { return window.tinyTiffinT(state.lang, key); }
+
+  // Central recipe lookup used by every recipe card, planner, favourites, AI,
+  // festival and fasting collection. Keeping one lookup prevents View Recipe
+  // from failing for recipes outside the main recipe library.
+  function getRecipeById(id) {
+    const key = String(id);
+    return RECIPES.find(r => String(r.id) === key) || null;
+  }
+
   function recipeName(r) { return r.name[state.lang] || r.name.en; }
   function recipeDesc(r) { return r.desc[state.lang] || r.desc.en; }
   function applyTheme() { document.documentElement.setAttribute("data-theme", state.theme); }

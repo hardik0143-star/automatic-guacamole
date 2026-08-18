@@ -2,7 +2,7 @@
    Caches the app shell on install so it opens without a network
    connection after the first visit. Bump CACHE_NAME when you
    change any of the cached files so users get the update. */
-const CACHE_NAME = "tiny-tiffin-v1-5-premium-clean";
+const CACHE_NAME = "tiny-tiffin-v1-9-1-festival-fasting-fix";
 const SHELL_FILES = [
   "./",
   "./index.html",
@@ -11,10 +11,14 @@ const SHELL_FILES = [
   "./app.js",
   "./admin.js",
   "./recipes.js",
+  "./festival.js",
+  "./fasting.js",
+  "./content-translator.js",
   "./i18n.js",
   "./site-config.js",
   "./store.js",
-  "./manifest.json"
+  "./manifest.json",
+  "./premium-ui.css"
   ,"./icon-192.png"
   ,"./icon-512.png"
   ,"./apple-touch-icon.png"

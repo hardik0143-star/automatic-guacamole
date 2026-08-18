@@ -3,7 +3,7 @@ window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
   version: "v1.0",
   releaseDate: "July 2026",
-  releaseNotes: "Festival Tiffin collection added with 18 Indian and international occasions and 54 easy kid-friendly festive recipes, plus multilingual discovery, weekly planning, AI features and smart shopping support.",
+  releaseNotes: "Festival Tiffin and Indian fasting collections, multilingual discovery, weekly planning, AI features and smart shopping support; recipe-view reliability and PWA update handling improved.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

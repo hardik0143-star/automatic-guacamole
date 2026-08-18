@@ -5,7 +5,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Sabudana Khichdi"
+      "en": "Sabudana / Sago Khichdi"
     },
     "desc": {
       "en": "Soft tapioca pearls with peanuts and potato, a classic fasting option."
@@ -31,7 +31,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "nuts"
     ],
     "ingredients": [
-      "1 cup soaked sabudana",
+      "1 cup soaked sabudana / sago",
       "1 small potato diced",
       "2 tbsp roasted peanut powder",
       "1 tsp ghee",
@@ -40,9 +40,9 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "Lemon"
     ],
     "instructions": [
-      "Drain soaked sabudana well.",
+      "Drain soaked sabudana / sago well.",
       "Heat ghee and cumin; add potato and cook until tender.",
-      "Add sabudana, peanut powder and sendha namak.",
+      "Add sabudana / sago, peanut powder and sendha namak.",
       "Cook gently until pearls turn translucent; finish with lemon."
     ],
     "nutrition": {
@@ -79,10 +79,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Sabudana Tikki"
+      "en": "Sabudana / Sago Tikki"
     },
     "desc": {
-      "en": "Crisp-soft sabudana and potato patties suitable for a fasting lunchbox."
+      "en": "Crisp-soft sabudana / sago and potato patties suitable for a fasting lunchbox."
     },
     "ageGroups": [
       "2-5y",
@@ -105,7 +105,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "nuts"
     ],
     "ingredients": [
-      "1 cup soaked sabudana",
+      "1 cup soaked sabudana / sago",
       "1/2 cup boiled potato",
       "2 tbsp peanut powder",
       "1/2 tsp cumin",
@@ -152,10 +152,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Sabudana Thalipeeth"
+      "en": "Sabudana / Sago Thalipeeth"
     },
     "desc": {
-      "en": "A soft pan-cooked sabudana and peanut flatbread."
+      "en": "A soft pan-cooked sabudana / sago and peanut flatbread."
     },
     "ageGroups": [
       "2-5y",
@@ -178,14 +178,14 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "nuts"
     ],
     "ingredients": [
-      "1 cup soaked sabudana",
+      "1 cup soaked sabudana / sago",
       "1/2 cup boiled potato",
       "2 tbsp peanut powder",
       "1/4 tsp cumin",
       "Sendha namak to taste"
     ],
     "instructions": [
-      "Mash potato and mix with sabudana and peanut powder.",
+      "Mash potato and mix with sabudana / sago and peanut powder.",
       "Pat small discs between greased sheets.",
       "Cook on a tawa with ghee until cooked through.",
       "Cool and cut into wedges."
@@ -224,10 +224,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Sabudana Dosa"
+      "en": "Sabudana / Sago Dosa"
     },
     "desc": {
-      "en": "Thin, soft dosa made from soaked sabudana, potato and peanut."
+      "en": "Thin, soft dosa made from soaked sabudana / sago, potato and peanut."
     },
     "ageGroups": [
       "2-5y",
@@ -250,14 +250,14 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "nuts"
     ],
     "ingredients": [
-      "1 cup soaked sabudana",
+      "1 cup soaked sabudana / sago",
       "1 small boiled potato",
       "2 tbsp peanut powder",
       "Water as needed",
       "Sendha namak to taste"
     ],
     "instructions": [
-      "Blend sabudana, potato and peanut powder with water.",
+      "Blend sabudana / sago, potato and peanut powder with water.",
       "Season with sendha namak.",
       "Spread a thin dosa on a non-stick pan.",
       "Cook both sides gently."
@@ -296,10 +296,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Sabudana Kheer"
+      "en": "Sabudana / Sago Kheer"
     },
     "desc": {
-      "en": "Creamy sabudana pudding with milk and cardamom."
+      "en": "Creamy sabudana / sago pudding with milk and cardamom."
     },
     "ageGroups": [
       "2-5y",
@@ -323,14 +323,14 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "nuts"
     ],
     "ingredients": [
-      "1/3 cup sabudana",
+      "1/3 cup sabudana / sago",
       "1 cup milk",
       "1 tsp date paste",
       "Pinch cardamom",
       "2 chopped almonds"
     ],
     "instructions": [
-      "Cook soaked sabudana in milk until translucent.",
+      "Cook soaked sabudana / sago in milk until translucent.",
       "Stir in date paste and cardamom.",
       "Simmer briefly.",
       "Cool and pack chilled."
@@ -369,10 +369,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Sabudana Fruit Cups"
+      "en": "Sabudana / Sago Fruit Cups"
     },
     "desc": {
-      "en": "Chilled sabudana with yogurt and fruit for a gentle sweet tiffin."
+      "en": "Chilled sabudana / sago with yogurt and fruit for a gentle sweet tiffin."
     },
     "ageGroups": [
       "2-5y",
@@ -395,13 +395,13 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "dairy"
     ],
     "ingredients": [
-      "1/3 cup cooked sabudana",
+      "1/3 cup cooked sabudana / sago",
       "1/2 cup plain yogurt",
       "1/4 cup banana",
       "1/4 cup mango"
     ],
     "instructions": [
-      "Cool cooked sabudana.",
+      "Cool cooked sabudana / sago.",
       "Fold into yogurt with fruit.",
       "Spoon into a small cup.",
       "Keep chilled until serving."
@@ -440,7 +440,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Singhara Sheera"
+      "en": "Singhara / Chestnut Sheera"
     },
     "desc": {
       "en": "A simple water-chestnut flour sheera for fasting."
@@ -466,14 +466,14 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "dairy"
     ],
     "ingredients": [
-      "1/2 cup singhara flour",
+      "1/2 cup singhara / chestnut flour",
       "1 tbsp ghee",
       "1 cup milk or water",
       "1 tsp date paste",
       "Pinch cardamom"
     ],
     "instructions": [
-      "Warm ghee and roast singhara flour on low heat.",
+      "Warm ghee and roast singhara / chestnut flour on low heat.",
       "Slowly add milk or water while stirring.",
       "Add date paste and cardamom.",
       "Cook until soft and spoonable."
@@ -512,7 +512,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Singhara Pancakes"
+      "en": "Singhara / Chestnut Pancakes"
     },
     "desc": {
       "en": "Soft mini pancakes using water-chestnut flour and banana."
@@ -536,7 +536,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     ],
     "allergens": [],
     "ingredients": [
-      "1/2 cup singhara flour",
+      "1/2 cup singhara / chestnut flour",
       "1/2 banana mashed",
       "Water as needed",
       "Pinch cardamom",
@@ -582,7 +582,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Singhara Cheela"
+      "en": "Singhara / Chestnut Cheela"
     },
     "desc": {
       "en": "Soft savoury chestnut-flour cheela with potato and cumin."
@@ -606,7 +606,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     ],
     "allergens": [],
     "ingredients": [
-      "1/2 cup singhara flour",
+      "1/2 cup singhara / chestnut flour",
       "1/2 boiled potato",
       "1/4 tsp cumin",
       "Water",
@@ -652,7 +652,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Singhara Paneer Bites"
+      "en": "Singhara / Chestnut Paneer Bites"
     },
     "desc": {
       "en": "Protein-rich paneer bites bound with chestnut flour."
@@ -679,7 +679,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     ],
     "ingredients": [
       "80 g paneer",
-      "2 tbsp singhara flour",
+      "2 tbsp singhara / chestnut flour",
       "1 tbsp yogurt",
       "1/4 tsp cumin",
       "Sendha namak to taste"
@@ -724,7 +724,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Rajgira Sheera"
+      "en": "Rajgira / Amaranth / Amaranth Grain Sheera"
     },
     "desc": {
       "en": "Warm amaranth flour sheera with cardamom and dates."
@@ -750,14 +750,14 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "dairy"
     ],
     "ingredients": [
-      "1/2 cup rajgira flour",
+      "1/2 cup rajgira / amaranth / amaranth grain flour",
       "1 tbsp ghee",
       "1 cup milk or water",
       "1 tsp date paste",
       "Pinch cardamom"
     ],
     "instructions": [
-      "Roast rajgira flour gently in ghee.",
+      "Roast rajgira / amaranth / amaranth grain flour gently in ghee.",
       "Add milk or water gradually while stirring.",
       "Add date paste and cardamom.",
       "Cook until soft and glossy."
@@ -796,7 +796,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Rajgira Paratha"
+      "en": "Rajgira / Amaranth / Amaranth Grain Paratha"
     },
     "desc": {
       "en": "Soft amaranth flour paratha with mashed potato."
@@ -820,7 +820,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     ],
     "allergens": [],
     "ingredients": [
-      "1/2 cup rajgira flour",
+      "1/2 cup rajgira / amaranth / amaranth grain flour",
       "1/2 cup boiled potato",
       "1/4 tsp cumin",
       "Sendha namak to taste",
@@ -866,10 +866,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Rajgira Paneer Roll"
+      "en": "Rajgira / Amaranth / Amaranth Grain Paneer Roll"
     },
     "desc": {
-      "en": "Soft rajgira flatbread filled with paneer and cucumber."
+      "en": "Soft rajgira / amaranth / amaranth grain flatbread filled with paneer and cucumber."
     },
     "ageGroups": [
       "2-5y",
@@ -892,14 +892,14 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "dairy"
     ],
     "ingredients": [
-      "1/2 cup rajgira flour",
+      "1/2 cup rajgira / amaranth / amaranth grain flour",
       "60 g paneer",
       "2 tbsp cucumber",
       "1/4 tsp cumin",
       "Sendha namak to taste"
     ],
     "instructions": [
-      "Make a soft rajgira dough and cook a small flatbread.",
+      "Make a soft rajgira / amaranth / amaranth grain dough and cook a small flatbread.",
       "Fill with crumbled paneer and cucumber.",
       "Roll tightly and warm briefly.",
       "Cool and slice."
@@ -938,7 +938,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Rajgira Banana Bites"
+      "en": "Rajgira / Amaranth / Amaranth Grain Banana Bites"
     },
     "desc": {
       "en": "Soft banana and amaranth bites without added salt."
@@ -962,7 +962,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     ],
     "allergens": [],
     "ingredients": [
-      "1/2 cup rajgira flour",
+      "1/2 cup rajgira / amaranth / amaranth grain flour",
       "1 banana mashed",
       "1/4 tsp cardamom",
       "Ghee"
@@ -1603,7 +1603,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "ingredients": [
       "80 g paneer",
       "2 tbsp coconut",
-      "1 tbsp singhara flour",
+      "1 tbsp singhara / chestnut flour",
       "1/4 tsp cardamom"
     ],
     "instructions": [
@@ -1717,10 +1717,10 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     "emoji": "🙏",
     "images": [],
     "name": {
-      "en": "Coconut Rajgira Laddoo"
+      "en": "Coconut Rajgira / Amaranth / Amaranth Grain Laddoo"
     },
     "desc": {
-      "en": "Small soft laddoos made with rajgira and dates."
+      "en": "Small soft laddoos made with rajgira / amaranth / amaranth grain and dates."
     },
     "ageGroups": [
       "2-5y",
@@ -1741,13 +1741,13 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
     ],
     "allergens": [],
     "ingredients": [
-      "1/2 cup rajgira flour",
+      "1/2 cup rajgira / amaranth / amaranth grain flour",
       "2 dates",
       "2 tbsp coconut",
       "1 tsp ghee"
     ],
     "instructions": [
-      "Roast rajgira flour lightly in ghee.",
+      "Roast rajgira / amaranth / amaranth grain flour lightly in ghee.",
       "Mix with mashed dates and coconut.",
       "Shape small laddoos.",
       "Cool completely before packing."
