@@ -107,6 +107,19 @@
     });
   }
 
+  /* ---------------- Smart Buy supported grocery platforms ---------------- */
+  const GROCERY_COMPARE_PLATFORMS = [
+    { key: "blinkit", label: "BlinkIt" },
+    { key: "zepto", label: "Zepto" },
+    { key: "swiggy", label: "Swiggy Instamart" },
+    { key: "bigbasket", label: "BigBasket" },
+    { key: "dmart", label: "DMart" },
+    { key: "jiomart", label: "JioMart" },
+    { key: "minutes", label: "Flipkart Minutes" },
+    { key: "amazon", label: "Amazon" },
+    { key: "flipkart", label: "Flipkart" }
+  ];
+
   /* ---------------- constants ---------------- */
   const BASE_RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const FESTIVAL_RECIPES = (window.TINY_TIFFIN_FESTIVAL_RECIPES || []).map(r => ({...r, specialCollection:"festival"}));
