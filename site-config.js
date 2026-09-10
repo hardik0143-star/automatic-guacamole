@@ -1,9 +1,9 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.1",
+  version: "v2.3",
   releaseDate: "July 2026",
-  releaseNotes: "Added 56 healthy vegetarian regional recipes: India state-wise and international country-wise collections, plus Indo-Chinese Style Chili Tofu in the main recipe database. Existing grocery comparison and prior features remain unchanged.",
+  releaseNotes: "Added live Quick-Commerce price comparison directly inside Smart Shopping. Users can search grocery items such as paneer or idli batter, compare live prices and pack sizes by store, select a preferred offer, and open the corresponding retailer site. Existing recipe-level comparison and all other app features remain unchanged.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

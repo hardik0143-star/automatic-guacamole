@@ -720,3 +720,48 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 [data-theme="dark"] .regional-hero,[data-theme="dark"] .recipe-source-note{background:#19231f;border-color:#3a4b43}
 [data-theme="dark"] .regional-toolbar{background:#111815}
 @media(max-width:640px){.regional-hero{align-items:flex-start}.regional-hero-icons{font-size:2rem}.regional-toolbar{top:62px}}
+
+
+/* ---------- v2.3 Live Smart Shopping ---------- */
+.smart-live-panel{
+  margin:0 0 18px;padding:16px;border:1px solid var(--mist-2);
+  border-radius:20px;background:var(--card)
+}
+.smart-live-hero{display:flex;justify-content:space-between;align-items:center;gap:18px}
+.smart-live-hero h2{margin:.25rem 0}
+.smart-live-hero p{margin:.25rem 0;color:var(--ink-soft)}
+.smart-live-icon{font-size:3rem}
+.smart-live-controls{
+  display:grid;grid-template-columns:minmax(210px,1.8fr) minmax(100px,.55fr) auto auto;
+  gap:8px;margin:14px 0 9px;align-items:center
+}
+.smart-pin-input{min-width:100px}
+.smart-quick-items{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px}
+.smart-location-note{display:block;color:var(--ink-soft);margin-bottom:12px}
+.smart-live-results{display:grid;gap:16px}
+.smart-live-item{padding-top:10px;border-top:1px solid var(--mist-2)}
+.smart-live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.smart-store-card{
+  padding:13px;border:1px solid var(--mist-2);border-radius:14px;background:var(--card)
+}
+.smart-store-card.cheapest{border:2px solid #2e8b57;box-shadow:0 0 0 3px rgba(46,139,87,.10)}
+.smart-store-head{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.smart-product-name{font-weight:750;margin:8px 0 5px}
+.smart-weight{font-size:.86rem;margin-bottom:6px;color:var(--ink-soft)}
+.smart-pricing{display:flex;gap:8px;align-items:center;margin:5px 0}
+.smart-pricing strong{font-size:1.2rem}
+.smart-pricing del{color:var(--ink-soft)}
+.smart-pricing span{font-size:.75rem;color:#17643b}
+.smart-availability,.smart-delivery{font-size:.82rem;margin:4px 0}
+.smart-open-store{width:100%;margin-top:9px}
+[data-theme="dark"] .smart-live-panel,[data-theme="dark"] .smart-store-card{
+  background:#19231f;border-color:#3a4b43;color:#f4f7f5
+}
+[data-theme="dark"] .smart-live-hero p,[data-theme="dark"] .smart-location-note,[data-theme="dark"] .smart-weight{color:#c7d1cc}
+@media(max-width:760px){
+  .smart-live-controls{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+  .smart-live-controls{grid-template-columns:1fr}
+  .smart-live-icon{font-size:2rem}
+}

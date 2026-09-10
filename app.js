@@ -111,8 +111,40 @@
   const BASE_RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const FESTIVAL_RECIPES = (window.TINY_TIFFIN_FESTIVAL_RECIPES || []).map(r => ({...r, specialCollection:"festival"}));
   const FASTING_RECIPES = (window.TINY_TIFFIN_FASTING_RECIPES || []).map(r => ({...r, specialCollection:"fasting"}));
-  const REGIONAL_RECIPES = (window.TINY_TIFFIN_REGIONAL_RECIPES || []).map(r => ({...r, specialCollection:"regional"}));
-  const RECIPES = [...BASE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES, ...REGIONAL_RECIPES];
+  const REGIONAL_RECIPES = [];
+  const RECIPES = [...BASE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES];
+  let regionalDataLoaded = false;
+  let regionalDataLoading = null;
+
+  async function ensureRegionalData() {
+    if (regionalDataLoaded) return true;
+    if (regionalDataLoading) return regionalDataLoading;
+    regionalDataLoading = new Promise((resolve) => {
+      const existing = document.querySelector('script[data-tiny-tiffin-regional]');
+      if (existing && window.TINY_TIFFIN_REGIONAL_RECIPES) {
+        const mapped = window.TINY_TIFFIN_REGIONAL_RECIPES.map(r => ({...r, specialCollection:"regional"}));
+        REGIONAL_RECIPES.push(...mapped);
+        RECIPES.push(...mapped);
+        regionalDataLoaded = true;
+        resolve(true);
+        return;
+      }
+      const script = document.createElement("script");
+      script.src = "regional.js?v=2.2";
+      script.async = true;
+      script.dataset.tinyTiffinRegional = "1";
+      script.onload = () => {
+        const mapped = (window.TINY_TIFFIN_REGIONAL_RECIPES || []).map(r => ({...r, specialCollection:"regional"}));
+        REGIONAL_RECIPES.push(...mapped);
+        RECIPES.push(...mapped);
+        regionalDataLoaded = true;
+        resolve(true);
+      };
+      script.onerror = () => resolve(false);
+      document.head.appendChild(script);
+    });
+    return regionalDataLoading;
+  }
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡" };
@@ -337,6 +369,7 @@
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     if (state.tab === "shopping") attachShoppingEvents();
+    if (state.tab === "shopping") attachSmartShoppingLiveEvents();
     if (state.tab === "festival") attachFestivalEvents();
     if (state.tab === "fasting") attachFastingEvents();
     if (state.tab === "regional") attachRegionalEvents();
@@ -427,7 +460,21 @@
       });
     }
     root.querySelectorAll(".tab-btn").forEach(btn => {
-      btn.addEventListener("click", () => { state.tab = btn.dataset.tab; render(); window.scrollTo(0, 0); });
+      btn.addEventListener("click", async () => {
+        const nextTab = btn.dataset.tab;
+        if (nextTab === "regional") {
+          btn.disabled = true;
+          const ok = await ensureRegionalData();
+          btn.disabled = false;
+          if (!ok) {
+            toast("Regional recipes could not load. Please check your connection and try again.");
+            return;
+          }
+        }
+        state.tab = nextTab;
+        render();
+        window.scrollTo(0, 0);
+      });
     });
   }
 
@@ -468,6 +515,7 @@
 
   function renderShoppingTab() {
     return `
+        ${renderSmartShoppingLivePanel()}
       <section class="ai-hub smart-shopping-hub">
         <div class="ai-hero"><span class="ai-badge">LIVE PRICE READY</span><h1 class="display">🛒 Smart Shopping Compare</h1><p class="sub">Search a product or ingredient and compare supported stores. Live prices require approved API connections.</p></div>
         <div class="ai-card">
@@ -660,7 +708,7 @@
         </div>
       </section>
       <div class="regional-summary"><strong>${filtered.length} recipes</strong> · ${isIndia?"Indian state-wise collection":"International country-wise collection"}</div>
-      <section class="recipe-grid regional-grid">${filtered.map(recipeCard).join("")}</section>
+      <section class="recipe-grid regional-grid">${filtered.map(recipeCardHTML).join("")}</section>
     `;
   }
 
@@ -671,6 +719,7 @@
     root.querySelectorAll("[data-regional-place]").forEach(btn => btn.addEventListener("click", () => {
       regionalPlace = btn.dataset.regionalPlace; render(); window.scrollTo(0,0);
     }));
+    attachCardEvents();
   }
 
   function renderFindTab() {
@@ -1048,6 +1097,185 @@
       submitBtn.disabled = false;
       submitBtn.textContent = "Compare selected ingredients";
     }
+  }
+
+
+  /* ---------- v2.3 Smart Shopping live price comparison ---------- */
+  let smartShoppingLiveResults = [];
+  let smartShoppingSelectedQuery = "";
+  let smartShoppingLocation = { pincode: storage.get("tt_grocery_pincode", ""), latitude: null, longitude: null };
+
+  function normalizeShoppingQuery(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function renderSmartShoppingResults(data) {
+    smartShoppingLiveResults = data.items || [];
+    if (!smartShoppingLiveResults.length) {
+      return `<div class="shop-notice">No live matches were returned for this search.</div>`;
+    }
+
+    return smartShoppingLiveResults.map(item => {
+      const offers = (item.offers || []).slice().sort((a,b) => {
+        const ap = Number.isFinite(Number(a.price)) ? Number(a.price) : Infinity;
+        const bp = Number.isFinite(Number(b.price)) ? Number(b.price) : Infinity;
+        return ap - bp;
+      });
+      const cheapest = offers.filter(o => o.available !== false && Number.isFinite(Number(o.price)))
+        .reduce((best,o) => !best || Number(o.price) < Number(best.price) ? o : best, null);
+
+      return `
+        <section class="smart-live-item">
+          <h3>${escapeHTML(item.original || item.query)}</h3>
+          <div class="smart-live-grid">
+            ${offers.map(o => {
+              const isBest = cheapest && cheapest.platform === o.platform && Number(o.price) === Number(cheapest.price);
+              const weight = o.packSize || "Weight/pack unavailable";
+              return `
+                <article class="smart-store-card ${isBest ? "cheapest" : ""}">
+                  <div class="smart-store-head">
+                    <strong>${escapeHTML(o.platformLabel || o.platform)}</strong>
+                    ${isBest ? `<span class="cheapest-badge">Cheapest</span>` : ""}
+                    ${o.alternative ? `<span class="alternative-badge">Alternative</span>` : ""}
+                  </div>
+                  <div class="smart-product-name">${escapeHTML(o.productName || item.query)}</div>
+                  <div class="smart-weight">⚖️ ${escapeHTML(weight)}</div>
+                  <div class="smart-pricing">
+                    <strong>${money(o.price)}</strong>
+                    ${o.mrp && Number(o.mrp) > Number(o.price) ? `<del>${money(o.mrp)}</del>` : ""}
+                    ${o.discountPercent ? `<span>${Number(o.discountPercent).toFixed(0)}% off</span>` : ""}
+                  </div>
+                  <div class="smart-availability">${o.available === false ? "❌ Out of stock" : "✅ Available"}</div>
+                  ${o.delivery ? `<div class="smart-delivery">🚚 ${escapeHTML(String(o.delivery))}</div>` : ""}
+                  <button class="btn btn-primary smart-open-store"
+                          data-store-url="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, item.query, smartShoppingLocation.pincode))}">
+                    ${o.available === false ? "Open Store" : "Choose & Open Store"}
+                  </button>
+                </article>`;
+            }).join("")}
+          </div>
+        </section>`;
+    }).join("");
+  }
+
+  async function runSmartShoppingLiveSearch(query, resultBox, button) {
+    const q = normalizeShoppingQuery(query);
+    if (!q) {
+      resultBox.innerHTML = `<div class="shop-notice">Enter an ingredient or grocery item, for example Paneer or Idli Batter.</div>`;
+      return;
+    }
+    if (!smartShoppingLocation.pincode && !(smartShoppingLocation.latitude && smartShoppingLocation.longitude)) {
+      resultBox.innerHTML = `<div class="shop-notice">Enter your 6-digit PIN code or use your location to see local grocery prices.</div>`;
+      return;
+    }
+
+    button.disabled = true;
+    button.textContent = "Checking live prices…";
+    resultBox.innerHTML = `<div class="compare-loading">Comparing current prices, pack sizes and availability across supported stores…</div>`;
+
+    try {
+      const response = await fetch("/api/compare-prices", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({
+          pincode: smartShoppingLocation.pincode || "",
+          latitude: smartShoppingLocation.latitude || null,
+          longitude: smartShoppingLocation.longitude || null,
+          items: [{ original: q, query: q }],
+          platforms: GROCERY_COMPARE_PLATFORMS.map(p => p.key)
+        })
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        resultBox.innerHTML = `<div class="shop-notice"><strong>${escapeHTML(data.message || "Live comparison is temporarily unavailable.")}</strong><br>Try again shortly.</div>`;
+        return;
+      }
+      resultBox.innerHTML = renderSmartShoppingResults(data);
+      resultBox.querySelectorAll(".smart-open-store").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const url = btn.dataset.storeUrl;
+          if (url) window.open(url, "_blank", "noopener,noreferrer");
+        });
+      });
+    } catch (e) {
+      resultBox.innerHTML = `<div class="shop-notice"><strong>Could not reach the live price service.</strong><br>Please try again shortly.</div>`;
+    } finally {
+      button.disabled = false;
+      button.textContent = "Compare Live Prices";
+    }
+  }
+
+  function renderSmartShoppingLivePanel() {
+    const pin = smartShoppingLocation.pincode || "";
+    return `
+      <section class="smart-live-panel">
+        <div class="smart-live-hero">
+          <div>
+            <div class="festival-kicker">⚡ Live Quick-Commerce Comparison</div>
+            <h2>Compare Grocery Prices</h2>
+            <p>Search for any grocery item and compare live product price, pack size/weight, MRP, availability and delivery information across supported Indian stores.</p>
+          </div>
+          <div class="smart-live-icon">🛒</div>
+        </div>
+
+        <div class="smart-live-controls">
+          <input id="smart-live-query" class="search-input" placeholder="Search Paneer, Idli Batter, Milk, Banana..." value="${escapeAttr(smartShoppingSelectedQuery)}">
+          <input id="smart-live-pin" class="search-input smart-pin-input" inputmode="numeric" maxlength="6" placeholder="PIN code" value="${escapeAttr(pin)}">
+          <button class="btn btn-secondary" id="smart-live-location" type="button">📍 Use location</button>
+          <button class="btn btn-primary" id="smart-live-compare" type="button">Compare Live Prices</button>
+        </div>
+
+        <div class="smart-quick-items">
+          ${["Paneer","Idli Batter","Milk","Banana","Bread","Tofu"].map(x => `<button class="chip" data-smart-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
+        </div>
+        <small id="smart-live-location-status" class="smart-location-note">Prices vary by location. Your PIN code is saved only in your browser; precise coordinates are used only for the comparison request.</small>
+        <div id="smart-live-results" class="smart-live-results"></div>
+      </section>
+    `;
+  }
+
+  function attachSmartShoppingLiveEvents() {
+    const query = document.getElementById("smart-live-query");
+    const pin = document.getElementById("smart-live-pin");
+    const compare = document.getElementById("smart-live-compare");
+    const results = document.getElementById("smart-live-results");
+    const status = document.getElementById("smart-live-location-status");
+    const loc = document.getElementById("smart-live-location");
+
+    if (!query || !pin || !compare || !results) return;
+
+    query.addEventListener("input", () => smartShoppingSelectedQuery = query.value);
+    pin.addEventListener("input", () => {
+      smartShoppingLocation.pincode = pin.value.replace(/\D/g,"").slice(0,6);
+      pin.value = smartShoppingLocation.pincode;
+      if (smartShoppingLocation.pincode.length === 6) storage.set("tt_grocery_pincode", smartShoppingLocation.pincode);
+    });
+
+    compare.addEventListener("click", () => runSmartShoppingLiveSearch(query.value, results, compare));
+    query.addEventListener("keydown", e => { if (e.key === "Enter") compare.click(); });
+
+    document.querySelectorAll("[data-smart-quick]").forEach(btn => btn.addEventListener("click", () => {
+      query.value = btn.dataset.smartQuick;
+      smartShoppingSelectedQuery = query.value;
+      compare.click();
+    }));
+
+    if (loc) loc.addEventListener("click", () => {
+      if (!navigator.geolocation) {
+        status.textContent = "Location is not supported by this browser. Please enter a PIN code.";
+        return;
+      }
+      status.textContent = "Requesting location…";
+      navigator.geolocation.getCurrentPosition(
+        pos => {
+          smartShoppingLocation.latitude = Number(pos.coords.latitude.toFixed(6));
+          smartShoppingLocation.longitude = Number(pos.coords.longitude.toFixed(6));
+          status.textContent = "Location captured for this live comparison.";
+        },
+        () => status.textContent = "Location permission was not available. Please enter your PIN code.",
+        {enableHighAccuracy:false,timeout:10000,maximumAge:300000}
+      );
+    });
   }
 
   function openGroceryCompareModal(recipe) {
