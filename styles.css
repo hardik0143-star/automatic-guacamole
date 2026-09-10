@@ -765,3 +765,35 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
   .smart-live-controls{grid-template-columns:1fr}
   .smart-live-icon{font-size:2rem}
 }
+
+
+/* ---------- v2.4 Smart Buy grouped product comparison ---------- */
+.smart-buy-toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin:14px 0}
+.smart-buy-progress{display:flex;gap:10px;align-items:center;color:var(--ink-soft)}
+.smart-buy-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.smart-product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:14px}
+.smart-product-card{border:1px solid var(--mist-2);border-radius:20px;background:var(--card);overflow:hidden;box-shadow:var(--shadow)}
+.smart-product-image{height:180px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#faf8f3)}
+.smart-product-image img{width:100%;height:100%;object-fit:contain;padding:14px}
+.smart-product-placeholder{font-size:3.4rem}
+.smart-product-body{padding:14px}
+.smart-brand{text-transform:uppercase;font-size:.74rem;letter-spacing:.05em;color:var(--ink-soft);font-weight:800}
+.smart-product-body h3{margin:4px 0 3px;font-size:1.08rem}
+.smart-pack{color:var(--ink-soft);margin-bottom:10px}
+.smart-store-price-list{display:grid;gap:7px}
+.smart-store-price-row{width:100%;display:grid;grid-template-columns:minmax(110px,1fr) auto auto 20px;gap:8px;align-items:center;border:0;border-radius:12px;padding:9px 10px;background:#f8efe5;cursor:pointer;text-align:left;color:inherit}
+.smart-store-price-row.best{background:#e6f5ee}
+.smart-store-price-row:hover{filter:brightness(.98)}
+.smart-store-name{font-weight:750}
+.smart-row-pack{font-size:.74rem;color:var(--ink-soft)}
+.smart-row-price{font-weight:900;font-size:1rem}
+.smart-best-dot{color:#168552;font-weight:900}
+.smart-card-footer{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px}
+.smart-card-footer strong,.smart-card-footer small{display:block}
+.smart-card-footer small{color:var(--ink-soft);margin-top:2px}
+.smart-add-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--mist-2);background:var(--card);font-size:1.5rem;cursor:pointer}
+[data-theme="dark"] .smart-product-card,[data-theme="dark"] .smart-add-btn{background:#19231f;border-color:#3a4b43}
+[data-theme="dark"] .smart-product-image{background:#111815}
+[data-theme="dark"] .smart-store-price-row{background:#2b211a}
+[data-theme="dark"] .smart-store-price-row.best{background:#19382c}
+@media(max-width:520px){.smart-product-grid{grid-template-columns:1fr}.smart-product-image{height:155px}.smart-store-price-row{grid-template-columns:minmax(100px,1fr) auto auto 18px}}

@@ -1,9 +1,9 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.3",
+  version: "v2.4",
   releaseDate: "July 2026",
-  releaseNotes: "Added live Quick-Commerce price comparison directly inside Smart Shopping. Users can search grocery items such as paneer or idli batter, compare live prices and pack sizes by store, select a preferred offer, and open the corresponding retailer site. Existing recipe-level comparison and all other app features remain unchanged.",
+  releaseNotes: "v2.4 Smart Buy now uses the documented Quick Commerce groupsearch/groupeta response schema exactly: live grouped products, store prices, pack size, MRP, inventory, ETA, product images and deeplinks. Regional Recipes keeps 5 healthy recipes per region.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

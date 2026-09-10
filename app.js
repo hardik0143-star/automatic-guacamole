@@ -515,589 +515,16 @@
 
   function renderShoppingTab() {
     return `
-        ${renderSmartShoppingLivePanel()}
+      ${renderSmartShoppingLivePanel()}
       <section class="ai-hub smart-shopping-hub">
-        <div class="ai-hero"><span class="ai-badge">LIVE PRICE READY</span><h1 class="display">🛒 Smart Shopping Compare</h1><p class="sub">Search a product or ingredient and compare supported stores. Live prices require approved API connections.</p></div>
         <div class="ai-card">
-          <div class="smart-shop-search"><input id="shop-search" type="search" placeholder="Try: Amul cheese 200 g, paneer, oats…" autocomplete="off"><button class="btn btn-primary" id="shop-search-btn" type="button" onclick="return window.tinyTiffinRunShopping()">Compare prices</button></div>
-          <div class="shop-controls"><input id="shop-pincode" inputmode="numeric" maxlength="6" placeholder="PIN code (optional)"><label><input id="shop-live-only" type="checkbox"> Live results only</label></div>
-          <p class="ai-muted">No prices are invented. If live providers are not configured, Tiny Tiffin shows safe store search links instead.</p>
-          <div class="shop-quick"><button class="chip" data-shop-query="Paneer" onclick="return window.tinyTiffinRunShopping('Paneer')">Paneer</button><button class="chip" data-shop-query="Cheese" onclick="return window.tinyTiffinRunShopping('Cheese')">Cheese</button><button class="chip" data-shop-query="Oats" onclick="return window.tinyTiffinRunShopping('Oats')">Oats</button><button class="chip" data-shop-query="Kids lunch box" onclick="return window.tinyTiffinRunShopping('Kids lunch box')">Lunch box</button></div>
-        </div>
-        <div id="shop-results" class="shop-results"><div class="empty-state"><span class="big-emoji">🛍️</span><h3>Search to compare</h3><p>Enter an exact product name for the best match.</p></div></div>
-      </section>`;
-  }
-
-  function attachShoppingEvents() {
-    const input=document.getElementById('shop-search');
-    const btn=document.getElementById('shop-search-btn');
-    const box=document.getElementById('shop-results');
-    if(!input||!btn||!box) return;
-
-    const storesFor=(q)=>{
-      const query=encodeURIComponent(q);
-      return [
-        {name:'Amazon India', icon:'🛒', url:`https://www.amazon.in/s?k=${query}&tag=tinytiffin-21`, note:'Affiliate link • Search Amazon'},
-        {name:'Amazon Fresh', icon:'🥬', url:`https://www.amazon.in/fresh/s?k=${query}&tag=tinytiffin-21`, note:'Affiliate link • Fresh grocery search'},
-        {name:'Flipkart', icon:'🛍️', url:`https://www.flipkart.com/search?q=${query}`, note:'Search product on Flipkart'},
-        {name:'BigBasket', icon:'🧺', url:`https://www.bigbasket.com/ps/?q=${query}`, note:'Search grocery on BigBasket'},
-        {name:'Blinkit', icon:'⚡', url:`https://blinkit.com/s/?q=${query}`, note:'Availability depends on location'},
-        {name:'Zepto', icon:'🚴', url:`https://www.zeptonow.com/search?query=${query}`, note:'Availability depends on location'}
-      ];
-    };
-
-    const run=()=>{
-      const q=input.value.trim();
-      if(!q){
-        input.focus();
-        input.setAttribute('aria-invalid','true');
-        box.innerHTML='<div class="shop-notice">Please enter a product or ingredient first.</div>';
-        return;
-      }
-      input.removeAttribute('aria-invalid');
-      const pin=(document.getElementById('shop-pincode')||{}).value||'';
-      const liveOnly=!!(document.getElementById('shop-live-only')||{}).checked;
-      const stores=storesFor(q);
-      if(liveOnly){
-        box.innerHTML=`<div class="shop-notice"><strong>Live results only is enabled.</strong><br>Live price APIs are not connected yet, so no verified prices can be shown. Turn off this option to open working store searches.</div>`;
-        return;
-      }
-      box.innerHTML=`
-        <div class="shop-summary"><strong>Results for “${escapeHTML(q)}”</strong>${pin?` • PIN: ${escapeHTML(pin)}`:''}<br><span>Tap a store to check the latest price and delivery availability.</span></div>
-        <div class="shop-grid">${stores.map(s=>`
-          <article class="shop-card">
-            <div class="shop-store">${s.icon} ${escapeHTML(s.name)}</div>
-            <h3>${escapeHTML(q)}</h3>
-            <p>${escapeHTML(s.note)}</p>
-            <a class="btn btn-primary shop-open-link" target="_blank" rel="sponsored noopener noreferrer" href="${escapeAttr(s.url)}">Open ${escapeHTML(s.name)}</a>
-          </article>`).join('')}</div>
-        <p class="ai-muted shop-disclosure">Tiny Tiffin may earn a commission from qualifying Amazon purchases, at no extra cost to you. Prices are checked on the retailer’s website and are not displayed or estimated inside Tiny Tiffin.</p>`;
-      box.scrollIntoView({behavior:'smooth',block:'start'});
-    };
-
-    btn.type='button';
-    btn.addEventListener('click',(e)=>{e.preventDefault();run();});
-    input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();window.tinyTiffinRunShopping();}});
-    document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',(e)=>{e.preventDefault();input.value=ch.dataset.shopQuery||'';run();}));
-  }
-
-  /* ---------- Festival Tiffin ---------- */
-  function festivalT(key) {
-    const dict = window.TINY_TIFFIN_FESTIVAL_STRINGS || {};
-    return (dict[state.lang] && dict[state.lang][key]) || (dict.en && dict.en[key]) || key;
-  }
-
-  function fastingT(key) {
-    const dict = window.TINY_TIFFIN_FASTING_STRINGS || {};
-    return (dict[state.lang] && dict[state.lang][key]) || (dict.en && dict.en[key]) || key;
-  }
-  let festivalSelection = "all";
-  let fastingSaltFilter = "all";
-
-  function renderFestivalTab() {
-    const festivals = window.TINY_TIFFIN_FESTIVALS || [];
-    const selected = festivalSelection === "all" ? festivals : festivals.filter(f => f.id === festivalSelection);
-    return `
-      <section class="festival-hero festival-collection-hero">
-        <div class="festival-hero-copy">
-          <div class="festival-kicker">🎉 ${festivalT("festivalComing")}</div>
-          <h1 class="display">${festivalT("festivalTitle")}</h1>
-          <p class="sub">${festivalT("festivalSub")}</p>
-        </div>
-        <div class="festival-hero-media"><img src="festival-tiffin-hero.svg" alt="${escapeAttr(festivalT("festivalTitle"))}" loading="eager"></div>
-        <div class="festival-mode-switch">
-          <button class="chip active">🎉 ${festivalT("festivalTitle")}</button>
-          <button class="chip" data-open-fasting>🙏 ${fastingT("title")}</button>
-        </div>
-      </section>
-      <section class="festival-selector" aria-label="Choose a festival">
-        <button class="chip ${festivalSelection==="all"?"active":""}" data-festival-select="all">✨ All Festivals</button>
-        ${festivals.map(f => `<button class="chip ${festivalSelection===f.id?"active":""}" data-festival-select="${escapeAttr(f.id)}">${f.emoji} ${escapeHTML(f.title)}</button>`).join("")}
-      </section>
-      <section class="festival-grid" aria-label="${festivalT("festivalTitle")}">
-        ${selected.map(f => `
-          <article class="festival-card" id="festival-${escapeAttr(f.id)}">
-            <div class="festival-card-top">
-              <span class="festival-icon">${f.emoji}</span>
-              <div><h2>${escapeHTML(f.title)}</h2><div class="festival-date">${escapeHTML(f.dateLabel)}</div></div>
-            </div>
-            <p class="festival-theme">${festivalT("festivalTheme")}: ${escapeHTML(f.theme)}</p>
-            <div class="festival-recipes">
-              ${f.recipes.map(r => recipeCardHTML(r)).join("")}
-            </div>
-          </article>
-        `).join("")}
-      </section>
-    `;
-  }
-
-  function renderFastingTab() {
-    const all = window.TINY_TIFFIN_FASTING_RECIPES || [];
-    const recipes = all.filter(r => fastingSaltFilter === "all" || r.fastingSalt === fastingSaltFilter);
-    return `
-      <section class="festival-hero fasting-hero festival-collection-hero">
-        <div class="festival-hero-copy">
-          <div class="festival-kicker">🙏 ${fastingT("fasting")}</div>
-          <h1 class="display">${fastingT("title")}</h1>
-          <p class="sub">${fastingT("sub")}</p>
-        </div>
-        <div class="festival-hero-media"><img src="indian-fasting-tiffin-hero.svg" alt="${escapeAttr(fastingT("title"))}" loading="eager"></div>
-        <div class="festival-mode-switch">
-          <button class="chip" data-open-festivals>🎉 ${festivalT("festivalTitle")}</button>
-          <button class="chip active">🙏 ${fastingT("fasting")}</button>
-        </div>
-        <div class="fasting-note">ℹ️ ${fastingT("note")}</div>
-      </section>
-      <section class="festival-selector fasting-filters">
-        <button class="chip ${fastingSaltFilter==="all"?"active":""}" data-fast-filter="all">${fastingT("all")}</button>
-        <button class="chip ${fastingSaltFilter==="with-sendha-namak"?"active":""}" data-fast-filter="with-sendha-namak">🧂 ${fastingT("withSalt")}</button>
-        <button class="chip ${fastingSaltFilter==="without-salt"?"active":""}" data-fast-filter="without-salt">🌿 ${fastingT("noSalt")}</button>
-      </section>
-      <section class="recipe-grid fasting-grid">
-        ${recipes.map(r => recipeCardHTML(r)).join("")}
-      </section>
-    `;
-  }
-
-  function attachFestivalEvents() {
-    root.querySelectorAll("[data-festival-select]").forEach(btn => btn.addEventListener("click", () => {
-      festivalSelection = btn.dataset.festivalSelect; render(); window.scrollTo(0,0);
-    }));
-    const f = root.querySelector("[data-open-fasting]");
-    if (f) f.addEventListener("click", () => { state.tab="fasting"; render(); window.scrollTo(0,0); });
-    attachCardEvents();
-  }
-
-  function attachFastingEvents() {
-    root.querySelectorAll("[data-fast-filter]").forEach(btn => btn.addEventListener("click", () => {
-      fastingSaltFilter=btn.dataset.fastFilter; render(); window.scrollTo(0,0);
-    }));
-    const b=root.querySelector("[data-open-festivals]");
-    if(b) b.addEventListener("click",()=>{state.tab="festival";render();window.scrollTo(0,0);});
-    attachCardEvents();
-  }
-
-  /* ---------- Find tab ---------- */
-
-  let regionalMode = "india";
-  let regionalPlace = "all";
-
-  function renderRegionalTab() {
-    const all = window.TINY_TIFFIN_REGIONAL_RECIPES || [];
-    const meta = window.TINY_TIFFIN_REGIONAL_META || { indiaRegions: [], internationalRegions: [] };
-    const isIndia = regionalMode === "india";
-    const places = isIndia ? (meta.indiaRegions || []) : (meta.internationalRegions || []);
-    const filtered = all.filter(r => r.regionType === regionalMode && (regionalPlace === "all" || r.region === regionalPlace));
-    return `
-      <section class="regional-hero">
-        <div>
-          <div class="festival-kicker">🌍 Healthy food traditions, made tiffin-friendly</div>
-          <h1 class="display">Regional Vegetarian Recipes</h1>
-          <p class="sub">Explore healthy vegetarian lunchbox ideas state-wise across India and country-wise around the world. Recipes are adapted for children with mild spice and practical tiffin portions.</p>
-        </div>
-        <div class="regional-hero-icons" aria-hidden="true">🇮🇳 🥗 🌎</div>
-      </section>
-      <section class="regional-toolbar">
-        <div class="regional-mode-switch">
-          <button class="chip ${isIndia?"active":""}" data-regional-mode="india">🇮🇳 India — State-wise</button>
-          <button class="chip ${!isIndia?"active":""}" data-regional-mode="international">🌎 International — Country-wise</button>
-        </div>
-        <div class="regional-place-selector">
-          <button class="chip ${regionalPlace==="all"?"active":""}" data-regional-place="all">✨ All ${isIndia?"States":"Countries"}</button>
-          ${places.map(p=>`<button class="chip ${regionalPlace===p?"active":""}" data-regional-place="${escapeAttr(p)}">${escapeHTML(p)}</button>`).join("")}
-        </div>
-      </section>
-      <div class="regional-summary"><strong>${filtered.length} recipes</strong> · ${isIndia?"Indian state-wise collection":"International country-wise collection"}</div>
-      <section class="recipe-grid regional-grid">${filtered.map(recipeCardHTML).join("")}</section>
-    `;
-  }
-
-  function attachRegionalEvents() {
-    root.querySelectorAll("[data-regional-mode]").forEach(btn => btn.addEventListener("click", () => {
-      regionalMode = btn.dataset.regionalMode; regionalPlace = "all"; render(); window.scrollTo(0,0);
-    }));
-    root.querySelectorAll("[data-regional-place]").forEach(btn => btn.addEventListener("click", () => {
-      regionalPlace = btn.dataset.regionalPlace; render(); window.scrollTo(0,0);
-    }));
-    attachCardEvents();
-  }
-
-  function renderFindTab() {
-    const results = filteredRecipes();
-    return `
-      <section class="hero">
-        <h1 class="display">${t("heroTitle")}</h1>
-        <p class="sub">${t("heroSub")}</p>
-        <button class="btn btn-secondary surprise-btn" id="surprise-recipe">✨ Surprise Me with a Recipe</button>
-        <div class="mood-picker" aria-label="${t("moodLabel")}">
-          <span class="mood-label">${t("moodLabel")}</span>
-          <button class="mood-chip" data-mood="quick">⚡ ${t("moodQuick")}</button>
-          <button class="mood-chip" data-mood="protein">💪 ${t("moodProtein")}</button>
-          <button class="mood-chip" data-mood="colourful">🌈 ${t("moodColourful")}</button>
-        </div>
-        <div class="tiffin-handle" aria-hidden="true"></div>
-        <div class="tiffin-stack" role="group" aria-label="${t('heroTitle')}">
-          ${NUTRITION_ORDER.map(n => `
-            <button class="tiffin-tier ${state.filters.nutrition.has(n) ? "active" : ""}" data-nutri="${n}">
-              <span class="tier-emoji">${NUTRITION_EMOJI[n]}</span> ${t("nutritionGoals")[n] || capitalize(n)}
-            </button>`).join("")}
-        </div>
-      </section>
-
-      <section class="shopping-chip-row" aria-label="Shopping links">
-        <a class="shopping-chip fresh-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
-        <a class="shopping-chip amazon-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
-      </section>
-
-      <section class="filters">
-        <div class="filter-group">
-          <label>${t("filterAge")}</label>
-          <div class="chip-row">
-            <button class="chip ${state.filters.age === "all" ? "active" : ""}" data-age="all">${t("all")}</button>
-            ${AGE_GROUPS.map(a => `<button class="chip ${state.filters.age === a ? "active" : ""}" data-age="${a}">${a === "5-12y+" ? "5–12Y+" : a}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filter-group">
-          <label>${t("filterTime")}</label>
-          <div class="chip-row">
-            <button class="chip ${state.filters.time === "any" ? "active" : ""}" data-time="any">${t("anyTime")}</button>
-            ${TIME_BUCKETS.map(m => `<button class="chip ${state.filters.time === String(m) ? "active" : ""}" data-time="${m}">${t("min" + m)}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filter-group">
-          <label>${t("filterMeal")}</label>
-          <div class="chip-row">
-            <button class="chip ${state.filters.meal === "all" ? "active" : ""}" data-meal="all">${t("all")}</button>
-            ${MEAL_SLOTS.map(m => `<button class="chip ${state.filters.meal === m ? "active" : ""}" data-meal="${m}">${t(m)}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filter-group">
-          <label>${t("filterDiet")}</label>
-          <div class="chip-row">
-            <button class="chip ${state.filters.diet === "all" ? "active" : ""}" data-diet="all">${t("all")}</button>
-            ${DIET_TYPES.map(d => `<button class="chip ${state.filters.diet === d ? "active" : ""}" data-diet="${d}">${t("diet" + capitalize(d))}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filter-group">
-          <label>${t("filterCuisine")}</label>
-          <div class="chip-row">
-            <button class="chip ${state.filters.cuisine === "all" ? "active" : ""}" data-cuisine="all">${t("all")}</button>
-            ${CUISINES.map(c => `<button class="chip ${state.filters.cuisine === c ? "active" : ""}" data-cuisine="${c}">${t("cuisine" + capitalize(c))}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filter-group ingredient-filter-group">
-          <label>${t("filterIngredient")}</label>
-          <div class="chip-row">
-            <button class="chip ${state.filters.ingredientCategory === "all" ? "active" : ""}" data-ingredient-category="all">${t("all")}</button>
-            ${INGREDIENT_CATEGORIES.map(c => `<button class="chip ${state.filters.ingredientCategory === c.key ? "active" : ""}" data-ingredient-category="${c.key}">${t("ingredientCategories")[c.key]}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filter-group">
-          <label>${t("filterAllergy")}</label>
-          <div class="chip-row">
-            ${ALL_ALLERGENS.map(a => `<button class="chip allergy ${state.filters.allergyExclude.has(a) ? "active" : ""}" data-allergy="${a}">${a}</button>`).join("")}
-          </div>
-        </div>
-        <div class="filters-foot">
-          <span>${results.length} ${t("resultsCount")}</span>
-          <button class="link-btn" id="clear-filters">${t("clearFilters")}</button>
-        </div>
-      </section>
-
-      <section class="recipe-grid" id="recipe-grid">
-        ${results.length ? results.map(r => recipeCardHTML(r)).join("") : emptyStateHTML()}
-      </section>
-    `;
-  }
-  function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
-
-  function emptyStateHTML() {
-    const message = hasDiscoveryCriteria() ? t("mascotGreeting") : "Choose an age, time, meal, nutrition goal, ingredient—or search for a recipe to discover matching tiffin ideas.";
-    return `<div class="empty-state">${mascotSVG(56)}<p style="margin-top:10px">${message}</p></div>`;
-  }
-
-  function recipeCardHTML(r) {
-    const isFav = state.favorites.has(r.id);
-    const rt = displayedRatings(r);
-    return `
-      <article class="recipe-card pop-in" data-id="${r.id}">
-        ${recipeImageHTML(r)}
-        <div class="card-top">
-          <div class="card-emoji">${r.emoji}</div>
-          <button class="fav-btn ${isFav ? "active" : ""}" data-fav="${r.id}" aria-label="${t('addFavorite')}">${isFav ? "♥" : "♡"}</button>
-        </div>
-        <h3>${recipeName(r)}</h3>
-        <p class="desc">${recipeDesc(r)}</p>
-        <div class="rating-row">${starsHTML(rt.overall)} <span>${rt.overall.toFixed(1)}</span></div>
-        <div class="meta-row">
-          <span class="tag time">⏱ ${r.timeCategory} min</span>
-          <span class="tag cuisine-${r.cuisine}">${t("cuisine" + capitalize(r.cuisine))}</span>
-          ${r.dietType.map(d => `<span class="tag diet-${d}">${t("diet" + capitalize(d))}</span>`).join("")}
-          ${r.allergens.map(a => `<span class="tag allergen">⚠ ${a}</span>`).join("")}
-        </div>
-        <div class="card-actions">
-          <button class="btn btn-primary btn-block" data-view="${r.id}">${t("viewRecipe")}</button>
-        </div>
-      </article>
-    `;
-  }
-
-  function attachFindEvents() {
-    const surpriseBtn = document.getElementById("surprise-recipe");
-    if (surpriseBtn) surpriseBtn.addEventListener("click", () => {
-      const pool = filteredRecipes();
-      const choice = (pool.length ? pool : RECIPES)[Math.floor(Math.random() * (pool.length ? pool.length : RECIPES.length))];
-      openRecipeModal(choice.id);
-    });
-    root.querySelectorAll(".mood-chip").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const mood = btn.dataset.mood;
-        state.filters.time = "any";
-        state.filters.nutrition.clear();
-        if (mood === "quick") state.filters.time = "15";
-        if (mood === "protein") state.filters.nutrition.add("protein");
-        if (mood === "colourful") state.filters.nutrition.add("immunity");
-        render();
-      });
-    });
-    root.querySelectorAll(".tiffin-tier").forEach(btn => {
-      btn.addEventListener("click", () => { const n = btn.dataset.nutri;
-        if (state.filters.nutrition.has(n)) state.filters.nutrition.delete(n); else state.filters.nutrition.add(n);
-        render(); });
-    });
-    root.querySelectorAll("[data-age]").forEach(btn => btn.addEventListener("click", () => { state.filters.age = btn.dataset.age; render(); }));
-    root.querySelectorAll("[data-time]").forEach(btn => btn.addEventListener("click", () => { state.filters.time = btn.dataset.time; render(); }));
-    root.querySelectorAll("[data-meal]").forEach(btn => btn.addEventListener("click", () => { state.filters.meal = btn.dataset.meal; render(); }));
-    root.querySelectorAll("[data-diet]").forEach(btn => btn.addEventListener("click", () => { state.filters.diet = btn.dataset.diet; render(); }));
-    root.querySelectorAll("[data-cuisine]").forEach(btn => btn.addEventListener("click", () => { state.filters.cuisine = btn.dataset.cuisine; render(); }));
-    root.querySelectorAll("[data-ingredient-category]").forEach(btn => btn.addEventListener("click", () => { state.filters.ingredientCategory = btn.dataset.ingredientCategory; render(); }));
-    root.querySelectorAll("[data-allergy]").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const a = btn.dataset.allergy;
-        if (state.filters.allergyExclude.has(a)) state.filters.allergyExclude.delete(a); else state.filters.allergyExclude.add(a);
-        render();
-      });
-    });
-    const clearBtn = document.getElementById("clear-filters");
-    if (clearBtn) clearBtn.addEventListener("click", () => {
-      state.filters = { age: "all", time: "any", meal: "all", nutrition: new Set(), ingredientCategory: "all", allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
-      render();
-    });
-    attachCardEvents();
-  }
-
-  function attachCardEvents() {
-    root.querySelectorAll("[data-fav]").forEach(btn => {
-      btn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const id = btn.dataset.fav;
-        if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
-        saveFavorites(); render();
-      });
-    });
-    root.querySelectorAll("[data-view]").forEach(btn => btn.addEventListener("click", () => openRecipeModal(btn.dataset.view)));
-  }
-
-  /* ---------- Recipe modal (with gallery + ratings) ---------- */
-  function playRecipeBurst() {
-    const layer = document.createElement("div");
-    layer.className = "star-burst";
-    const stars = ["✦", "★", "✧", "✦", "★", "✧", "★", "✦"];
-    stars.forEach((s, i) => {
-      const el = document.createElement("span");
-      el.className = "burst-star";
-      el.textContent = s;
-      el.style.left = "50%"; el.style.top = "42%";
-      const angle = (Math.PI * 2 * i) / stars.length;
-      const distance = 100 + Math.random() * 100;
-      el.style.setProperty("--dx", `${Math.cos(angle) * distance}px`);
-      el.style.setProperty("--dy", `${Math.sin(angle) * distance}px`);
-      layer.appendChild(el);
-    });
-    document.body.appendChild(layer);
-    setTimeout(() => layer.remove(), 1100);
-  }
-
-  function showSparkleBurst() {
-    const burst = document.createElement("div");
-    burst.className = "sparkle-burst";
-    const symbols = ["✦", "✧", "★", "✦", "✨", "★", "✧", "✦"];
-    symbols.forEach((symbol, i) => {
-      const star = document.createElement("span");
-      star.className = "sparkle-star";
-      star.textContent = symbol;
-      star.style.left = "50%";
-      star.style.top = "42%";
-      const angle = (Math.PI * 2 * i) / symbols.length;
-      const distance = 90 + Math.random() * 130;
-      star.style.setProperty("--dx", `${Math.cos(angle) * distance}px`);
-      star.style.setProperty("--dy", `${Math.sin(angle) * distance}px`);
-      burst.appendChild(star);
-    });
-    document.body.appendChild(burst);
-    setTimeout(() => burst.remove(), 1000);
-  }
-
-
-  /* ---------- Grocery price comparison ---------- */
-  const GROCERY_COMPARE_PLATFORMS = [
-    { key: "blinkit", label: "Blinkit" },
-    { key: "zepto", label: "Zepto" },
-    { key: "swiggy", label: "Swiggy Instamart" },
-    { key: "bigbasket", label: "BigBasket" },
-    { key: "amazon", label: "Amazon" },
-    { key: "flipkart", label: "Flipkart / Minutes" },
-    { key: "dmart", label: "DMart" },
-    { key: "jiomart", label: "JioMart" }
-  ];
-
-  function extractIngredientSearchText(text) {
-    return String(text || "")
-      .replace(/^\s*[\d¼½¾⅓⅔⅛⅜⅝⅞./+\-\s]+(?:cup|cups|tbsp|tsp|g|kg|ml|l|piece|pieces|small|medium|large)?\s*/i, "")
-      .replace(/\([^)]*\)/g, " ")
-      .replace(/\s+/g, " ")
-      .trim() || String(text || "").trim();
-  }
-
-  function groceryFallbackUrl(platform, query, pincode) {
-    const q = encodeURIComponent(query);
-    const amazonTag = (CONFIG.affiliate && CONFIG.affiliate.amazonUrl || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
-    const urls = {
-      blinkit: `https://blinkit.com/s/?q=${q}`,
-      zepto: `https://www.zeptonow.com/search?query=${q}`,
-      swiggy: `https://www.swiggy.com/instamart/search?custom_back=true&query=${q}`,
-      bigbasket: `https://www.bigbasket.com/ps/?q=${q}`,
-      amazon: `https://www.amazon.in/s?k=${q}&tag=${encodeURIComponent(amazonTag)}`,
-      flipkart: `https://www.flipkart.com/search?q=${q}`,
-      dmart: `https://www.dmart.in/search?searchTerm=${q}`,
-      jiomart: `https://www.jiomart.com/search/${q}`
-    };
-    return urls[platform] || "#";
-  }
-
-  function money(value) {
-    const n = Number(value);
-    return Number.isFinite(n) ? `₹${n.toFixed(n % 1 ? 2 : 0)}` : "—";
-  }
-
-  function renderCompareItemResults(item) {
-    const rows = (item.offers || []).slice().sort((a, b) => {
-      const ap = Number.isFinite(Number(a.price)) ? Number(a.price) : Infinity;
-      const bp = Number.isFinite(Number(b.price)) ? Number(b.price) : Infinity;
-      return ap - bp;
-    });
-    if (!rows.length) {
-      return `<div class="compare-empty">No verified live offers were returned for <strong>${escapeHTML(item.query)}</strong>.</div>`;
-    }
-    const lowest = rows.filter(x => x.available !== false && Number.isFinite(Number(x.price)))
-      .reduce((best, x) => !best || Number(x.price) < Number(best.price) ? x : best, null);
-    return `
-      <section class="compare-item-block">
-        <h3>${escapeHTML(item.original || item.query)}</h3>
-        <div class="compare-offers">
-          ${rows.map(o => {
-            const isBest = lowest && o.platform === lowest.platform && Number(o.price) === Number(lowest.price);
-            return `<article class="compare-offer ${isBest ? "cheapest" : ""}">
-              <div class="compare-offer-head">
-                <strong>${escapeHTML(o.platformLabel || o.platform)}</strong>
-                ${isBest ? `<span class="cheapest-badge">✓ Cheapest</span>` : ""}
-                ${o.alternative ? `<span class="alternative-badge">Alternative</span>` : ""}
-              </div>
-              <div class="compare-product">${escapeHTML(o.productName || item.query)}</div>
-              <div class="compare-meta">
-                <span>${escapeHTML(o.packSize || "Pack size unavailable")}</span>
-                <span>${o.available === false ? "Out of stock" : "Available"}</span>
-              </div>
-              <div class="compare-price-line">
-                <strong>${money(o.price)}</strong>
-                ${o.mrp && Number(o.mrp) > Number(o.price) ? `<del>${money(o.mrp)}</del>` : ""}
-                ${o.discountPercent ? `<span>${Number(o.discountPercent).toFixed(0)}% off</span>` : ""}
-              </div>
-              ${o.delivery ? `<div class="compare-delivery">🚚 ${escapeHTML(String(o.delivery))}</div>` : ""}
-              <a class="btn btn-secondary compare-buy-btn" href="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, item.query))}"
-                 target="_blank" rel="sponsored noopener noreferrer">${o.buyUrl ? "Buy / Open Store" : "Open Store"}</a>
-            </article>`;
-          }).join("")}
+          <h3>How Smart Buy works</h3>
+          <p class="ai-muted">Search a grocery item, compare the same or closest matching pack across supported stores, then tap the store price you prefer to open that retailer.</p>
         </div>
       </section>`;
   }
 
-  function renderBasketSummary(data) {
-    const baskets = (data.baskets || []).filter(b => b.matchedItems > 0);
-    if (!baskets.length) return "";
-    const eligible = baskets.filter(b => b.total != null && b.matchedItems >= Math.max(1, Math.ceil((data.itemCount || 1) * 0.6)));
-    const cheapest = eligible.reduce((best, b) => !best || Number(b.total) < Number(best.total) ? b : best, null);
-    return `
-      <section class="basket-summary">
-        <h3>🧺 Basket comparison</h3>
-        <p>Totals are shown only for items with a matched, available price. Coverage tells you how much of your selected basket was found.</p>
-        <div class="basket-grid">
-          ${baskets.map(b => `<article class="basket-card ${cheapest && cheapest.platform === b.platform ? "cheapest" : ""}">
-            <div><strong>${escapeHTML(b.platformLabel || b.platform)}</strong>
-            ${cheapest && cheapest.platform === b.platform ? `<span class="cheapest-badge">Best basket</span>` : ""}</div>
-            <div class="basket-total">${b.total != null ? money(b.total) : "—"}</div>
-            <small>${b.matchedItems}/${data.itemCount || 0} items matched</small>
-          </article>`).join("")}
-        </div>
-      </section>`;
-  }
-
-  async function compareRecipePrices(recipe, selectedIngredients, locationData, resultBox, submitBtn) {
-    const cleanItems = selectedIngredients.map(x => ({
-      original: x,
-      query: extractIngredientSearchText(x)
-    })).filter(x => x.query);
-
-    if (!cleanItems.length) {
-      resultBox.innerHTML = `<div class="shop-notice">Select at least one ingredient.</div>`;
-      return;
-    }
-    if (!locationData.pincode && !(locationData.latitude && locationData.longitude)) {
-      resultBox.innerHTML = `<div class="shop-notice">Enter your 6-digit PIN code or use your location before comparing prices.</div>`;
-      return;
-    }
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Comparing…";
-    resultBox.innerHTML = `<div class="compare-loading">Checking current prices and availability…</div>`;
-
-    try {
-      const response = await fetch("/api/compare-prices", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          pincode: locationData.pincode || "",
-          latitude: locationData.latitude || null,
-          longitude: locationData.longitude || null,
-          items: cleanItems,
-          platforms: GROCERY_COMPARE_PLATFORMS.map(x => x.key)
-        })
-      });
-      const data = await response.json().catch(() => ({}));
-
-      if (!response.ok) {
-        const detail = data && data.message ? data.message : "Live price comparison is temporarily unavailable.";
-        resultBox.innerHTML = `
-          <div class="shop-notice"><strong>${escapeHTML(detail)}</strong><br>
-          Your recipe is unaffected. You can still open supported grocery stores below.</div>
-          <div class="fallback-store-links">
-            ${GROCERY_COMPARE_PLATFORMS.map(p => `<a class="btn btn-secondary" target="_blank" rel="sponsored noopener noreferrer"
-              href="${escapeAttr(groceryFallbackUrl(p.key, cleanItems[0].query, locationData.pincode))}">${escapeHTML(p.label)}</a>`).join("")}
-          </div>`;
-        return;
-      }
-
-      resultBox.innerHTML = `
-        ${renderBasketSummary(data)}
-        ${(data.items || []).map(renderCompareItemResults).join("")}
-        <p class="compare-disclaimer">Prices, stock, offers and delivery times can change after this comparison. Always confirm the final price in the retailer before purchasing.</p>`;
-    } catch (error) {
-      resultBox.innerHTML = `<div class="shop-notice"><strong>Could not reach the price service.</strong><br>Please try again shortly. No recipe or planner data was changed.</div>`;
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Compare selected ingredients";
-    }
-  }
+  function attachShoppingEvents() {}
 
 
   /* ---------- v2.3 Smart Shopping live price comparison ---------- */
@@ -1109,53 +536,91 @@
     return String(text || "").replace(/\s+/g, " ").trim();
   }
 
+  let smartBuySort = "top";
+
+  function smartBuyStoreLogo(platform) {
+    const logos = {
+      blinkit: "🟨", zepto: "🟪", swiggy: "🟧", bigbasket: "🟩",
+      amazon: "🛒", flipkart: "🟦", dmart: "🟢", jiomart: "🔵"
+    };
+    return logos[platform] || "🏪";
+  }
+
+  function sortSmartGroups(groups) {
+    const copy = groups.slice();
+    if (smartBuySort === "lowest") {
+      return copy.sort((a,b) => (Number(a.lowestPrice) || Infinity) - (Number(b.lowestPrice) || Infinity));
+    }
+    if (smartBuySort === "savings") {
+      return copy.sort((a,b) => (Number(b.bestSaving) || 0) - (Number(a.bestSaving) || 0));
+    }
+    return copy.sort((a,b) => (Number(b.matchScore) || 0) - (Number(a.matchScore) || 0));
+  }
+
   function renderSmartShoppingResults(data) {
     smartShoppingLiveResults = data.items || [];
     if (!smartShoppingLiveResults.length) {
       return `<div class="shop-notice">No live matches were returned for this search.</div>`;
     }
 
-    return smartShoppingLiveResults.map(item => {
-      const offers = (item.offers || []).slice().sort((a,b) => {
-        const ap = Number.isFinite(Number(a.price)) ? Number(a.price) : Infinity;
-        const bp = Number.isFinite(Number(b.price)) ? Number(b.price) : Infinity;
-        return ap - bp;
-      });
-      const cheapest = offers.filter(o => o.available !== false && Number.isFinite(Number(o.price)))
-        .reduce((best,o) => !best || Number(o.price) < Number(best.price) ? o : best, null);
+    const item = smartShoppingLiveResults[0];
+    const groups = sortSmartGroups((item.productGroups || []).slice());
+    if (!groups.length) {
+      return `<div class="shop-notice">No comparable live products were returned for <strong>${escapeHTML(item.query)}</strong>.</div>`;
+    }
 
-      return `
-        <section class="smart-live-item">
-          <h3>${escapeHTML(item.original || item.query)}</h3>
-          <div class="smart-live-grid">
-            ${offers.map(o => {
-              const isBest = cheapest && cheapest.platform === o.platform && Number(o.price) === Number(cheapest.price);
-              const weight = o.packSize || "Weight/pack unavailable";
-              return `
-                <article class="smart-store-card ${isBest ? "cheapest" : ""}">
-                  <div class="smart-store-head">
-                    <strong>${escapeHTML(o.platformLabel || o.platform)}</strong>
-                    ${isBest ? `<span class="cheapest-badge">Cheapest</span>` : ""}
-                    ${o.alternative ? `<span class="alternative-badge">Alternative</span>` : ""}
-                  </div>
-                  <div class="smart-product-name">${escapeHTML(o.productName || item.query)}</div>
-                  <div class="smart-weight">⚖️ ${escapeHTML(weight)}</div>
-                  <div class="smart-pricing">
-                    <strong>${money(o.price)}</strong>
-                    ${o.mrp && Number(o.mrp) > Number(o.price) ? `<del>${money(o.mrp)}</del>` : ""}
-                    ${o.discountPercent ? `<span>${Number(o.discountPercent).toFixed(0)}% off</span>` : ""}
-                  </div>
-                  <div class="smart-availability">${o.available === false ? "❌ Out of stock" : "✅ Available"}</div>
-                  ${o.delivery ? `<div class="smart-delivery">🚚 ${escapeHTML(String(o.delivery))}</div>` : ""}
-                  <button class="btn btn-primary smart-open-store"
-                          data-store-url="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, item.query, smartShoppingLocation.pincode))}">
-                    ${o.available === false ? "Open Store" : "Choose & Open Store"}
-                  </button>
-                </article>`;
-            }).join("")}
-          </div>
-        </section>`;
-    }).join("");
+    return `
+      <div class="smart-buy-toolbar">
+        <div class="smart-buy-progress"><span>Live comparison</span><strong>${groups.length} matches</strong></div>
+        <div class="smart-buy-tabs">
+          <button class="chip ${smartBuySort==="top"?"active":""}" data-smart-sort="top">Top Matches</button>
+          <button class="chip ${smartBuySort==="savings"?"active":""}" data-smart-sort="savings">Best Savings</button>
+          <button class="chip ${smartBuySort==="lowest"?"active":""}" data-smart-sort="lowest">Lowest Price</button>
+        </div>
+      </div>
+
+      <div class="smart-product-grid">
+        ${groups.map((g, idx) => {
+          const available = (g.offers || []).filter(o => o.available !== false && Number.isFinite(Number(o.price)));
+          const cheapest = available.slice().sort((a,b)=>Number(a.price)-Number(b.price))[0] || null;
+          const visibleOffers = (g.offers || []).slice().sort((a,b)=>(Number(a.price)||Infinity)-(Number(b.price)||Infinity));
+          return `<article class="smart-product-card">
+            <div class="smart-product-image">
+              ${g.image ? `<img src="${escapeAttr(g.image)}" alt="${escapeAttr(g.productName || item.query)}" loading="lazy" referrerpolicy="no-referrer">` : `<div class="smart-product-placeholder">🛍️</div>`}
+            </div>
+            <div class="smart-product-body">
+              ${g.brand ? `<div class="smart-brand">${escapeHTML(g.brand)}</div>` : ""}
+              <h3>${escapeHTML(g.productName || item.query)}</h3>
+              <div class="smart-pack">${escapeHTML(g.packSize || "Pack size unavailable")}</div>
+
+              <div class="smart-store-price-list">
+                ${visibleOffers.map(o => {
+                  const isCheapest = cheapest && o.platform === cheapest.platform && Number(o.price) === Number(cheapest.price);
+                  return `<button class="smart-store-price-row ${isCheapest ? "best" : ""}" 
+                                  data-store-url="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, g.productName || item.query, smartShoppingLocation.pincode))}"
+                                  ${o.available === false ? 'aria-label="Open store - item currently out of stock"' : ''}>
+                    <span class="smart-store-name">${smartBuyStoreLogo(o.platform)} ${escapeHTML(o.platformLabel || o.platform)}</span>
+                    <span class="smart-row-pack">${escapeHTML(o.packSize || g.packSize || "")}${o.delivery ? ` · ${escapeHTML(String(o.delivery))}` : ""}</span>
+                    <span class="smart-row-price">${money(o.price)}</span>
+                    ${isCheapest ? `<span class="smart-best-dot">✓</span>` : ""}
+                  </button>`;
+                }).join("")}
+              </div>
+
+              <div class="smart-card-footer">
+                <div>
+                  ${cheapest ? `<strong>From ${money(cheapest.price)}</strong>` : `<strong>Price unavailable</strong>`}
+                  ${cheapest && cheapest.inventory != null ? `<small>${cheapest.inventory} in stock${cheapest.delivery ? ` · ${escapeHTML(String(cheapest.delivery))}` : ""}</small>` :
+                    (g.bestSaving ? `<small>Save up to ${money(g.bestSaving)}</small>` : `<small>Tap a store to view</small>`)}
+                </div>
+                <button class="smart-add-btn" data-smart-add="${idx}" aria-label="Choose product">+</button>
+              </div>
+            </div>
+          </article>`;
+        }).join("")}
+      </div>
+      <p class="compare-disclaimer">Tap any store row to open that retailer. Prices, stock, pack sizes and delivery can change after comparison.</p>
+    `;
   }
 
   async function runSmartShoppingLiveSearch(query, resultBox, button) {
@@ -1164,8 +629,8 @@
       resultBox.innerHTML = `<div class="shop-notice">Enter an ingredient or grocery item, for example Paneer or Idli Batter.</div>`;
       return;
     }
-    if (!smartShoppingLocation.pincode && !(smartShoppingLocation.latitude && smartShoppingLocation.longitude)) {
-      resultBox.innerHTML = `<div class="shop-notice">Enter your 6-digit PIN code or use your location to see local grocery prices.</div>`;
+    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude)) {
+      resultBox.innerHTML = `<div class="shop-notice">Tap <strong>Use location</strong> first. This live-price API requires latitude/longitude because grocery prices and availability vary by nearby store.</div>`;
       return;
     }
 
@@ -1191,10 +656,22 @@
         return;
       }
       resultBox.innerHTML = renderSmartShoppingResults(data);
-      resultBox.querySelectorAll(".smart-open-store").forEach(btn => {
+      const openStore = (el) => {
+        const url = el.dataset.storeUrl;
+        if (url) window.open(url, "_blank", "noopener,noreferrer");
+      };
+      resultBox.querySelectorAll(".smart-store-price-row").forEach(btn => {
+        btn.addEventListener("click", () => openStore(btn));
+      });
+      resultBox.querySelectorAll("[data-smart-sort]").forEach(btn => {
         btn.addEventListener("click", () => {
-          const url = btn.dataset.storeUrl;
-          if (url) window.open(url, "_blank", "noopener,noreferrer");
+          smartBuySort = btn.dataset.smartSort;
+          resultBox.innerHTML = renderSmartShoppingResults(data);
+          resultBox.querySelectorAll(".smart-store-price-row").forEach(row => row.addEventListener("click", () => openStore(row)));
+          resultBox.querySelectorAll("[data-smart-sort]").forEach(sortBtn => sortBtn.addEventListener("click", () => {
+            smartBuySort = sortBtn.dataset.smartSort;
+            runSmartShoppingLiveSearch(q, resultBox, button);
+          }));
         });
       });
     } catch (e) {
@@ -1211,9 +688,9 @@
       <section class="smart-live-panel">
         <div class="smart-live-hero">
           <div>
-            <div class="festival-kicker">⚡ Live Quick-Commerce Comparison</div>
-            <h2>Compare Grocery Prices</h2>
-            <p>Search for any grocery item and compare live product price, pack size/weight, MRP, availability and delivery information across supported Indian stores.</p>
+            <div class="festival-kicker">⚡ Smart Buy</div>
+            <h2>Compare the same product across stores</h2>
+            <p>Search Paneer, Idli Batter, Milk, Oats or any grocery item. Tiny Tiffin groups matching products and shows each store price together so you can choose quickly.</p>
           </div>
           <div class="smart-live-icon">🛒</div>
         </div>
@@ -1228,7 +705,7 @@
         <div class="smart-quick-items">
           ${["Paneer","Idli Batter","Milk","Banana","Bread","Tofu"].map(x => `<button class="chip" data-smart-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
         </div>
-        <small id="smart-live-location-status" class="smart-location-note">Prices vary by location. Your PIN code is saved only in your browser; precise coordinates are used only for the comparison request.</small>
+        <small id="smart-live-location-status" class="smart-location-note">Prices and stock vary by location. Tap “Use location” before comparing so Tiny Tiffin can request live store-specific prices. Coordinates are used only for the comparison request.</small>
         <div id="smart-live-results" class="smart-live-results"></div>
       </section>
     `;
