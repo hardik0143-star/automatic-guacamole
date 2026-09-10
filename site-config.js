@@ -3,7 +3,7 @@ window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
   version: "v2.4",
   releaseDate: "July 2026",
-  releaseNotes: "Smart Buy now groups matching grocery products and shows store-by-store live prices together, with pack size, lowest price and direct retailer navigation. Regional Recipes keeps exactly 5 curated healthy recipes per state/country, with no empty regions.",
+  releaseNotes: "Added live Quick-Commerce price comparison directly inside Smart Shopping. Users can search grocery items such as paneer or idli batter, compare live prices and pack sizes by store, select a preferred offer, and open the corresponding retailer site. Existing recipe-level comparison and all other app features remain unchanged.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
