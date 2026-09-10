@@ -81,3 +81,45 @@ This release adds a local, privacy-friendly AI experience layer: Tiny Tiffin AI 
 
 ## Smart Shopping Compare
 The UI is included. Live prices require approved provider API credentials configured as Vercel environment variables. The starter `/api/compare` endpoint intentionally returns no fabricated prices and falls back to direct store searches.
+
+
+## Grocery Price Comparison (v2.0)
+
+Tiny Tiffin now includes a secure `POST /api/compare-prices` Vercel serverless endpoint.
+
+### Vercel environment variables
+
+Add these in **Vercel → Project → Settings → Environment Variables**:
+
+- `QUICKCOMMERCE_API_KEY` — required for live comparisons.
+- `QUICKCOMMERCE_API_BASE_URL` — optional. Defaults to:
+  `https://api.quickcommerceapi.com/api/v1/groupsearch`
+
+Never put the API key in `app.js`, `site-config.js`, GitHub, or any browser-delivered JavaScript.
+
+### Supported provider adapters
+
+The current endpoint can request Blinkit, Zepto, Swiggy Instamart, BigBasket,
+Amazon, Flipkart / Minutes, DMart, and JioMart where the upstream provider
+returns coverage for the supplied PIN code/location.
+
+The interface never invents prices. When the API is missing or unavailable it
+shows a clear error and safe store-opening links instead.
+
+### How users use it
+
+Open any recipe → **Compare Grocery Prices** → choose one or more ingredients →
+enter PIN code or use location → **Compare selected ingredients**.
+
+The result can show product name, matched pack size, price, MRP, discount,
+availability, delivery information when supplied by the provider, alternatives,
+cheapest item, and basket totals by platform.
+
+
+## Regional Recipes (v2.1)
+
+- 32 India state-wise recipes across 16 states.
+- 24 international country-wise recipes across 12 countries.
+- Dedicated Regional Recipes tab with India/International switching and location filters.
+- Added Indo-Chinese Style Chili Tofu to the main database as a Tiny Tiffin kid-friendly adaptation inspired by The Foodie Takes Flight.
+- The new additions were checked against existing recipe names to avoid duplicates.

@@ -33,7 +33,8 @@
   function imageSearchText(r) {
     const name = recipeName(r);
     const ingredients = (r.ingredients || []).slice(0, 4).join(" ");
-    return `${name} food recipe ${ingredients}`.trim();
+    const context = r.fasting ? "Indian fasting vrat food tiffin" : (r.festival ? "Indian festival food tiffin" : "kid friendly healthy tiffin recipe");
+    return `${name} ${context} ${ingredients}`.trim();
   }
 
   async function findRecipeImage(r) {
@@ -110,7 +111,8 @@
   const BASE_RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const FESTIVAL_RECIPES = (window.TINY_TIFFIN_FESTIVAL_RECIPES || []).map(r => ({...r, specialCollection:"festival"}));
   const FASTING_RECIPES = (window.TINY_TIFFIN_FASTING_RECIPES || []).map(r => ({...r, specialCollection:"fasting"}));
-  const RECIPES = [...BASE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES];
+  const REGIONAL_RECIPES = (window.TINY_TIFFIN_REGIONAL_RECIPES || []).map(r => ({...r, specialCollection:"regional"}));
+  const RECIPES = [...BASE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES, ...REGIONAL_RECIPES];
   const CONFIG = window.TINY_TIFFIN_CONFIG || { contactEmail: "", developer: {} };
   const NUTRITION_ORDER = ["protein", "iron", "calcium", "immunity", "fiber", "energy"];
   const NUTRITION_EMOJI = { protein: "🥜", iron: "🥬", calcium: "🥛", immunity: "🍊", fiber: "🌾", energy: "⚡" };
@@ -314,6 +316,7 @@
         ${state.tab === "shopping" ? renderShoppingTab() : ""}
         ${state.tab === "festival" ? renderFestivalTab() : ""}
         ${state.tab === "fasting" ? renderFastingTab() : ""}
+        ${state.tab === "regional" ? renderRegionalTab() : ""}
       </main>
       <footer class="app-footer">
         <div style="margin-bottom:10px">
@@ -336,6 +339,7 @@
     if (state.tab === "shopping") attachShoppingEvents();
     if (state.tab === "festival") attachFestivalEvents();
     if (state.tab === "fasting") attachFastingEvents();
+    if (state.tab === "regional") attachRegionalEvents();
     hydrateRecipeImages(root);
     if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
     if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang);
@@ -356,7 +360,8 @@
       ["ai", "✨", "Tiny Tiffin AI"],
       ["shopping", "🛒", "Smart Shopping"],
       ["festival", "🎉", festivalT("festivalTitle")],
-      ["fasting", "🙏", fastingT("title")]
+      ["fasting", "🙏", fastingT("title")],
+      ["regional", "🌍", "Regional Recipes"]
     ];
     return `
       <header class="app-header">
@@ -545,10 +550,13 @@
     const festivals = window.TINY_TIFFIN_FESTIVALS || [];
     const selected = festivalSelection === "all" ? festivals : festivals.filter(f => f.id === festivalSelection);
     return `
-      <section class="festival-hero">
-        <div class="festival-kicker">🎉 ${festivalT("festivalComing")}</div>
-        <h1 class="display">${festivalT("festivalTitle")}</h1>
-        <p class="sub">${festivalT("festivalSub")}</p>
+      <section class="festival-hero festival-collection-hero">
+        <div class="festival-hero-copy">
+          <div class="festival-kicker">🎉 ${festivalT("festivalComing")}</div>
+          <h1 class="display">${festivalT("festivalTitle")}</h1>
+          <p class="sub">${festivalT("festivalSub")}</p>
+        </div>
+        <div class="festival-hero-media"><img src="festival-tiffin-hero.svg" alt="${escapeAttr(festivalT("festivalTitle"))}" loading="eager"></div>
         <div class="festival-mode-switch">
           <button class="chip active">🎉 ${festivalT("festivalTitle")}</button>
           <button class="chip" data-open-fasting>🙏 ${fastingT("title")}</button>
@@ -579,10 +587,13 @@
     const all = window.TINY_TIFFIN_FASTING_RECIPES || [];
     const recipes = all.filter(r => fastingSaltFilter === "all" || r.fastingSalt === fastingSaltFilter);
     return `
-      <section class="festival-hero fasting-hero">
-        <div class="festival-kicker">🙏 ${fastingT("fasting")}</div>
-        <h1 class="display">${fastingT("title")}</h1>
-        <p class="sub">${fastingT("sub")}</p>
+      <section class="festival-hero fasting-hero festival-collection-hero">
+        <div class="festival-hero-copy">
+          <div class="festival-kicker">🙏 ${fastingT("fasting")}</div>
+          <h1 class="display">${fastingT("title")}</h1>
+          <p class="sub">${fastingT("sub")}</p>
+        </div>
+        <div class="festival-hero-media"><img src="indian-fasting-tiffin-hero.svg" alt="${escapeAttr(fastingT("title"))}" loading="eager"></div>
         <div class="festival-mode-switch">
           <button class="chip" data-open-festivals>🎉 ${festivalT("festivalTitle")}</button>
           <button class="chip active">🙏 ${fastingT("fasting")}</button>
@@ -619,6 +630,49 @@
   }
 
   /* ---------- Find tab ---------- */
+
+  let regionalMode = "india";
+  let regionalPlace = "all";
+
+  function renderRegionalTab() {
+    const all = window.TINY_TIFFIN_REGIONAL_RECIPES || [];
+    const meta = window.TINY_TIFFIN_REGIONAL_META || { indiaRegions: [], internationalRegions: [] };
+    const isIndia = regionalMode === "india";
+    const places = isIndia ? (meta.indiaRegions || []) : (meta.internationalRegions || []);
+    const filtered = all.filter(r => r.regionType === regionalMode && (regionalPlace === "all" || r.region === regionalPlace));
+    return `
+      <section class="regional-hero">
+        <div>
+          <div class="festival-kicker">🌍 Healthy food traditions, made tiffin-friendly</div>
+          <h1 class="display">Regional Vegetarian Recipes</h1>
+          <p class="sub">Explore healthy vegetarian lunchbox ideas state-wise across India and country-wise around the world. Recipes are adapted for children with mild spice and practical tiffin portions.</p>
+        </div>
+        <div class="regional-hero-icons" aria-hidden="true">🇮🇳 🥗 🌎</div>
+      </section>
+      <section class="regional-toolbar">
+        <div class="regional-mode-switch">
+          <button class="chip ${isIndia?"active":""}" data-regional-mode="india">🇮🇳 India — State-wise</button>
+          <button class="chip ${!isIndia?"active":""}" data-regional-mode="international">🌎 International — Country-wise</button>
+        </div>
+        <div class="regional-place-selector">
+          <button class="chip ${regionalPlace==="all"?"active":""}" data-regional-place="all">✨ All ${isIndia?"States":"Countries"}</button>
+          ${places.map(p=>`<button class="chip ${regionalPlace===p?"active":""}" data-regional-place="${escapeAttr(p)}">${escapeHTML(p)}</button>`).join("")}
+        </div>
+      </section>
+      <div class="regional-summary"><strong>${filtered.length} recipes</strong> · ${isIndia?"Indian state-wise collection":"International country-wise collection"}</div>
+      <section class="recipe-grid regional-grid">${filtered.map(recipeCard).join("")}</section>
+    `;
+  }
+
+  function attachRegionalEvents() {
+    root.querySelectorAll("[data-regional-mode]").forEach(btn => btn.addEventListener("click", () => {
+      regionalMode = btn.dataset.regionalMode; regionalPlace = "all"; render(); window.scrollTo(0,0);
+    }));
+    root.querySelectorAll("[data-regional-place]").forEach(btn => btn.addEventListener("click", () => {
+      regionalPlace = btn.dataset.regionalPlace; render(); window.scrollTo(0,0);
+    }));
+  }
+
   function renderFindTab() {
     const results = filteredRecipes();
     return `
@@ -835,6 +889,248 @@
     setTimeout(() => burst.remove(), 1000);
   }
 
+
+  /* ---------- Grocery price comparison ---------- */
+  const GROCERY_COMPARE_PLATFORMS = [
+    { key: "blinkit", label: "Blinkit" },
+    { key: "zepto", label: "Zepto" },
+    { key: "swiggy", label: "Swiggy Instamart" },
+    { key: "bigbasket", label: "BigBasket" },
+    { key: "amazon", label: "Amazon" },
+    { key: "flipkart", label: "Flipkart / Minutes" },
+    { key: "dmart", label: "DMart" },
+    { key: "jiomart", label: "JioMart" }
+  ];
+
+  function extractIngredientSearchText(text) {
+    return String(text || "")
+      .replace(/^\s*[\d¼½¾⅓⅔⅛⅜⅝⅞./+\-\s]+(?:cup|cups|tbsp|tsp|g|kg|ml|l|piece|pieces|small|medium|large)?\s*/i, "")
+      .replace(/\([^)]*\)/g, " ")
+      .replace(/\s+/g, " ")
+      .trim() || String(text || "").trim();
+  }
+
+  function groceryFallbackUrl(platform, query, pincode) {
+    const q = encodeURIComponent(query);
+    const amazonTag = (CONFIG.affiliate && CONFIG.affiliate.amazonUrl || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
+    const urls = {
+      blinkit: `https://blinkit.com/s/?q=${q}`,
+      zepto: `https://www.zeptonow.com/search?query=${q}`,
+      swiggy: `https://www.swiggy.com/instamart/search?custom_back=true&query=${q}`,
+      bigbasket: `https://www.bigbasket.com/ps/?q=${q}`,
+      amazon: `https://www.amazon.in/s?k=${q}&tag=${encodeURIComponent(amazonTag)}`,
+      flipkart: `https://www.flipkart.com/search?q=${q}`,
+      dmart: `https://www.dmart.in/search?searchTerm=${q}`,
+      jiomart: `https://www.jiomart.com/search/${q}`
+    };
+    return urls[platform] || "#";
+  }
+
+  function money(value) {
+    const n = Number(value);
+    return Number.isFinite(n) ? `₹${n.toFixed(n % 1 ? 2 : 0)}` : "—";
+  }
+
+  function renderCompareItemResults(item) {
+    const rows = (item.offers || []).slice().sort((a, b) => {
+      const ap = Number.isFinite(Number(a.price)) ? Number(a.price) : Infinity;
+      const bp = Number.isFinite(Number(b.price)) ? Number(b.price) : Infinity;
+      return ap - bp;
+    });
+    if (!rows.length) {
+      return `<div class="compare-empty">No verified live offers were returned for <strong>${escapeHTML(item.query)}</strong>.</div>`;
+    }
+    const lowest = rows.filter(x => x.available !== false && Number.isFinite(Number(x.price)))
+      .reduce((best, x) => !best || Number(x.price) < Number(best.price) ? x : best, null);
+    return `
+      <section class="compare-item-block">
+        <h3>${escapeHTML(item.original || item.query)}</h3>
+        <div class="compare-offers">
+          ${rows.map(o => {
+            const isBest = lowest && o.platform === lowest.platform && Number(o.price) === Number(lowest.price);
+            return `<article class="compare-offer ${isBest ? "cheapest" : ""}">
+              <div class="compare-offer-head">
+                <strong>${escapeHTML(o.platformLabel || o.platform)}</strong>
+                ${isBest ? `<span class="cheapest-badge">✓ Cheapest</span>` : ""}
+                ${o.alternative ? `<span class="alternative-badge">Alternative</span>` : ""}
+              </div>
+              <div class="compare-product">${escapeHTML(o.productName || item.query)}</div>
+              <div class="compare-meta">
+                <span>${escapeHTML(o.packSize || "Pack size unavailable")}</span>
+                <span>${o.available === false ? "Out of stock" : "Available"}</span>
+              </div>
+              <div class="compare-price-line">
+                <strong>${money(o.price)}</strong>
+                ${o.mrp && Number(o.mrp) > Number(o.price) ? `<del>${money(o.mrp)}</del>` : ""}
+                ${o.discountPercent ? `<span>${Number(o.discountPercent).toFixed(0)}% off</span>` : ""}
+              </div>
+              ${o.delivery ? `<div class="compare-delivery">🚚 ${escapeHTML(String(o.delivery))}</div>` : ""}
+              <a class="btn btn-secondary compare-buy-btn" href="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, item.query))}"
+                 target="_blank" rel="sponsored noopener noreferrer">${o.buyUrl ? "Buy / Open Store" : "Open Store"}</a>
+            </article>`;
+          }).join("")}
+        </div>
+      </section>`;
+  }
+
+  function renderBasketSummary(data) {
+    const baskets = (data.baskets || []).filter(b => b.matchedItems > 0);
+    if (!baskets.length) return "";
+    const eligible = baskets.filter(b => b.total != null && b.matchedItems >= Math.max(1, Math.ceil((data.itemCount || 1) * 0.6)));
+    const cheapest = eligible.reduce((best, b) => !best || Number(b.total) < Number(best.total) ? b : best, null);
+    return `
+      <section class="basket-summary">
+        <h3>🧺 Basket comparison</h3>
+        <p>Totals are shown only for items with a matched, available price. Coverage tells you how much of your selected basket was found.</p>
+        <div class="basket-grid">
+          ${baskets.map(b => `<article class="basket-card ${cheapest && cheapest.platform === b.platform ? "cheapest" : ""}">
+            <div><strong>${escapeHTML(b.platformLabel || b.platform)}</strong>
+            ${cheapest && cheapest.platform === b.platform ? `<span class="cheapest-badge">Best basket</span>` : ""}</div>
+            <div class="basket-total">${b.total != null ? money(b.total) : "—"}</div>
+            <small>${b.matchedItems}/${data.itemCount || 0} items matched</small>
+          </article>`).join("")}
+        </div>
+      </section>`;
+  }
+
+  async function compareRecipePrices(recipe, selectedIngredients, locationData, resultBox, submitBtn) {
+    const cleanItems = selectedIngredients.map(x => ({
+      original: x,
+      query: extractIngredientSearchText(x)
+    })).filter(x => x.query);
+
+    if (!cleanItems.length) {
+      resultBox.innerHTML = `<div class="shop-notice">Select at least one ingredient.</div>`;
+      return;
+    }
+    if (!locationData.pincode && !(locationData.latitude && locationData.longitude)) {
+      resultBox.innerHTML = `<div class="shop-notice">Enter your 6-digit PIN code or use your location before comparing prices.</div>`;
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Comparing…";
+    resultBox.innerHTML = `<div class="compare-loading">Checking current prices and availability…</div>`;
+
+    try {
+      const response = await fetch("/api/compare-prices", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          pincode: locationData.pincode || "",
+          latitude: locationData.latitude || null,
+          longitude: locationData.longitude || null,
+          items: cleanItems,
+          platforms: GROCERY_COMPARE_PLATFORMS.map(x => x.key)
+        })
+      });
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        const detail = data && data.message ? data.message : "Live price comparison is temporarily unavailable.";
+        resultBox.innerHTML = `
+          <div class="shop-notice"><strong>${escapeHTML(detail)}</strong><br>
+          Your recipe is unaffected. You can still open supported grocery stores below.</div>
+          <div class="fallback-store-links">
+            ${GROCERY_COMPARE_PLATFORMS.map(p => `<a class="btn btn-secondary" target="_blank" rel="sponsored noopener noreferrer"
+              href="${escapeAttr(groceryFallbackUrl(p.key, cleanItems[0].query, locationData.pincode))}">${escapeHTML(p.label)}</a>`).join("")}
+          </div>`;
+        return;
+      }
+
+      resultBox.innerHTML = `
+        ${renderBasketSummary(data)}
+        ${(data.items || []).map(renderCompareItemResults).join("")}
+        <p class="compare-disclaimer">Prices, stock, offers and delivery times can change after this comparison. Always confirm the final price in the retailer before purchasing.</p>`;
+    } catch (error) {
+      resultBox.innerHTML = `<div class="shop-notice"><strong>Could not reach the price service.</strong><br>Please try again shortly. No recipe or planner data was changed.</div>`;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Compare selected ingredients";
+    }
+  }
+
+  function openGroceryCompareModal(recipe) {
+    const backdrop = document.createElement("div");
+    backdrop.className = "modal-backdrop";
+    backdrop.id = "grocery-compare-modal";
+    const savedPin = storage.get("tt_grocery_pincode", "");
+    backdrop.innerHTML = `
+      <div class="modal grocery-compare-modal" role="dialog" aria-modal="true" aria-label="Compare grocery prices">
+        <button class="modal-close" id="compare-close">✕</button>
+        <h2>🛒 Compare Grocery Prices</h2>
+        <p class="desc">Compare one ingredient or your complete recipe basket across supported Indian grocery platforms. Exact availability depends on your location.</p>
+
+        <div class="compare-location">
+          <label><strong>Delivery PIN code</strong>
+            <input id="compare-pincode" class="search-input" inputmode="numeric" maxlength="6" placeholder="e.g. 411057" value="${escapeAttr(savedPin)}">
+          </label>
+          <button class="btn btn-secondary" id="compare-use-location" type="button">📍 Use my location</button>
+          <small id="compare-location-status">Your precise location is used only for this comparison and is not stored.</small>
+        </div>
+
+        <div class="compare-select-actions">
+          <button class="link-btn" id="compare-select-all" type="button">Select all</button>
+          <button class="link-btn" id="compare-clear-all" type="button">Clear</button>
+        </div>
+        <div class="compare-ingredient-list">
+          ${(recipe.ingredients || []).map((ing, idx) => `<label class="compare-ingredient">
+            <input type="checkbox" data-compare-ing="${idx}" checked>
+            <span>${escapeHTML(ing)}</span>
+          </label>`).join("")}
+        </div>
+        <div class="compare-actions">
+          <button class="btn btn-primary" id="compare-run" type="button">Compare selected ingredients</button>
+        </div>
+        <div id="compare-results" class="compare-results"></div>
+      </div>`;
+
+    document.body.appendChild(backdrop);
+    const close = () => backdrop.remove();
+    backdrop.addEventListener("click", e => { if (e.target === backdrop) close(); });
+    backdrop.querySelector("#compare-close").addEventListener("click", close);
+
+    backdrop.querySelector("#compare-select-all").addEventListener("click", () => {
+      backdrop.querySelectorAll("[data-compare-ing]").forEach(x => x.checked = true);
+    });
+    backdrop.querySelector("#compare-clear-all").addEventListener("click", () => {
+      backdrop.querySelectorAll("[data-compare-ing]").forEach(x => x.checked = false);
+    });
+
+    const locationState = { pincode: savedPin, latitude: null, longitude: null };
+    const pinInput = backdrop.querySelector("#compare-pincode");
+    pinInput.addEventListener("input", () => {
+      locationState.pincode = pinInput.value.replace(/\D/g, "").slice(0, 6);
+      pinInput.value = locationState.pincode;
+      if (locationState.pincode.length === 6) storage.set("tt_grocery_pincode", locationState.pincode);
+    });
+
+    backdrop.querySelector("#compare-use-location").addEventListener("click", () => {
+      const status = backdrop.querySelector("#compare-location-status");
+      if (!navigator.geolocation) {
+        status.textContent = "Location is not supported by this browser. Please enter your PIN code.";
+        return;
+      }
+      status.textContent = "Requesting your location…";
+      navigator.geolocation.getCurrentPosition(
+        pos => {
+          locationState.latitude = Number(pos.coords.latitude.toFixed(6));
+          locationState.longitude = Number(pos.coords.longitude.toFixed(6));
+          status.textContent = "Location captured for this comparison. You can also enter your PIN code for more accurate platform coverage.";
+        },
+        () => status.textContent = "Location permission was not available. Please enter your PIN code.",
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+      );
+    });
+
+    backdrop.querySelector("#compare-run").addEventListener("click", () => {
+      const selected = Array.from(backdrop.querySelectorAll("[data-compare-ing]:checked"))
+        .map(x => recipe.ingredients[Number(x.dataset.compareIng)])
+        .filter(Boolean);
+      compareRecipePrices(recipe, selected, locationState, backdrop.querySelector("#compare-results"), backdrop.querySelector("#compare-run"));
+    });
+  }
+
   function openRecipeModal(id) {
     const r = getRecipeById(id);
     if (!r) return;
@@ -884,6 +1180,7 @@
           <button class="btn btn-secondary" id="modal-fav" data-fav="${r.id}">${state.favorites.has(r.id) ? "♥ " + t("removeFavorite") : "♡ " + t("addFavorite")}</button>
           <button class="btn btn-primary" id="modal-plan">${t("addToPlanner")}</button>
           <button class="btn btn-secondary" id="ai-adapt">🤖 ${t("aiAdapt")}</button>
+          <button class="btn btn-secondary" id="compare-grocery-prices">🛒 Compare Grocery Prices</button>
         </div>
         <div class="rate-form" id="rate-form">
           <strong>${state.userRatings[r.id] ? t("updateRating") : t("rateThis")}</strong>
@@ -913,6 +1210,8 @@
       toast(result.title);
       alert(result.notes.join("\n\n") + "\n\n" + result.caution);
     });
+    const compareBtn = document.getElementById("compare-grocery-prices");
+    if (compareBtn) compareBtn.addEventListener("click", () => openGroceryCompareModal(r));
     const shareBtn = document.getElementById("share-btn");
     if (shareBtn) shareBtn.addEventListener("click", () => shareRecipe(r));
 

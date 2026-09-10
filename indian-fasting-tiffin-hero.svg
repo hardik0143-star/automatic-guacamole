@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Indian Fasting Tiffin</title><desc id="d">A healthy Indian fasting inspired tiffin with sabudana, amaranth, chestnut and makhana foods.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f6efff"/><stop offset="1" stop-color="#fff7e8"/></linearGradient><linearGradient id="lid" x1="0" x2="1"><stop stop-color="#8064b6"/><stop offset="1" stop-color="#d4a64d"/></linearGradient></defs>
+<rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+<circle cx="1350" cy="160" r="105" fill="#8064b6" opacity=".14"/><circle cx="220" cy="700" r="130" fill="#d4a64d" opacity=".14"/>
+<rect x="225" y="235" width="1150" height="105" rx="52" fill="url(#lid)"/>
+<rect x="260" y="320" width="1080" height="390" rx="70" fill="#fff" stroke="#d9cdbd" stroke-width="14"/>
+<rect x="315" y="375" width="970" height="280" rx="48" fill="#faf7f2"/>
+<g stroke="#d8c9b5" stroke-width="10" fill="#fff"><rect x="345" y="405" width="275" height="220" rx="35"/><rect x="665" y="405" width="275" height="220" rx="35"/><rect x="985" y="405" width="270" height="220" rx="35"/></g>
+<g fill="#f0d7a0"><circle cx="425" cy="485" r="23"/><circle cx="480" cy="530" r="23"/><circle cx="535" cy="485" r="23"/></g>
+<path d="M735 545q70-120 140 0q-70 75-140 0z" fill="#d7a45b"/><path d="M1040 540q90-115 170 0q-85 75-170 0z" fill="#ead7a9"/>
+<circle cx="1110" cy="465" r="34" fill="#f3e8c9"/><circle cx="1190" cy="485" r="28" fill="#f0d7a0"/>
+<text x="800" y="790" text-anchor="middle" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#5b4a3b">Indian Fasting Tiffin</text>
+</svg>

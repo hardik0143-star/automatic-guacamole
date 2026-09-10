@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Festival Tiffin</title><desc id="d">A colourful Indian festival inspired tiffin lunchbox with festive foods.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff7e8"/><stop offset="1" stop-color="#eef8ef"/></linearGradient><linearGradient id="lid" x1="0" x2="1"><stop stop-color="#e58b22"/><stop offset=".5" stop-color="#fff"/><stop offset="1" stop-color="#4d9b63"/></linearGradient></defs>
+<rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+<circle cx="1320" cy="170" r="95" fill="#f3c64e" opacity=".22"/><circle cx="220" cy="690" r="130" fill="#e57a42" opacity=".12"/>
+<path d="M230 240h1140v110H230z" rx="45" fill="url(#lid)"/>
+<rect x="260" y="320" width="1080" height="390" rx="70" fill="#fff" stroke="#d9cdbd" stroke-width="14"/>
+<rect x="315" y="375" width="970" height="280" rx="48" fill="#f8f3e9"/>
+<g stroke="#d8c9b5" stroke-width="10" fill="#fff"><rect x="345" y="405" width="275" height="220" rx="35"/><rect x="665" y="405" width="275" height="220" rx="35"/><rect x="985" y="405" width="270" height="220" rx="35"/></g>
+<g><circle cx="430" cy="505" r="54" fill="#e78c2b"/><circle cx="530" cy="505" r="54" fill="#f3f0e8"/><circle cx="880" cy="505" r="54" fill="#e56e3d"/><circle cx="1080" cy="470" r="42" fill="#4e9a63"/><circle cx="1170" cy="545" r="42" fill="#f0c94b"/></g>
+<text x="800" y="790" text-anchor="middle" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#5b4a3b">Festival Tiffin</text>
+</svg>

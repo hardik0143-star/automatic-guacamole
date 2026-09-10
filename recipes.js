@@ -34607,5 +34607,87 @@ window.TINY_TIFFIN_RECIPES = [
       "bell pepper",
       "quick lunch"
     ]
-  }
+  },
+{
+  "id": "indo-chinese-chili-tofu",
+  "emoji": "🌶️",
+  "images": [],
+  "name": {
+    "en": "Indo-Chinese Style Chili Tofu"
+  },
+  "desc": {
+    "en": "A kid-adjustable, protein-rich Indo-Chinese tofu with bell pepper and a sweet-savoury glaze, inspired by The Foodie Takes Flight."
+  },
+  "ageGroups": [
+    "2-5y",
+    "5-10y"
+  ],
+  "timeCategory": 25,
+  "dietType": [
+    "vegetarian",
+    "vegan"
+  ],
+  "cuisine": "indian",
+  "mealType": [
+    "lunch",
+    "snack"
+  ],
+  "difficulty": "Easy",
+  "nutritionTags": [
+    "protein",
+    "iron"
+  ],
+  "allergens": [
+    "soy"
+  ],
+  "ingredients": [
+    "300 g extra-firm tofu, pressed and cubed",
+    "1 small bell pepper, diced",
+    "1/2 small red onion, diced",
+    "2 spring onions, sliced",
+    "1 tsp grated ginger",
+    "1 small garlic clove, minced",
+    "1 tbsp low-sodium soy sauce",
+    "1 tbsp tomato ketchup",
+    "1 tsp rice vinegar",
+    "1 tsp brown sugar or jaggery",
+    "A pinch of cumin powder",
+    "1 tsp neutral oil",
+    "Chilli sauce optional for older children"
+  ],
+  "instructions": [
+    "Bake, air-fry or lightly pan-sear the tofu until just golden while keeping the centre soft.",
+    "Cook onion, ginger, garlic and bell pepper briefly so the vegetables remain slightly crisp.",
+    "Mix soy sauce, ketchup, vinegar, sugar, cumin and a little water; add to the pan.",
+    "Add tofu and toss gently until the sauce lightly coats the cubes.",
+    "Finish with spring onion. Keep chilli sauce separate or omit it for young children."
+  ],
+  "nutrition": {
+    "calories": 230,
+    "protein_g": 8,
+    "iron_mg": 2.2,
+    "calcium_mg": 85,
+    "fiber_g": 4.0
+  },
+  "packingTip": {
+    "en": "Cool before packing and keep wet dips or sauces in a separate leak-proof container."
+  },
+  "kidTip": {
+    "en": "Keep the spice level mild and serve in small, easy-to-hold portions."
+  },
+  "ratings": {
+    "overall": 4.7,
+    "nutrition": 4.8,
+    "kidFriendly": 4.7,
+    "lunchboxFriendly": 4.8,
+    "pickyEaterFriendly": 4.5,
+    "timeSaver": 4.6,
+    "count": 0
+  },
+  "hidden": false,
+  "regional": false,
+  "sourceTitle": "Indo-Chinese Style Chili Tofu — The Foodie Takes Flight",
+  "sourceUrl": "https://thefoodietakesflight.com/indo-chinese-style-chili-tofu/",
+  "sourceNote": "Tiny Tiffin adaptation inspired by the linked recipe; made milder and lunchbox-friendly."
+}
 ];

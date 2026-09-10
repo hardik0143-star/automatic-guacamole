@@ -36,13 +36,13 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "2 tbsp roasted peanut powder",
       "1 tsp ghee",
       "1/2 tsp cumin",
-      "Sendha namak to taste",
+      "Sendha Namak/Himalayan Rock Salt to taste",
       "Lemon"
     ],
     "instructions": [
       "Drain soaked sabudana / sago well.",
       "Heat ghee and cumin; add potato and cook until tender.",
-      "Add sabudana / sago, peanut powder and sendha namak.",
+      "Add sabudana / sago, peanut powder and Sendha Namak/Himalayan Rock Salt.",
       "Cook gently until pearls turn translucent; finish with lemon."
     ],
     "nutrition": {
@@ -109,7 +109,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1/2 cup boiled potato",
       "2 tbsp peanut powder",
       "1/2 tsp cumin",
-      "Sendha namak to taste",
+      "Sendha Namak/Himalayan Rock Salt to taste",
       "1 tsp ghee"
     ],
     "instructions": [
@@ -182,7 +182,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1/2 cup boiled potato",
       "2 tbsp peanut powder",
       "1/4 tsp cumin",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Mash potato and mix with sabudana / sago and peanut powder.",
@@ -254,11 +254,11 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1 small boiled potato",
       "2 tbsp peanut powder",
       "Water as needed",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Blend sabudana / sago, potato and peanut powder with water.",
-      "Season with sendha namak.",
+      "Season with Sendha Namak/Himalayan Rock Salt.",
       "Spread a thin dosa on a non-stick pan.",
       "Cook both sides gently."
     ],
@@ -610,7 +610,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1/2 boiled potato",
       "1/4 tsp cumin",
       "Water",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Mash potato and mix with flour and cumin.",
@@ -682,7 +682,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "2 tbsp singhara / chestnut flour",
       "1 tbsp yogurt",
       "1/4 tsp cumin",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Crumble paneer and mix with flour, yogurt and cumin.",
@@ -823,11 +823,11 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1/2 cup rajgira / amaranth / amaranth grain flour",
       "1/2 cup boiled potato",
       "1/4 tsp cumin",
-      "Sendha namak to taste",
+      "Sendha Namak/Himalayan Rock Salt to taste",
       "Ghee"
     ],
     "instructions": [
-      "Mix potato, flour, cumin and sendha namak into a soft dough.",
+      "Mix potato, flour, cumin and Sendha Namak/Himalayan Rock Salt into a soft dough.",
       "Pat small parathas between greased sheets.",
       "Cook with a little ghee.",
       "Cool and cut into wedges."
@@ -896,7 +896,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "60 g paneer",
       "2 tbsp cucumber",
       "1/4 tsp cumin",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Make a soft rajgira / amaranth / amaranth grain dough and cook a small flatbread.",
@@ -1037,11 +1037,11 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1/4 cup cucumber",
       "1/4 cup yogurt",
       "1/4 tsp cumin",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Roast makhana until crisp.",
-      "Mix yogurt, cucumber, cumin and sendha namak.",
+      "Mix yogurt, cucumber, cumin and Sendha Namak/Himalayan Rock Salt.",
       "Keep dressing separate until eating.",
       "Combine just before serving."
     ],
@@ -1179,7 +1179,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1 cup mashed sweet potato",
       "2 tbsp peanut powder",
       "1/4 tsp cumin",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Mix all ingredients.",
@@ -1321,13 +1321,13 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "1/4 cup carrot",
       "2 tbsp peas",
       "1/4 tsp cumin",
-      "Sendha namak to taste",
+      "Sendha Namak/Himalayan Rock Salt to taste",
       "1 tsp ghee"
     ],
     "instructions": [
       "Warm ghee and cumin.",
       "Add vegetables and cook until tender.",
-      "Fold in cooked sama rice and sendha namak.",
+      "Fold in cooked sama rice and Sendha Namak/Himalayan Rock Salt.",
       "Warm through and cool."
     ],
     "nutrition": {
@@ -1464,7 +1464,7 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
       "60 g paneer",
       "1/4 tsp cumin",
       "Water",
-      "Sendha namak to taste"
+      "Sendha Namak/Himalayan Rock Salt to taste"
     ],
     "instructions": [
       "Make a smooth kuttu batter.",
@@ -1785,9 +1785,9 @@ window.TINY_TIFFIN_FASTING_RECIPES = [
 window.TINY_TIFFIN_FASTING_STRINGS = {
   en:{
     title:"Indian Fasting Tiffin",
-    sub:"Easy kid-friendly vrat recipes with a clear Sendha Namak / No-Salt choice.",
+    sub:"Easy kid-friendly vrat recipes with a clear Sendha Namak/Himalayan Rock Salt / No-Salt choice.",
     note:"Fasting rules vary by family, region and festival. Please check which ingredients your household permits. These recipes are general food ideas, not religious guidance.",
-    all:"All fasting recipes",withSalt:"With Sendha Namak",noSalt:"Without Sendha Namak",fasting:"Fasting"
+    all:"All fasting recipes",withSalt:"With Sendha Namak/Himalayan Rock Salt",noSalt:"Without Sendha Namak/Himalayan Rock Salt",fasting:"Fasting"
   },
   hi:{
     title:"भारतीय व्रत टिफिन",sub:"बच्चों के लिए आसान व्रत रेसिपी — सेंधा नमक और बिना नमक के विकल्प के साथ।",

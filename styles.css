@@ -593,3 +593,130 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
   .festival-selector::-webkit-scrollbar{display:none}
   .festival-selector .chip{flex:0 0 auto}
 }
+
+
+/* Collection hero artwork */
+.festival-collection-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:22px;align-items:center;overflow:hidden}
+.festival-hero-copy{min-width:0}
+.festival-hero-media{border-radius:18px;overflow:hidden;border:1px solid var(--mist-2);background:var(--card);box-shadow:var(--shadow)}
+.festival-hero-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(max-width:760px){.festival-collection-hero{grid-template-columns:1fr}.festival-hero-media{order:-1}.festival-hero-media img{max-height:210px}}
+[data-theme="dark"] .festival-hero-media{background:var(--card)}
+
+
+/* ---------- v2.0 Grocery price comparison ---------- */
+.grocery-compare-modal{max-width:980px}
+.compare-location{
+  display:grid;
+  grid-template-columns:minmax(220px,1fr) auto;
+  gap:10px;
+  align-items:end;
+  padding:14px;
+  margin:12px 0;
+  border:1px solid var(--mist-2);
+  background:var(--card);
+  border-radius:16px;
+}
+.compare-location label{display:grid;gap:6px}
+.compare-location small{grid-column:1/-1;color:var(--ink-soft)}
+.compare-select-actions{display:flex;gap:12px;justify-content:flex-end;margin:8px 0}
+.compare-ingredient-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  max-height:260px;
+  overflow:auto;
+  padding:2px;
+}
+.compare-ingredient{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  padding:10px 12px;
+  border:1px solid var(--mist-2);
+  background:var(--card);
+  border-radius:12px;
+  cursor:pointer;
+}
+.compare-ingredient input{margin-top:3px}
+.compare-actions{display:flex;justify-content:flex-end;margin:14px 0}
+.compare-results{display:grid;gap:18px}
+.compare-loading,.compare-empty{
+  padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--mist-2)
+}
+.compare-item-block{border-top:1px solid var(--mist-2);padding-top:12px}
+.compare-offers{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+}
+.compare-offer{
+  padding:13px;
+  border:1px solid var(--mist-2);
+  border-radius:14px;
+  background:var(--card);
+}
+.compare-offer.cheapest,.basket-card.cheapest{
+  border:2px solid #2e8b57;
+  box-shadow:0 0 0 3px rgba(46,139,87,.10);
+}
+.compare-offer-head{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.cheapest-badge{
+  background:#e7f7ee;color:#17643b;border-radius:999px;padding:3px 7px;font-size:.72rem;font-weight:800
+}
+.alternative-badge{
+  background:#fff3cd;color:#765500;border-radius:999px;padding:3px 7px;font-size:.72rem;font-weight:800
+}
+.compare-product{font-weight:700;margin:8px 0 4px}
+.compare-meta{display:flex;justify-content:space-between;gap:8px;color:var(--ink-soft);font-size:.78rem}
+.compare-price-line{display:flex;align-items:center;gap:8px;margin:9px 0}
+.compare-price-line strong{font-size:1.2rem}
+.compare-price-line del{color:var(--ink-soft)}
+.compare-price-line span{font-size:.75rem;color:#17643b}
+.compare-delivery{font-size:.8rem;margin-bottom:8px}
+.compare-buy-btn{display:inline-flex;text-decoration:none;margin-top:4px}
+.basket-summary{
+  padding:14px;border-radius:16px;background:var(--card);border:1px solid var(--mist-2)
+}
+.basket-summary p{color:var(--ink-soft);font-size:.85rem}
+.basket-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px}
+.basket-card{padding:11px;border:1px solid var(--mist-2);border-radius:12px}
+.basket-total{font-size:1.2rem;font-weight:800;margin:6px 0}
+.compare-disclaimer{font-size:.76rem;color:var(--ink-soft)}
+.fallback-store-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+
+[data-theme="dark"] .compare-location,
+[data-theme="dark"] .compare-ingredient,
+[data-theme="dark"] .compare-offer,
+[data-theme="dark"] .basket-summary,
+[data-theme="dark"] .basket-card,
+[data-theme="dark"] .compare-loading,
+[data-theme="dark"] .compare-empty{
+  background:#19231f;
+  color:#f4f7f5;
+  border-color:#3a4b43;
+}
+[data-theme="dark"] .compare-location small,
+[data-theme="dark"] .compare-meta,
+[data-theme="dark"] .basket-summary p,
+[data-theme="dark"] .compare-disclaimer{color:#c7d1cc}
+
+@media(max-width:640px){
+  .compare-location{grid-template-columns:1fr}
+  .compare-location small{grid-column:auto}
+  .compare-ingredient-list{grid-template-columns:1fr}
+  .compare-actions .btn{width:100%}
+}
+
+/* v2.1 Regional Recipes */
+.regional-hero{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:22px;margin-bottom:14px;border:1px solid var(--mist-2);border-radius:22px;background:var(--card)}
+.regional-hero-icons{font-size:3rem;white-space:nowrap}
+.regional-toolbar{position:sticky;top:74px;z-index:8;background:var(--cream);padding:10px 0 12px;margin-bottom:10px}
+.regional-mode-switch,.regional-place-selector{display:flex;gap:8px;flex-wrap:wrap}
+.regional-place-selector{margin-top:9px;max-height:94px;overflow:auto;padding-bottom:2px}
+.regional-summary{margin:10px 0 14px;color:var(--ink-soft)}
+.recipe-source-note{margin:12px 0;padding:10px 12px;border-radius:12px;background:var(--cream);border:1px solid var(--mist-2);font-size:.82rem}
+.recipe-source-note a{font-weight:700;color:var(--masala)}
+[data-theme="dark"] .regional-hero,[data-theme="dark"] .recipe-source-note{background:#19231f;border-color:#3a4b43}
+[data-theme="dark"] .regional-toolbar{background:#111815}
+@media(max-width:640px){.regional-hero{align-items:flex-start}.regional-hero-icons{font-size:2rem}.regional-toolbar{top:62px}}
