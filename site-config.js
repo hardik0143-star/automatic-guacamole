@@ -3,7 +3,7 @@ window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
   version: "v2.4",
   releaseDate: "July 2026",
-  releaseNotes: "v2.4 Smart Buy now uses the documented Quick Commerce groupsearch/groupeta response schema exactly: live grouped products, store prices, pack size, MRP, inventory, ETA, product images and deeplinks. Regional Recipes keeps 5 healthy recipes per region.",
+  releaseNotes: "Smart Buy now groups matching grocery products and shows store-by-store live prices together, with pack size, lowest price and direct retailer navigation. Regional Recipes keeps exactly 5 curated healthy recipes per state/country, with no empty regions.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

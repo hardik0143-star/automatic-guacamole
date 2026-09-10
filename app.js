@@ -107,19 +107,6 @@
     });
   }
 
-  /* ---------------- Smart Buy supported grocery platforms ---------------- */
-  const GROCERY_COMPARE_PLATFORMS = [
-    { key: "blinkit", label: "BlinkIt" },
-    { key: "zepto", label: "Zepto" },
-    { key: "swiggy", label: "Swiggy Instamart" },
-    { key: "bigbasket", label: "BigBasket" },
-    { key: "dmart", label: "DMart" },
-    { key: "jiomart", label: "JioMart" },
-    { key: "minutes", label: "Flipkart Minutes" },
-    { key: "amazon", label: "Amazon" },
-    { key: "flipkart", label: "Flipkart" }
-  ];
-
   /* ---------------- constants ---------------- */
   const BASE_RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
   const FESTIVAL_RECIPES = (window.TINY_TIFFIN_FESTIVAL_RECIPES || []).map(r => ({...r, specialCollection:"festival"}));
@@ -613,7 +600,7 @@
                                   data-store-url="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, g.productName || item.query, smartShoppingLocation.pincode))}"
                                   ${o.available === false ? 'aria-label="Open store - item currently out of stock"' : ''}>
                     <span class="smart-store-name">${smartBuyStoreLogo(o.platform)} ${escapeHTML(o.platformLabel || o.platform)}</span>
-                    <span class="smart-row-pack">${escapeHTML(o.packSize || g.packSize || "")}${o.delivery ? ` · ${escapeHTML(String(o.delivery))}` : ""}</span>
+                    <span class="smart-row-pack">${escapeHTML(o.packSize || g.packSize || "")}</span>
                     <span class="smart-row-price">${money(o.price)}</span>
                     ${isCheapest ? `<span class="smart-best-dot">✓</span>` : ""}
                   </button>`;
@@ -623,8 +610,7 @@
               <div class="smart-card-footer">
                 <div>
                   ${cheapest ? `<strong>From ${money(cheapest.price)}</strong>` : `<strong>Price unavailable</strong>`}
-                  ${cheapest && cheapest.inventory != null ? `<small>${cheapest.inventory} in stock${cheapest.delivery ? ` · ${escapeHTML(String(cheapest.delivery))}` : ""}</small>` :
-                    (g.bestSaving ? `<small>Save up to ${money(g.bestSaving)}</small>` : `<small>Tap a store to view</small>`)}
+                  ${g.bestSaving ? `<small>Save up to ${money(g.bestSaving)}</small>` : `<small>Tap a store to view</small>`}
                 </div>
                 <button class="smart-add-btn" data-smart-add="${idx}" aria-label="Choose product">+</button>
               </div>
@@ -642,8 +628,8 @@
       resultBox.innerHTML = `<div class="shop-notice">Enter an ingredient or grocery item, for example Paneer or Idli Batter.</div>`;
       return;
     }
-    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude)) {
-      resultBox.innerHTML = `<div class="shop-notice">Tap <strong>Use location</strong> first. This live-price API requires latitude/longitude because grocery prices and availability vary by nearby store.</div>`;
+    if (!smartShoppingLocation.pincode && !(smartShoppingLocation.latitude && smartShoppingLocation.longitude)) {
+      resultBox.innerHTML = `<div class="shop-notice">Enter your 6-digit PIN code or use your location to see local grocery prices.</div>`;
       return;
     }
 
@@ -718,7 +704,7 @@
         <div class="smart-quick-items">
           ${["Paneer","Idli Batter","Milk","Banana","Bread","Tofu"].map(x => `<button class="chip" data-smart-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
         </div>
-        <small id="smart-live-location-status" class="smart-location-note">Prices and stock vary by location. Tap “Use location” before comparing so Tiny Tiffin can request live store-specific prices. Coordinates are used only for the comparison request.</small>
+        <small id="smart-live-location-status" class="smart-location-note">Prices vary by location. Your PIN code is saved only in your browser; precise coordinates are used only for the comparison request.</small>
         <div id="smart-live-results" class="smart-live-results"></div>
       </section>
     `;
