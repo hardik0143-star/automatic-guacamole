@@ -1202,8 +1202,15 @@
       resultBox.innerHTML = `<div class="shop-notice">Enter a grocery product to compare.</div>`;
       return;
     }
-    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude)) {
-      resultBox.innerHTML = `<div class="shop-notice">Tap <strong>Use location</strong> first. Live grocery prices depend on the nearby store and this API requires latitude/longitude.</div>`;
+    const pinInput = document.getElementById("smart-shopping-pincode");
+    const enteredPin = String((pinInput && pinInput.value) || smartShoppingLocation.pincode || "").trim();
+    if (enteredPin && /^\\d{6}$/.test(enteredPin)) {
+      smartShoppingLocation.pincode = enteredPin;
+      try { localStorage.setItem("tt_grocery_pincode", enteredPin); } catch (_) {}
+    }
+
+    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude) && !/^\\d{6}$/.test(smartShoppingLocation.pincode || "")) {
+      resultBox.innerHTML = `<div class="shop-notice">Enter a valid 6-digit PIN code <strong>or</strong> tap <strong>Use location</strong> to compare nearby store prices.</div>`;
       return;
     }
 
@@ -1279,7 +1286,7 @@
         <div class="smart-quick-items">
           ${["Paneer","Idli Batter","Milk","Banana","Bread","Tofu"].map(x => `<button class="chip" data-smart-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
         </div>
-        <small id="smart-live-location-status" class="smart-location-note">Prices vary by location. Your PIN code is saved only in your browser; precise coordinates are used only for the comparison request.</small>
+        <small id="smart-live-location-status" class="smart-location-note">Prices vary by location. Enter your 6-digit PIN code or use your location. Your PIN is saved only in your browser.</small>
         <div id="smart-live-results" class="smart-live-results"></div>
       </section>
     `;
