@@ -537,8 +537,8 @@
     const storesFor=(q)=>{
       const query=encodeURIComponent(q);
       return [
-        {name:'Amazon India', icon:'🛒', url:`https://www.amazon.in/s?k=${query}&tag=tinytiffin-21`, note:'Affiliate link • Search Amazon'},
-        {name:'Amazon Fresh', icon:'🥬', url:`https://www.amazon.in/fresh/s?k=${query}&tag=tinytiffin-21`, note:'Affiliate link • Fresh grocery search'},
+        {name:'Amazon India', icon:'🛒', url:`https://www.amazon.in/s?k=${query}&tag=tinytiffin-21`, note:'Search Amazon'},
+        {name:'Amazon Fresh', icon:'🥬', url:`https://www.amazon.in/fresh/s?k=${query}&tag=tinytiffin-21`, note:'Fresh grocery search'},
         {name:'Flipkart', icon:'🛍️', url:`https://www.flipkart.com/search?q=${query}`, note:'Search product on Flipkart'},
         {name:'BigBasket', icon:'🧺', url:`https://www.bigbasket.com/ps/?q=${query}`, note:'Search grocery on BigBasket'},
         {name:'Blinkit', icon:'⚡', url:`https://blinkit.com/s/?q=${query}`, note:'Availability depends on location'},
@@ -570,8 +570,7 @@
             <h3>${escapeHTML(q)}</h3>
             <p>${escapeHTML(s.note)}</p>
             <a class="btn btn-primary shop-open-link" target="_blank" rel="sponsored noopener noreferrer" href="${escapeAttr(s.url)}">Open ${escapeHTML(s.name)}</a>
-          </article>`).join('')}</div>
-        <p class="ai-muted shop-disclosure">Tiny Tiffin may earn a commission from qualifying Amazon purchases, at no extra cost to you. Prices are checked on the retailer’s website and are not displayed or estimated inside Tiny Tiffin.</p>`;
+          </article>`).join('')}</div>`;
       box.scrollIntoView({behavior:'smooth',block:'start'});
     };
 
@@ -1132,6 +1131,7 @@
   }
 
   function renderSmartShoppingResults(data) {
+    if (data && data.noResults) { return `<div class="shop-notice"><strong>No live prices found.</strong><br>${escapeHTML(data.message || "Try a more specific product name such as Amul Milk 1 L or Aashirvaad Atta 5 kg.")}</div>`; }
     smartShoppingLiveResults = data.items || [];
     if (!smartShoppingLiveResults.length) {
       return `<div class="shop-notice">No live matches were returned for this search.</div>`;
@@ -1202,8 +1202,8 @@
       resultBox.innerHTML = `<div class="shop-notice">Enter a grocery product to compare.</div>`;
       return;
     }
-    const pinInput = document.getElementById("smart-shopping-pincode");
-    const enteredPin = String((pinInput && pinInput.value) || smartShoppingLocation.pincode || "").trim();
+    const pinInput = document.getElementById("smart-live-pin");
+    const enteredPin = String((pinInput && pinInput.value) || smartShoppingLocation.pincode || "").replace(/\D/g, "").slice(0, 6);
     if (enteredPin && /^\\d{6}$/.test(enteredPin)) {
       smartShoppingLocation.pincode = enteredPin;
       try { localStorage.setItem("tt_grocery_pincode", enteredPin); } catch (_) {}
