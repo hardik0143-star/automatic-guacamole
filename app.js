@@ -744,8 +744,8 @@
       </section>
 
       <section class="shopping-chip-row" aria-label="Shopping links">
-        <a class="shopping-chip fresh-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
-        <a class="shopping-chip amazon-chip" href="${(CONFIG.affiliate && CONFIG.affiliate.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
+        <a class="shopping-chip fresh-chip" href="${(CONFIG.affiliate && CONFIG.shoppingLinks.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
+        <a class="shopping-chip amazon-chip" href="${(CONFIG.affiliate && CONFIG.shoppingLinks.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
       </section>
 
       <section class="filters">
@@ -961,7 +961,7 @@
 
   function groceryFallbackUrl(platform, query, pincode) {
     const q = encodeURIComponent(query);
-    const amazonTag = (CONFIG.affiliate && CONFIG.affiliate.amazonUrl || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
+    const amazonTag = (CONFIG.affiliate && CONFIG.shoppingLinks.amazonUrl || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
     const urls = {
       blinkit: `https://blinkit.com/s/?q=${q}`,
       zepto: `https://www.zeptonow.com/search?query=${q}`,
@@ -1204,12 +1204,12 @@
     }
     const pinInput = document.getElementById("smart-live-pin");
     const enteredPin = String((pinInput && pinInput.value) || smartShoppingLocation.pincode || "").replace(/\D/g, "").slice(0, 6);
-    if (enteredPin && /^\\d{6}$/.test(enteredPin)) {
+    if (enteredPin && /^[0-9]{6}$/.test(enteredPin)) {
       smartShoppingLocation.pincode = enteredPin;
       try { localStorage.setItem("tt_grocery_pincode", enteredPin); } catch (_) {}
     }
 
-    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude) && !/^\\d{6}$/.test(smartShoppingLocation.pincode || "")) {
+    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude) && !/^[0-9]{6}$/.test(smartShoppingLocation.pincode || "")) {
       resultBox.innerHTML = `<div class="shop-notice">Enter a valid 6-digit PIN code <strong>or</strong> tap <strong>Use location</strong> to compare nearby store prices.</div>`;
       return;
     }
@@ -1330,7 +1330,7 @@
           smartShoppingLocation.longitude = Number(pos.coords.longitude.toFixed(6));
           status.textContent = "Location captured for this live comparison.";
         },
-        () => status.textContent = "Location permission was not available. Please enter your PIN code.",
+        () => status.textContent = "Location permission was not available. Your 6-digit PIN code can be used instead.",
         {enableHighAccuracy:false,timeout:10000,maximumAge:300000}
       );
     });
@@ -1404,7 +1404,7 @@
           locationState.longitude = Number(pos.coords.longitude.toFixed(6));
           status.textContent = "Location captured for this comparison. You can also enter your PIN code for more accurate platform coverage.";
         },
-        () => status.textContent = "Location permission was not available. Please enter your PIN code.",
+        () => status.textContent = "Location permission was not available. Your 6-digit PIN code can be used instead.",
         { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
       );
     });

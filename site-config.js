@@ -10,7 +10,7 @@ window.TINY_TIFFIN_CONFIG = {
     publicKey: "QhWkCiEaXDlxr-f4G",
     toEmail: "tinytiffin13@gmail.com"
   },
-  affiliate: {
+  shoppingLinks: {
     amazonFreshUrl: "https://www.amazon.in/fresh?tag=tinytiffin-21",
     amazonUrl: "https://www.amazon.in/?tag=tinytiffin-21"
   },
