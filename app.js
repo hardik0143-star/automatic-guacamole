@@ -395,7 +395,6 @@
       if (window.tinyTiffinLocalizeAIHub) window.tinyTiffinLocalizeAIHub(root, state.lang);
     }
     if (state.tab === "shopping") attachShoppingEvents();
-    if (state.tab === "shopping") attachSmartShoppingLiveEvents();
     if (state.tab === "festival") attachFestivalEvents();
     if (state.tab === "fasting") attachFastingEvents();
     if (state.tab === "regional") attachRegionalEvents();
@@ -544,70 +543,105 @@
   };
 
   function renderShoppingTab() {
+    const savedPin = smartShoppingLocation.pincode || "";
     return `
-        ${renderSmartShoppingLivePanel()}
-      <section class="ai-hub smart-shopping-hub">
-        <div class="ai-hero"><span class="ai-badge">LIVE PRICE READY</span><h1 class="display">🛒 Smart Shopping Compare</h1><p class="sub">Search a product or ingredient and compare supported stores. Live prices require approved API connections.</p></div>
-        <div class="ai-card">
-          <div class="smart-shop-search"><input id="shop-search" type="search" placeholder="Try: Amul cheese 200 g, paneer, oats…" autocomplete="off"><button class="btn btn-primary" id="shop-search-btn" type="button" onclick="return window.tinyTiffinRunShopping()">Compare prices</button></div>
-          <div class="shop-controls"><input id="shop-pincode" inputmode="numeric" maxlength="6" placeholder="PIN code (optional)"><label><input id="shop-live-only" type="checkbox"> Live results only</label></div>
-          <p class="ai-muted">No prices are invented. If live providers are not configured, Tiny Tiffin shows safe store search links instead.</p>
-          <div class="shop-quick"><button class="chip" data-shop-query="Paneer" onclick="return window.tinyTiffinRunShopping('Paneer')">Paneer</button><button class="chip" data-shop-query="Cheese" onclick="return window.tinyTiffinRunShopping('Cheese')">Cheese</button><button class="chip" data-shop-query="Oats" onclick="return window.tinyTiffinRunShopping('Oats')">Oats</button><button class="chip" data-shop-query="Kids lunch box" onclick="return window.tinyTiffinRunShopping('Kids lunch box')">Lunch box</button></div>
+      <section class="sd-buy-shell">
+        <div class="sd-location-bar">
+          <span class="sd-pin-icon">📍</span>
+          <div><small>DELIVERING TO</small><strong id="sd-location-label">${savedPin ? `PIN ${escapeHTML(savedPin)}` : "Enter your PIN code"}</strong></div>
         </div>
-        <div id="shop-results" class="shop-results"><div class="empty-state"><span class="big-emoji">🛍️</span><h3>Search to compare</h3><p>Enter an exact product name for the best match.</p></div></div>
+
+        <div class="sd-hero-card">
+          <div class="sd-eyebrow">↔ ONE SEARCH · MANY STORES</div>
+          <h1>Same product,<br>many prices.</h1>
+          <p>Search once and compare live grocery prices from supported stores in one clear view.</p>
+          <div class="sd-platform-pills" data-no-translate>
+            <span>BlinkIt</span><span>Zepto</span><span>Instamart</span><span>BigBasket</span><span>DMart</span><span>JioMart</span><span>Minutes</span>
+          </div>
+        </div>
+
+        <div class="sd-search-card">
+          <div class="sd-search-row">
+            <span class="sd-search-icon">⌕</span>
+            <input id="smart-buy-query" type="search" autocomplete="off" placeholder="Search milk, atta, paneer..." value="${escapeAttr(smartShoppingSelectedQuery)}">
+            <button id="smart-buy-search" class="sd-search-button" type="button">Search</button>
+          </div>
+          <div class="sd-pin-row">
+            <input id="smart-buy-pin" inputmode="numeric" maxlength="6" placeholder="6-digit PIN code" value="${escapeAttr(savedPin)}">
+            <button id="smart-buy-location" type="button" class="sd-location-button">📍 Use location</button>
+          </div>
+          <div id="smart-buy-status" class="sd-status">Enter a product and PIN code, or use your location.</div>
+        </div>
+
+        <div class="sd-quick-row">
+          ${["Milk","Paneer","Atta","Idli Batter","Banana","Bread"].map(x=>`<button class="chip" data-sd-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
+        </div>
+
+        <div id="smart-buy-results" class="sd-results">
+          <div class="sd-empty">
+            <div class="sd-empty-icon">🛒</div>
+            <h3>Search a grocery product</h3>
+            <p>Tiny Tiffin will group the same product across stores and highlight the lowest live price.</p>
+          </div>
+        </div>
       </section>`;
   }
 
   function attachShoppingEvents() {
-    const input=document.getElementById('shop-search');
-    const btn=document.getElementById('shop-search-btn');
-    const box=document.getElementById('shop-results');
-    if(!input||!btn||!box) return;
+    const query=document.getElementById("smart-buy-query");
+    const pin=document.getElementById("smart-buy-pin");
+    const search=document.getElementById("smart-buy-search");
+    const locate=document.getElementById("smart-buy-location");
+    const status=document.getElementById("smart-buy-status");
+    const results=document.getElementById("smart-buy-results");
+    const locationLabel=document.getElementById("sd-location-label");
+    if(!query||!pin||!search||!results)return;
 
-    const storesFor=(q)=>{
-      const query=encodeURIComponent(q);
-      return [
-        {name:'Amazon India', icon:'🛒', url:`https://www.amazon.in/s?k=${query}&tag=tinytiffin-21`, note:'Search Amazon'},
-        {name:'Amazon Fresh', icon:'🥬', url:`https://www.amazon.in/fresh/s?k=${query}&tag=tinytiffin-21`, note:'Fresh grocery search'},
-        {name:'Flipkart', icon:'🛍️', url:`https://www.flipkart.com/search?q=${query}`, note:'Search product on Flipkart'},
-        {name:'BigBasket', icon:'🧺', url:`https://www.bigbasket.com/ps/?q=${query}`, note:'Search grocery on BigBasket'},
-        {name:'Blinkit', icon:'⚡', url:`https://blinkit.com/s/?q=${query}`, note:'Availability depends on location'},
-        {name:'Zepto', icon:'🚴', url:`https://www.zeptonow.com/search?query=${query}`, note:'Availability depends on location'}
-      ];
+    const savePin=()=>{
+      const cleaned=String(pin.value||"").replace(/\D/g,"").slice(0,6);
+      pin.value=cleaned;
+      smartShoppingLocation.pincode=cleaned;
+      if(cleaned.length===6){
+        storage.set("tt_grocery_pincode",cleaned);
+        if(locationLabel)locationLabel.textContent=`PIN ${cleaned}`;
+      }
+      return cleaned;
     };
 
-    const run=()=>{
-      const q=input.value.trim();
-      if(!q){
-        input.focus();
-        input.setAttribute('aria-invalid','true');
-        box.innerHTML='<div class="shop-notice">Please enter a product or ingredient first.</div>';
-        return;
-      }
-      input.removeAttribute('aria-invalid');
-      const pin=(document.getElementById('shop-pincode')||{}).value||'';
-      const liveOnly=!!(document.getElementById('shop-live-only')||{}).checked;
-      const stores=storesFor(q);
-      if(liveOnly){
-        box.innerHTML=`<div class="shop-notice"><strong>Live results only is enabled.</strong><br>Live price APIs are not connected yet, so no verified prices can be shown. Turn off this option to open working store searches.</div>`;
-        return;
-      }
-      box.innerHTML=`
-        <div class="shop-summary"><strong>Results for “${escapeHTML(q)}”</strong>${pin?` • PIN: ${escapeHTML(pin)}`:''}<br><span>Tap a store to check the latest price and delivery availability.</span></div>
-        <div class="shop-grid">${stores.map(s=>`
-          <article class="shop-card">
-            <div class="shop-store">${s.icon} ${escapeHTML(s.name)}</div>
-            <h3>${escapeHTML(q)}</h3>
-            <p>${escapeHTML(s.note)}</p>
-            <a class="btn btn-primary shop-open-link" target="_blank" rel="sponsored noopener noreferrer" href="${escapeAttr(s.url)}">Open ${escapeHTML(s.name)}</a>
-          </article>`).join('')}</div>`;
-      box.scrollIntoView({behavior:'smooth',block:'start'});
-    };
+    pin.addEventListener("input",savePin);
+    query.addEventListener("input",()=>{smartShoppingSelectedQuery=query.value;});
+    query.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();search.click();}});
+    pin.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();search.click();}});
 
-    btn.type='button';
-    btn.addEventListener('click',(e)=>{e.preventDefault();run();});
-    input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();window.tinyTiffinRunShopping();}});
-    document.querySelectorAll('[data-shop-query]').forEach(ch=>ch.addEventListener('click',(e)=>{e.preventDefault();input.value=ch.dataset.shopQuery||'';run();}));
+    document.querySelectorAll("[data-sd-quick]").forEach(btn=>btn.addEventListener("click",()=>{
+      query.value=btn.dataset.sdQuick||"";
+      smartShoppingSelectedQuery=query.value;
+      search.click();
+    }));
+
+    if(locate)locate.addEventListener("click",()=>{
+      if(!navigator.geolocation){status.textContent="Location is not available in this browser. Enter your 6-digit PIN code instead.";return;}
+      status.textContent="Getting your location…";
+      navigator.geolocation.getCurrentPosition(pos=>{
+        smartShoppingLocation.latitude=Number(pos.coords.latitude.toFixed(6));
+        smartShoppingLocation.longitude=Number(pos.coords.longitude.toFixed(6));
+        status.textContent="Location captured. You can search now.";
+        if(locationLabel)locationLabel.textContent="Current location";
+      },()=>{
+        status.textContent="Location permission was not available. Enter your 6-digit PIN code instead.";
+      },{enableHighAccuracy:false,timeout:10000,maximumAge:300000});
+    });
+
+    search.addEventListener("click",()=>{
+      savePin();
+      runSmartShoppingLiveSearch(query.value,results,search,status);
+    });
+
+    // Lightweight readiness check: tells the user immediately if the Vercel API key is missing.
+    fetch("/api/compare-prices",{method:"GET",cache:"no-store"}).then(r=>r.json()).then(data=>{
+      if(data.status==="ready") status.textContent="Live price service ready.";
+      else if(data.status==="not_configured") status.textContent="Live price service needs QUICKCOMMERCE_API_KEY in Vercel.";
+    }).catch(()=>{});
   }
 
   /* ---------- Festival Tiffin ---------- */
@@ -1200,137 +1234,120 @@
   }
 
   function renderSmartShoppingResults(data) {
-    if (data && data.noResults) { return `<div class="shop-notice"><strong>No live prices found.</strong><br>${escapeHTML(data.message || "Try a more specific product name such as Amul Milk 1 L or Aashirvaad Atta 5 kg.")}</div>`; }
-    smartShoppingLiveResults = data.items || [];
-    if (!smartShoppingLiveResults.length) {
-      return `<div class="shop-notice">No live matches were returned for this search.</div>`;
-    }
-
-    const item = smartShoppingLiveResults[0];
-    const groups = sortSmartGroups((item.productGroups || []).slice());
-    if (!groups.length) {
-      return `<div class="shop-notice">No comparable live products were returned for <strong>${escapeHTML(item.query)}</strong>.</div>`;
-    }
+    smartShoppingLiveResults=data.items||[];
+    const item=smartShoppingLiveResults[0];
+    if(!item)return `<div class="sd-alert">No products were returned for this search.</div>`;
+    const groups=sortSmartGroups((item.productGroups||[]).slice());
+    if(!groups.length)return `<div class="sd-alert"><strong>No comparable products found.</strong><br>Try a more specific search such as “Amul Milk 1 L” or “Aashirvaad Atta 5 kg”.</div>`;
 
     return `
-      <div class="smart-buy-toolbar">
-        <div class="smart-buy-progress"><span>Live comparison · ${escapeHTML(item.query || "")}</span><strong>${groups.length} product matches</strong></div>
-        <div class="smart-buy-tabs">
-          <button class="chip ${smartBuySort==="top"?"active":""}" data-smart-sort="top">Top Matches</button>
-          <button class="chip ${smartBuySort==="savings"?"active":""}" data-smart-sort="savings">Best Savings</button>
-          <button class="chip ${smartBuySort==="lowest"?"active":""}" data-smart-sort="lowest">Lowest Price</button>
-        </div>
+      <div class="sd-results-head">
+        <div><button type="button" class="sd-back" data-sd-new-search>←</button><strong>${escapeHTML(item.query||"")}</strong></div>
+        <span>${groups.length} matches</span>
       </div>
-
-      <div class="smart-product-grid">
-        ${groups.map((g, idx) => {
-          const available = (g.offers || []).filter(o => o.available !== false && Number.isFinite(Number(o.price)));
-          const cheapest = available.slice().sort((a,b)=>Number(a.price)-Number(b.price))[0] || null;
-          const visibleOffers = (g.offers || []).slice().sort((a,b)=>(Number(a.price)||Infinity)-(Number(b.price)||Infinity));
-          return `<article class="smart-product-card">
-            <div class="smart-product-image">
-              ${g.image ? `<img src="${escapeAttr(g.image)}" alt="${escapeAttr(g.productName || item.query)}" loading="lazy" referrerpolicy="no-referrer">` : `<div class="smart-product-placeholder">🛍️</div>`}
+      <div class="sd-sort-tabs">
+        <button class="${smartBuySort==="top"?"active":""}" data-smart-sort="top">Top Matches</button>
+        <button class="${smartBuySort==="savings"?"active":""}" data-smart-sort="savings">Best Savings</button>
+        <button class="${smartBuySort==="lowest"?"active":""}" data-smart-sort="lowest">Lowest Price</button>
+      </div>
+      <div class="sd-product-grid">
+        ${groups.map((g,idx)=>{
+          const offers=(g.offers||[]).filter(o=>Number.isFinite(Number(o.price))).slice().sort((a,b)=>Number(a.price)-Number(b.price));
+          const cheapest=offers.find(o=>o.available!==false)||offers[0]||null;
+          const maxPrice=offers.reduce((m,o)=>Math.max(m,Number(o.price)||0),0);
+          const saving=cheapest?Math.max(0,maxPrice-Number(cheapest.price||0)):0;
+          const mrp=Math.max(...offers.map(o=>Number(o.mrp)||0),0);
+          return `<article class="sd-product-card">
+            <div class="sd-product-top">
+              <div class="sd-product-image">${g.image?`<img src="${escapeAttr(g.image)}" alt="${escapeAttr(g.productName||item.query)}" loading="lazy" referrerpolicy="no-referrer">`:`<span>🛍️</span>`}</div>
+              <div class="sd-product-info">
+                ${g.brand?`<small>${escapeHTML(g.brand)}</small>`:""}
+                <h3>${escapeHTML(g.productName||item.query)}</h3>
+                <p>${escapeHTML(g.packSize||"Pack size unavailable")}</p>
+              </div>
             </div>
-            <div class="smart-product-body">
-              ${g.brand ? `<div class="smart-brand">${escapeHTML(g.brand)}</div>` : ""}
-              <h3>${escapeHTML(g.productName || item.query)}</h3>
-              <div class="smart-pack">${escapeHTML(g.packSize || "Pack size unavailable")}</div>
-
-              <div class="smart-store-price-list">
-                ${visibleOffers.map(o => {
-                  const isCheapest = cheapest && o.platform === cheapest.platform && Number(o.price) === Number(cheapest.price);
-                  return `<button class="smart-store-price-row ${isCheapest ? "best" : ""}" 
-                                  data-store-url="${escapeAttr(o.buyUrl || groceryFallbackUrl(o.platform, g.productName || item.query, smartShoppingLocation.pincode))}"
-                                  ${o.available === false ? 'aria-label="Open store - item currently out of stock"' : ''}>
-                    <span class="smart-store-name">${smartBuyStoreLogo(o.platform)} ${escapeHTML(o.platformLabel || o.platform)}</span>
-                    <span class="smart-row-pack">${escapeHTML(o.packSize || g.packSize || "")}</span>
-                    <span class="smart-row-price">${money(o.price)}</span>
-                    ${isCheapest ? `<span class="smart-best-dot">✓</span>` : ""}
-                  </button>`;
-                }).join("")}
-              </div>
-
-              <div class="smart-card-footer">
-                <div>
-                  ${cheapest ? `<strong>From ${money(cheapest.price)}</strong>` : `<strong>Price unavailable</strong>`}
-                  ${g.bestSaving ? `<small>Save up to ${money(g.bestSaving)}</small>` : `<small>Tap a store to view</small>`}
-                </div>
-                <button class="smart-add-btn" data-smart-add="${idx}" aria-label="Choose product">+</button>
-              </div>
+            <div class="sd-price-stack">
+              ${offers.map(o=>{
+                const best=cheapest&&o.platform===cheapest.platform&&Number(o.price)===Number(cheapest.price);
+                const url=o.buyUrl||groceryFallbackUrl(o.platform,g.productName||item.query,smartShoppingLocation.pincode);
+                return `<button class="sd-price-row ${best?"best":""}" data-store-url="${escapeAttr(url)}">
+                  <span class="sd-store">${smartBuyStoreLogo(o.platform)} ${escapeHTML(o.platformLabel||o.platform)}</span>
+                  ${o.delivery?`<small>${escapeHTML(String(o.delivery))}</small>`:""}
+                  <strong>${money(o.price)}</strong>
+                  ${best?`<em>CHEAPEST</em>`:""}
+                </button>`;
+              }).join("")}
+            </div>
+            <div class="sd-saving-row">
+              <div>${saving>0?`<span>↗</span><strong>save ${money(saving)}</strong>`:`<strong>Best live price ${cheapest?money(cheapest.price):"—"}</strong>`}</div>
+              ${mrp>0?`<span>MRP<br><strong>${money(mrp)}</strong></span>`:""}
             </div>
           </article>`;
         }).join("")}
       </div>
-      <p class="compare-disclaimer">Tap any store row to open that retailer. Prices, stock, pack sizes and delivery can change after comparison.</p>
-    `;
+      <p class="sd-disclaimer">Prices and stock are live provider results and can change in the retailer app. Tap a store price to open the retailer.</p>`;
   }
 
-  async function runSmartShoppingLiveSearch(query, resultBox, button) {
-    const q = String(query || "").trim();
-    if (!q) {
-      resultBox.innerHTML = `<div class="shop-notice">Enter a grocery product to compare.</div>`;
+  function bindSmartBuyResultEvents(root,data){
+    root.querySelectorAll("[data-store-url]").forEach(btn=>btn.addEventListener("click",()=>{
+      const url=btn.dataset.storeUrl;if(url&&url!=="#")window.open(url,"_blank","noopener,noreferrer");
+    }));
+    root.querySelectorAll("[data-smart-sort]").forEach(btn=>btn.addEventListener("click",()=>{
+      smartBuySort=btn.dataset.smartSort||"top";
+      root.innerHTML=renderSmartShoppingResults(data);
+      bindSmartBuyResultEvents(root,data);
+      if(window.tinyTiffinLocalizePage)window.tinyTiffinLocalizePage(root,state.lang);
+    }));
+    root.querySelectorAll("[data-sd-new-search]").forEach(btn=>btn.addEventListener("click",()=>{
+      const q=document.getElementById("smart-buy-query");if(q){q.focus();q.select();}
+      window.scrollTo({top:Math.max(0,(q?.getBoundingClientRect().top||0)+window.scrollY-160),behavior:"smooth"});
+    }));
+  }
+
+  async function runSmartShoppingLiveSearch(query, resultBox, button, statusBox) {
+    const q=normalizeShoppingQuery(query);
+    if(!q){resultBox.innerHTML=`<div class="sd-alert">Enter a grocery product first.</div>`;return;}
+
+    const pincode=String(smartShoppingLocation.pincode||"").replace(/\D/g,"").slice(0,6);
+    const hasCoords=Number.isFinite(Number(smartShoppingLocation.latitude))&&Number.isFinite(Number(smartShoppingLocation.longitude));
+    if(!hasCoords&&!/^[0-9]{6}$/.test(pincode)){
+      resultBox.innerHTML=`<div class="sd-alert">Enter a valid 6-digit PIN code or tap <strong>Use location</strong>.</div>`;
       return;
     }
-    const pinInput = document.getElementById("smart-live-pin");
-    const enteredPin = String((pinInput && pinInput.value) || smartShoppingLocation.pincode || "").replace(/\D/g, "").slice(0, 6);
-    if (enteredPin && /^[0-9]{6}$/.test(enteredPin)) {
-      smartShoppingLocation.pincode = enteredPin;
-      try { localStorage.setItem("tt_grocery_pincode", enteredPin); } catch (_) {}
-    }
 
-    if (!(smartShoppingLocation.latitude && smartShoppingLocation.longitude) && !/^[0-9]{6}$/.test(smartShoppingLocation.pincode || "")) {
-      resultBox.innerHTML = `<div class="shop-notice">Enter a valid 6-digit PIN code <strong>or</strong> tap <strong>Use location</strong> to compare nearby store prices.</div>`;
-      return;
-    }
+    smartShoppingSelectedQuery=q;
+    const oldText=button.textContent;
+    button.disabled=true;button.textContent="Searching…";
+    if(statusBox)statusBox.textContent="Fetching live prices across stores…";
+    resultBox.innerHTML=`<div class="sd-loading"><span></span><strong>Comparing ${escapeHTML(q)}</strong><small>Checking supported stores near you…</small></div>`;
 
-    const originalText = button.textContent;
-    button.disabled = true;
-    button.textContent = "Comparing…";
-    resultBox.innerHTML = `<div class="shop-notice">Checking live store prices for <strong>${escapeHTML(q)}</strong>…</div>`;
-
-    try {
-      const response = await fetch("/api/compare-prices", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          items: [{ original: q, query: q }],
-          latitude: smartShoppingLocation.latitude,
-          longitude: smartShoppingLocation.longitude,
-          pincode: smartShoppingLocation.pincode || "",
-          platforms: GROCERY_COMPARE_PLATFORMS.map(p => p.key)
+    try{
+      const response=await fetch("/api/compare-prices",{
+        method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({
+          items:[{original:q,query:q}],
+          pincode,
+          latitude:hasCoords?smartShoppingLocation.latitude:null,
+          longitude:hasCoords?smartShoppingLocation.longitude:null,
+          platforms:["blinkit","zepto","swiggy","bigbasket","dmart","jiomart","minutes"]
         })
       });
-      const data = await response.json().catch(() => ({}));
-      if (!response.ok) {
-        resultBox.innerHTML = `<div class="shop-notice"><strong>Live comparison unavailable.</strong><br>${escapeHTML(data.message || (data.failures && data.failures[0] && data.failures[0].message) || "Please try again.")}</div>`;
+      const data=await response.json().catch(()=>({}));
+      if(!response.ok){
+        const msg=data.message||(data.failures&&data.failures[0]&&data.failures[0].message)||`Live service returned ${response.status}.`;
+        resultBox.innerHTML=`<div class="sd-alert"><strong>Live prices could not be loaded.</strong><br>${escapeHTML(msg)}</div>`;
+        if(statusBox)statusBox.textContent="Live comparison could not be completed.";
         return;
       }
-
-      const bindResults = () => {
-        resultBox.querySelectorAll(".smart-store-price-row").forEach(row => {
-          row.addEventListener("click", () => {
-            const url = row.dataset.storeUrl;
-            if (url) window.open(url, "_blank", "noopener,noreferrer");
-          });
-        });
-        resultBox.querySelectorAll("[data-smart-sort]").forEach(sortBtn => {
-          sortBtn.addEventListener("click", () => {
-            smartBuySort = sortBtn.dataset.smartSort || "top";
-            resultBox.innerHTML = renderSmartShoppingResults(data);
-            bindResults();
-            if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(resultBox, state.lang);
-          });
-        });
-      };
-
-      resultBox.innerHTML = renderSmartShoppingResults(data);
-      bindResults();
-      if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(resultBox, state.lang);
-    } catch (e) {
-      resultBox.innerHTML = `<div class="shop-notice"><strong>Could not reach the live price service.</strong><br>Please try again shortly.</div>`;
-    } finally {
-      button.disabled = false;
-      button.textContent = originalText;
+      resultBox.innerHTML=renderSmartShoppingResults(data);
+      bindSmartBuyResultEvents(resultBox,data);
+      if(statusBox)statusBox.textContent=data.location?.pincode?`Live prices for PIN ${data.location.pincode}.`:`Live prices for your current location.`;
+      if(window.tinyTiffinLocalizePage)window.tinyTiffinLocalizePage(resultBox,state.lang);
+    }catch(e){
+      resultBox.innerHTML=`<div class="sd-alert"><strong>Could not reach the live price service.</strong><br>${escapeHTML(e.message||"Please try again shortly.")}</div>`;
+      if(statusBox)statusBox.textContent="Connection to the live price service failed.";
+    }finally{
+      button.disabled=false;button.textContent=oldText;
     }
   }
 
@@ -2028,18 +2045,18 @@
      synchronized with the canonical version in site-config.js.
   */
   function renderDeveloperTab() {
-    const dev = CONFIG.developer || {};
-    const purpose = dev.purpose || "Tiny Tiffin helps parents quickly discover healthy, colourful and child-friendly vegetarian tiffin ideas, plan the week and make everyday lunchbox decisions easier.";
+    const dev=CONFIG.developer||{};
+    const story=dev.about||"Tiny Tiffin started with a simple idea inspired by our family — making everyday lunchboxes healthier, easier and more enjoyable.";
+    const purpose=dev.purpose||"We want to help parents discover quick, nutritious and child-friendly tiffin ideas without the daily planning stress.";
     return `
       <div class="simple-page">
-        <h2>${t("developerTitle")}</h2>
-        <h4 style="margin:22px 0 8px">Purpose of Tiny Tiffin</h4>
+        <h2>About us</h2>
+        <h4 style="margin:22px 0 8px">Our story</h4>
+        <p class="desc developer-story">${story.replace(/\n{2,}/g,"\n").replace(/\n/g,"<br>")}</p>
         <p class="desc">${purpose}</p>
-        <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\n{2,}/g, "\n").replace(/\n/g, "<br>")}</p>
         <h4 style="margin:22px 0 8px">Version information</h4>
-        <div class="release-card"><strong>${CONFIG.version || dev.version || "v1.0"}</strong> · ${CONFIG.releaseDate || dev.releaseDate || ""}<br><span>${CONFIG.releaseNotes || dev.releaseNotes || ""}</span></div>
-        ${dev.currentCapabilities && dev.currentCapabilities.length ? `<h4 style="margin:22px 0 8px">Current capabilities</h4><ul class="dev-future-list">${dev.currentCapabilities.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
-        ${dev.comingSoon && dev.comingSoon.length ? `<h4 style="margin:22px 0 8px">Coming soon</h4><ul class="dev-future-list">${dev.comingSoon.map(f => `<li>${f}</li>`).join("")}</ul>` : ""}
+        <div class="release-card"><strong>${CONFIG.version||dev.version||"v1.0"}</strong> · ${CONFIG.releaseDate||dev.releaseDate||""}<br><span>${CONFIG.releaseNotes||dev.releaseNotes||""}</span></div>
+        ${dev.currentCapabilities&&dev.currentCapabilities.length?`<h4 style="margin:22px 0 8px">Current capabilities</h4><ul class="dev-future-list">${dev.currentCapabilities.map(f=>`<li>${f}</li>`).join("")}</ul>`:""}
       </div>`;
   }
 

@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.5",
+  version: "v2.6",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Synchronized the complete recipe library across recipe discovery, ingredient matching, planner and AI; expanded full-page language translation; rebuilt Smart Buy around live multi-store product comparison; added copyright notice and privacy cleanup.",
+  releaseNotes: "Rebuilt Smart Buy into one clear live multi-store price comparison experience inspired by modern comparison apps; added dual QuickCommerce endpoint support; renamed Developer to About us and Purpose of Tiny Tiffin to Our story.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
@@ -18,6 +18,6 @@ window.TINY_TIFFIN_CONFIG = {
   developer: {
     purpose: "Tiny Tiffin was created to help parents discover quick, healthy, colourful and child-friendly vegetarian tiffin ideas, reduce daily meal-planning stress and make nutritious lunchboxes easier.",
     about: "Tiny Tiffin started with a simple idea inspired by our little family ♥️\n\nAs parents, we often found ourselves wondering what to pack in a tiffin every day — something healthy, nutritious, interesting, and something children would actually enjoy eating.\n\nThat small, everyday challenge inspired us to create Tiny Tiffin.\n\nThis is our first web application, built with love, curiosity, and the desire to create something useful for parents like us.",
-    currentCapabilities: ["AI-powered tiffin planning", "Ingredient-based recipe discovery", "AI recipe adaptation", "Smart shopping list", "Live multi-store grocery price comparison", "760+ synchronized recipes across main, festival, fasting and regional collections", "Full-page multi-language translation", "Weekly planner", "PWA and offline support", "Dark mode", "Festival, fasting and regional recipe collections"]
+    currentCapabilities: ["AI-powered tiffin planning", "Ingredient-based recipe discovery", "AI recipe adaptation", "Smart shopping list", "Live same-product multi-store grocery price comparison", "760+ synchronized recipes across main, festival, fasting and regional collections", "Full-page multi-language translation", "Weekly planner", "PWA and offline support", "Dark mode", "Festival, fasting and regional recipe collections"]
   }
 };
