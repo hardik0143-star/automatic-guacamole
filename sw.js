@@ -1,57 +1,16 @@
-/* Tiny Tiffin — minimal offline cache.
-   Caches the app shell on install so it opens without a network
-   connection after the first visit. Bump CACHE_NAME when you
-   change any of the cached files so users get the update. */
-const CACHE_NAME = "tiny-tiffin-v2-4-location-pin-final-fix";
-const SHELL_FILES = [
-  "./",
-  "./index.html",
-  "./styles.css",
-  "./app.js",
-  "./recipes.js",
-  "./festival.js",
-  "./fasting.js",
-  "./content-translator.js",
-  "./i18n.js",
-  "./site-config.js",
-  "./store.js",
-  "./manifest.json",
-  "./premium-ui.css",
-  "./festival-tiffin-hero.svg",
-  "./indian-fasting-tiffin-hero.svg"
-  ,"./icon-192.png"
-  ,"./icon-512.png"
-  ,"./apple-touch-icon.png"
-];
-
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(SHELL_FILES)).catch(() => {})
-  );
-  self.skipWaiting();
-});
-
-self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys().then((names) =>
-      Promise.all(names.filter((n) => n !== CACHE_NAME).map((n) => caches.delete(n)))
-    )
-  );
-  self.clients.claim();
-});
-
-self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") return;
-  event.respondWith(
-    caches.match(event.request).then((cached) => {
-      const network = fetch(event.request)
-        .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy)).catch(() => {});
-          return response;
-        })
-        .catch(() => cached);
-      return cached || network;
-    })
-  );
+/* Tiny Tiffin v2.5 service worker — network-first app updates, offline fallback */
+const CACHE_NAME = "tiny-tiffin-v2-5-slogan-healthy-recipes";
+const SHELL_FILES = ["./","./index.html","./styles.css?v=2.5","./app.js?v=2.5","./recipes.js?v=2.5","./festival.js?v=2.5","./fasting.js?v=2.5","./regional.js?v=2.5","./content-translator.js?v=2.5","./i18n.js?v=2.5","./site-config.js?v=2.5","./store.js?v=2.5","./manifest.json","./premium-ui.css","./festival-tiffin-hero.svg","./indian-fasting-tiffin-hero.svg","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
+self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(SHELL_FILES)).catch(()=>{}));self.skipWaiting();});
+self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))));self.clients.claim();});
+self.addEventListener("fetch",event=>{
+  if(event.request.method!=="GET")return;
+  const url=new URL(event.request.url);
+  if(url.origin===self.location.origin && url.pathname.startsWith("/api/"))return;
+  const sameOrigin=url.origin===self.location.origin;
+  if(sameOrigin){
+    event.respondWith(fetch(event.request).then(response=>{const copy=response.clone();caches.open(CACHE_NAME).then(c=>c.put(event.request,copy)).catch(()=>{});return response;}).catch(()=>caches.match(event.request).then(x=>x||caches.match("./index.html"))));
+    return;
+  }
+  event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request)));
 });

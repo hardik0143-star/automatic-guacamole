@@ -108,35 +108,41 @@
   }
 
   /* ---------------- constants ---------------- */
-  const BASE_RECIPES = window.TinyTiffinStore.getRecipes().filter(r => !r.hidden);
+  function uniqueRecipesById(items) {
+    const seen = new Set();
+    const out = [];
+    (items || []).forEach(r => {
+      if (!r || r.hidden) return;
+      const id = String(r.id || "");
+      if (!id || seen.has(id)) return;
+      seen.add(id);
+      out.push(r);
+    });
+    return out;
+  }
+
+  const STORE_RECIPES = (window.TinyTiffinStore.getRecipes() || []).filter(r => !r.hidden);
   const FESTIVAL_RECIPES = (window.TINY_TIFFIN_FESTIVAL_RECIPES || []).map(r => ({...r, specialCollection:"festival"}));
   const FASTING_RECIPES = (window.TINY_TIFFIN_FASTING_RECIPES || []).map(r => ({...r, specialCollection:"fasting"}));
-  const REGIONAL_RECIPES = [];
-  const RECIPES = [...BASE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES];
-  let regionalDataLoaded = false;
+  const REGIONAL_RECIPES = (window.TINY_TIFFIN_REGIONAL_RECIPES || []).map(r => ({...r, specialCollection:"regional"}));
+  const RECIPES = uniqueRecipesById([...STORE_RECIPES, ...FESTIVAL_RECIPES, ...FASTING_RECIPES, ...REGIONAL_RECIPES]);
+  const BASE_RECIPES = RECIPES; // one synchronized registry for every recipe search/planner/AI feature
+  let regionalDataLoaded = REGIONAL_RECIPES.length > 0;
   let regionalDataLoading = null;
 
   async function ensureRegionalData() {
     if (regionalDataLoaded) return true;
     if (regionalDataLoading) return regionalDataLoading;
     regionalDataLoading = new Promise((resolve) => {
-      const existing = document.querySelector('script[data-tiny-tiffin-regional]');
-      if (existing && window.TINY_TIFFIN_REGIONAL_RECIPES) {
-        const mapped = window.TINY_TIFFIN_REGIONAL_RECIPES.map(r => ({...r, specialCollection:"regional"}));
-        REGIONAL_RECIPES.push(...mapped);
-        RECIPES.push(...mapped);
-        regionalDataLoaded = true;
-        resolve(true);
-        return;
-      }
       const script = document.createElement("script");
-      script.src = "regional.js?v=2.2";
+      script.src = "regional.js?v=2.5";
       script.async = true;
       script.dataset.tinyTiffinRegional = "1";
       script.onload = () => {
         const mapped = (window.TINY_TIFFIN_REGIONAL_RECIPES || []).map(r => ({...r, specialCollection:"regional"}));
-        REGIONAL_RECIPES.push(...mapped);
-        RECIPES.push(...mapped);
+        const existing = new Set(RECIPES.map(r => String(r.id)));
+        mapped.forEach(r => { if (!existing.has(String(r.id))) { RECIPES.push(r); existing.add(String(r.id)); } });
+        REGIONAL_RECIPES.splice(0, REGIONAL_RECIPES.length, ...mapped);
         regionalDataLoaded = true;
         resolve(true);
       };
@@ -190,12 +196,20 @@
       allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: ""
     },
     matchInput: "",
+    matchEnglish: "",
     aiInput: "",
     aiResults: [],
     aiPlan: []
   };
 
   function t(key) { return window.tinyTiffinT(state.lang, key); }
+  let normalizedRecipeQuery = "";
+
+  async function translateSearchToEnglish(text) {
+    const q = String(text || "").trim();
+    if (!q || state.lang === "en" || !window.tinyTiffinTranslateToEnglish) return q;
+    try { return (await window.tinyTiffinTranslateToEnglish(q, state.lang)) || q; } catch (_) { return q; }
+  }
 
   // Central recipe lookup used by every recipe card, planner, favourites, AI,
   // festival and fasting collection. Keeping one lookup prevents View Recipe
@@ -205,8 +219,16 @@
     return RECIPES.find(r => String(r.id) === key) || null;
   }
 
-  function recipeName(r) { return r.name[state.lang] || r.name.en; }
-  function recipeDesc(r) { return r.desc[state.lang] || r.desc.en; }
+  function recipeName(r) {
+    if (!r) return "";
+    if (typeof r.name === "string") return r.name;
+    return (r.name && (r.name[state.lang] || r.name.en)) || "";
+  }
+  function recipeDesc(r) {
+    if (!r) return "";
+    if (typeof r.desc === "string") return r.desc;
+    return (r.desc && (r.desc[state.lang] || r.desc.en)) || "";
+  }
   function applyTheme() { document.documentElement.setAttribute("data-theme", state.theme); }
   applyTheme();
 
@@ -279,12 +301,15 @@
     }
     if (!recipeMatchesIngredientCategory(r, f.ingredientCategory)) return false;
     if (f.smartSearch.trim()) {
-      const q = f.smartSearch.trim().toLowerCase();
+      const queries = [f.smartSearch, normalizedRecipeQuery].map(x => String(x || "").trim().toLowerCase()).filter(Boolean);
+      const names = r.name && typeof r.name === "object" ? Object.values(r.name) : [r.name || ""];
+      const descs = r.desc && typeof r.desc === "object" ? Object.values(r.desc) : [r.desc || ""];
       const hay = [
-        recipeName(r), r.ingredients.join(" "), r.nutritionTags.join(" "),
-        r.ageGroups.join(" "), String(r.timeCategory), r.cuisine, r.mealType.join(" "), r.dietType.join(" ")
+        ...names, ...descs, ...(r.ingredients || []), ...(r.instructions || []), ...(r.nutritionTags || []),
+        ...(r.ageGroups || []), String(r.timeCategory || ""), r.cuisine || "", ...(r.mealType || []), ...(r.dietType || []),
+        r.region || "", r.regionType || "", r.festival || "", r.theme || "", ...(r.allergens || [])
       ].join(" ").toLowerCase();
-      if (!hay.includes(q)) return false;
+      if (!queries.some(q => hay.includes(q))) return false;
     }
     return true;
   }
@@ -356,6 +381,7 @@
           <a href="#" data-footer-tab="developer">${t("navDeveloper")}</a>
         </div>
         ${t("footerNote")}
+        <div class="copyright-line" data-no-translate>© 2026 Tiny Tiffin. All rights reserved.</div>
       </footer>
     `;
     attachHeaderEvents();
@@ -374,8 +400,12 @@
     if (state.tab === "fasting") attachFastingEvents();
     if (state.tab === "regional") attachRegionalEvents();
     hydrateRecipeImages(root);
-    if (window.tinyTiffinLocalizeRecipeCards) window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang);
-    if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang);
+    const localizers = [];
+    if (window.tinyTiffinLocalizeRecipeCards) localizers.push(Promise.resolve(window.tinyTiffinLocalizeRecipeCards(root, RECIPES, state.lang)));
+    if (state.tab === "developer" && window.tinyTiffinLocalizeDeveloper) localizers.push(Promise.resolve(window.tinyTiffinLocalizeDeveloper(root, CONFIG, state.lang)));
+    Promise.allSettled(localizers).finally(() => {
+      if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(root, state.lang);
+    });
     root.querySelectorAll("[data-footer-tab]").forEach(a => {
       a.addEventListener("click", (e) => { e.preventDefault(); state.tab = a.dataset.footerTab; render(); window.scrollTo(0, 0); });
     });
@@ -399,7 +429,7 @@
     return `
       <header class="app-header">
         <div class="wrap header-row">
-          <div class="brand-wrap"><div class="mascot brand"><span class="brand-icon-wrap premium-logo-mark" aria-hidden="true">${premiumLogoSVG(42)}</span><span>Tiny Tiffin</span></div><div class="app-tagline">${t("tagline")}</div></div>
+          <div class="brand-wrap"><div class="mascot brand" data-no-translate><span class="brand-icon-wrap premium-logo-mark" aria-hidden="true">${premiumLogoSVG(42)}</span><span>Tiny Tiffin</span></div><div class="app-tagline">${escapeHTML(CONFIG.slogan || t("tagline"))}</div></div>
           <div class="header-controls">
             <button class="theme-toggle install-action" id="install-btn" aria-label="Install app">⬇️ Install</button>
             <button class="theme-toggle install-action" id="update-btn" aria-label="Check for software update">↻ Update</button>
@@ -744,8 +774,14 @@
       </section>
 
       <section class="shopping-chip-row" aria-label="Shopping links">
-        <a class="shopping-chip fresh-chip" href="${(CONFIG.affiliate && CONFIG.shoppingLinks.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
-        <a class="shopping-chip amazon-chip" href="${(CONFIG.affiliate && CONFIG.shoppingLinks.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
+        <a class="shopping-chip fresh-chip" href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || 'https://www.amazon.in/fresh'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🥬</span><span>Amazon Fresh</span></a>
+        <a class="shopping-chip amazon-chip" href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || 'https://www.amazon.in/'}" target="_blank" rel="sponsored noopener"><span class="shopping-chip-icon">🛒</span><span>Amazon Cart</span></a>
+      </section>
+
+      <section class="global-recipe-search">
+        <label for="recipe-master-search"><strong>🔎 ${t("filterSearch")}</strong></label>
+        <input id="recipe-master-search" class="search-input" type="search" placeholder="${escapeAttr(t("searchPlaceholder"))}" value="${escapeAttr(state.filters.smartSearch)}" autocomplete="off">
+        <small>Searches the complete synchronized recipe library — main, festival, fasting and regional recipes.</small>
       </section>
 
       <section class="filters">
@@ -798,7 +834,7 @@
           </div>
         </div>
         <div class="filters-foot">
-          <span>${results.length} ${t("resultsCount")}</span>
+          <span id="find-result-count">${results.length} ${t("resultsCount")}</span>
           <button class="link-btn" id="clear-filters">${t("clearFilters")}</button>
         </div>
       </section>
@@ -841,7 +877,39 @@
     `;
   }
 
+  function refreshFindRecipeResults() {
+    const results = filteredRecipes();
+    const grid = document.getElementById("recipe-grid");
+    const count = document.getElementById("find-result-count");
+    if (count) count.textContent = `${results.length} ${t("resultsCount")}`;
+    if (grid) {
+      grid.innerHTML = results.length ? results.map(r => recipeCardHTML(r)).join("") : emptyStateHTML();
+      hydrateRecipeImages(grid);
+      attachCardEvents();
+      if (window.tinyTiffinLocalizeRecipeCards) {
+        Promise.resolve(window.tinyTiffinLocalizeRecipeCards(grid, RECIPES, state.lang)).finally(() => {
+          if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(grid, state.lang);
+        });
+      }
+    }
+  }
+
   function attachFindEvents() {
+    const masterSearch = document.getElementById("recipe-master-search");
+    let searchTimer = null;
+    if (masterSearch) masterSearch.addEventListener("input", () => {
+      state.filters.smartSearch = masterSearch.value;
+      normalizedRecipeQuery = state.filters.smartSearch;
+      refreshFindRecipeResults();
+      clearTimeout(searchTimer);
+      if (state.lang !== "en" && state.filters.smartSearch.trim()) {
+        const original = state.filters.smartSearch;
+        searchTimer = setTimeout(async () => {
+          const translated = await translateSearchToEnglish(original);
+          if (state.filters.smartSearch === original) { normalizedRecipeQuery = translated; refreshFindRecipeResults(); }
+        }, 300);
+      }
+    });
     const surpriseBtn = document.getElementById("surprise-recipe");
     if (surpriseBtn) surpriseBtn.addEventListener("click", () => {
       const pool = filteredRecipes();
@@ -880,6 +948,7 @@
     const clearBtn = document.getElementById("clear-filters");
     if (clearBtn) clearBtn.addEventListener("click", () => {
       state.filters = { age: "all", time: "any", meal: "all", nutrition: new Set(), ingredientCategory: "all", allergyExclude: new Set(), diet: "all", cuisine: "all", smartSearch: "" };
+      normalizedRecipeQuery = "";
       render();
     });
     attachCardEvents();
@@ -961,7 +1030,7 @@
 
   function groceryFallbackUrl(platform, query, pincode) {
     const q = encodeURIComponent(query);
-    const amazonTag = (CONFIG.affiliate && CONFIG.shoppingLinks.amazonUrl || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
+    const amazonTag = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
     const urls = {
       blinkit: `https://blinkit.com/s/?q=${q}`,
       zepto: `https://www.zeptonow.com/search?query=${q}`,
@@ -1145,7 +1214,7 @@
 
     return `
       <div class="smart-buy-toolbar">
-        <div class="smart-buy-progress"><span>Live comparison</span><strong>${groups.length} matches</strong></div>
+        <div class="smart-buy-progress"><span>Live comparison · ${escapeHTML(item.query || "")}</span><strong>${groups.length} product matches</strong></div>
         <div class="smart-buy-tabs">
           <button class="chip ${smartBuySort==="top"?"active":""}" data-smart-sort="top">Top Matches</button>
           <button class="chip ${smartBuySort==="savings"?"active":""}" data-smart-sort="savings">Best Savings</button>
@@ -1233,7 +1302,7 @@
       });
       const data = await response.json().catch(() => ({}));
       if (!response.ok) {
-        resultBox.innerHTML = `<div class="shop-notice"><strong>Live comparison unavailable.</strong><br>${escapeHTML(data.message || "Please try again.")}</div>`;
+        resultBox.innerHTML = `<div class="shop-notice"><strong>Live comparison unavailable.</strong><br>${escapeHTML(data.message || (data.failures && data.failures[0] && data.failures[0].message) || "Please try again.")}</div>`;
         return;
       }
 
@@ -1249,12 +1318,14 @@
             smartBuySort = sortBtn.dataset.smartSort || "top";
             resultBox.innerHTML = renderSmartShoppingResults(data);
             bindResults();
+            if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(resultBox, state.lang);
           });
         });
       };
 
       resultBox.innerHTML = renderSmartShoppingResults(data);
       bindResults();
+      if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(resultBox, state.lang);
     } catch (e) {
       resultBox.innerHTML = `<div class="shop-notice"><strong>Could not reach the live price service.</strong><br>Please try again shortly.</div>`;
     } finally {
@@ -1270,8 +1341,8 @@
         <div class="smart-live-hero">
           <div>
             <div class="festival-kicker">⚡ Smart Buy</div>
-            <h2>Compare the same product across stores</h2>
-            <p>Search Paneer, Idli Batter, Milk, Oats or any grocery item. Tiny Tiffin groups matching products and shows each store price together so you can choose quickly.</p>
+            <h2>Search once. Compare live prices across stores.</h2>
+            <p>Search any grocery item and see matching products from supported stores together, ranked so the lowest live price is easy to spot.</p>
           </div>
           <div class="smart-live-icon">🛒</div>
         </div>
@@ -1283,6 +1354,7 @@
           <button class="btn btn-primary" id="smart-live-compare" type="button">Compare Live Prices</button>
         </div>
 
+        <div class="smart-store-strip" data-no-translate>⚡ BlinkIt · Zepto · Swiggy Instamart · BigBasket · DMart · JioMart · Flipkart Minutes · Amazon · Flipkart</div>
         <div class="smart-quick-items">
           ${["Paneer","Idli Batter","Milk","Banana","Bread","Tofu"].map(x => `<button class="chip" data-smart-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
         </div>
@@ -1531,7 +1603,13 @@
       closeModal();
       render();
     });
-    if (window.tinyTiffinLocalizeRecipe) window.tinyTiffinLocalizeRecipe(r, backdrop, state.lang);
+    if (window.tinyTiffinLocalizeRecipe) {
+      Promise.resolve(window.tinyTiffinLocalizeRecipe(r, backdrop, state.lang)).finally(() => {
+        if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(backdrop, state.lang);
+      });
+    } else if (window.tinyTiffinLocalizePage) {
+      window.tinyTiffinLocalizePage(backdrop, state.lang);
+    }
   }
   function closeModal() { const m = document.getElementById("recipe-modal"); if (m) m.remove(); }
 
@@ -1751,7 +1829,8 @@
     return base.replace('<div class="card-actions">', missingNote + '<div class="card-actions">');
   }
   function computeMatches(inputStr) {
-    const terms = inputStr.split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+    const combined = [inputStr, state.matchEnglish].filter(Boolean).join(",");
+    const terms = combined.split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
     const full = [], partial = [];
     if (!terms.length) return { full, partial };
     RECIPES.forEach(r => {
@@ -1768,10 +1847,23 @@
   }
   function attachMatchEvents() {
     const input = document.getElementById("match-input");
-    if (input) input.addEventListener("input", (e) => {
+    if (input) input.addEventListener("input", async (e) => {
       state.matchInput = e.target.value;
-      document.getElementById("match-results").innerHTML = renderMatchResults(computeMatches(state.matchInput));
+      state.matchEnglish = state.lang === "en" ? state.matchInput : "";
+      const resultEl = document.getElementById("match-results");
+      resultEl.innerHTML = renderMatchResults(computeMatches(state.matchInput));
       attachCardEvents();
+      if (state.lang !== "en" && state.matchInput.trim()) {
+        const original = state.matchInput;
+        const translated = await translateSearchToEnglish(original);
+        if (state.matchInput === original) {
+          state.matchEnglish = translated;
+          resultEl.innerHTML = renderMatchResults(computeMatches(state.matchInput));
+          attachCardEvents();
+          if (window.tinyTiffinLocalizeRecipeCards) await window.tinyTiffinLocalizeRecipeCards(resultEl, RECIPES, state.lang);
+          if (window.tinyTiffinLocalizePage) window.tinyTiffinLocalizePage(resultEl, state.lang);
+        }
+      }
     });
     attachCardEvents();
   }
@@ -1826,9 +1918,13 @@
     const planInput = document.getElementById("ai-plan-input");
     if (planInput) planInput.addEventListener("input", e => state.aiInput = e.target.value);
     const planBtn = document.getElementById("ai-plan-btn");
-    if (planBtn) planBtn.addEventListener("click", () => {
+    if (planBtn) planBtn.addEventListener("click", async () => {
       state.aiInput = planInput.value;
+      const originalAIInput = state.aiInput;
+      const normalizedAIInput = await translateSearchToEnglish(originalAIInput);
+      state.aiInput = normalizedAIInput || originalAIInput;
       state.aiPlan = aiBuildPlan();
+      state.aiInput = originalAIInput;
       const out = document.getElementById("ai-plan-results");
       out.innerHTML = `<div class="ai-plan-list">${state.aiPlan.map(x => `<div><strong>${x.day}</strong><span>${x.recipe.emoji} ${recipeName(x.recipe)}</span><button class="link-btn" data-ai-add="${x.day}|${x.recipe.id}">Add</button></div>`).join("")}</div>`;
       out.querySelectorAll("[data-ai-add]").forEach(btn => btn.addEventListener("click", () => { addToPlanner(btn.dataset.aiAdd.split("|")[0], "lunch", btn.dataset.aiAdd.split("|")[1]); toast("Added to weekly planner"); }));
@@ -1836,7 +1932,12 @@
     const img = document.getElementById("ai-image-input");
     if (img) img.addEventListener("change", () => { const file = img.files && img.files[0]; if (!file) return; const preview = document.getElementById("ai-preview"); preview.src = URL.createObjectURL(file); preview.style.display = "block"; });
     const scanBtn = document.getElementById("ai-scan-btn");
-    if (scanBtn) scanBtn.addEventListener("click", () => { state.aiResults = aiRecipeMatches(document.getElementById("ai-scan-text").value); render(); });
+    if (scanBtn) scanBtn.addEventListener("click", async () => {
+      const raw = document.getElementById("ai-scan-text").value;
+      const normalized = await translateSearchToEnglish(raw);
+      state.aiResults = aiRecipeMatches(normalized || raw);
+      render();
+    });
     const shopBtn = document.getElementById("ai-shop-btn");
     if (shopBtn) shopBtn.addEventListener("click", openGroceryModal);
     attachCardEvents();
@@ -1932,7 +2033,6 @@
     return `
       <div class="simple-page">
         <h2>${t("developerTitle")}</h2>
-        <p><strong>${t("developerBuiltBy")}:</strong> ${dev.name || "Hardik Desai"}</p>
         <h4 style="margin:22px 0 8px">Purpose of Tiny Tiffin</h4>
         <p class="desc">${purpose}</p>
         <p class="desc developer-story">${(dev.about || t("developerNote")).replace(/\n{2,}/g, "\n").replace(/\n/g, "<br>")}</p>

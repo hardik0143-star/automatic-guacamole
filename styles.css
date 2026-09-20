@@ -797,3 +797,12 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 [data-theme="dark"] .smart-store-price-row{background:#2b211a}
 [data-theme="dark"] .smart-store-price-row.best{background:#19382c}
 @media(max-width:520px){.smart-product-grid{grid-template-columns:1fr}.smart-product-image{height:155px}.smart-store-price-row{grid-template-columns:minmax(100px,1fr) auto auto 18px}}
+
+/* v2.5 synchronized recipe search + copyright + Smart Buy */
+.global-recipe-search{background:var(--card,#fff);border:1px solid rgba(43,78,50,.12);border-radius:18px;padding:16px;margin:18px 0;box-shadow:0 8px 20px rgba(0,0,0,.04)}
+.global-recipe-search label{display:block;margin-bottom:8px;color:var(--masala,#2B4E32)}
+.global-recipe-search .search-input{width:100%;box-sizing:border-box}
+.global-recipe-search small{display:block;margin-top:7px;color:var(--ink-soft,#667)}
+.copyright-line{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.15);font-size:.8rem;opacity:.9}
+.smart-store-strip{margin:10px 0 14px;padding:10px 12px;border-radius:12px;background:rgba(43,78,50,.07);font-size:.78rem;line-height:1.55;color:var(--ink-soft,#667)}
+.smart-product-card .smart-store-price-row.best{outline:2px solid rgba(43,78,50,.28);font-weight:800}
