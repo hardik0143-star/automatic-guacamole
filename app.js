@@ -543,105 +543,122 @@
   };
 
   function renderShoppingTab() {
-    const savedPin = smartShoppingLocation.pincode || "";
+    const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
     return `
-      <section class="sd-buy-shell">
-        <div class="sd-location-bar">
-          <span class="sd-pin-icon">📍</span>
-          <div><small>DELIVERING TO</small><strong id="sd-location-label">${savedPin ? `PIN ${escapeHTML(savedPin)}` : "Enter your PIN code"}</strong></div>
+      <section class="shortcut-buy-shell">
+        <div class="shortcut-buy-hero">
+          <div class="shortcut-hero-copy">
+            <span class="shortcut-kicker">🛒 SMART BUY</span>
+            <h1>Shop smarter,<br>without the extra steps.</h1>
+            <p>Search an item once, then choose where you want to shop or compare prices.</p>
+          </div>
+          <div class="shortcut-hero-veg">🥦🥕🍅</div>
         </div>
 
-        <div class="sd-hero-card">
-          <div class="sd-eyebrow">↔ ONE SEARCH · MANY STORES</div>
-          <h1>Same product,<br>many prices.</h1>
-          <p>Search once and compare live grocery prices from supported stores in one clear view.</p>
-          <div class="sd-platform-pills" data-no-translate>
-            <span>BlinkIt</span><span>Zepto</span><span>Instamart</span><span>BigBasket</span><span>DMart</span><span>JioMart</span><span>Minutes</span>
+        <div class="shortcut-search-card">
+          <div class="shortcut-search-row">
+            <span>🔎</span>
+            <input id="store-shortcut-query" type="search" autocomplete="off" placeholder="Search milk, paneer, fruits, vegetables, atta..." value="${escapeAttr(smartShoppingSelectedQuery || "")}">
+            <button id="store-shortcut-go" type="button">Update links</button>
           </div>
+          <small>No live-price credits are used. Store prices and availability are shown on the respective websites.</small>
         </div>
 
-        <div class="sd-search-card">
-          <div class="sd-search-row">
-            <span class="sd-search-icon">⌕</span>
-            <input id="smart-buy-query" type="search" autocomplete="off" placeholder="Search milk, atta, paneer..." value="${escapeAttr(smartShoppingSelectedQuery)}">
-            <button id="smart-buy-search" class="sd-search-button" type="button">Search</button>
-          </div>
-          <div class="sd-pin-row">
-            <input id="smart-buy-pin" inputmode="numeric" maxlength="6" placeholder="6-digit PIN code" value="${escapeAttr(savedPin)}">
-            <button id="smart-buy-location" type="button" class="sd-location-button">📍 Use location</button>
-          </div>
-          <div id="smart-buy-status" class="sd-status">Enter a product and PIN code, or use your location.</div>
+        <section class="shortcut-store-strip" aria-label="Shopping stores">
+          <a href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener" title="Amazon">
+            <img src="store-logos/amazon.svg" alt="Amazon">
+          </a>
+          <a href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener" title="Amazon Fresh">
+            <img src="store-logos/amazon-fresh.svg" alt="Amazon Fresh">
+          </a>
+          <a href="https://sastadekho.in/" target="_blank" rel="noopener" title="Compare prices">
+            <img src="store-logos/sasta.svg" alt="Price comparison">
+          </a>
+          <a href="https://blinkit.com/" target="_blank" rel="noopener" title="Blinkit"><img src="store-logos/blinkit.svg" alt="Blinkit"></a>
+          <a href="https://www.zeptonow.com/" target="_blank" rel="noopener" title="Zepto"><img src="store-logos/zepto.svg" alt="Zepto"></a>
+          <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" title="Instamart"><img src="store-logos/instamart.svg" alt="Instamart"></a>
+          <a href="https://www.jiomart.com/" target="_blank" rel="noopener" title="JioMart"><img src="store-logos/jiomart.svg" alt="JioMart"></a>
+          <a href="https://www.dmart.in/" target="_blank" rel="noopener" title="DMart"><img src="store-logos/dmart.svg" alt="DMart"></a>
+          <a href="https://www.bigbasket.com/" target="_blank" rel="noopener" title="BigBasket"><img src="store-logos/bigbasket.svg" alt="BigBasket"></a>
+        </section>
+
+        <div class="shortcut-buy-cards">
+          <article class="shortcut-buy-card amazon-card">
+            <div class="shortcut-card-logo"><img src="store-logos/amazon.svg" alt="Amazon"></div>
+            <div>
+              <h3>Wide range. Easy shopping.</h3>
+              <p>Open your product search directly on Amazon.</p>
+              <a id="smart-amazon-link" class="shortcut-cta dark" href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener">Shop Now →</a>
+            </div>
+          </article>
+
+          <article class="shortcut-buy-card fresh-card">
+            <div class="shortcut-card-logo"><img src="store-logos/amazon-fresh.svg" alt="Amazon Fresh"></div>
+            <div>
+              <h3>Fresh groceries for everyday meals.</h3>
+              <p>Open your product search directly on Amazon Fresh.</p>
+              <a id="smart-fresh-link" class="shortcut-cta green" href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener">Shop Fresh →</a>
+            </div>
+          </article>
+
+          <article class="shortcut-buy-card compare-card">
+            <div class="shortcut-card-logo icon-only"><img src="store-logos/sasta.svg" alt="Price comparison"></div>
+            <div>
+              <h3>Want to compare store prices?</h3>
+              <p>Open the comparison service and check the same product across supported apps.</p>
+              <a class="shortcut-cta orange icon-cta" href="https://sastadekho.in/" target="_blank" rel="noopener" aria-label="Open price comparison service">
+                <img src="store-logos/sasta.svg" alt="">
+              </a>
+            </div>
+          </article>
         </div>
 
-        <div class="sd-quick-row">
-          ${["Milk","Paneer","Atta","Idli Batter","Banana","Bread"].map(x=>`<button class="chip" data-sd-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
+        <div class="shortcut-benefits">
+          <span>🌿 <strong>Save time</strong></span>
+          <span>🛍️ <strong>Shop directly</strong></span>
+          <span>🏷️ <strong>Compare externally</strong></span>
+          <span>✅ <strong>Trusted stores</strong></span>
         </div>
 
-        <div id="smart-buy-results" class="sd-results">
-          <div class="sd-empty">
-            <div class="sd-empty-icon">🛒</div>
-            <h3>Search a grocery product</h3>
-            <p>Tiny Tiffin will group the same product across stores and highlight the lowest live price.</p>
-          </div>
-        </div>
+        <div class="shortcut-note">ℹ️ Prices, stock and delivery information are displayed by the respective shopping or comparison website.</div>
       </section>`;
   }
 
   function attachShoppingEvents() {
-    const query=document.getElementById("smart-buy-query");
-    const pin=document.getElementById("smart-buy-pin");
-    const search=document.getElementById("smart-buy-search");
-    const locate=document.getElementById("smart-buy-location");
-    const status=document.getElementById("smart-buy-status");
-    const results=document.getElementById("smart-buy-results");
-    const locationLabel=document.getElementById("sd-location-label");
-    if(!query||!pin||!search||!results)return;
+    const query = document.getElementById("store-shortcut-query");
+    const go = document.getElementById("store-shortcut-go");
+    const amazon = document.getElementById("smart-amazon-link");
+    const fresh = document.getElementById("smart-fresh-link");
+    if (!query || !go) return;
 
-    const savePin=()=>{
-      const cleaned=String(pin.value||"").replace(/\D/g,"").slice(0,6);
-      pin.value=cleaned;
-      smartShoppingLocation.pincode=cleaned;
-      if(cleaned.length===6){
-        storage.set("tt_grocery_pincode",cleaned);
-        if(locationLabel)locationLabel.textContent=`PIN ${cleaned}`;
+    const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
+
+    const updateLinks = () => {
+      const q = String(query.value || "").trim();
+      smartShoppingSelectedQuery = q;
+      if (amazon) {
+        amazon.href = q
+          ? `https://www.amazon.in/s?k=${encodeURIComponent(q)}&tag=${encodeURIComponent(amazonTag)}`
+          : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${encodeURIComponent(amazonTag)}`);
       }
-      return cleaned;
+      if (fresh) {
+        fresh.href = q
+          ? `https://www.amazon.in/fresh/s?k=${encodeURIComponent(q)}&tag=${encodeURIComponent(amazonTag)}`
+          : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${encodeURIComponent(amazonTag)}`);
+      }
+      go.textContent = q ? "Links ready ✓" : "Update links";
+      setTimeout(() => { if (go) go.textContent = "Update links"; }, 1200);
     };
 
-    pin.addEventListener("input",savePin);
-    query.addEventListener("input",()=>{smartShoppingSelectedQuery=query.value;});
-    query.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();search.click();}});
-    pin.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();search.click();}});
-
-    document.querySelectorAll("[data-sd-quick]").forEach(btn=>btn.addEventListener("click",()=>{
-      query.value=btn.dataset.sdQuick||"";
-      smartShoppingSelectedQuery=query.value;
-      search.click();
-    }));
-
-    if(locate)locate.addEventListener("click",()=>{
-      if(!navigator.geolocation){status.textContent="Location is not available in this browser. Enter your 6-digit PIN code instead.";return;}
-      status.textContent="Getting your location…";
-      navigator.geolocation.getCurrentPosition(pos=>{
-        smartShoppingLocation.latitude=Number(pos.coords.latitude.toFixed(6));
-        smartShoppingLocation.longitude=Number(pos.coords.longitude.toFixed(6));
-        status.textContent="Location captured. You can search now.";
-        if(locationLabel)locationLabel.textContent="Current location";
-      },()=>{
-        status.textContent="Location permission was not available. Enter your 6-digit PIN code instead.";
-      },{enableHighAccuracy:false,timeout:10000,maximumAge:300000});
+    go.addEventListener("click", updateLinks);
+    query.addEventListener("input", updateLinks);
+    query.addEventListener("keydown", e => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        updateLinks();
+      }
     });
-
-    search.addEventListener("click",()=>{
-      savePin();
-      runSmartShoppingLiveSearch(query.value,results,search,status);
-    });
-
-    // Lightweight readiness check: tells the user immediately if the Vercel API key is missing.
-    fetch("/api/compare-prices",{method:"GET",cache:"no-store"}).then(r=>r.json()).then(data=>{
-      if(data.status==="ready") status.textContent="Live price service ready.";
-      else if(data.status==="not_configured") status.textContent="Live price service needs QUICKCOMMERCE_API_KEY in Vercel.";
-    }).catch(()=>{});
+    updateLinks();
   }
 
   /* ---------- Festival Tiffin ---------- */

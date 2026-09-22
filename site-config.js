@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.6",
+  version: "v2.7",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Rebuilt Smart Buy into one clear live multi-store price comparison experience inspired by modern comparison apps; added dual QuickCommerce endpoint support; renamed Developer to About us and Purpose of Tiny Tiffin to Our story.",
+  releaseNotes: "Smart Buy simplified to direct Amazon, Amazon Fresh and external comparison shortcuts with compact store-logo access. Live price API removed, so Smart Buy no longer uses paid credits.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
