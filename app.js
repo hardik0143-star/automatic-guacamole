@@ -557,90 +557,127 @@
     return marks[key] || `<span class="sbm"><span>shop</span></span>`;
   }
 
+  function smartBuyMockLogo(key) {
+    const map = {
+      amazon: `<span class="tt-store-logo tt-amazon-logo"><b>amazon</b><i></i></span>`,
+      fresh: `<span class="tt-store-logo tt-fresh-logo"><b>amazon</b><em>fresh</em></span>`,
+      compare: `<span class="tt-store-logo tt-compare-logo"><b>₹</b></span>`,
+      blinkit: `<span class="tt-store-logo tt-blinkit-logo"><b>blinkit</b></span>`,
+      zepto: `<span class="tt-store-logo tt-zepto-logo"><b>zepto</b></span>`,
+      instamart: `<span class="tt-store-logo tt-instamart-logo"><b>↯</b></span>`,
+      jiomart: `<span class="tt-store-logo tt-jio-logo"><b>Jio</b></span>`,
+      dmart: `<span class="tt-store-logo tt-dmart-logo"><b>DMart</b></span>`,
+      bigbasket: `<span class="tt-store-logo tt-bigbasket-logo"><b>bb</b></span>`
+    };
+    return map[key] || `<span class="tt-store-logo"><b>shop</b></span>`;
+  }
+
   function renderShoppingTab() {
     const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
     const amazonHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`;
     const freshHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`;
 
     return `
-      <section class="smart-buy-final">
-        <div class="smart-buy-final-hero">
-          <div class="smart-buy-final-copy">
-            <span class="smart-buy-final-kicker">🛒 SMART BUY</span>
-            <h1>Smart Buy</h1>
-            <p>Find ingredients quickly, then choose where you want to shop or compare prices.</p>
+      <section class="tt-smartbuy">
+        <div class="tt-smartbuy-hero">
+          <div class="tt-smartbuy-hero-copy">
+            <div class="tt-smartbuy-title-row">
+              <span class="tt-smartbuy-cart">🛒</span>
+              <div>
+                <h1>Smart Buy</h1>
+                <p>Compare prices. Save money. Shop smarter.</p>
+              </div>
+            </div>
+            <div class="tt-smartbuy-points">
+              <span>✓ Grocery & daily essentials</span>
+              <span>✓ Fresh & healthy choices</span>
+              <span>✓ Direct to store</span>
+            </div>
           </div>
-          <div class="smart-buy-final-art" aria-hidden="true">🥦 🥕 🍅</div>
+          <div class="tt-smartbuy-hero-art" aria-hidden="true">🥬🥦🍅🥕</div>
         </div>
 
-        <div class="smart-buy-final-search">
-          <span class="smart-buy-final-search-icon">🔎</span>
-          <input id="store-shortcut-query" type="search" autocomplete="off"
-            placeholder="Search milk, paneer, fruits, vegetables, atta..."
-            value="${escapeAttr(smartShoppingSelectedQuery || "")}">
+        <div class="tt-smartbuy-search-wrap">
+          <div class="tt-smartbuy-search">
+            <span class="tt-smartbuy-search-icon">⌕</span>
+            <input id="store-shortcut-query" type="search" autocomplete="off"
+              placeholder="Search for milk, paneer, fruits, vegetables, atta..."
+              value="${escapeAttr(smartShoppingSelectedQuery || "")}">
+          </div>
         </div>
 
-        <div class="smart-buy-final-actions">
-          <article class="smart-buy-action-card amazon-card">
-            <div class="smart-buy-action-logo">${smartBuyBrandMark("amazon")}</div>
-            <div class="smart-buy-action-copy">
+        <div class="tt-smartbuy-main-actions">
+          <article class="tt-shop-card tt-amazon-card">
+            <div class="tt-shop-card-logo">${smartBuyMockLogo("amazon")}</div>
+            <div class="tt-shop-card-body">
               <h3>Shop on Amazon</h3>
               <p>Wide range. Great deals.</p>
             </div>
-            <a id="smart-amazon-link" href="${amazonHome}" target="_blank" rel="sponsored noopener"
-              class="smart-buy-arrow" aria-label="Shop on Amazon">→</a>
+            <a id="smart-amazon-link" class="tt-round-arrow" href="${amazonHome}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon">→</a>
           </article>
 
-          <article class="smart-buy-action-card fresh-card">
-            <div class="smart-buy-action-logo">${smartBuyBrandMark("fresh")}</div>
-            <div class="smart-buy-action-copy">
+          <article class="tt-shop-card tt-fresh-card">
+            <div class="tt-shop-card-logo">${smartBuyMockLogo("fresh")}</div>
+            <div class="tt-shop-card-body">
               <h3>Shop on Amazon Fresh</h3>
-              <p>Fresh groceries. Easy shopping.</p>
+              <p>Fresh groceries. Fast delivery.</p>
             </div>
-            <a id="smart-fresh-link" href="${freshHome}" target="_blank" rel="sponsored noopener"
-              class="smart-buy-arrow" aria-label="Shop on Amazon Fresh">→</a>
+            <a id="smart-fresh-link" class="tt-round-arrow" href="${freshHome}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon Fresh">→</a>
           </article>
 
-          <article class="smart-buy-action-card compare-card">
-            <span class="smart-buy-deal-badge">BEST DEALS</span>
-            <div class="smart-buy-action-logo compare-logo">${smartBuyBrandMark("compare")}</div>
-            <div class="smart-buy-action-copy">
+          <article class="tt-shop-card tt-compare-card">
+            <span class="tt-best-deal">BEST DEALS</span>
+            <div class="tt-shop-card-logo">${smartBuyMockLogo("compare")}</div>
+            <div class="tt-shop-card-body">
               <h3>Compare Prices</h3>
               <p>Check this item across multiple shopping apps.</p>
             </div>
-            <a href="https://pricebasket.in/" target="_blank" rel="noopener"
-              class="smart-buy-compare-cta" aria-label="Compare grocery prices">
+            <a class="tt-compare-now" href="https://pricebasket.in/" target="_blank" rel="noopener" aria-label="Compare prices on PriceBasket">
               Compare now <span>→</span>
             </a>
           </article>
         </div>
 
-        <section class="smart-buy-popular">
-          <div class="smart-buy-popular-head">
+        <section class="tt-popular-stores">
+          <div class="tt-popular-head">
             <div>
-              <strong>Quick access to popular stores</strong>
-              <small>Tap a logo to open the store</small>
+              <h3>Quick access to popular stores</h3>
+              <p>Tap a logo to open your favourite grocery app</p>
             </div>
           </div>
-          <div class="smart-buy-store-grid" data-no-translate>
-            <a href="https://blinkit.com/" target="_blank" rel="noopener" aria-label="Blinkit">${smartBuyBrandMark("blinkit")}<span>Blinkit</span></a>
-            <a href="https://www.zeptonow.com/" target="_blank" rel="noopener" aria-label="Zepto">${smartBuyBrandMark("zepto")}<span>Zepto</span></a>
-            <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" aria-label="Instamart">${smartBuyBrandMark("instamart")}<span>Instamart</span></a>
-            <a href="https://www.jiomart.com/" target="_blank" rel="noopener" aria-label="JioMart">${smartBuyBrandMark("jiomart")}<span>JioMart</span></a>
-            <a href="https://www.dmart.in/" target="_blank" rel="noopener" aria-label="DMart">${smartBuyBrandMark("dmart")}<span>DMart</span></a>
-            <a href="https://www.bigbasket.com/" target="_blank" rel="noopener" aria-label="BigBasket">${smartBuyBrandMark("bigbasket")}<span>BigBasket</span></a>
+
+          <div class="tt-store-row" data-no-translate>
+            <a href="https://blinkit.com/" target="_blank" rel="noopener" aria-label="Blinkit">
+              ${smartBuyMockLogo("blinkit")}<span>Blinkit</span>
+            </a>
+            <a href="https://www.zeptonow.com/" target="_blank" rel="noopener" aria-label="Zepto">
+              ${smartBuyMockLogo("zepto")}<span>Zepto</span>
+            </a>
+            <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" aria-label="Instamart">
+              ${smartBuyMockLogo("instamart")}<span>Instamart</span>
+            </a>
+            <a href="https://www.jiomart.com/" target="_blank" rel="noopener" aria-label="JioMart">
+              ${smartBuyMockLogo("jiomart")}<span>JioMart</span>
+            </a>
+            <a href="https://www.dmart.in/" target="_blank" rel="noopener" aria-label="DMart">
+              ${smartBuyMockLogo("dmart")}<span>DMart</span>
+            </a>
+            <a href="https://www.bigbasket.com/" target="_blank" rel="noopener" aria-label="BigBasket">
+              ${smartBuyMockLogo("bigbasket")}<span>BigBasket</span>
+            </a>
           </div>
         </section>
 
-        <div class="smart-buy-benefits">
+        <div class="tt-smartbuy-benefits">
           <span>🌿 <strong>Save time</strong></span>
           <span>🪙 <strong>Compare easily</strong></span>
           <span>🏷️ <strong>Better deals</strong></span>
           <span>✅ <strong>Trusted stores</strong></span>
         </div>
 
-        <div class="smart-buy-final-note">
-          ℹ️ Prices and availability are shown on the respective store or comparison website.
+        <div class="tt-smartbuy-note">
+          <span>ℹ️ Prices and availability are shown on respective store websites. Tiny Tiffin does not sell products.</span>
+          <strong>♡ Shop Smart, Eat Healthy 🌿</strong>
         </div>
       </section>`;
   }
@@ -653,7 +690,7 @@
 
     const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
 
-    const updateLinks = () => {
+    const syncLinks = () => {
       const q = String(query.value || "").trim();
       smartShoppingSelectedQuery = q;
       if (amazon) {
@@ -667,10 +704,9 @@
           : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${encodeURIComponent(amazonTag)}`);
       }
     };
-
-    query.addEventListener("input", updateLinks);
-    query.addEventListener("change", updateLinks);
-    updateLinks();
+    query.addEventListener("input", syncLinks);
+    query.addEventListener("change", syncLinks);
+    syncLinks();
   }
 
   /* ---------- Festival Tiffin ---------- */

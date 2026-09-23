@@ -1,5 +1,5 @@
 /* Tiny Tiffin v2.5 service worker — network-first app updates, offline fallback */
-const CACHE_NAME = "tiny-tiffin-v2-10-approved-smart-buy";
+const CACHE_NAME = "tiny-tiffin-v2-11-smartbuy-mockup-match";
 const SHELL_FILES = ["./","./index.html","./styles.css?v=2.5","./app.js?v=2.5","./recipes.js?v=2.5","./festival.js?v=2.5","./fasting.js?v=2.5","./regional.js?v=2.5","./content-translator.js?v=2.5","./i18n.js?v=2.5","./site-config.js?v=2.5","./store.js?v=2.5","./manifest.json","./premium-ui.css","./festival-tiffin-hero.svg","./indian-fasting-tiffin-hero.svg","./icon-192.png","./icon-512.png","./apple-touch-icon.png"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(SHELL_FILES)).catch(()=>{}));self.skipWaiting();});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))));self.clients.claim();});

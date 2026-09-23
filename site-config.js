@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.10",
+  version: "v2.11",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Approved Smart Buy layout: removed Update Shopping Links, Amazon and Amazon Fresh update automatically while typing, and Compare Prices is highlighted with a Compare now action linking to PriceBasket.",
+  releaseNotes: "Smart Buy rebuilt to closely match the approved mockup with a compact hero, overlapping search bar, three primary action cards, highlighted Compare Prices CTA, six-store logo grid, benefits strip and clean mobile alignment.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
