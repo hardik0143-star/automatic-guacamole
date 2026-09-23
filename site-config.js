@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.9",
+  version: "v2.10",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Replaced the previous external comparison shortcut with PriceBasket, while keeping the Smart Buy interface compact and icon-only for the comparison service.",
+  releaseNotes: "Approved Smart Buy layout: removed Update Shopping Links, Amazon and Amazon Fresh update automatically while typing, and Compare Prices is highlighted with a Compare now action linking to PriceBasket.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

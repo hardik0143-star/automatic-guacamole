@@ -187,3 +187,46 @@ html[data-theme="dark"] .shop-card h3,html[data-theme="dark"] .shop-notice,html[
   .smart-store-heading{align-items:flex-start;flex-direction:column;gap:2px}
   .app-tagline{font-size:.59rem!important;max-width:210px;overflow:hidden;text-overflow:ellipsis}
 }
+
+/* v2.10 approved Smart Buy layout */
+.smart-buy-final{max-width:940px;margin:0 auto 32px;padding:10px 12px 0}
+.smart-buy-final-hero{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px;border-radius:24px;background:linear-gradient(135deg,#edf8ec 0%,#f8f8e9 100%);border:1px solid rgba(39,85,55,.12)}
+.smart-buy-final-kicker{display:block;font-size:.76rem;font-weight:900;letter-spacing:.14em;color:#9f4f24;margin-bottom:5px}
+.smart-buy-final-hero h1{margin:0;color:#0f412b;font-size:clamp(2rem,6vw,3.1rem);line-height:1}
+.smart-buy-final-hero p{margin:9px 0 0;color:#506057;font-size:.94rem;line-height:1.45;max-width:590px}
+.smart-buy-final-art{font-size:clamp(2.6rem,7vw,5rem);white-space:nowrap}
+.smart-buy-final-search{display:flex;align-items:center;gap:10px;margin-top:14px;background:#fff;border:1px solid rgba(70,70,60,.18);border-radius:18px;padding:4px 14px;box-shadow:0 5px 16px rgba(31,47,37,.05)}
+.smart-buy-final-search input{width:100%;min-width:0;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:inherit;font-size:1rem;padding:13px 0}
+.smart-buy-final-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.smart-buy-action-card{position:relative;display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;min-height:118px;padding:16px;border-radius:20px;border:1px solid rgba(70,70,60,.11)}
+.smart-buy-action-card.amazon-card{background:linear-gradient(145deg,#fff2dd,#f6e4c4)}
+.smart-buy-action-card.fresh-card{background:linear-gradient(145deg,#eef9e9,#deefd8)}
+.smart-buy-action-card.compare-card{background:linear-gradient(145deg,#fff2ee,#f7dddd);border:1px solid rgba(238,78,70,.22);box-shadow:0 7px 22px rgba(236,77,66,.10)}
+.smart-buy-action-logo{width:58px;height:58px}
+.smart-buy-action-copy h3{margin:0 0 5px;color:#203029;font-size:1rem}
+.smart-buy-action-copy p{margin:0;color:#68716c;font-size:.8rem;line-height:1.35}
+.smart-buy-arrow{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:#163826;text-decoration:none;font-size:1.3rem;font-weight:900}
+.smart-buy-compare-cta{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;background:linear-gradient(90deg,#f03d33,#ff5a42);color:#fff;font-weight:900;border-radius:999px;padding:11px 16px;margin-top:2px}
+.smart-buy-deal-badge{position:absolute;top:9px;right:10px;background:#f0443b;color:#fff;border-radius:999px;padding:5px 8px;font-size:.6rem;font-weight:900;letter-spacing:.04em}
+.smart-buy-popular{margin-top:14px;background:#fff;border:1px solid rgba(70,70,60,.12);border-radius:20px;padding:15px}
+.smart-buy-popular-head strong{display:block;font-size:.95rem}.smart-buy-popular-head small{display:block;margin-top:2px;color:#777;font-size:.72rem}
+.smart-buy-store-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:12px}
+.smart-buy-store-grid a{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;color:#27342d;font-size:.72rem;font-weight:700;min-width:0}
+.smart-buy-store-grid a>.sbm{width:64px;height:64px;min-height:64px}
+.smart-buy-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px;background:#fff;border:1px solid rgba(70,70,60,.12);border-radius:18px;padding:13px}
+.smart-buy-benefits span{text-align:center;font-size:.76rem;color:#38463e}
+.smart-buy-final-note{margin-top:10px;padding:11px 13px;border-radius:14px;background:#f5f7f5;color:#707771;font-size:.72rem;line-height:1.35}
+@media(max-width:720px){
+  .smart-buy-final{padding:8px 9px 0}
+  .smart-buy-final-hero{padding:16px;border-radius:18px}
+  .smart-buy-final-hero h1{font-size:1.85rem}
+  .smart-buy-final-art{font-size:2.3rem}
+  .smart-buy-final-actions{grid-template-columns:1fr}
+  .smart-buy-action-card{grid-template-columns:58px 1fr auto;min-height:0;padding:13px}
+  .smart-buy-action-logo{width:52px;height:52px}
+  .smart-buy-action-copy h3{font-size:.95rem}
+  .smart-buy-action-copy p{font-size:.76rem}
+  .smart-buy-store-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 8px}
+  .smart-buy-store-grid a>.sbm{width:58px;height:58px;min-height:58px}
+  .smart-buy-benefits{grid-template-columns:1fr 1fr}
+}
