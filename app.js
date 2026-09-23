@@ -352,7 +352,7 @@
   /* ---------------- rendering ---------------- */
   const premiumStyle = document.createElement("link");
   premiumStyle.rel = "stylesheet";
-  premiumStyle.href = "premium-ui.css?v=1.3.1";
+  premiumStyle.href = "premium-ui.css?v=2.12";
   document.head.appendChild(premiumStyle);
 
   const root = document.getElementById("app");
@@ -576,106 +576,91 @@
     const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
     const amazonHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`;
     const freshHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`;
+    const savedPin = storage.get("tt_grocery_pincode", "");
 
     return `
-      <section class="tt-smartbuy">
-        <div class="tt-smartbuy-hero">
-          <div class="tt-smartbuy-hero-copy">
-            <div class="tt-smartbuy-title-row">
-              <span class="tt-smartbuy-cart">🛒</span>
+      <section class="tt-smartbuy-exact">
+        <div class="tt-sb-hero">
+          <div class="tt-sb-title">
+            <span class="tt-sb-cart">🛒</span>
+            <div>
+              <h1>Smart Buy</h1>
+              <p>Find ingredients at the best prices — quick and easy!</p>
+            </div>
+          </div>
+          <div class="tt-sb-hero-message">Good Food<br>Smart Choices<br>Happier Families! ♡</div>
+          <div class="tt-sb-produce" aria-hidden="true">🥬🥦🫑🍅🥕</div>
+        </div>
+
+        <div class="tt-sb-searchbar">
+          <span class="tt-sb-search-icon">⌕</span>
+          <input id="store-shortcut-query" type="search" autocomplete="off"
+            placeholder="Search for milk, paneer, fruits, vegetables, atta..."
+            value="${escapeAttr(smartShoppingSelectedQuery || "")}">
+          <div class="tt-sb-pin">
+            <span>📍</span>
+            <input id="smart-buy-pin-memory" inputmode="numeric" maxlength="6"
+              aria-label="Delivery PIN code" placeholder="PIN"
+              value="${escapeAttr(savedPin)}">
+          </div>
+        </div>
+
+        <div class="tt-sb-action-grid">
+          <article class="tt-sb-card tt-sb-amazon">
+            <div class="tt-sb-big-logo">${smartBuyMockLogo("amazon")}</div>
+            <h3>Shop on Amazon</h3>
+            <p>Wide range. Great deals.</p>
+            <a id="smart-amazon-link" href="${amazonHome}" target="_blank" rel="sponsored noopener"
+              class="tt-sb-circle-arrow" aria-label="Shop on Amazon">→</a>
+          </article>
+
+          <article class="tt-sb-card tt-sb-fresh">
+            <div class="tt-sb-big-logo">${smartBuyMockLogo("fresh")}</div>
+            <h3>Shop on Amazon Fresh</h3>
+            <p>Fresh groceries. Fast delivery.</p>
+            <a id="smart-fresh-link" href="${freshHome}" target="_blank" rel="sponsored noopener"
+              class="tt-sb-circle-arrow" aria-label="Shop on Amazon Fresh">→</a>
+          </article>
+
+          <article class="tt-sb-card tt-sb-compare">
+            <span class="tt-sb-best">Best Deals</span>
+            <div class="tt-sb-compare-top">
+              <div class="tt-sb-price-icon">🏷️</div>
               <div>
-                <h1>Smart Buy</h1>
-                <p>Compare prices. Save money. Shop smarter.</p>
+                <h3>Compare Prices</h3>
+                <p>Check this item across multiple shopping apps.</p>
               </div>
             </div>
-            <div class="tt-smartbuy-points">
-              <span>✓ Grocery & daily essentials</span>
-              <span>✓ Fresh & healthy choices</span>
-              <span>✓ Direct to store</span>
-            </div>
-          </div>
-          <div class="tt-smartbuy-hero-art" aria-hidden="true">🥬🥦🍅🥕</div>
-        </div>
-
-        <div class="tt-smartbuy-search-wrap">
-          <div class="tt-smartbuy-search">
-            <span class="tt-smartbuy-search-icon">⌕</span>
-            <input id="store-shortcut-query" type="search" autocomplete="off"
-              placeholder="Search for milk, paneer, fruits, vegetables, atta..."
-              value="${escapeAttr(smartShoppingSelectedQuery || "")}">
-          </div>
-        </div>
-
-        <div class="tt-smartbuy-main-actions">
-          <article class="tt-shop-card tt-amazon-card">
-            <div class="tt-shop-card-logo">${smartBuyMockLogo("amazon")}</div>
-            <div class="tt-shop-card-body">
-              <h3>Shop on Amazon</h3>
-              <p>Wide range. Great deals.</p>
-            </div>
-            <a id="smart-amazon-link" class="tt-round-arrow" href="${amazonHome}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon">→</a>
-          </article>
-
-          <article class="tt-shop-card tt-fresh-card">
-            <div class="tt-shop-card-logo">${smartBuyMockLogo("fresh")}</div>
-            <div class="tt-shop-card-body">
-              <h3>Shop on Amazon Fresh</h3>
-              <p>Fresh groceries. Fast delivery.</p>
-            </div>
-            <a id="smart-fresh-link" class="tt-round-arrow" href="${freshHome}" target="_blank" rel="sponsored noopener" aria-label="Shop on Amazon Fresh">→</a>
-          </article>
-
-          <article class="tt-shop-card tt-compare-card">
-            <span class="tt-best-deal">BEST DEALS</span>
-            <div class="tt-shop-card-logo">${smartBuyMockLogo("compare")}</div>
-            <div class="tt-shop-card-body">
-              <h3>Compare Prices</h3>
-              <p>Check this item across multiple shopping apps.</p>
-            </div>
-            <a class="tt-compare-now" href="https://pricebasket.in/" target="_blank" rel="noopener" aria-label="Compare prices on PriceBasket">
+            <a href="https://pricebasket.in/search" target="_blank" rel="noopener"
+              class="tt-sb-compare-btn" aria-label="Compare grocery prices">
               Compare now <span>→</span>
             </a>
           </article>
         </div>
 
-        <section class="tt-popular-stores">
-          <div class="tt-popular-head">
-            <div>
-              <h3>Quick access to popular stores</h3>
-              <p>Tap a logo to open your favourite grocery app</p>
-            </div>
+        <section class="tt-sb-popular">
+          <div class="tt-sb-popular-title">
+            <h3>Quick access to popular stores</h3>
+            <p>Tap a logo to open your favourite grocery app</p>
           </div>
-
-          <div class="tt-store-row" data-no-translate>
-            <a href="https://blinkit.com/" target="_blank" rel="noopener" aria-label="Blinkit">
-              ${smartBuyMockLogo("blinkit")}<span>Blinkit</span>
-            </a>
-            <a href="https://www.zeptonow.com/" target="_blank" rel="noopener" aria-label="Zepto">
-              ${smartBuyMockLogo("zepto")}<span>Zepto</span>
-            </a>
-            <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" aria-label="Instamart">
-              ${smartBuyMockLogo("instamart")}<span>Instamart</span>
-            </a>
-            <a href="https://www.jiomart.com/" target="_blank" rel="noopener" aria-label="JioMart">
-              ${smartBuyMockLogo("jiomart")}<span>JioMart</span>
-            </a>
-            <a href="https://www.dmart.in/" target="_blank" rel="noopener" aria-label="DMart">
-              ${smartBuyMockLogo("dmart")}<span>DMart</span>
-            </a>
-            <a href="https://www.bigbasket.com/" target="_blank" rel="noopener" aria-label="BigBasket">
-              ${smartBuyMockLogo("bigbasket")}<span>BigBasket</span>
-            </a>
+          <div class="tt-sb-store-grid" data-no-translate>
+            <a href="https://blinkit.com/" target="_blank" rel="noopener">${smartBuyMockLogo("blinkit")}<span>Blinkit</span></a>
+            <a href="https://www.zeptonow.com/" target="_blank" rel="noopener">${smartBuyMockLogo("zepto")}<span>Zepto</span></a>
+            <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener">${smartBuyMockLogo("instamart")}<span>Instamart</span></a>
+            <a href="https://www.jiomart.com/" target="_blank" rel="noopener">${smartBuyMockLogo("jiomart")}<span>JioMart</span></a>
+            <a href="https://www.dmart.in/" target="_blank" rel="noopener">${smartBuyMockLogo("dmart")}<span>DMart</span></a>
+            <a href="https://www.bigbasket.com/" target="_blank" rel="noopener">${smartBuyMockLogo("bigbasket")}<span>BigBasket</span></a>
           </div>
         </section>
 
-        <div class="tt-smartbuy-benefits">
+        <div class="tt-sb-benefits">
           <span>🌿 <strong>Save time</strong></span>
           <span>🪙 <strong>Compare easily</strong></span>
           <span>🏷️ <strong>Better deals</strong></span>
           <span>✅ <strong>Trusted stores</strong></span>
         </div>
 
-        <div class="tt-smartbuy-note">
+        <div class="tt-sb-footnote">
           <span>ℹ️ Prices and availability are shown on respective store websites. Tiny Tiffin does not sell products.</span>
           <strong>♡ Shop Smart, Eat Healthy 🌿</strong>
         </div>
@@ -684,6 +669,7 @@
 
   function attachShoppingEvents() {
     const query = document.getElementById("store-shortcut-query");
+    const pin = document.getElementById("smart-buy-pin-memory");
     const amazon = document.getElementById("smart-amazon-link");
     const fresh = document.getElementById("smart-fresh-link");
     if (!query) return;
@@ -704,8 +690,17 @@
           : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${encodeURIComponent(amazonTag)}`);
       }
     };
+
     query.addEventListener("input", syncLinks);
     query.addEventListener("change", syncLinks);
+
+    if (pin) {
+      pin.addEventListener("input", () => {
+        const clean = String(pin.value || "").replace(/\D/g, "").slice(0, 6);
+        pin.value = clean;
+        if (clean.length === 6) storage.set("tt_grocery_pincode", clean);
+      });
+    }
     syncLinks();
   }
 
@@ -1494,81 +1489,29 @@
     const backdrop = document.createElement("div");
     backdrop.className = "modal-backdrop";
     backdrop.id = "grocery-compare-modal";
-    const savedPin = storage.get("tt_grocery_pincode", "");
+    const firstIngredient = extractIngredientSearchText((recipe.ingredients || [])[0] || recipe.name || "");
+    const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
+    const amazonUrl = `https://www.amazon.in/s?k=${encodeURIComponent(firstIngredient)}&tag=${encodeURIComponent(amazonTag)}`;
+    const freshUrl = `https://www.amazon.in/fresh/s?k=${encodeURIComponent(firstIngredient)}&tag=${encodeURIComponent(amazonTag)}`;
+
     backdrop.innerHTML = `
-      <div class="modal grocery-compare-modal" role="dialog" aria-modal="true" aria-label="Compare grocery prices">
+      <div class="modal grocery-compare-modal" role="dialog" aria-modal="true" aria-label="Shop recipe ingredients">
         <button class="modal-close" id="compare-close">✕</button>
-        <h2>🛒 Compare Grocery Prices</h2>
-        <p class="desc">Compare one ingredient or your complete recipe basket across supported Indian grocery platforms. Exact availability depends on your location.</p>
-
-        <div class="compare-location">
-          <label><strong>Delivery PIN code</strong>
-            <input id="compare-pincode" class="search-input" inputmode="numeric" maxlength="6" placeholder="e.g. 411057" value="${escapeAttr(savedPin)}">
-          </label>
-          <button class="btn btn-secondary" id="compare-use-location" type="button">📍 Use my location</button>
-          <small id="compare-location-status">Your precise location is used only for this comparison and is not stored.</small>
-        </div>
-
-        <div class="compare-select-actions">
-          <button class="link-btn" id="compare-select-all" type="button">Select all</button>
-          <button class="link-btn" id="compare-clear-all" type="button">Clear</button>
-        </div>
+        <h2>🛒 Shop Recipe Ingredients</h2>
+        <p class="desc">Choose a store, or open PriceBasket to compare grocery prices across supported platforms.</p>
         <div class="compare-ingredient-list">
-          ${(recipe.ingredients || []).map((ing, idx) => `<label class="compare-ingredient">
-            <input type="checkbox" data-compare-ing="${idx}" checked>
-            <span>${escapeHTML(ing)}</span>
-          </label>`).join("")}
+          ${(recipe.ingredients || []).map(ing => `<div class="compare-ingredient"><span>${escapeHTML(ing)}</span></div>`).join("")}
         </div>
-        <div class="compare-actions">
-          <button class="btn btn-primary" id="compare-run" type="button">Compare selected ingredients</button>
+        <div class="compare-actions" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
+          <a class="btn btn-primary" href="https://pricebasket.in/search" target="_blank" rel="noopener">Compare on PriceBasket</a>
+          <a class="btn btn-secondary" href="${escapeAttr(amazonUrl)}" target="_blank" rel="sponsored noopener">Amazon</a>
+          <a class="btn btn-secondary" href="${escapeAttr(freshUrl)}" target="_blank" rel="sponsored noopener">Amazon Fresh</a>
         </div>
-        <div id="compare-results" class="compare-results"></div>
       </div>`;
-
     document.body.appendChild(backdrop);
     const close = () => backdrop.remove();
     backdrop.addEventListener("click", e => { if (e.target === backdrop) close(); });
     backdrop.querySelector("#compare-close").addEventListener("click", close);
-
-    backdrop.querySelector("#compare-select-all").addEventListener("click", () => {
-      backdrop.querySelectorAll("[data-compare-ing]").forEach(x => x.checked = true);
-    });
-    backdrop.querySelector("#compare-clear-all").addEventListener("click", () => {
-      backdrop.querySelectorAll("[data-compare-ing]").forEach(x => x.checked = false);
-    });
-
-    const locationState = { pincode: savedPin, latitude: null, longitude: null };
-    const pinInput = backdrop.querySelector("#compare-pincode");
-    pinInput.addEventListener("input", () => {
-      locationState.pincode = pinInput.value.replace(/\D/g, "").slice(0, 6);
-      pinInput.value = locationState.pincode;
-      if (locationState.pincode.length === 6) storage.set("tt_grocery_pincode", locationState.pincode);
-    });
-
-    backdrop.querySelector("#compare-use-location").addEventListener("click", () => {
-      const status = backdrop.querySelector("#compare-location-status");
-      if (!navigator.geolocation) {
-        status.textContent = "Location is not supported by this browser. Please enter your PIN code.";
-        return;
-      }
-      status.textContent = "Requesting your location…";
-      navigator.geolocation.getCurrentPosition(
-        pos => {
-          locationState.latitude = Number(pos.coords.latitude.toFixed(6));
-          locationState.longitude = Number(pos.coords.longitude.toFixed(6));
-          status.textContent = "Location captured for this comparison. You can also enter your PIN code for more accurate platform coverage.";
-        },
-        () => status.textContent = "Location permission was not available. Your 6-digit PIN code can be used instead.",
-        { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
-      );
-    });
-
-    backdrop.querySelector("#compare-run").addEventListener("click", () => {
-      const selected = Array.from(backdrop.querySelectorAll("[data-compare-ing]:checked"))
-        .map(x => recipe.ingredients[Number(x.dataset.compareIng)])
-        .filter(Boolean);
-      compareRecipePrices(recipe, selected, locationState, backdrop.querySelector("#compare-results"), backdrop.querySelector("#compare-run"));
-    });
   }
 
   function openRecipeModal(id) {

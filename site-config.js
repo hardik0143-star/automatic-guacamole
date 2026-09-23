@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.11",
+  version: "v2.12",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Smart Buy rebuilt to closely match the approved mockup with a compact hero, overlapping search bar, three primary action cards, highlighted Compare Prices CTA, six-store logo grid, benefits strip and clean mobile alignment.",
+  releaseNotes: "Final Smart Buy cleanup: complete legacy Update Shopping Links block removed; only the approved design remains. Amazon/Amazon Fresh search links, PriceBasket comparison, store shortcuts, PIN memory and recipe ingredient shopping remain functional.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

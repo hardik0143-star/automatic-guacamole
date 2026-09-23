@@ -307,3 +307,67 @@ html[data-theme="dark"] .shop-card h3,html[data-theme="dark"] .shop-notice,html[
   #app .tt-smartbuy-benefits{grid-template-columns:1fr 1fr}
   #app .tt-smartbuy-note{align-items:flex-start;flex-direction:column}
 }
+
+/* v2.12 FINAL SMART BUY — scoped and mobile-safe */
+#app .tt-smartbuy-exact{max-width:980px;margin:0 auto 34px;padding:10px 12px 0}
+#app .tt-sb-hero{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:190px;padding:24px 25px;border-radius:26px;background:linear-gradient(135deg,#eaf8ea 0%,#f8faea 60%,#eef8e5 100%);border:1px solid rgba(40,90,58,.13);overflow:hidden}
+#app .tt-sb-title{display:flex;align-items:center;gap:15px;position:relative;z-index:2}
+#app .tt-sb-cart{font-size:3.15rem}
+#app .tt-sb-title h1{margin:0;color:#0c412a;font-size:clamp(2.5rem,7vw,4.2rem);line-height:.92;font-weight:900}
+#app .tt-sb-title p{margin:10px 0 0;color:#334c3e;font-size:1rem}
+#app .tt-sb-hero-message{position:absolute;right:23%;top:28px;color:#0e5a32;font-family:cursive;font-size:1rem;line-height:1.1;transform:rotate(-6deg);z-index:2;text-align:center}
+#app .tt-sb-produce{font-size:clamp(3.1rem,8vw,6rem);white-space:nowrap;align-self:flex-end;margin-bottom:-8px}
+#app .tt-sb-searchbar{position:relative;z-index:4;margin:-24px 18px 0;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:11px;align-items:center;background:#fff;border:1px solid rgba(63,72,65,.14);border-radius:20px;padding:5px 10px 5px 15px;box-shadow:0 9px 26px rgba(34,53,41,.11)}
+#app .tt-sb-search-icon{font-size:1.55rem}
+#app .tt-sb-searchbar>input{width:100%;min-width:0;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;padding:15px 0;font-size:1rem;color:inherit}
+#app .tt-sb-pin{display:flex;align-items:center;gap:6px;padding:8px 10px;border-left:1px solid #e1e3e1}
+#app .tt-sb-pin input{width:72px;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;font-weight:800;font-size:.9rem;text-align:center;color:inherit}
+#app .tt-sb-action-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+#app .tt-sb-card{position:relative;min-height:210px;border-radius:22px;padding:18px;border:1px solid rgba(65,65,55,.11);overflow:hidden}
+#app .tt-sb-amazon{background:linear-gradient(145deg,#fff2dc,#f7e4c2)}
+#app .tt-sb-fresh{background:linear-gradient(145deg,#eef9e9,#ddf0d7)}
+#app .tt-sb-compare{background:linear-gradient(145deg,#fff0ed,#f7dddd);border-color:rgba(240,76,66,.22);box-shadow:0 8px 25px rgba(232,75,66,.11)}
+#app .tt-sb-big-logo{height:75px;width:150px;max-width:78%;margin-bottom:10px}
+#app .tt-sb-card h3{margin:0 0 5px;color:#172f24;font-size:1.05rem}
+#app .tt-sb-card>p{margin:0;color:#606b65;font-size:.82rem;line-height:1.4}
+#app .tt-sb-circle-arrow{position:absolute;right:17px;bottom:17px;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:#153724;text-decoration:none;font-size:1.35rem;font-weight:900;box-shadow:0 3px 10px rgba(40,50,44,.08)}
+#app .tt-sb-best{position:absolute;right:10px;top:10px;background:#ff4137;color:white;border-radius:999px;padding:6px 9px;font-size:.6rem;font-weight:900}
+#app .tt-sb-compare-top{display:grid;grid-template-columns:52px 1fr;gap:11px;align-items:start;margin-top:18px}
+#app .tt-sb-price-icon{width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:14px;background:#166b42;font-size:1.7rem}
+#app .tt-sb-compare-top h3{margin:2px 0 6px;font-size:1.1rem}
+#app .tt-sb-compare-top p{margin:0;color:#686f6b;font-size:.8rem;line-height:1.4}
+#app .tt-sb-compare-btn{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:center;align-items:center;gap:7px;padding:11px 15px;border-radius:999px;background:linear-gradient(90deg,#f43c34,#ff5d45);color:#fff;text-decoration:none;font-weight:900}
+#app .tt-sb-popular{margin-top:15px;padding:16px;background:#fff;border:1px solid rgba(65,65,55,.11);border-radius:22px}
+#app .tt-sb-popular-title h3{margin:0;color:#183126;font-size:1rem}
+#app .tt-sb-popular-title p{margin:3px 0 0;color:#778078;font-size:.75rem}
+#app .tt-sb-store-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:14px}
+#app .tt-sb-store-grid a{display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none;color:#27362e;font-size:.72rem;font-weight:700;min-width:0}
+#app .tt-sb-store-grid a>.tt-store-logo{width:76px;height:76px;box-shadow:0 5px 14px rgba(30,45,36,.08)}
+#app .tt-sb-store-grid a>span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+#app .tt-sb-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:15px;padding:14px;background:#fff;border:1px solid rgba(65,65,55,.11);border-radius:20px}
+#app .tt-sb-benefits span{text-align:center;color:#37473e;font-size:.78rem}
+#app .tt-sb-footnote{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:12px;padding:13px 15px;border-radius:18px;background:#f7f8f7;color:#707870;font-size:.72rem;line-height:1.4}
+#app .tt-sb-footnote strong{white-space:nowrap;color:#356f4d}
+@media(max-width:720px){
+  #app .tt-smartbuy-exact{padding:8px 9px 0}
+  #app .tt-sb-hero{padding:15px;min-height:150px;border-radius:18px}
+  #app .tt-sb-cart{font-size:2rem}
+  #app .tt-sb-title h1{font-size:2rem}
+  #app .tt-sb-title p{font-size:.8rem}
+  #app .tt-sb-hero-message{display:none}
+  #app .tt-sb-produce{font-size:2.2rem}
+  #app .tt-sb-searchbar{margin:-17px 8px 0;grid-template-columns:auto minmax(0,1fr);padding:4px 10px}
+  #app .tt-sb-searchbar>input{font-size:.86rem;padding:12px 0}
+  #app .tt-sb-pin{grid-column:1/-1;border-left:0;border-top:1px solid #eceeec;justify-content:flex-end;padding:7px 4px 2px}
+  #app .tt-sb-action-grid{grid-template-columns:1fr}
+  #app .tt-sb-card{min-height:126px;padding:13px}
+  #app .tt-sb-big-logo{height:48px;width:105px;margin:0 0 8px}
+  #app .tt-sb-card h3{font-size:.95rem}
+  #app .tt-sb-card>p{font-size:.75rem}
+  #app .tt-sb-compare{min-height:168px}
+  #app .tt-sb-compare-top{margin-top:16px}
+  #app .tt-sb-store-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 8px}
+  #app .tt-sb-store-grid a>.tt-store-logo{width:62px;height:62px}
+  #app .tt-sb-benefits{grid-template-columns:1fr 1fr}
+  #app .tt-sb-footnote{align-items:flex-start;flex-direction:column}
+}
