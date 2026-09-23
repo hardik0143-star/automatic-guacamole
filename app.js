@@ -542,85 +542,107 @@
     return false;
   };
 
+  function smartBuyBrandMark(key) {
+    const marks = {
+      amazon: `<span class="sbm sbm-amazon"><span>amazon</span><i></i></span>`,
+      fresh: `<span class="sbm sbm-fresh"><span>fresh</span></span>`,
+      compare: `<span class="sbm sbm-compare"><span>₹</span></span>`,
+      blinkit: `<span class="sbm sbm-blinkit"><span>blinkit</span></span>`,
+      zepto: `<span class="sbm sbm-zepto"><span>zepto</span></span>`,
+      instamart: `<span class="sbm sbm-instamart"><span>insta</span></span>`,
+      jiomart: `<span class="sbm sbm-jiomart"><span>Jio</span></span>`,
+      dmart: `<span class="sbm sbm-dmart"><span>DMart</span></span>`,
+      bigbasket: `<span class="sbm sbm-bigbasket"><span>bb</span></span>`
+    };
+    return marks[key] || `<span class="sbm"><span>shop</span></span>`;
+  }
+
   function renderShoppingTab() {
     const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
+    const amazonHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`;
+    const freshHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`;
+
     return `
-      <section class="shortcut-buy-shell">
-        <div class="shortcut-buy-hero">
-          <div class="shortcut-hero-copy">
-            <span class="shortcut-kicker">🛒 SMART BUY</span>
-            <h1>Shop smarter,<br>without the extra steps.</h1>
-            <p>Search an item once, then choose where you want to shop or compare prices.</p>
+      <section class="smart-shortcut-page">
+        <div class="smart-shortcut-hero">
+          <div>
+            <span class="smart-shortcut-kicker">🛒 SMART BUY</span>
+            <h1>Shop smart. Save time.</h1>
+            <p>Search once, then jump directly to your preferred shopping or price-comparison service.</p>
           </div>
-          <div class="shortcut-hero-veg">🥦🥕🍅</div>
+          <div class="smart-shortcut-hero-icon" aria-hidden="true">🥦</div>
         </div>
 
-        <div class="shortcut-search-card">
-          <div class="shortcut-search-row">
-            <span>🔎</span>
-            <input id="store-shortcut-query" type="search" autocomplete="off" placeholder="Search milk, paneer, fruits, vegetables, atta..." value="${escapeAttr(smartShoppingSelectedQuery || "")}">
-            <button id="store-shortcut-go" type="button">Update links</button>
+        <div class="smart-shortcut-search">
+          <div class="smart-search-box">
+            <span class="smart-search-symbol">🔎</span>
+            <input id="store-shortcut-query" type="search" autocomplete="off"
+              placeholder="Search milk, paneer, fruits, atta..."
+              value="${escapeAttr(smartShoppingSelectedQuery || "")}">
           </div>
-          <small>No live-price credits are used. Store prices and availability are shown on the respective websites.</small>
+          <button id="store-shortcut-go" type="button">Update shopping links</button>
+          <small>Search updates the Amazon and Amazon Fresh buttons below. No paid live-price API is used.</small>
         </div>
 
-        <section class="shortcut-store-strip" aria-label="Shopping stores">
-          <a href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener" title="Amazon">
-            <img src="store-logos/amazon.svg" alt="Amazon">
-          </a>
-          <a href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener" title="Amazon Fresh">
-            <img src="store-logos/amazon-fresh.svg" alt="Amazon Fresh">
-          </a>
-          <a href="https://sastadekho.in/" target="_blank" rel="noopener" title="Compare prices">
-            <img src="store-logos/sasta.svg" alt="Price comparison">
-          </a>
-          <a href="https://blinkit.com/" target="_blank" rel="noopener" title="Blinkit"><img src="store-logos/blinkit.svg" alt="Blinkit"></a>
-          <a href="https://www.zeptonow.com/" target="_blank" rel="noopener" title="Zepto"><img src="store-logos/zepto.svg" alt="Zepto"></a>
-          <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" title="Instamart"><img src="store-logos/instamart.svg" alt="Instamart"></a>
-          <a href="https://www.jiomart.com/" target="_blank" rel="noopener" title="JioMart"><img src="store-logos/jiomart.svg" alt="JioMart"></a>
-          <a href="https://www.dmart.in/" target="_blank" rel="noopener" title="DMart"><img src="store-logos/dmart.svg" alt="DMart"></a>
-          <a href="https://www.bigbasket.com/" target="_blank" rel="noopener" title="BigBasket"><img src="store-logos/bigbasket.svg" alt="BigBasket"></a>
-        </section>
-
-        <div class="shortcut-buy-cards">
-          <article class="shortcut-buy-card amazon-card">
-            <div class="shortcut-card-logo"><img src="store-logos/amazon.svg" alt="Amazon"></div>
-            <div>
-              <h3>Wide range. Easy shopping.</h3>
-              <p>Open your product search directly on Amazon.</p>
-              <a id="smart-amazon-link" class="shortcut-cta dark" href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener">Shop Now →</a>
+        <div class="smart-primary-grid">
+          <article class="smart-primary-card amazon">
+            <div class="smart-primary-mark">${smartBuyBrandMark("amazon")}</div>
+            <div class="smart-primary-copy">
+              <h3>Amazon</h3>
+              <p>Search a wide range of groceries and daily essentials.</p>
             </div>
+            <a id="smart-amazon-link" class="smart-primary-action dark"
+              href="${amazonHome}" target="_blank" rel="sponsored noopener">Shop now →</a>
           </article>
 
-          <article class="shortcut-buy-card fresh-card">
-            <div class="shortcut-card-logo"><img src="store-logos/amazon-fresh.svg" alt="Amazon Fresh"></div>
-            <div>
-              <h3>Fresh groceries for everyday meals.</h3>
-              <p>Open your product search directly on Amazon Fresh.</p>
-              <a id="smart-fresh-link" class="shortcut-cta green" href="${(CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`}" target="_blank" rel="sponsored noopener">Shop Fresh →</a>
+          <article class="smart-primary-card fresh">
+            <div class="smart-primary-mark">${smartBuyBrandMark("fresh")}</div>
+            <div class="smart-primary-copy">
+              <h3>Amazon Fresh</h3>
+              <p>Open groceries and fresh-food shopping directly.</p>
             </div>
+            <a id="smart-fresh-link" class="smart-primary-action green"
+              href="${freshHome}" target="_blank" rel="sponsored noopener">Shop fresh →</a>
           </article>
 
-          <article class="shortcut-buy-card compare-card">
-            <div class="shortcut-card-logo icon-only"><img src="store-logos/sasta.svg" alt="Price comparison"></div>
-            <div>
-              <h3>Want to compare store prices?</h3>
-              <p>Open the comparison service and check the same product across supported apps.</p>
-              <a class="shortcut-cta orange icon-cta" href="https://sastadekho.in/" target="_blank" rel="noopener" aria-label="Open price comparison service">
-                <img src="store-logos/sasta.svg" alt="">
-              </a>
+          <article class="smart-primary-card compare">
+            <div class="smart-primary-mark">${smartBuyBrandMark("compare")}</div>
+            <div class="smart-primary-copy">
+              <h3>Compare prices</h3>
+              <p>Check the same product across supported shopping apps.</p>
             </div>
+            <a class="smart-primary-action icon-only"
+              href="https://pricebasket.in/" target="_blank" rel="noopener"
+              aria-label="Open grocery price comparison">${smartBuyBrandMark("compare")}</a>
           </article>
         </div>
 
-        <div class="shortcut-benefits">
-          <span>🌿 <strong>Save time</strong></span>
-          <span>🛍️ <strong>Shop directly</strong></span>
-          <span>🏷️ <strong>Compare externally</strong></span>
-          <span>✅ <strong>Trusted stores</strong></span>
+        <div class="smart-store-section">
+          <div class="smart-store-heading">
+            <strong>Quick store access</strong>
+            <span>Tap a logo to open the store</span>
+          </div>
+          <div class="smart-store-grid" data-no-translate>
+            <a href="${amazonHome}" target="_blank" rel="sponsored noopener" aria-label="Amazon">${smartBuyBrandMark("amazon")}</a>
+            <a href="${freshHome}" target="_blank" rel="sponsored noopener" aria-label="Amazon Fresh">${smartBuyBrandMark("fresh")}</a>
+            <a href="https://pricebasket.in/" target="_blank" rel="noopener" aria-label="Grocery price comparison">${smartBuyBrandMark("compare")}</a>
+            <a href="https://blinkit.com/" target="_blank" rel="noopener" aria-label="Blinkit">${smartBuyBrandMark("blinkit")}</a>
+            <a href="https://www.zeptonow.com/" target="_blank" rel="noopener" aria-label="Zepto">${smartBuyBrandMark("zepto")}</a>
+            <a href="https://www.swiggy.com/instamart" target="_blank" rel="noopener" aria-label="Instamart">${smartBuyBrandMark("instamart")}</a>
+            <a href="https://www.jiomart.com/" target="_blank" rel="noopener" aria-label="JioMart">${smartBuyBrandMark("jiomart")}</a>
+            <a href="https://www.dmart.in/" target="_blank" rel="noopener" aria-label="DMart">${smartBuyBrandMark("dmart")}</a>
+            <a href="https://www.bigbasket.com/" target="_blank" rel="noopener" aria-label="BigBasket">${smartBuyBrandMark("bigbasket")}</a>
+          </div>
         </div>
 
-        <div class="shortcut-note">ℹ️ Prices, stock and delivery information are displayed by the respective shopping or comparison website.</div>
+        <div class="smart-shortcut-footer">
+          <span>🌿 Save time</span>
+          <span>🛍️ Shop directly</span>
+          <span>🏷️ Compare externally</span>
+          <span>✅ Trusted stores</span>
+        </div>
+
+        <p class="smart-shortcut-note">Prices, stock and delivery information are shown on the respective shopping or comparison website.</p>
       </section>`;
   }
 
@@ -636,18 +658,26 @@
     const updateLinks = () => {
       const q = String(query.value || "").trim();
       smartShoppingSelectedQuery = q;
+
       if (amazon) {
         amazon.href = q
           ? `https://www.amazon.in/s?k=${encodeURIComponent(q)}&tag=${encodeURIComponent(amazonTag)}`
           : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${encodeURIComponent(amazonTag)}`);
       }
+
       if (fresh) {
         fresh.href = q
           ? `https://www.amazon.in/fresh/s?k=${encodeURIComponent(q)}&tag=${encodeURIComponent(amazonTag)}`
           : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${encodeURIComponent(amazonTag)}`);
       }
-      go.textContent = q ? "Links ready ✓" : "Update links";
-      setTimeout(() => { if (go) go.textContent = "Update links"; }, 1200);
+
+      go.classList.add("ready");
+      go.textContent = q ? "Links updated ✓" : "Shopping links ready";
+      clearTimeout(go._resetTimer);
+      go._resetTimer = setTimeout(() => {
+        go.classList.remove("ready");
+        go.textContent = "Update shopping links";
+      }, 1300);
     };
 
     go.addEventListener("click", updateLinks);
@@ -658,6 +688,7 @@
         updateLinks();
       }
     });
+
     updateLinks();
   }
 

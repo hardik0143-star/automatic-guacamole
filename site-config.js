@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.7",
+  version: "v2.9",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Smart Buy simplified to direct Amazon, Amazon Fresh and external comparison shortcuts with compact store-logo access. Live price API removed, so Smart Buy no longer uses paid credits.",
+  releaseNotes: "Replaced the previous external comparison shortcut with PriceBasket, while keeping the Smart Buy interface compact and icon-only for the comparison service.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",
