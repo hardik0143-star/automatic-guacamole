@@ -34691,3 +34691,5 @@ window.TINY_TIFFIN_RECIPES = [
   "sourceNote": "Tiny Tiffin adaptation inspired by the linked recipe; made milder and lunchbox-friendly."
 }
 ];
+
+;window.RECIPES && window.RECIPES.push({id:"peri-peri-creamy-pasta",name:"Peri Peri Creamy Pasta",mealType:"Lunch",ageGroup:["5-10y"],time:20,cuisine:"Indian",diet:"Vegetarian",ingredients:["1 cup pasta","1 tbsp butter","1 tsp garlic","1/4 cup capsicum","1/4 cup corn","1 cup milk","2 tbsp cheese","1-2 tsp peri peri seasoning","Salt"],steps:["Boil pasta until just cooked.","Saute garlic and vegetables in butter.","Add milk and cheese to make a creamy sauce.","Stir in peri peri seasoning and pasta.","Cool slightly and pack."],packingTip:"Pack warm in an insulated box.",healthyNote:"For a healthier version, use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta and include colourful vegetables."});

@@ -812,3 +812,6 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 .smartbuy-search-section .update-links-copy,
 .smartbuy-update-card,
 .smartbuy-update-note{display:none !important;}
+
+.smartbuy-banner-only img{display:block;width:100%;height:auto;border-radius:28px;box-shadow:var(--shadow);}
+.smart-live-controls,.smart-store-strip,.smart-quick-items,.smart-location-note,.smart-live-results{display:none!important;}

@@ -1412,31 +1412,11 @@
   }
 
   function renderSmartShoppingLivePanel() {
-    const pin = smartShoppingLocation.pincode || "";
     return `
       <section class="smart-live-panel">
-        <div class="smart-live-hero">
-          <div>
-            <div class="festival-kicker">⚡ Smart Buy</div>
-            <h2>Search once. Compare live prices across stores.</h2>
-            <p>Search any grocery item and see matching products from supported stores together, ranked so the lowest live price is easy to spot.</p>
-          </div>
-          <div class="smart-live-icon">🛒</div>
+        <div class="smartbuy-banner-only" aria-label="Smart Buy banner">
+          <img src="smartbuy-hero-expanded.png" alt="Smart Buy banner with fresh vegetables and fruits" loading="eager">
         </div>
-
-        <div class="smart-live-controls">
-          <input id="smart-live-query" class="search-input" placeholder="Search Paneer, Idli Batter, Milk, Banana..." value="${escapeAttr(smartShoppingSelectedQuery)}">
-          <input id="smart-live-pin" class="search-input smart-pin-input" inputmode="numeric" maxlength="6" placeholder="PIN code" value="${escapeAttr(pin)}">
-          <button class="btn btn-secondary" id="smart-live-location" type="button">📍 Use location</button>
-          <button class="btn btn-primary" id="smart-live-compare" type="button">Compare Live Prices</button>
-        </div>
-
-        <div class="smart-store-strip" data-no-translate>⚡ BlinkIt · Zepto · Swiggy Instamart · BigBasket · DMart · JioMart · Flipkart Minutes · Amazon · Flipkart</div>
-        <div class="smart-quick-items">
-          ${["Paneer","Idli Batter","Milk","Banana","Bread","Tofu"].map(x => `<button class="chip" data-smart-quick="${escapeAttr(x)}">${escapeHTML(x)}</button>`).join("")}
-        </div>
-        <small id="smart-live-location-status" class="smart-location-note">Prices vary by location. Enter your 6-digit PIN code or use your location. Your PIN is saved only in your browser.</small>
-        <div id="smart-live-results" class="smart-live-results"></div>
       </section>
     `;
   }
