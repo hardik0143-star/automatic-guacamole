@@ -2281,7 +2281,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 3.8,
       "count": 12
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "veg-pasta",
@@ -2352,7 +2355,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 3.8,
       "count": 12
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "grilled-cheese",
@@ -2989,7 +2995,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 3.8,
       "count": 12
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "baked-beans-toast",
@@ -3964,7 +3973,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 3.8,
       "count": 12
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "veg-stir-fry-noodles",
@@ -7433,7 +7445,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.2,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "rainbow-vegetable-uttapam",
@@ -8104,7 +8119,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.3,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "zucchini-paneer-cheela",
@@ -10176,7 +10194,7 @@ window.TINY_TIFFIN_RECIPES = [
     "hidden": false
   },
   {
-    "id": "avocado-paneer-rainbow-sandwich",
+    "id": "oats-paneer-vegetable-cheela",
     "emoji": "🥞",
     "images": [],
     "name": {
@@ -10459,7 +10477,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.2,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "carrot-beetroot-paneer-mini-paratha",
@@ -16367,7 +16388,10 @@ window.TINY_TIFFIN_RECIPES = [
     "kidTip": {
       "en": "A familiar format for babies ready for thicker textures."
     },
-    "vitamins": []
+    "vitamins": [],
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "egg-spinach-soft-scramble-6-12m",
@@ -20041,7 +20065,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.0,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "cauliflower-cheese-couscous-bowl-1-2y",
@@ -20301,7 +20328,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.0,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "oat-apple-carrot-soft-bars-1-2y",
@@ -27601,7 +27631,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-mediterranean-veggie-pasta",
@@ -27672,7 +27705,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-mediterranean-veggie-wrap",
@@ -27952,7 +27988,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-mediterranean-veggie-quinoa",
@@ -28092,7 +28131,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-mediterranean-veggie-toast",
@@ -28300,7 +28342,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-italian-veggie-pasta",
@@ -28371,7 +28416,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-italian-veggie-wrap",
@@ -28651,7 +28699,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-italian-veggie-quinoa",
@@ -28791,7 +28842,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-italian-veggie-toast",
@@ -28999,7 +29053,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-mexican-veggie-pasta",
@@ -29070,7 +29127,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-mexican-veggie-wrap",
@@ -29350,7 +29410,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-mexican-veggie-quinoa",
@@ -29490,7 +29553,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-mexican-veggie-toast",
@@ -29698,7 +29764,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-greek-veggie-pasta",
@@ -29769,7 +29838,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-greek-veggie-wrap",
@@ -30049,7 +30121,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-greek-veggie-quinoa",
@@ -30189,7 +30264,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-greek-veggie-toast",
@@ -30397,7 +30475,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-japanese-inspired-veggie-pasta",
@@ -30468,7 +30549,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-japanese-inspired-veggie-wrap",
@@ -30748,7 +30832,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-japanese-inspired-veggie-quinoa",
@@ -30888,7 +30975,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-japanese-inspired-veggie-toast",
@@ -31096,7 +31186,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-middle-eastern-veggie-pasta",
@@ -31167,7 +31260,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-middle-eastern-veggie-wrap",
@@ -31447,7 +31543,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-middle-eastern-veggie-quinoa",
@@ -31587,7 +31686,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-middle-eastern-veggie-toast",
@@ -31795,7 +31897,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-french-inspired-veggie-pasta",
@@ -31866,7 +31971,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-french-inspired-veggie-wrap",
@@ -32146,7 +32254,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-french-inspired-veggie-quinoa",
@@ -32286,7 +32397,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-french-inspired-veggie-toast",
@@ -32494,7 +32608,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-american-style-veggie-pasta",
@@ -32565,7 +32682,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-american-style-veggie-wrap",
@@ -32845,7 +32965,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-american-style-veggie-quinoa",
@@ -32985,7 +33108,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-american-style-veggie-toast",
@@ -33193,7 +33319,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-turkish-inspired-veggie-pasta",
@@ -33264,7 +33393,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-turkish-inspired-veggie-wrap",
@@ -33544,7 +33676,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-turkish-inspired-veggie-quinoa",
@@ -33684,7 +33819,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-turkish-inspired-veggie-toast",
@@ -33892,7 +34030,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "creamy-global-veggie-pasta",
@@ -33963,7 +34104,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "crunchy-global-veggie-wrap",
@@ -34243,7 +34387,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "lemony-global-veggie-quinoa",
@@ -34383,7 +34530,10 @@ window.TINY_TIFFIN_RECIPES = [
       "timeSaver": 4.4,
       "count": 1
     },
-    "hidden": false
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
   },
   {
     "id": "sweet-potato-global-veggie-toast",
@@ -34608,88 +34758,166 @@ window.TINY_TIFFIN_RECIPES = [
       "quick lunch"
     ]
   },
-{
-  "id": "indo-chinese-chili-tofu",
-  "emoji": "🌶️",
-  "images": [],
-  "name": {
-    "en": "Indo-Chinese Style Chili Tofu"
+  {
+    "id": "indo-chinese-chili-tofu",
+    "emoji": "🌶️",
+    "images": [],
+    "name": {
+      "en": "Indo-Chinese Style Chili Tofu"
+    },
+    "desc": {
+      "en": "A kid-adjustable, protein-rich Indo-Chinese tofu with bell pepper and a sweet-savoury glaze, inspired by The Foodie Takes Flight."
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 25,
+    "dietType": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisine": "indian",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "protein",
+      "iron"
+    ],
+    "allergens": [
+      "soy"
+    ],
+    "ingredients": [
+      "300 g extra-firm tofu, pressed and cubed",
+      "1 small bell pepper, diced",
+      "1/2 small red onion, diced",
+      "2 spring onions, sliced",
+      "1 tsp grated ginger",
+      "1 small garlic clove, minced",
+      "1 tbsp low-sodium soy sauce",
+      "1 tbsp tomato ketchup",
+      "1 tsp rice vinegar",
+      "1 tsp brown sugar or jaggery",
+      "A pinch of cumin powder",
+      "1 tsp neutral oil",
+      "Chilli sauce optional for older children"
+    ],
+    "instructions": [
+      "Bake, air-fry or lightly pan-sear the tofu until just golden while keeping the centre soft.",
+      "Cook onion, ginger, garlic and bell pepper briefly so the vegetables remain slightly crisp.",
+      "Mix soy sauce, ketchup, vinegar, sugar, cumin and a little water; add to the pan.",
+      "Add tofu and toss gently until the sauce lightly coats the cubes.",
+      "Finish with spring onion. Keep chilli sauce separate or omit it for young children."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein_g": 8,
+      "iron_mg": 2.2,
+      "calcium_mg": 85,
+      "fiber_g": 4.0
+    },
+    "packingTip": {
+      "en": "Cool before packing and keep wet dips or sauces in a separate leak-proof container."
+    },
+    "kidTip": {
+      "en": "Keep the spice level mild and serve in small, easy-to-hold portions."
+    },
+    "ratings": {
+      "overall": 4.7,
+      "nutrition": 4.8,
+      "kidFriendly": 4.7,
+      "lunchboxFriendly": 4.8,
+      "pickyEaterFriendly": 4.5,
+      "timeSaver": 4.6,
+      "count": 0
+    },
+    "hidden": false,
+    "regional": false,
+    "sourceTitle": "Indo-Chinese Style Chili Tofu — The Foodie Takes Flight",
+    "sourceUrl": "https://thefoodietakesflight.com/indo-chinese-style-chili-tofu/",
+    "sourceNote": "Tiny Tiffin adaptation inspired by the linked recipe; made milder and lunchbox-friendly."
   },
-  "desc": {
-    "en": "A kid-adjustable, protein-rich Indo-Chinese tofu with bell pepper and a sweet-savoury glaze, inspired by The Foodie Takes Flight."
-  },
-  "ageGroups": [
-    "2-5y",
-    "5-10y"
-  ],
-  "timeCategory": 25,
-  "dietType": [
-    "vegetarian",
-    "vegan"
-  ],
-  "cuisine": "indian",
-  "mealType": [
-    "lunch",
-    "snack"
-  ],
-  "difficulty": "Easy",
-  "nutritionTags": [
-    "protein",
-    "iron"
-  ],
-  "allergens": [
-    "soy"
-  ],
-  "ingredients": [
-    "300 g extra-firm tofu, pressed and cubed",
-    "1 small bell pepper, diced",
-    "1/2 small red onion, diced",
-    "2 spring onions, sliced",
-    "1 tsp grated ginger",
-    "1 small garlic clove, minced",
-    "1 tbsp low-sodium soy sauce",
-    "1 tbsp tomato ketchup",
-    "1 tsp rice vinegar",
-    "1 tsp brown sugar or jaggery",
-    "A pinch of cumin powder",
-    "1 tsp neutral oil",
-    "Chilli sauce optional for older children"
-  ],
-  "instructions": [
-    "Bake, air-fry or lightly pan-sear the tofu until just golden while keeping the centre soft.",
-    "Cook onion, ginger, garlic and bell pepper briefly so the vegetables remain slightly crisp.",
-    "Mix soy sauce, ketchup, vinegar, sugar, cumin and a little water; add to the pan.",
-    "Add tofu and toss gently until the sauce lightly coats the cubes.",
-    "Finish with spring onion. Keep chilli sauce separate or omit it for young children."
-  ],
-  "nutrition": {
-    "calories": 230,
-    "protein_g": 8,
-    "iron_mg": 2.2,
-    "calcium_mg": 85,
-    "fiber_g": 4.0
-  },
-  "packingTip": {
-    "en": "Cool before packing and keep wet dips or sauces in a separate leak-proof container."
-  },
-  "kidTip": {
-    "en": "Keep the spice level mild and serve in small, easy-to-hold portions."
-  },
-  "ratings": {
-    "overall": 4.7,
-    "nutrition": 4.8,
-    "kidFriendly": 4.7,
-    "lunchboxFriendly": 4.8,
-    "pickyEaterFriendly": 4.5,
-    "timeSaver": 4.6,
-    "count": 0
-  },
-  "hidden": false,
-  "regional": false,
-  "sourceTitle": "Indo-Chinese Style Chili Tofu — The Foodie Takes Flight",
-  "sourceUrl": "https://thefoodietakesflight.com/indo-chinese-style-chili-tofu/",
-  "sourceNote": "Tiny Tiffin adaptation inspired by the linked recipe; made milder and lunchbox-friendly."
-}
+  {
+    "id": "peri-peri-creamy-pasta",
+    "emoji": "🍝",
+    "images": [],
+    "name": {
+      "en": "Peri Peri Creamy Pasta",
+      "hi": "पेरी पेरी क्रीमी पास्ता"
+    },
+    "desc": {
+      "en": "A mild, creamy peri peri pasta with colourful vegetables for a fun lunchbox meal.",
+      "hi": "रंग-बिरंगी सब्ज़ियों के साथ हल्का, क्रीमी पेरी पेरी पास्ता।"
+    },
+    "ageGroups": [
+      "2-5y",
+      "5-10y"
+    ],
+    "timeCategory": 20,
+    "dietType": [
+      "vegetarian"
+    ],
+    "cuisine": "continental",
+    "mealType": [
+      "lunch",
+      "snack"
+    ],
+    "difficulty": "Easy",
+    "nutritionTags": [
+      "energy",
+      "fiber"
+    ],
+    "allergens": [
+      "gluten",
+      "dairy"
+    ],
+    "ingredients": [
+      "1 cup pasta",
+      "1 tsp butter or olive oil",
+      "1 small garlic clove, minced",
+      "1/4 cup chopped capsicum",
+      "1/4 cup sweet corn",
+      "3/4 cup milk",
+      "2 tbsp grated cheese",
+      "1 tsp mild peri peri seasoning",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Cook pasta until just tender, drain and keep aside.",
+      "Sauté garlic, capsicum and corn briefly in butter or olive oil.",
+      "Add milk and cheese; stir on low heat until lightly creamy.",
+      "Add mild peri peri seasoning and salt, then fold in the cooked pasta.",
+      "Cool slightly before packing so the sauce stays creamy without making the lunchbox soggy."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein_g": 10,
+      "iron_mg": 1.4,
+      "calcium_mg": 190,
+      "fiber_g": 4,
+      "vitaminC_mg": 20
+    },
+    "packingTip": {
+      "en": "Pack warm in an insulated container. Keep the peri peri seasoning mild for younger children."
+    },
+    "kidTip": {
+      "en": "Use colourful capsicum, corn and peas and choose a mild peri peri blend."
+    },
+    "ratings": {
+      "overall": 4.7,
+      "nutrition": 4.4,
+      "kidFriendly": 4.7,
+      "lunchboxFriendly": 4.6,
+      "pickyEaterFriendly": 4.6,
+      "timeSaver": 4.5,
+      "count": 0
+    },
+    "hidden": false,
+    "healthyNote": {
+      "en": "For a healthier pasta version, you can use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta, and add colourful vegetables for extra fibre and variety."
+    }
+  }
 ];
-
-;window.RECIPES && window.RECIPES.push({id:"peri-peri-creamy-pasta",name:"Peri Peri Creamy Pasta",mealType:"Lunch",ageGroup:["5-10y"],time:20,cuisine:"Indian",diet:"Vegetarian",ingredients:["1 cup pasta","1 tbsp butter","1 tsp garlic","1/4 cup capsicum","1/4 cup corn","1 cup milk","2 tbsp cheese","1-2 tsp peri peri seasoning","Salt"],steps:["Boil pasta until just cooked.","Saute garlic and vegetables in butter.","Add milk and cheese to make a creamy sauce.","Stir in peri peri seasoning and pasta.","Cool slightly and pack."],packingTip:"Pack warm in an insulated box.",healthyNote:"For a healthier version, use semolina, whole wheat, legume-based, multigrain, jowar, multimillet, or ragi pasta and include colourful vegetables."});

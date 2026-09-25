@@ -813,5 +813,8 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 .smartbuy-update-card,
 .smartbuy-update-note{display:none !important;}
 
-.smartbuy-banner-only img{display:block;width:100%;height:auto;border-radius:28px;box-shadow:var(--shadow);}
-.smart-live-controls,.smart-store-strip,.smart-quick-items,.smart-location-note,.smart-live-results{display:none!important;}
+/* v2.15 Smart Buy image-only hero */
+#app .tt-sb-banner-only{width:100%;overflow:hidden;border-radius:24px;border:1px solid rgba(40,90,58,.12);background:#f4f8ef;box-shadow:0 6px 18px rgba(36,55,43,.07);}
+#app .tt-sb-banner-only img{display:block;width:100%;height:auto;object-fit:cover;}
+#app .healthy-pasta-note{background:#eef8e9;border-left:4px solid #4c8b54;color:#294a31;}
+@media(max-width:720px){#app .tt-sb-banner-only{border-radius:18px;}#app .tt-sb-banner-only img{min-height:180px;object-fit:cover;object-position:center;}}

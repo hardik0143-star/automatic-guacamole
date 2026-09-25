@@ -135,7 +135,7 @@
     if (regionalDataLoading) return regionalDataLoading;
     regionalDataLoading = new Promise((resolve) => {
       const script = document.createElement("script");
-      script.src = "regional.js?v=2.5";
+      script.src = "regional.js?v=2.15";
       script.async = true;
       script.dataset.tinyTiffinRegional = "1";
       script.onload = () => {
@@ -320,7 +320,44 @@
       f.allergyExclude.size > 0 || f.diet !== "all" || f.cuisine !== "all" ||
       f.smartSearch.trim().length > 0;
   }
-  function filteredRecipes() { return hasDiscoveryCriteria() ? RECIPES.filter(matchesFilters) : []; }
+  function normalizeRecipeSearchText(value) {
+    return String(value || "")
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}]+/gu, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function recipeSearchHaystack(r) {
+    const names = r.name && typeof r.name === "object" ? Object.values(r.name) : [r.name || ""];
+    const descs = r.desc && typeof r.desc === "object" ? Object.values(r.desc) : [r.desc || ""];
+    const healthy = r.healthyNote && typeof r.healthyNote === "object" ? Object.values(r.healthyNote) : [r.healthyNote || ""];
+    return normalizeRecipeSearchText([
+      ...names, ...descs, ...healthy,
+      ...(r.ingredients || []), ...(r.instructions || []), ...(r.nutritionTags || []),
+      ...(r.ageGroups || []), String(r.timeCategory || ""), r.cuisine || "", ...(r.mealType || []),
+      ...(r.dietType || []), r.region || "", r.regionType || "", r.festival || "", r.theme || "",
+      ...(r.allergens || []), r.id || ""
+    ].join(" "));
+  }
+
+  function recipeMatchesGlobalSearch(r, query) {
+    const q = normalizeRecipeSearchText(query);
+    if (!q) return true;
+    const hay = recipeSearchHaystack(r);
+    return q.split(" ").filter(Boolean).every(token => hay.includes(token));
+  }
+
+  function filteredRecipes() {
+    const typed = String(state.filters.smartSearch || "").trim();
+    if (typed) {
+      const queries = [typed, normalizedRecipeQuery].filter(Boolean);
+      return RECIPES.filter(r => queries.some(q => recipeMatchesGlobalSearch(r, q)));
+    }
+    return hasDiscoveryCriteria() ? RECIPES.filter(matchesFilters) : [];
+  }
 
   /* ---------------- toast ---------------- */
   let toastTimer = null;
@@ -352,7 +389,7 @@
   /* ---------------- rendering ---------------- */
   const premiumStyle = document.createElement("link");
   premiumStyle.rel = "stylesheet";
-  premiumStyle.href = "premium-ui.css?v=2.12";
+  premiumStyle.href = "premium-ui.css?v=2.15";
   document.head.appendChild(premiumStyle);
 
   const root = document.getElementById("app");
@@ -576,33 +613,11 @@
     const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
     const amazonHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${amazonTag}`;
     const freshHome = (CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${amazonTag}`;
-    const savedPin = storage.get("tt_grocery_pincode", "");
 
     return `
       <section class="tt-smartbuy-exact">
-        <div class="tt-sb-hero">
-          <div class="tt-sb-title">
-            <span class="tt-sb-cart">🛒</span>
-            <div>
-              <h1>Smart Buy</h1>
-              <p>Find ingredients at the best prices — quick and easy!</p>
-            </div>
-          </div>
-          <div class="tt-sb-hero-message">Good Food<br>Smart Choices<br>Happier Families! ♡</div>
-          <div class="tt-sb-produce" aria-hidden="true">🥬🥦🫑🍅🥕</div>
-        </div>
-
-        <div class="tt-sb-searchbar">
-          <span class="tt-sb-search-icon">⌕</span>
-          <input id="store-shortcut-query" type="search" autocomplete="off"
-            placeholder="Search for milk, paneer, fruits, vegetables, atta..."
-            value="${escapeAttr(smartShoppingSelectedQuery || "")}">
-          <div class="tt-sb-pin">
-            <span>📍</span>
-            <input id="smart-buy-pin-memory" inputmode="numeric" maxlength="6"
-              aria-label="Delivery PIN code" placeholder="PIN"
-              value="${escapeAttr(savedPin)}">
-          </div>
+        <div class="tt-sb-banner-only">
+          <img src="smartbuy-vegetable-banner-hd.png?v=2.15" alt="Fresh vegetables and healthy food choices" loading="eager">
         </div>
 
         <div class="tt-sb-action-grid">
@@ -628,7 +643,7 @@
               <div class="tt-sb-price-icon">🏷️</div>
               <div>
                 <h3>Compare Prices</h3>
-                <p>Check this item across multiple shopping apps.</p>
+                <p>Check the same product across supported shopping apps.</p>
               </div>
             </div>
             <a href="https://pricebasket.in/search" target="_blank" rel="noopener"
@@ -668,40 +683,7 @@
   }
 
   function attachShoppingEvents() {
-    const query = document.getElementById("store-shortcut-query");
-    const pin = document.getElementById("smart-buy-pin-memory");
-    const amazon = document.getElementById("smart-amazon-link");
-    const fresh = document.getElementById("smart-fresh-link");
-    if (!query) return;
-
-    const amazonTag = ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || "").match(/[?&]tag=([^&]+)/)?.[1] || "tinytiffin-21";
-
-    const syncLinks = () => {
-      const q = String(query.value || "").trim();
-      smartShoppingSelectedQuery = q;
-      if (amazon) {
-        amazon.href = q
-          ? `https://www.amazon.in/s?k=${encodeURIComponent(q)}&tag=${encodeURIComponent(amazonTag)}`
-          : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonUrl) || `https://www.amazon.in/?tag=${encodeURIComponent(amazonTag)}`);
-      }
-      if (fresh) {
-        fresh.href = q
-          ? `https://www.amazon.in/fresh/s?k=${encodeURIComponent(q)}&tag=${encodeURIComponent(amazonTag)}`
-          : ((CONFIG.shoppingLinks && CONFIG.shoppingLinks.amazonFreshUrl) || `https://www.amazon.in/fresh?tag=${encodeURIComponent(amazonTag)}`);
-      }
-    };
-
-    query.addEventListener("input", syncLinks);
-    query.addEventListener("change", syncLinks);
-
-    if (pin) {
-      pin.addEventListener("input", () => {
-        const clean = String(pin.value || "").replace(/\D/g, "").slice(0, 6);
-        pin.value = clean;
-        if (clean.length === 6) storage.set("tt_grocery_pincode", clean);
-      });
-    }
-    syncLinks();
+    // Smart Buy uses direct retailer and comparison links; no local search/PIN form is rendered.
   }
 
   /* ---------- Festival Tiffin ---------- */
@@ -991,19 +973,30 @@
   function attachFindEvents() {
     const masterSearch = document.getElementById("recipe-master-search");
     let searchTimer = null;
-    if (masterSearch) masterSearch.addEventListener("input", () => {
-      state.filters.smartSearch = masterSearch.value;
-      normalizedRecipeQuery = state.filters.smartSearch;
-      refreshFindRecipeResults();
-      clearTimeout(searchTimer);
-      if (state.lang !== "en" && state.filters.smartSearch.trim()) {
-        const original = state.filters.smartSearch;
-        searchTimer = setTimeout(async () => {
-          const translated = await translateSearchToEnglish(original);
-          if (state.filters.smartSearch === original) { normalizedRecipeQuery = translated; refreshFindRecipeResults(); }
-        }, 300);
-      }
-    });
+    if (masterSearch) {
+      masterSearch.addEventListener("focus", () => {
+        if (!regionalDataLoaded) ensureRegionalData().then(() => {
+          if (state.filters.smartSearch.trim()) refreshFindRecipeResults();
+        });
+      });
+      masterSearch.addEventListener("input", () => {
+        state.filters.smartSearch = masterSearch.value;
+        normalizedRecipeQuery = state.filters.smartSearch;
+        refreshFindRecipeResults();
+        if (!regionalDataLoaded) ensureRegionalData().then(() => refreshFindRecipeResults());
+        clearTimeout(searchTimer);
+        if (state.lang !== "en" && state.filters.smartSearch.trim()) {
+          const original = state.filters.smartSearch;
+          searchTimer = setTimeout(async () => {
+            const translated = await translateSearchToEnglish(original);
+            if (state.filters.smartSearch === original) {
+              normalizedRecipeQuery = translated;
+              refreshFindRecipeResults();
+            }
+          }, 250);
+        }
+      });
+    }
     const surpriseBtn = document.getElementById("surprise-recipe");
     if (surpriseBtn) surpriseBtn.addEventListener("click", () => {
       const pool = filteredRecipes();
@@ -1411,59 +1404,9 @@
     }
   }
 
-  function renderSmartShoppingLivePanel() {
-    return `
-      <section class="smart-live-panel">
-        <div class="smartbuy-banner-only" aria-label="Smart Buy banner">
-          <img src="smartbuy-hero-expanded.png" alt="Smart Buy banner with fresh vegetables and fruits" loading="eager">
-        </div>
-      </section>
-    `;
-  }
+  function renderSmartShoppingLivePanel() { return ""; }
 
-  function attachSmartShoppingLiveEvents() {
-    const query = document.getElementById("smart-live-query");
-    const pin = document.getElementById("smart-live-pin");
-    const compare = document.getElementById("smart-live-compare");
-    const results = document.getElementById("smart-live-results");
-    const status = document.getElementById("smart-live-location-status");
-    const loc = document.getElementById("smart-live-location");
-
-    if (!query || !pin || !compare || !results) return;
-
-    query.addEventListener("input", () => smartShoppingSelectedQuery = query.value);
-    pin.addEventListener("input", () => {
-      smartShoppingLocation.pincode = pin.value.replace(/\D/g,"").slice(0,6);
-      pin.value = smartShoppingLocation.pincode;
-      if (smartShoppingLocation.pincode.length === 6) storage.set("tt_grocery_pincode", smartShoppingLocation.pincode);
-    });
-
-    compare.addEventListener("click", () => runSmartShoppingLiveSearch(query.value, results, compare));
-    query.addEventListener("keydown", e => { if (e.key === "Enter") compare.click(); });
-
-    document.querySelectorAll("[data-smart-quick]").forEach(btn => btn.addEventListener("click", () => {
-      query.value = btn.dataset.smartQuick;
-      smartShoppingSelectedQuery = query.value;
-      compare.click();
-    }));
-
-    if (loc) loc.addEventListener("click", () => {
-      if (!navigator.geolocation) {
-        status.textContent = "Location is not supported by this browser. Please enter a PIN code.";
-        return;
-      }
-      status.textContent = "Requesting location…";
-      navigator.geolocation.getCurrentPosition(
-        pos => {
-          smartShoppingLocation.latitude = Number(pos.coords.latitude.toFixed(6));
-          smartShoppingLocation.longitude = Number(pos.coords.longitude.toFixed(6));
-          status.textContent = "Location captured for this live comparison.";
-        },
-        () => status.textContent = "Location permission was not available. Your 6-digit PIN code can be used instead.",
-        {enableHighAccuracy:false,timeout:10000,maximumAge:300000}
-      );
-    });
-  }
+  function attachSmartShoppingLiveEvents() {}
 
   function openGroceryCompareModal(recipe) {
     const backdrop = document.createElement("div");
@@ -1537,6 +1480,7 @@
             <div class="nutri-cell"><div class="val mono">${r.nutrition.calcium_mg}mg</div><div class="lbl">${t("calcium")}</div></div>
           </div>
         </section>
+        ${r.healthyNote ? `<div class="tip-box healthy-pasta-note"><strong>🌾 Healthier Pasta Option:</strong> ${escapeHTML(typeof r.healthyNote === "object" ? (r.healthyNote[state.lang] || r.healthyNote.en || Object.values(r.healthyNote)[0]) : r.healthyNote)}</div>` : ""}
         <div class="tip-box"><strong>💡 ${t("packingTip")}:</strong> ${r.packingTip[state.lang] || r.packingTip.en}</div>
         <div class="tip-box kid"><strong>👪 ${t("kidTip")}:</strong> ${r.kidTip[state.lang] || r.kidTip.en}</div>
         <div class="card-actions">

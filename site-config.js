@@ -1,10 +1,10 @@
 /* Tiny Tiffin — Site configuration */
 window.TINY_TIFFIN_CONFIG = {
   contactEmail: "tinytiffin13@gmail.com",
-  version: "v2.12",
+  version: "v2.15",
   releaseDate: "September 2026",
   slogan: "Healthy Recipes. Happier Lunchboxes.",
-  releaseNotes: "Final Smart Buy cleanup: complete legacy Update Shopping Links block removed; only the approved design remains. Amazon/Amazon Fresh search links, PriceBasket comparison, store shortcuts, PIN memory and recipe ingredient shopping remain functional.",
+  releaseNotes: "Smart Buy hero replaced with the HD vegetable-basket banner and its search/PIN block removed. Find-a-Tiffin global search repaired and synchronized with regional data. Added Peri Peri Creamy Pasta and healthier pasta guidance across pasta recipes.",
   emailjs: {
     serviceId: "service_cojdevq",
     templateId: "template_qzn6vno",

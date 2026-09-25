@@ -36,15 +36,15 @@ window.TinyTiffinStore = (function () {
   }
 
   function getRecipes() {
-    const base = window.TINY_TIFFIN_RECIPES || [];
-    const festival = window.TINY_TIFFIN_FESTIVAL_RECIPES || [];
+    const base = Array.isArray(window.TINY_TIFFIN_RECIPES) ? window.TINY_TIFFIN_RECIPES : [];
     const draft = readDraft();
-    if (!draft) return base.concat(festival);
-    // Preserve an existing Admin draft while automatically adding new festival
-    // recipes that were introduced by the application update.
-    const known = new Set(draft.map(r => r && r.id));
-    const additions = festival.filter(r => r && !known.has(r.id));
-    return additions.length ? draft.concat(additions) : draft;
+    if (!Array.isArray(draft)) return base.slice();
+
+    // Merge browser Admin edits over the published database instead of replacing it.
+    // This keeps newly shipped recipes searchable for users who have an older local draft.
+    const merged = new Map(base.filter(r => r && r.id).map(r => [String(r.id), r]));
+    draft.filter(r => r && r.id).forEach(r => merged.set(String(r.id), r));
+    return Array.from(merged.values());
   }
 
   function saveRecipes(recipes) {
