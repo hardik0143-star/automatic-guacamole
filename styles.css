@@ -806,3 +806,9 @@ html[data-theme="dark"] .ai-answer,.ai-plan-list>div{background:#21352b;color:#e
 .copyright-line{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.15);font-size:.8rem;opacity:.9}
 .smart-store-strip{margin:10px 0 14px;padding:10px 12px;border-radius:12px;background:rgba(43,78,50,.07);font-size:.78rem;line-height:1.55;color:var(--ink-soft,#667)}
 .smart-product-card .smart-store-price-row.best{outline:2px solid rgba(43,78,50,.28);font-weight:800}
+
+.smartbuy-search-section .helper-copy,
+.smartbuy-search-section .search-help,
+.smartbuy-search-section .update-links-copy,
+.smartbuy-update-card,
+.smartbuy-update-note{display:none !important;}
