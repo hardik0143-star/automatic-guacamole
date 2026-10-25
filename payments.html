@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2B4E32">
+  <title>Tiny Tiffin Premium & Payments</title>
+  <link rel="stylesheet" href="styles.css?v=2.15">
+  <style>
+    .payment-wrap{max-width:780px;margin:32px auto;padding:20px}
+    .payment-card{background:var(--card-bg,#fff);border:1px solid var(--border-color,#ddd);border-radius:18px;padding:22px;margin:14px 0}
+    .payment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .payment-title{color:var(--text,#203020);margin:0 0 8px}
+    .payment-muted{opacity:.78;line-height:1.5}
+    .payment-price{font-size:1.65rem;font-weight:800;margin:12px 0}
+    .payment-button{border:0;border-radius:10px;padding:12px 16px;background:#2B4E32;color:#fff;font-weight:800;width:100%;cursor:pointer}
+    .payment-button:disabled{opacity:.5;cursor:not-allowed}
+    .payment-input{width:100%;box-sizing:border-box;border:1px solid #aaa;border-radius:10px;padding:12px;font:inherit;margin:8px 0 16px}
+    #payment-status{padding:12px;border-radius:10px;margin-top:12px;display:none;overflow-wrap:anywhere}
+    #payment-status[data-kind="error"]{display:block;background:#fff0f0;color:#8b1c1c}
+    #payment-status[data-kind="success"]{display:block;background:#edf8ee;color:#20562b}
+    #payment-status[data-kind="info"]{display:block;background:#eef4ff;color:#203f73}
+  </style>
+</head>
+<body>
+  <main class="payment-wrap">
+    <p><a href="/">← Back to Tiny Tiffin</a></p>
+    <h1 class="payment-title">Tiny Tiffin Premium</h1>
+    <p class="payment-muted">Support Tiny Tiffin and choose a one-time purchase or recurring plan. Prices and availability are loaded from the server's payment configuration.</p>
+    <section class="payment-card">
+      <label for="buyer-email"><strong>Email for your payment record</strong></label>
+      <input id="buyer-email" class="payment-input" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
+      <p class="payment-muted">Use an email you can access. Do not enter payment card details here; checkout is handled by Razorpay.</p>
+      <div id="payment-products" class="payment-grid"><p>Loading payment options…</p></div>
+      <div id="payment-status" role="status" aria-live="polite"></div>
+    </section>
+    <p class="payment-muted">Payments are verified by the Tiny Tiffin server. A successful checkout is not a guarantee of instant premium feature access; account-based access and entitlement management must be configured separately before selling gated digital features.</p>
+  </main>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="payments.js?v=1"></script>
+</body>
+</html>
