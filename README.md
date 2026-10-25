@@ -123,3 +123,10 @@ cheapest item, and basket totals by platform.
 - Dedicated Regional Recipes tab with India/International switching and location filters.
 - Added Indo-Chinese Style Chili Tofu to the main database as a Tiny Tiffin kid-friendly adaptation inspired by The Foodie Takes Flight.
 - The new additions were checked against existing recipe names to avoid duplicates.
+
+
+## Razorpay payment integration (preview)
+- Added a checkout page for one-time recipe pack purchases and recurring Premium subscriptions.
+- Server-side order/subscription creation, payment signature verification, and HMAC-verified webhook processing are included in `api/`.
+- See `RAZORPAY_SETUP.md` for Supabase schema, Vercel environment variables, test-mode setup, and known limitations.
+- Payment features remain disabled until the required server environment variables are configured; authenticated account-based premium access is a separate follow-up.
