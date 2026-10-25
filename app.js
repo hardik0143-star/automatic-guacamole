@@ -471,6 +471,7 @@
             <button class="theme-toggle install-action" id="update-btn" aria-label="Check for software update">↻ Update</button>
             <button class="theme-toggle" id="theme-toggle" aria-label="${t('darkMode')}">${state.theme === "dark" ? "☀️" : "🌙"}</button>
             <select class="lang-select" id="lang-select" aria-label="Language">${langOptions}</select>
+            <a class="admin-link" href="payments.html">Premium</a>
             <a class="admin-link" href="admin.html">${t("adminLink")}</a>
           </div>
         </div>
