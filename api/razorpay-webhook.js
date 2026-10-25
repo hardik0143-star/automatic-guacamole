@@ -24,13 +24,13 @@ module.exports = async function handler(req, res) {
     const subscription = payload.payload?.subscription?.entity;
     const entityId = payment?.id || order?.id || subscription?.id || null;
 
-    if (eventId) {
-      await dbRequest("payment_webhook_events", "?on_conflict=event_id", {
-        method: "POST",
-        prefer: "resolution=ignore-duplicates,return=minimal",
-        body: [{ event_id: eventId, event_name: event, entity_id: entityId }]
-      });
-    }
+    if (!eventId) return jsonError(res, 400, "Missing Razorpay webhook event ID.");
+    const insertedEvents = await dbRequest("payment_webhook_events", "?on_conflict=event_id", {
+      method: "POST",
+      prefer: "resolution=ignore-duplicates,return=representation",
+      body: [{ event_id: eventId, event_name: event, entity_id: entityId }]
+    });
+    if (!insertedEvents.length) return res.status(200).json({ received: true, duplicate: true });
 
     if (event === "payment.captured" && payment?.order_id) {
       const rows = await dbRequest("payment_orders", "?order_id=eq." + encodeURIComponent(payment.order_id) + "&select=order_id,amount_paise,currency,status");
